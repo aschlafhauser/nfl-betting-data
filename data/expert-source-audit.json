@@ -1,1 +1,47 @@
-{"season":2026,"updatedAt":null,"sources":[]}
+{
+  "season": 2026,
+  "updatedAt": "2026-08-28T19:40:00-04:00",
+  "policy": "Preserve analyst-level notes but count correlated publications under a single sourceFamily/independenceKey. Information, analysis and explicit betting opinions are tagged separately.",
+  "sources": [
+    {
+      "sourceFamily":"Sharp Football Analysis",
+      "independenceKey":"sharp-football-analysis",
+      "priority":1,
+      "status":"active",
+      "latestChecked":"2026-08-28",
+      "coverage":["all 32 teams","power rankings","scheme","efficiency","coaching","schedule/rest","positional units","betting/futures"],
+      "publicMaterialSeeded":["2026 NFL Power Rankings — Aug. 24"],
+      "plannedHarvest":["team previews","schedule/rest edges","unit rankings","weekly matchup analysis","explicit betting analysis"],
+      "notes":"Highest-priority external expert family. Do not count multiple Warren Sharp/Sharp articles as independent confirmations."
+    },
+    {
+      "sourceFamily":"Action Network",
+      "independenceKey":"action-network",
+      "priority":1,
+      "status":"active",
+      "latestChecked":"2026-08-28",
+      "coverage":["QB rankings","offensive line rankings","skill-position rankings","defense rankings","coaching rankings","schedule strength","team previews","futures","weekly betting"],
+      "publicMaterialSeeded":["2026 QB Rankings — Aug. 19","2026 Offensive Line Rankings — Aug. 20","2026 Coaching Staff Rankings — Aug. 21","2026 Skill Position Rankings — Aug. 22","2026 Defense Rankings — Aug. 26","2026 schedule/SOS analysis"],
+      "plannedHarvest":["Brandon Anderson component rankings","Sean Koerner projections/bets","Evan Abrams situational research","weekly game picks"],
+      "notes":"Analysts remain individually attributed, but Action Network counts as one correlated family for consensus unless evidence is demonstrably independent."
+    },
+    {
+      "sourceFamily":"Establish The Run",
+      "independenceKey":"establish-the-run",
+      "priority":2,
+      "status":"planned",
+      "latestChecked":"2026-08-28",
+      "coverage":["projections","usage","personnel","matchup","injury impact","betting where public"],
+      "notes":"Use public material directly; premium material only when legitimately accessible or user-supplied. Fantasy-oriented evidence is tagged as context unless it has direct football/betting relevance."
+    },
+    {
+      "sourceFamily":"NFL / team beat reporting",
+      "independenceKey":"primary-reporting",
+      "priority":1,
+      "status":"active",
+      "latestChecked":"2026-08-28",
+      "coverage":["official schedule","injuries","transactions","starter decisions","practice status","coaching statements"],
+      "notes":"Primary reporting is Game Intelligence, not expert consensus. Official/team sources take precedence for factual availability."
+    }
+  ]
+}
