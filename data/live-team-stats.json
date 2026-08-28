@@ -1,1 +1,18 @@
-{"season":2026,"updatedAt":null,"source":null,"teams":[]}
+{
+  "season": 2026,
+  "updatedAt": "2026-08-28T19:45:00-04:00",
+  "source": {
+    "primary":"nflverse play-by-play / player stats",
+    "secondary":["NFL official stats / Next Gen Stats where publicly available"],
+    "status":"schema active; 2026 regular-season sample not started"
+  },
+  "metricContract": {
+    "offense":["epaPerPlay","successRate","earlyDownEpa","dropbackEpa","rushEpa","explosivePassRate","explosiveRushRate","sackRateAllowed","pressureRateAllowed","neutralPassRate","pace","redZoneTdRate"],
+    "defense":["epaAllowedPerPlay","successRateAllowed","earlyDownEpaAllowed","dropbackEpaAllowed","rushEpaAllowed","explosivePassRateAllowed","explosiveRushRateAllowed","pressureRate","sackRate","redZoneTdRateAllowed"],
+    "specialTeams":["specialTeamsEpa"],
+    "context":["games","plays","opponentAdjustedRating","strengthOfSchedule","seasonWeight","recentFormWeight"]
+  },
+  "timeWindows":["season","last6","last4","currentPersonnelState"],
+  "principles":["opponent adjust before line conversion","regress volatile turnover/third-down/red-zone outcomes","early season blends heavily with preseason prior","do not double count player availability already embedded in team sample"],
+  "teams": []
+}
