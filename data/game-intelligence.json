@@ -1,1 +1,50 @@
-{"season":2026,"updatedAt":null,"items":[]}
+{
+  "season": 2026,
+  "updatedAt": "2026-08-28T19:52:00-04:00",
+  "items": [
+    {
+      "id":"kc-mahomes-week1-recovery",
+      "week":1,
+      "gameId":"2026-W1-DEN-KC",
+      "team":"Kansas City Chiefs",
+      "type":"QB / availability",
+      "sourceDate":"2026-08-25",
+      "status":"monitor",
+      "headline":"Patrick Mahomes says he is on track to start Week 1 after ACL/LCL recovery",
+      "detail":"Mahomes has progressed through training camp and publicly expects to start against Denver. Because QB value is modeled separately, his expected participation and any mobility/limitations remain a material Week 1 input.",
+      "bettingImpact":"Potentially major if status deteriorates; current evidence materially reduces the probability of a backup-QB scenario.",
+      "modelTreatment":"Do not apply a full injury downgrade while Mahomes remains on track. Maintain a recovery uncertainty band until final practice/medical evidence.",
+      "sourceFamily":"primary-reporting",
+      "sourceUrl":"https://www.espn.com/nfl/story/_/id/49724277/patrick-mahomes-feeling-great-track-start-week-1"
+    },
+    {
+      "id":"atl-qb-battle-penix-tua",
+      "week":1,
+      "gameId":"2026-W1-ATL-PIT",
+      "team":"Atlanta Falcons",
+      "type":"QB decision",
+      "sourceDate":"2026-08-26",
+      "status":"actionable-monitor",
+      "headline":"Atlanta Week 1 starter remains unresolved between Michael Penix Jr. and Tua Tagovailoa",
+      "detail":"Penix has been medically cleared for full 11-on-11 work and has split first-team reps with Tagovailoa. Falcons coaches say the Week 1 starter decision is still being evaluated.",
+      "bettingImpact":"Material because the two quarterbacks require different expected-efficiency, pressure and mobility assumptions.",
+      "modelTreatment":"Keep ATL fair line provisional until starter probability is assigned; calculate separate Penix-start and Tagovailoa-start scenarios rather than averaging blindly.",
+      "sourceFamily":"primary-reporting",
+      "sourceUrl":"https://www.atlantafalcons.com/news/tommy-rees-quarterback-evaluation-michael-penix-jr-tua-tagovailoa"
+    },
+    {
+      "id":"sf-lar-melbourne-travel",
+      "week":1,
+      "gameId":"2026-W1-SF-LAR",
+      "type":"travel / venue",
+      "sourceDate":"2026-08-28",
+      "status":"model-required",
+      "headline":"49ers-Rams will be played at Melbourne Cricket Ground in the NFL's Australia debut",
+      "detail":"The divisional matchup is officially scheduled in Melbourne rather than Los Angeles, creating an extreme travel/time-zone environment for both teams.",
+      "bettingImpact":"Requires neutral-site home-field removal plus travel/rest uncertainty. The effect should not be guessed as a generic international-game adjustment.",
+      "modelTreatment":"Treat as neutral venue and calibrate an international travel adjustment from historical long-haul games where possible.",
+      "sourceFamily":"NFL-official",
+      "sourceUrl":"https://www.nfl.com/schedules/2026/by-week/week-1"
+    }
+  ]
+}
