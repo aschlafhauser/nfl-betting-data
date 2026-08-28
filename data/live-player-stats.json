@@ -1,1 +1,19 @@
-{"season":2026,"updatedAt":null,"source":null,"players":[]}
+{
+  "season": 2026,
+  "updatedAt": "2026-08-28T19:46:00-04:00",
+  "source": {
+    "primary":"nflverse player/play-by-play/snap data",
+    "secondary":["NFL official stats / Next Gen Stats where publicly available"],
+    "status":"schema active; 2026 regular-season sample not started"
+  },
+  "metricContract": {
+    "QB":["dropbacks","epaPerDropback","cpoe","successRate","pressureEpa","cleanPocketEpa","sackRate","turnoverWorthyProxy","airYards","scrambleEpa"],
+    "RB":["rushShare","routeParticipation","targetShare","rushEpa","rushSuccessRate","yardsAfterContactProxy","explosiveRushRate","receivingEpa"],
+    "WR_TE":["routeParticipation","targetShare","airYardShare","yardsPerRouteRun","receivingEpa","successRate","firstDownRate","explosiveReceptionRate"],
+    "OL":["snapShare","pressureResponsibilityWhereAvailable","sackResponsibilityWhereAvailable","runBlockContext","unitContinuity"],
+    "EDGE_DL":["snapShare","pressureRate","sackRate","runStopContext"],
+    "CB_S":["snapShare","targetRateWhereAvailable","coverageEfficiencyWhereAvailable","explosivePassAllowedContext"]
+  },
+  "usage": "Player data influences team strength only where signal/reliability supports it. Availability adjustments are applied relative to replacement value and cluster effects rather than by summing arbitrary injury points.",
+  "players": []
+}
