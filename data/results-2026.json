@@ -1,1 +1,29 @@
-{"season":2026,"updatedAt":null,"games":[]}
+{
+  "season": 2026,
+  "updatedAt": null,
+  "methodologyVersion": "1.1-validated-structural-market-aware",
+  "schema": {
+    "gameFields": [
+      "gameId",
+      "week",
+      "finalSnapshotId",
+      "marketAtDecision",
+      "structuralAtDecision",
+      "productionAtDecision",
+      "closingSpread",
+      "closingTotal",
+      "actualHomeMargin",
+      "structuralError",
+      "productionError",
+      "marketError",
+      "officialBet",
+      "betPrice",
+      "closingLineValue",
+      "atsResult",
+      "units",
+      "blockedEdgeOutcome"
+    ],
+    "rule": "Results are appended after games complete. Final pregame snapshots are immutable and are the only source of model-at-decision values."
+  },
+  "games": []
+}
