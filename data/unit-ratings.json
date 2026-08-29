@@ -1,0 +1,34 @@
+{
+  "season": 2026,
+  "updatedAt": "2026-08-28T21:45:00-04:00",
+  "methodologyVersion": "0.1-preseason-unit-contract",
+  "status": "schema active; preseason external diagnostic ranks will be supplemented by live nflverse/NGS-derived unit metrics once regular season begins",
+  "unitContract": {
+    "offense": [
+      "qb",
+      "offensiveLinePassProtection",
+      "offensiveLineRunBlocking",
+      "receivers",
+      "tightEnds",
+      "runningBacks"
+    ],
+    "defense": [
+      "passRush",
+      "interiorDefensiveLine",
+      "runDefense",
+      "linebackers",
+      "cornerbacks",
+      "safeties",
+      "coverageOverall"
+    ]
+  },
+  "principles": [
+    "Unit ratings are opponent-adjusted where data permits.",
+    "External rankings are diagnostic anchors only and never converted directly into betting points.",
+    "OL is treated as a continuity/weakest-link unit rather than the sum of five player grades.",
+    "Injuries update currentPersonnelState separately from season-long unit quality.",
+    "Matchup effects are incremental to the base team rating and must avoid double counting.",
+    "Every matchup adjustment is capped and logged with drivers."
+  ],
+  "teams": []
+}
