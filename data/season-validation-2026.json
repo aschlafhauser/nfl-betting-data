@@ -1,0 +1,26 @@
+{
+  "season": 2026,
+  "methodologyVersion": "1.1-validated-structural-market-aware",
+  "status": "prospective-validation-active",
+  "weeksGraded": [],
+  "gamesGraded": 0,
+  "cumulative": {
+    "structuralMAE": null,
+    "productionMAE": null,
+    "closingMarketMAE": null,
+    "CLV": null,
+    "ATS": null,
+    "ROI": null
+  },
+  "reviewGates": [
+    {"week": 4, "label": "Early-season checkpoint", "status": "pending"},
+    {"week": 8, "label": "Live-model checkpoint", "status": "pending"},
+    {"week": 12, "label": "Midseason checkpoint", "status": "pending"},
+    {"week": 18, "label": "Full-season review", "status": "pending"}
+  ],
+  "governance": {
+    "automaticRetuning": false,
+    "modelOfRecord": "v1.1",
+    "rule": "Routine weekly data updates do not change methodology. Any formula, coefficient, threshold or feature-weight change requires a new version and may not overwrite prior predictions."
+  }
+}
