@@ -1,46 +1,74 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-28T19:40:00-04:00",
-  "policy": "Preserve analyst-level notes but count correlated publications under a single sourceFamily/independenceKey. Information, analysis and explicit betting opinions are tagged separately.",
+  "updatedAt": "2026-09-06T15:28:33-04:00",
+  "policy": "Preserve analyst-level notes but count correlated publications under a single sourceFamily/independenceKey. Information, analysis and explicit betting opinions are tagged separately. Every matchup record must join the canonical nfl-weekly-board game ID; unmatched records are an ingestion failure. Expert Intelligence is qualitative context/residual and may not silently overwrite the quantitative NFL fair.",
   "sources": [
     {
       "sourceFamily":"Sharp Football Analysis",
       "independenceKey":"sharp-football-analysis",
       "priority":1,
       "status":"active",
-      "latestChecked":"2026-08-28",
-      "coverage":["all 32 teams","power rankings","scheme","efficiency","coaching","schedule/rest","positional units","betting/futures"],
+      "latestChecked":"2026-09-06",
+      "coverage":["all 32 teams","power rankings","scheme","efficiency","coaching","schedule/rest","positional units","betting/futures","weekly odds/picks"],
       "publicMaterialSeeded":["2026 NFL Power Rankings — Aug. 24"],
-      "plannedHarvest":["team previews","schedule/rest edges","unit rankings","weekly matchup analysis","explicit betting analysis"],
-      "notes":"Highest-priority external expert family. Do not count multiple Warren Sharp/Sharp articles as independent confirmations."
+      "latestFinding":"Week 1 odds board is live; Josh Shepardson's Week 1 best-bet section still says Coming Soon as of Sept. 6.",
+      "notes":"Do not count multiple Warren Sharp/Sharp articles as independent confirmations."
+    },
+    {
+      "sourceFamily":"Mina Kimes / ESPN NFL analysis",
+      "independenceKey":"mina-kimes-espn",
+      "priority":1,
+      "status":"active",
+      "latestChecked":"2026-09-06",
+      "coverage":["QB","OL","pass rush","coverage","scheme","coaching","personnel","weekly matchup analysis"],
+      "publicMaterialSeeded":["Donald, Duck! The Loaded Rams, Plus Raiders and Falcons QB Battles — Sept. 1"],
+      "notes":"Mina and guests within the same episode are correlated for consensus. Team Draft / season-ranking content is not promoted to weekly matchup evidence unless a matchup-specific mechanism is explicit."
+    },
+    {
+      "sourceFamily":"The Ringer NFL family",
+      "independenceKey":"ringer-nfl",
+      "priority":1,
+      "status":"active",
+      "latestChecked":"2026-09-06",
+      "coverage":["team rankings","scheme","QB","coaching","weekly matchup previews","betting"],
+      "notes":"Treat The Ringer NFL Show and related Ringer NFL analysts as one correlated family unless demonstrably independent reporting is involved."
+    },
+    {
+      "sourceFamily":"PFF",
+      "independenceKey":"pff",
+      "priority":1,
+      "status":"active",
+      "latestChecked":"2026-09-06",
+      "coverage":["grades","QB","OL","pass rush","coverage","team previews","weekly matchup analysis"],
+      "notes":"PFF grades/metrics already represented in quantitative or personnel layers receive zero incremental expert credit unless the publication adds a distinct matchup mechanism or explicit betting construction."
+    },
+    {
+      "sourceFamily":"Establish The Run",
+      "independenceKey":"establish-the-run",
+      "priority":2,
+      "status":"active",
+      "latestChecked":"2026-09-06",
+      "coverage":["projections","usage","personnel","matchup","injury impact","betting where public"],
+      "latestFinding":"Public site currently emphasizes survivor/fantasy content; no new freely accessible Week 1 game-side betting card was identified in this pass.",
+      "notes":"Use public material directly; premium material only when legitimately accessible or user-supplied. Fantasy-oriented evidence is context unless it has direct football/betting relevance."
     },
     {
       "sourceFamily":"Action Network",
       "independenceKey":"action-network",
       "priority":1,
       "status":"active",
-      "latestChecked":"2026-08-28",
+      "latestChecked":"2026-09-06",
       "coverage":["QB rankings","offensive line rankings","skill-position rankings","defense rankings","coaching rankings","schedule strength","team previews","futures","weekly betting"],
       "publicMaterialSeeded":["2026 QB Rankings — Aug. 19","2026 Offensive Line Rankings — Aug. 20","2026 Coaching Staff Rankings — Aug. 21","2026 Skill Position Rankings — Aug. 22","2026 Defense Rankings — Aug. 26","2026 schedule/SOS analysis"],
-      "plannedHarvest":["Brandon Anderson component rankings","Sean Koerner projections/bets","Evan Abrams situational research","weekly game picks"],
       "notes":"Analysts remain individually attributed, but Action Network counts as one correlated family for consensus unless evidence is demonstrably independent."
-    },
-    {
-      "sourceFamily":"Establish The Run",
-      "independenceKey":"establish-the-run",
-      "priority":2,
-      "status":"planned",
-      "latestChecked":"2026-08-28",
-      "coverage":["projections","usage","personnel","matchup","injury impact","betting where public"],
-      "notes":"Use public material directly; premium material only when legitimately accessible or user-supplied. Fantasy-oriented evidence is tagged as context unless it has direct football/betting relevance."
     },
     {
       "sourceFamily":"NFL / team beat reporting",
       "independenceKey":"primary-reporting",
       "priority":1,
       "status":"active",
-      "latestChecked":"2026-08-28",
-      "coverage":["official schedule","injuries","transactions","starter decisions","practice status","coaching statements"],
+      "latestChecked":"2026-09-06",
+      "coverage":["official schedule","injuries","transactions","starter decisions","practice status","coaching statements","matchup-specific beat reporting"],
       "notes":"Primary reporting is Game Intelligence, not expert consensus. Official/team sources take precedence for factual availability."
     }
   ]
