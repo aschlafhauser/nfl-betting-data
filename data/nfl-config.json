@@ -1,0 +1,15 @@
+{
+  "version": "1.2",
+  "season": 2026,
+  "sport": "NFL",
+  "governance": {"immutable_pre_kickoff": true,"postgame_separate": true,"pass_is_valid": true},
+  "edge_tiers": {"pass_below": 1.0,"watch_min": 1.0,"bettable_min": 1.5,"strong_min": 2.5},
+  "upset_lab": {"screen_ml": 250,"true_longshot_ml": 300,"cohorts": ["+250_to_+299","+300_plus"]},
+  "key_numbers": [3,7,6,10,14],
+  "source_family_correlation": true,
+  "expected_regular_season_games_per_week": 16,
+  "spread_convention": {"internal": "home_margin","meaning": "positive = home team favored; negative = away team favored","sportsbook_normalization": "home_margin = -home_team_sportsbook_spread"},
+  "production_gates": {"weekly_board_nonempty": true,"team_priors_required": 32,"canonical_game_ids": true,"market_source_and_timestamp": true,"official_wager_fields_required": true,"expert_and_deep_dive_canonical_join": true},
+  "freshness_hours": {"weekly_board": 24,"markets": 6,"expert_intel": 72},
+  "production_baseline": "2026-W1-v0.1"
+}
