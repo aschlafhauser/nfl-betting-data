@@ -1,0 +1,44 @@
+{
+  "season": 2026,
+  "week": 1,
+  "sport": "NFL",
+  "source_family": "FOX Sports national NFL analysis",
+  "analyst": "Henry McKenna",
+  "title": "Is Drake Maye Ready For Super Bowl Rematch? Why The 49ers Aren't Ready For The Rams",
+  "published_date": "2026-09-07",
+  "source_url": "https://www.foxsports.com/stories/nfl/drake-maye-ready-super-bowl-rematch-49ers-arent-ready-rams",
+  "status": "COMPLETE",
+  "audited_at": "2026-09-07T20:20:39Z",
+  "evidence_exhausted": {
+    "full_article_text": true,
+    "official_show_notes_or_timestamps": false,
+    "transcript_or_captions": false,
+    "official_social_or_pick_sheet": false,
+    "attributable_comments": true,
+    "note": "Written national analysis; full public article text was available and reviewed end-to-end. Podcast/transcript fields are not applicable."
+  },
+  "canonical_game_joins": [
+    {
+      "game_id": "c84dfc8c-8d90-4f80-a202-aa37d05e0c73",
+      "matchup": "San Francisco 49ers at Los Angeles Rams",
+      "records_appended": 1,
+      "mechanism": "49ers interior offensive-line vulnerability versus Rams pass rush"
+    },
+    {
+      "game_id": "be0d6413-0c1d-45c7-94c6-efe4c6ecc93e",
+      "matchup": "New Orleans Saints at Detroit Lions",
+      "records_appended": 1,
+      "mechanism": "Jared Goff pressure sensitivity plus Detroit offensive-line reshuffle versus Saints pressure personnel"
+    }
+  ],
+  "reviewed_not_ingested": [
+    {
+      "matchup": "New England Patriots at Seattle Seahawks",
+      "reason": "The Super Bowl rematch/blitz and motivational discussion did not add enough distinct handicap information beyond existing Seattle-pressure and Patriots-protection records; no wager or side opinion was stated."
+    }
+  ],
+  "dedupe_rule": "source family + canonical game ID + analyst + construction/detail",
+  "wager_inference": "none",
+  "model_effect": "qualitative expert/context only; quantitative NFL fair unchanged",
+  "reconciliation": "No unmatched NFL record. Both ingested items were joined to canonical nfl-weekly-board IDs."
+}
