@@ -1,0 +1,84 @@
+name: tmp append Australia travel intel
+on:
+  push:
+    paths:
+      - '.github/workflows/tmp-append-australia-travel-intel.yml'
+permissions:
+  contents: write
+jobs:
+  append:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Append governed NFL expert record and audit
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          from datetime import datetime, timezone
+          p = pathlib.Path('data/nfl-expert-weekly.json')
+          obj = json.loads(p.read_text())
+          rec = {
+            "game_id":"c84dfc8c-8d90-4f80-a202-aa37d05e0c73",
+            "source_family":"San Francisco Chronicle / 49ers-Rams local reporting",
+            "analyst":"Ann Killion / quoted sleep-performance specialists",
+            "source_date":"2026-09-06",
+            "summary":"The 49ers and Rams are using materially different preparation strategies for the Melbourne opener. San Francisco arrived a full week before kickoff and is actively acclimating to local time with structured sleep/recovery protocols; Kyle Shanahan said players needed several days to feel normal. Los Angeles plans to arrive Thursday, roughly one day before the Friday-morning local kickoff after a 16-plus-hour flight, intentionally avoiding full acclimation. Sleep-performance specialists interviewed by the Chronicle say the Rams may benefit from playing near their U.S. body-clock performance window, but face greater immediate travel-fatigue, dehydration, sleep-loss and freshness risk; the 49ers reduce immediate travel fatigue but must manage jet lag. This is situational matchup context only, not a side/total wager.",
+            "timestamp":"2026-09-07T18:38:13Z",
+            "independence":"team-local/independent-reporting",
+            "kind":"situational matchup mechanism",
+            "category":"international travel / circadian preparation",
+            "team":"San Francisco 49ers / Los Angeles Rams",
+            "direction":"49ers better acclimated; Rams retain body-clock-window argument but carry higher immediate travel-fatigue risk",
+            "conviction":"analysis only — no wager inferred",
+            "freshness":"current-week",
+            "incremental_information":True,
+            "model_relationship":"orthogonal-new-information",
+            "construction_detail":"Australia travel/acclimation contrast; no betting construction stated"
+          }
+          key = (rec['source_family'], rec['game_id'], rec['analyst'], rec['construction_detail'])
+          existing = {(r.get('source_family'), r.get('game_id'), r.get('analyst'), r.get('construction_detail')) for r in obj.get('records', [])}
+          if key not in existing:
+              obj.setdefault('records', []).append(rec)
+              obj['generated_at'] = '2026-09-07T18:38:13Z'
+              p.write_text(json.dumps(obj, separators=(',',':'), ensure_ascii=False))
+          audit = {
+            "season":2026,
+            "week":1,
+            "sourceFamily":"San Francisco Chronicle / 49ers-Rams local reporting",
+            "sourceDate":"2026-09-06",
+            "title":"49ers, Rams made wildly different Australia plans. Sleep scientists can’t believe their luck",
+            "analyst":"Ann Killion",
+            "status":"COMPLETE",
+            "episodeDiscovery":True,
+            "officialEpisodeShowNotesChecked":True,
+            "officialEpisodeShowNotesStatus":"Not a podcast episode; full published Chronicle article checked end-to-end.",
+            "transcriptCaptionsChecked":True,
+            "transcriptCaptionsStatus":"Not applicable to written report; full article text was publicly retrievable and exhausted.",
+            "officialSocialPickSheetChecked":True,
+            "officialSocialPickSheetStatus":"No attributable betting pick sheet or explicit side/total/prop construction associated with this report was found or required.",
+            "currentWeekMatchupsIdentified":["San Francisco 49ers at Los Angeles Rams"],
+            "relevantAnalystsChecked":["Ann Killion","Dr. Cheri D. Mah","Greg Roach","Kyle Shanahan","Sean McVay"],
+            "materialItemsExtracted":["49ers arrived a full week early and acclimated locally","Rams plan arrival roughly one day before kickoff after 16-plus-hour flight","sleep specialists identify Rams body-clock-window benefit but immediate travel-fatigue/dehydration/sleep-loss risk","49ers acclimation reduces immediate travel fatigue but still requires jet-lag management"],
+            "betConstructionsExtracted":[],
+            "scorePredictionsExtracted":[],
+            "gameIdCrossCheck":"Matched canonical nfl-weekly-board game ID c84dfc8c-8d90-4f80-a202-aa37d05e0c73. No unmatched NFL record written.",
+            "dedupeCrossCheck":"Checked source family + canonical game ID + analyst + construction/detail against existing nfl-expert-weekly records. Existing generic 49ers-local ~8,000-mile travel note did not contain the opposing acclimation strategies or sleep-science mechanism, so this record is genuinely incremental.",
+            "expertLedgerWrite":"One comprehensive situational matchup record appended to data/nfl-expert-weekly.json.",
+            "quantitativeGovernance":"Expert Intelligence remains qualitative residual context and did not overwrite the quantitative NFL fair, market state, confidence, or official wager status.",
+            "finalCompletenessAudit":"PASS"
+          }
+          ap = pathlib.Path('data/expert-episode-audit/2026-09-06-sfchronicle-49ers-rams-australia-travel.json')
+          if not ap.exists():
+              ap.write_text(json.dumps(audit, indent=2, ensure_ascii=False) + '\n')
+          PY
+      - name: Commit governed data only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/nfl-expert-weekly.json data/expert-episode-audit/2026-09-06-sfchronicle-49ers-rams-australia-travel.json
+          if git diff --cached --quiet; then
+            echo "No governed data changes"
+          else
+            git commit -m "Add 49ers-Rams Australia travel matchup intelligence"
+            git push
+          fi
