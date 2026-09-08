@@ -1,0 +1,58 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "sourceFamily": "Action Network / The Favorites",
+  "independenceKey": "action-network-favorites",
+  "sourceDate": "2026-09-08",
+  "title": "Super Bowl Rematch & NFL Down Under | NFL Week 1",
+  "status": "COMPLETE-SOURCE-LIMITED",
+  "auditedAt": "2026-09-08T18:29:39-04:00",
+  "sourceProcess": {
+    "episodePage": "Official/iHeart episode page reviewed; episode is 45 minutes and explicitly covers Patriots-Seahawks and 49ers-Rams sides, totals and props.",
+    "transcriptCaptions": "iHeart exposes an auto-generated episode transcript, but full transcript retrieval was not reliably available through the current fetch path; surfaced transcript evidence and targeted searches were exhausted.",
+    "officialShowNotesTimestamps": "Official episode description reviewed.",
+    "officialSocialPickEvidence": "Action Network matchup/pick pages were cross-checked for attributable analyst constructions and prices.",
+    "correlationRule": "Kendra Middleton, Brandon Kravitz and Evan Abrams are treated as one correlated Action Network/The Favorites family, not independent confirmations."
+  },
+  "records": [
+    {
+      "gameId": "2026-W1-NE-SEA",
+      "analyst": "Kendra Middleton",
+      "construction": "Seattle Seahawks -3.5 (-110)",
+      "stake": "0.5u",
+      "detail": "Explicit Action Network pick associated with the current-week Patriots-Seahawks matchup; no additional conviction or mechanism inferred beyond attributable evidence.",
+      "modelRelationship": "qualitative-residual-only"
+    },
+    {
+      "gameId": "2026-W1-NE-SEA",
+      "analyst": "Brandon Kravitz",
+      "construction": "Seattle Seahawks -3.5 (-110)",
+      "stake": "1.1u",
+      "detail": "Kravitz explicitly cites the historical angle of backing the reigning Super Bowl winner/fading the loser in the following opener and notes concern that New England may not have Christian Gonzalez resolved. No unsupported extension inferred.",
+      "modelRelationship": "qualitative-residual-only"
+    },
+    {
+      "gameId": "2026-W1-SF-LAR",
+      "analyst": "Brandon Kravitz",
+      "construction": "San Francisco 49ers +4.5 (-110)",
+      "stake": "1.1u",
+      "detail": "Explicit Action Network NFL POD construction recovered from the current 49ers-Rams matchup page; no unsupported price conversion or conviction inference.",
+      "modelRelationship": "qualitative-residual-only"
+    },
+    {
+      "gameId": "2026-W1-SF-LAR",
+      "analyst": "Brandon Kravitz",
+      "construction": "Davante Adams anytime touchdown +130",
+      "stake": "0.25u",
+      "detail": "Explicit current-week player-prop construction recovered from the Action Network matchup page; no additional target-share or touchdown-rate mechanism inferred without full transcript support.",
+      "modelRelationship": "qualitative-residual-only"
+    }
+  ],
+  "canonicalJoin": "PASS: all intended rows matched governed Week 1 IDs 2026-W1-NE-SEA or 2026-W1-SF-LAR.",
+  "dedupeCrossCheck": "PASS: repository search found no existing Brandon Kravitz/Kendra Middleton or Action Network/The Favorites record with these gameId + analyst + construction combinations.",
+  "ledgerAction": "FAILED-SAFE: exact intended structured records are preserved here, but data/nfl-expert-weekly.json remains a large one-line ledger exposed through a truncating read path while the available write operation requires complete-file replacement. Historical records were not risked.",
+  "quantitativeFairAction": "none",
+  "privateAppAction": "none",
+  "notification": "material-new-explicit-current-week-constructions plus unresolved primary-ledger ingestion failure"
+}
