@@ -1,0 +1,36 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "sourceFamily": "Tampa Bay Buccaneers official / Tampa Bay local",
+  "independenceKey": "tb-local-buccaneers",
+  "sourceDate": "2026-09-08",
+  "title": "YAC Concerns and a Run-Game Rebound | By the Numbers, Week One",
+  "status": "COMPLETE",
+  "auditedAt": "2026-09-08T18:29:39-04:00",
+  "currentWeekMatchup": "Tampa Bay Buccaneers at Cincinnati Bengals",
+  "records": [
+    {
+      "gameId": "2026-W1-TB-CIN",
+      "analyst": "Scott Smith / Buccaneers official",
+      "construction": "matchup mechanism",
+      "detail": "Tampa Bay blitzed on 35.1% of defensive snaps in 2025, third-highest in the NFL, while Joe Burrow posted a 115.8 passer rating when blitzed. Bowles wants more four-man pressure in 2026, making pressure-without-extra-rushers a key Week 1 mechanism rather than assuming the prior blitz-heavy approach is favorable against Burrow.",
+      "modelRelationship": "qualitative-residual-only"
+    },
+    {
+      "gameId": "2026-W1-TB-CIN",
+      "analyst": "Scott Smith / Buccaneers official",
+      "construction": "personnel/coverage mechanism",
+      "detail": "Tampa Bay may open nickel with three rookies on the field, including a new slot-corner transition, while Ja'Marr Chase generated 46.1% of his 2025 receiving yards after the catch. This raises a specific tackling/communication burden for a young defensive grouping against Cincinnati's quick-game/YAC profile.",
+      "modelRelationship": "qualitative-residual-only"
+    }
+  ],
+  "canonicalJoin": "PASS: both rows matched governed Week 1 ID 2026-W1-TB-CIN.",
+  "dedupeCrossCheck": "PASS: existing TB-CIN injury/QB records were checked; no prior Parrish/rookie-secondary or Burrow-vs-blitz construction was found in repository search.",
+  "wagers": [],
+  "scorePredictions": [],
+  "unsupportedInference": "none",
+  "ledgerAction": "FAILED-SAFE: exact intended qualitative rows are preserved here because safe append to data/nfl-expert-weekly.json remains unavailable without reconstructing the truncated one-line historical ledger.",
+  "quantitativeFairAction": "none",
+  "privateAppAction": "none"
+}
