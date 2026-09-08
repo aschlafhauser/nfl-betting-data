@@ -1,0 +1,37 @@
+{
+  "sourceFamily": "Chiefs official/local reporting",
+  "sourceDate": "2026-09-08",
+  "status": "COMPLETE",
+  "auditedAt": "2026-09-08T16:55:27-04:00",
+  "episodeOrSource": "Andy Reid Week 1 availability comments / Chiefs-Broncos",
+  "checkedEvidence": [
+    "Andy Reid attributable comments reported by NFL.com, Reuters/Field Level Media, CBS Sports and Kansas City local coverage",
+    "same-day local Chiefs reporting on Josh Simmons and replacement plan",
+    "existing NFL runtime searched for Mahomes/Simmons Week 1 status to dedupe prior scenario-level evidence"
+  ],
+  "matchupsIdentified": ["Denver Broncos at Kansas City Chiefs"],
+  "canonicalGameIds": ["2026-W1-DEN-KC"],
+  "analystsChecked": ["Andy Reid"],
+  "materialAnalysisReviewed": "Reid said Patrick Mahomes is most likely to start Week 1 barring an unexpected setback, materially resolving the prior health-scenario toward expected-active. Reid also said there is a good chance starting LT Josh Simmons will not play because of his back injury. If Simmons cannot go, rookie Kahlil Benson is expected to fill the left-tackle role; Benson played primarily right tackle/guard in college. This creates a distinct pass-protection risk against Denver even as Mahomes availability improves.",
+  "constructionsExtracted": "No side/ATS/ML/total/1H/prop wager or score prediction was stated; none inferred.",
+  "correlationTreatment": "All same-day reports derive from Reid's comments and are one correlated availability source, not independent confirmations.",
+  "dedupeKey": "chiefs-local|2026-W1-DEN-KC|Andy Reid|Mahomes expected start + Josh Simmons likely out / Kahlil Benson LT",
+  "incrementalInformation": 1,
+  "materiality": "HIGH",
+  "modelRelationship": "qualitative availability/context only; does not overwrite quantitative fair",
+  "intendedLedgerRecord": {
+    "sourceFamily": "chiefs-local",
+    "sourceDate": "2026-09-08",
+    "gameId": "2026-W1-DEN-KC",
+    "analyst": "Andy Reid",
+    "type": "QB/OL availability",
+    "detail": "Mahomes is most likely to start Week 1 barring a setback, while LT Josh Simmons is likely to miss the opener; rookie Kahlil Benson is the expected replacement option. Availability shifts toward Mahomes active but introduces/strengthens blindside protection risk versus Denver.",
+    "construction": null,
+    "confidence": "attributable coach update",
+    "correlatedFamily": "chiefs-local",
+    "status": "COMPLETE"
+  },
+  "ledgerAction": "AUDIT-ONLY-PENDING-SAFE-APPEND",
+  "ingestionFailure": "Primary data/nfl-expert-weekly.json remains a large one-line ledger exposed through a truncating read path while the available write action requires full-file replacement. Exact intended row preserved here rather than risk historical record loss.",
+  "notification": "yes — materially resolves Mahomes availability while adding a new likely LT absence/protection risk"
+}
