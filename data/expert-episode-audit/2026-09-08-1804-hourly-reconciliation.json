@@ -1,0 +1,40 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "auditType": "hourly-current-week-reconciliation",
+  "auditedAt": "2026-09-08T18:04:04-04:00",
+  "status": "COMPLETE-SOURCE-LIMITED",
+  "monitoredFamiliesChecked": [
+    "Mina Kimes / ESPN NFL analysis",
+    "The Ringer NFL family",
+    "PFF",
+    "Establish The Run",
+    "Sharp Football Analysis",
+    "high-quality national/local matchup reporting"
+  ],
+  "freshDiscovery": [
+    {
+      "sourceFamily": "ESPN NFL Live / Mina Kimes family",
+      "sourceDate": "2026-09-08",
+      "title": "Previewing Tua's first start for Falcons + Could the Cowboys make a trade?",
+      "currentWeekMatchup": "Atlanta Falcons at Pittsburgh Steelers",
+      "reviewedEvidence": "Official/indexed segment description and timestamps identify Tua as Falcons QB1 and a Steelers-defense discussion. Fresh web/source reconciliation found no discrete new ATS/ML/total/prop construction, score prediction, upset warning, or orthogonal matchup mechanism that is not already represented by the governed Tua Week 1 starter-resolution record.",
+      "episodeCompleteness": "COMPLETE-SOURCE-LIMITED",
+      "dedupeResult": "DEDUPED / NO APPEND",
+      "correlation": "ESPN/Mina-family evidence; not an independent confirmation"
+    }
+  ],
+  "sourceProcess": {
+    "transcriptCaptions": "Reasonably available/indexed transcript/caption evidence checked; no additional supported construction recovered.",
+    "officialNotesTimestamps": "Checked surfaced official/indexed notes and timestamps.",
+    "officialSocialPickEvidence": "No new attributable explicit pick or price recovered; none inferred.",
+    "correlationRule": "Same-show/network analysts remain correlated and were not counted as independent confirmations."
+  },
+  "canonicalJoin": "No new NFL record created, so no unmatched record exists from this pass.",
+  "ledgerAction": "NO APPEND to data/nfl-expert-weekly.json; newly surfaced ESPN item is duplicative/correlated and did not clear the governed materiality threshold.",
+  "quantitativeFairAction": "none",
+  "dedupe": "PASS",
+  "reconciliation": "PASS for newly discovered material in this pass. Previously documented primary-ledger persistence issues remain governed by their existing audit records and were not duplicated here.",
+  "privateAppAction": "none"
+}
