@@ -1,0 +1,46 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "sourceFamily": "Pats Pulpit / New England local",
+  "title": "Patriots vs. Seahawks Monday injury report: Ben Brown ruled out ahead of opener",
+  "analyst": "Oliver Thomas",
+  "sourceDate": "2026-09-07",
+  "sourceUrl": "https://www.patspulpit.com/new-england-patriots-news/136361/patriots-vs-seahawks-monday-injury-report-ben-brown-ruled-out-week-1",
+  "status": "COMPLETE",
+  "sourceCompleteness": {
+    "fullPublishedTextReviewed": true,
+    "officialPracticeStatusCaptured": true,
+    "transcriptOrCaptionsApplicable": false,
+    "officialSocialOrPickSheetApplicable": false
+  },
+  "canonicalGameId": "2bf1ca8d-11d6-4c00-b2e4-28971764e444",
+  "game": "New England Patriots at Seattle Seahawks",
+  "materialFindings": [
+    "Center Ben Brown did not travel and is officially OUT for the opener after a second straight DNP, converting a prior availability watch into a confirmed interior-line absence.",
+    "TreVeyon Henderson missed practice again with the ankle injury and has now been sidelined for roughly two weeks, materially increasing the probability that Rhamondre Stevenson carries the lead-back role.",
+    "Christian Barmore returned to full participation after being a DNP on the first report, materially improving New England's defensive-line availability outlook.",
+    "Seattle safety Nick Emmanwori remained limited and Ty Okada remained out, so the Seahawks' safety-depth concern persists rather than resolving.",
+    "No side, moneyline, total, prop, score prediction, or conviction statement was published or inferred."
+  ],
+  "dedupeCrossCheck": "Compared against the existing 2026-09-06 Pats Pulpit injury-report ledger record. This item is incremental because Brown moved from DNP to officially OUT, Barmore moved from DNP to full participation, and Henderson logged a second consecutive DNP.",
+  "intendedExpertLedgerRecord": {
+    "game_id": "2bf1ca8d-11d6-4c00-b2e4-28971764e444",
+    "source_family": "Pats Pulpit / New England local",
+    "analyst": "Oliver Thomas",
+    "source_date": "2026-09-07",
+    "summary": "New England's Monday injury report materially resolves three prior Week 1 watches: C Ben Brown did not travel and is officially out, RB TreVeyon Henderson missed a second straight practice and remains in jeopardy after roughly two weeks sidelined by an ankle injury, while DT Christian Barmore returned to full participation after Sunday's DNP. Seattle S Nick Emmanwori remains limited and S Ty Okada remains out, leaving Seattle's safety-depth concern active. No wager is inferred.",
+    "independence": "same-family/team-local-correlated",
+    "kind": "personnel/availability",
+    "category": "injury report resolution / OL-RB-DL-secondary",
+    "team": "New England Patriots / Seattle Seahawks",
+    "direction": "negative New England center/RB availability; positive Barmore resolution; Seattle safety-depth concern persists",
+    "conviction": "reported availability only — no wager inferred",
+    "freshness": "current-week",
+    "incremental_information": true,
+    "model_relationship": "orthogonal-new-information",
+    "construction_detail": "Monday Week 1 injury report; no betting construction stated"
+  },
+  "expertLedgerWrite": "UNRESOLVED INGESTION FAILURE: exact append preserved here; the currently exposed connector still requires complete-file replacement for data/nfl-expert-weekly.json and the large one-line ledger cannot be safely reconstructed byte-for-byte in this run without risking historical loss.",
+  "reconciliation": "Canonical join PASS; dedupe PASS; completeness COMPLETE; ledger persistence unresolved. Quantitative NFL fair unchanged."
+}
