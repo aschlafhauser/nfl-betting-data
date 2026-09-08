@@ -1,0 +1,27 @@
+{
+  "season": 2026,
+  "week": 1,
+  "timestamp": "2026-09-08T08:40:21-04:00",
+  "purpose": "Complete 16-game volatile-market overlay for Tuesday Deep Dive maintenance. Canonical model and historical fields remain in nfl-weekly-board.json; this file refreshes current spread/total state without overwriting historical opener/pre-kickoff records.",
+  "source": "BetMGM Week 1 board cross-checked against Fanatics/FanDuel/DraftKings on priority games; exact sportsbook/juice required before any wager.",
+  "games": [
+    {"gameId":"2026-W1-NE-SEA","spread":"SEA -3.5","total":44.5,"priorityNote":"earliest kickoff; key 3 already crossed"},
+    {"gameId":"2026-W1-SF-LAR","spread":"LAR -3.5","total":48.5,"priorityNote":"TNF Australia; Bosa confirmed, McCaffrey returned"},
+    {"gameId":"2026-W1-TB-CIN","spread":"CIN -3.5","total":50.5,"priorityNote":"structural audit; current receiver participation required"},
+    {"gameId":"2026-W1-ATL-PIT","spread":"PIT -3.5","total":42.0,"priorityNote":"Tua-specific reprice; key 3 protection"},
+    {"gameId":"2026-W1-BUF-HOU","spread":"HOU -1","total":44.5,"priorityNote":"material favorite flip from prior BUF -1.5"},
+    {"gameId":"2026-W1-BAL-IND","spread":"BAL -3.5","total":47.5,"priorityNote":"large raw disagreement remains audit only"},
+    {"gameId":"2026-W1-CLE-JAX","spread":"JAX -8.5","total":40.5,"priorityNote":"moved through 7; low-confidence favorite gap"},
+    {"gameId":"2026-W1-NYJ-TEN","spread":"TEN -1.5","total":39.5,"priorityNote":"low-total/key-number research"},
+    {"gameId":"2026-W1-NO-DET","spread":"DET -7","total":50.0,"priorityNote":"protect 7; Saints injury burden worsened"},
+    {"gameId":"2026-W1-CHI-CAR","spread":"CHI -3","total":47.0,"priorityNote":"sits exactly on key 3"},
+    {"gameId":"2026-W1-MIA-LV","spread":"LV -3.5","total":40.5,"priorityNote":"stale-baseline block remains"},
+    {"gameId":"2026-W1-ARI-LAC","spread":"LAC -10","total":47.5,"priorityNote":"Upset Lab +300 cohort; raw model disagreement audit only"},
+    {"gameId":"2026-W1-WAS-PHI","spread":"PHI -4.5","total":44.5,"priorityNote":"current personnel overlay required Wednesday"},
+    {"gameId":"2026-W1-GB-MIN","spread":"MIN -1.5","total":46.0,"priorityNote":"prior favorite flip remains embedded"},
+    {"gameId":"2026-W1-DAL-NYG","spread":"DAL -3","total":48.0,"priorityNote":"moved from -2.5 onto key 3; Nabers checkpoint"},
+    {"gameId":"2026-W1-DEN-KC","spread":"KC -2.5","total":43.5,"priorityNote":"below key 3; Mahomes/current personnel state mandatory"}
+  ],
+  "officialBetCount": 0,
+  "governance": "This overlay is not an execution ledger. No line here is treated as a bet unless separately persisted with exact book, juice, timestamp, units, production fair and executable edge."
+}
