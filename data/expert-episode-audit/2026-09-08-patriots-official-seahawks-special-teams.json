@@ -1,0 +1,45 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "sourceFamily": "New England Patriots official / team-local analysis",
+  "sourceType": "matchup-specific official team analysis",
+  "source": {
+    "title": "3 to Watch: Patriots Kick Off 2026 NFL Season in Seattle",
+    "analyst": "Mike Dussault",
+    "published": "2026-09-07",
+    "url": "https://www.patriots.com/news/3-to-watch-patriots-kick-off-2026-nfl-season-in-seattle"
+  },
+  "episodeCompleteness": "COMPLETE",
+  "evidenceExhausted": {
+    "fullPublishedText": true,
+    "officialQuotesAndPersonnelContext": true,
+    "sideATSMLTotalPropChecked": true,
+    "scorePredictionChecked": true,
+    "transcriptCaptionsApplicable": false,
+    "officialSocialPickSheetApplicable": false
+  },
+  "canonicalGameId": "2bf1ca8d-11d6-4c00-b2e4-28971764e444",
+  "game": "New England Patriots at Seattle Seahawks",
+  "materialIncrementalFinding": "New England enters Week 1 with unusually high special-teams turnover against an explosive Seattle returner. Brenden Schooler is unavailable, the Patriots may have five or six new kickoff-team players and as many as seven new punt-team players versus the Super Bowl units, while Rashid Shaheed remains a dangerous punt and kickoff return threat. The resulting field-position/containment continuity risk is a genuinely new matchup residual; it is not treated as an inferred Seattle wager.",
+  "dedupe": {
+    "checkedAgainstExistingPatriotsSeahawksRecords": true,
+    "overlappingRunGameAndSeattlePressureMechanismsNotRewritten": true,
+    "sameOrLocalFamilyCorrelationPreserved": true
+  },
+  "intendedExpertWeeklyRecord": {
+    "season": 2026,
+    "week": 1,
+    "game_id": "2bf1ca8d-11d6-4c00-b2e4-28971764e444",
+    "source_family": "New England Patriots official / team-local analysis",
+    "source": "Mike Dussault — Patriots.com",
+    "source_date": "2026-09-07",
+    "construction": "matchup mechanism",
+    "detail": "Patriots special-teams continuity risk vs Seattle return game: Brenden Schooler unavailable; roughly 5-6 new kickoff-team players and up to 7 new punt-team players relative to the Super Bowl, while Rashid Shaheed remains an explosive punt/kick return threat. Treat as field-position/containment residual only; no wager inferred.",
+    "correlated": true,
+    "quantitative_fair_override": false
+  },
+  "ledgerWrite": "UNRESOLVED INGESTION FAILURE: the available GitHub contents write action requires complete-file replacement for data/nfl-expert-weekly.json. The ledger is large enough that its retrievable representation is truncated, so a safe append preserving all prior rows cannot be constructed through this connector. No destructive replacement attempted; the exact intended row is preserved above for reconciliation.",
+  "quantitativeGovernance": "No NFL fair spread/total, activation threshold, confidence state, or official wager was changed.",
+  "finalCompletenessAudit": "PASSED for source extraction and game-ID join; FAILED only for primary-ledger persistence, which remains explicitly unresolved for weekly reconciliation."
+}
