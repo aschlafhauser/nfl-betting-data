@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-09",
+  "auditedAt": "2026-09-09T00:30:01-04:00",
+  "scope": "NFL Week 1 current-week expert-source reconciliation",
+  "status": "COMPLETE-SOURCE-LIMITED",
+  "monitoredFamiliesChecked": [
+    "Mina Kimes / ESPN NFL analysis",
+    "The Ringer NFL Show / Ringer family",
+    "PFF",
+    "Establish The Run",
+    "Sharp Football Analysis",
+    "other high-quality national/local matchup sources"
+  ],
+  "newMaterialRecords": [],
+  "discoveryNotes": "Fresh discovery after the prior September 8 evening reconciliation surfaced no genuinely incremental Week 1 monitored-family construction requiring a new governed expert row. The Ringer's September 9 Press Box NFL preview is primarily media/season discussion rather than matchup handicapping. The September 8 Bill Simmons/Nick Wright item is primarily season-level Josh Allen/Kansas City-ceiling discussion. A newly indexed Turf Show Times league-wide Week 1 picks article by Steven Ridings includes explicit score predictions, including Seattle 30-10, Rams 27-20, Houston 20-17 OT and Denver 24-13, but the supporting analysis is broad/generic rather than new beat-sourced or mechanism-rich information; it was reviewed and not promoted into the governed expert ledger.",
+  "episodeCompletenessProcess": "Reasonably available transcript/caption evidence, official show pages/timestamps, attributable analyst comments and explicit pick evidence were checked. Same-family analysts remain correlated and no unsupported wager/price was inferred.",
+  "canonicalJoin": "No new expert row was created in this pass, so no unmatched game-ID condition arose.",
+  "dedupe": "PASS",
+  "ledgerAction": "NO NEW APPEND in this pass. UNRESOLVED INGESTION/RECONCILIATION FAILURE remains: data/nfl-expert-weekly.json is still the September 7 generated snapshot and does not contain multiple exact Tuesday governed-audit rows preserved outside the primary ledger. A second safe-recovery attempt confirmed that the connected read surfaces the file as one oversized/truncated content line; full-file replacement therefore remains unsafe without a lossless whole-file retrieval path.",
+  "quantitativeFairAction": "none; Expert Intelligence remains qualitative/residual and did not overwrite any production fair.",
+  "reconciliation": "FAIL-PARTIAL solely for primary-ledger synchronization backlog; all newly discovered content in this pass is explained.",
+  "privateAppAction": "none",
+  "notification": "unresolved ingestion/reconciliation failure only"
+}
