@@ -1,0 +1,38 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "sourceFamily": "49ers local reporting / NBC Sports Bay Area",
+  "independenceKey": "49ers-kittle-achilles-week1-role",
+  "sourceDate": "2026-09-08",
+  "auditedAt": "2026-09-09T07:15:40-04:00",
+  "status": "COMPLETE-SOURCE-LIMITED",
+  "canonicalGameId": "c84dfc8c-8d90-4f80-a202-aa37d05e0c73",
+  "game": "San Francisco 49ers at Los Angeles Rams",
+  "analystAttribution": "Kyle Shanahan via Matt Maiocco / NBC Sports Bay Area; CBS/Rotowire indexing used as accessible corroborating text",
+  "sourcesExhausted": [
+    "Accessible indexed CBS/Rotowire report carrying Matt Maiocco attribution and Shanahan quote/context",
+    "CBS Sports HQ indexed status clip for Kittle/Bosa",
+    "Fresh search for direct NBC Sports Bay Area/49ers official item; no additional accessible article text surfaced in this interval"
+  ],
+  "records": [
+    {
+      "game_id": "c84dfc8c-8d90-4f80-a202-aa37d05e0c73",
+      "source_family": "49ers local reporting / NBC Sports Bay Area",
+      "analyst": "Kyle Shanahan / Matt Maiocco",
+      "construction": "availability-role-context",
+      "detail": "George Kittle is expected to be available for Week 1 against the Rams after returning from an Achilles tear, but Shanahan said San Francisco may need to monitor/manage his workload. Kittle was listed limited Tuesday. This reduces confidence in treating Kittle as a normal full-snap offensive input and increases expected TE2/Jake Tonges involvement relative to a fully healthy baseline.",
+      "direction": "49ers offensive availability positive versus absence risk, but role/usage negative versus full-strength baseline",
+      "confidence": "medium-high",
+      "bettingConstruction": null,
+      "price": null,
+      "scorePrediction": null,
+      "inferredWager": false
+    }
+  ],
+  "dedupe": "PASS: no existing governed record found with Shanahan's explicit Week 1 workload-management warning for Kittle. Prior records only established recovery/availability trajectory.",
+  "sameFamilyTreatment": "All 49ers/local derivative reporting of the same Shanahan availability event is treated as one correlated source event.",
+  "quantitativeFairAction": "none; qualitative Expert Intelligence only and does not overwrite the production fair.",
+  "ledgerAction": "INTENDED APPEND to data/nfl-expert-weekly.json after canonical join and dedupe. Primary-ledger synchronization remains blocked by the pre-existing lossless-append limitation; exact structured record is preserved here pending safe ledger repair.",
+  "notification": "YES: late Week 1 role evidence materially changes confidence in assuming a normal Kittle workload."
+}
