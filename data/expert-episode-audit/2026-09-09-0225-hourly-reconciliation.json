@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-09",
+  "auditedAt": "2026-09-09T02:25:35-04:00",
+  "scope": "NFL Week 1 current-week expert-source reconciliation",
+  "status": "COMPLETE-SOURCE-LIMITED",
+  "monitoredFamiliesChecked": [
+    "Mina Kimes / ESPN NFL analysis",
+    "The Ringer NFL Show / Ringer family",
+    "PFF",
+    "Establish The Run",
+    "Sharp Football Analysis",
+    "other high-quality national/local matchup sources"
+  ],
+  "newMaterialRecords": [
+    "talkSPORT US / Kody Malstrom — Patriots-Seahawks: Drake Maye over 0.5 interceptions (-120 at BetMGM), Drake Maye under 20.5 completions, Jadarian Price under 52.5 rushing yards, Sam Darnold over 29.5 pass attempts, AJ Barner anytime TD. Exact non-disclosed prices were not inferred."
+  ],
+  "discoveryNotes": "Fresh September 9 discovery surfaced Kody Malstrom's matchup-specific talkSPORT Patriots-Seahawks prop analysis. The exact constructions are new to the governed audit set. The supporting Seattle pressure and lower-scoring mechanisms overlap existing context and therefore are not counted as independent confirmation. Fresh searches of Mina Kimes/ESPN, Ringer NFL, PFF, Establish The Run and Sharp did not surface another genuinely incremental newly published construction in this interval; ETR's public Week 1 matchups landing page showed its Wednesday Patriots-Seahawks update but the matchup column itself remains subscriber-limited.",
+  "episodeCompletenessProcess": "Reasonably available indexed transcript/page evidence, official descriptions/timestamps, attributable analyst comments and explicit pick evidence were checked. Same-family analysts remain correlated and no unsupported wager/price was inferred.",
+  "canonicalJoin": "PASS for all new intended records: New England Patriots at Seattle Seahawks = 2bf1ca8d-11d6-4c00-b2e4-28971764e444.",
+  "dedupe": "PASS: exact analyst/player-prop constructions were not found in the governed runtime; overlapping mechanisms were treated only as context.",
+  "ledgerAction": "INTENDED NEW APPEND blocked by existing primary-ledger synchronization failure. data/nfl-expert-weekly.json remains a large one-line snapshot exposed through a truncating connected read while the available write path requires complete-file replacement. The exact new records are preserved in data/expert-episode-audit/2026-09-09-talksport-patriots-seahawks-props.json; unsafe reconstruction was not attempted.",
+  "quantitativeFairAction": "none; Expert Intelligence remains qualitative/residual and did not overwrite any production fair.",
+  "reconciliation": "FAIL-PARTIAL solely for primary-ledger synchronization backlog; all newly discovered content in this pass is explained and canonical-joined.",
+  "privateAppAction": "none",
+  "notification": "new material matchup constructions plus unresolved ingestion/reconciliation failure"
+}
