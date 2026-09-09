@@ -1,0 +1,35 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "auditedAt": "2026-09-09T08:25:52-04:00",
+  "scope": "NFL Week 1 current-week expert-source reconciliation",
+  "status": "COMPLETE-SOURCE-LIMITED",
+  "monitoredFamiliesChecked": [
+    "Mina Kimes / ESPN NFL analysis",
+    "The Ringer NFL Show / Ringer family",
+    "PFF",
+    "Establish The Run",
+    "Sharp Football Analysis",
+    "other high-quality national/local matchup sources"
+  ],
+  "newMaterialRecords": [
+    {
+      "game_id": "810f2cd8-189f-49ce-89fa-f4d4172f7f0d",
+      "source_family": "Acme Packing Company / Packers local",
+      "analyst": "Acme Packing Company staff analysis",
+      "construction": "availability-OL-pass-rush-context",
+      "detail": "Bako-Bewele's Week 1 status remains uncertain; the incremental information is that Anthony Belton is the expected replacement and the analysis flags his pressure leakage/agile-edge issues, creating a plausible need for more conservative protection/play-calling against Minnesota if Bako-Bewele cannot handle a normal workload.",
+      "audit_file": "data/expert-episode-audit/2026-09-09-0825-packers-bakobewele-status-mechanism.json"
+    }
+  ],
+  "discoveryNotes": "Fresh monitored-family discovery surfaced no newly accessible Mina Kimes/ESPN, Ringer, Establish The Run or Sharp game-level construction clearing the incremental threshold. PFF published a Week 1 fantasy start/sit item recommending sitting Brock Purdy versus the Rams, but the publicly indexed evidence did not expose enough matchup mechanism to promote it into governed Expert Intelligence without inference. Packers-local analysis did add a materially more specific consequence of Zach Bako-Bewele's unresolved Week 1 status: Anthony Belton's replacement-level pass-protection risk and the resulting possibility of conservative protection/play-calling against Minnesota.",
+  "episodeCompletenessProcess": "Reasonably available indexed transcript/page evidence, official descriptions/timestamps, attributable analyst comments and explicit pick evidence were checked. Same-family analysts remain correlated and no unsupported wager, price or conviction was inferred.",
+  "canonicalJoin": "PASS for the new Packers-Vikings record: 810f2cd8-189f-49ce-89fa-f4d4172f7f0d.",
+  "dedupe": "PASS: prior records already captured Bako-Bewele/Banks injury uncertainty, Minnesota blitz pressure and the Love-vs-Cover-0 counter-signal. Only the newly specific Anthony Belton replacement-risk/protection consequence was retained.",
+  "ledgerAction": "Primary-ledger synchronization backlog remains unresolved. The exact intended Packers-Vikings row is preserved in governed audit, but data/nfl-expert-weekly.json was not destructively reconstructed because the available read response for the oversized one-line ledger is truncated while the contents write replaces the full file.",
+  "quantitativeFairAction": "none; Expert Intelligence remains qualitative/residual and did not overwrite any production fair.",
+  "reconciliation": "FAIL-PARTIAL solely for the pre-existing primary-ledger synchronization backlog; all content discovered in this interval is otherwise explained.",
+  "privateAppAction": "none",
+  "notification": "YES: new material conditional Packers pass-protection mechanism plus unresolved primary-ledger synchronization failure."
+}
