@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-09",
+  "auditedAt": "2026-09-09T09:37:38-04:00",
+  "scope": "NFL Week 1 current-week expert-source reconciliation",
+  "status": "COMPLETE-SOURCE-LIMITED",
+  "monitoredFamiliesChecked": [
+    "Mina Kimes / ESPN NFL analysis",
+    "The Ringer NFL Show / Ringer family",
+    "PFF",
+    "Establish The Run",
+    "Sharp Football Analysis",
+    "other high-quality national/local matchup sources"
+  ],
+  "newMaterialRecords": [
+    {
+      "sourceFamily": "PFF",
+      "gameId": "2bf1ca8d-11d6-4c00-b2e4-28971764e444",
+      "game": "New England Patriots at Seattle Seahawks",
+      "auditFile": "data/expert-episode-audit/2026-09-09-pff-patriots-seahawks-rematch.json",
+      "materiality": "new pressure/QB split mechanism plus Seattle rushing-advantage carryover qualifier"
+    }
+  ],
+  "discoveryNotes": "Fresh discovery surfaced PFF's September 9 Seahawks-Patriots Super Bowl LX rematch analysis. The full public article was exhausted. No newer accessible Mina Kimes, Ringer NFL Show, Establish The Run or Sharp game-level item clearing the incremental threshold was found in this interval.",
+  "episodeCompletenessProcess": "Reasonably available transcript/caption evidence, official show/article pages, attributable analyst comments and explicit pick evidence were checked. Same-family analysts remain correlated; no unsupported wager, price or conviction was inferred.",
+  "canonicalJoin": "PASS: the new PFF record is joined to canonical Patriots-Seahawks game ID 2bf1ca8d-11d6-4c00-b2e4-28971764e444. No unmatched record exists.",
+  "dedupe": "PASS",
+  "ledgerAction": "NEW MATERIAL PRESERVED IN GOVERNED AUDIT, but primary append remains blocked by the pre-existing synchronization failure: data/nfl-expert-weekly.json is exposed through the connected path as an oversized one-line object whose retrieval is truncated, while replacement requires a verified complete file body. Destructive reconstruction was not attempted.",
+  "quantitativeFairAction": "none; Expert Intelligence remains qualitative/residual and did not overwrite any production fair.",
+  "reconciliation": "FAIL-PARTIAL solely for primary-ledger synchronization backlog; all newly discovered content in this pass is explained and canonical-joined.",
+  "privateAppAction": "none",
+  "notification": "YES: genuinely new material PFF matchup information plus unresolved primary-ledger synchronization failure"
+}
