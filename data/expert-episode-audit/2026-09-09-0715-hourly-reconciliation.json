@@ -1,0 +1,35 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "auditedAt": "2026-09-09T07:15:40-04:00",
+  "scope": "NFL Week 1 current-week expert-source reconciliation",
+  "status": "COMPLETE-SOURCE-LIMITED",
+  "monitoredFamiliesChecked": [
+    "Mina Kimes / ESPN NFL analysis",
+    "The Ringer NFL Show / Ringer family",
+    "PFF",
+    "Establish The Run",
+    "Sharp Football Analysis",
+    "other high-quality national/local matchup sources"
+  ],
+  "newMaterialRecords": [
+    {
+      "game_id": "c84dfc8c-8d90-4f80-a202-aa37d05e0c73",
+      "source_family": "49ers local reporting / NBC Sports Bay Area",
+      "analyst": "Kyle Shanahan / Matt Maiocco",
+      "construction": "availability-role-context",
+      "detail": "George Kittle is expected to be available versus the Rams, but Shanahan warned that his Week 1 workload may need to be managed following the Achilles recovery. Treat as a usage downgrade versus a normal full-snap Kittle baseline, not as an inferred wager.",
+      "audit_file": "data/expert-episode-audit/2026-09-09-0715-49ers-kittle-managed-role.json"
+    }
+  ],
+  "discoveryNotes": "Fresh monitored-source discovery did not surface a newly published accessible Mina Kimes/ESPN, Ringer, PFF, ETR or Sharp game-level construction clearing the incremental-information threshold. Establish The Run's public Week 1 matchup hub remains subscriber-limited. Fresh local/national status reporting did surface a materially useful late role-management warning for George Kittle, which was deduped from prior general availability records and governed separately.",
+  "episodeCompletenessProcess": "Reasonably available indexed transcript/page evidence, official descriptions/timestamps, attributable analyst comments and explicit pick evidence were checked. Same-family analysts remain correlated and no unsupported wager, price or conviction was inferred.",
+  "canonicalJoin": "PASS for the new Kittle role record: c84dfc8c-8d90-4f80-a202-aa37d05e0c73.",
+  "dedupe": "PASS: new Kittle workload-management evidence is incremental to prior recovery/availability records and distinct from the Alfred Collins defensive-line injury event.",
+  "ledgerAction": "Primary-ledger synchronization backlog remains unresolved. The exact Kittle row is preserved in governed audit, but data/nfl-expert-weekly.json was not destructively reconstructed because the available read path exposes the large one-line ledger through truncation while the contents write replaces the full file.",
+  "quantitativeFairAction": "none; Expert Intelligence remains qualitative/residual and did not overwrite any production fair.",
+  "reconciliation": "FAIL-PARTIAL solely for the pre-existing primary-ledger synchronization backlog; all content discovered in this interval is otherwise explained.",
+  "privateAppAction": "none",
+  "notification": "YES: new material Kittle role evidence plus unresolved primary-ledger synchronization failure."
+}
