@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-09",
+  "auditedAt": "2026-09-09T05:27:53-04:00",
+  "scope": "NFL Week 1 current-week expert-source reconciliation",
+  "status": "FAIL-PARTIAL",
+  "monitoredFamiliesChecked": [
+    "Mina Kimes / ESPN NFL analysis",
+    "The Ringer NFL Show / Ringer family",
+    "PFF",
+    "Establish The Run",
+    "Sharp Football Analysis",
+    "other high-quality national/local matchup sources"
+  ],
+  "newMaterialRecords": [
+    "2026-09-09-0527-cardinals-love-role.json"
+  ],
+  "discoveryNotes": "No newly published accessible Mina Kimes/ESPN, Ringer NFL, PFF, Establish The Run or Sharp game-level item cleared the incremental threshold in this interval. Late-arriving national/local reporting did add a materially more specific Arizona backfield role signal for Week 1: Tyler Allgeier is listed RB1 and Jeremiyah Love RB2 while Love returns from a high-ankle sprain, strengthening the shared-workload interpretation versus a full Love workload assumption.",
+  "episodeCompletenessProcess": "Reasonably available indexed transcript/page evidence, official descriptions/timestamps, attributable analyst comments and explicit pick evidence were checked. Same-family/copy reporting was treated as correlated and no unsupported wager, price or conviction was inferred.",
+  "canonicalJoin": "PASS for new Arizona record: 02635d1a-30ff-4a78-ace7-96dd3581e736.",
+  "dedupe": "PASS: no prior Jeremiyah Love / Tyler Allgeier Week 1 expert record was found in the governed repository.",
+  "ledgerAction": "Exact new record preserved in governed audit. Primary-ledger append remains blocked because data/nfl-expert-weekly.json is exposed through a truncating one-line read while the connected contents write replaces the full file; unsafe reconstruction was not attempted.",
+  "quantitativeFairAction": "none; Expert Intelligence remains qualitative/residual and did not overwrite the production fair.",
+  "reconciliation": "FAIL-PARTIAL because the pre-existing primary-ledger synchronization backlog remains unresolved; newly discovered Arizona evidence is fully explained and canonical-joined in audit.",
+  "privateAppAction": "none",
+  "notification": "new material availability/role evidence plus unresolved primary-ledger ingestion failure"
+}
