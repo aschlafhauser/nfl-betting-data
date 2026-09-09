@@ -1,0 +1,20 @@
+{
+  "sport":"NFL",
+  "season":2026,
+  "week":1,
+  "auditType":"pre-kickoff-current-week-reconciliation",
+  "auditedAt":"2026-09-09T19:20:24-04:00",
+  "status":"PROVISIONAL",
+  "sourcesChecked":["Mina Kimes / ESPN NFL analysis","The Ringer NFL family","PFF","Establish The Run","Sharp Football Analysis","Action Network","New York Post Betting","current matchup-specific national/local reporting"],
+  "newMaterialRecords":[{"gameId":"2bf1ca8d-11d6-4c00-b2e4-28971764e444","sourceFamily":"New York Post Betting","analyst":"Dylan Svoboda","construction":"Rhamondre Stevenson game leading rusher -110","detail":"Explicit prop tied to Henderson OUT and projected Patriots/Seahawks backfield workload distribution."}],
+  "episodeReconciliation":"No newly discovered Mina/ESPN, Ringer, PFF, Establish The Run or Sharp episode produced an additional safely attributable incremental construction in this interval. The previously discovered Ringer opening-night episode remains source-limited/provisional where exact picks are unavailable; no wager inferred.",
+  "canonicalJoinFailures":0,
+  "unexplainedDiscoveredEpisodes":0,
+  "unsupportedWagersInferred":false,
+  "quantitativeFairModified":false,
+  "dedupeApplied":true,
+  "primaryLedgerStatus":"UNRESOLVED_INGESTION_FAILURE",
+  "primaryLedgerDetail":"The user-governed primary file data/nfl-expert-weekly.json remains a stale September 7 oversized one-line snapshot. The connected read surface truncates the payload while writes require complete replacement content, so the new Stevenson record is preserved exactly in the source audit rather than risking historical loss.",
+  "runtimeWrite":"NFL only",
+  "notification":"new material explicit NFL prop plus unresolved primary-ledger ingestion failure"
+}
