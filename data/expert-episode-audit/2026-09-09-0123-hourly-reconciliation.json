@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-09",
+  "auditedAt": "2026-09-09T01:23:58-04:00",
+  "scope": "NFL Week 1 current-week expert-source reconciliation",
+  "status": "COMPLETE-SOURCE-LIMITED",
+  "monitoredFamiliesChecked": [
+    "Mina Kimes / ESPN NFL analysis",
+    "The Ringer NFL Show / Ringer family",
+    "PFF",
+    "Establish The Run",
+    "Sharp Football Analysis",
+    "other high-quality national/local matchup sources"
+  ],
+  "newMaterialRecords": [],
+  "discoveryNotes": "Fresh discovery after the 00:30 ET reconciliation surfaced no genuinely incremental Week 1 monitored-family matchup construction requiring a new governed expert row. The Ringer's September 9 Press Box episode is a media/season preview rather than game-level handicap evidence; no new Mina Kimes, Ringer NFL Show, PFF, Establish The Run or Sharp Football Analysis game-level item clearing the governed threshold was found in this interval.",
+  "episodeCompletenessProcess": "Reasonably available transcript/caption evidence, official show pages/timestamps, attributable analyst comments and explicit pick evidence were checked. Same-family analysts remain correlated and no unsupported wager/price was inferred.",
+  "canonicalJoin": "No new expert row was created in this pass, so no unmatched game-ID condition arose.",
+  "dedupe": "PASS",
+  "ledgerAction": "NO NEW APPEND in this pass. UNRESOLVED INGESTION/RECONCILIATION FAILURE remains: data/nfl-expert-weekly.json still lacks multiple exact Tuesday governed-audit rows preserved outside the primary ledger. The connected retrieval/write path still does not provide a verified lossless whole-file append workflow, so destructive reconstruction was not attempted.",
+  "quantitativeFairAction": "none; Expert Intelligence remains qualitative/residual and did not overwrite any production fair.",
+  "reconciliation": "FAIL-PARTIAL solely for primary-ledger synchronization backlog; all newly discovered content in this pass is explained.",
+  "privateAppAction": "none",
+  "notification": "unresolved ingestion/reconciliation failure only"
+}
