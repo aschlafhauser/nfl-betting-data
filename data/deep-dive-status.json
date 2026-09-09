@@ -1,0 +1,32 @@
+{
+  "season": 2026,
+  "week": 1,
+  "status": "INCOMPLETE_QC_FAILURE",
+  "updatedAt": "2026-09-09T08:23:35-04:00",
+  "gameCount": 16,
+  "completedGameCount": 0,
+  "stage": "wednesday-universal-checkpoint",
+  "universalDeepDiveDeadline": "2026-09-09",
+  "universalDeepDiveRequiredToday": true,
+  "coverageRule": "Every selected-week NFL game must receive a complete Deep Dive by Wednesday unless a documented source failure exists. Thursday maintains TNF/future games through kickoff; Friday emphasizes final injury designations and Sunday-price preparation.",
+  "currentState": "Canonical weekly-board.json remains dated 2026-09-07 and the latest complete all-game matchup matrix is the Monday progressive file. Wednesday universal completion cannot be certified from persisted data.",
+  "sourceDataFailures": [
+    "At the 08:23 ET checkpoint, Wednesday practice participation reports for the Sunday/Monday slate have not yet been posted for all teams; those are a major later-Wednesday repricing checkpoint.",
+    "Canonical all-game exact sportsbook/juice, current starting-OL combinations, current-personnel overlays, fair/range, information-quality, confidence and price-cliff fields have not been persistently refreshed for all 16 games."
+  ],
+  "earliestGame": {
+    "gameId": "2026-W1-NE-SEA",
+    "kickoff": "2026-09-09T20:20:00-04:00",
+    "currentMarket": "FanDuel SEA -3.5 -108 / NE +3.5 -112; total 44.5 -110 both ways; SEA -188 / NE +158",
+    "injuryCheckpoint": "NE RB TreVeyon Henderson OUT (ankle), OL Ben Brown OUT (knee); SEA S Ty Okada OUT (hamstring), S Nick Emmanwori QUESTIONABLE (ankle), WR Tory Horton QUESTIONABLE (hamstring).",
+    "classification": "WATCH-PRICE / NO OFFICIAL BET",
+    "productionFair": "SEA -3.2 from existing production board",
+    "executableEdge": "approximately 0.3 points toward NE +3.5 versus production center; below any reasonable activation threshold and key number 3 remains protected"
+  },
+  "governance": "NFL models/data/ledgers remain isolated from CFB. Canonical home-margin convention required. Historical matchup diagnostics remain research-only. No wager without exact book, line/juice, units, timestamp, production fair and executable edge.",
+  "qc": {
+    "severity": "material production-QC failure",
+    "reason": "Wednesday universal Deep Dive completion is not yet persisted/certifiable for all 16 NFL games.",
+    "action": "Do not activate bets from stale or partial Week 1 state. Maintain exact-game execution checks and complete the remaining all-game Wednesday fields as official practice reports and current market data become available."
+  }
+}
