@@ -1,0 +1,21 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "auditedAt": "2026-09-09T10:40:55-04:00",
+  "scope": "NFL Week 1 current-week expert-source reconciliation",
+  "status": "PROVISIONAL",
+  "monitoredFamiliesChecked": ["Mina Kimes / ESPN NFL analysis", "The Ringer NFL family", "PFF", "Establish The Run", "Sharp Football Analysis", "high-quality national/local matchup reporting"],
+  "newRelevantEpisodes": ["Mina Kimes / ESPN — Maye Anything: Previewing Week One"],
+  "newStructuredRecords": 2,
+  "newMaterial": [
+    "Patriots-Seahawks: Mina Kimes flags substantial Seattle safety/secondary depletion as a Patriots passing-game matchup variable.",
+    "49ers-Rams: Domonique Foxworth says San Francisco's Australia sleep/travel plan appears better optimized for this game, while the Rams may face more immediate arrival/game-readiness challenge."
+  ],
+  "dedupe": "Both details remain within the Mina/ESPN correlated family and are not counted as independent confirmations of prior Mina items.",
+  "canonicalJoin": "PASS for both extracted records: NE-SEA 2bf1ca8d-11d6-4c00-b2e4-28971764e444; SF-LAR c84dfc8c-8d90-4f80-a202-aa37d05e0c73.",
+  "episodeCompleteness": "Mina episode remains PROVISIONAL because only the opening public transcript segment is currently tool-visible while metadata confirms all 16 games and picks are discussed. Unseen picks were not inferred.",
+  "ledgerSynchronization": "FAILURE UNRESOLVED: exact intended rows are preserved in the episode audit, but data/nfl-expert-weekly.json is still exposed as an oversized one-line file whose connected full read is truncated; a safe lossless append cannot be verified without risking prior-record deletion.",
+  "modelEffect": "None; quantitative NFL fair unchanged.",
+  "notificationThreshold": "MET because a newly published high-priority source added material matchup context and the primary-ledger synchronization failure remains unresolved."
+}
