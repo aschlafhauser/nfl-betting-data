@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-09",
+  "auditedAt": "2026-09-09T06:54:39-04:00",
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "auditType": "late-arriving-matchup-evidence",
+  "sourceFamily": "49ers beat / national injury reporting",
+  "independenceKey": "sf49ers-collins-injury-event",
+  "status": "COMPLETE",
+  "canonicalGameId": "c84dfc8c-8d90-4f80-a202-aa37d05e0c73",
+  "game": "San Francisco 49ers at Los Angeles Rams",
+  "sourcesExhausted": [
+    "Kyle Shanahan attributable comments carried by AP/FOX Sports",
+    "Reuters report dated 2026-09-09",
+    "ESPN/Nick Wagoner report carried by ABC7 San Francisco",
+    "San Francisco Chronicle local beat context"
+  ],
+  "materialFindings": [
+    "Starting/probable starting defensive tackle Alfred Collins tore his patellar tendon in Tuesday practice in Melbourne and is out for the 2026 season.",
+    "San Francisco had already lost defensive end Sam Okuayinonu to a broken foot, leaving the defensive front materially thinner before the Rams opener.",
+    "Available interior replacements are inexperienced: Osa Odighizuwa, CJ West and rookie Gracen Halton are the primary options; Halton has also been limited by an ankle issue and James Thompson Jr. has missed practice with a hamstring issue.",
+    "Nick Bosa remains on track to play, but Kyle Shanahan has not committed to a normal workload as Bosa returns from ACL rehabilitation."
+  ],
+  "bettingImplication": "This is a new negative residual for the 49ers defensive-front matchup against the Rams, especially run-defense/interior-depth resilience and the ability to sustain pass-rush rotation. It modestly strengthens the Rams offensive matchup case and increases San Francisco defensive variance, but it is qualitative Expert Intelligence only and does not overwrite the quantitative fair.",
+  "explicitWager": false,
+  "wagerInference": "none",
+  "sameEventDedupe": "AP, Reuters, ESPN and local reporting are treated as corroboration of one injury event, not independent expert confirmations.",
+  "primaryLedgerWrite": {
+    "target": "data/nfl-expert-weekly.json",
+    "status": "BLOCKED_EXISTING_INGESTION_FAILURE",
+    "reason": "The governed primary ledger remains a very large one-line JSON file that the available connected read path truncates. A full-file replacement cannot be verified losslessly, so this run does not risk deleting historical rows.",
+    "intendedRecord": {
+      "week": 1,
+      "gameId": "c84dfc8c-8d90-4f80-a202-aa37d05e0c73",
+      "source": "49ers beat / national injury reporting",
+      "sourceDate": "2026-09-09",
+      "analyst": "Kyle Shanahan / attributable beat reporting",
+      "type": "availability / defensive-front matchup update",
+      "direction": "Rams offense positive residual / 49ers defense negative residual",
+      "explicit": true,
+      "construction": "analysis only",
+      "detail": "Alfred Collins out for season with torn patellar tendon; already-thin 49ers defensive front turns to inexperienced interior depth before Rams opener.",
+      "quantitativeFairOverride": false
+    }
+  }
+}
