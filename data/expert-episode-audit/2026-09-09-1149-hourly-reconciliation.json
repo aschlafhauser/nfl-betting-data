@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-09",
+  "auditedAt": "2026-09-09T11:49:34-04:00",
+  "scope": "NFL Week 1 current-week expert-source reconciliation",
+  "status": "FAIL-PARTIAL",
+  "monitoredFamiliesChecked": [
+    "Mina Kimes / ESPN NFL analysis",
+    "The Ringer NFL Show / Ringer NFL family",
+    "PFF",
+    "Establish The Run",
+    "Sharp Football Analysis",
+    "high-quality national/local beat reporting"
+  ],
+  "newMaterial": [
+    {
+      "source_family": "The Ringer NFL / Ringer Wise Guys",
+      "source": "The Best Bets of NFL Week 1",
+      "analyst": "Anthony Dabbundo",
+      "published_at": "2026-09-09T10:30:00Z",
+      "episode_status": "COMPLETE",
+      "audit_path": "data/expert-episode-audit/2026-09-09-ringer-dabbundo-week1-best-bets.json",
+      "material_games": [
+        "2bf1ca8d-11d6-4c00-b2e4-28971764e444",
+        "c84dfc8c-8d90-4f80-a202-aa37d05e0c73",
+        "14a137a8-c892-4aa5-9fb1-8f85a3609b28",
+        "02635d1a-30ff-4a78-ace7-96dd3581e736",
+        "6eee326a-c62c-43b6-a990-963b0bb7ed06",
+        "a08db76e-c9cc-404b-9e18-0568486775d7",
+        "5c96a049-751a-40c8-9295-c09a5d9519e6",
+        "be0d6413-0c1d-45c7-94c6-efe4c6ecc93e",
+        "71c9efbf-74b9-4bfd-9617-7df24c4bad89",
+        "6f9e9522-bee1-40a8-92c8-91ab651827cf",
+        "94c3a4c2-614a-43d9-a266-eea4051e715c",
+        "810f2cd8-189f-49ce-89fa-f4d4172f7f0d"
+      ]
+    }
+  ],
+  "mina_kimes_status": "The Sept. 9 all-16-game preview remains previously discovered/provisional in governed audit; no additional safely attributable transcript/pick payload was exposed in this pass beyond already governed material.",
+  "other_source_status": "No additional newly published accessible PFF/ETR/Sharp or beat-source item was found that added a genuinely incremental construction beyond already governed records in this pass.",
+  "canonical_join_check": "PASS for every new Ringer record",
+  "dedupe_check": "PASS; new Anthony Dabbundo article treated as one correlated Ringer-family contribution and not independent confirmation of other Ringer views",
+  "quantitative_fair_changed": false,
+  "primary_ledger": {
+    "path": "data/nfl-expert-weekly.json",
+    "status": "UNRESOLVED-INGESTION-FAILURE",
+    "detail": "The connected full-file read remains truncated because the ledger is an oversized one-line JSON object, while update_file requires complete replacement content. Exact intended records are preserved in governed audits; no destructive reconstruction attempted."
+  },
+  "private_app_changes": false
+}
