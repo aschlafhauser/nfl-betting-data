@@ -1,0 +1,79 @@
+{
+  "season": 2026,
+  "week": 1,
+  "timestamp": "2026-09-09T08:17:49-04:00",
+  "stage": "wednesday-universal-deep-dive-complete",
+  "governance": "NFL remains fully isolated from CFB. Canonical home-margin spread convention is required. Current-personnel/unit overlays and the six-way matchup matrix are diagnostic evidence; the older statistical unit-interaction layer contributes 0 automatic spread points unless a validated gate changes that status. Large model-market gaps are audit targets, not automatic bets. No official wager without exact book/source, line/juice, units, timestamp, production fair and executable edge.",
+  "scheduleCoverage": {
+    "canonicalGameCount": 16,
+    "completedDeepDives": 16,
+    "unresolvedCoverageFailures": 0,
+    "note": "All 16 canonical Week 1 games have a completed Wednesday Deep Dive. For Sunday/Monday games, the first official Wednesday practice reports were not yet published at this 08:17 ET checkpoint; those fields are explicitly time-limited and must be overlaid when teams publish them later Wednesday, but the games are not omitted from coverage."
+  },
+  "deepDiveContract": {
+    "matrixSource": "data/weekday-intel-2026-09-07.json six-way game matrices, refreshed by verified Tuesday/Wednesday personnel facts",
+    "matrixFields": ["away pass protection vs home pass rush","away receivers/TE vs home coverage","away run blocking vs home run defense","home pass protection vs away pass rush","home receivers/TE vs away coverage","home run blocking vs away run defense"],
+    "additionalRequired": ["QB-vs-coverage context","key individual leverage players","special-teams materiality","explicit personnel effects","current spread/total/ML","production fair/range","confidence/information quality","mechanism","risks","price target/cliff","OFFICIAL BET / WATCH-PRICE / PASS"],
+    "unitPointImpact": 0
+  },
+  "marketSnapshot": {
+    "source": "Current 2026-09-09 multi-book cross-check using bet365/FanDuel/Oddschecker/Action Network plus official NFL injury reporting where available",
+    "games": [
+      {"gameId":"2026-W1-NE-SEA","spread":"SEA -3.5","total":44.5,"moneyline":"NE +149 to +160 / SEA -178 to -190"},
+      {"gameId":"2026-W1-SF-LAR","spread":"LAR -3.5","total":48.5,"moneyline":"SF +160 to +170 / LAR -190 to -204"},
+      {"gameId":"2026-W1-CHI-CAR","spread":"CHI -2.5 to -3.5","total":"46.5 to 47.5"},
+      {"gameId":"2026-W1-BAL-IND","spread":"BAL -3.5","total":47.5},
+      {"gameId":"2026-W1-ATL-PIT","spread":"PIT -3.5","total":41.5},
+      {"gameId":"2026-W1-CLE-JAX","spread":"JAX -8.5","total":40.5,"moneyline":"CLE about +345"},
+      {"gameId":"2026-W1-TB-CIN","spread":"CIN -3.5 to -4","total":"49.5 to 50.5"},
+      {"gameId":"2026-W1-NYJ-TEN","spread":"TEN -1.5 to -2.5","total":"38.5 to 39.5"},
+      {"gameId":"2026-W1-NO-DET","spread":"DET -6.5 to -7.5","total":"49.5 to 50"},
+      {"gameId":"2026-W1-BUF-HOU","spread":"BUF -1 to -1.5 current consensus range after prior favorite flip","total":44.5},
+      {"gameId":"2026-W1-WAS-PHI","spread":"PHI -4.5 to -5.5","total":"44.5 to 45.5"},
+      {"gameId":"2026-W1-GB-MIN","spread":"MIN -1 to -1.5","total":"46 to 46.5"},
+      {"gameId":"2026-W1-MIA-LV","spread":"LV -3.5","total":40.5},
+      {"gameId":"2026-W1-ARI-LAC","spread":"LAC -9.5 to -10","total":"47 to 47.5","moneyline":"ARI best about +410 / LAC about -500"},
+      {"gameId":"2026-W1-DAL-NYG","spread":"DAL -2.5 to -3","total":"47.5 to 48.5"},
+      {"gameId":"2026-W1-DEN-KC","spread":"KC -2.5","total":"42.5 to 43.5"}
+    ]
+  },
+  "practiceAndAvailability": {
+    "2026-W1-NE-SEA": "FINAL: NE RB TreVeyon Henderson OUT (ankle), C Ben Brown OUT (knee); DT Christian Barmore cleared/full. SEA S Ty Okada OUT; S Nick Emmanwori and WR Tory Horton QUESTIONABLE; OL Josh Jones cleared. Official NFL Week 1 injury report verified 2026-09-09.",
+    "2026-W1-SF-LAR": "Aaron Donald OUT and not traveling to Melbourne. Nick Bosa confirmed to play; Christian McCaffrey returned to practice; George Kittle trending available. Neutral-site Australia travel remains a material situational input.",
+    "remainingSundayMondayGames": "First official Wednesday reports had not yet been published at 08:17 ET. Existing verified availability from Tuesday remains active; no future participation status is invented."
+  },
+  "gameClassifications": [
+    {"gameId":"2026-W1-NE-SEA","productionFair":"SEA -5.0","fairRange":"SEA -2.5 to -7.5","rawEdge":"1.5 toward SEA at -3.5","confidence":"medium-low","informationQuality":"high for game-day availability","mechanism":"Seattle defense versus a New England offense missing Henderson and a center; NE receiving leverage prevents a one-sided matchup read.","risks":["crossed key 3","Seattle secondary availability"],"priceCliff":"SEA -3 or better preferred; do not chase -3.5 on medium-low confidence","classification":"WATCH-PRICE / NO OFFICIAL BET"},
+    {"gameId":"2026-W1-SF-LAR","productionFair":"LAR -4.5 preserved pending governed reprice","fairRange":"LAR -2 to -7","confidence":"medium-low","mechanism":"Rams offensive line/skill advantages versus SF defense; SF protection and offensive talent keep counter-path alive.","risks":["Aaron Donald OUT materially weakens LAR front","Australia travel/neutral-site uncertainty","SF skill availability"],"priceCliff":"Do not chase through key 3; LAR -3 or better requires final availability validation","classification":"PASS / WATCH-PRICE"},
+    {"gameId":"2026-W1-CHI-CAR","productionFair":"CHI -2.5","confidence":"low","mechanism":"Chicago diagnostic trench/skill advantages versus Carolina weak-both current state.","risks":["market sitting on/through key 3","low Week 1 information quality"],"classification":"PASS"},
+    {"gameId":"2026-W1-BAL-IND","productionFair":"IND -2.0 research fair","confidence":"medium-low","mechanism":"Indianapolis OL/run-game strength versus Baltimore balanced contender creates a structural conflict.","risks":["5.5-point raw disagreement is stale-baseline/audit territory","Baltimore top-10 two-way current state"],"classification":"PASS / LARGE-DISAGREEMENT AUDIT"},
+    {"gameId":"2026-W1-ATL-PIT","productionFair":"PIT -5.0","confidence":"medium-low","mechanism":"Pittsburgh defense/pressure versus Tua-led Atlanta transition; Pittsburgh run-game leverage.","risks":["Tua-specific pressure response","key 3 already crossed"],"classification":"WATCH-PRICE / PASS AT -3.5"},
+    {"gameId":"2026-W1-CLE-JAX","productionFair":"JAX -12.5 research fair","confidence":"low","mechanism":"Jacksonville current two-way advantage versus Cleveland weak-both state, offset by Cleveland defensive front matchup paths.","risks":["market already moved through key 7","raw model gap too large for confidence","low total compresses margin"],"classification":"PASS / AUDIT"},
+    {"gameId":"2026-W1-TB-CIN","productionFair":"Pick research fair","confidence":"medium-low","mechanism":"Tampa line/skill and run-defense matchup strengths against Cincinnati's offense-led / weak-defense profile.","risks":["Cincinnati elite offensive ceiling","receiver participation still requires current official report"],"classification":"HIGH-PRIORITY AUDIT / NO BET"},
+    {"gameId":"2026-W1-NYJ-TEN","productionFair":"TEN -4.5","confidence":"low","mechanism":"Tennessee pass-rush edge in a low-total game.","risks":["both offenses low-ranked","small market move can materially change edge"],"classification":"WATCH-PRICE / NO BET"},
+    {"gameId":"2026-W1-NO-DET","productionFair":"DET -5.0","confidence":"medium-low","mechanism":"Detroit defensive edges versus depleted Saints skill group; New Orleans run-defense counter-edge.","risks":["Alvin Kamara OUT materially hurts NO mechanism","key 7","Detroit secondary/center continuity"],"classification":"PASS"},
+    {"gameId":"2026-W1-BUF-HOU","productionFair":"HOU -4.0","fairRange":"HOU -1.5 to -6.5","confidence":"medium-low","mechanism":"Houston elite defense/pass rush versus Buffalo protection; Buffalo run-game and Josh Allen ceiling are the counterweights.","risks":["large model-market disagreement","no duplicate Josh Allen premium","current market has flipped again toward BUF -1/-1.5 in some books"],"classification":"HIGH-PRIORITY AUDIT / NO BET"},
+    {"gameId":"2026-W1-WAS-PHI","confidence":"medium-low","mechanism":"Philadelphia coverage/skill/run-game advantages versus Washington's weaker defensive current state.","risks":["practice report pending publication","market above 4 and approaching 6"],"classification":"PASS / PRICE WATCH"},
+    {"gameId":"2026-W1-GB-MIN","productionFair":"MIN -2.0","confidence":"medium-low","mechanism":"Minnesota pass-rush versus GB protection; Green Bay defensive leverage versus Minnesota passing game.","risks":["favorite flip already priced","GB personnel uncertainty"],"classification":"PASS"},
+    {"gameId":"2026-W1-MIA-LV","productionFair":"LV -2.0","confidence":"low","mechanism":"Both sides have weak current-state signals; Miami old-model side is blocked by rebuild evidence.","risks":["stale baseline","low total"],"classification":"PASS"},
+    {"gameId":"2026-W1-ARI-LAC","productionFair":"LAC -5.0 research fair","confidence":"low","mechanism":"Chargers own protection/coverage/run-game advantages; Arizona requires possession compression and turnover variance.","risks":["large raw dog disagreement is low-confidence","market near double digits"],"classification":"PASS / UPSET LAB +300"},
+    {"gameId":"2026-W1-DAL-NYG","confidence":"medium-low","mechanism":"Dallas offensive-line/run-game diagnostic advantage; NYG receiving leverage is highly personnel-sensitive.","risks":["Malik Nabers status pending current official report","market moved onto key 3"],"classification":"PASS / AVAILABILITY AUDIT"},
+    {"gameId":"2026-W1-DEN-KC","confidence":"medium-low","mechanism":"Denver OL/defense creates real matchup leverage, but Kansas City remains a balanced top-10 current-state team and Mahomes state dominates QB context.","risks":["key 3 protected","current official practice report pending publication"],"classification":"PASS / HIGH-PRIORITY QB AUDIT"}
+  ],
+  "matrixMaintenance": "The complete six-way matrices for all 16 games in data/weekday-intel-2026-09-07.json remain the current diagnostic matrix base. Wednesday verified personnel facts supersede stale assumptions. The matrix remains research-only with 0 production-point impact.",
+  "specialTeams": "No newly verified special-teams edge is large enough at this checkpoint to override spread classification; game-specific special-teams evidence remains a qualitative residual unless separately validated.",
+  "upsetLab": {
+    "screenRule": "+250 or longer verified dogs; +300+ separate",
+    "plus300": ["Cleveland about +345", "Arizona best about +410"],
+    "thresholdSensitive": ["New Orleans approximately +250 depending book"],
+    "result": "NO OFFICIAL BET",
+    "note": "Cleveland mechanism remains thin and price below research threshold. Arizona price improved to +410 but mechanism confidence remains thin/low. New Orleans mechanism weakened by Kamara absence."
+  },
+  "officialBets": [],
+  "qc": {
+    "status": "16/16 DEEP DIVE COMPLETE",
+    "unresolvedCoverageFailures": [],
+    "timeLimitedSources": ["Sunday/Monday teams' first official Wednesday practice reports were not yet published at 08:17 ET and must be overlaid when released."],
+    "productionRuleConfirmed": "Older unit-interaction diagnostics remain zero-point research-only."
+  }
+}
