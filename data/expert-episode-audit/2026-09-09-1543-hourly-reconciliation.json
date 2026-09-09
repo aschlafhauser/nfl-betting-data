@@ -1,0 +1,20 @@
+{
+  "sport":"NFL",
+  "season":2026,
+  "week":1,
+  "auditedAt":"2026-09-09T15:43:47-04:00",
+  "scope":"NFL Week 1 current-week expert-source reconciliation",
+  "status":"COMPLETE-SOURCE-LIMITED",
+  "sourcesChecked":["Mina Kimes / ESPN NFL analysis","The Ringer NFL family","PFF","Establish The Run","Sharp Football Analysis","national/local matchup reporting"],
+  "newEpisodeDiscovery":{"sourceFamily":"The Ringer NFL family","title":"Power Ranking the Best Week 1 Story Lines, the Michigan Mulligan, and the Listener Take Purge","status":"COMPLETE-SOURCE-LIMITED","episodeAudit":"data/expert-episode-audit/2026-09-09-1543-ringer-fantasy-week1-storylines.json","ledgerAppend":false},
+  "newMaterialRecords":[{"gameId":"6eee326a-c62c-43b6-a990-963b0bb7ed06","matchup":"Dallas Cowboys at New York Giants","detail":"Tyler Smith placed on IR; T.J. Bass expected at LG","episodeAudit":"data/expert-episode-audit/2026-09-09-1543-cowboys-tyler-smith-ir.json"}],
+  "canonicalJoinFailures":0,
+  "unexplainedDiscoveredEpisodes":0,
+  "unsupportedWagersInferred":false,
+  "quantitativeFairModified":false,
+  "dedupeApplied":true,
+  "primaryLedgerStatus":"UNRESOLVED_INGESTION_FAILURE",
+  "primaryLedgerDetail":"data/nfl-expert-weekly.json still cannot be safely losslessly appended through the connected path: fetches expose an oversized truncated payload while update_file requires complete replacement text. A base64 read was also truncated in this run. No destructive reconstruction attempted. Post-snapshot governed records remain preserved in episode audits.",
+  "runtimeWrite":"NFL only",
+  "notification":"New material Dallas OL availability plus unresolved primary-ledger synchronization failure."
+}
