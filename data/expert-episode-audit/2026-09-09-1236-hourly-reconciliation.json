@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-09",
+  "auditedAt": "2026-09-09T12:36:01-04:00",
+  "scope": "NFL Week 1 current-week expert-source reconciliation",
+  "status": "COMPLETE-SOURCE-LIMITED",
+  "monitoredFamiliesChecked": [
+    "Mina Kimes / ESPN NFL analysis",
+    "The Ringer NFL Show / Ringer family",
+    "PFF",
+    "Establish The Run",
+    "Sharp Football Analysis",
+    "other high-quality national/local matchup sources"
+  ],
+  "newMaterialRecords": [
+    {
+      "sourceFamily": "Field Gulls / Seahawks local analysis",
+      "gameId": "2bf1ca8d-11d6-4c00-b2e4-28971764e444",
+      "game": "New England Patriots at Seattle Seahawks",
+      "auditFile": "data/expert-episode-audit/2026-09-09-field-gulls-seahawks-patriots-5-predictions.json",
+      "materiality": "new explicit Darnold, Arroyo, Price, sack-count and 24-20 Seattle score predictions"
+    }
+  ],
+  "discoveryNotes": "Fresh discovery after the prior reconciliation surfaced Alexandre Castro's Field Gulls article published September 9 at 16:00 UTC. The full public article was exhausted. No newer accessible Mina Kimes/ESPN, Ringer, PFF, Establish The Run or Sharp game-level item clearing the incremental threshold was found in this interval.",
+  "episodeCompletenessProcess": "Reasonably available full article/transcript evidence, official publication metadata, attributable analyst comments and exact market-linked prediction language were checked. Same-family analysts remain correlated; no unsupported wager, price or conviction was inferred.",
+  "canonicalJoin": "PASS: all new material joins to canonical Patriots-Seahawks game ID 2bf1ca8d-11d6-4c00-b2e4-28971764e444. No unmatched record exists.",
+  "dedupe": "PASS",
+  "ledgerAction": "NEW MATERIAL PRESERVED IN GOVERNED AUDIT, but primary append remains blocked by the pre-existing synchronization failure: data/nfl-expert-weekly.json is exposed through the connected path as an oversized one-line object whose retrieval is truncated, while replacement requires a verified complete file body. Destructive reconstruction was not attempted.",
+  "quantitativeFairAction": "none; Expert Intelligence remains qualitative/residual and did not overwrite any production fair.",
+  "reconciliation": "FAIL-PARTIAL solely for primary-ledger synchronization backlog; all newly discovered content in this pass is explained, deduped and canonical-joined.",
+  "privateAppAction": "none",
+  "notification": "YES: genuinely new material Patriots-Seahawks predictions plus unresolved primary-ledger synchronization failure"
+}
