@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-08",
+  "auditedAt": "2026-09-08T21:34:26-04:00",
+  "scope": "NFL Week 1 current-week expert-source reconciliation",
+  "status": "COMPLETE-SOURCE-LIMITED",
+  "monitoredFamiliesChecked": ["Mina Kimes / ESPN NFL analysis", "The Ringer NFL Show / Ringer family", "PFF", "Establish The Run", "Sharp Football Analysis", "other high-quality national/local matchup sources"],
+  "newMaterialRecords": [],
+  "discoveryNotes": "Fresh discovery after the prior 20:20 reconciliation surfaced no genuinely incremental Week 1 podcast/analysis construction requiring a new governed expert row. The Ringer Off The Pike Patriots-Seahawks preview remains COMPLETE-SOURCE-LIMITED because official notes expose matchup/pick segments but no exact attributable pick detail was publicly recoverable without inference. Newer Ringer items are season/futures oriented rather than discrete Week 1 game handicaps.",
+  "availabilityReconciliation": "PASS: New England's final Tuesday injury report confirms TreVeyon Henderson OUT and Seattle lists Ty Okada OUT with Nick Emmanwori and Tory Horton QUESTIONABLE; those status changes were already governed before this pass and were not duplicated.",
+  "canonicalJoin": "No new expert record created in this pass, so no unmatched game-ID condition arose.",
+  "dedupe": "PASS",
+  "ledgerAction": "NO NEW APPEND in this pass. UNRESOLVED INGESTION/RECONCILIATION FAILURE remains: data/nfl-expert-weekly.json still reflects the September 7 generated snapshot and does not contain multiple exact Tuesday governed-audit records previously preserved outside the primary expert ledger. A safe full-file recovery path was investigated via blob retrieval, but this run did not perform a destructive or manually reconstructed whole-ledger replacement.",
+  "quantitativeFairAction": "none; Expert Intelligence remains qualitative/residual and did not overwrite any production fair.",
+  "reconciliation": "FAIL-PARTIAL solely for primary-ledger synchronization backlog; newly discovered material itself is fully explained.",
+  "privateAppAction": "none"
+}
