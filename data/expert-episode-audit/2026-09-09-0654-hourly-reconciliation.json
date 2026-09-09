@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-09",
+  "auditedAt": "2026-09-09T06:54:39-04:00",
+  "scope": "NFL Week 1 current-week expert-source reconciliation",
+  "status": "COMPLETE-SOURCE-LIMITED",
+  "monitoredFamiliesChecked": [
+    "Mina Kimes / ESPN NFL analysis",
+    "The Ringer NFL family",
+    "PFF",
+    "Establish The Run",
+    "Sharp Football Analysis",
+    "high-quality national/local matchup reporting"
+  ],
+  "newMaterialFindings": [
+    {
+      "gameId": "c84dfc8c-8d90-4f80-a202-aa37d05e0c73",
+      "game": "San Francisco 49ers at Los Angeles Rams",
+      "finding": "49ers starting/probable starting DT Alfred Collins tore his patellar tendon in Tuesday practice and is out for the season, compounding Sam Okuayinonu's broken-foot absence and materially thinning San Francisco's defensive front immediately before the opener.",
+      "governedAudit": "data/expert-episode-audit/2026-09-09-0654-49ers-alfred-collins-out.json"
+    }
+  ],
+  "otherFreshDiscoverySummary": [
+    "No newly published accessible Mina Kimes/ESPN, Ringer, PFF, ETR or Sharp item produced a separate genuinely incremental Week 1 construction during this interval.",
+    "ETR's currently indexed Week 1 material remains primarily rankings/subscriber content; no unsupported subscriber-only matchup view was inferred."
+  ],
+  "dedupe": "AP, Reuters, ESPN and local 49ers reporting on Collins are one correlated injury event, not multiple independent confirmations.",
+  "canonicalJoinFailures": 0,
+  "primaryLedgerStatus": "UNRESOLVED_INGESTION_FAILURE",
+  "primaryLedgerDetail": "The new Collins record and prior backlog are preserved in governed audits, but data/nfl-expert-weekly.json remains unsafe to replace through the available truncating one-line read path. No destructive whole-file reconstruction was attempted.",
+  "quantitativeFairChanged": false,
+  "privateAppChanges": 0
+}
