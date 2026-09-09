@@ -1,0 +1,21 @@
+{
+  "sport":"NFL",
+  "season":2026,
+  "week":1,
+  "auditType":"pre-kickoff-current-week-reconciliation",
+  "auditedAt":"2026-09-09T18:44:06-04:00",
+  "status":"PROVISIONAL",
+  "sourcesChecked":["Mina Kimes / ESPN NFL analysis","The Ringer NFL family","PFF","Establish The Run","Sharp Football Analysis","Action Network","current matchup-specific national/local reporting"],
+  "newMaterialRecords":[],
+  "availabilityReconciliation":"PASS for newly indexed reporting: TreVeyon Henderson OUT and the Alfred Collins season-ending injury were already governed in prior passes; New England's practice-squad elevation of Lan Larison is a roster consequence of the known Henderson absence and did not clear the incremental handicap threshold.",
+  "episodeReconciliation":"The newly discovered Ringer Wise Guys opening-night episode remains PROVISIONAL because official notes expose Patriots-Seahawks segment timing but no safely attributable exact picks/transcript were reasonably retrievable; no wager was inferred.",
+  "canonicalJoinFailures":0,
+  "unexplainedDiscoveredEpisodes":0,
+  "unsupportedWagersInferred":false,
+  "quantitativeFairModified":false,
+  "dedupeApplied":true,
+  "primaryLedgerStatus":"UNRESOLVED_INGESTION_FAILURE",
+  "primaryLedgerDetail":"The user-governed primary file data/nfl-expert-weekly.json remains a stale September 7 snapshot while newer records have been written to data/expert-weekly.json and/or episode audits. The 17:12 reconciliation's PASS statement therefore does not establish synchronization of the requested primary NFL ledger. No destructive full-file reconstruction was attempted in this pass.",
+  "runtimeWrite":"NFL only",
+  "notification":"unresolved NFL primary-ledger reconciliation failure; no new material NFL handicap claim"
+}
