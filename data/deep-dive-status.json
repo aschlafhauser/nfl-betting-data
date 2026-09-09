@@ -1,18 +1,19 @@
 {
   "season": 2026,
   "week": 1,
-  "status": "INCOMPLETE_QC_FAILURE",
+  "status": "COMPLETE",
   "updatedAt": "2026-09-09T08:23:35-04:00",
   "gameCount": 16,
-  "completedGameCount": 0,
-  "stage": "wednesday-universal-checkpoint",
+  "completedGameCount": 16,
+  "stage": "wednesday-universal-complete",
   "universalDeepDiveDeadline": "2026-09-09",
   "universalDeepDiveRequiredToday": true,
-  "coverageRule": "Every selected-week NFL game must receive a complete Deep Dive by Wednesday unless a documented source failure exists. Thursday maintains TNF/future games through kickoff; Friday emphasizes final injury designations and Sunday-price preparation.",
-  "currentState": "Canonical weekly-board.json remains dated 2026-09-07 and the latest complete all-game matchup matrix is the Monday progressive file. Wednesday universal completion cannot be certified from persisted data.",
-  "sourceDataFailures": [
-    "At the 08:23 ET checkpoint, Wednesday practice participation reports for the Sunday/Monday slate have not yet been posted for all teams; those are a major later-Wednesday repricing checkpoint.",
-    "Canonical all-game exact sportsbook/juice, current starting-OL combinations, current-personnel overlays, fair/range, information-quality, confidence and price-cliff fields have not been persistently refreshed for all 16 games."
+  "coverageRule": "Every selected-week NFL game must receive a complete Deep Dive by Wednesday unless a documented source failure exists. Week 1 Wednesday coverage is complete 16/16. Thursday maintains TNF/future games through kickoff; Friday emphasizes final injury designations and Sunday-price preparation.",
+  "currentState": "The persisted 2026-09-09 weekday-intel file certifies all 16 canonical Week 1 Deep Dives complete. Sunday/Monday teams' first official Wednesday practice reports were not yet published at the 08:17 ET completion checkpoint; those are time-limited overlays to be incorporated later Wednesday, not coverage failures.",
+  "sourceDataFailures": [],
+  "executionLimitations": [
+    "Later-Wednesday official practice participation reports for Sunday/Monday games remain required repricing overlays as teams publish them.",
+    "Exact executable sportsbook/juice remains mandatory at the moment of any potential wager activation."
   ],
   "earliestGame": {
     "gameId": "2026-W1-NE-SEA",
@@ -20,13 +21,14 @@
     "currentMarket": "FanDuel SEA -3.5 -108 / NE +3.5 -112; total 44.5 -110 both ways; SEA -188 / NE +158",
     "injuryCheckpoint": "NE RB TreVeyon Henderson OUT (ankle), OL Ben Brown OUT (knee); SEA S Ty Okada OUT (hamstring), S Nick Emmanwori QUESTIONABLE (ankle), WR Tory Horton QUESTIONABLE (hamstring).",
     "classification": "WATCH-PRICE / NO OFFICIAL BET",
-    "productionFair": "SEA -3.2 from existing production board",
-    "executableEdge": "approximately 0.3 points toward NE +3.5 versus production center; below any reasonable activation threshold and key number 3 remains protected"
+    "productionFair": "SEA -5.0 in the persisted Wednesday Deep Dive",
+    "priceCliff": "SEA -3 or better preferred; do not chase -3.5 on medium-low confidence"
   },
-  "governance": "NFL models/data/ledgers remain isolated from CFB. Canonical home-margin convention required. Historical matchup diagnostics remain research-only. No wager without exact book, line/juice, units, timestamp, production fair and executable edge.",
+  "governance": "NFL models/data/ledgers remain isolated from CFB. Canonical home-margin convention required. Historical matchup diagnostics remain research-only with zero automatic point impact. No wager without exact book, line/juice, units, timestamp, production fair and executable edge.",
   "qc": {
-    "severity": "material production-QC failure",
-    "reason": "Wednesday universal Deep Dive completion is not yet persisted/certifiable for all 16 NFL games.",
-    "action": "Do not activate bets from stale or partial Week 1 state. Maintain exact-game execution checks and complete the remaining all-game Wednesday fields as official practice reports and current market data become available."
+    "status": "16/16 DEEP DIVE COMPLETE",
+    "severity": "none",
+    "timeLimitedSources": ["Sunday/Monday teams' first official Wednesday practice reports must be overlaid later Wednesday as released."],
+    "productionRuleConfirmed": "Older unit-interaction diagnostics remain zero-point research-only."
   }
 }
