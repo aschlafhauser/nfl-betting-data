@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-09",
+  "auditedAt": "2026-09-09T13:39:42-04:00",
+  "scope": "NFL Week 1 current-week expert-source reconciliation",
+  "status": "COMPLETE-SOURCE-LIMITED",
+  "monitoredFamiliesChecked": [
+    "Mina Kimes / ESPN NFL analysis",
+    "The Ringer NFL Show / Ringer family",
+    "PFF",
+    "Establish The Run",
+    "Sharp Football Analysis",
+    "other high-quality national/local matchup sources"
+  ],
+  "newMaterialRecords": [],
+  "discoveryNotes": "Fresh current-day discovery after the 12:36 ET reconciliation found no newly published Mina Kimes/ESPN, Ringer, PFF, Establish The Run, Sharp or other high-quality matchup analysis that cleared the incremental Week 1 threshold. Newly indexed Patriots-Seahawks availability reporting confirmed TreVeyon Henderson OUT, but that condition was already governed before this pass and was not duplicated.",
+  "episodeCompletenessProcess": "Reasonably available indexed article/transcript evidence, official publication metadata and attributable analyst comments were checked. Same-family analysts remain correlated; no unsupported wager, price or conviction was inferred.",
+  "canonicalJoin": "No new NFL expert row created in this pass, so no unmatched game-ID condition arose.",
+  "dedupe": "PASS",
+  "ledgerAction": "NO NEW APPEND in this pass. UNRESOLVED INGESTION/RECONCILIATION FAILURE remains: exact governed rows accumulated after the September 7 primary snapshot are preserved in episode audits but are not safely synchronized into data/nfl-expert-weekly.json because the connected read path exposes the oversized one-line ledger only in truncated form while replacement requires a verified complete file body.",
+  "quantitativeFairAction": "none; Expert Intelligence remains qualitative/residual and did not overwrite any production fair.",
+  "reconciliation": "FAIL-PARTIAL solely for the pre-existing primary-ledger synchronization backlog; all content discovered in this pass is explained and deduped.",
+  "privateAppAction": "none",
+  "notification": "YES only because the unresolved primary-ledger synchronization failure persists; no new material matchup handicap was added in this pass"
+}
