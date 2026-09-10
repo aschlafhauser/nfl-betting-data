@@ -1,0 +1,36 @@
+{
+  "season": 2026,
+  "week": 1,
+  "timestamp": "2026-09-09T22:01:42-04:00",
+  "stage": "game-day-intelligence",
+  "governance": "NFL-only. No CFB inputs. No reverse-engineered fair. Prior wagers/snapshots unchanged.",
+  "events": [
+    {
+      "gameId": "2026-W1-MIA-LV",
+      "event": "Raiders TE Brock Bowers underwent a meniscus trim Tuesday and is expected to miss Week 1 versus Miami; Ashton Jeanty returned to practice Wednesday after his ankle injury.",
+      "materiality": "HIGH skill-availability change",
+      "modelAction": "Do not manufacture a numerical adjustment. Preserve the existing governed production state until a legitimate reprice consumes the new availability input.",
+      "classificationAction": "Existing PASS remains non-executable; Bowers absence is now a required current-personnel input for any future reprice.",
+      "source": "Reuters, 2026-09-09"
+    },
+    {
+      "gameId": "2026-W1-TB-CIN",
+      "event": "Ja'Marr Chase and Tee Higgins were full participants Wednesday, materially reducing the Week 1 availability uncertainty that had been a board checkpoint.",
+      "materiality": "MEDIUM-HIGH availability resolution",
+      "modelAction": "Do not infer a new fair from participation alone; retain governed fair until the model is rerun.",
+      "classificationAction": "Structural disagreement remains research-only; improved Bengals WR availability removes one uncertainty but does not activate a wager.",
+      "source": "Bengals/Buccaneers Wednesday injury report, 2026-09-09"
+    },
+    {
+      "gameId": "2026-W1-DAL-NYG",
+      "event": "Giants WR Malik Nabers was a full participant Wednesday and appeared on track for Week 1, materially improving the major availability checkpoint on the current board.",
+      "materiality": "MEDIUM-HIGH availability resolution",
+      "modelAction": "Do not infer a new fair; preserve governed state pending legitimate reprice.",
+      "classificationAction": "Availability uncertainty is reduced, but no official bet is activated from this information alone.",
+      "source": "Giants Wednesday practice reporting, 2026-09-09"
+    }
+  ],
+  "officialBet": null,
+  "finalSnapshot": "NE-SEA final snapshot already frozen before kickoff. SF-LAR final snapshot remains due Thursday 60-90 minutes before kickoff after official inactives and current market.",
+  "notes": "Rams-49ers Alfred Collins season-ending injury, Aaron Donald OUT, and Kittle/Bosa workload context were already separately persisted and are not duplicated here."
+}
