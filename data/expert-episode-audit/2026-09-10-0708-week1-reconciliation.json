@@ -1,0 +1,20 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "audited_at": "2026-09-10T07:08:33-04:00",
+  "status": "PROVISIONAL",
+  "sources_checked": ["Mina Kimes/ESPN NFL analysis", "The Ringer NFL family", "PFF", "Establish The Run", "Sharp Football Analysis", "Move The Line / 4for4", "high-quality national/local matchup reporting"],
+  "new_material_records": 5,
+  "new_source_audits": ["data/expert-episode-audit/2026-09-10-move-the-line-week1.json"],
+  "discovery_notes": "A newly indexed full transcript for Move The Line's Week 1 sides/totals/team-props episode contained five explicit show-consensus contest positions with matchup mechanisms. Existing Ringer/PFF/Mina/Sharp material was deduped. Patriots-Seahawks postgame content was excluded from pre-kickoff current-week matchup ingestion.",
+  "canonical_join_failures": 0,
+  "unexplained_discovered_episodes": 0,
+  "dedupe_applied": true,
+  "unsupported_wagers_inferred": false,
+  "quantitative_fair_modified": false,
+  "primary_ledger_status": "UNRESOLVED_INGESTION_FAILURE",
+  "primary_ledger_detail": "data/nfl-expert-weekly.json remains the workflow-designated canonical expert ledger but cannot yet be losslessly appended through the connected truncating read/full-file replacement path without risking prior records/timestamps. The five exact canonical-joined intended records are preserved in the governed episode audit.",
+  "runtime_write": "NFL only",
+  "notification": "new material handicap information plus unresolved ingestion failure"
+}
