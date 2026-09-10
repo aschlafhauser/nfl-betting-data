@@ -10,10 +10,10 @@
   "status": "PROVISIONAL",
   "episodeDiscovery": true,
   "officialNotesChecked": true,
-  "transcriptCaptions": "A newly indexed public Podscan transcript was discovered and searched. The accessible indexed transcript exposes the opening and beginning of Patriots-Seahawks, but the tool-visible page does not yet expose the complete 1h24m transcript. Apple/Amazon/ESPN feed metadata confirms the episode previews all 16 Week 1 games and that Mina and Domonique make picks for all 16. No unobserved pick was inferred.",
-  "officialSocialPickEvidence": "No separate official pick sheet/social post with the 16 selections was located in this pass; no side/ATS/ML/total/prop construction was inferred from episode metadata.",
-  "matchupsIdentified": ["New England Patriots at Seattle Seahawks", "San Francisco 49ers vs Los Angeles Rams"],
-  "canonicalGameIds": ["2bf1ca8d-11d6-4c00-b2e4-28971764e444", "c84dfc8c-8d90-4f80-a202-aa37d05e0c73"],
+  "transcriptCaptions": "Public Podscan transcript remains only partially exposed through the tool-visible surface. It confirms the opening Patriots-Seahawks and Australia-travel discussion; episode metadata from ESPN/Apple/Amazon confirms every Week 1 game is previewed and both analysts make picks for all 16. A newly indexed attributable Steelers Depot report quotes Domonique Foxworth's Falcons-Steelers segment directly. No unobserved pick or price was inferred.",
+  "officialSocialPickEvidence": "No separate official pick sheet/social post exposing all 16 selections was located in this pass; no side/ATS/ML/total/prop construction was inferred from episode metadata.",
+  "matchupsIdentified": ["New England Patriots at Seattle Seahawks", "San Francisco 49ers vs Los Angeles Rams", "Atlanta Falcons at Pittsburgh Steelers"],
+  "canonicalGameIds": ["2bf1ca8d-11d6-4c00-b2e4-28971764e444", "c84dfc8c-8d90-4f80-a202-aa37d05e0c73", "65387c45-a762-447f-85bf-2ac0381a8240"],
   "materialAnalysisReviewed": [
     {
       "gameId": "2bf1ca8d-11d6-4c00-b2e4-28971764e444",
@@ -28,12 +28,19 @@
       "detail": "On Australia travel/sleep planning, Foxworth said the 49ers' plan appears better optimized for this game while the Rams' approach may leave them with more challenge getting there and playing, even if it better protects subsequent-week recovery. Treat as a low-weight travel/readiness mechanism, not a side pick.",
       "construction": null,
       "conviction": null
+    },
+    {
+      "gameId": "65387c45-a762-447f-85bf-2ac0381a8240",
+      "analyst": "Domonique Foxworth",
+      "detail": "Foxworth says Atlanta's pass rush is essentially absent for this matchup and expects Aaron Rodgers to be comfortable in the pocket, creating an easier offensive environment for Pittsburgh. This is a Steelers offensive matchup advantage / Rodgers efficiency-positive mechanism only; no side, ATS, ML, total or prop wager is inferred.",
+      "construction": null,
+      "conviction": "Foxworth said he expects Rodgers to have a pretty good game; this is a performance view, not a betting conviction."
     }
   ],
-  "constructionsExtracted": "None yet from the currently visible transcript evidence. Episode metadata says both analysts make picks for all 16 games, but those selections are not safely attributable until the transcript/captions or official pick evidence becomes accessible.",
-  "dedupeCrossCheck": "Same Mina/ESPN family is correlated with prior Mina Week 1 material. Retain only incremental details: Seattle secondary/safety depletion as a Patriots passing-game mechanism, and Foxworth's game-specific Australia travel-readiness observation. Do not count as independent confirmations of prior Mina/ESPN views.",
-  "gameIdCrossCheck": "PASS for the two extracted details; both are joined to canonical nfl-weekly-board IDs. No unmatched record was created.",
+  "constructionsExtracted": "None safely attributable from currently exposed evidence. Episode metadata says both analysts make picks for all 16 games, but those selections remain unsupported until transcript/captions or official pick evidence becomes accessible.",
+  "dedupeCrossCheck": "Same Mina/ESPN family is correlated with prior Mina Week 1 material. The Falcons-Steelers item is incremental to the prior Tua-starter and PFF London-Dean records because it specifically concerns Atlanta's depleted pass rush versus Rodgers' pocket environment. Do not count it as independent confirmation of other ESPN-family views.",
+  "gameIdCrossCheck": "PASS for all three extracted details; each is joined to a canonical nfl-weekly-board ID. No unmatched record was created.",
   "modelEffect": "None. Expert Intelligence remains qualitative residual/context and does not overwrite the quantitative fair.",
-  "ledgerAction": "INTENDED APPEND BLOCKED: two genuinely new qualitative records identified, but data/nfl-expert-weekly.json remains unsafe to replace because the connected read path returns a truncated oversized one-line payload. Exact intended records are preserved here pending lossless synchronization.",
-  "finalCompletenessAudit": "PROVISIONAL: newly published relevant episode is accounted for, but full transcript/picks remain to be reconciled once reasonably accessible. No unsupported wager, no unmatched game and no quantitative-fair change."
+  "ledgerAction": "INTENDED APPEND BLOCKED: genuinely new qualitative Mina/ESPN records are preserved here, but data/nfl-expert-weekly.json remains unsafe to replace because the connected read path does not provide a lossless complete payload for the oversized canonical ledger.",
+  "finalCompletenessAudit": "PROVISIONAL: the episode is accounted for and late attributable Falcons-Steelers evidence has been reconciled, but full transcript/picks remain incomplete. No unsupported wager, no unmatched game and no quantitative-fair change."
 }
