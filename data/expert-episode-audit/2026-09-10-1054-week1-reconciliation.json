@@ -1,0 +1,33 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "auditType": "hourly-current-week-reconciliation",
+  "auditedAt": "2026-09-10T10:54:27-05:00",
+  "status": "PROVISIONAL",
+  "sourcesChecked": [
+    "Mina Kimes / ESPN first-party inventory",
+    "The Ringer NFL Show / Ringer Wise Guys first-party inventory",
+    "PFF current NFL inventory",
+    "Establish The Run current-week inventory",
+    "Sharp Football Analysis Week 1 inventory",
+    "other high-quality matchup-specific sources"
+  ],
+  "newMaterialRecords": 0,
+  "newRelevantEpisodes": [],
+  "dedupeApplied": true,
+  "unsupportedPicksInferred": false,
+  "quantitativeFairModified": false,
+  "canonicalJoinFailures": 0,
+  "discoveryNotes": "Fresh first-party-led discovery found no genuinely incremental safely attributable Week 1 matchup record beyond already governed Ringer NFL Show, Ringer Wise Guys/Dabbundo, PFF, Sharp, ETR and matchup-specific audit records. The September 9 Patriots-Seahawks result is postgame and not backfilled into pregame expert evidence.",
+  "primaryLedgerStatus": "UNRESOLVED_INGESTION_FAILURE",
+  "primaryLedgerDetail": "data/nfl-expert-weekly.json remains generated_at 2026-09-07 while newer governed episode-audit records exist. The connected read surface is truncated for the oversized primary file, so replacing it here would risk historical loss. Exact newer records remain preserved in governed audits until a lossless synchronization path is implemented.",
+  "runtimeWrite": "NFL only",
+  "productionImpact": {
+    "fairPoints": 0,
+    "modelWeights": 0,
+    "betActivationGate": 0,
+    "officialLedger": 0,
+    "units": 0
+  }
+}
