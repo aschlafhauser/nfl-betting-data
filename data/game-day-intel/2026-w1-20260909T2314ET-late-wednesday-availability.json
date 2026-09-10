@@ -1,0 +1,41 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "captured_at": "2026-09-09T23:14:32-04:00",
+  "type": "game_day_intelligence",
+  "governance": {
+    "model_fair_changed": false,
+    "official_bet_activated": false,
+    "cross_sport_inputs_used": false,
+    "notes": "Availability observations only. No ad-hoc injury points assigned and no prior wager/snapshot rewritten."
+  },
+  "material_updates": [
+    {
+      "game": "Chicago Bears at Carolina Panthers",
+      "team": "Chicago Bears",
+      "player": "Rome Odunze",
+      "position": "WR",
+      "status": "LIMITED (estimated)",
+      "injury": "calf",
+      "materiality": "New Week 1 skill-position availability question. Chicago did not practice Wednesday, so participation was estimated; this is not the prior foot injury.",
+      "execution_effect": "Availability uncertainty added; no fair change or wager activation without governed reprice and later practice/game-status confirmation."
+    },
+    {
+      "game": "New York Jets at Tennessee Titans",
+      "team": "New York Jets",
+      "player": "Joseph Ossai",
+      "position": "EDGE",
+      "status": "DNP (estimated)",
+      "injury": "foot",
+      "materiality": "Pass-rush availability concern; head coach described him as week-to-week.",
+      "execution_effect": "Track through final designation; no numerical adjustment manufactured."
+    }
+  ],
+  "rams_49ers_market_check": {
+    "spread": "Los Angeles Rams -3.5",
+    "total": 48.5,
+    "best_observed_49ers_moneyline": "+170",
+    "status": "No protected-key-number crossing in this pass; final inactive/market snapshot remains required 60-90 minutes pre-kickoff."
+  }
+}
