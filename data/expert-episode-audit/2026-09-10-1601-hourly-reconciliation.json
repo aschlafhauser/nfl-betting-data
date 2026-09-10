@@ -1,0 +1,23 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "auditedAt": "2026-09-10T16:01:54-05:00",
+  "sourceFamily": "hourly first-party inventory reconciliation",
+  "status": "COMPLETE",
+  "firstPartyInventory": [
+    {"family":"The Ringer NFL Show","result":"Sept. 10 Patriots-Seahawks postmortem / Rams-49ers look-ahead already governed at 15:09; available first-party notes still do not expose an incremental attributable Rams-49ers pick or detailed mechanism."},
+    {"family":"The Ringer Fantasy Football Show","result":"Sept. 10 one-stat-for-every-game episode already governed at 15:09; Brock Bowers absence was already present in governed runtime and no duplicate structured record was created."},
+    {"family":"PFF","result":"No newly attributable incremental Week 1 matchup package beyond governed inventory in this pass."},
+    {"family":"Establish The Run","result":"No newly attributable incremental NFL Week 1 matchup package surfaced in available first-party inventory in this pass."},
+    {"family":"Sharp Football Analysis","result":"Current Week 1 worksheet remains available; no genuinely new governed podcast/analysis record was required in this pass."},
+    {"family":"Mina Kimes/ESPN","result":"No newly attributable incremental Week 1 matchup package beyond governed inventory in this pass."}
+  ],
+  "newStructuredRecordsIntended": [],
+  "materialRecords": [],
+  "dedupeApplied": true,
+  "unsupportedPicksInferred": false,
+  "reconciliationRequired": true,
+  "reconciliationCommand": "node scripts/sync-expert-ledger.mjs",
+  "governance": "Expert Intelligence qualitative residual only; zero automatic impact on quantitative fair, model weights, upset routing, Bet Activation Gate, official ledger or units."
+}
