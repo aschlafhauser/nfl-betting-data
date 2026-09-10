@@ -1,0 +1,73 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "source_family": "Move The Line / 4for4",
+  "episode": "Best NFL Week 1 Bets: Sides, Totals & Team Props",
+  "episode_date": "2026-09-10",
+  "analysts": ["Ryan Noonan", "Connor Allen"],
+  "episode_status": "COMPLETE",
+  "completeness_notes": "Full reasonably available public transcript was exhausted. Explicit contest-card positions, matchup mechanisms, softer leans and teaser discussion were distinguished. No unsupported wager, price or conviction was inferred. Noonan and Allen are treated as correlated within one show/source family.",
+  "dedupe_rule": "episode/source family + canonical game ID + analyst + construction/detail",
+  "canonical_join_failures": 0,
+  "quantitative_fair_modified": false,
+  "records": [
+    {
+      "game_id": "810f2cd8-189f-49ce-89fa-f4d4172f7f0d",
+      "matchup": "Green Bay Packers at Minnesota Vikings",
+      "analyst": "Ryan Noonan / Connor Allen show consensus",
+      "kind": "explicit contest side",
+      "construction_detail": "Minnesota -1.5",
+      "summary": "Both hosts land on Minnesota -1.5 as one of their strongest Week 1 Circa Million positions. Mechanism: Minnesota should run effectively with Jordan Mason, Dallas Turner's edge/run-defense role improves the front, and the Vikings defense can stress Green Bay's offensive line and force Jordan Love into high-leverage hero-ball situations.",
+      "conviction": "explicit show-consensus contest pick; same-family/correlated",
+      "model_relationship": "qualitative expert context only; do not overwrite quantitative fair"
+    },
+    {
+      "game_id": "a288455d-ae9c-4d4f-96b8-ea42e64a0a9c",
+      "matchup": "Washington Commanders at Philadelphia Eagles",
+      "analyst": "Ryan Noonan / Connor Allen show consensus",
+      "kind": "explicit contest side",
+      "construction_detail": "Philadelphia -4.5 (Circa contest line)",
+      "summary": "The hosts include Philadelphia -4.5 on their core Week 1 card. Mechanism: Philadelphia is expected to control both trenches, its secondary can constrain Terry McLaurin/Stefon Diggs, and Washington enters with defensive injuries/depth losses including Johnny Newton plus offensive-line concerns, putting extra burden on Jayden Daniels returning from injury.",
+      "conviction": "explicit show-consensus contest pick; same-family/correlated",
+      "model_relationship": "qualitative expert context only; do not overwrite quantitative fair"
+    },
+    {
+      "game_id": "5c96a049-751a-40c8-9295-c09a5d9519e6",
+      "matchup": "Denver Broncos at Kansas City Chiefs",
+      "analyst": "Ryan Noonan / Connor Allen show consensus",
+      "kind": "explicit side / moneyline opinion",
+      "construction_detail": "Denver +3; explicit opinion that Denver can win outright",
+      "summary": "Denver +3 is one of the hosts' favorite Week 1 positions, with an explicit outright-win opinion. Their mechanism is asymmetric offseason/availability direction: Kansas City has questions at receiver, left tackle and corner plus Patrick Mahomes returning from a season-ending injury, while Denver's offseason is viewed much more positively and its defensive depth is trusted to absorb personnel losses.",
+      "conviction": "explicit strong side opinion with outright-win statement; same-family/correlated",
+      "model_relationship": "qualitative expert context only; do not overwrite quantitative fair"
+    },
+    {
+      "game_id": "14a137a8-c892-4aa5-9fb1-8f85a3609b28",
+      "matchup": "Baltimore Ravens at Indianapolis Colts",
+      "analyst": "Ryan Noonan / Connor Allen show consensus",
+      "kind": "explicit contest side",
+      "construction_detail": "Indianapolis +3.5",
+      "summary": "The hosts finalize Indianapolis +3.5 on the five-game contest card. The price through the field goal is central; they also cite a healthy-looking Colts offensive line and receiving group, Daniel Jones' extended practice runway and confidence that Indianapolis can score enough to keep the game inside one possession.",
+      "conviction": "explicit show-consensus contest pick; same-family/correlated",
+      "model_relationship": "qualitative expert context only; do not overwrite quantitative fair"
+    },
+    {
+      "game_id": "65387c45-a762-447f-85bf-2ac0381a8240",
+      "matchup": "Atlanta Falcons at Pittsburgh Steelers",
+      "analyst": "Ryan Noonan / Connor Allen show consensus",
+      "kind": "explicit contest side",
+      "construction_detail": "Pittsburgh -3.5",
+      "summary": "Pittsburgh -3.5 is finalized on the hosts' Week 1 contest card. The matchup mechanism is Atlanta's expected inability to generate pressure, particularly with edge personnel depleted/suspended, giving Aaron Rodgers the clean-pocket environment the hosts specifically want when backing Pittsburgh.",
+      "conviction": "explicit show-consensus contest pick; same-family/correlated",
+      "model_relationship": "qualitative expert context only; do not overwrite quantitative fair"
+    }
+  ],
+  "non_promoted_notes": [
+    "Jets were described as Jets-or-nothing with a favorable pass-rush-vs-Tennessee-OL mechanism, but the hosts explicitly stopped short of making the Jets a must-have standalone bet; no stronger wager was inferred.",
+    "Saints +7 was discussed as appealing at the key number because Detroit's secondary is depleted and New Orleans has backdoor/passing-game paths, but it did not make the final five-game card.",
+    "Rams-49ers side/total was explicitly treated as a stay-away; travel/sleep discussion was retained as discussion only and not promoted to a wager."
+  ],
+  "ledger_action": "Intended structured records preserved here pending lossless synchronization to data/nfl-expert-weekly.json; canonical primary ledger remains unsafe to reconstruct from the truncating connected read/full-file-replacement surface.",
+  "runtime_write": "NFL only"
+}
