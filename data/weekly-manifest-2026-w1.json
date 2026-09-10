@@ -1,0 +1,26 @@
+{
+  "season": 2026,
+  "week": 1,
+  "updatedAt": "2026-09-10T07:32:00-05:00",
+  "status": "FAIL",
+  "healthyDefinition": "PASS only when every required gate passes. Deep Dive coverage, market freshness, expert ingestion, specialty screening and final snapshots are independently verified.",
+  "gates": {
+    "canonicalSchedule": {"status":"PASS","expectedGames":16,"actualGames":16,"detail":"Week 1 canonical schedule is established."},
+    "deepDiveEvidence": {"status":"PASS-WITH-MAINTENANCE","required":16,"complete":16,"detail":"All 16 games have matchup classifications plus a six-way matrix base; late official practice/inactive overlays must continue to supersede stale assumptions."},
+    "marketCoverage": {"status":"PASS-WITH-REFRESH","detail":"Full Week 1 market snapshot exists; game-day prices still require live refresh for execution."},
+    "upsetLab": {"status":"PASS-WITH-REFRESH","detail":"Week 1 +250/+300 screening exists, but current prices must be rechecked as markets move."},
+    "expertEpisodeInventory": {"status":"FAIL","detail":"Canonical data/nfl-expert-weekly.json remains an older generated snapshot while later governed episode/audit records exist; lossless ledger synchronization remains unresolved."},
+    "canonicalGameJoins": {"status":"PASS-WITH-AUDIT","detail":"New NFL expert records are required to join canonical nfl-weekly-board IDs; unmatched records remain hard ingestion failures."},
+    "practiceAvailabilityFreshness": {"status":"FAIL","detail":"The Wednesday checkpoint explicitly lacked later official practice reports for Sunday/Monday games. These overlays must be current before final execution."},
+    "finalPreKickoffSnapshots": {"status":"IN_PROGRESS","detail":"Every remaining unplayed game requires an immutable 60–90 minute pre-kickoff snapshot after current market and official inactive checks."}
+  },
+  "currentPriorityQueue": [
+    "Losslessly synchronize later governed NFL expert records into data/nfl-expert-weekly.json",
+    "Overlay current official practice/injury reports on every unplayed game",
+    "Refresh current market and key-number sensitivity",
+    "Re-run NFL Upset Lab at current prices",
+    "Freeze final snapshots for every remaining kickoff",
+    "Keep six-way matchup matrices current with personnel changes"
+  ],
+  "notificationPolicy": "Notify only for material handicap evidence, price/model/status changes, official activations, meaningful Upset Lab changes, or unresolved gate failures."
+}
