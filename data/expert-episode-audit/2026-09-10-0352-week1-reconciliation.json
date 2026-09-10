@@ -1,0 +1,20 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "auditType": "pre-kickoff-current-week-reconciliation",
+  "auditedAt": "2026-09-10T03:52:38-04:00",
+  "status": "COMPLETE-SOURCE-LIMITED",
+  "sourcesChecked": ["Mina Kimes / ESPN NFL analysis", "The Ringer NFL family", "PFF", "Establish The Run", "Sharp Football Analysis", "high-quality national/local matchup reporting"],
+  "newMaterialRecords": 0,
+  "newSourceAudits": [],
+  "discoveryNotes": "Fresh discovery through 03:52 ET found no genuinely incremental safely attributable pre-kickoff Week 1 record beyond material already governed. Patriots-Seahawks postgame analysis was excluded from pre-kickoff expert-intelligence ingestion. Rams-49ers and remaining Week 1 preview material located in this pass was either previously available/non-incremental or outside the established high-quality threshold.",
+  "canonicalJoinFailures": 0,
+  "unexplainedDiscoveredEpisodes": 0,
+  "dedupeApplied": true,
+  "quantitativeFairModified": false,
+  "primaryLedgerStatus": "UNRESOLVED_INGESTION_FAILURE",
+  "primaryLedgerDetail": "data/nfl-expert-weekly.json still presents as the September 7 oversized snapshot through the connected read surface; a fresh base64 retrieval again truncated before complete verification. No destructive full-file reconstruction was attempted, so post-September-7 governed audit records remain not fully confirmed synchronized into the canonical ledger.",
+  "runtimeWrite": "NFL only",
+  "notification": "unresolved ingestion/reconciliation failure only"
+}
