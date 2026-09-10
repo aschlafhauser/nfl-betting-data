@@ -1,0 +1,38 @@
+{
+  "season": 2026,
+  "week": 1,
+  "gameId": "2026-W1-SF-LAR",
+  "recordedAt": "2026-09-10T18:53:52-05:00",
+  "type": "FINAL_SNAPSHOT_GATE_FAILURE",
+  "kickoff": "2026-09-10T19:35:00-05:00",
+  "requiredWindow": "60-90 minutes pre-kickoff after official inactives and current market verification",
+  "market": {
+    "bestObservedRamsSpread": "LAR -3.5 -106",
+    "consensusDisplayedSpread": "LAR -4.5",
+    "bestObserved49ersMoneyline": "+180",
+    "bestObservedTotal": "48.5 -108 under / 48 -105 over",
+    "source": "SportsbookReview current board",
+    "observedAt": "2026-09-10T18:53:52-05:00"
+  },
+  "productionFair": "Los Angeles Rams -3.7",
+  "classification": "PASS pending availability",
+  "availability": {
+    "confirmed": [
+      "SF DT Alfred Collins OUT",
+      "SF DT James Thompson Jr QUESTIONABLE",
+      "SF Nick Bosa no game designation",
+      "SF George Kittle no game designation",
+      "LAR Aaron Donald OUT",
+      "LAR Myles Garrett no game designation",
+      "LAR Alaric Jackson no game designation"
+    ],
+    "officialInactiveListStatus": "NOT VERIFIED FROM CURRENT OFFICIAL TEAM/NFL SOURCES DURING THIS RUN"
+  },
+  "snapshotStatus": "MISSING",
+  "governance": {
+    "officialBetActivated": false,
+    "fairReverseEngineered": false,
+    "historicalStateRewritten": false,
+    "reason": "Mandatory final snapshot cannot be truthfully frozen without verified official inactives. Missing final snapshot inside the required window is notification-worthy and a production gate failure."
+  }
+}
