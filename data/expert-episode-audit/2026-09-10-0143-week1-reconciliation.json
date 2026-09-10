@@ -1,0 +1,25 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "auditType": "pre-kickoff-current-week-reconciliation",
+  "auditedAt": "2026-09-10T01:43:17-04:00",
+  "sourcesChecked": ["Mina Kimes / ESPN NFL analysis", "The Ringer NFL family", "PFF", "Establish The Run", "Sharp Football Analysis", "high-quality national/local matchup reporting"],
+  "newRelevantMaterial": [
+    "Mina Kimes Show / Domonique Foxworth: Atlanta's depleted pass rush should create a more comfortable pocket environment for Aaron Rodgers in Falcons-Steelers; qualitative Steelers offensive advantage only.",
+    "New York Post / Gang's All Here: Jets EDGE David Bailey says New York built a group containment plan around Cam Ward's elusiveness; qualitative Jets defensive-plan context only."
+  ],
+  "canonicalJoinStatus": "PASS for all newly governed NFL records",
+  "dedupeApplied": true,
+  "sameFamilyCorrelationApplied": true,
+  "unsupportedPicksInferred": false,
+  "quantitativeFairModified": false,
+  "episodeCompleteness": {
+    "Mina Kimes / ESPN — Maye Anything: Previewing Week One": "PROVISIONAL",
+    "New York Post / Gang's All Here — David Bailey Week 1 interview": "COMPLETE-SOURCE-LIMITED"
+  },
+  "primaryLedgerStatus": "UNRESOLVED_INGESTION_FAILURE",
+  "primaryLedgerDetail": "data/nfl-expert-weekly.json remains the workflow-designated canonical NFL expert ledger but cannot yet be safely losslessly updated from the connected oversized/truncated read surface. New exact records are preserved in governed audits rather than risking historical loss.",
+  "appRepoModified": false,
+  "reconciliationStatus": "PROVISIONAL due solely to unresolved canonical-ledger synchronization and Mina episode transcript/pick incompleteness."
+}
