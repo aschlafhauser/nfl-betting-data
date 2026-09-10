@@ -1,0 +1,51 @@
+name: Refresh governed NFL weekly manifest
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/weekly-board.json'
+      - 'data/deep-dive-status.json'
+      - 'data/weekday-intel-*.json'
+      - 'data/expert-weekly.json'
+      - 'data/current-personnel-state.json'
+      - 'data/game-intelligence.json'
+      - 'data/bet-recommendations.json'
+      - 'scripts/refresh-weekly-manifest.mjs'
+      - 'scripts/verify-weekly-gates.mjs'
+      - '.github/workflows/refresh-nfl-weekly-manifest.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nfl-weekly-manifest
+  cancel-in-progress: true
+
+jobs:
+  manifest:
+    if: ${{ !contains(github.event.head_commit.message || '', '[skip ci]') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Rebuild selected-week manifest
+        run: node scripts/refresh-weekly-manifest.mjs
+      - name: Persist manifest
+        run: |
+          if git diff --quiet -- data/weekly-manifest*.json; then
+            echo 'Manifest already current.'
+          else
+            git config user.name 'nfl-runtime-bot'
+            git config user.email 'nfl-runtime-bot@users.noreply.github.com'
+            git add data/weekly-manifest*.json
+            git commit -m 'chore: refresh governed NFL weekly manifest [skip ci]'
+            git pull --rebase origin main
+            git push origin main
+          fi
+      - name: Enforce NFL weekly gates
+        run: node scripts/verify-weekly-gates.mjs
