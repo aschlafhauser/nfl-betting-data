@@ -11,9 +11,13 @@ on:
       - 'data/current-personnel-state.json'
       - 'data/game-intelligence.json'
       - 'data/bet-recommendations.json'
+      - 'data/upset-lab*.json'
       - 'scripts/refresh-weekly-manifest.mjs'
       - 'scripts/verify-weekly-gates.mjs'
+      - 'scripts/verify-live-portal.mjs'
       - '.github/workflows/refresh-nfl-weekly-manifest.yml'
+  schedule:
+    - cron: '27 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -27,25 +31,56 @@ jobs:
   manifest:
     if: ${{ !contains(github.event.head_commit.message || '', '[skip ci]') }}
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Read NFL selected-week control metadata
+        run: |
+          node - <<'NODE' >> "$GITHUB_ENV"
+          const fs=require('fs');const b=JSON.parse(fs.readFileSync('data/weekly-board.json','utf8'));
+          const week=Number(b.week),games=Number(b.games?.length||0);
+          if(!Number.isFinite(week)||games<=0)throw new Error('NFL weekly board missing valid week/slate');
+          console.log(`NFL_WEEK=${week}`);console.log(`NFL_EXPECTED_GAMES=${games}`);
+          NODE
+      - name: Install browser runtime
+        run: |
+          npm init -y >/dev/null 2>&1
+          npm install playwright@1.55.0
+          npx playwright install --with-deps chromium
       - name: Rebuild selected-week manifest
         run: node scripts/refresh-weekly-manifest.mjs
-      - name: Persist manifest
+      - name: Persist manifest safely
         run: |
+          set -e
+          git config user.name 'nfl-runtime-bot'
+          git config user.email 'nfl-runtime-bot@users.noreply.github.com'
+          git fetch origin main
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
+            echo 'A newer NFL runtime commit landed during this run; treating this manifest build as superseded.'
+            git reset --hard origin/main
+            exit 0
+          fi
           if git diff --quiet -- data/weekly-manifest*.json; then
             echo 'Manifest already current.'
           else
-            git config user.name 'nfl-runtime-bot'
-            git config user.email 'nfl-runtime-bot@users.noreply.github.com'
             git add data/weekly-manifest*.json
             git commit -m 'chore: refresh governed NFL weekly manifest [skip ci]'
-            git pull --rebase origin main
-            git push origin main
+            if ! git push origin HEAD:main; then
+              echo 'Remote advanced during NFL manifest push; resetting to latest main rather than rebasing generated state.'
+              git fetch origin main
+              git reset --hard origin/main
+            fi
           fi
       - name: Enforce NFL weekly gates
+        if: ${{ always() }}
         run: node scripts/verify-weekly-gates.mjs
+      - name: Verify every live NFL portal tab
+        if: ${{ always() }}
+        env:
+          NFL_PORTAL_URL: https://nfl-betting-intelligence.netlify.app/
+        run: node scripts/verify-live-portal.mjs
