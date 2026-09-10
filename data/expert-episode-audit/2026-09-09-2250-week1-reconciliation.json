@@ -1,0 +1,16 @@
+{
+  "sport":"NFL",
+  "season":2026,
+  "week":1,
+  "auditType":"pre-kickoff-current-week-reconciliation",
+  "auditedAt":"2026-09-09T22:50:59-04:00",
+  "status":"FAIL-PARTIAL",
+  "sourcesChecked":["Mina Kimes / ESPN NFL analysis","The Ringer NFL family","PFF","Establish The Run","Sharp Football Analysis","high-quality national/local matchup reporting"],
+  "newEpisodeDiscovery":{"sourceFamily":"PFF","title":"The 10 best NFL player matchups to watch in Week 1","published":"2026-09-09","status":"COMPLETE","episodeAudit":"data/expert-episode-audit/2026-09-09-pff-week1-10-player-matchups.json"},
+  "newMaterialRecords":7,
+  "canonicalJoinStatus":"PASS for all seven extracted records",
+  "sameFamilyCorrelation":"PFF records are correlated with previously governed PFF Week 1 material and were not counted as independent confirmations.",
+  "quantitativeFairAction":"none",
+  "unresolvedFailures":["Canonical data/nfl-expert-weekly.json synchronization remains unresolved. The current connector read surface truncates the oversized one-line payload while updates require complete replacement content; therefore newly governed records are preserved in auditable source files rather than risking destructive replacement."],
+  "notes":"Fresh checks found no additional safely attributable Mina/ESPN, Ringer, ETR or Sharp record that was both materially incremental and dedupe-safe beyond already governed Week 1 evidence."
+}
