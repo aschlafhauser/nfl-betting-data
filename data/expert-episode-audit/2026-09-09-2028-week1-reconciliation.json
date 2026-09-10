@@ -1,0 +1,21 @@
+{
+  "sport":"NFL",
+  "season":2026,
+  "week":1,
+  "auditType":"pre-kickoff-current-week-reconciliation",
+  "auditedAt":"2026-09-09T20:28:00-04:00",
+  "status":"PROVISIONAL",
+  "sourcesChecked":["Mina Kimes / ESPN NFL analysis","The Ringer NFL family","PFF","Establish The Run","Sharp Football Analysis","Action Network","current matchup-specific national/local reporting"],
+  "newEpisodeDiscovery":[],
+  "newMaterialRecords":[],
+  "episodeReconciliation":"Fresh current-day discovery found no newly published Mina/ESPN, Ringer NFL, PFF, Establish The Run or Sharp item after the prior 19:20 ET reconciliation that yielded an additional safely attributable, genuinely incremental Week 1 construction. Newly surfaced search results were either already governed, duplicate analysis, or insufficiently attributable for a new record. No wager inferred.",
+  "canonicalJoinFailures":0,
+  "unexplainedDiscoveredEpisodes":0,
+  "unsupportedWagersInferred":false,
+  "quantitativeFairModified":false,
+  "dedupeApplied":true,
+  "primaryLedgerStatus":"UNRESOLVED_INGESTION_FAILURE",
+  "primaryLedgerDetail":"data/nfl-expert-weekly.json remains a stale September 7 oversized one-line snapshot. Later governed records, including the September 9 Stevenson leading-rusher construction, remain preserved in source/reconciliation audits because the connected read surface truncates the primary payload while writes require complete replacement content. No destructive reconstruction attempted.",
+  "runtimeWrite":"NFL only",
+  "notification":"unresolved NFL primary-ledger ingestion failure; no new material handicap claim"
+}
