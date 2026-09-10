@@ -1,0 +1,44 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "source_family": "The Ringer / Off The Pike",
+  "independence_key": "ringer-nfl-family",
+  "content": "Drake and the Pats Lose an Ugly One in Seattle, With James White",
+  "sourceDate": "2026-09-10",
+  "status": "PROVISIONAL",
+  "audited_at": "2026-09-10T23:52:00Z",
+  "episodeCompleteness": "PROVISIONAL",
+  "completenessNotes": "The Ringer first-party episode page exposes a current Week 1 episode with a best-bets segment beginning at 1:00:50. The page also contains Patriots-Seahawks postgame analysis, but that game is already final and its closing snapshot remains immutable. Reasonably accessible first-party notes do not expose the actual Week 1 best-bet selections, prices, score predictions, stakes or conviction from the best-bets segment. None are inferred. This audit accounts for the newly visible episode in governed inventory and remains PROVISIONAL until transcript/caption/audio-derived attributable pick evidence or an official social/pick-sheet surface safely exposes the selections.",
+  "evidenceSurfaceLog": [
+    {
+      "surface": "The Ringer first-party episode/latest inventory",
+      "status": "CHECKED",
+      "result": "Episode dated September 10, 2026; first-party summary explicitly identifies a Week 1 best-bets segment at 1:00:50."
+    },
+    {
+      "surface": "first-party show notes/timestamps",
+      "status": "CHECKED",
+      "result": "Accessible notes identify Patriots-Seahawks postgame discussion and the best-bets segment but do not enumerate selections or prices."
+    },
+    {
+      "surface": "transcript/captions",
+      "status": "SOURCE-LIMITED",
+      "result": "No reasonably accessible transcript/caption evidence recovered in this pass that safely exposes the best-bet selections."
+    },
+    {
+      "surface": "official social/pick-sheet evidence",
+      "status": "NOT-FOUND",
+      "result": "No attributable official pick sheet/social evidence exposing the selections was recovered in this pass."
+    }
+  ],
+  "canonicalGames": [],
+  "recordsAppended": [],
+  "dedupeApplied": true,
+  "unsupportedPicksInferred": false,
+  "correlation": {
+    "family": "The Ringer NFL family",
+    "treatment": "Off The Pike and other same-network Ringer NFL/gambling voices are treated as correlated where they share the same analytical/source family; this episode does not count as independent confirmation of another Ringer opinion by itself."
+  },
+  "governance": "Expert Intelligence qualitative residual only; zero automatic impact on production fair, model weights, upset routing, Bet Activation Gate, official ledger or units. No structured game record is appended until an attributable selection can be safely joined to a canonical NFL Week 1 game ID."
+}
