@@ -11,6 +11,10 @@ const url=`https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard
 const ml=v=>{const n=Number(v);return Number.isFinite(n)?`${n>0?'+':''}${n}`:null};
 const num=v=>{const n=Number(v);return Number.isFinite(n)?n:null};
 const clean=s=>String(s||'').trim();
+const normAbbr=v=>{
+  const a=clean(v).toUpperCase();
+  return ({WSH:'WAS',WAS:'WAS',JAX:'JAC',JAC:'JAC'})[a]||a;
+};
 
 function teamLabel(c){return c?.team?.displayName||c?.team?.shortDisplayName||c?.team?.location||c?.team?.name||null}
 function oddsRow(ev){
@@ -18,11 +22,11 @@ function oddsRow(ev){
   const a=cs.find(x=>x.homeAway==='away'),h=cs.find(x=>x.homeAway==='home');
   if(!a||!h)return null;
   const o=Array.isArray(c.odds)?c.odds[0]:null;
-  const awayAbbr=clean(a?.team?.abbreviation).toUpperCase(),homeAbbr=clean(h?.team?.abbreviation).toUpperCase();
+  const awayAbbr=normAbbr(a?.team?.abbreviation),homeAbbr=normAbbr(h?.team?.abbreviation);
   const details=clean(o?.details);
   let favoriteAbbr=null,line=null;
   const m=details.match(/^([^\s]+)\s+(-?\d+(?:\.\d+)?)/);
-  if(m){favoriteAbbr=m[1].toUpperCase();line=Number(m[2]);}
+  if(m){favoriteAbbr=normAbbr(m[1]);line=Number(m[2]);}
   const awayName=teamLabel(a),homeName=teamLabel(h);
   let spreadDisplay=details||null,homeBookSpread=null,homeMargin=null;
   if(Number.isFinite(line)&&favoriteAbbr){
@@ -39,14 +43,14 @@ const r=await fetch(url,{headers:{accept:'application/json','user-agent':'nfl-go
 if(!r.ok)throw new Error(`ESPN NFL scoreboard fetch failed: HTTP ${r.status}`);
 const payload=await r.json();
 const rows=(payload.events||[]).map(oddsRow).filter(Boolean);
-const byAbbr=new Map(rows.map(x=>[`${x.awayAbbr}__${x.homeAbbr}`,x]));
+const byAbbr=new Map(rows.map(x=>[`${normAbbr(x.awayAbbr)}__${normAbbr(x.homeAbbr)}`,x]));
 const canonicalGames=Array.isArray(canonical.games)?canonical.games:[];
 if(rows.length!==canonicalGames.length)throw new Error(`ESPN selected-week slate mismatch: ${rows.length}/${canonicalGames.length}`);
 
 function parseTeamLine(display,homeAbbr,awayAbbr,homeName,awayName){
   const s=String(display||'');const m=s.match(/^(.*?)\s+(-?\d+(?:\.\d+)?)$/);if(!m)return null;
   const team=m[1].trim(),line=Number(m[2]);if(!Number.isFinite(line))return null;
-  const isHome=team===homeName||team.toUpperCase()===homeAbbr;const isAway=team===awayName||team.toUpperCase()===awayAbbr;
+  const isHome=team===homeName||normAbbr(team)===normAbbr(homeAbbr);const isAway=team===awayName||normAbbr(team)===normAbbr(awayAbbr);
   if(!isHome&&!isAway)return null;return isHome?-line:line;
 }
 function displayFromHomeMargin(home,away,hm){
@@ -56,8 +60,8 @@ function displayFromHomeMargin(home,away,hm){
 
 let liveOdds=0;
 const updatedCanonical=canonicalGames.map(g=>{
-  const row=byAbbr.get(`${String(g.awayAbbr||'').toUpperCase()}__${String(g.homeAbbr||'').toUpperCase()}`);
-  if(!row)throw new Error(`No ESPN row for ${g.gameId}`);
+  const row=byAbbr.get(`${normAbbr(g.awayAbbr)}__${normAbbr(g.homeAbbr)}`);
+  if(!row)throw new Error(`No ESPN row for ${g.gameId} (${g.awayAbbr}-${g.homeAbbr}) after abbreviation normalization`);
   const hasCurrent=row.hasOdds&&row.spreadDisplay&&row.total!=null;
   if(hasCurrent)liveOdds++;
   const currentSpread=hasCurrent?row.spreadDisplay:g.currentSpread;
@@ -79,7 +83,7 @@ const canonByTeams=new Map(updatedCanonical.map(g=>[`${String(g.away).toLowerCas
 const updatedLegacy=(legacy.games||[]).map(g=>{
   const cg=canonByTeams.get(`${String(g.away).toLowerCase()}__${String(g.home).toLowerCase()}`);
   if(!cg)return g;
-  const row=byAbbr.get(`${String(cg.awayAbbr).toUpperCase()}__${String(cg.homeAbbr).toUpperCase()}`);
+  const row=byAbbr.get(`${normAbbr(cg.awayAbbr)}__${normAbbr(cg.homeAbbr)}`);
   const hasCurrent=row?.hasOdds&&row.spreadDisplay&&row.total!=null;
   const market=hasCurrent?{
     ...(g.market||{}),spread_display:row.spreadDisplay,home_team_sportsbook_spread:row.homeBookSpread,home_margin:row.homeMargin,total:row.total,
@@ -88,8 +92,8 @@ const updatedLegacy=(legacy.games||[]).map(g=>{
   return {...g,kickoff:row?.kickoff||g.kickoff,event_state:row?.completed?'final':'scheduled',market};
 });
 
-const nextCanonical={...canonical,updatedAt:now,marketSource:'Current ESPN NFL selected-week odds feed; exact sportsbook/juice required before execution',games:updatedCanonical,runtimeRefresh:{source:url,observedAt:now,espnEvents:rows.length,currentOddsGames:liveOdds}};
-const nextLegacy={...legacy,generated_at:now,schedule_source:'Canonical selected-week NFL board + ESPN scoreboard reconciliation',market_source:'ESPN selected-week odds feed; exact sportsbook/juice required before execution',games:updatedLegacy,runtime_refresh:{source:url,observed_at:now,espn_events:rows.length,current_odds_games:liveOdds}};
+const nextCanonical={...canonical,updatedAt:now,marketSource:'Current ESPN NFL selected-week odds feed; exact sportsbook/juice required before execution',games:updatedCanonical,runtimeRefresh:{source:url,observedAt:now,espnEvents:rows.length,currentOddsGames:liveOdds,identityNormalization:'WSH/WAS and JAX/JAC normalized before canonical joins'}};
+const nextLegacy={...legacy,generated_at:now,schedule_source:'Canonical selected-week NFL board + ESPN scoreboard reconciliation',market_source:'ESPN selected-week odds feed; exact sportsbook/juice required before execution',games:updatedLegacy,runtime_refresh:{source:url,observed_at:now,espn_events:rows.length,current_odds_games:liveOdds,identity_normalization:'WSH/WAS and JAX/JAC normalized before canonical joins'}};
 await fs.writeFile(canonicalPath,JSON.stringify(nextCanonical,null,2)+'\n');
 await fs.writeFile(legacyPath,JSON.stringify(nextLegacy,null,2)+'\n');
 console.log(`NFL live portal runtime refreshed: slate=${rows.length}, currentOdds=${liveOdds}, completed=${rows.filter(x=>x.completed).length}`);
