@@ -1,0 +1,33 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "auditType": "hourly-current-week-reconciliation",
+  "auditedAt": "2026-09-10T11:23:18-05:00",
+  "status": "PROVISIONAL",
+  "sourcesChecked": [
+    "Mina Kimes / ESPN first-party inventory",
+    "The Ringer NFL Show first-party inventory",
+    "PFF first-party news/analysis inventory",
+    "Establish The Run first-party inventory",
+    "Sharp Football Analysis first-party inventory",
+    "other high-quality matchup-specific source families"
+  ],
+  "evidenceSurfaces": [
+    {"source":"The Ringer NFL Show","surface":"first-party episode page","result":"Latest matchup-specific episode remains September 9 Patriots-Seahawks / 49ers-Rams preview already governed."},
+    {"source":"PFF","surface":"first-party news/analysis inventory","result":"September 9 Week 1 matchup articles remain current and already governed; no newer incremental pregame mechanism package surfaced."},
+    {"source":"Sharp Football Analysis","surface":"first-party Week 1 odds/picks and worksheet inventory","result":"Current Week 1 material is already represented in governed audits; no new attributable incremental package surfaced."},
+    {"source":"Mina Kimes / Establish The Run","surface":"first-party-led discovery plus fallback search","result":"No newly surfaced current-week matchup package cleared the incremental threshold in this pass."}
+  ],
+  "newMaterialRecords": 0,
+  "newRelevantEpisodes": [],
+  "dedupeApplied": true,
+  "unsupportedPicksInferred": false,
+  "quantitativeFairModified": false,
+  "canonicalJoinFailures": 0,
+  "discoveryNotes": "No genuinely incremental safely attributable NFL Week 1 package surfaced after first-party-led checks; current Ringer/PFF/Sharp and other governed records remain deduped.",
+  "primaryLedgerStatus": "UNRESOLVED_INGESTION_FAILURE",
+  "primaryLedgerDetail": "data/nfl-expert-weekly.json remains stale/incomplete versus newer governed episode-audit records. Do not replace or truncate it from a partial/truncated read surface; preserve exact audit records and quantitative model state until a lossless append/merge path is available.",
+  "runtimeWrite": "NFL only",
+  "productionImpact": {"fairPoints":0,"modelWeights":0,"upsetRouting":0,"betActivationGate":0,"officialLedger":0,"units":0}
+}
