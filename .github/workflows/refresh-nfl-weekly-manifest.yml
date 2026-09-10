@@ -7,11 +7,14 @@ on:
       - 'data/weekly-board.json'
       - 'data/deep-dive-status.json'
       - 'data/weekday-intel-*.json'
-      - 'data/expert-weekly.json'
+      - 'data/nfl-expert-weekly.json'
+      - 'data/expert-ledger-reconciliation.json'
+      - 'data/expert-episode-audit/**'
       - 'data/current-personnel-state.json'
       - 'data/game-intelligence.json'
       - 'data/bet-recommendations.json'
       - 'data/upset-lab*.json'
+      - 'scripts/sync-expert-ledger.mjs'
       - 'scripts/refresh-weekly-manifest.mjs'
       - 'scripts/verify-weekly-gates.mjs'
       - 'scripts/verify-live-portal.mjs'
@@ -47,6 +50,8 @@ jobs:
           if(!Number.isFinite(week)||games<=0)throw new Error('NFL weekly board missing valid week/slate');
           console.log(`NFL_WEEK=${week}`);console.log(`NFL_EXPECTED_GAMES=${games}`);
           NODE
+      - name: Losslessly reconcile Expert Intelligence primary ledger
+        run: node scripts/sync-expert-ledger.mjs
       - name: Install browser runtime
         run: |
           npm init -y >/dev/null 2>&1
@@ -54,24 +59,24 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Rebuild selected-week manifest
         run: node scripts/refresh-weekly-manifest.mjs
-      - name: Persist manifest safely
+      - name: Persist governed NFL runtime safely
         run: |
           set -e
           git config user.name 'nfl-runtime-bot'
           git config user.email 'nfl-runtime-bot@users.noreply.github.com'
           git fetch origin main
           if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
-            echo 'A newer NFL runtime commit landed during this run; treating this manifest build as superseded.'
+            echo 'A newer NFL runtime commit landed during this run; treating this build as superseded.'
             git reset --hard origin/main
             exit 0
           fi
-          if git diff --quiet -- data/weekly-manifest*.json; then
-            echo 'Manifest already current.'
+          if git diff --quiet -- data/nfl-expert-weekly.json data/expert-ledger-reconciliation.json data/weekly-manifest*.json; then
+            echo 'NFL governed runtime already current.'
           else
-            git add data/weekly-manifest*.json
-            git commit -m 'chore: refresh governed NFL weekly manifest [skip ci]'
+            git add data/nfl-expert-weekly.json data/expert-ledger-reconciliation.json data/weekly-manifest*.json
+            git commit -m 'chore: refresh governed NFL runtime [skip ci]'
             if ! git push origin HEAD:main; then
-              echo 'Remote advanced during NFL manifest push; resetting to latest main rather than rebasing generated state.'
+              echo 'Remote advanced during NFL runtime push; resetting to latest main rather than rebasing generated state.'
               git fetch origin main
               git reset --hard origin/main
             fi
