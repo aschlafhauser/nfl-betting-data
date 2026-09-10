@@ -1,0 +1,17 @@
+{
+  "auditType": "pre-kickoff-current-week-reconciliation",
+  "auditedAt": "2026-09-10T05:53:13-04:00",
+  "sport": "NFL",
+  "week": 1,
+  "status": "PROVISIONAL",
+  "newMaterialRecords": 5,
+  "newMaterialSource": "TalkSPORT / Kody Malstrom Rams-49ers prop analysis",
+  "canonicalJoinFailures": 0,
+  "dedupeApplied": true,
+  "sameFamilyCorrelationApplied": true,
+  "unsupportedWagersInferred": false,
+  "quantitativeFairModified": false,
+  "sourceNotes": "Fresh checks across Mina Kimes/ESPN, The Ringer NFL family, PFF, Establish The Run, Sharp Football Analysis and broader current Week 1 matchup reporting found one genuinely incremental source package: Kody Malstrom's Sep. 10 Rams-49ers prop article. Five explicit constructions were preserved exactly; no side/total implication was inferred. Patriots-Seahawks postgame material was excluded from pre-kickoff Week 1 expert ingestion.",
+  "primaryLedgerStatus": "UNRESOLVED_INGESTION_FAILURE",
+  "primaryLedgerDetail": "The workflow-designated data/nfl-expert-weekly.json still exposes an oversized Sep. 7 snapshot through the connected read surface. Because writes require complete replacement content, the five new Rams-49ers records were preserved in governed audit rather than risk loss of prior records/timestamps."
+}
