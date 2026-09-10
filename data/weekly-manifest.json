@@ -2,7 +2,7 @@
   "version": "NFL-WEEKLY-MANIFEST-v1",
   "season": 2026,
   "week": 1,
-  "updatedAt": "2026-09-10T15:54:27.000Z",
+  "updatedAt": "2026-09-10T16:23:18.000Z",
   "status": "FAIL-EXPERT-LEDGER-SYNC",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-09-09.json",
@@ -12,13 +12,11 @@
     "structuredPerGameReview": {"status":"PASS","classifiedGames":16,"expected":16,"source":"weekday-intel-2026-09-09.json"},
     "matchupMatrix": {"status":"PASS","requiredDimensions":6,"declaredDimensions":6,"pointImpact":0,"note":"Current personnel/unit overlays and older matchup diagnostics remain research-only unless separately validated."},
     "homeMarginConvention": {"status":"PASS","note":"Canonical home-margin convention is required before all edge calculations; NFL key numbers 3 and 7 remain protected."},
-    "expertIntelligence": {"status":"FAIL","pointImpact":0,"note":"First-party inventory is reconciled through 2026-09-10 10:54 CT with no new incremental package, but data/nfl-expert-weekly.json remains generated_at 2026-09-07 while newer governed episode audits exist. Primary-ledger synchronization is an unresolved ingestion failure."},
+    "expertIntelligence": {"status":"FAIL","primaryLedgerStatus":"UNRESOLVED_INGESTION_FAILURE","latestReconciliation":"2026-09-10-1123-week1-reconciliation.json","pointImpact":0,"note":"First-party inventory is current for this pass with no new incremental package, but data/nfl-expert-weekly.json remains stale/incomplete versus newer governed episode audits. Primary-ledger synchronization is unresolved."},
     "upsetResearchIsolation": {"status":"PASS","productionFairImpact":0,"modelWeightImpact":0,"officialLedgerImpact":0,"unitsImpact":0,"note":"NFL upset research remains isolated unless separately validated and governed."},
     "officialExecution": {"status":"PASS","officialBetCount":0,"contract":"No official wager without exact sportsbook/source, line/juice, units, timestamp, production fair and executable edge."},
     "historicalIntegrity": {"status":"PASS","note":"Preserve pre-kickoff states and final snapshots; never backfill after results."},
-    "timeLimitedOverlays": {"status":"IN_PROGRESS","items":["Later-Wednesday official practice participation reports for Sunday/Monday games remain required repricing overlays as teams publish them.","Exact executable sportsbook/juice remains mandatory at the moment of any potential wager activation."]}
+    "timeLimitedOverlays": {"status":"IN_PROGRESS","items":["Sunday/Monday official practice/inactive overlays remain required as published.","Exact executable sportsbook/juice remains mandatory at the moment of any potential wager activation."]}
   },
-  "failures": [
-    "Primary NFL expert ledger is not losslessly synchronized with newer governed episode-audit records."
-  ]
+  "failures": ["Primary NFL expert ledger is not losslessly synchronized with newer governed episode-audit records."]
 }
