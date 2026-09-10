@@ -52,18 +52,20 @@ jobs:
           if(!Number.isFinite(week)||games<=0)throw new Error('NFL weekly board missing valid week/slate');
           console.log(`NFL_WEEK=${week}`);console.log(`NFL_EXPECTED_GAMES=${games}`);
           NODE
-      - name: Refresh canonical and live-portal NFL market runtime
-        run: node scripts/refresh-live-portal-runtime.mjs
       - name: Losslessly reconcile Expert Intelligence primary ledger
         run: node scripts/sync-expert-ledger.mjs
       - name: Install browser runtime
+        if: ${{ always() }}
         run: |
           npm init -y >/dev/null 2>&1
           npm install playwright@1.55.0
           npx playwright install --with-deps chromium
+      - name: Refresh canonical and live-portal NFL market runtime
+        run: node scripts/refresh-live-portal-runtime.mjs
       - name: Rebuild selected-week manifest
         run: node scripts/refresh-weekly-manifest.mjs
       - name: Persist governed NFL runtime safely
+        if: ${{ always() }}
         run: |
           set -e
           git config user.name 'nfl-runtime-bot'
