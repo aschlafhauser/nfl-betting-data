@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'data/weekly-board.json'
+      - 'data/nfl-weekly-board.json'
       - 'data/deep-dive-status.json'
       - 'data/weekday-intel-*.json'
       - 'data/nfl-expert-weekly.json'
@@ -14,6 +15,7 @@ on:
       - 'data/game-intelligence.json'
       - 'data/bet-recommendations.json'
       - 'data/upset-lab*.json'
+      - 'scripts/refresh-live-portal-runtime.mjs'
       - 'scripts/sync-expert-ledger.mjs'
       - 'scripts/refresh-weekly-manifest.mjs'
       - 'scripts/verify-weekly-gates.mjs'
@@ -50,6 +52,8 @@ jobs:
           if(!Number.isFinite(week)||games<=0)throw new Error('NFL weekly board missing valid week/slate');
           console.log(`NFL_WEEK=${week}`);console.log(`NFL_EXPECTED_GAMES=${games}`);
           NODE
+      - name: Refresh canonical and live-portal NFL market runtime
+        run: node scripts/refresh-live-portal-runtime.mjs
       - name: Losslessly reconcile Expert Intelligence primary ledger
         run: node scripts/sync-expert-ledger.mjs
       - name: Install browser runtime
@@ -70,10 +74,10 @@ jobs:
             git reset --hard origin/main
             exit 0
           fi
-          if git diff --quiet -- data/nfl-expert-weekly.json data/expert-ledger-reconciliation.json data/weekly-manifest*.json; then
+          if git diff --quiet -- data/weekly-board.json data/nfl-weekly-board.json data/nfl-expert-weekly.json data/expert-ledger-reconciliation.json data/weekly-manifest*.json; then
             echo 'NFL governed runtime already current.'
           else
-            git add data/nfl-expert-weekly.json data/expert-ledger-reconciliation.json data/weekly-manifest*.json
+            git add data/weekly-board.json data/nfl-weekly-board.json data/nfl-expert-weekly.json data/expert-ledger-reconciliation.json data/weekly-manifest*.json
             git commit -m 'chore: refresh governed NFL runtime [skip ci]'
             if ! git push origin HEAD:main; then
               echo 'Remote advanced during NFL runtime push; resetting to latest main rather than rebasing generated state.'
