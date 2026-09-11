@@ -2,25 +2,92 @@
   "version": "NFL-WEEKLY-MANIFEST-v2",
   "season": 2026,
   "week": 1,
-  "updatedAt": "2026-09-11T13:18:26.000Z",
+  "updatedAt": "2026-09-11T13:34:59.925Z",
   "status": "FAIL",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-09-09.json",
   "gates": {
-    "canonicalSchedule": {"status":"PASS","expectedGames":16,"actualGames":16,"uniqueCanonicalIds":16},
-    "deepDiveCoverage": {"status":"PASS","completed":16,"expected":16,"sourceFailures":0,"note":"Schedule coverage is never Deep Dive coverage."},
-    "structuredPerGameReview": {"status":"PASS","classifiedGames":16,"expected":16,"source":"weekday-intel-2026-09-09.json"},
-    "matchupMatrix": {"status":"PASS","requiredDimensions":6,"declaredDimensions":6,"pointImpact":0,"note":"Current personnel/unit overlays and older matchup diagnostics remain research-only unless separately validated."},
-    "statisticalDisplay": {"status":"FAIL","blocking":true,"note":"data/live-team-stats.json is still the 2026-08-28 preseason schema with teams=[] and status '2026 regular-season sample not started'. Regular-season games have now been played, so current raw/advanced team and unit display data are not populated and the Statistical Display Contract is not satisfied."},
-    "marketDerivedIntegrity": {"status":"FAIL","blocking":true,"note":"No persisted independent reconciliation artifact currently proves spread/total/ML-derived arithmetic, dependency timestamps, stored-runtime agreement and rendered-portal agreement against the newest canonical market snapshot. Populated fields alone are insufficient."},
-    "homeMarginConvention": {"status":"PASS","note":"Canonical home-margin convention is required before all edge calculations; NFL key numbers 3 and 7 remain protected."},
-    "expertIntelligence": {"status":"PASS","primaryLedgerStatus":"SYNCHRONIZED","ledgerSyncReport":"data/expert-ledger-reconciliation.json","latestReconciliation":"2026-09-10-1648-hourly-reconciliation.json","pointImpact":0,"note":"Expert Intelligence is a correlated qualitative residual after the quantitative model; primary ledger is losslessly synchronized (44 ledger records; 0 missing)."},
-    "upsetResearchIsolation": {"status":"PASS","productionFairImpact":0,"modelWeightImpact":0,"officialLedgerImpact":0,"unitsImpact":0,"note":"NFL upset research remains isolated unless separately validated and governed."},
-    "officialExecution": {"status":"PASS","officialBetCount":0,"contract":"No official wager without exact sportsbook/source, line/juice, units, timestamp, production fair and executable edge."},
-    "finalSnapshotIntegrity": {"status":"FAIL","blocking":true,"missingCount":1,"failures":[{"file":"2026-w1-20260910T1853CT-sf-lar-final-snapshot-gate-failure.json","gameId":"2026-W1-SF-LAR","kickoff":"2026-09-10T19:35:00-05:00","recordedAt":"2026-09-10T18:53:52-05:00"}],"note":"A required immutable pre-kickoff snapshot was missed. This persisted FINAL_SNAPSHOT_GATE_FAILURE is hard weekly-manifest failure, remains permanently recorded after kickoff/final, and is never backfilled."},
-    "historicalIntegrity": {"status":"FAIL-WITH-PRESERVED-AUDIT-DEBT","note":"Preserve pre-kickoff states and final snapshots; never backfill after results. Completed games are exempt from live-market freshness SLA, but a persisted missed pre-kickoff snapshot remains a hard manifest failure."},
-    "timeLimitedOverlays": {"status":"IN_PROGRESS","items":["Friday official practice/game-status reports for Sunday/Monday games remain required repricing overlays as teams publish them.","Exact executable sportsbook/juice remains mandatory at the moment of any potential wager activation."]}
+    "canonicalSchedule": {
+      "status": "PASS",
+      "expectedGames": 16,
+      "actualGames": 16,
+      "uniqueCanonicalIds": 16
+    },
+    "deepDiveCoverage": {
+      "status": "PASS",
+      "completed": 16,
+      "expected": 16,
+      "sourceFailures": 0,
+      "note": "Schedule coverage is never Deep Dive coverage."
+    },
+    "structuredPerGameReview": {
+      "status": "PASS",
+      "classifiedGames": 16,
+      "expected": 16,
+      "source": "weekday-intel-2026-09-09.json"
+    },
+    "matchupMatrix": {
+      "status": "PASS",
+      "requiredDimensions": 6,
+      "declaredDimensions": 6,
+      "pointImpact": 0,
+      "note": "Current personnel/unit overlays and older matchup diagnostics remain research-only unless separately validated."
+    },
+    "homeMarginConvention": {
+      "status": "PASS",
+      "note": "Canonical home-margin convention is required before all edge calculations; NFL key numbers 3 and 7 remain protected."
+    },
+    "expertIntelligence": {
+      "status": "PASS",
+      "primaryLedgerStatus": "SYNCHRONIZED",
+      "ledgerSyncReport": "data/expert-ledger-reconciliation.json",
+      "latestReconciliation": "2026-09-10-1648-hourly-reconciliation.json",
+      "pointImpact": 0,
+      "note": "Expert Intelligence is a correlated qualitative residual after the quantitative model; primary ledger is losslessly synchronized (55 ledger records; 0 missing)."
+    },
+    "upsetResearchIsolation": {
+      "status": "PASS",
+      "productionFairImpact": 0,
+      "modelWeightImpact": 0,
+      "officialLedgerImpact": 0,
+      "unitsImpact": 0,
+      "note": "NFL upset research remains isolated unless separately validated and governed."
+    },
+    "officialExecution": {
+      "status": "PASS",
+      "officialBetCount": 0,
+      "contract": "No official wager without exact sportsbook/source, line/juice, units, timestamp, production fair and executable edge."
+    },
+    "finalSnapshotIntegrity": {
+      "status": "FAIL",
+      "blocking": true,
+      "missingCount": 1,
+      "failures": [
+        {
+          "file": "2026-w1-20260910T1853CT-sf-lar-final-snapshot-gate-failure.json",
+          "gameId": "2026-W1-SF-LAR",
+          "kickoff": "2026-09-10T19:35:00-05:00",
+          "recordedAt": "2026-09-10T18:53:52-05:00"
+        }
+      ],
+      "note": "A required immutable pre-kickoff snapshot was missed. This persisted FINAL_SNAPSHOT_GATE_FAILURE is hard weekly-manifest failure, remains permanently recorded after kickoff/final, and is never backfilled."
+    },
+    "historicalIntegrity": {
+      "status": "FAIL-WITH-PRESERVED-AUDIT-DEBT",
+      "note": "Preserve pre-kickoff states and final snapshots; never backfill after results. Completed games are exempt from live-market freshness SLA, but a persisted missed pre-kickoff snapshot remains a hard manifest failure."
+    },
+    "timeLimitedOverlays": {
+      "status": "IN_PROGRESS",
+      "items": [
+        "Later-Wednesday official practice participation reports for Sunday/Monday games remain required repricing overlays as teams publish them.",
+        "Exact executable sportsbook/juice remains mandatory at the moment of any potential wager activation."
+      ]
+    }
   },
-  "failures": ["FINAL_SNAPSHOT_MISSING: 2026-W1-SF-LAR","STATISTICAL_DISPLAY_STALE_EMPTY","MARKET_DERIVED_INTEGRITY_UNVERIFIED"],
-  "historicalWarnings": ["FINAL_SNAPSHOT_MISSING: 2026-W1-SF-LAR"]
+  "failures": [
+    "FINAL_SNAPSHOT_MISSING: 2026-W1-SF-LAR"
+  ],
+  "historicalWarnings": [
+    "FINAL_SNAPSHOT_MISSING: 2026-W1-SF-LAR"
+  ]
 }
