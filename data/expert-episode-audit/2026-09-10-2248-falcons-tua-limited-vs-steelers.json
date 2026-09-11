@@ -1,0 +1,62 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "sourceFamily": "Audacy / 92.9 The Game + 93.7 The Fan local beat reporting",
+  "analysts": ["Carl Dukes", "Mike Bell", "Jeff Hathhorn"],
+  "content": "Tua Tagovailoa limited Thursday with oblique/back issue ahead of Falcons-Steelers",
+  "sourceDate": "2026-09-10",
+  "status": "COMPLETE-SOURCE-LIMITED",
+  "auditedAt": "2026-09-11T03:48:11Z",
+  "firstPartyUrls": [
+    "https://www.audacy.com/929thegame/sports/atlanta-falcons/atlanta-falcons-football-2677843911",
+    "https://www.audacy.com/kdkaradio/sports/joey-porter-junior-limited-again-but-so-was-tua"
+  ],
+  "evidenceSurfaceLog": [
+    {
+      "surface": "Audacy 92.9 The Game first-party article/show page",
+      "result": "Reports multiple observers saw Tua touching/grasping his back and sitting down after a throw at Thursday practice; Carl Dukes explicitly cautioned against assuming he would miss Sunday before the injury report clarified status."
+    },
+    {
+      "surface": "Audacy 93.7 The Fan first-party local report",
+      "result": "Reports Tua was limited in Thursday practice with an oblique injury ahead of Pittsburgh; corroborates the availability concern without adding an unsupported game-status prediction."
+    },
+    {
+      "surface": "Official injury designation",
+      "result": "Available evidence identifies Tua as limited Thursday with an oblique issue. No OUT/DOUBTFUL/QUESTIONABLE game-status designation was inferred from the source surfaces."
+    },
+    {
+      "surface": "Transcript/captions / analyst pick sheet",
+      "result": "No additional attributable ATS/ML/total selection, price, score prediction, or conviction was exposed by the reasonably available first-party surfaces."
+    }
+  ],
+  "canonicalGameId": "65387c45-a762-447f-85bf-2ac0381a8240",
+  "runtimeGameId": "2026-W1-ATL-PIT",
+  "matchup": "Atlanta Falcons at Pittsburgh Steelers",
+  "records": [
+    {
+      "game_id": "65387c45-a762-447f-85bf-2ac0381a8240",
+      "matchup": "Atlanta Falcons at Pittsburgh Steelers",
+      "analyst": "Audacy local beat/reporting synthesis",
+      "kind": "personnel availability / quarterback health",
+      "category": "starting quarterback practice limitation",
+      "team": "Atlanta Falcons",
+      "direction": "negative availability/continuity signal for Atlanta offense pending subsequent practice/game-status clarification",
+      "detail": "Tua Tagovailoa, named Atlanta's Week 1 starter, was limited Thursday with an oblique/back issue after observers reported him grasping his back and sitting down following a throw. The evidence supports elevated quarterback availability uncertainty but does not establish that he will miss the game.",
+      "conviction": "analysis only — no wager inferred",
+      "freshness": "current-week",
+      "incremental_information": true,
+      "correlation": "Treat Audacy Atlanta/Pittsburgh local reporting on the same practice development as one correlated personnel signal, not independent confirmation.",
+      "productionImpact": 0
+    }
+  ],
+  "governance": {
+    "expertIntelligenceRole": "qualitative residual only",
+    "productionFairImpact": 0,
+    "modelWeightImpact": 0,
+    "betActivationGateImpact": 0,
+    "officialLedgerImpact": 0,
+    "unitImpact": 0,
+    "unsupportedInferences": []
+  }
+}
