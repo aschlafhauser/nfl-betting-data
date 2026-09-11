@@ -1,0 +1,47 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "auditedAt": "2026-09-11T13:35:00Z",
+  "sourceFamily": "The Ringer NFL family / Anthony Dabbundo analysis",
+  "analyst": "Anthony Dabbundo",
+  "episode": "The Best Bets of NFL Week 1",
+  "published": "2026-09-09",
+  "status": "COMPLETE",
+  "firstPartyUrl": "https://www.theringer.com/2026/09/09/nfl/nfl-best-bets-week-1",
+  "evidenceSurfaceLog": [
+    {"surface":"The Ringer first-party article page","result":"Full article text available and exhausted. Explicit bets, price thresholds and matchup mechanisms are attributable to Anthony Dabbundo."},
+    {"surface":"First-party Ringer football inventory","result":"The Week 1 best-bets analysis is current-week matchup-relevant Ringer-family content and was absent from the governed audit inventory at discovery time."},
+    {"surface":"Transcript/captions","result":"Not applicable; this is a first-party written analysis rather than an audio-only episode."},
+    {"surface":"Governance/deduplication","result":"Ringer-family evidence remains correlated with other Ringer shows/articles. Only explicit article constructions are recorded; no unstated price, score prediction, stake or conviction is inferred."}
+  ],
+  "canonicalGames": [
+    {"gameId":"2026-W1-NE-SEA","matchup":"New England Patriots at Seattle Seahawks"},
+    {"gameId":"2026-W1-SF-LAR","matchup":"San Francisco 49ers vs Los Angeles Rams"},
+    {"gameId":"2026-W1-BAL-IND","matchup":"Baltimore Ravens at Indianapolis Colts"},
+    {"gameId":"2026-W1-ARI-LAC","matchup":"Arizona Cardinals at Los Angeles Chargers"},
+    {"gameId":"2026-W1-DAL-NYG","matchup":"Dallas Cowboys at New York Giants"},
+    {"gameId":"2026-W1-NYJ-TEN","matchup":"New York Jets at Tennessee Titans"},
+    {"gameId":"2026-W1-DEN-KC","matchup":"Denver Broncos at Kansas City Chiefs"},
+    {"gameId":"2026-W1-BUF-HOU","matchup":"Buffalo Bills at Houston Texans"},
+    {"gameId":"2026-W1-CHI-CAR","matchup":"Chicago Bears at Carolina Panthers"},
+    {"gameId":"2026-W1-ATL-PIT","matchup":"Atlanta Falcons at Pittsburgh Steelers"},
+    {"gameId":"2026-W1-WAS-PHI","matchup":"Washington Commanders at Philadelphia Eagles"}
+  ],
+  "newStructuredRecordsIntended": [
+    {"game_id":"2026-W1-NE-SEA","analyst":"Anthony Dabbundo","kind":"side","summary":"Dabbundo backed New England +3.5, arguing Seattle should not be laying more than a field goal given New England offensive continuity, offseason protection/receiver upgrades and reduced Seattle run-game explosiveness.","construction_detail":"Patriots +3.5 (-110)","independence":"correlated-ringer-family","model_relationship":"qualitative-residual"},
+    {"game_id":"2026-W1-SF-LAR","analyst":"Anthony Dabbundo","kind":"side","summary":"Dabbundo preferred San Francisco +3.5 while explicitly emphasizing unusually high travel uncertainty and early-season Rams rust rather than claiming travel could be quantified confidently.","construction_detail":"49ers +3.5; article explicitly frames the international game as high variance","independence":"correlated-ringer-family","model_relationship":"qualitative-residual"},
+    {"game_id":"2026-W1-BAL-IND","analyst":"Anthony Dabbundo","kind":"side","summary":"Dabbundo backed Indianapolis with the hook, citing Baltimore's new play caller, interior-line turnover and a Colts interior defensive matchup capable of disrupting Lamar Jackson and Derrick Henry.","construction_detail":"Colts +3.5 (-110)","independence":"correlated-ringer-family","model_relationship":"qualitative-residual"},
+    {"game_id":"2026-W1-ARI-LAC","analyst":"Anthony Dabbundo","kind":"team-total","summary":"Dabbundo preferred isolating Arizona's offense rather than taking the full-game spread, arguing the Cardinals have enough young speed to create explosives against a Chargers defense transitioning coordinators.","construction_detail":"Cardinals team total Over 17.5 (-110)","independence":"correlated-ringer-family","model_relationship":"qualitative-residual"},
+    {"game_id":"2026-W1-DAL-NYG","analyst":"Anthony Dabbundo","kind":"side","summary":"Dabbundo backed Dallas because he viewed Cowboys receivers versus the depleted Giants secondary as one of Week 1's largest positional mismatches and thought the line should sit at or above Dallas -3.","construction_detail":"Cowboys -2.5 (-110)","independence":"correlated-ringer-family","model_relationship":"qualitative-residual"},
+    {"game_id":"2026-W1-NYJ-TEN","analyst":"Anthony Dabbundo","kind":"side/moneyline-threshold","summary":"Dabbundo preferred the Jets based on quarterback, offensive-line and secondary reliability versus Tennessee's rebuilt offense and line, and also stated he would play the Jets moneyline if available at plus money.","construction_detail":"Jets +1.5 (-110); Jets ML at plus money","independence":"correlated-ringer-family","model_relationship":"qualitative-residual"},
+    {"game_id":"2026-W1-DEN-KC","analyst":"Anthony Dabbundo","kind":"total","summary":"Dabbundo expected Denver's defense to create a low-scoring matchup through run defense and pressure while questioning whether Denver's offense could turn field position into touchdowns.","construction_detail":"Under 44.5 (-110)","independence":"correlated-ringer-family","model_relationship":"qualitative-residual"},
+    {"game_id":"2026-W1-BUF-HOU","analyst":"Anthony Dabbundo","kind":"moneyline-threshold","summary":"Dabbundo wanted Houston only if the price returned to plus money, citing Houston's continuity edge while declining to buy the Texans as a favorite despite the matchup narrative around Josh Allen.","construction_detail":"Texans ML at +100 or better","independence":"correlated-ringer-family","model_relationship":"qualitative-residual"},
+    {"game_id":"2026-W1-CHI-CAR","analyst":"Anthony Dabbundo","kind":"total-threshold","summary":"Dabbundo viewed Chicago's pass-rush and secondary weaknesses as enough for even Carolina's limited offense to move the ball and would consider the Over only at his stated threshold.","construction_detail":"Consider Over at 50 or lower","independence":"correlated-ringer-family","model_relationship":"qualitative-residual"},
+    {"game_id":"2026-W1-ATL-PIT","analyst":"Anthony Dabbundo","kind":"side-alternate-spread","summary":"Dabbundo highlighted Pittsburgh's potential pressure differential and turnover path against Atlanta and explicitly suggested considering Pittsburgh alternate spreads, without specifying an alternate number or price.","construction_detail":"Consider Pittsburgh alternate spreads; no alternate number or price stated","independence":"correlated-ringer-family","model_relationship":"qualitative-residual"},
+    {"game_id":"2026-W1-WAS-PHI","analyst":"Anthony Dabbundo","kind":"total-threshold","summary":"Dabbundo agreed with the downward total move conceptually but said the current number had already absorbed the case; he required a rebound before betting the Under.","construction_detail":"Under 45.5 or better","independence":"correlated-ringer-family","model_relationship":"qualitative-residual"}
+  ],
+  "unsupportedPicksInferred": false,
+  "notes": "Ingestion gap repaired from first-party Ringer analysis inventory. Completed-game records are retained as historical current-week expert context only; no post-result inference or model rewrite is permitted.",
+  "governance": "Expert Intelligence qualitative residual only; zero automatic impact on quantitative fair, model weights, upset routing, Bet Activation Gate, official ledger or units."
+}
