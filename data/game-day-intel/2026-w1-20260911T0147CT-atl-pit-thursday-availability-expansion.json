@@ -1,0 +1,73 @@
+{
+  "season": 2026,
+  "week": 1,
+  "gameId": "2026-W1-ATL-PIT",
+  "recordedAt": "2026-09-11T01:47:56-05:00",
+  "type": "MATERIAL_PERSONNEL_AVAILABILITY_CHANGE",
+  "status": "GOVERNED_GAME_DAY_UPDATE",
+  "personnel": {
+    "atlanta": [
+      {
+        "player": "Tua Tagovailoa",
+        "position": "QB",
+        "status": "LIMITED",
+        "injury": "oblique",
+        "note": "Remains the primary availability veto pending Friday practice/final game status. Cooper Rush took first-team reps Thursday."
+      },
+      {
+        "player": "Jawaan Taylor",
+        "position": "OT",
+        "status": "DNP",
+        "injury": "knee",
+        "note": "Starting right tackle; availability is materially relevant against Pittsburgh's edge rush. No automatic spread points assigned."
+      },
+      {
+        "player": "Za'Darius Smith",
+        "position": "DE",
+        "status": "DNP",
+        "injury": "shoulder",
+        "note": "Adds to Atlanta edge/front uncertainty. No automatic spread points assigned."
+      }
+    ],
+    "pittsburgh": [
+      {
+        "player": "Joey Porter Jr.",
+        "position": "CB",
+        "status": "LIMITED",
+        "injury": "back",
+        "note": "Limited for a second straight day; Friday game designation remains required."
+      }
+    ]
+  },
+  "model": {
+    "automaticPersonnelPointsAdded": 0,
+    "reverseEngineered": false,
+    "note": "Preserve the existing governed production fair. Availability evidence may veto execution or alter confidence only through separately governed repricing."
+  },
+  "classification": "PASS / AVAILABILITY VETO",
+  "officialBetActivated": false,
+  "requiredNextChecks": [
+    "Friday Falcons final practice/game-status report for Tagovailoa, Taylor and Smith",
+    "Friday Steelers game designation for Joey Porter Jr.",
+    "Exact executable sportsbook/source/line/juice if a governed edge later qualifies",
+    "Official inactives and immutable 60-90 minute pre-kickoff snapshot"
+  ],
+  "sources": [
+    {
+      "source": "Atlanta Falcons official injury report",
+      "date": "2026-09-10",
+      "url": "https://www.atlantafalcons.com/news/falcons-injury-report-qb-tua-tagovailoa-added-to-thursday-report"
+    },
+    {
+      "source": "Pittsburgh Thursday injury report / Steelers Depot reproduction",
+      "date": "2026-09-10",
+      "url": "https://steelersdepot.com/2026/09/steelers-week-1-thursday-injury-report-porter-jr-limited-for-second-straight-day/"
+    }
+  ],
+  "governance": {
+    "sportIsolation": "NFL_ONLY",
+    "upsetResearchProductionImpact": 0,
+    "priorSnapshotsRewritten": false,
+    "priorWagersRewritten": false
+  }
+}
