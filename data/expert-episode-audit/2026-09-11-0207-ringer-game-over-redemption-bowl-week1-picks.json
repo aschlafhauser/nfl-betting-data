@@ -1,0 +1,27 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "auditedAt": "2026-09-11T02:07:00-05:00",
+  "sourceFamily": "The Ringer NFL family / Game Over with Max Kellerman and Rich Paul",
+  "episode": "Redemption Bowl, Nike’s Decline, and the Real Story Behind Tristan Thompson’s Payday",
+  "published": "2026-09-09",
+  "status": "COMPLETE-SOURCE-LIMITED",
+  "firstPartyUrl": "https://www.theringer.com/podcasts/game-over-with-max-kellerman-and-rich-paul/2026/09/09/redemption-bowl-nikes-decline-and-the-real-story-behind-tristan-thompsons-payday",
+  "evidenceSurfaceLog": [
+    {"surface":"The Ringer first-party episode page","result":"Confirmed Sept. 9 episode with explicit Week 1 NFL matchup discussion: Seahawks-Patriots Super Bowl rematch, Rams-49ers Australia context, and an episode-closing Week 1 NFL picks segment."},
+    {"surface":"Official show notes/timestamps","result":"Available and exhausted. The first-party notes identify the matchup topics and that Week 1 picks close the episode, but do not expose the underlying selections, prices, score predictions or conviction."},
+    {"surface":"Transcript/captions","result":"No reasonably accessible first-party transcript/caption text surfaced in this discovery pass."},
+    {"surface":"Governed NFL episode inventory","result":"No prior governed audit for this Game Over episode was found; this was an episode-inventory ingestion gap."}
+  ],
+  "canonicalGames": [
+    {"gameId":"2026-W1-NE-SEA","matchup":"New England Patriots at Seattle Seahawks"},
+    {"gameId":"2026-W1-SF-LAR","matchup":"San Francisco 49ers vs Los Angeles Rams"}
+  ],
+  "newStructuredRecordsIntended": [],
+  "materialRecords": [],
+  "dedupeApplied": true,
+  "unsupportedPicksInferred": false,
+  "notes": "Episode inventory gap repaired. The first-party evidence safely establishes explicit discussion of Patriots-Seahawks and Rams-49ers plus an unspecified Week 1 picks segment, but does not safely expose any specific selections. No structured expert pick record is created and no completed-game history is mutated.",
+  "governance": "Same-network Ringer material is correlated. Expert Intelligence is qualitative residual only; zero automatic impact on quantitative fair, model weights, upset routing, Bet Activation Gate, official ledger or units."
+}
