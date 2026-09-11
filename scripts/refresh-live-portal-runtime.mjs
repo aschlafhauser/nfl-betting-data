@@ -5,16 +5,17 @@ const canonicalPath='data/weekly-board.json';
 const legacyPath='data/nfl-weekly-board.json';
 const canonical=await read(canonicalPath);
 const legacy=await read(legacyPath);
+const identity=await read('data/team-identity-registry.json');
 const season=Number(canonical.season||2026),week=Number(canonical.week||1);
 const now=new Date().toISOString();
 const url=`https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=${season}&seasontype=2&week=${week}&limit=100`;
 const ml=v=>{const n=Number(v);return Number.isFinite(n)?`${n>0?'+':''}${n}`:null};
 const num=v=>{const n=Number(v);return Number.isFinite(n)?n:null};
 const clean=s=>String(s||'').trim();
-const normAbbr=v=>{
-  const a=clean(v).toUpperCase();
-  return ({WSH:'WAS',WAS:'WAS',JAX:'JAC',JAC:'JAC'})[a]||a;
-};
+const raw=s=>clean(s).toUpperCase().replace(/[^A-Z0-9]/g,'');
+const aliasToAbbr=new Map();
+for(const t of identity.teams||[]){for(const a of [t.abbr,t.canonical,...(t.aliases||[])]){const k=raw(a);if(k)aliasToAbbr.set(k,t.abbr)}}
+const normAbbr=v=>aliasToAbbr.get(raw(v))||clean(v).toUpperCase();
 
 function teamLabel(c){return c?.team?.displayName||c?.team?.shortDisplayName||c?.team?.location||c?.team?.name||null}
 function oddsRow(ev){
@@ -61,7 +62,7 @@ function displayFromHomeMargin(home,away,hm){
 let liveOdds=0;
 const updatedCanonical=canonicalGames.map(g=>{
   const row=byAbbr.get(`${normAbbr(g.awayAbbr)}__${normAbbr(g.homeAbbr)}`);
-  if(!row)throw new Error(`No ESPN row for ${g.gameId} (${g.awayAbbr}-${g.homeAbbr}) after abbreviation normalization`);
+  if(!row)throw new Error(`No ESPN row for ${g.gameId} (${g.awayAbbr}-${g.homeAbbr}) after canonical identity normalization`);
   const hasCurrent=row.hasOdds&&row.spreadDisplay&&row.total!=null;
   if(hasCurrent)liveOdds++;
   const currentSpread=hasCurrent?row.spreadDisplay:g.currentSpread;
@@ -90,9 +91,6 @@ const updatedLegacy=(legacy.games||[]).map(g=>{
     moneyline:{away:row.awayML?Number(row.awayML):null,home:row.homeML?Number(row.homeML):null},source:row.source||'ESPN odds feed',timestamp:now,status:'current governed ESPN snapshot; exact sportsbook/juice required before execution'
   }:{...(g.market||{}),status:row?.completed?'historical closing snapshot; completed game exempt from live-market freshness':'PRICE-RECHECK-REQUIRED'};
 
-  // Market refresh and executable edge must move together. Keep the existing governed
-  // independent fair, but always recompute edge in the same home-margin convention.
-  // This prevents stale legacy edges from surviving after ESPN reprices a game.
   const fairHM=num(g.model?.fair_spread_home_margin);
   const marketHM=num(market?.home_margin);
   let model={...(g.model||{})};
@@ -105,8 +103,9 @@ const updatedLegacy=(legacy.games||[]).map(g=>{
   return {...g,kickoff:row?.kickoff||g.kickoff,event_state:row?.completed?'final':'scheduled',market,model};
 });
 
-const nextCanonical={...canonical,updatedAt:now,marketSource:'Current ESPN NFL selected-week odds feed; exact sportsbook/juice required before execution',games:updatedCanonical,runtimeRefresh:{source:url,observedAt:now,espnEvents:rows.length,currentOddsGames:liveOdds,identityNormalization:'WSH/WAS and JAX/JAC normalized before canonical joins'}};
-const nextLegacy={...legacy,generated_at:now,schedule_source:'Canonical selected-week NFL board + ESPN scoreboard reconciliation',market_source:'ESPN selected-week odds feed; exact sportsbook/juice required before execution',games:updatedLegacy,runtime_refresh:{source:url,observed_at:now,espn_events:rows.length,current_odds_games:liveOdds,identity_normalization:'WSH/WAS and JAX/JAC normalized before canonical joins',edge_reconciliation:'Every legacy portal executable edge recomputed from fair_spread_home_margin - current market.home_margin'}};
+const identityNote=`registry v${identity.version}: canonical abbreviations and aliases normalized before joins`;
+const nextCanonical={...canonical,updatedAt:now,marketSource:'Current ESPN NFL selected-week odds feed; exact sportsbook/juice required before execution',games:updatedCanonical,runtimeRefresh:{source:url,observedAt:now,espnEvents:rows.length,currentOddsGames:liveOdds,identityNormalization:identityNote}};
+const nextLegacy={...legacy,generated_at:now,schedule_source:'Canonical selected-week NFL board + ESPN scoreboard reconciliation',market_source:'ESPN selected-week odds feed; exact sportsbook/juice required before execution',games:updatedLegacy,runtime_refresh:{source:url,observed_at:now,espn_events:rows.length,current_odds_games:liveOdds,identity_normalization:identityNote,edge_reconciliation:'Every legacy portal executable edge recomputed from fair_spread_home_margin - current market.home_margin'}};
 await fs.writeFile(canonicalPath,JSON.stringify(nextCanonical,null,2)+'\n');
 await fs.writeFile(legacyPath,JSON.stringify(nextLegacy,null,2)+'\n');
-console.log(`NFL live portal runtime refreshed: slate=${rows.length}, currentOdds=${liveOdds}, completed=${rows.filter(x=>x.completed).length}; portal edges reconciled=${updatedLegacy.filter(g=>g.model?.edge_reconciled_at===now).length}`);
+console.log(`NFL live portal runtime refreshed: slate=${rows.length}, currentOdds=${liveOdds}, completed=${rows.filter(x=>x.completed).length}; portal edges reconciled=${updatedLegacy.filter(g=>g.model?.edge_reconciled_at===now).length}; identity registry=v${identity.version}`);
