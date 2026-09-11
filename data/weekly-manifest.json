@@ -2,7 +2,7 @@
   "version": "NFL-WEEKLY-MANIFEST-v2",
   "season": 2026,
   "week": 1,
-  "updatedAt": "2026-09-11T13:34:59.925Z",
+  "updatedAt": "2026-09-11T13:39:16.083Z",
   "status": "FAIL",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-09-09.json",
@@ -32,6 +32,18 @@
       "declaredDimensions": 6,
       "pointImpact": 0,
       "note": "Current personnel/unit overlays and older matchup diagnostics remain research-only unless separately validated."
+    },
+    "statisticalDisplay": {
+      "status": "FAIL",
+      "blocking": true,
+      "artifact": "data/statistical-display-integrity-2026-w1.json",
+      "note": "No dedicated current PASS artifact proves complete statistical-display coverage and live Matchup Center reconciliation. This hard gate is sticky until explicit verification passes."
+    },
+    "marketDerivedIntegrity": {
+      "status": "FAIL",
+      "blocking": true,
+      "artifact": "data/market-derived-integrity-2026-w1.json",
+      "note": "No persisted independent reconciliation artifact proves spread/total/ML-derived arithmetic, dependency timestamps, stored-runtime agreement and rendered-portal agreement against the newest canonical market snapshot. Populated fields alone are insufficient."
     },
     "homeMarginConvention": {
       "status": "PASS",
@@ -85,6 +97,8 @@
     }
   },
   "failures": [
+    "STATISTICAL_DISPLAY_INTEGRITY_UNVERIFIED",
+    "MARKET_DERIVED_INTEGRITY_UNVERIFIED",
     "FINAL_SNAPSHOT_MISSING: 2026-W1-SF-LAR"
   ],
   "historicalWarnings": [
