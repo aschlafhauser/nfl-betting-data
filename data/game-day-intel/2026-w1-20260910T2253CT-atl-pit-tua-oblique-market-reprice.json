@@ -1,0 +1,52 @@
+{
+  "season": 2026,
+  "week": 1,
+  "gameId": "2026-W1-ATL-PIT",
+  "recordedAt": "2026-09-10T22:53:32-05:00",
+  "type": "MATERIAL_PERSONNEL_MARKET_CHANGE",
+  "status": "GOVERNED_GAME_DAY_UPDATE",
+  "personnel": {
+    "team": "ATL",
+    "player": "Tua Tagovailoa",
+    "position": "QB",
+    "injury": "oblique",
+    "practiceStatus": "LIMITED",
+    "change": "Added to Thursday injury report after leaving the open practice period; Cooper Rush took additional first-team reps. Michael Penix Jr. is not expected to be active for Week 1.",
+    "availabilityState": "HIGH_UNCERTAINTY",
+    "executionEffect": "Availability uncertainty vetoes any new execution until Friday status/practice evidence materially clarifies the starter state."
+  },
+  "market": {
+    "canonicalBoardObservedAt": "2026-09-11T03:50:07.427Z",
+    "source": "ESPN DraftKings",
+    "spread": "Pittsburgh Steelers -5.5",
+    "total": 41.5,
+    "moneyline": "PIT -175 / ATL +145",
+    "priorGovernedReference": "Pittsburgh Steelers -3.5 / total 42.0",
+    "materialChange": "Pittsburgh moved roughly two points and crossed the protected key number 3 while Atlanta QB availability became uncertain."
+  },
+  "model": {
+    "productionFair": "Pittsburgh Steelers -5.1",
+    "validatedStructuralSpread": "PIT -3.4",
+    "automaticInjuryPointsAdded": 0,
+    "reverseEngineered": false,
+    "note": "Use the existing governed production model state. Do not invent a separate Tua injury adjustment."
+  },
+  "classification": "PASS / AVAILABILITY VETO",
+  "officialBetActivated": false,
+  "requiredNextChecks": [
+    "Friday Falcons practice and final game-status report",
+    "Confirmed Week 1 starting QB state",
+    "Exact executable sportsbook line and juice if any governed edge later qualifies",
+    "Mandatory 60-90 minute immutable final snapshot after official inactives and current market"
+  ],
+  "sources": [
+    "Reuters / Field Level Media, 2026-09-10: Tua Tagovailoa added to injury report with oblique injury and limited participation",
+    "Atlanta practice reporting: Cooper Rush took first-team reps after Tagovailoa exited"
+  ],
+  "governance": {
+    "sportIsolation": "NFL_ONLY",
+    "upsetResearchProductionImpact": 0,
+    "priorSnapshotsRewritten": false,
+    "priorWagersRewritten": false
+  }
+}
