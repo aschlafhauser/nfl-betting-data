@@ -6,6 +6,8 @@ on:
     paths:
       - 'data/weekly-board.json'
       - 'data/nfl-weekly-board.json'
+      - 'data/team-identity-registry.json'
+      - 'data/team-identity-audit-current.json'
       - 'data/deep-dive-status.json'
       - 'data/weekday-intel-*.json'
       - 'data/nfl-expert-weekly.json'
@@ -16,6 +18,7 @@ on:
       - 'data/bet-recommendations.json'
       - 'data/upset-lab*.json'
       - 'scripts/refresh-live-portal-runtime.mjs'
+      - 'scripts/audit-team-identities.mjs'
       - 'scripts/sync-expert-ledger.mjs'
       - 'scripts/refresh-weekly-manifest.mjs'
       - 'scripts/verify-weekly-gates.mjs'
@@ -62,6 +65,8 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Refresh canonical and live-portal NFL market runtime
         run: node scripts/refresh-live-portal-runtime.mjs
+      - name: Reconcile canonical NFL team identities
+        run: node scripts/audit-team-identities.mjs
       - name: Rebuild selected-week manifest
         run: node scripts/refresh-weekly-manifest.mjs
       - name: Persist governed NFL runtime safely
@@ -76,10 +81,10 @@ jobs:
             git reset --hard origin/main
             exit 0
           fi
-          if git diff --quiet -- data/weekly-board.json data/nfl-weekly-board.json data/nfl-expert-weekly.json data/expert-ledger-reconciliation.json data/weekly-manifest*.json; then
+          if git diff --quiet -- data/weekly-board.json data/nfl-weekly-board.json data/team-identity-audit-current.json data/nfl-expert-weekly.json data/expert-ledger-reconciliation.json data/weekly-manifest*.json; then
             echo 'NFL governed runtime already current.'
           else
-            git add data/weekly-board.json data/nfl-weekly-board.json data/nfl-expert-weekly.json data/expert-ledger-reconciliation.json data/weekly-manifest*.json
+            git add data/weekly-board.json data/nfl-weekly-board.json data/team-identity-audit-current.json data/nfl-expert-weekly.json data/expert-ledger-reconciliation.json data/weekly-manifest*.json
             git commit -m 'chore: refresh governed NFL runtime [skip ci]'
             if ! git push origin HEAD:main; then
               echo 'Remote advanced during NFL runtime push; resetting to latest main rather than rebasing generated state.'
