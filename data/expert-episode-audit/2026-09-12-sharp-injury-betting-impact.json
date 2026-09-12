@@ -1,0 +1,65 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "auditedAt": "2026-09-12T22:55:55Z",
+  "sourceFamily": "Sharp Football Analysis",
+  "analyst": "Tucker Bagley",
+  "content": "Key NFL Injuries This Week: Betting Impact and Picks",
+  "published": "2026-09-12",
+  "status": "COMPLETE",
+  "firstPartyUrl": "https://www.sharpfootballanalysis.com/betting/nfl-injury-betting-impact/",
+  "evidenceSurfaceLog": [
+    {
+      "surface": "Sharp Football Analysis first-party article",
+      "status": "CHECKED",
+      "result": "Full public article text was available and exhausted. It exposes three explicit directional player-prop opinions with football/usage mechanisms."
+    },
+    {
+      "surface": "Line, price and playable-threshold evidence",
+      "status": "NOT-FOUND",
+      "result": "The article states no current or cited line, price, or playable range for any of the three props. All remain Watch rather than Recommended."
+    }
+  ],
+  "canonicalGames": [
+    {"gameId":"94c3a4c2-614a-43d9-a266-eea4051e715c","canonicalGameId":"2026-W1-MIA-LV","matchup":"Miami Dolphins at Las Vegas Raiders"},
+    {"gameId":"5c96a049-751a-40c8-9295-c09a5d9519e6","canonicalGameId":"2026-W1-DEN-KC","matchup":"Denver Broncos at Kansas City Chiefs"},
+    {"gameId":"65387c45-a762-447f-85bf-2ac0381a8240","canonicalGameId":"2026-W1-ATL-PIT","matchup":"Atlanta Falcons at Pittsburgh Steelers"}
+  ],
+  "newStructuredRecordsIntended": [
+    {
+      "game_id": "94c3a4c2-614a-43d9-a266-eea4051e715c",
+      "canonicalGameId": "2026-W1-MIA-LV",
+      "kind": "player-prop watch",
+      "summary": "Bagley explicitly directs Michael Mayer Over receptions after Brock Bowers was ruled out, citing Mayer's prior no-Bowers route and target volume plus Miami's 2025 tight-end reception allowance. No line, price or playable threshold is stated, so this is Watch only.",
+      "construction_detail": "Michael Mayer receptions Over; no line, price or playable threshold stated",
+      "independence": "correlated-sharp-family",
+      "model_relationship": "qualitative-residual"
+    },
+    {
+      "game_id": "5c96a049-751a-40c8-9295-c09a5d9519e6",
+      "canonicalGameId": "2026-W1-DEN-KC",
+      "kind": "player-prop watch",
+      "summary": "Bagley explicitly directs Kenneth Walker Under rushing yards if Josh Simmons is inactive, citing Kansas City's 3.8 yards per carry without Simmons last season and Denver's 3.9 yards-per-carry run defense. No line, price or playable threshold is stated, so this is Watch only.",
+      "construction_detail": "Kenneth Walker rushing yards Under, conditional on Josh Simmons inactive; no line, price or playable threshold stated",
+      "independence": "correlated-sharp-family",
+      "model_relationship": "qualitative-residual"
+    },
+    {
+      "game_id": "65387c45-a762-447f-85bf-2ac0381a8240",
+      "canonicalGameId": "2026-W1-ATL-PIT",
+      "kind": "player-prop watch",
+      "summary": "Bagley explicitly directs Drake London Over receiving yards, arguing Cooper Rush has historically funneled targets to his top receiver and a negative game script could sustain volume. No line, price or playable threshold is stated, so this is Watch only.",
+      "construction_detail": "Drake London receiving yards Over; no line, price or playable threshold stated",
+      "independence": "correlated-sharp-family",
+      "model_relationship": "qualitative-residual"
+    }
+  ],
+  "playerPropsDisposition": {
+    "recommendedAdded": 0,
+    "watchAdded": 3,
+    "reason": "Explicit directions are present, but the required stated line, price or playable range is absent."
+  },
+  "unsupportedPicksInferred": false,
+  "governance": "Expert Intelligence and Player Props remain separate qualitative layers with zero direct impact on NFL spread/total models, game-side official ledger or units."
+}
