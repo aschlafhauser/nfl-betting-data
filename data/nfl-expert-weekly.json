@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 1,
-  "generated_at": "2026-09-12T10:58:49.231Z",
+  "generated_at": "2026-09-12T11:29:18.760Z",
   "records": [
     {
       "game_id": "2bf1ca8d-11d6-4c00-b2e4-28971764e444",
@@ -800,6 +800,30 @@
       "incremental_information": true,
       "audit_provenance": "data/expert-episode-audit/2026-09-11-0835-ringer-dabbundo-week1-best-bets.json#newStructuredRecordsIntended[10]",
       "audit_id": "audit-4142bed6bb3ae575",
+      "governance": "Expert Intelligence qualitative residual only; zero automatic fair/model/gate/ledger/units impact."
+    },
+    {
+      "game_id": "65387c45-a762-447f-85bf-2ac0381a8240",
+      "canonicalGameId": "2026-W1-ATL-PIT",
+      "matchup": "Atlanta Falcons at Pittsburgh Steelers",
+      "analyst": "Atlanta Falcons / Pittsburgh Steelers official injury reporting",
+      "kind": "personnel availability / starting quarterback",
+      "category": "official game-status resolution",
+      "team": "Atlanta Falcons",
+      "direction": "negative availability and continuity change for Atlanta offense",
+      "summary": "Tua Tagovailoa is OUT with an oblique injury and Cooper Rush will start at Pittsburgh. This resolves the prior Tua day-to-day state and materially changes Atlanta's quarterback preparation and pressure-response assumptions.",
+      "construction_detail": "Availability evidence only; preserve an availability veto and require current executable market validation. No discretionary fair points or wager activation.",
+      "conviction": "confirmed official availability; no wager inferred",
+      "freshness": "current-week",
+      "incremental_information": true,
+      "independence": "same official injury event; treat team confirmations as one correlated personnel signal",
+      "model_relationship": "orthogonal-new-information",
+      "productionImpact": 0,
+      "source_family": "Atlanta Falcons official + Pittsburgh Steelers official injury reporting",
+      "source_date": "2026-09-11",
+      "timestamp": "2026-09-12T11:25:30Z",
+      "audit_provenance": "data/expert-episode-audit/2026-09-12-falcons-tua-out-cooper-rush-start.json#newStructuredRecordsIntended[0]",
+      "audit_id": "audit-6bfb7372d5fd9d12",
       "governance": "Expert Intelligence qualitative residual only; zero automatic fair/model/gate/ledger/units impact."
     }
   ],

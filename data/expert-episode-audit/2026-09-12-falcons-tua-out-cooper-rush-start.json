@@ -1,0 +1,66 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "sourceFamily": "Atlanta Falcons official + Pittsburgh Steelers official injury reporting",
+  "analyst": "Team official reporting",
+  "content": "Tua Tagovailoa ruled out; Cooper Rush will start Atlanta at Pittsburgh",
+  "sourceDate": "2026-09-11",
+  "status": "COMPLETE",
+  "auditedAt": "2026-09-12T11:25:30Z",
+  "firstPartyUrls": [
+    "https://www.atlantafalcons.com/news/falcons-game-report-qb-tua-tagovailoa-ruled-out-of-sunday-s-game",
+    "https://www.steelers.com/news/week-1-injury-report-falcons-x3059"
+  ],
+  "evidenceSurfaceLog": [
+    {
+      "surface": "Atlanta Falcons official game report",
+      "result": "Atlanta ruled Tua Tagovailoa out for Sunday with an oblique injury and named Cooper Rush the starter. Michael Penix Jr. remains unavailable, with Jack Strand expected to back up Rush."
+    },
+    {
+      "surface": "Pittsburgh Steelers official Friday injury report",
+      "result": "The opponent report independently lists Tagovailoa OUT. Pittsburgh lists Joey Porter Jr. questionable; Atlanta lists Za'Darius Smith questionable after full participation Friday, while OT Jawaan Taylor returned to full participation without a game designation."
+    },
+    {
+      "surface": "Market/runtime cross-check",
+      "result": "The governed ESPN/DraftKings runtime observed Pittsburgh -6 at 2026-09-12T10:59:12.179Z, versus the canonical opener Pittsburgh -2.5. The move is recorded as market evidence only and is not attributed wholly to the quarterback change."
+    },
+    {
+      "surface": "Pick/price discipline",
+      "result": "Neither official source states an ATS, moneyline, total, player-prop selection, price target, score prediction, or confidence level. None was inferred."
+    }
+  ],
+  "canonicalGameId": "65387c45-a762-447f-85bf-2ac0381a8240",
+  "runtimeGameId": "2026-W1-ATL-PIT",
+  "matchup": "Atlanta Falcons at Pittsburgh Steelers",
+  "newStructuredRecordsIntended": [
+    {
+      "game_id": "65387c45-a762-447f-85bf-2ac0381a8240",
+      "canonicalGameId": "2026-W1-ATL-PIT",
+      "matchup": "Atlanta Falcons at Pittsburgh Steelers",
+      "analyst": "Atlanta Falcons / Pittsburgh Steelers official injury reporting",
+      "kind": "personnel availability / starting quarterback",
+      "category": "official game-status resolution",
+      "team": "Atlanta Falcons",
+      "direction": "negative availability and continuity change for Atlanta offense",
+      "summary": "Tua Tagovailoa is OUT with an oblique injury and Cooper Rush will start at Pittsburgh. This resolves the prior Tua day-to-day state and materially changes Atlanta's quarterback preparation and pressure-response assumptions.",
+      "construction_detail": "Availability evidence only; preserve an availability veto and require current executable market validation. No discretionary fair points or wager activation.",
+      "conviction": "confirmed official availability; no wager inferred",
+      "freshness": "current-week",
+      "incremental_information": true,
+      "independence": "same official injury event; treat team confirmations as one correlated personnel signal",
+      "model_relationship": "orthogonal-new-information",
+      "productionImpact": 0
+    }
+  ],
+  "governance": {
+    "expertIntelligenceRole": "qualitative residual only",
+    "productionFairImpact": 0,
+    "modelWeightImpact": 0,
+    "upsetRoutingImpact": 0,
+    "betActivationGateImpact": 0,
+    "officialLedgerImpact": 0,
+    "unitImpact": 0,
+    "unsupportedInferences": []
+  }
+}
