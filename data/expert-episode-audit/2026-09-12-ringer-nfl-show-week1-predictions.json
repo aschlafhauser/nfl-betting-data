@@ -1,0 +1,58 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "auditedAt": "2026-09-12T19:16:18Z",
+  "sourceFamily": "The Ringer NFL Show",
+  "analyst": "Sheil Kapadia / Austin Gayle",
+  "episode": "49ers-Rams Takeaways and Week 1 Predictions!",
+  "published": "2026-09-11",
+  "status": "COMPLETE-SOURCE-LIMITED",
+  "firstPartyUrl": "https://www.theringer.com/podcasts/the-ringer-nfl-show/2026/09/11/49ers-rams-takeaways-and-week-1-predictions",
+  "evidenceSurfaceLog": [
+    {
+      "surface": "The Ringer first-party episode page",
+      "status": "CHECKED",
+      "result": "Official page confirms the Sept. 11 episode, hosts and six unplayed Week 1 matchup segments, with published timestamps."
+    },
+    {
+      "surface": "Official show notes/timestamps",
+      "status": "CHECKED",
+      "result": "Available notes identify Buccaneers-Bengals (25:28), Packers-Vikings (32:45), Bills-Texans (38:39), Cardinals-Chargers (47:59), Falcons-Steelers (52:23) and Cowboys-Giants (57:44), but do not disclose attributable selections, lines, prices, score predictions, conviction or detailed mechanisms."
+    },
+    {
+      "surface": "Official Spotify episode page",
+      "status": "SOURCE-LIMITED",
+      "result": "The public Spotify surface confirms the episode and description but exposes no transcript or caption text."
+    },
+    {
+      "surface": "Official social/pick-sheet evidence",
+      "status": "NOT-FOUND",
+      "result": "No first-party social or pick-sheet surface exposing the episode's matchup selections was reasonably recoverable."
+    }
+  ],
+  "canonicalGames": [
+    {"gameId":"71c9efbf-74b9-4bfd-9617-7df24c4bad89","canonicalGameId":"2026-W1-TB-CIN","matchup":"Tampa Bay Buccaneers at Cincinnati Bengals","timestamp":"25:28"},
+    {"gameId":"810f2cd8-189f-49ce-89fa-f4d4172f7f0d","canonicalGameId":"2026-W1-GB-MIN","matchup":"Green Bay Packers at Minnesota Vikings","timestamp":"32:45"},
+    {"gameId":"db2b328c-7e7d-4236-929f-d3aad6f92bf1","canonicalGameId":"2026-W1-BUF-HOU","matchup":"Buffalo Bills at Houston Texans","timestamp":"38:39"},
+    {"gameId":"02635d1a-30ff-4a78-ace7-96dd3581e736","canonicalGameId":"2026-W1-ARI-LAC","matchup":"Arizona Cardinals at Los Angeles Chargers","timestamp":"47:59"},
+    {"gameId":"65387c45-a762-447f-85bf-2ac0381a8240","canonicalGameId":"2026-W1-ATL-PIT","matchup":"Atlanta Falcons at Pittsburgh Steelers","timestamp":"52:23"},
+    {"gameId":"6eee326a-c62c-43b6-a990-963b0bb7ed06","canonicalGameId":"2026-W1-DAL-NYG","matchup":"Dallas Cowboys at New York Giants","timestamp":"57:44"}
+  ],
+  "newStructuredRecordsIntended": [
+    {"game_id":"71c9efbf-74b9-4bfd-9617-7df24c4bad89","canonicalGameId":"2026-W1-TB-CIN","kind":"source-limited episode coverage","summary":"The official Ringer episode notes confirm a Buccaneers-Bengals Week 1 prediction segment at 25:28. The accessible first-party evidence does not expose an attributable pick, line, price, score prediction, conviction or matchup mechanism; none is inferred.","construction_detail":"No betting construction exposed","independence":"correlated-ringer-family","model_relationship":"qualitative-residual"},
+    {"game_id":"810f2cd8-189f-49ce-89fa-f4d4172f7f0d","canonicalGameId":"2026-W1-GB-MIN","kind":"source-limited episode coverage","summary":"The official Ringer episode notes confirm a Packers-Vikings Week 1 prediction segment at 32:45. The accessible first-party evidence does not expose an attributable pick, line, price, score prediction, conviction or matchup mechanism; none is inferred.","construction_detail":"No betting construction exposed","independence":"correlated-ringer-family","model_relationship":"qualitative-residual"},
+    {"game_id":"db2b328c-7e7d-4236-929f-d3aad6f92bf1","canonicalGameId":"2026-W1-BUF-HOU","kind":"source-limited episode coverage","summary":"The official Ringer episode notes confirm a Bills-Texans Week 1 prediction segment at 38:39. The accessible first-party evidence does not expose an attributable pick, line, price, score prediction, conviction or matchup mechanism; none is inferred.","construction_detail":"No betting construction exposed","independence":"correlated-ringer-family","model_relationship":"qualitative-residual"},
+    {"game_id":"02635d1a-30ff-4a78-ace7-96dd3581e736","canonicalGameId":"2026-W1-ARI-LAC","kind":"source-limited episode coverage","summary":"The official Ringer episode notes confirm a Cardinals-Chargers Week 1 prediction segment at 47:59. The accessible first-party evidence does not expose an attributable pick, line, price, score prediction, conviction or matchup mechanism; none is inferred.","construction_detail":"No betting construction exposed","independence":"correlated-ringer-family","model_relationship":"qualitative-residual"},
+    {"game_id":"65387c45-a762-447f-85bf-2ac0381a8240","canonicalGameId":"2026-W1-ATL-PIT","kind":"source-limited episode coverage","summary":"The official Ringer episode notes confirm a Falcons-Steelers Week 1 prediction segment at 52:23. The accessible first-party evidence does not expose an attributable pick, line, price, score prediction, conviction or matchup mechanism; none is inferred.","construction_detail":"No betting construction exposed","independence":"correlated-ringer-family","model_relationship":"qualitative-residual"},
+    {"game_id":"6eee326a-c62c-43b6-a990-963b0bb7ed06","canonicalGameId":"2026-W1-DAL-NYG","kind":"source-limited episode coverage","summary":"The official Ringer episode notes confirm a Cowboys-Giants Week 1 prediction segment at 57:44. The accessible first-party evidence does not expose an attributable pick, line, price, score prediction, conviction or matchup mechanism; none is inferred.","construction_detail":"No betting construction exposed","independence":"correlated-ringer-family","model_relationship":"qualitative-residual"}
+  ],
+  "dedupeApplied": true,
+  "unsupportedPicksInferred": false,
+  "correlation": {
+    "family": "The Ringer NFL family",
+    "treatment": "All six rows represent one correlated source family and only confirm episode coverage; they are not independent confirmations of other Ringer opinions."
+  },
+  "notes": "Source-limited confirmed episode coverage is joined to the governed Week 1 games so the portal may display that the matchup was discussed without fabricating an analyst-specific pick.",
+  "governance": "Expert Intelligence qualitative residual only; zero automatic impact on quantitative fair, model weights, upset routing, Bet Activation Gate, official ledger or units."
+}
