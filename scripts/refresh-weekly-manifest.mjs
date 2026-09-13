@@ -27,7 +27,29 @@ const deepComplete=Number(deep.week)===week&&Number(deep.gameCount)===expected&&
 const intelCount=Number(intel?.scheduleCoverage?.canonicalGameCount||0),intelComplete=Number(intel?.scheduleCoverage?.completedDeepDives||0),classifications=Array.isArray(intel?.gameClassifications)?intel.gameClassifications:[],classIds=new Set(classifications.map(x=>x.gameId).filter(Boolean)),matrixFields=intel?.deepDiveContract?.matrixFields||[],matrixContract=matrixFields.length>=6,official=board.officialPortfolio?.count||0;
 const fresh=x=>{const t=Date.parse(x?.generatedAt||x?.updatedAt||x?.verifiedAt||'');return Number.isFinite(t)&&Date.now()-t<6*3600000};
 async function latestExpertReconciliation(){const names=(await fs.readdir('data/expert-episode-audit').catch(()=>[])).filter(n=>/reconciliation\.json$/i.test(n)).sort().reverse();for(const n of names){const x=await read(`data/expert-episode-audit/${n}`).catch(()=>null);if(x&&Number(x.week)===week&&String(x.sport||'NFL').toUpperCase()==='NFL')return{file:n,data:x}}return null}
+async function auditFinalSnapshots(){
+  const snapshotNames=(await fs.readdir('data/final-snapshots').catch(()=>[])).filter(n=>/\.json$/i.test(n));
+  const validSnapshots=new Set();
+  for(const n of snapshotNames){
+    const x=await read(`data/final-snapshots/${n}`).catch(()=>null);
+    const capturedAt=Date.parse(x?.timestamp||x?.recordedAt||''),kickoff=Date.parse(x?.kickoff||'');
+    if(x&&Number(x.season)===season&&Number(x.week)===week&&x.gameId&&x.immutable===true&&String(x.finalSnapshotStatus||'').toUpperCase()==='FROZEN'&&Number.isFinite(capturedAt)&&Number.isFinite(kickoff)&&capturedAt<kickoff)validSnapshots.add(x.gameId);
+  }
+  const failureNames=(await fs.readdir('data/game-day-intel').catch(()=>[])).filter(n=>/final-snapshot-gate-failure\.json$/i.test(n));
+  const failedGames=new Set();
+  for(const n of failureNames){const x=await read(`data/game-day-intel/${n}`).catch(()=>null);if(x&&Number(x.season)===season&&Number(x.week)===week&&x.gameId&&String(x.type||'').toUpperCase()==='FINAL_SNAPSHOT_GATE_FAILURE')failedGames.add(x.gameId)}
+  await fs.mkdir('data/game-day-intel',{recursive:true});
+  for(const g of games){
+    const kickoffMs=Date.parse(g.dateTime||'');
+    if(!g.gameId||!Number.isFinite(kickoffMs)||nowMs<kickoffMs||validSnapshots.has(g.gameId)||failedGames.has(g.gameId))continue;
+    const slug=String(g.gameId).replace(new RegExp(`^${season}-W${week}-`,'i'),'').toLowerCase();
+    const file=`${season}-w${week}-${slug}-final-snapshot-gate-failure.json`;
+    const failure={season,week,gameId:g.gameId,recordedAt:new Date(nowMs).toISOString(),type:'FINAL_SNAPSHOT_GATE_FAILURE',kickoff:g.dateTime,requiredWindow:'60-90 minutes pre-kickoff after official inactives and current market verification',market:null,productionFair:null,availability:{officialInactiveListStatus:'NOT VERIFIED IN A VALID IMMUTABLE PRE-KICKOFF SNAPSHOT'},snapshotStatus:'MISSING',governance:{officialBetActivated:false,fairReverseEngineered:false,historicalStateRewritten:false,reason:'Kickoff passed without a valid immutable pre-kickoff snapshot. This failure is permanent; post-kickoff market, personnel, score and result information may not be used to reconstruct or backfill the missing state.'}};
+    await fs.writeFile(`data/game-day-intel/${file}`,JSON.stringify(failure,null,2)+'\n');
+  }
+}
 async function finalSnapshotFailures(){const names=(await fs.readdir('data/game-day-intel').catch(()=>[])).filter(n=>/final-snapshot-gate-failure\.json$/i.test(n)),failures=[];for(const n of names){const x=await read(`data/game-day-intel/${n}`).catch(()=>null);if(x&&Number(x.season)===season&&Number(x.week)===week&&String(x.type||'').toUpperCase()==='FINAL_SNAPSHOT_GATE_FAILURE')failures.push({file:n,gameId:x.gameId||null,kickoff:x.kickoff||null,recordedAt:x.recordedAt||null})}return failures}
+await auditFinalSnapshots();
 const expertRecon=await latestExpertReconciliation(),snapshotFailures=await finalSnapshotFailures();
 const syncHealthy=String(ledgerSync?.sport||'').toUpperCase()==='NFL'&&Number(ledgerSync?.week)===week&&String(ledgerSync?.primaryLedgerStatus||'').toUpperCase()==='SYNCHRONIZED'&&Number(ledgerSync?.missingGovernedRecords||0)===0&&fresh(ledgerSync),primaryLedgerStatus=syncHealthy?'SYNCHRONIZED':String(ledgerSync?.primaryLedgerStatus||expertRecon?.data?.primaryLedgerStatus||'UNKNOWN'),expertLedgerHealthy=syncHealthy||/^(PASS|SYNCHRONIZED|CURRENT)$/i.test(primaryLedgerStatus);
 const statPass=String(statArtifact?.status||'').toUpperCase()==='PASS'&&Number(statArtifact?.week)===week&&fresh(statArtifact),marketPass=String(marketArtifact?.status||'').toUpperCase()==='PASS'&&Number(marketArtifact?.week)===week&&fresh(marketArtifact);
