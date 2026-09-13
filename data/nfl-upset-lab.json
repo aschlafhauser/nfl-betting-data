@@ -1,13 +1,116 @@
 {
   "season": 2026,
   "week": 1,
-  "generated_at": "2026-09-09T08:17:49-04:00",
-  "screen_rule": "+250 or longer; +300+ tracked separately; exact current book required for execution",
+  "generated_at": "2026-09-13T15:05:00Z",
+  "screen_rule": "+250 or longer from the current canonical ESPN market snapshot; +300+ tagged True Longshot; near-threshold dogs are shown separately and are not eligible",
+  "coverage": {
+    "scheduled_games": 14,
+    "eligible_current_prices": 2,
+    "near_threshold_watch": 1,
+    "all_current_threshold_candidates_represented": true
+  },
   "candidates": [
-    {"game_id":"2026-W1-CLE-JAX","team":"Cleveland Browns","moneyline":"about +345 current","cohort":"+300_plus","viability_score":27,"priority":"Research Watch","mechanism_confidence":"Thin","mechanism":"Low-total possession compression; Jacksonville mistakes plus functional Cleveland offense required.","model_fair_moneyline":"+464 research estimate","minimum_playable_ml":"+514 research threshold","price_value_note":"Current price remains worse than the research minimum; no bet.","factors":{"favorite_fragility":0.25,"dog_qb_ceiling":0.25,"trench_leverage":0.15,"possession_compression":0.65,"explosive_asymmetry":0.25,"turnover_pressure_volatility":0.35,"situational_asymmetry":0.2,"availability_asymmetry":0.2,"price_value":0.15}},
-    {"game_id":"2026-W1-ARI-LAC","team":"Arizona Cardinals","moneyline":"best about +410 FanDuel; +370 to +410 current multi-book range","cohort":"+300_plus","viability_score":41,"priority":"Research Watch","mechanism_confidence":"Plausible-Thin","mechanism":"Compress possessions, avoid negative plays and force a late-game outcome rather than allowing the Chargers' OL/QB edge to snowball.","model_fair_moneyline":"+181 research estimate from wide preseason range","price_change":"Improved from Tuesday +380 to +400 range to best +410, but the raw fair disagreement remains low confidence.","price_value_note":"No official bet. Price alone cannot overcome weak-both current-state diagnostics and low model confidence.","factors":{"favorite_fragility":0.35,"dog_qb_ceiling":0.3,"trench_leverage":0.3,"possession_compression":0.5,"explosive_asymmetry":0.45,"turnover_pressure_volatility":0.5,"situational_asymmetry":0.35,"availability_asymmetry":0.2,"price_value":0.72}},
-    {"game_id":"2026-W1-NO-DET","team":"New Orleans Saints","moneyline":"approximately +250 depending book","cohort":"threshold_sensitive_250","viability_score":34,"priority":"Research Watch / Eligibility Sensitive","mechanism_confidence":"Weak","mechanism":"Would need Detroit continuity issues plus possession compression, but New Orleans' own skill absences materially weaken the route.","availability":"Alvin Kamara OUT with MCL injury; Jordyn Tyson expected out opening weeks; defensive availability also compromised.","eligibility":"Verify an exact +250-or-longer quote before treating as an active candidate.","price_value_note":"No bet."}
+    {
+      "game_id": "2026-W1-ARI-LAC",
+      "team": "Arizona Cardinals",
+      "moneyline": "+455",
+      "cohort": "+300_plus",
+      "viability_score": 41,
+      "priority": "True Longshot · Research Watch",
+      "mechanism_confidence": "Plausible-Thin",
+      "mechanism": "Compress possessions, avoid negative plays and force a late-game outcome rather than allowing the Chargers' OL/QB edge to snowball.",
+      "criteria": [
+        {
+          "name": "Price threshold +250",
+          "passed": true,
+          "evidence": "Current ESPN snapshot +455"
+        },
+        {
+          "name": "Possession compression",
+          "passed": true,
+          "evidence": "Only credible route to a late-game variance outcome"
+        },
+        {
+          "name": "Favorite fragility",
+          "passed": false,
+          "evidence": "Chargers' OL/QB advantage is material"
+        },
+        {
+          "name": "Availability asymmetry",
+          "passed": false,
+          "evidence": "Arizona has multiple defensive/OL absences"
+        }
+      ],
+      "model_win_probability": null,
+      "market_implied_probability": "18.0% raw",
+      "minimum_playable_ml": "No official threshold; research only",
+      "price_value_note": "No official bet. Price alone cannot overcome thin mechanism confidence."
+    },
+    {
+      "game_id": "2026-W1-NO-DET",
+      "team": "New Orleans Saints",
+      "moneyline": "+260",
+      "cohort": "threshold_sensitive_250",
+      "viability_score": 30,
+      "priority": "Eligibility Sensitive · Research Watch",
+      "mechanism_confidence": "Weak",
+      "mechanism": "Possession compression and Detroit continuity errors are required; New Orleans' own absences weaken the upset route.",
+      "criteria": [
+        {
+          "name": "Price threshold +250",
+          "passed": true,
+          "evidence": "Current ESPN snapshot +260"
+        },
+        {
+          "name": "Possession compression",
+          "passed": true,
+          "evidence": "Required route against a 7-point favorite"
+        },
+        {
+          "name": "Favorite fragility",
+          "passed": false,
+          "evidence": "No validated Detroit fragility edge"
+        },
+        {
+          "name": "Availability asymmetry",
+          "passed": false,
+          "evidence": "Kamara questionable/unlikely; Cameron Jordan out"
+        }
+      ],
+      "model_win_probability": null,
+      "market_implied_probability": "27.8% raw",
+      "minimum_playable_ml": "Recheck exact book; threshold-sensitive",
+      "price_value_note": "No official bet."
+    }
   ],
-  "plus300_separate":["Cleveland about +345","Arizona best about +410"],
-  "governance":"Upset Lab never activates an official wager by itself. Exact sportsbook, price, production model state and credible mechanism are required."
+  "near_threshold_watch": [
+    {
+      "game_id": "2026-W1-CLE-JAX",
+      "team": "Cleveland Browns",
+      "moneyline": "+230",
+      "eligible": false,
+      "reason": "Below the +250 entry threshold after market move from about +345; retained for audit visibility.",
+      "criteria": [
+        {
+          "name": "Price threshold +250",
+          "passed": false,
+          "evidence": "Current ESPN snapshot +230"
+        },
+        {
+          "name": "Possession compression",
+          "passed": true,
+          "evidence": "Current total near 40.5"
+        },
+        {
+          "name": "Favorite fragility",
+          "passed": false,
+          "evidence": "No validated Jacksonville fragility edge"
+        }
+      ]
+    }
+  ],
+  "plus300_separate": [
+    "Arizona +455"
+  ],
+  "governance": "Upset Lab never activates an official wager by itself. Exact sportsbook, price, production model state and credible mechanism are required."
 }

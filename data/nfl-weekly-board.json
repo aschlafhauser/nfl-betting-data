@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 1,
-  "generated_at": "2026-09-13T14:30:36.145Z",
+  "generated_at": "2026-09-13T15:05:00Z",
   "schedule_source": "Canonical selected-week NFL board + ESPN scoreboard reconciliation",
   "market_source": "ESPN selected-week odds feed; exact sportsbook/juice required before execution",
   "market_snapshot_note": "Representative consensus snapshot, not a guaranteed executable quote. Exact sportsbook/juice required before official wager.",
@@ -128,13 +128,15 @@
         "edge_convention": "fair_spread_home_margin - market.home_margin"
       },
       "availability": {
-        "status": "pre-formal-Week-1 injury reports",
-        "timestamp": "2026-09-06T15:20:00Z",
+        "status": "official Week 1 final report reviewed; game-day inactive check still required",
+        "timestamp": "2026-09-13T15:05:00Z",
+        "source": "NFL.com Week 1 injury report",
+        "source_url": "https://www.nfl.com/news/nfl-week-1-injury-report-2026-season",
         "high_risk_flags": [
-          "CAR: both starting tackles expected out for initial weeks",
-          "CAR: EDGE Nic Scourton out (ACL)",
-          "CHI: Coby Bryant expected out most of season"
-        ]
+          "CHI QUESTIONABLE: QB Tyson Bagent (back), WR Rome Odunze (calf), OL Ozzy Trapilo (knee), DL Xavier Woods (groin)",
+          "CAR OUT: LB Patrick Jones II (back)"
+        ],
+        "model_treatment": "Availability is an audit/veto layer. No direct injury points are applied unless separately validated; latest market repricing is reflected indirectly in the 80/20 production fair."
       },
       "kickoff": "2026-09-13T17:00Z",
       "event_state": "scheduled"
@@ -174,9 +176,16 @@
         "edge_convention": "fair_spread_home_margin - market.home_margin"
       },
       "availability": {
-        "status": "pre-formal-Week-1 injury reports",
-        "timestamp": "2026-09-06T15:20:00Z",
-        "high_risk_flags": []
+        "status": "official Week 1 final report reviewed; game-day inactive check still required",
+        "timestamp": "2026-09-13T15:05:00Z",
+        "source": "NFL.com Week 1 injury report",
+        "source_url": "https://www.nfl.com/news/nfl-week-1-injury-report-2026-season",
+        "high_risk_flags": [
+          "BAL OUT: LB Teddye Buchanan (knee), DT Nnamdi Madubuike (neck)",
+          "BAL QUESTIONABLE: WR Devontez Walker (groin)",
+          "IND QUESTIONABLE: LB Austin Ajiake (hamstring); WR Alec Pierce expected on 20–30 snap count"
+        ],
+        "model_treatment": "Availability is an audit/veto layer. No direct injury points are applied unless separately validated; latest market repricing is reflected indirectly in the 80/20 production fair."
       },
       "kickoff": "2026-09-13T17:00Z",
       "event_state": "scheduled"
@@ -216,18 +225,16 @@
         "edge_convention": "fair_spread_home_margin - market.home_margin"
       },
       "availability": {
-        "status": "official Friday game-status update — availability veto",
-        "timestamp": "2026-09-12T11:25:30Z",
+        "status": "official Week 1 final report reviewed; game-day inactive check still required",
+        "timestamp": "2026-09-13T15:05:00Z",
+        "source": "NFL.com Week 1 injury report",
+        "source_url": "https://www.nfl.com/news/nfl-week-1-injury-report-2026-season",
         "high_risk_flags": [
-          "ATL: QB Tua Tagovailoa OUT (oblique); Cooper Rush will start",
-          "ATL: QB Michael Penix Jr. OUT (knee); Jack Strand expected to back up Rush",
-          "ATL: OT Cameron Williams OUT (ankle)",
-          "ATL: CB Billy Bowman Jr. OUT (Achilles)",
-          "ATL: EDGE Za'Darius Smith questionable (shoulder; full Friday)",
-          "ATL: EDGE Jalon Walker out (ACL)",
-          "ATL: EDGE James Pearce Jr. suspended first eight games",
-          "PIT: CB Joey Porter Jr. questionable (back)"
-        ]
+          "ATL OUT: QB Tua Tagovailoa (oblique), QB Michael Penix Jr. (knee), OT Cameron Williams (ankle), CB Billy Bowman Jr. (Achilles)",
+          "ATL QUESTIONABLE: DE Za'Darius Smith (shoulder); QB Cooper Rush expected to start despite Saturday back spasms",
+          "PIT CB Joey Porter Jr. (back) now expected OUT"
+        ],
+        "model_treatment": "Availability is an audit/veto layer. No direct injury points are applied unless separately validated; latest market repricing is reflected indirectly in the 80/20 production fair."
       },
       "kickoff": "2026-09-13T17:00Z",
       "event_state": "scheduled"
@@ -267,9 +274,16 @@
         "edge_convention": "fair_spread_home_margin - market.home_margin"
       },
       "availability": {
-        "status": "pre-formal-Week-1 injury reports",
-        "timestamp": "2026-09-06T15:20:00Z",
-        "high_risk_flags": []
+        "status": "official Week 1 final report reviewed; game-day inactive check still required",
+        "timestamp": "2026-09-13T15:05:00Z",
+        "source": "NFL.com Week 1 injury report",
+        "source_url": "https://www.nfl.com/news/nfl-week-1-injury-report-2026-season",
+        "high_risk_flags": [
+          "CLE OUT: G Teven Jenkins (back)",
+          "CLE QUESTIONABLE: C Parker Brailsford (thumb)",
+          "JAX QUESTIONABLE: RB LeQuint Allen (hip)"
+        ],
+        "model_treatment": "Availability is an audit/veto layer. No direct injury points are applied unless separately validated; latest market repricing is reflected indirectly in the 80/20 production fair."
       },
       "kickoff": "2026-09-13T17:00Z",
       "event_state": "scheduled"
@@ -309,9 +323,16 @@
         "edge_convention": "fair_spread_home_margin - market.home_margin"
       },
       "availability": {
-        "status": "pre-formal-Week-1 injury reports",
-        "timestamp": "2026-09-06T15:20:00Z",
-        "high_risk_flags": []
+        "status": "official Week 1 final report reviewed; game-day inactive check still required",
+        "timestamp": "2026-09-13T15:05:00Z",
+        "source": "NFL.com Week 1 injury report",
+        "source_url": "https://www.nfl.com/news/nfl-week-1-injury-report-2026-season",
+        "high_risk_flags": [
+          "TB DOUBTFUL: WR Jalen McMillan (knee), RB Sean Tucker (hamstring), OT Justin Skule (oblique)",
+          "TB QUESTIONABLE: LB Christian Rozeboom (foot)",
+          "CIN DOUBTFUL: DE Shemar Stewart (knee)"
+        ],
+        "model_treatment": "Availability is an audit/veto layer. No direct injury points are applied unless separately validated; latest market repricing is reflected indirectly in the 80/20 production fair."
       },
       "kickoff": "2026-09-13T17:00Z",
       "event_state": "scheduled"
@@ -351,9 +372,16 @@
         "edge_convention": "fair_spread_home_margin - market.home_margin"
       },
       "availability": {
-        "status": "pre-formal-Week-1 injury reports",
-        "timestamp": "2026-09-06T15:20:00Z",
-        "high_risk_flags": []
+        "status": "official Week 1 final report reviewed; game-day inactive check still required",
+        "timestamp": "2026-09-13T15:05:00Z",
+        "source": "NFL.com Week 1 injury report",
+        "source_url": "https://www.nfl.com/news/nfl-week-1-injury-report-2026-season",
+        "high_risk_flags": [
+          "NYJ OUT: RB Kene Nwangwu (back), WR Tim Patrick (groin), DL Joseph Ossai (foot)",
+          "NYJ DOUBTFUL: CB D'Angelo Ponds (calf)",
+          "TEN OUT: LB Cedric Gray (concussion)"
+        ],
+        "model_treatment": "Availability is an audit/veto layer. No direct injury points are applied unless separately validated; latest market repricing is reflected indirectly in the 80/20 production fair."
       },
       "kickoff": "2026-09-13T17:00Z",
       "event_state": "scheduled"
@@ -393,13 +421,16 @@
         "edge_convention": "fair_spread_home_margin - market.home_margin"
       },
       "availability": {
-        "status": "pre-formal-Week-1 injury reports",
-        "timestamp": "2026-09-06T15:20:00Z",
+        "status": "official Week 1 final report reviewed; game-day inactive check still required",
+        "timestamp": "2026-09-13T15:05:00Z",
+        "source": "NFL.com Week 1 injury report",
+        "source_url": "https://www.nfl.com/news/nfl-week-1-injury-report-2026-season",
         "high_risk_flags": [
-          "DET: safeties Kerby Joseph and Brian Branch on PUP / out at least first four games",
-          "DET: C Cade Mays out early",
-          "NO: WR Jordyn Tyson expected to miss significant time"
-        ]
+          "NO OUT: TE Oscar Delp (hamstring), RB Audric Estimé (thigh), EDGE Cameron Jordan (hamstring)",
+          "NO QUESTIONABLE: RB Alvin Kamara (knee); game-day report says unlikely",
+          "DET QUESTIONABLE: CB Christian Izien (groin)"
+        ],
+        "model_treatment": "Availability is an audit/veto layer. No direct injury points are applied unless separately validated; latest market repricing is reflected indirectly in the 80/20 production fair."
       },
       "kickoff": "2026-09-13T17:00Z",
       "event_state": "scheduled"
@@ -439,9 +470,15 @@
         "edge_convention": "fair_spread_home_margin - market.home_margin"
       },
       "availability": {
-        "status": "pre-formal-Week-1 injury reports",
-        "timestamp": "2026-09-06T15:20:00Z",
-        "high_risk_flags": []
+        "status": "official Week 1 final report reviewed; game-day inactive check still required",
+        "timestamp": "2026-09-13T15:05:00Z",
+        "source": "NFL.com Week 1 injury report",
+        "source_url": "https://www.nfl.com/news/nfl-week-1-injury-report-2026-season",
+        "high_risk_flags": [
+          "BUF QUESTIONABLE: RB Ty Johnson (hamstring), DB Jordan Hancock (quad), DL T.J. Sanders (knee)",
+          "HOU: no final injury designations"
+        ],
+        "model_treatment": "Availability is an audit/veto layer. No direct injury points are applied unless separately validated; latest market repricing is reflected indirectly in the 80/20 production fair."
       },
       "kickoff": "2026-09-13T17:00Z",
       "event_state": "scheduled"
@@ -481,9 +518,17 @@
         "edge_convention": "fair_spread_home_margin - market.home_margin"
       },
       "availability": {
-        "status": "pre-formal-Week-1 injury reports",
-        "timestamp": "2026-09-06T15:20:00Z",
-        "high_risk_flags": []
+        "status": "official Week 1 final report reviewed; game-day inactive check still required",
+        "timestamp": "2026-09-13T15:05:00Z",
+        "source": "NFL.com Week 1 injury report",
+        "source_url": "https://www.nfl.com/news/nfl-week-1-injury-report-2026-season",
+        "high_risk_flags": [
+          "ARI OUT: OL Isaiah Adams (knee), CB Garrett Williams (Achilles), S Dadrion Taylor-Demerson (ribs)",
+          "ARI QUESTIONABLE: RB Jeremiyah Love (ankle)",
+          "LAC OUT: CB Deane Leonard (abdomen)",
+          "LAC QUESTIONABLE: LB Tuli Tuipulotu (hip)"
+        ],
+        "model_treatment": "Availability is an audit/veto layer. No direct injury points are applied unless separately validated; latest market repricing is reflected indirectly in the 80/20 production fair."
       },
       "kickoff": "2026-09-13T20:25Z",
       "event_state": "scheduled"
@@ -523,12 +568,16 @@
         "edge_convention": "fair_spread_home_margin - market.home_margin"
       },
       "availability": {
-        "status": "pre-formal-Week-1 injury reports",
-        "timestamp": "2026-09-06T15:20:00Z",
+        "status": "official Week 1 final report reviewed; game-day inactive check still required",
+        "timestamp": "2026-09-13T15:05:00Z",
+        "source": "NFL.com Week 1 injury report",
+        "source_url": "https://www.nfl.com/news/nfl-week-1-injury-report-2026-season",
         "high_risk_flags": [
-          "GB: Micah Parsons expected out first six weeks (ACL recovery)",
-          "GB: Josh Jacobs on Commissioner’s Exempt List; return date unknown"
-        ]
+          "GB OUT: DT Warren Brinson (calf)",
+          "GB QUESTIONABLE: OL Zach Bako-Bewele (knee), OL Aaron Banks (knee), LB Ty'Ron Hopper (Achilles)",
+          "MIN: no final injury designations"
+        ],
+        "model_treatment": "Availability is an audit/veto layer. No direct injury points are applied unless separately validated; latest market repricing is reflected indirectly in the 80/20 production fair."
       },
       "kickoff": "2026-09-13T20:25Z",
       "event_state": "scheduled"
@@ -568,9 +617,15 @@
         "edge_convention": "fair_spread_home_margin - market.home_margin"
       },
       "availability": {
-        "status": "pre-formal-Week-1 injury reports",
-        "timestamp": "2026-09-06T15:20:00Z",
-        "high_risk_flags": []
+        "status": "official Week 1 final report reviewed; game-day inactive check still required",
+        "timestamp": "2026-09-13T15:05:00Z",
+        "source": "NFL.com Week 1 injury report",
+        "source_url": "https://www.nfl.com/news/nfl-week-1-injury-report-2026-season",
+        "high_risk_flags": [
+          "MIA: no final injury designations",
+          "LV OUT: TE Brock Bowers (knee)"
+        ],
+        "model_treatment": "Availability is an audit/veto layer. No direct injury points are applied unless separately validated; latest market repricing is reflected indirectly in the 80/20 production fair."
       },
       "kickoff": "2026-09-13T20:25Z",
       "event_state": "scheduled"
@@ -610,11 +665,15 @@
         "edge_convention": "fair_spread_home_margin - market.home_margin"
       },
       "availability": {
-        "status": "pre-formal-Week-1 injury reports",
-        "timestamp": "2026-09-06T15:20:00Z",
+        "status": "official Week 1 final report reviewed; game-day inactive check still required",
+        "timestamp": "2026-09-13T15:05:00Z",
+        "source": "NFL.com Week 1 injury report",
+        "source_url": "https://www.nfl.com/news/nfl-week-1-injury-report-2026-season",
         "high_risk_flags": [
-          "WAS: LT Laremy Tunsil out with torn triceps"
-        ]
+          "WAS: no final injury designations",
+          "PHI OUT: TE Eli Stowers (hamstring), LB Jonathan Greenard (pectoral)"
+        ],
+        "model_treatment": "Availability is an audit/veto layer. No direct injury points are applied unless separately validated; latest market repricing is reflected indirectly in the 80/20 production fair."
       },
       "kickoff": "2026-09-13T20:25Z",
       "event_state": "scheduled"
@@ -654,9 +713,15 @@
         "edge_convention": "fair_spread_home_margin - market.home_margin"
       },
       "availability": {
-        "status": "pre-formal-Week-1 injury reports",
-        "timestamp": "2026-09-06T15:20:00Z",
-        "high_risk_flags": []
+        "status": "official Week 1 final report reviewed; game-day inactive check still required",
+        "timestamp": "2026-09-13T15:05:00Z",
+        "source": "NFL.com Week 1 injury report",
+        "source_url": "https://www.nfl.com/news/nfl-week-1-injury-report-2026-season",
+        "high_risk_flags": [
+          "DAL OUT: RB Malik Davis (hip)",
+          "NYG QUESTIONABLE: WR Malik Nabers (knee)"
+        ],
+        "model_treatment": "Availability is an audit/veto layer. No direct injury points are applied unless separately validated; latest market repricing is reflected indirectly in the 80/20 production fair."
       },
       "kickoff": "2026-09-14T00:20Z",
       "event_state": "scheduled"
@@ -696,12 +761,15 @@
         "edge_convention": "fair_spread_home_margin - market.home_margin"
       },
       "availability": {
-        "status": "pre-formal-Week-1 injury reports",
-        "timestamp": "2026-09-06T15:20:00Z",
+        "status": "official Week 1 final report reviewed; game-day inactive check still required",
+        "timestamp": "2026-09-13T15:05:00Z",
+        "source": "NFL.com Week 1 injury report",
+        "source_url": "https://www.nfl.com/news/nfl-week-1-injury-report-2026-season",
         "high_risk_flags": [
-          "DEN: EDGE Jonathon Cooper on Commissioner’s Exempt List",
-          "KC: Patrick Mahomes early-season mobility/ACL return is a validation variable"
-        ]
+          "DEN: no final injury designations",
+          "KC OUT: OT Josh Simmons (back), DB Chamarri Conner (knee); DT Chris Jones cleared without designation"
+        ],
+        "model_treatment": "Availability is an audit/veto layer. No direct injury points are applied unless separately validated; latest market repricing is reflected indirectly in the 80/20 production fair."
       },
       "kickoff": "2026-09-15T00:15Z",
       "event_state": "scheduled"
