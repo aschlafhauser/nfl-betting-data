@@ -1,0 +1,127 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "verifiedAt": "2026-09-13T21:05:00Z",
+  "status": "FAIL",
+  "blocking": true,
+  "validSnapshots": [
+    {
+      "gameId": "2026-W1-NE-SEA",
+      "file": "data/final-snapshots/2026-w1-20260909T1904ET-ne-sea.json"
+    }
+  ],
+  "validSnapshotCount": 1,
+  "missingCount": 13,
+  "permanentFailures": [
+    {
+      "gameId": "2026-W1-SF-LAR",
+      "kickoff": "2026-09-11T00:35Z",
+      "file": "2026-w1-20260910T1853CT-sf-lar-final-snapshot-gate-failure.json",
+      "recordedAt": "2026-09-10T23:53:52Z",
+      "type": "FINAL_SNAPSHOT_GATE_FAILURE",
+      "snapshotStatus": "MISSING"
+    },
+    {
+      "gameId": "2026-W1-CHI-CAR",
+      "kickoff": "2026-09-13T17:00Z",
+      "file": null,
+      "recordedAt": "2026-09-13T21:05:00Z",
+      "type": "FINAL_SNAPSHOT_GATE_FAILURE",
+      "snapshotStatus": "MISSING"
+    },
+    {
+      "gameId": "2026-W1-TB-CIN",
+      "kickoff": "2026-09-13T17:00Z",
+      "file": null,
+      "recordedAt": "2026-09-13T21:05:00Z",
+      "type": "FINAL_SNAPSHOT_GATE_FAILURE",
+      "snapshotStatus": "MISSING"
+    },
+    {
+      "gameId": "2026-W1-NO-DET",
+      "kickoff": "2026-09-13T17:00Z",
+      "file": null,
+      "recordedAt": "2026-09-13T21:05:00Z",
+      "type": "FINAL_SNAPSHOT_GATE_FAILURE",
+      "snapshotStatus": "MISSING"
+    },
+    {
+      "gameId": "2026-W1-BUF-HOU",
+      "kickoff": "2026-09-13T17:00Z",
+      "file": null,
+      "recordedAt": "2026-09-13T21:05:00Z",
+      "type": "FINAL_SNAPSHOT_GATE_FAILURE",
+      "snapshotStatus": "MISSING"
+    },
+    {
+      "gameId": "2026-W1-BAL-IND",
+      "kickoff": "2026-09-13T17:00Z",
+      "file": null,
+      "recordedAt": "2026-09-13T21:05:00Z",
+      "type": "FINAL_SNAPSHOT_GATE_FAILURE",
+      "snapshotStatus": "MISSING"
+    },
+    {
+      "gameId": "2026-W1-CLE-JAX",
+      "kickoff": "2026-09-13T17:00Z",
+      "file": null,
+      "recordedAt": "2026-09-13T21:05:00Z",
+      "type": "FINAL_SNAPSHOT_GATE_FAILURE",
+      "snapshotStatus": "MISSING"
+    },
+    {
+      "gameId": "2026-W1-ATL-PIT",
+      "kickoff": "2026-09-13T17:00Z",
+      "file": null,
+      "recordedAt": "2026-09-13T21:05:00Z",
+      "type": "FINAL_SNAPSHOT_GATE_FAILURE",
+      "snapshotStatus": "MISSING"
+    },
+    {
+      "gameId": "2026-W1-NYJ-TEN",
+      "kickoff": "2026-09-13T17:00Z",
+      "file": null,
+      "recordedAt": "2026-09-13T21:05:00Z",
+      "type": "FINAL_SNAPSHOT_GATE_FAILURE",
+      "snapshotStatus": "MISSING"
+    },
+    {
+      "gameId": "2026-W1-ARI-LAC",
+      "kickoff": "2026-09-13T20:25Z",
+      "file": null,
+      "recordedAt": "2026-09-13T21:05:00Z",
+      "type": "FINAL_SNAPSHOT_GATE_FAILURE",
+      "snapshotStatus": "MISSING"
+    },
+    {
+      "gameId": "2026-W1-MIA-LV",
+      "kickoff": "2026-09-13T20:25Z",
+      "file": null,
+      "recordedAt": "2026-09-13T21:05:00Z",
+      "type": "FINAL_SNAPSHOT_GATE_FAILURE",
+      "snapshotStatus": "MISSING"
+    },
+    {
+      "gameId": "2026-W1-GB-MIN",
+      "kickoff": "2026-09-13T20:25Z",
+      "file": null,
+      "recordedAt": "2026-09-13T21:05:00Z",
+      "type": "FINAL_SNAPSHOT_GATE_FAILURE",
+      "snapshotStatus": "MISSING"
+    },
+    {
+      "gameId": "2026-W1-WAS-PHI",
+      "kickoff": "2026-09-13T20:25Z",
+      "file": null,
+      "recordedAt": "2026-09-13T21:05:00Z",
+      "type": "FINAL_SNAPSHOT_GATE_FAILURE",
+      "snapshotStatus": "MISSING"
+    }
+  ],
+  "governance": {
+    "historicalStateRewritten": false,
+    "backfillAllowed": false,
+    "note": "Kickoff passed without valid immutable pre-kickoff snapshots for the listed games. Post-kickoff market, personnel, score and result information was not used to reconstruct missing state."
+  }
+}
