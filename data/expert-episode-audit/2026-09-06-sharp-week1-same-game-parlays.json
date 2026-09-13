@@ -2,29 +2,80 @@
   "sourceFamily": "Sharp Football Analysis",
   "analyst": "Curtis Hirsch",
   "content": "NFL Parlay Picks Today: Best Same Game Parlay Bets Week 1",
-  "sourceDate": "2026-09-06",
-  "status": "PROVISIONAL",
+  "sourceDate": "2026-09-12",
+  "status": "COMPLETE",
   "auditedAt": "2026-09-06T22:58:04-04:00",
-  "lastRechecked": "2026-09-07T05:48:52-04:00",
+  "lastRechecked": "2026-09-13T06:42:00-05:00",
   "episodeDiscovery": "Official Sharp Football Analysis Week 1 same-game-parlay page discovered and checked on Sept. 6.",
   "officialNotesChecked": true,
   "transcriptCaptions": "Not applicable; this is an official written analysis page rather than a podcast/video episode. Full published text was checked.",
   "officialSocialPickEvidence": "No separate social/pick-sheet evidence was required to establish the published construction; the official Sharp article states the wager and price directly.",
   "currentWeekMatchupsIdentified": [
     "New England Patriots at Seattle Seahawks",
-    "San Francisco 49ers at Los Angeles Rams — still listed as Coming Soon on Sept. 7 recheck"
+    "Buffalo Bills at Houston Texans",
+    "Carolina Panthers at Chicago Bears",
+    "Dallas Cowboys at New York Giants"
   ],
-  "relevantAnalystsChecked": ["Curtis Hirsch"],
+  "relevantAnalystsChecked": [
+    "Curtis Hirsch"
+  ],
   "constructionsExtracted": [
-    "Patriots +3.5 + A.J. Brown 70+ receiving yards + Rashid Shaheed 40+ receiving yards; +750 same-game parlay"
+    "Patriots +3.5 + A.J. Brown 70+ receiving yards + Rashid Shaheed 40+ receiving yards; +750 SGP",
+    "Bills-Texans alt Over 47.5 + Nico Collins 80+ receiving yards + D.J. Moore 60+ receiving yards + David Montgomery 12+ receiving yards; +1600 SGP",
+    "Bryce Young Over 1.5 passing TDs + 230+ passing yards + Colston Loveland 70+ receiving yards + Tetairoa McMillan 5+ receptions; +1000 SGP",
+    "Cowboys-Giants Under 48.5 + Dak Prescott Under 260.5 passing yards + Cam Skattebo Under 2.5 receptions + Javonte Williams Over 76.5 rushing yards; +750 SGP"
   ],
   "scorePredictionsExtracted": "None stated.",
-  "materialAnalysisExtracted": "New England has a healthy Drake Maye plus A.J. Brown and Romeo Doubs upgrades; Seattle is missing multiple players from the Super Bowl defense, including Riq Woolen, Boye Mafe and Coby Bryant, while Kenneth Walker is also gone. Sharp expects Brown to be featured and sees Rashid Shaheed's new contract/new coordinator as evidence of broader short/intermediate usage.",
+  "materialAnalysisExtracted": "New England has a healthy Drake Maye plus A.J. Brown and Romeo Doubs upgrades; Seattle is missing multiple players from the Super Bowl defense, including Riq Woolen, Boye Mafe and Coby Bryant, while Kenneth Walker is also gone. Sharp expects Brown to be featured and sees Rashid Shaheed's new contract/new coordinator as evidence of broader short/intermediate usage. Sept. 13 recheck found three newly completed constructions. Buffalo's rebuilt defensive system/secondary and Houston regression case support the offense-over stack; Chicago's weak pass rush and depleted secondary support the Carolina passing stack; Dallas' thin backfield and New York's defensive-coordinator/game-environment changes support the Cowboys-Giants under plus Williams workload.",
   "dedupeCrossCheck": "Cross-checked nfl-expert-weekly.json using source family + canonical game ID + analyst + construction/detail. No existing Sharp record represented this three-leg SGP; the prior Sharp touchdown-scorer rows are different constructions and were preserved.",
   "gameIdCrossCheck": "Patriots-Seahawks matched canonical nfl-weekly-board game ID 2bf1ca8d-11d6-4c00-b2e4-28971764e444. No unmatched record was written.",
   "expertLedgerWrite": "One comprehensive SGP record appended to data/nfl-expert-weekly.json; the three legs were not split into artificial independent confirmations.",
   "quantitativeGovernance": "No NFL fair spread, total, confidence, market state or official wager status was modified.",
-  "provisionalReason": "Sept. 7 recheck confirms the same official page still lists Rams-49ers as Coming Soon, so the source-family Week 1 SGP completeness job remains open for silent recheck.",
-  "finalCompletenessAudit": "PASS FOR CURRENTLY PUBLISHED CONSTRUCTION; SOURCE REMAINS PROVISIONAL UNTIL THE REMAINING LISTED WEEK 1 SGP CONTENT IS PUBLISHED OR EXPLICITLY EXHAUSTED.",
-  "sourceUrl": "https://www.sharpfootballanalysis.com/betting/nfl-same-game-parlay-bet-picks-prediction-today/"
+  "provisionalReason": null,
+  "finalCompletenessAudit": "COMPLETE for all currently published Week 1 constructions visible on the official page as of Sept. 13.",
+  "sourceUrl": "https://www.sharpfootballanalysis.com/betting/nfl-same-game-parlay-bet-picks-prediction-today/",
+  "newStructuredRecords": [
+    {
+      "id": "sharp-sgp-2026-w1-2",
+      "gameId": "2026-W1-BUF-HOU",
+      "sourceFamily": "Sharp Football Analysis",
+      "analyst": "Curtis Hirsch",
+      "sourceDate": "2026-09-12",
+      "kind": "CORRELATED_SAME_GAME_PARLAY",
+      "construction": "Bills-Texans alt Over 47.5 + Nico Collins 80+ receiving yards + D.J. Moore 60+ receiving yards + David Montgomery 12+ receiving yards; +1600",
+      "summary": "Explicit four-leg SGP based on both offenses exceeding expectations against Buffalo's changed defensive structure.",
+      "timestamp": null,
+      "independence": "One Sharp Football Analysis source family; all legs are mutually correlated and not independent confirmations.",
+      "model_relationship": "Expert context only; 0 direct model or official-wager impact.",
+      "sourceUrl": "https://www.sharpfootballanalysis.com/betting/nfl-same-game-parlay-bet-picks-prediction-today/"
+    },
+    {
+      "id": "sharp-sgp-2026-w1-3",
+      "gameId": "2026-W1-CAR-CHI",
+      "sourceFamily": "Sharp Football Analysis",
+      "analyst": "Curtis Hirsch",
+      "sourceDate": "2026-09-12",
+      "kind": "CORRELATED_SAME_GAME_PARLAY",
+      "construction": "Bryce Young Over 1.5 passing TDs + 230+ passing yards + Colston Loveland 70+ receiving yards + Tetairoa McMillan 5+ receptions; +1000",
+      "summary": "Explicit four-leg passing-game SGP built around Chicago's weak pass rush and secondary absences.",
+      "timestamp": null,
+      "independence": "One Sharp Football Analysis source family; all legs are mutually correlated and not independent confirmations.",
+      "model_relationship": "Expert context only; 0 direct model or official-wager impact.",
+      "sourceUrl": "https://www.sharpfootballanalysis.com/betting/nfl-same-game-parlay-bet-picks-prediction-today/"
+    },
+    {
+      "id": "sharp-sgp-2026-w1-4",
+      "gameId": "2026-W1-DAL-NYG",
+      "sourceFamily": "Sharp Football Analysis",
+      "analyst": "Curtis Hirsch",
+      "sourceDate": "2026-09-12",
+      "kind": "CORRELATED_SAME_GAME_PARLAY",
+      "construction": "Cowboys-Giants Under 48.5 + Dak Prescott Under 260.5 passing yards + Cam Skattebo Under 2.5 receptions + Javonte Williams Over 76.5 rushing yards; +750",
+      "summary": "Explicit four-leg SGP pairing a lower-scoring game script with reduced passing/receiving outcomes and a concentrated Williams rushing workload.",
+      "timestamp": null,
+      "independence": "One Sharp Football Analysis source family; all legs are mutually correlated and not independent confirmations.",
+      "model_relationship": "Expert context only; 0 direct model or official-wager impact.",
+      "sourceUrl": "https://www.sharpfootballanalysis.com/betting/nfl-same-game-parlay-bet-picks-prediction-today/"
+    }
+  ]
 }
