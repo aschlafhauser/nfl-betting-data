@@ -2,7 +2,7 @@
   "version": "NFL-WEEKLY-MANIFEST-v2",
   "season": 2026,
   "week": 1,
-  "updatedAt": "2026-09-13T15:42:26.610Z",
+  "updatedAt": "2026-09-13T15:47:59.865Z",
   "status": "FAIL",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-09-09.json",
@@ -51,9 +51,9 @@
       "unplayedGames": 14,
       "freshMarketGames": 14,
       "calculationFreshGames": 14,
-      "finalDesignationGames": 14,
+      "finalDesignationGames": 13,
       "inactiveCheckpointDue": 8,
-      "inactiveCheckpointComplete": 0,
+      "inactiveCheckpointComplete": 1,
       "weatherCoverageGames": 14,
       "weatherRenderVerified": false,
       "upsetEligibleDogs": 2,
@@ -61,6 +61,7 @@
       "upsetLabVerified": true,
       "youBetterYouBetChecked": true,
       "issues": [
+        "official final injury designation review is incomplete",
         "official 90-minute inactive checkpoint incomplete for 8 due games",
         "no current PASS artifact verifies weather/roof rows in both Weekly Board and Matchup Center"
       ],
@@ -76,7 +77,7 @@
       "ledgerSyncReport": "data/expert-ledger-reconciliation.json",
       "latestReconciliation": "2026-09-10-1648-hourly-reconciliation.json",
       "pointImpact": 0,
-      "note": "Expert Intelligence is a correlated qualitative residual after the quantitative model; primary ledger is losslessly synchronized (103 ledger records; 0 missing)."
+      "note": "Expert Intelligence is a correlated qualitative residual after the quantitative model; primary ledger is losslessly synchronized (112 ledger records; 0 missing)."
     },
     "upsetResearchIsolation": {
       "status": "PASS",
