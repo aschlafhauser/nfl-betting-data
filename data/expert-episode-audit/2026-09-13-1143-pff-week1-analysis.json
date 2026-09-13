@@ -1,0 +1,99 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 1,
+  "auditType": "current-week-pff-matchup-and-touchdown-analysis",
+  "auditedAt": "2026-09-13T11:43:00Z",
+  "sourceFamily": "PFF",
+  "independenceKey": "pff",
+  "status": "COMPLETE-SOURCE-LIMITED",
+  "governance": "Explicit directions were preserved. No price or prop threshold was inferred where the accessible first-party article did not state one.",
+  "sources": [
+    {
+      "analyst": "Judah Fortgang",
+      "publishedAt": "2026-09-12T05:30:00-04:00",
+      "sourceUrl": "https://www.pff.com/news/bet-nfl-week-1-anytime-touchdown-bets-2026"
+    },
+    {
+      "analyst": "Judah Fortgang",
+      "publishedAt": "2026-09-12T05:00:00-04:00",
+      "sourceUrl": "https://www.pff.com/news/bet-nfl-week-1-bets-matchups-to-target"
+    }
+  ],
+  "sourceLimitedNotes": [
+    "PFF explicitly selected Javonte Williams, Saquon Barkley and Dalton Kincaid for anytime touchdowns but the accessible article did not expose prices; Williams serves as independent thesis confirmation, while Barkley and Kincaid remain Watch.",
+    "The matchup article explicitly targets Cooper Rush unders and C.J. Stroud alternate props without identifying a specific stat market, number or playable threshold; these remain Watch."
+  ],
+  "newStructuredRecords": [
+    {
+      "id": "pff-2026-w1-atd-1",
+      "gameId": "2026-W1-DAL-NYG",
+      "kind": "PLAYER_PROP_EXPERT_CONFIRMATION",
+      "construction": "Javonte Williams anytime touchdown — explicit direction, price unavailable",
+      "summary": "PFF cites a 71.4% Dallas goal-line carry share, 10 touchdowns on 20 attempts inside the five and a Giants defense last in rush EPA and success rate.",
+      "sourceFamily": "PFF",
+      "analyst": "Judah Fortgang",
+      "sourceDate": "2026-09-12",
+      "timestamp": null,
+      "independence": "PFF is independent of Action Network and Sharp Football Analysis.",
+      "model_relationship": "Qualitative expert context only; 0 direct game-side model or official-wager impact.",
+      "sourceUrl": "https://www.pff.com/news/bet-nfl-week-1-anytime-touchdown-bets-2026"
+    },
+    {
+      "id": "pff-2026-w1-atd-2",
+      "gameId": "2026-W1-WAS-PHI",
+      "kind": "PLAYER_PROP_WATCH",
+      "construction": "Saquon Barkley anytime touchdown — explicit direction, price unavailable",
+      "summary": "PFF cites Barkley's 280 carries, 17.5% route target rate and Washington ranking 28th in rush EPA allowed.",
+      "sourceFamily": "PFF",
+      "analyst": "Judah Fortgang",
+      "sourceDate": "2026-09-12",
+      "timestamp": null,
+      "independence": "PFF is independent of Action Network and Sharp Football Analysis.",
+      "model_relationship": "Qualitative expert context only; 0 direct game-side model or official-wager impact.",
+      "sourceUrl": "https://www.pff.com/news/bet-nfl-week-1-anytime-touchdown-bets-2026"
+    },
+    {
+      "id": "pff-2026-w1-atd-3",
+      "gameId": "2026-W1-BUF-HOU",
+      "kind": "PLAYER_PROP_WATCH",
+      "construction": "Dalton Kincaid anytime touchdown — explicit direction, price unavailable",
+      "summary": "PFF cites Kincaid's 25.5% target rate, zone efficiency and Houston's zone-heavy defense.",
+      "sourceFamily": "PFF",
+      "analyst": "Judah Fortgang",
+      "sourceDate": "2026-09-12",
+      "timestamp": null,
+      "independence": "PFF is independent of Action Network and Sharp Football Analysis.",
+      "model_relationship": "Qualitative expert context only; 0 direct game-side model or official-wager impact.",
+      "sourceUrl": "https://www.pff.com/news/bet-nfl-week-1-anytime-touchdown-bets-2026"
+    },
+    {
+      "id": "pff-2026-w1-matchup-1",
+      "gameId": "2026-W1-ATL-PIT",
+      "kind": "SOURCE_LIMITED_PROP_DIRECTION",
+      "construction": "Cooper Rush unders and Atlanta sack props over — specific markets and thresholds unavailable",
+      "summary": "PFF identifies Rush's poor disruption-pressure performance against a Pittsburgh front that ranked second at generating such pressure.",
+      "sourceFamily": "PFF",
+      "analyst": "Judah Fortgang",
+      "sourceDate": "2026-09-12",
+      "timestamp": null,
+      "independence": "PFF is independent of Action Network and Sharp Football Analysis.",
+      "model_relationship": "Qualitative expert context only; 0 direct game-side model or official-wager impact.",
+      "sourceUrl": "https://www.pff.com/news/bet-nfl-week-1-bets-matchups-to-target"
+    },
+    {
+      "id": "pff-2026-w1-matchup-2",
+      "gameId": "2026-W1-BUF-HOU",
+      "kind": "SOURCE_LIMITED_PROP_DIRECTION",
+      "construction": "C.J. Stroud alternate props — specific markets and thresholds unavailable",
+      "summary": "PFF expects Stroud to exploit weak links in Buffalo's rebuilt coverage structure without Sean McDermott and multiple departed defensive backs.",
+      "sourceFamily": "PFF",
+      "analyst": "Judah Fortgang",
+      "sourceDate": "2026-09-12",
+      "timestamp": null,
+      "independence": "PFF is independent of Action Network and Sharp Football Analysis.",
+      "model_relationship": "Qualitative expert context only; 0 direct game-side model or official-wager impact.",
+      "sourceUrl": "https://www.pff.com/news/bet-nfl-week-1-bets-matchups-to-target"
+    }
+  ]
+}
