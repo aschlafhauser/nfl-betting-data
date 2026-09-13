@@ -2,7 +2,7 @@
   "version": "NFL-WEEKLY-MANIFEST-v2",
   "season": 2026,
   "week": 1,
-  "updatedAt": "2026-09-13T21:05:00Z",
+  "updatedAt": "2026-09-13T23:15:01.580Z",
   "status": "FAIL",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-09-09.json",
@@ -52,17 +52,19 @@
       "freshMarketGames": 6,
       "calculationFreshGames": 6,
       "finalDesignationGames": 6,
-      "inactiveCheckpointDue": 4,
+      "inactiveCheckpointDue": 5,
       "inactiveCheckpointComplete": 0,
-      "weatherCoverageGames": 6,
+      "weatherCoverageGames": 1,
       "weatherRenderVerified": false,
       "upsetEligibleDogs": 1,
       "upsetNearThresholdDogs": 0,
-      "upsetLabVerified": true,
+      "upsetLabVerified": false,
       "youBetterYouBetChecked": true,
       "issues": [
-        "official 90-minute inactive checkpoint incomplete for 4 due games",
-        "no current PASS artifact verifies weather/roof rows in both Weekly Board and Matchup Center"
+        "official 90-minute inactive checkpoint incomplete for 5 due games",
+        "weather/roof-state coverage is missing or stale for an unplayed game",
+        "no current PASS artifact verifies weather/roof rows in both Weekly Board and Matchup Center",
+        "Upset Lab threshold/near-threshold coverage or named criteria are incomplete"
       ],
       "note": "Availability is a veto/fair-range input and changes production mechanically only through validated rules; otherwise current market repricing may reflect it indirectly. Weather remains 0.0 automatic points."
     },
@@ -94,94 +96,92 @@
     "finalSnapshotIntegrity": {
       "status": "FAIL",
       "blocking": true,
-      "artifact": "data/final-snapshot-integrity-2026-w1.json",
       "missingCount": 13,
-      "validSnapshotCount": 1,
       "failures": [
         {
           "file": "2026-w1-20260910T1853CT-sf-lar-final-snapshot-gate-failure.json",
           "gameId": "2026-W1-SF-LAR",
-          "kickoff": "2026-09-11T00:35Z",
-          "recordedAt": "2026-09-10T23:53:52Z"
+          "kickoff": "2026-09-10T19:35:00-05:00",
+          "recordedAt": "2026-09-10T18:53:52-05:00"
         },
         {
-          "file": "data/final-snapshot-integrity-2026-w1.json",
-          "gameId": "2026-W1-CHI-CAR",
-          "kickoff": "2026-09-13T17:00Z",
-          "recordedAt": "2026-09-13T21:05:00Z"
-        },
-        {
-          "file": "data/final-snapshot-integrity-2026-w1.json",
-          "gameId": "2026-W1-TB-CIN",
-          "kickoff": "2026-09-13T17:00Z",
-          "recordedAt": "2026-09-13T21:05:00Z"
-        },
-        {
-          "file": "data/final-snapshot-integrity-2026-w1.json",
-          "gameId": "2026-W1-NO-DET",
-          "kickoff": "2026-09-13T17:00Z",
-          "recordedAt": "2026-09-13T21:05:00Z"
-        },
-        {
-          "file": "data/final-snapshot-integrity-2026-w1.json",
-          "gameId": "2026-W1-BUF-HOU",
-          "kickoff": "2026-09-13T17:00Z",
-          "recordedAt": "2026-09-13T21:05:00Z"
-        },
-        {
-          "file": "data/final-snapshot-integrity-2026-w1.json",
-          "gameId": "2026-W1-BAL-IND",
-          "kickoff": "2026-09-13T17:00Z",
-          "recordedAt": "2026-09-13T21:05:00Z"
-        },
-        {
-          "file": "data/final-snapshot-integrity-2026-w1.json",
-          "gameId": "2026-W1-CLE-JAX",
-          "kickoff": "2026-09-13T17:00Z",
-          "recordedAt": "2026-09-13T21:05:00Z"
-        },
-        {
-          "file": "data/final-snapshot-integrity-2026-w1.json",
+          "file": "2026-w1-atl-pit-final-snapshot-gate-failure.json",
           "gameId": "2026-W1-ATL-PIT",
           "kickoff": "2026-09-13T17:00Z",
-          "recordedAt": "2026-09-13T21:05:00Z"
+          "recordedAt": "2026-09-13T23:15:01.565Z"
         },
         {
-          "file": "data/final-snapshot-integrity-2026-w1.json",
+          "file": "2026-w1-bal-ind-final-snapshot-gate-failure.json",
+          "gameId": "2026-W1-BAL-IND",
+          "kickoff": "2026-09-13T17:00Z",
+          "recordedAt": "2026-09-13T23:15:01.565Z"
+        },
+        {
+          "file": "2026-w1-buf-hou-final-snapshot-gate-failure.json",
+          "gameId": "2026-W1-BUF-HOU",
+          "kickoff": "2026-09-13T17:00Z",
+          "recordedAt": "2026-09-13T23:15:01.565Z"
+        },
+        {
+          "file": "2026-w1-chi-car-final-snapshot-gate-failure.json",
+          "gameId": "2026-W1-CHI-CAR",
+          "kickoff": "2026-09-13T17:00Z",
+          "recordedAt": "2026-09-13T23:15:01.565Z"
+        },
+        {
+          "file": "2026-w1-cle-jax-final-snapshot-gate-failure.json",
+          "gameId": "2026-W1-CLE-JAX",
+          "kickoff": "2026-09-13T17:00Z",
+          "recordedAt": "2026-09-13T23:15:01.565Z"
+        },
+        {
+          "file": "2026-w1-no-det-final-snapshot-gate-failure.json",
+          "gameId": "2026-W1-NO-DET",
+          "kickoff": "2026-09-13T17:00Z",
+          "recordedAt": "2026-09-13T23:15:01.565Z"
+        },
+        {
+          "file": "2026-w1-nyj-ten-final-snapshot-gate-failure.json",
           "gameId": "2026-W1-NYJ-TEN",
           "kickoff": "2026-09-13T17:00Z",
-          "recordedAt": "2026-09-13T21:05:00Z"
+          "recordedAt": "2026-09-13T23:15:01.565Z"
         },
         {
-          "file": "data/final-snapshot-integrity-2026-w1.json",
+          "file": "2026-w1-tb-cin-final-snapshot-gate-failure.json",
+          "gameId": "2026-W1-TB-CIN",
+          "kickoff": "2026-09-13T17:00Z",
+          "recordedAt": "2026-09-13T23:15:01.565Z"
+        },
+        {
+          "file": "2026-w1-ari-lac-final-snapshot-gate-failure.json",
           "gameId": "2026-W1-ARI-LAC",
           "kickoff": "2026-09-13T20:25Z",
-          "recordedAt": "2026-09-13T21:05:00Z"
+          "recordedAt": "2026-09-13T23:15:01.565Z"
         },
         {
-          "file": "data/final-snapshot-integrity-2026-w1.json",
-          "gameId": "2026-W1-MIA-LV",
-          "kickoff": "2026-09-13T20:25Z",
-          "recordedAt": "2026-09-13T21:05:00Z"
-        },
-        {
-          "file": "data/final-snapshot-integrity-2026-w1.json",
+          "file": "2026-w1-gb-min-final-snapshot-gate-failure.json",
           "gameId": "2026-W1-GB-MIN",
           "kickoff": "2026-09-13T20:25Z",
-          "recordedAt": "2026-09-13T21:05:00Z"
+          "recordedAt": "2026-09-13T23:15:01.565Z"
         },
         {
-          "file": "data/final-snapshot-integrity-2026-w1.json",
+          "file": "2026-w1-mia-lv-final-snapshot-gate-failure.json",
+          "gameId": "2026-W1-MIA-LV",
+          "kickoff": "2026-09-13T20:25Z",
+          "recordedAt": "2026-09-13T23:15:01.565Z"
+        },
+        {
+          "file": "2026-w1-was-phi-final-snapshot-gate-failure.json",
           "gameId": "2026-W1-WAS-PHI",
           "kickoff": "2026-09-13T20:25Z",
-          "recordedAt": "2026-09-13T21:05:00Z"
+          "recordedAt": "2026-09-13T23:15:01.565Z"
         }
       ],
-      "note": "Thirteen required immutable pre-kickoff snapshots were missed. These persisted FINAL_SNAPSHOT_GATE_FAILURE records remain permanent after kickoff/final and may never be backfilled."
+      "note": "A required immutable pre-kickoff snapshot was missed. This persisted FINAL_SNAPSHOT_GATE_FAILURE is hard weekly-manifest failure, remains permanently recorded after kickoff/final, and is never backfilled."
     },
     "historicalIntegrity": {
       "status": "FAIL-WITH-PRESERVED-AUDIT-DEBT",
-      "note": "Preserve pre-kickoff states and final snapshots; never backfill after results. Completed games are exempt from live-market freshness SLA, but every persisted missed pre-kickoff snapshot remains a hard manifest failure."
+      "note": "Preserve pre-kickoff states and final snapshots; never backfill after results. Completed games are exempt from live-market freshness SLA, but a persisted missed pre-kickoff snapshot remains a hard manifest failure."
     },
     "timeLimitedOverlays": {
       "status": "IN_PROGRESS",
@@ -195,9 +195,9 @@
     "STATISTICAL_DISPLAY_INTEGRITY_UNVERIFIED",
     "MARKET_DERIVED_INTEGRITY_UNVERIFIED",
     "NFL_CURRENT_WEEK_COMPLETENESS_INCOMPLETE",
-    "FINAL_SNAPSHOT_MISSING: 2026-W1-SF-LAR, 2026-W1-CHI-CAR, 2026-W1-TB-CIN, 2026-W1-NO-DET, 2026-W1-BUF-HOU, 2026-W1-BAL-IND, 2026-W1-CLE-JAX, 2026-W1-ATL-PIT, 2026-W1-NYJ-TEN, 2026-W1-ARI-LAC, 2026-W1-MIA-LV, 2026-W1-GB-MIN, 2026-W1-WAS-PHI"
+    "FINAL_SNAPSHOT_MISSING: 2026-W1-SF-LAR, 2026-W1-ATL-PIT, 2026-W1-BAL-IND, 2026-W1-BUF-HOU, 2026-W1-CHI-CAR, 2026-W1-CLE-JAX, 2026-W1-NO-DET, 2026-W1-NYJ-TEN, 2026-W1-TB-CIN, 2026-W1-ARI-LAC, 2026-W1-GB-MIN, 2026-W1-MIA-LV, 2026-W1-WAS-PHI"
   ],
   "historicalWarnings": [
-    "FINAL_SNAPSHOT_MISSING: 2026-W1-SF-LAR, 2026-W1-CHI-CAR, 2026-W1-TB-CIN, 2026-W1-NO-DET, 2026-W1-BUF-HOU, 2026-W1-BAL-IND, 2026-W1-CLE-JAX, 2026-W1-ATL-PIT, 2026-W1-NYJ-TEN, 2026-W1-ARI-LAC, 2026-W1-MIA-LV, 2026-W1-GB-MIN, 2026-W1-WAS-PHI"
+    "FINAL_SNAPSHOT_MISSING: 2026-W1-SF-LAR, 2026-W1-ATL-PIT, 2026-W1-BAL-IND, 2026-W1-BUF-HOU, 2026-W1-CHI-CAR, 2026-W1-CLE-JAX, 2026-W1-NO-DET, 2026-W1-NYJ-TEN, 2026-W1-TB-CIN, 2026-W1-ARI-LAC, 2026-W1-GB-MIN, 2026-W1-MIA-LV, 2026-W1-WAS-PHI"
   ]
 }
