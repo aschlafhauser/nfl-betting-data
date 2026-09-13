@@ -2,7 +2,7 @@
   "version": "NFL-WEEKLY-MANIFEST-v2",
   "season": 2026,
   "week": 1,
-  "updatedAt": "2026-09-13T15:17:04.522Z",
+  "updatedAt": "2026-09-13T15:42:26.610Z",
   "status": "FAIL",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-09-09.json",
@@ -44,6 +44,27 @@
       "blocking": true,
       "artifact": "data/market-derived-integrity-2026-w1.json",
       "note": "No persisted independent reconciliation artifact proves spread/total/ML-derived arithmetic, dependency timestamps, stored-runtime agreement and rendered-portal agreement against the newest canonical market snapshot. Populated fields alone are insufficient."
+    },
+    "currentWeekCompleteness": {
+      "status": "FAIL",
+      "blocking": true,
+      "unplayedGames": 14,
+      "freshMarketGames": 14,
+      "calculationFreshGames": 14,
+      "finalDesignationGames": 14,
+      "inactiveCheckpointDue": 8,
+      "inactiveCheckpointComplete": 0,
+      "weatherCoverageGames": 14,
+      "weatherRenderVerified": false,
+      "upsetEligibleDogs": 2,
+      "upsetNearThresholdDogs": 1,
+      "upsetLabVerified": true,
+      "youBetterYouBetChecked": true,
+      "issues": [
+        "official 90-minute inactive checkpoint incomplete for 8 due games",
+        "no current PASS artifact verifies weather/roof rows in both Weekly Board and Matchup Center"
+      ],
+      "note": "Availability is a veto/fair-range input and changes production mechanically only through validated rules; otherwise current market repricing may reflect it indirectly. Weather remains 0.0 automatic points."
     },
     "homeMarginConvention": {
       "status": "PASS",
@@ -99,6 +120,7 @@
   "failures": [
     "STATISTICAL_DISPLAY_INTEGRITY_UNVERIFIED",
     "MARKET_DERIVED_INTEGRITY_UNVERIFIED",
+    "NFL_CURRENT_WEEK_COMPLETENESS_INCOMPLETE",
     "FINAL_SNAPSHOT_MISSING: 2026-W1-SF-LAR"
   ],
   "historicalWarnings": [
