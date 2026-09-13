@@ -48,7 +48,13 @@ async function auditFinalSnapshots(){
     await fs.writeFile(`data/game-day-intel/${file}`,JSON.stringify(failure,null,2)+'\n');
   }
 }
-async function finalSnapshotFailures(){const names=(await fs.readdir('data/game-day-intel').catch(()=>[])).filter(n=>/final-snapshot-gate-failure\.json$/i.test(n)),failures=[];for(const n of names){const x=await read(`data/game-day-intel/${n}`).catch(()=>null);if(x&&Number(x.season)===season&&Number(x.week)===week&&String(x.type||'').toUpperCase()==='FINAL_SNAPSHOT_GATE_FAILURE')failures.push({file:n,gameId:x.gameId||null,kickoff:x.kickoff||null,recordedAt:x.recordedAt||null})}return failures}
+async function finalSnapshotFailures(){
+  const byGame=new Map(),names=(await fs.readdir('data/game-day-intel').catch(()=>[])).filter(n=>/final-snapshot-gate-failure\.json$/i.test(n));
+  for(const n of names){const x=await read(`data/game-day-intel/${n}`).catch(()=>null);if(x&&Number(x.season)===season&&Number(x.week)===week&&String(x.type||'').toUpperCase()==='FINAL_SNAPSHOT_GATE_FAILURE')byGame.set(x.gameId||n,{file:n,gameId:x.gameId||null,kickoff:x.kickoff||null,recordedAt:x.recordedAt||null})}
+  const aggregate=await read(`data/final-snapshot-integrity-${season}-w${week}.json`).catch(()=>null);
+  for(const x of Array.isArray(aggregate?.permanentFailures)?aggregate.permanentFailures:[]){if(x&&x.gameId&&!byGame.has(x.gameId))byGame.set(x.gameId,{file:x.file||`data/final-snapshot-integrity-${season}-w${week}.json`,gameId:x.gameId,kickoff:x.kickoff||null,recordedAt:x.recordedAt||aggregate.verifiedAt||null})}
+  return [...byGame.values()].sort((a,b)=>String(a.kickoff||'').localeCompare(String(b.kickoff||''))||String(a.gameId||'').localeCompare(String(b.gameId||'')));
+}
 await auditFinalSnapshots();
 const expertRecon=await latestExpertReconciliation(),snapshotFailures=await finalSnapshotFailures();
 const syncHealthy=String(ledgerSync?.sport||'').toUpperCase()==='NFL'&&Number(ledgerSync?.week)===week&&String(ledgerSync?.primaryLedgerStatus||'').toUpperCase()==='SYNCHRONIZED'&&Number(ledgerSync?.missingGovernedRecords||0)===0&&fresh(ledgerSync),primaryLedgerStatus=syncHealthy?'SYNCHRONIZED':String(ledgerSync?.primaryLedgerStatus||expertRecon?.data?.primaryLedgerStatus||'UNKNOWN'),expertLedgerHealthy=syncHealthy||/^(PASS|SYNCHRONIZED|CURRENT)$/i.test(primaryLedgerStatus);
