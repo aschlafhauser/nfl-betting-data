@@ -17,6 +17,12 @@ on:
       - 'data/game-intelligence.json'
       - 'data/bet-recommendations.json'
       - 'data/upset-lab*.json'
+      - 'data/injuries.json'
+      - 'data/nfl-weather-current.json'
+      - 'data/final-snapshots/**'
+      - 'data/results-clv/**'
+      - 'scripts/freeze-pre-kickoff-snapshots.mjs'
+      - 'scripts/capture-results-clv.mjs'
       - 'scripts/refresh-live-portal-runtime.mjs'
       - 'scripts/audit-team-identities.mjs'
       - 'scripts/sync-expert-ledger.mjs'
@@ -67,6 +73,12 @@ jobs:
         run: node scripts/refresh-live-portal-runtime.mjs
       - name: Reconcile canonical NFL team identities
         run: node scripts/audit-team-identities.mjs
+      - name: Freeze due immutable pre-kickoff snapshots after official inactives
+        env:
+          NFL_SNAPSHOT_LOOKAHEAD_MINUTES: '90'
+        run: node scripts/freeze-pre-kickoff-snapshots.mjs
+      - name: Capture immutable final results and CLV status when games complete
+        run: node scripts/capture-results-clv.mjs
       - name: Rebuild selected-week manifest
         run: node scripts/refresh-weekly-manifest.mjs
       - name: Persist governed NFL runtime safely
@@ -81,10 +93,10 @@ jobs:
             git reset --hard origin/main
             exit 0
           fi
-          if git diff --quiet -- data/weekly-board.json data/nfl-weekly-board.json data/team-identity-audit-current.json data/nfl-expert-weekly.json data/expert-ledger-reconciliation.json data/weekly-manifest*.json; then
+          if git diff --quiet -- data/; then
             echo 'NFL governed runtime already current.'
           else
-            git add data/weekly-board.json data/nfl-weekly-board.json data/team-identity-audit-current.json data/nfl-expert-weekly.json data/expert-ledger-reconciliation.json data/weekly-manifest*.json
+            git add data/
             git commit -m 'chore: refresh governed NFL runtime [skip ci]'
             if ! git push origin HEAD:main; then
               echo 'Remote advanced during NFL runtime push; resetting to latest main rather than rebasing generated state.'
