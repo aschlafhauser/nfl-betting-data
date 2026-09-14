@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 1,
-  "updatedAt": "2026-09-14T06:29:29.099Z",
+  "updatedAt": "2026-09-14T14:16:37.850Z",
   "scheduleSource": "NFL.com official 2026 Week 1 schedule",
   "marketSource": "Current ESPN NFL selected-week odds feed; exact sportsbook/juice required before execution",
   "modelStatus": "Production v1.1 unchanged: 80% current market spread + 20% validated structural line. Structural line uses 70% prior-season average scoring margin + 1.0 generic HFA. QB/current personnel/matchup/expert layers are audit/blocking inputs unless separately proven incremental. Production totals remain market-anchored. All spread math uses canonical home-margin convention.",
@@ -354,8 +354,8 @@
       "stage": "blocked-stale-baseline",
       "classification": "PASS / QB audit",
       "notes": "Mahomes availability/mobility state and balanced KC current profile must be current before execution; protect 3.",
-      "marketSource": "ESPN DraftKings",
-      "marketObservedAt": "2026-09-14T06:29:29.099Z",
+      "marketSource": "ESPN Draft Kings",
+      "marketObservedAt": "2026-09-14T14:16:37.850Z",
       "eventState": "scheduled"
     }
   ],
@@ -366,7 +366,7 @@
   },
   "runtimeRefresh": {
     "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=1&limit=100",
-    "observedAt": "2026-09-14T06:29:29.099Z",
+    "observedAt": "2026-09-14T14:16:37.850Z",
     "espnEvents": 16,
     "currentOddsGames": 1,
     "identityNormalization": "registry v1: canonical abbreviations and aliases normalized before joins"
