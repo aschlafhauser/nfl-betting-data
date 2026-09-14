@@ -69,8 +69,9 @@ jobs:
         run: node scripts/audit-team-identities.mjs
       - name: Rebuild selected-week manifest
         run: node scripts/refresh-weekly-manifest.mjs
+      - name: Enforce NFL weekly gates
+        run: node scripts/verify-weekly-gates.mjs
       - name: Persist governed NFL runtime safely
-        if: ${{ always() }}
         run: |
           set -e
           git config user.name 'nfl-runtime-bot'
@@ -92,9 +93,6 @@ jobs:
               git reset --hard origin/main
             fi
           fi
-      - name: Enforce NFL weekly gates
-        if: ${{ always() }}
-        run: node scripts/verify-weekly-gates.mjs
       - name: Verify every live NFL portal tab
         if: ${{ always() }}
         env:
