@@ -2,7 +2,7 @@
   "version": "NFL-WEEKLY-MANIFEST-v2",
   "season": 2026,
   "week": 1,
-  "updatedAt": "2026-09-14T23:14:01.612Z",
+  "updatedAt": "2026-09-15T01:36:06.549Z",
   "status": "FAIL",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-09-09.json",
@@ -97,7 +97,7 @@
     "finalSnapshotIntegrity": {
       "status": "FAIL",
       "blocking": true,
-      "missingCount": 14,
+      "missingCount": 15,
       "failures": [
         {
           "file": "2026-w1-20260910T1853CT-sf-lar-final-snapshot-gate-failure.json",
@@ -182,6 +182,12 @@
           "gameId": "2026-W1-DAL-NYG",
           "kickoff": "2026-09-14T00:20Z",
           "recordedAt": "2026-09-14T22:37:36.366Z"
+        },
+        {
+          "file": "2026-w1-den-kc-final-snapshot-gate-failure.json",
+          "gameId": "2026-W1-DEN-KC",
+          "kickoff": "2026-09-15T00:15Z",
+          "recordedAt": "2026-09-15T01:36:06.537Z"
         }
       ],
       "note": "A required immutable pre-kickoff snapshot was missed. This persisted FINAL_SNAPSHOT_GATE_FAILURE is hard weekly-manifest failure, remains permanently recorded after kickoff/final, and is never backfilled."
@@ -202,9 +208,9 @@
     "STATISTICAL_DISPLAY_INTEGRITY_UNVERIFIED",
     "MARKET_DERIVED_INTEGRITY_UNVERIFIED",
     "NFL_CURRENT_WEEK_COMPLETENESS_INCOMPLETE",
-    "FINAL_SNAPSHOT_MISSING: 2026-W1-SF-LAR, 2026-W1-ATL-PIT, 2026-W1-BAL-IND, 2026-W1-BUF-HOU, 2026-W1-CHI-CAR, 2026-W1-CLE-JAX, 2026-W1-NO-DET, 2026-W1-NYJ-TEN, 2026-W1-TB-CIN, 2026-W1-ARI-LAC, 2026-W1-GB-MIN, 2026-W1-MIA-LV, 2026-W1-WAS-PHI, 2026-W1-DAL-NYG"
+    "FINAL_SNAPSHOT_MISSING: 2026-W1-SF-LAR, 2026-W1-ATL-PIT, 2026-W1-BAL-IND, 2026-W1-BUF-HOU, 2026-W1-CHI-CAR, 2026-W1-CLE-JAX, 2026-W1-NO-DET, 2026-W1-NYJ-TEN, 2026-W1-TB-CIN, 2026-W1-ARI-LAC, 2026-W1-GB-MIN, 2026-W1-MIA-LV, 2026-W1-WAS-PHI, 2026-W1-DAL-NYG, 2026-W1-DEN-KC"
   ],
   "historicalWarnings": [
-    "FINAL_SNAPSHOT_MISSING: 2026-W1-SF-LAR, 2026-W1-ATL-PIT, 2026-W1-BAL-IND, 2026-W1-BUF-HOU, 2026-W1-CHI-CAR, 2026-W1-CLE-JAX, 2026-W1-NO-DET, 2026-W1-NYJ-TEN, 2026-W1-TB-CIN, 2026-W1-ARI-LAC, 2026-W1-GB-MIN, 2026-W1-MIA-LV, 2026-W1-WAS-PHI, 2026-W1-DAL-NYG"
+    "FINAL_SNAPSHOT_MISSING: 2026-W1-SF-LAR, 2026-W1-ATL-PIT, 2026-W1-BAL-IND, 2026-W1-BUF-HOU, 2026-W1-CHI-CAR, 2026-W1-CLE-JAX, 2026-W1-NO-DET, 2026-W1-NYJ-TEN, 2026-W1-TB-CIN, 2026-W1-ARI-LAC, 2026-W1-GB-MIN, 2026-W1-MIA-LV, 2026-W1-WAS-PHI, 2026-W1-DAL-NYG, 2026-W1-DEN-KC"
   ]
 }
