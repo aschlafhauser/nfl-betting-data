@@ -1,127 +1,605 @@
 {
   "season": 2026,
-  "week": 1,
-  "generated_at": "2026-09-13T15:42:37.618Z",
-  "screen_rule": "+250 or longer from the current canonical ESPN market snapshot; +300+ tagged True Longshot; near-threshold dogs are shown separately and are not eligible",
+  "week": 2,
+  "generated_at": "2026-09-16T14:03:55.222Z",
+  "method": "Wednesday spread-based upset screen plus exact-price governance",
   "coverage": {
-    "scheduled_games": 14,
-    "eligible_current_prices": 2,
-    "near_threshold_watch": 1,
-    "all_current_threshold_candidates_represented": true
+    "all_current_threshold_candidates_represented": true,
+    "selected_week_games": 16,
+    "spread_screen_candidates": 7,
+    "price_policy": "Exact moneylines never inferred from spreads."
   },
   "candidates": [
     {
-      "game_id": "2026-W1-ARI-LAC",
-      "team": "Arizona Cardinals",
-      "moneyline": "+455",
-      "cohort": "+300_plus",
-      "viability_score": 41,
-      "priority": "True Longshot · Research Watch",
-      "mechanism_confidence": "Plausible-Thin",
-      "mechanism": "Compress possessions, avoid negative plays and force a late-game outcome rather than allowing the Chargers' OL/QB edge to snowball.",
+      "game_id": "2026-W2-PHI-TEN",
+      "team": "TEN",
+      "moneyline": null,
+      "eligible": false,
+      "status": "PRICE_PENDING",
+      "spread": "Philadelphia Eagles -7",
+      "structuralFair": "Philadelphia Eagles -5.4",
       "criteria": [
         {
-          "name": "Price threshold +250",
+          "name": "market-underdog-profile",
+          "status": "PASS",
           "passed": true,
-          "evidence": "Current ESPN snapshot +455",
-          "status": "PASS"
+          "evidence": "Tennessee Titans is 7 points from the current spread favorite."
         },
         {
-          "name": "Possession compression",
+          "name": "structural-resistance",
+          "status": "PASS",
           "passed": true,
-          "evidence": "Only credible route to a late-game variance outcome",
-          "status": "PASS"
+          "evidence": "Frozen structural lean TEN; structural fair Philadelphia Eagles -5.4."
         },
         {
-          "name": "Favorite fragility",
+          "name": "prior-quality-gap",
+          "status": "FAIL",
           "passed": false,
-          "evidence": "Chargers' OL/QB advantage is material",
-          "status": "FAIL"
+          "evidence": "Preseason prior -3.30 vs opponent 2.18."
         },
         {
-          "name": "Availability asymmetry",
+          "name": "recent-form",
+          "status": "FAIL",
           "passed": false,
-          "evidence": "Arizona has multiple defensive/OL absences",
-          "status": "FAIL"
+          "evidence": "Prior-week scoring margin -13."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "model_win_probability": null,
-      "market_implied_probability": "18.0% raw",
-      "minimum_playable_ml": "No official threshold; research only",
-      "price_value_note": "No official bet. Price alone cannot overcome thin mechanism confidence."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
     },
     {
-      "game_id": "2026-W1-NO-DET",
-      "team": "New Orleans Saints",
-      "moneyline": "+260",
-      "cohort": "threshold_sensitive_250",
-      "viability_score": 30,
-      "priority": "Eligibility Sensitive · Research Watch",
-      "mechanism_confidence": "Weak",
-      "mechanism": "Possession compression and Detroit continuity errors are required; Alvin Kamara's official inactive status and New Orleans' defensive absences further weaken the upset route.",
+      "game_id": "2026-W2-CLE-TB",
+      "team": "CLE",
+      "moneyline": null,
+      "eligible": false,
+      "status": "PRICE_PENDING",
+      "spread": "Tampa Bay Buccaneers -8.5",
+      "structuralFair": "Tampa Bay Buccaneers -7.6",
       "criteria": [
         {
-          "name": "Price threshold +250",
+          "name": "market-underdog-profile",
+          "status": "PASS",
           "passed": true,
-          "evidence": "Current ESPN snapshot +260",
-          "status": "PASS"
+          "evidence": "Cleveland Browns is 8.5 points from the current spread favorite."
         },
         {
-          "name": "Possession compression",
+          "name": "structural-resistance",
+          "status": "PASS",
           "passed": true,
-          "evidence": "Required route against a 7-point favorite",
-          "status": "PASS"
+          "evidence": "Frozen structural lean CLE; structural fair Tampa Bay Buccaneers -7.6."
         },
         {
-          "name": "Favorite fragility",
+          "name": "prior-quality-gap",
+          "status": "FAIL",
           "passed": false,
-          "evidence": "No validated Detroit fragility edge",
-          "status": "FAIL"
+          "evidence": "Preseason prior -5.44 vs opponent -0.16."
         },
         {
-          "name": "Availability asymmetry",
+          "name": "recent-form",
+          "status": "FAIL",
           "passed": false,
-          "evidence": "Alvin Kamara is officially inactive; Cameron Jordan is also out",
-          "status": "FAIL"
+          "evidence": "Prior-week scoring margin -24."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "model_win_probability": null,
-      "market_implied_probability": "27.8% raw",
-      "minimum_playable_ml": "Recheck exact book; threshold-sensitive",
-      "price_value_note": "No official bet."
-    }
-  ],
-  "near_threshold_watch": [
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
+    },
     {
-      "game_id": "2026-W1-CLE-JAX",
-      "team": "Cleveland Browns",
-      "moneyline": "+230",
+      "game_id": "2026-W2-NO-BAL",
+      "team": "NO",
+      "moneyline": null,
       "eligible": false,
-      "reason": "Below the +250 entry threshold after market move from about +345; retained for audit visibility.",
+      "status": "PRICE_PENDING",
+      "spread": "Baltimore Ravens -7.5",
+      "structuralFair": "Baltimore Ravens -6.6",
       "criteria": [
         {
-          "name": "Price threshold +250",
-          "passed": false,
-          "evidence": "Current ESPN snapshot +230",
-          "status": "FAIL"
-        },
-        {
-          "name": "Possession compression",
+          "name": "market-underdog-profile",
+          "status": "PASS",
           "passed": true,
-          "evidence": "Current total near 40.5",
-          "status": "PASS"
+          "evidence": "New Orleans Saints is 7.5 points from the current spread favorite."
         },
         {
-          "name": "Favorite fragility",
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Frozen structural lean NO; structural fair Baltimore Ravens -6.6."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "FAIL",
           "passed": false,
-          "evidence": "No validated Jacksonville fragility edge",
-          "status": "FAIL"
+          "evidence": "Preseason prior -1.94 vs opponent 2.16."
+        },
+        {
+          "name": "recent-form",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Prior-week scoring margin -1."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
-      ]
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
+    },
+    {
+      "game_id": "2026-W2-LV-LAC",
+      "team": "LV",
+      "moneyline": null,
+      "eligible": false,
+      "status": "PRICE_PENDING",
+      "spread": "Los Angeles Chargers -6.5",
+      "structuralFair": "Los Angeles Chargers -3.6",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Las Vegas Raiders is 6.5 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Frozen structural lean LV; structural fair Los Angeles Chargers -3.6."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Preseason prior -4.30 vs opponent 1.48."
+        },
+        {
+          "name": "recent-form",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Prior-week scoring margin 14."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
+    },
+    {
+      "game_id": "2026-W2-MIA-SF",
+      "team": "MIA",
+      "moneyline": null,
+      "eligible": false,
+      "status": "PRICE_PENDING",
+      "spread": "San Francisco 49ers -13.5",
+      "structuralFair": "San Francisco 49ers -11.9",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Miami Dolphins is 13.5 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Frozen structural lean MIA; structural fair San Francisco 49ers -11.9."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Preseason prior -4.78 vs opponent 3.60."
+        },
+        {
+          "name": "recent-form",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Prior-week scoring margin -14."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
+    },
+    {
+      "game_id": "2026-W2-IND-KC",
+      "team": "IND",
+      "moneyline": null,
+      "eligible": false,
+      "status": "PRICE_PENDING",
+      "spread": "Kansas City Chiefs -6.5",
+      "structuralFair": "Kansas City Chiefs -5",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Indianapolis Colts is 6.5 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Frozen structural lean IND; structural fair Kansas City Chiefs -5."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Preseason prior 2.50 vs opponent 2.64."
+        },
+        {
+          "name": "recent-form",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Prior-week scoring margin -18."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
+    },
+    {
+      "game_id": "2026-W2-NYG-LAR",
+      "team": "NYG",
+      "moneyline": null,
+      "eligible": false,
+      "status": "PRICE_PENDING",
+      "spread": "Los Angeles Rams -7",
+      "structuralFair": "Los Angeles Rams -6.9",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "New York Giants is 7 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Frozen structural lean NYG; structural fair Los Angeles Rams -6.9."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Preseason prior -1.66 vs opponent 8.00."
+        },
+        {
+          "name": "recent-form",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Prior-week scoring margin 8."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
     }
   ],
-  "plus300_separate": [
-    "Arizona +455"
-  ],
-  "governance": "Upset Lab never activates an official wager by itself. Exact sportsbook, price, production model state and credible mechanism are required."
+  "near_threshold_watch": [],
+  "price_pending": [
+    {
+      "game_id": "2026-W2-PHI-TEN",
+      "team": "TEN",
+      "moneyline": null,
+      "eligible": false,
+      "status": "PRICE_PENDING",
+      "spread": "Philadelphia Eagles -7",
+      "structuralFair": "Philadelphia Eagles -5.4",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Tennessee Titans is 7 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Frozen structural lean TEN; structural fair Philadelphia Eagles -5.4."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Preseason prior -3.30 vs opponent 2.18."
+        },
+        {
+          "name": "recent-form",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Prior-week scoring margin -13."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
+    },
+    {
+      "game_id": "2026-W2-CLE-TB",
+      "team": "CLE",
+      "moneyline": null,
+      "eligible": false,
+      "status": "PRICE_PENDING",
+      "spread": "Tampa Bay Buccaneers -8.5",
+      "structuralFair": "Tampa Bay Buccaneers -7.6",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Cleveland Browns is 8.5 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Frozen structural lean CLE; structural fair Tampa Bay Buccaneers -7.6."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Preseason prior -5.44 vs opponent -0.16."
+        },
+        {
+          "name": "recent-form",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Prior-week scoring margin -24."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
+    },
+    {
+      "game_id": "2026-W2-NO-BAL",
+      "team": "NO",
+      "moneyline": null,
+      "eligible": false,
+      "status": "PRICE_PENDING",
+      "spread": "Baltimore Ravens -7.5",
+      "structuralFair": "Baltimore Ravens -6.6",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "New Orleans Saints is 7.5 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Frozen structural lean NO; structural fair Baltimore Ravens -6.6."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Preseason prior -1.94 vs opponent 2.16."
+        },
+        {
+          "name": "recent-form",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Prior-week scoring margin -1."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
+    },
+    {
+      "game_id": "2026-W2-LV-LAC",
+      "team": "LV",
+      "moneyline": null,
+      "eligible": false,
+      "status": "PRICE_PENDING",
+      "spread": "Los Angeles Chargers -6.5",
+      "structuralFair": "Los Angeles Chargers -3.6",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Las Vegas Raiders is 6.5 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Frozen structural lean LV; structural fair Los Angeles Chargers -3.6."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Preseason prior -4.30 vs opponent 1.48."
+        },
+        {
+          "name": "recent-form",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Prior-week scoring margin 14."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
+    },
+    {
+      "game_id": "2026-W2-MIA-SF",
+      "team": "MIA",
+      "moneyline": null,
+      "eligible": false,
+      "status": "PRICE_PENDING",
+      "spread": "San Francisco 49ers -13.5",
+      "structuralFair": "San Francisco 49ers -11.9",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Miami Dolphins is 13.5 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Frozen structural lean MIA; structural fair San Francisco 49ers -11.9."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Preseason prior -4.78 vs opponent 3.60."
+        },
+        {
+          "name": "recent-form",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Prior-week scoring margin -14."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
+    },
+    {
+      "game_id": "2026-W2-IND-KC",
+      "team": "IND",
+      "moneyline": null,
+      "eligible": false,
+      "status": "PRICE_PENDING",
+      "spread": "Kansas City Chiefs -6.5",
+      "structuralFair": "Kansas City Chiefs -5",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Indianapolis Colts is 6.5 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Frozen structural lean IND; structural fair Kansas City Chiefs -5."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Preseason prior 2.50 vs opponent 2.64."
+        },
+        {
+          "name": "recent-form",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Prior-week scoring margin -18."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
+    },
+    {
+      "game_id": "2026-W2-NYG-LAR",
+      "team": "NYG",
+      "moneyline": null,
+      "eligible": false,
+      "status": "PRICE_PENDING",
+      "spread": "Los Angeles Rams -7",
+      "structuralFair": "Los Angeles Rams -6.9",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "New York Giants is 7 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Frozen structural lean NYG; structural fair Los Angeles Rams -6.9."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Preseason prior -1.66 vs opponent 8.00."
+        },
+        {
+          "name": "recent-form",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Prior-week scoring margin 8."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
+    }
+  ]
 }

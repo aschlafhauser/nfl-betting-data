@@ -1,34 +1,21 @@
 {
   "season": 2026,
-  "week": 1,
+  "week": 2,
   "status": "COMPLETE",
-  "updatedAt": "2026-09-09T08:23:35-04:00",
+  "updatedAt": "2026-09-16T14:03:55.222Z",
   "gameCount": 16,
   "completedGameCount": 16,
   "stage": "wednesday-universal-complete",
-  "universalDeepDiveDeadline": "2026-09-09",
   "universalDeepDiveRequiredToday": true,
-  "coverageRule": "Every selected-week NFL game must receive a complete Deep Dive by Wednesday unless a documented source failure exists. Week 1 Wednesday coverage is complete 16/16. Thursday maintains TNF/future games through kickoff; Friday emphasizes final injury designations and Sunday-price preparation.",
-  "currentState": "The persisted 2026-09-09 weekday-intel file certifies all 16 canonical Week 1 Deep Dives complete. Sunday/Monday teams' first official Wednesday practice reports were not yet published at the 08:17 ET completion checkpoint; those are time-limited overlays to be incorporated later Wednesday, not coverage failures.",
+  "coverageRule": "Every selected-week NFL game receives a governed Wednesday Deep Dive built from current market, frozen model, prior-week live state, priors and joined Expert Intelligence.",
   "sourceDataFailures": [],
   "executionLimitations": [
-    "Later-Wednesday official practice participation reports for Sunday/Monday games remain required repricing overlays as teams publish them.",
-    "Exact executable sportsbook/juice remains mandatory at the moment of any potential wager activation."
+    "Exact executable sportsbook/juice and final availability remain required before activation."
   ],
-  "earliestGame": {
-    "gameId": "2026-W1-NE-SEA",
-    "kickoff": "2026-09-09T20:20:00-04:00",
-    "currentMarket": "FanDuel SEA -3.5 -108 / NE +3.5 -112; total 44.5 -110 both ways; SEA -188 / NE +158",
-    "injuryCheckpoint": "NE RB TreVeyon Henderson OUT (ankle), OL Ben Brown OUT (knee); SEA S Ty Okada OUT (hamstring), S Nick Emmanwori QUESTIONABLE (ankle), WR Tory Horton QUESTIONABLE (hamstring).",
-    "classification": "WATCH-PRICE / NO OFFICIAL BET",
-    "productionFair": "SEA -5.0 in the persisted Wednesday Deep Dive",
-    "priceCliff": "SEA -3 or better preferred; do not chase -3.5 on medium-low confidence"
-  },
-  "governance": "NFL models/data/ledgers remain isolated from CFB. Canonical home-margin convention required. Historical matchup diagnostics remain research-only with zero automatic point impact. No wager without exact book, line/juice, units, timestamp, production fair and executable edge.",
+  "governance": "NFL/CFB separated; canonical home-margin convention; frozen coefficients; no post-result backfill.",
   "qc": {
     "status": "16/16 DEEP DIVE COMPLETE",
     "severity": "none",
-    "timeLimitedSources": ["Sunday/Monday teams' first official Wednesday practice reports must be overlaid later Wednesday as released."],
-    "productionRuleConfirmed": "Older unit-interaction diagnostics remain zero-point research-only."
+    "productionRuleConfirmed": "Frozen v1.1 80% market / 20% structural production spread; Week 2/3 live blend 10% prior-week state."
   }
 }
