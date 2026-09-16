@@ -1,9 +1,9 @@
 {
   "season": 2026,
   "week": 2,
-  "updatedAt": "2026-09-16T19:45:44.983Z",
+  "updatedAt": "2026-09-16T20:01:23.751Z",
   "source": "ESPN prior-week completed games and current team statistics",
-  "method": "Frozen phase blend uses prior-week centered scoring margin; broader statistics are display/context unless separately validated.",
+  "method": "Frozen phase blend uses prior-week centered scoring margin; broader statistics are display/context unless separately validated. Standard offense/defense fields normalized for Matchup Center; advanced fields remain null unless governed source data exists.",
   "teams": [
     {
       "team": "Detroit Lions",
@@ -164,8 +164,32 @@
       },
       "preseasonPower": 1.54,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 31,
+        "yardsPerGame": 371,
+        "passingYardsPerGame": 206,
+        "rushingYardsPerGame": 165,
+        "yardsPerPlay": 5.082191780821918,
+        "yardsPerPassAttempt": 5.3,
+        "yardsPerRush": 5,
+        "thirdDownRate": 0.3846,
+        "redZoneTdRate": 0.8
+      },
+      "defense": {
+        "pointsAllowedPerGame": 30,
+        "yardsAllowedPerGame": 501,
+        "passingYardsAllowedPerGame": 410,
+        "rushingYardsAllowedPerGame": 91
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": 1,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Buffalo Bills",
@@ -325,8 +349,32 @@
       },
       "preseasonPower": 3,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 36,
+        "yardsPerGame": 420,
+        "passingYardsPerGame": 334,
+        "rushingYardsPerGame": 86,
+        "yardsPerPlay": 8.076923076923077,
+        "yardsPerPassAttempt": 11.5,
+        "yardsPerRush": 4.1,
+        "thirdDownRate": 0.3333,
+        "redZoneTdRate": 0.3333
+      },
+      "defense": {
+        "pointsAllowedPerGame": 31,
+        "yardsAllowedPerGame": 398,
+        "passingYardsAllowedPerGame": 274,
+        "rushingYardsAllowedPerGame": 124
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": 5,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Carolina Panthers",
@@ -487,8 +535,32 @@
       },
       "preseasonPower": -3.16,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 37,
+        "yardsPerGame": 486,
+        "passingYardsPerGame": 361,
+        "rushingYardsPerGame": 125,
+        "yardsPerPlay": 7.838709677419355,
+        "yardsPerPassAttempt": 9.5,
+        "yardsPerRush": 5.7,
+        "thirdDownRate": 0.44439999999999996,
+        "redZoneTdRate": 1
+      },
+      "defense": {
+        "pointsAllowedPerGame": 59,
+        "yardsAllowedPerGame": 560,
+        "passingYardsAllowedPerGame": 269,
+        "rushingYardsAllowedPerGame": 291
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": -22,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Atlanta Falcons",
@@ -648,8 +720,32 @@
       },
       "preseasonPower": -2.68,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 13,
+        "yardsPerGame": 263,
+        "passingYardsPerGame": 143,
+        "rushingYardsPerGame": 120,
+        "yardsPerPlay": 4.614035087719298,
+        "yardsPerPassAttempt": 6.5,
+        "yardsPerRush": 3.9,
+        "thirdDownRate": 0.16670000000000001,
+        "redZoneTdRate": 0
+      },
+      "defense": {
+        "pointsAllowedPerGame": 20,
+        "yardsAllowedPerGame": 279,
+        "passingYardsAllowedPerGame": 221,
+        "rushingYardsAllowedPerGame": 58
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": -7,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Minnesota Vikings",
@@ -809,8 +905,32 @@
       },
       "preseasonPower": 0.72,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 39,
+        "yardsPerGame": 258,
+        "passingYardsPerGame": 151,
+        "rushingYardsPerGame": 107,
+        "yardsPerPlay": 4.229508196721311,
+        "yardsPerPassAttempt": 6.3,
+        "yardsPerRush": 3.1,
+        "thirdDownRate": 0.5333,
+        "redZoneTdRate": 1
+      },
+      "defense": {
+        "pointsAllowedPerGame": 22,
+        "yardsAllowedPerGame": 453,
+        "passingYardsAllowedPerGame": 387,
+        "rushingYardsAllowedPerGame": 66
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": 17,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Chicago Bears",
@@ -971,8 +1091,32 @@
       },
       "preseasonPower": 0.8,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 59,
+        "yardsPerGame": 560,
+        "passingYardsPerGame": 269,
+        "rushingYardsPerGame": 291,
+        "yardsPerPlay": 8,
+        "yardsPerPassAttempt": 9.3,
+        "yardsPerRush": 7.5,
+        "thirdDownRate": 0.7143,
+        "redZoneTdRate": 1
+      },
+      "defense": {
+        "pointsAllowedPerGame": 37,
+        "yardsAllowedPerGame": 486,
+        "passingYardsAllowedPerGame": 361,
+        "rushingYardsAllowedPerGame": 125
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": 22,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Philadelphia Eagles",
@@ -1132,8 +1276,32 @@
       },
       "preseasonPower": 2.18,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 24,
+        "yardsPerGame": 339,
+        "passingYardsPerGame": 203,
+        "rushingYardsPerGame": 136,
+        "yardsPerPlay": 6.39622641509434,
+        "yardsPerPassAttempt": 8.1,
+        "yardsPerRush": 5.4,
+        "thirdDownRate": 0.4286,
+        "redZoneTdRate": 0.6667000000000001
+      },
+      "defense": {
+        "pointsAllowedPerGame": 22,
+        "yardsAllowedPerGame": 296,
+        "passingYardsAllowedPerGame": 164,
+        "rushingYardsAllowedPerGame": 132
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": 2,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Tennessee Titans",
@@ -1294,8 +1462,32 @@
       },
       "preseasonPower": -3.3,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 10,
+        "yardsPerGame": 208,
+        "passingYardsPerGame": 140,
+        "rushingYardsPerGame": 68,
+        "yardsPerPlay": 4.244897959183674,
+        "yardsPerPassAttempt": 4.4,
+        "yardsPerRush": 4.9,
+        "thirdDownRate": 0.3333,
+        "redZoneTdRate": 1
+      },
+      "defense": {
+        "pointsAllowedPerGame": 23,
+        "yardsAllowedPerGame": 367,
+        "passingYardsAllowedPerGame": 215,
+        "rushingYardsAllowedPerGame": 152
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": -13,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Pittsburgh Steelers",
@@ -1456,8 +1648,32 @@
       },
       "preseasonPower": 0.86,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 20,
+        "yardsPerGame": 279,
+        "passingYardsPerGame": 221,
+        "rushingYardsPerGame": 58,
+        "yardsPerPlay": 4.359375,
+        "yardsPerPassAttempt": 5.4,
+        "yardsPerRush": 2.8,
+        "thirdDownRate": 0.23079999999999998,
+        "redZoneTdRate": 0.5
+      },
+      "defense": {
+        "pointsAllowedPerGame": 13,
+        "yardsAllowedPerGame": 263,
+        "passingYardsAllowedPerGame": 143,
+        "rushingYardsAllowedPerGame": 120
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": 7,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "New England Patriots",
@@ -1617,8 +1833,32 @@
       },
       "preseasonPower": 4.3,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 10,
+        "yardsPerGame": 287,
+        "passingYardsPerGame": 178,
+        "rushingYardsPerGame": 109,
+        "yardsPerPlay": 4.2835820895522385,
+        "yardsPerPassAttempt": 5.4,
+        "yardsPerRush": 3.5,
+        "thirdDownRate": 0.3125,
+        "redZoneTdRate": 0.5
+      },
+      "defense": {
+        "pointsAllowedPerGame": 13,
+        "yardsAllowedPerGame": 297,
+        "passingYardsAllowedPerGame": 200,
+        "rushingYardsAllowedPerGame": 97
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": -3,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Green Bay Packers",
@@ -1779,8 +2019,32 @@
       },
       "preseasonPower": 0.1,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 22,
+        "yardsPerGame": 453,
+        "passingYardsPerGame": 387,
+        "rushingYardsPerGame": 66,
+        "yardsPerPlay": 6.7611940298507465,
+        "yardsPerPassAttempt": 9.2,
+        "yardsPerRush": 3.1,
+        "thirdDownRate": 0.25,
+        "redZoneTdRate": 0.25
+      },
+      "defense": {
+        "pointsAllowedPerGame": 39,
+        "yardsAllowedPerGame": 258,
+        "passingYardsAllowedPerGame": 151,
+        "rushingYardsAllowedPerGame": 107
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": -17,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "New York Jets",
@@ -1940,8 +2204,32 @@
       },
       "preseasonPower": -6.5,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 23,
+        "yardsPerGame": 367,
+        "passingYardsPerGame": 215,
+        "rushingYardsPerGame": 152,
+        "yardsPerPlay": 5.825396825396825,
+        "yardsPerPassAttempt": 9,
+        "yardsPerRush": 3.9,
+        "thirdDownRate": 0.16670000000000001,
+        "redZoneTdRate": 0.6667000000000001
+      },
+      "defense": {
+        "pointsAllowedPerGame": 10,
+        "yardsAllowedPerGame": 208,
+        "passingYardsAllowedPerGame": 140,
+        "rushingYardsAllowedPerGame": 68
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": 13,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Cleveland Browns",
@@ -2102,8 +2390,32 @@
       },
       "preseasonPower": -5.44,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 10,
+        "yardsPerGame": 292,
+        "passingYardsPerGame": 205,
+        "rushingYardsPerGame": 87,
+        "yardsPerPlay": 5.959183673469388,
+        "yardsPerPassAttempt": 9.3,
+        "yardsPerRush": 4,
+        "thirdDownRate": 0.125,
+        "redZoneTdRate": 0
+      },
+      "defense": {
+        "pointsAllowedPerGame": 34,
+        "yardsAllowedPerGame": 371,
+        "passingYardsAllowedPerGame": 245,
+        "rushingYardsAllowedPerGame": 126
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": -24,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Tampa Bay Buccaneers",
@@ -2264,8 +2576,32 @@
       },
       "preseasonPower": -0.16,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 27,
+        "yardsPerGame": 305,
+        "passingYardsPerGame": 216,
+        "rushingYardsPerGame": 89,
+        "yardsPerPlay": 5.865384615384615,
+        "yardsPerPassAttempt": 7.7,
+        "yardsPerRush": 4.5,
+        "thirdDownRate": 0.5,
+        "redZoneTdRate": 0.5
+      },
+      "defense": {
+        "pointsAllowedPerGame": 33,
+        "yardsAllowedPerGame": 360,
+        "passingYardsAllowedPerGame": 254,
+        "rushingYardsAllowedPerGame": 106
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": -6,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "New Orleans Saints",
@@ -2426,8 +2762,32 @@
       },
       "preseasonPower": -1.94,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 30,
+        "yardsPerGame": 501,
+        "passingYardsPerGame": 410,
+        "rushingYardsPerGame": 91,
+        "yardsPerPlay": 5.825581395348837,
+        "yardsPerPassAttempt": 7.3,
+        "yardsPerRush": 3.6,
+        "thirdDownRate": 0.4706,
+        "redZoneTdRate": 0.8
+      },
+      "defense": {
+        "pointsAllowedPerGame": 31,
+        "yardsAllowedPerGame": 371,
+        "passingYardsAllowedPerGame": 206,
+        "rushingYardsAllowedPerGame": 165
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": -1,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Baltimore Ravens",
@@ -2588,8 +2948,32 @@
       },
       "preseasonPower": 2.16,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 41,
+        "yardsPerGame": 526,
+        "passingYardsPerGame": 324,
+        "rushingYardsPerGame": 202,
+        "yardsPerPlay": 8.21875,
+        "yardsPerPassAttempt": 13,
+        "yardsPerRush": 5.5,
+        "thirdDownRate": 0.3333,
+        "redZoneTdRate": 0.75
+      },
+      "defense": {
+        "pointsAllowedPerGame": 23,
+        "yardsAllowedPerGame": 268,
+        "passingYardsAllowedPerGame": 166,
+        "rushingYardsAllowedPerGame": 102
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": 18,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Cincinnati Bengals",
@@ -2749,8 +3133,32 @@
       },
       "preseasonPower": -1.56,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 33,
+        "yardsPerGame": 360,
+        "passingYardsPerGame": 254,
+        "rushingYardsPerGame": 106,
+        "yardsPerPlay": 5.714285714285714,
+        "yardsPerPassAttempt": 7.3,
+        "yardsPerRush": 3.9,
+        "thirdDownRate": 0.5714,
+        "redZoneTdRate": 0.4
+      },
+      "defense": {
+        "pointsAllowedPerGame": 27,
+        "yardsAllowedPerGame": 305,
+        "passingYardsAllowedPerGame": 216,
+        "rushingYardsAllowedPerGame": 89
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": 6,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Houston Texans",
@@ -2911,8 +3319,32 @@
       },
       "preseasonPower": 5.66,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 31,
+        "yardsPerGame": 398,
+        "passingYardsPerGame": 274,
+        "rushingYardsPerGame": 124,
+        "yardsPerPlay": 5.4520547945205475,
+        "yardsPerPassAttempt": 7.2,
+        "yardsPerRush": 3.9,
+        "thirdDownRate": 0.4375,
+        "redZoneTdRate": 0.8
+      },
+      "defense": {
+        "pointsAllowedPerGame": 36,
+        "yardsAllowedPerGame": 420,
+        "passingYardsAllowedPerGame": 334,
+        "rushingYardsAllowedPerGame": 86
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": -5,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Jacksonville Jaguars",
@@ -3072,8 +3504,32 @@
       },
       "preseasonPower": 5.42,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 34,
+        "yardsPerGame": 371,
+        "passingYardsPerGame": 245,
+        "rushingYardsPerGame": 126,
+        "yardsPerPlay": 6.625,
+        "yardsPerPassAttempt": 10.7,
+        "yardsPerRush": 3.9,
+        "thirdDownRate": 0.5,
+        "redZoneTdRate": 1
+      },
+      "defense": {
+        "pointsAllowedPerGame": 10,
+        "yardsAllowedPerGame": 292,
+        "passingYardsAllowedPerGame": 205,
+        "rushingYardsAllowedPerGame": 87
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": 24,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Denver Broncos",
@@ -3088,8 +3544,32 @@
       "espnStatistics": null,
       "preseasonPower": 2.9,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 10,
+        "yardsPerGame": null,
+        "passingYardsPerGame": null,
+        "rushingYardsPerGame": null,
+        "yardsPerPlay": null,
+        "yardsPerPassAttempt": null,
+        "yardsPerRush": null,
+        "thirdDownRate": null,
+        "redZoneTdRate": null
+      },
+      "defense": {
+        "pointsAllowedPerGame": 31,
+        "yardsAllowedPerGame": null,
+        "passingYardsAllowedPerGame": null,
+        "rushingYardsAllowedPerGame": null
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": -21,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Las Vegas Raiders",
@@ -3249,8 +3729,32 @@
       },
       "preseasonPower": -4.3,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 27,
+        "yardsPerGame": 290,
+        "passingYardsPerGame": 160,
+        "rushingYardsPerGame": 130,
+        "yardsPerPlay": 4.3283582089552235,
+        "yardsPerPassAttempt": 5.3,
+        "yardsPerRush": 3.5,
+        "thirdDownRate": 0.3846,
+        "redZoneTdRate": 0.75
+      },
+      "defense": {
+        "pointsAllowedPerGame": 13,
+        "yardsAllowedPerGame": 259,
+        "passingYardsAllowedPerGame": 185,
+        "rushingYardsAllowedPerGame": 74
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": 14,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Los Angeles Chargers",
@@ -3411,8 +3915,32 @@
       },
       "preseasonPower": 1.48,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 14,
+        "yardsPerGame": 290,
+        "passingYardsPerGame": 209,
+        "rushingYardsPerGame": 81,
+        "yardsPerPlay": 5.686274509803922,
+        "yardsPerPassAttempt": 7.7,
+        "yardsPerRush": 3.9,
+        "thirdDownRate": 0.25,
+        "redZoneTdRate": 0.6667000000000001
+      },
+      "defense": {
+        "pointsAllowedPerGame": 26,
+        "yardsAllowedPerGame": 393,
+        "passingYardsAllowedPerGame": 277,
+        "rushingYardsAllowedPerGame": 116
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": -12,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Washington Commanders",
@@ -3572,8 +4100,32 @@
       },
       "preseasonPower": -4.22,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 22,
+        "yardsPerGame": 296,
+        "passingYardsPerGame": 164,
+        "rushingYardsPerGame": 132,
+        "yardsPerPlay": 4.417910447761194,
+        "yardsPerPassAttempt": 4.8,
+        "yardsPerRush": 4.1,
+        "thirdDownRate": 0.3333,
+        "redZoneTdRate": 1
+      },
+      "defense": {
+        "pointsAllowedPerGame": 24,
+        "yardsAllowedPerGame": 339,
+        "passingYardsAllowedPerGame": 203,
+        "rushingYardsAllowedPerGame": 136
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": -2,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Dallas Cowboys",
@@ -3733,8 +4285,32 @@
       },
       "preseasonPower": -1.96,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 20,
+        "yardsPerGame": 244,
+        "passingYardsPerGame": 175,
+        "rushingYardsPerGame": 69,
+        "yardsPerPlay": 4.6923076923076925,
+        "yardsPerPassAttempt": 5.1,
+        "yardsPerRush": 3.8,
+        "thirdDownRate": 0.7273000000000001,
+        "redZoneTdRate": 1
+      },
+      "defense": {
+        "pointsAllowedPerGame": 28,
+        "yardsAllowedPerGame": 395,
+        "passingYardsAllowedPerGame": 230,
+        "rushingYardsAllowedPerGame": 165
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": -8,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Seattle Seahawks",
@@ -3894,8 +4470,32 @@
       },
       "preseasonPower": 7.68,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 13,
+        "yardsPerGame": 297,
+        "passingYardsPerGame": 200,
+        "rushingYardsPerGame": 97,
+        "yardsPerPlay": 6.1875,
+        "yardsPerPassAttempt": 8.3,
+        "yardsPerRush": 4.4,
+        "thirdDownRate": 0.1818,
+        "redZoneTdRate": 0
+      },
+      "defense": {
+        "pointsAllowedPerGame": 10,
+        "yardsAllowedPerGame": 287,
+        "passingYardsAllowedPerGame": 178,
+        "rushingYardsAllowedPerGame": 109
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": 3,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Arizona Cardinals",
@@ -4055,8 +4655,32 @@
       },
       "preseasonPower": -2.14,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 26,
+        "yardsPerGame": 393,
+        "passingYardsPerGame": 277,
+        "rushingYardsPerGame": 116,
+        "yardsPerPlay": 5.458333333333333,
+        "yardsPerPassAttempt": 7.5,
+        "yardsPerRush": 3.4,
+        "thirdDownRate": 0.4286,
+        "redZoneTdRate": 0.4
+      },
+      "defense": {
+        "pointsAllowedPerGame": 14,
+        "yardsAllowedPerGame": 290,
+        "passingYardsAllowedPerGame": 209,
+        "rushingYardsAllowedPerGame": 81
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": 12,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Miami Dolphins",
@@ -4217,8 +4841,32 @@
       },
       "preseasonPower": -4.78,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 13,
+        "yardsPerGame": 259,
+        "passingYardsPerGame": 185,
+        "rushingYardsPerGame": 74,
+        "yardsPerPlay": 5.88,
+        "yardsPerPassAttempt": 6.9,
+        "yardsPerRush": 4.1,
+        "thirdDownRate": 0.2,
+        "redZoneTdRate": 0.3333
+      },
+      "defense": {
+        "pointsAllowedPerGame": 27,
+        "yardsAllowedPerGame": 290,
+        "passingYardsAllowedPerGame": 160,
+        "rushingYardsAllowedPerGame": 130
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": -14,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "San Francisco 49ers",
@@ -4378,8 +5026,32 @@
       },
       "preseasonPower": 3.6,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 27,
+        "yardsPerGame": 379,
+        "passingYardsPerGame": 205,
+        "rushingYardsPerGame": 174,
+        "yardsPerPlay": 5.921875,
+        "yardsPerPassAttempt": 6,
+        "yardsPerRush": 5.8,
+        "thirdDownRate": 0.5832999999999999,
+        "redZoneTdRate": 0.6667000000000001
+      },
+      "defense": {
+        "pointsAllowedPerGame": 7,
+        "yardsAllowedPerGame": 290,
+        "passingYardsAllowedPerGame": 168,
+        "rushingYardsAllowedPerGame": 122
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": 20,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Indianapolis Colts",
@@ -4540,8 +5212,32 @@
       },
       "preseasonPower": 2.5,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 23,
+        "yardsPerGame": 268,
+        "passingYardsPerGame": 166,
+        "rushingYardsPerGame": 102,
+        "yardsPerPlay": 5.056603773584905,
+        "yardsPerPassAttempt": 5.4,
+        "yardsPerRush": 5.1,
+        "thirdDownRate": 0.3,
+        "redZoneTdRate": 1
+      },
+      "defense": {
+        "pointsAllowedPerGame": 41,
+        "yardsAllowedPerGame": 526,
+        "passingYardsAllowedPerGame": 324,
+        "rushingYardsAllowedPerGame": 202
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": -18,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Kansas City Chiefs",
@@ -4556,8 +5252,32 @@
       "espnStatistics": null,
       "preseasonPower": 2.64,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 31,
+        "yardsPerGame": null,
+        "passingYardsPerGame": null,
+        "rushingYardsPerGame": null,
+        "yardsPerPlay": null,
+        "yardsPerPassAttempt": null,
+        "yardsPerRush": null,
+        "thirdDownRate": null,
+        "redZoneTdRate": null
+      },
+      "defense": {
+        "pointsAllowedPerGame": 10,
+        "yardsAllowedPerGame": null,
+        "passingYardsAllowedPerGame": null,
+        "rushingYardsAllowedPerGame": null
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": 21,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "New York Giants",
@@ -4718,8 +5438,32 @@
       },
       "preseasonPower": -1.66,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 28,
+        "yardsPerGame": 395,
+        "passingYardsPerGame": 230,
+        "rushingYardsPerGame": 165,
+        "yardsPerPlay": 5.8088235294117645,
+        "yardsPerPassAttempt": 7.9,
+        "yardsPerRush": 4.5,
+        "thirdDownRate": 0.8181999999999999,
+        "redZoneTdRate": 1
+      },
+      "defense": {
+        "pointsAllowedPerGame": 20,
+        "yardsAllowedPerGame": 244,
+        "passingYardsAllowedPerGame": 175,
+        "rushingYardsAllowedPerGame": 69
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": 8,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     },
     {
       "team": "Los Angeles Rams",
@@ -4880,8 +5624,34 @@
       },
       "preseasonPower": 8,
       "source": "ESPN completed prior-week scoreboard + ESPN current team statistics",
-      "observedAt": "2026-09-16T19:45:44.983Z",
-      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%"
+      "observedAt": "2026-09-16T20:01:23.751Z",
+      "sampleNote": "2026 live sample through Week 1; early-season live weight 10%",
+      "offense": {
+        "pointsPerGame": 7,
+        "yardsPerGame": 290,
+        "passingYardsPerGame": 168,
+        "rushingYardsPerGame": 122,
+        "yardsPerPlay": 5.087719298245614,
+        "yardsPerPassAttempt": 6,
+        "yardsPerRush": 4.2,
+        "thirdDownRate": 0.22219999999999998,
+        "redZoneTdRate": 0.3333
+      },
+      "defense": {
+        "pointsAllowedPerGame": 27,
+        "yardsAllowedPerGame": 379,
+        "passingYardsAllowedPerGame": 205,
+        "rushingYardsAllowedPerGame": 174
+      },
+      "context": {
+        "games": 1,
+        "opponentAdjustedRating": -20,
+        "throughWeek": 1,
+        "source": "ESPN current team statistics + completed prior-week opponent box score"
+      },
+      "units": {}
     }
-  ]
+  ],
+  "schemaVersion": "2.0-matchup-display",
+  "normalizedAt": "2026-09-16T20:01:25.712Z"
 }
