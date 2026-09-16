@@ -44,6 +44,8 @@ jobs:
         run: node scripts/refresh-live-portal-runtime.mjs
       - name: Rebuild selected-week models, prior-week stats, Deep Dives and upset research
         run: node scripts/rebuild-weekly-intelligence.mjs
+      - name: Normalize current NFL team stats for Matchup Center
+        run: node scripts/normalize-live-team-stats.mjs
       - name: Enforce canonical-to-portal model synchronization
         run: |
           node - <<'NODE'
