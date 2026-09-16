@@ -18,7 +18,7 @@ jobs:
   manifest:
     if: ${{ !contains(github.event.head_commit.message || '', '[skip ci]') }}
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
@@ -43,6 +43,8 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Refresh canonical and live-portal NFL market runtime
         run: node scripts/refresh-live-portal-runtime.mjs
+      - name: Rebuild selected-week models, prior-week stats, Deep Dives and upset research
+        run: node scripts/rebuild-weekly-intelligence.mjs
       - name: Reconcile canonical NFL team identities
         run: node scripts/audit-team-identities.mjs
       - name: Freeze due immutable pre-kickoff snapshots after official inactives
