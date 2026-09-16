@@ -1,8 +1,8 @@
 {
-  "version": "NFL-WEEKLY-MANIFEST-v2",
+  "version": "NFL-WEEKLY-MANIFEST-v3",
   "season": 2026,
   "week": 2,
-  "updatedAt": "2026-09-16T14:03:58.795Z",
+  "updatedAt": "2026-09-16T14:07:14.508Z",
   "status": "FAIL",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-09-16.json",
@@ -24,7 +24,7 @@
       "status": "PASS",
       "classifiedGames": 16,
       "expected": 16,
-      "source": "weekday-intel-2026-09-16.json"
+      "source": "data/weekday-intel-2026-09-16.json"
     },
     "matchupMatrix": {
       "status": "PASS",
@@ -36,52 +36,47 @@
     "statisticalDisplay": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-09-16T14:03:55.222Z",
+      "verifiedAt": "2026-09-16T14:07:08.800Z",
       "artifact": "data/statistical-display-integrity-2026-w2.json",
       "note": "Current selected-week statistical display source refreshed for 32/32 teams using completed Week 1 results plus ESPN team statistics. Missing advanced fields are not inferred."
     },
     "marketDerivedIntegrity": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-09-16T14:03:55.222Z",
+      "verifiedAt": "2026-09-16T14:07:08.800Z",
       "artifact": "data/market-derived-integrity-2026-w2.json",
       "note": "All 16 current spread-derived production fairs independently reconciled as 80% market + 20% frozen structural line with calculation timestamps at/after market dependency."
     },
     "currentWeekCompleteness": {
-      "status": "FAIL",
+      "status": "PASS-WITH-WARNINGS",
       "blocking": true,
       "unplayedGames": 16,
-      "freshMarketGames": 0,
+      "freshMarketGames": 16,
       "calculationFreshGames": 16,
-      "finalDesignationGames": 0,
-      "inactiveCheckpointDue": 0,
-      "inactiveCheckpointComplete": 0,
-      "weatherCoverageGames": 0,
-      "weatherRenderVerified": false,
-      "upsetEligibleDogs": 0,
-      "upsetNearThresholdDogs": 0,
+      "moneylineAvailableGames": 0,
+      "availabilityCheckpointDue": 0,
+      "availabilityCheckpointComplete": 0,
+      "weatherCheckpointDue": 0,
+      "weatherCheckpointComplete": 0,
       "upsetLabVerified": true,
-      "youBetterYouBetChecked": false,
-      "issues": [
-        "fresh market snapshot missing for one or more unplayed games",
-        "official final injury designation review is incomplete",
-        "weather/roof-state coverage is missing or stale for an unplayed game",
-        "no current PASS artifact verifies weather/roof rows in both Weekly Board and Matchup Center",
-        "You Better You Bet/Audacy current-run audit is not visible"
+      "issues": [],
+      "warnings": [
+        "exact moneyline available for 0/16; missing prices remain PRICE_PENDING and are never inferred",
+        "final injury designations are not yet due under the 30-hour pre-kickoff gate",
+        "game-specific weather verification is not yet due under the 30-hour pre-kickoff gate"
       ],
-      "note": "Availability is a veto/fair-range input and changes production mechanically only through validated rules; otherwise current market repricing may reflect it indirectly. Weather remains 0.0 automatic points."
+      "note": "Wednesday certification requires fresh spread/total, selected-week model calculations, universal Deep Dives and upset research. Exact ML, final injury designations and weather become blocking only when their execution checkpoints are due; missing values are never inferred."
     },
     "homeMarginConvention": {
       "status": "PASS",
-      "note": "Canonical home-margin convention is required before all edge calculations; NFL key numbers 3 and 7 remain protected."
+      "note": "Canonical home-margin convention required before all edge calculations; NFL key numbers 3 and 7 remain protected."
     },
     "expertIntelligence": {
-      "status": "PASS",
+      "status": "FAIL",
       "primaryLedgerStatus": "SYNCHRONIZED",
       "ledgerSyncReport": "data/expert-ledger-reconciliation.json",
-      "latestReconciliation": null,
       "pointImpact": 0,
-      "note": "Expert Intelligence is a correlated qualitative residual after the quantitative model; primary ledger is losslessly synchronized (112 ledger records; 0 missing)."
+      "note": "Expert Intelligence remains a qualitative residual; primary ledger is not losslessly synchronized (0 ledger records; 0 missing)."
     },
     "upsetResearchIsolation": {
       "status": "PASS",
@@ -98,24 +93,30 @@
     },
     "finalSnapshotIntegrity": {
       "status": "PASS",
-      "blocking": false,
+      "blocking": true,
       "missingCount": 0,
       "failures": [],
       "note": "No persisted final-snapshot gate failures for the selected week."
     },
     "historicalIntegrity": {
       "status": "PASS",
-      "note": "Preserve pre-kickoff states and final snapshots; never backfill after results. Completed games are exempt from live-market freshness SLA, but a persisted missed pre-kickoff snapshot remains a hard manifest failure."
+      "note": "Historical snapshot debt from prior weeks is retained separately and never rewritten; completed games are exempt from live freshness."
     },
     "timeLimitedOverlays": {
       "status": "IN_PROGRESS",
       "items": [
-        "Exact executable sportsbook/juice and final availability remain required before activation."
+        "exact moneyline available for 0/16; missing prices remain PRICE_PENDING and are never inferred",
+        "final injury designations are not yet due under the 30-hour pre-kickoff gate",
+        "game-specific weather verification is not yet due under the 30-hour pre-kickoff gate"
       ]
     }
   },
   "failures": [
-    "NFL_CURRENT_WEEK_COMPLETENESS_INCOMPLETE"
+    "EXPERTINTELLIGENCE_INCOMPLETE"
   ],
-  "historicalWarnings": []
+  "historicalWarnings": [
+    "exact moneyline available for 0/16; missing prices remain PRICE_PENDING and are never inferred",
+    "final injury designations are not yet due under the 30-hour pre-kickoff gate",
+    "game-specific weather verification is not yet due under the 30-hour pre-kickoff gate"
+  ]
 }
