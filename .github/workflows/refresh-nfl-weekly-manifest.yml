@@ -3,7 +3,6 @@ on:
   push:
     branches: [main]
     paths:
-      - 'data/**'
       - 'scripts/**'
       - '.github/workflows/refresh-nfl-weekly-manifest.yml'
   schedule:
@@ -13,7 +12,7 @@ permissions:
   contents: write
 concurrency:
   group: nfl-weekly-manifest
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   manifest:
     if: ${{ !contains(github.event.head_commit.message || '', '[skip ci]') }}
@@ -45,6 +44,50 @@ jobs:
         run: node scripts/refresh-live-portal-runtime.mjs
       - name: Rebuild selected-week models, prior-week stats, Deep Dives and upset research
         run: node scripts/rebuild-weekly-intelligence.mjs
+      - name: Enforce canonical-to-portal model synchronization
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const canonical=JSON.parse(fs.readFileSync('data/weekly-board.json','utf8'));
+          const portal=JSON.parse(fs.readFileSync('data/nfl-weekly-board.json','utf8'));
+          const now=new Date().toISOString();
+          const key=x=>String(x?.gameId||x?.canonical_game_id||x?.canonicalGameId||'');
+          const byId=new Map((canonical.games||[]).map(g=>[key(g),g]));
+          let matched=0;
+          portal.games=(portal.games||[]).map(x=>{
+            const g=byId.get(key(x));
+            if(!g)return x;
+            matched++;
+            const marketHM=Number(x?.market?.home_margin);
+            const fairHM=Number(g.productionHomeMargin);
+            const edge=Number.isFinite(marketHM)&&Number.isFinite(fairHM)?Number((fairHM-marketHM).toFixed(3)):null;
+            return {...x,
+              stage:g.stage||x.stage,
+              priority:g.priority||x.priority,
+              why:`Selected-week governed model rebuilt ${now}; ${g.modelVersion||'NFL frozen model'}.`,
+              model:{...(x.model||{}),
+                fair_spread_display:g.productionSpread,
+                fair_spread:g.productionSpread,
+                fair_spread_home_margin:g.productionHomeMargin,
+                structural_home_margin:g.structuralHomeMargin,
+                structural_fair:g.validatedStructuralSpread,
+                structural_edge:g.structuralEdge,
+                executable_edge:edge,
+                edge_side:edge>0?(x.home_abbr||g.homeAbbr):edge<0?(x.away_abbr||g.awayAbbr):'NONE',
+                confidence:g.priority==='High'?'high-review':g.priority==='Medium'?'medium':'low',
+                edge_reconciled_at:now,
+                edge_convention:'production fair home margin - current market home margin',
+                model_version:g.modelVersion||'NFL-v1.1'
+              }
+            };
+          });
+          if(matched!==(canonical.games||[]).length)throw new Error(`Portal model synchronization matched ${matched}/${(canonical.games||[]).length} canonical games`);
+          const incomplete=portal.games.filter(x=>x.model?.fair_spread_home_margin==null||!x.model?.fair_spread_display||x.model?.executable_edge==null);
+          if(incomplete.length)throw new Error(`Portal model synchronization left ${incomplete.length} game(s) incomplete: ${incomplete.map(key).join(', ')}`);
+          portal.week=canonical.week;portal.generated_at=now;portal.model_runtime={status:'SYNCHRONIZED',canonicalWeek:canonical.week,matchedGames:matched,verifiedAt:now};
+          fs.writeFileSync('data/nfl-weekly-board.json',JSON.stringify(portal,null,2)+'\n');
+          console.log(`NFL portal model runtime synchronized ${matched}/${matched}; no null fairs/edges.`);
+          NODE
       - name: Reconcile canonical NFL team identities
         run: node scripts/audit-team-identities.mjs
       - name: Freeze due immutable pre-kickoff snapshots after official inactives
@@ -61,8 +104,8 @@ jobs:
         run: |
           set -e
           git config user.name 'nfl-runtime-bot'; git config user.email 'nfl-runtime-bot@users.noreply.github.com'; git fetch origin main
-          if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then git reset --hard origin/main; exit 0; fi
-          if ! git diff --quiet -- data/; then git add data/; git commit -m 'chore: refresh governed NFL runtime [skip ci]'; git push origin HEAD:main || true; fi
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then git rebase origin/main || { git rebase --abort || true; exit 1; }; fi
+          if ! git diff --quiet -- data/; then git add data/; git commit -m 'chore: refresh governed NFL runtime [skip ci]'; git push origin HEAD:main; fi
       - name: Enforce NFL weekly gates
         if: ${{ always() }}
         continue-on-error: true
