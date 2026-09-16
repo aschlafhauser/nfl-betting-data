@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 2,
-  "generated_at": "2026-09-16T17:09:45.329Z",
+  "generated_at": "2026-09-16T19:45:46.846Z",
   "schedule_source": "Canonical selected-week NFL board + ESPN scoreboard reconciliation",
   "market_source": "ESPN selected-week odds feed; exact sportsbook/juice required before execution",
   "games": [
@@ -16,7 +16,7 @@
       "kickoff_local": "2026-09-18T00:15Z",
       "tv": "Prime Video",
       "priority": "Medium",
-      "stage": "Pre-scan",
+      "stage": "research",
       "market": {
         "spread_display": "Buffalo Bills -4.5",
         "spread": "BUF -4.5",
@@ -28,23 +28,28 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-09-16T17:09:45.147Z",
+        "timestamp": "2026-09-16T19:45:44.801Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": -4.5,
+        "fair_spread_display": "Buffalo Bills -4.1",
+        "fair_spread_home_margin": 4.143,
+        "executable_edge": -0.357,
         "edge_side": "DET",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-09-16T17:09:45.147Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "medium",
+        "edge_reconciled_at": "2026-09-16T19:45:46.846Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Buffalo Bills -4.1",
+        "structural_home_margin": 2.714,
+        "structural_fair": "Buffalo Bills -2.7",
+        "structural_edge": 1.786,
+        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 2 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-09-16T19:45:46.846Z; NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural.",
       "event_state": "scheduled"
     },
     {
@@ -57,8 +62,8 @@
       "kickoff": "2026-09-20T17:00Z",
       "kickoff_local": "2026-09-20T17:00Z",
       "tv": "FOX",
-      "priority": "Medium",
-      "stage": "Pre-scan",
+      "priority": "High",
+      "stage": "high-priority-audit",
       "market": {
         "spread_display": "Carolina Panthers -2.5",
         "spread": "CAR -1.5",
@@ -70,23 +75,28 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-09-16T17:09:45.147Z",
+        "timestamp": "2026-09-16T19:45:44.801Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": 2.5,
+        "fair_spread_display": "Carolina Panthers -1.4",
+        "fair_spread_home_margin": -1.414,
+        "executable_edge": 1.086,
         "edge_side": "ATL",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-09-16T17:09:45.147Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-09-16T19:45:46.846Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Carolina Panthers -1.4",
+        "structural_home_margin": 2.932,
+        "structural_fair": "Atlanta Falcons -2.9",
+        "structural_edge": 5.432,
+        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 2 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-09-16T19:45:46.846Z; NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural.",
       "event_state": "scheduled"
     },
     {
@@ -100,11 +110,11 @@
       "kickoff_local": "2026-09-20T17:00Z",
       "tv": "FOX",
       "priority": "Medium",
-      "stage": "Pre-scan",
+      "stage": "potential-research",
       "market": {
         "spread_display": "Chicago Bears -4.5",
         "spread": "CHI -5.5",
-        "total": 48.5,
+        "total": 47.5,
         "home_margin": 4.5,
         "home_team_sportsbook_spread": -4.5,
         "moneyline": {
@@ -112,23 +122,28 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-09-16T17:09:45.147Z",
+        "timestamp": "2026-09-16T19:45:44.801Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": -4.5,
+        "fair_spread_display": "Chicago Bears -3.9",
+        "fair_spread_home_margin": 3.914,
+        "executable_edge": -0.586,
         "edge_side": "MIN",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-09-16T17:09:45.147Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "medium",
+        "edge_reconciled_at": "2026-09-16T19:45:46.846Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Chicago Bears -3.9",
+        "structural_home_margin": 1.572,
+        "structural_fair": "Chicago Bears -1.6",
+        "structural_edge": 2.928,
+        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 2 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-09-16T19:45:46.846Z; NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural.",
       "event_state": "scheduled"
     },
     {
@@ -142,7 +157,7 @@
       "kickoff_local": "2026-09-20T17:00Z",
       "tv": "FOX",
       "priority": "Medium",
-      "stage": "Pre-scan",
+      "stage": "research",
       "market": {
         "spread_display": "Philadelphia Eagles -7",
         "spread": "PHI -7",
@@ -154,23 +169,28 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-09-16T17:09:45.147Z",
+        "timestamp": "2026-09-16T19:45:44.801Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": 7,
+        "fair_spread_display": "Philadelphia Eagles -6.7",
+        "fair_spread_home_margin": -6.686,
+        "executable_edge": 0.314,
         "edge_side": "TEN",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-09-16T17:09:45.147Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "medium",
+        "edge_reconciled_at": "2026-09-16T19:45:46.846Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Philadelphia Eagles -6.7",
+        "structural_home_margin": -5.432,
+        "structural_fair": "Philadelphia Eagles -5.4",
+        "structural_edge": 1.568,
+        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 2 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-09-16T19:45:46.846Z; NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural.",
       "event_state": "scheduled"
     },
     {
@@ -184,7 +204,7 @@
       "kickoff_local": "2026-09-20T17:00Z",
       "tv": "CBS",
       "priority": "Medium",
-      "stage": "Pre-scan",
+      "stage": "research",
       "market": {
         "spread_display": "New England Patriots -5.5",
         "spread": "NE -5.5",
@@ -196,23 +216,28 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-09-16T17:09:45.147Z",
+        "timestamp": "2026-09-16T19:45:44.801Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": -5.5,
+        "fair_spread_display": "New England Patriots -5",
+        "fair_spread_home_margin": 5.019,
+        "executable_edge": -0.481,
         "edge_side": "PIT",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-09-16T17:09:45.147Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "medium",
+        "edge_reconciled_at": "2026-09-16T19:45:46.846Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "New England Patriots -5",
+        "structural_home_margin": 3.096,
+        "structural_fair": "New England Patriots -3.1",
+        "structural_edge": 2.404,
+        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 2 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-09-16T19:45:46.846Z; NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural.",
       "event_state": "scheduled"
     },
     {
@@ -226,35 +251,40 @@
       "kickoff_local": "2026-09-20T17:00Z",
       "tv": "FOX",
       "priority": "Medium",
-      "stage": "Pre-scan",
+      "stage": "research",
       "market": {
-        "spread_display": "Green Bay Packers -4.5",
+        "spread_display": "Green Bay Packers -3.5",
         "spread": "GB -4.5",
         "total": 44.5,
-        "home_margin": -4.5,
-        "home_team_sportsbook_spread": 4.5,
+        "home_margin": -3.5,
+        "home_team_sportsbook_spread": 3.5,
         "moneyline": {
           "away": null,
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-09-16T17:09:45.147Z",
+        "timestamp": "2026-09-16T19:45:44.801Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": 4.5,
+        "fair_spread_display": "Green Bay Packers -3.2",
+        "fair_spread_home_margin": -3.188,
+        "executable_edge": 0.312,
         "edge_side": "NYJ",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-09-16T17:09:45.147Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "medium",
+        "edge_reconciled_at": "2026-09-16T19:45:46.846Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Green Bay Packers -3.2",
+        "structural_home_margin": -1.94,
+        "structural_fair": "Green Bay Packers -1.9",
+        "structural_edge": 1.56,
+        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 2 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-09-16T19:45:46.846Z; NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural.",
       "event_state": "scheduled"
     },
     {
@@ -267,8 +297,8 @@
       "kickoff": "2026-09-20T17:00Z",
       "kickoff_local": "2026-09-20T17:00Z",
       "tv": "CBS",
-      "priority": "Medium",
-      "stage": "Pre-scan",
+      "priority": "Low",
+      "stage": "no-signal",
       "market": {
         "spread_display": "Tampa Bay Buccaneers -8.5",
         "spread": "TB -8.5",
@@ -280,23 +310,28 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-09-16T17:09:45.147Z",
+        "timestamp": "2026-09-16T19:45:44.801Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": -8.5,
+        "fair_spread_display": "Tampa Bay Buccaneers -8.3",
+        "fair_spread_home_margin": 8.31,
+        "executable_edge": -0.19,
         "edge_side": "CLE",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-09-16T17:09:45.147Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "low",
+        "edge_reconciled_at": "2026-09-16T19:45:46.846Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Tampa Bay Buccaneers -8.3",
+        "structural_home_margin": 7.552,
+        "structural_fair": "Tampa Bay Buccaneers -7.6",
+        "structural_edge": 0.948,
+        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 2 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-09-16T19:45:46.846Z; NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural.",
       "event_state": "scheduled"
     },
     {
@@ -310,7 +345,7 @@
       "kickoff_local": "2026-09-20T17:00Z",
       "tv": "CBS",
       "priority": "Medium",
-      "stage": "Pre-scan",
+      "stage": "research",
       "market": {
         "spread_display": "Baltimore Ravens -8.5",
         "spread": "BAL -8.5",
@@ -322,23 +357,28 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-09-16T17:09:45.147Z",
+        "timestamp": "2026-09-16T19:45:44.801Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": -8.5,
+        "fair_spread_display": "Baltimore Ravens -8.1",
+        "fair_spread_home_margin": 8.118,
+        "executable_edge": -0.382,
         "edge_side": "NO",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-09-16T17:09:45.147Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "medium",
+        "edge_reconciled_at": "2026-09-16T19:45:46.846Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Baltimore Ravens -8.1",
+        "structural_home_margin": 6.59,
+        "structural_fair": "Baltimore Ravens -6.6",
+        "structural_edge": 1.91,
+        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 2 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-09-16T19:45:46.846Z; NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural.",
       "event_state": "scheduled"
     },
     {
@@ -351,8 +391,8 @@
       "kickoff": "2026-09-20T17:00Z",
       "kickoff_local": "2026-09-20T17:00Z",
       "tv": "CBS",
-      "priority": "Medium",
-      "stage": "Pre-scan",
+      "priority": "High",
+      "stage": "high-priority-audit",
       "market": {
         "spread_display": "Houston Texans -3",
         "spread": "HOU -3",
@@ -364,23 +404,28 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-09-16T17:09:45.147Z",
+        "timestamp": "2026-09-16T19:45:44.801Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": -3,
-        "edge_side": "CIN",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-09-16T17:09:45.147Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "fair_spread_display": "Houston Texans -3.7",
+        "fair_spread_home_margin": 3.68,
+        "executable_edge": 0.68,
+        "edge_side": "HOU",
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-09-16T19:45:46.846Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Houston Texans -3.7",
+        "structural_home_margin": 6.398,
+        "structural_fair": "Houston Texans -6.4",
+        "structural_edge": 3.398,
+        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 2 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-09-16T19:45:46.846Z; NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural.",
       "event_state": "scheduled"
     },
     {
@@ -393,8 +438,8 @@
       "kickoff": "2026-09-20T20:05Z",
       "kickoff_local": "2026-09-20T20:05Z",
       "tv": "CBS",
-      "priority": "Medium",
-      "stage": "Pre-scan",
+      "priority": "High",
+      "stage": "high-priority-audit",
       "market": {
         "spread_display": "Denver Broncos -2.5",
         "spread": "DEN -2.5",
@@ -406,23 +451,28 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-09-16T17:09:45.147Z",
+        "timestamp": "2026-09-16T19:45:44.801Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": -2.5,
+        "fair_spread_display": "Denver Broncos -0.8",
+        "fair_spread_home_margin": 0.846,
+        "executable_edge": -1.654,
         "edge_side": "JAX",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-09-16T17:09:45.147Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-09-16T19:45:46.846Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Denver Broncos -0.8",
+        "structural_home_margin": -5.768,
+        "structural_fair": "Jacksonville Jaguars -5.8",
+        "structural_edge": 8.268,
+        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 2 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-09-16T19:45:46.846Z; NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural.",
       "event_state": "scheduled"
     },
     {
@@ -436,7 +486,7 @@
       "kickoff_local": "2026-09-20T20:05Z",
       "tv": "CBS",
       "priority": "Medium",
-      "stage": "Pre-scan",
+      "stage": "potential-research",
       "market": {
         "spread_display": "Los Angeles Chargers -6.5",
         "spread": "LAC -7",
@@ -448,23 +498,28 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-09-16T17:09:45.147Z",
+        "timestamp": "2026-09-16T19:45:44.801Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": -6.5,
+        "fair_spread_display": "Los Angeles Chargers -5.9",
+        "fair_spread_home_margin": 5.92,
+        "executable_edge": -0.58,
         "edge_side": "LV",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-09-16T17:09:45.147Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "medium",
+        "edge_reconciled_at": "2026-09-16T19:45:46.846Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Los Angeles Chargers -5.9",
+        "structural_home_margin": 3.602,
+        "structural_fair": "Los Angeles Chargers -3.6",
+        "structural_edge": 2.898,
+        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 2 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-09-16T19:45:46.846Z; NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural.",
       "event_state": "scheduled"
     },
     {
@@ -478,7 +533,7 @@
       "kickoff_local": "2026-09-20T20:25Z",
       "tv": "FOX",
       "priority": "Medium",
-      "stage": "Pre-scan",
+      "stage": "research",
       "market": {
         "spread_display": "Dallas Cowboys -4.5",
         "spread": "DAL -3.5",
@@ -490,23 +545,28 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-09-16T17:09:45.147Z",
+        "timestamp": "2026-09-16T19:45:44.801Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": -4.5,
+        "fair_spread_display": "Dallas Cowboys -4.1",
+        "fair_spread_home_margin": 4.087,
+        "executable_edge": -0.413,
         "edge_side": "WSH",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-09-16T17:09:45.147Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "medium",
+        "edge_reconciled_at": "2026-09-16T19:45:46.846Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Dallas Cowboys -4.1",
+        "structural_home_margin": 2.434,
+        "structural_fair": "Dallas Cowboys -2.4",
+        "structural_edge": 2.066,
+        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 2 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-09-16T19:45:46.846Z; NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural.",
       "event_state": "scheduled"
     },
     {
@@ -519,12 +579,12 @@
       "kickoff": "2026-09-20T20:25Z",
       "kickoff_local": "2026-09-20T20:25Z",
       "tv": "FOX",
-      "priority": "Medium",
-      "stage": "Pre-scan",
+      "priority": "High",
+      "stage": "high-priority-audit",
       "market": {
         "spread_display": "Seattle Seahawks -3.5",
         "spread": "SEA -4.5",
-        "total": 40.5,
+        "total": 41.5,
         "home_margin": -3.5,
         "home_team_sportsbook_spread": 3.5,
         "moneyline": {
@@ -532,23 +592,28 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-09-16T17:09:45.147Z",
+        "timestamp": "2026-09-16T19:45:44.801Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": 3.5,
-        "edge_side": "ARI",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-09-16T17:09:45.147Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "fair_spread_display": "Seattle Seahawks -4.2",
+        "fair_spread_home_margin": -4.188,
+        "executable_edge": -0.688,
+        "edge_side": "SEA",
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-09-16T19:45:46.846Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Seattle Seahawks -4.2",
+        "structural_home_margin": -6.938,
+        "structural_fair": "Seattle Seahawks -6.9",
+        "structural_edge": 3.438,
+        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 2 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-09-16T19:45:46.846Z; NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural.",
       "event_state": "scheduled"
     },
     {
@@ -562,7 +627,7 @@
       "kickoff_local": "2026-09-20T20:25Z",
       "tv": "FOX",
       "priority": "Medium",
-      "stage": "Pre-scan",
+      "stage": "research",
       "market": {
         "spread_display": "San Francisco 49ers -13.5",
         "spread": "SF -12.5",
@@ -574,23 +639,28 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-09-16T17:09:45.147Z",
+        "timestamp": "2026-09-16T19:45:44.801Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": -13.5,
+        "fair_spread_display": "San Francisco 49ers -13.2",
+        "fair_spread_home_margin": 13.188,
+        "executable_edge": -0.312,
         "edge_side": "MIA",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-09-16T17:09:45.147Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "medium",
+        "edge_reconciled_at": "2026-09-16T19:45:46.846Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "San Francisco 49ers -13.2",
+        "structural_home_margin": 11.942,
+        "structural_fair": "San Francisco 49ers -11.9",
+        "structural_edge": 1.558,
+        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 2 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-09-16T19:45:46.846Z; NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural.",
       "event_state": "scheduled"
     },
     {
@@ -603,8 +673,8 @@
       "kickoff": "2026-09-21T00:20Z",
       "kickoff_local": "2026-09-21T00:20Z",
       "tv": "NBC",
-      "priority": "Medium",
-      "stage": "Pre-scan",
+      "priority": "Low",
+      "stage": "monitor",
       "market": {
         "spread_display": "Kansas City Chiefs -6.5",
         "spread": "KC -6.5",
@@ -616,23 +686,28 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-09-16T17:09:45.147Z",
+        "timestamp": "2026-09-16T19:45:44.801Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": -6.5,
+        "fair_spread_display": "Kansas City Chiefs -6.2",
+        "fair_spread_home_margin": 6.205,
+        "executable_edge": -0.295,
         "edge_side": "IND",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-09-16T17:09:45.147Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "low",
+        "edge_reconciled_at": "2026-09-16T19:45:46.846Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Kansas City Chiefs -6.2",
+        "structural_home_margin": 5.026,
+        "structural_fair": "Kansas City Chiefs -5",
+        "structural_edge": 1.474,
+        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 2 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-09-16T19:45:46.846Z; NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural.",
       "event_state": "scheduled"
     },
     {
@@ -645,8 +720,8 @@
       "kickoff": "2026-09-22T00:15Z",
       "kickoff_local": "2026-09-22T00:15Z",
       "tv": "ESPN",
-      "priority": "Medium",
-      "stage": "Pre-scan",
+      "priority": "Low",
+      "stage": "no-signal",
       "market": {
         "spread_display": "Los Angeles Rams -7",
         "spread": "LAR -7",
@@ -658,32 +733,43 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-09-16T17:09:45.147Z",
+        "timestamp": "2026-09-16T19:45:44.801Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": -7,
+        "fair_spread_display": "Los Angeles Rams -7",
+        "fair_spread_home_margin": 6.979,
+        "executable_edge": -0.021,
         "edge_side": "NYG",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-09-16T17:09:45.147Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "low",
+        "edge_reconciled_at": "2026-09-16T19:45:46.846Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Los Angeles Rams -7",
+        "structural_home_margin": 6.894,
+        "structural_fair": "Los Angeles Rams -6.9",
+        "structural_edge": 0.106,
+        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 2 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-09-16T19:45:46.846Z; NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural.",
       "event_state": "scheduled"
     }
   ],
   "runtime_refresh": {
     "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=2&limit=100",
-    "observed_at": "2026-09-16T17:09:45.147Z",
+    "observed_at": "2026-09-16T19:45:44.801Z",
     "espn_events": 16,
     "current_odds_games": 16,
     "identity_normalization": "registry v1: canonical abbreviations and aliases normalized before joins",
     "edge_reconciliation": "Every legacy portal executable edge recomputed from fair_spread_home_margin - current market.home_margin"
+  },
+  "model_runtime": {
+    "status": "SYNCHRONIZED",
+    "canonicalWeek": 2,
+    "matchedGames": 16,
+    "verifiedAt": "2026-09-16T19:45:46.846Z"
   }
 }
