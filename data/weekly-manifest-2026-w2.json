@@ -2,7 +2,7 @@
   "version": "NFL-WEEKLY-MANIFEST-v3",
   "season": 2026,
   "week": 2,
-  "updatedAt": "2026-09-19T13:06:28.726Z",
+  "updatedAt": "2026-09-19T13:09:06.486Z",
   "status": "PASS-WITH-WARNINGS",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-09-19.json",
@@ -29,23 +29,23 @@
     "matchupMatrix": {
       "status": "PASS",
       "requiredDimensions": 6,
-      "declaredDimensions": 6,
+      "declaredDimensions": 7,
       "pointImpact": 0,
       "note": "Current personnel/unit overlays and older matchup diagnostics remain research-only unless separately validated."
     },
     "statisticalDisplay": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-09-19T13:06:28.661Z",
+      "verifiedAt": "2026-09-19T13:09:00.064Z",
       "artifact": "data/statistical-display-integrity-2026-w2.json",
-      "note": "All 32 live team-stat rows and all 16 current matchup dossiers resolve to the canonical Week 2 slate; matchup matrix dimensions remain display/research-only."
+      "note": "Current selected-week statistical display source refreshed for 32/32 teams using completed Week 1 results plus ESPN team statistics. Missing advanced fields are not inferred."
     },
     "marketDerivedIntegrity": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-09-19T13:06:28.661Z",
+      "verifiedAt": "2026-09-19T13:09:00.064Z",
       "artifact": "data/market-derived-integrity-2026-w2.json",
-      "note": "All 16 canonical games reconcile current market home margin, frozen structural fair, production fair and executable edge under the declared home-margin convention."
+      "note": "All 16 current spread-derived production fairs independently reconciled as 80% market + 20% frozen structural line with calculation timestamps at/after market dependency."
     },
     "currentWeekCompleteness": {
       "status": "PASS-WITH-WARNINGS",
@@ -74,7 +74,7 @@
       "primaryLedgerStatus": "SYNCHRONIZED",
       "ledgerSyncReport": "data/expert-ledger-reconciliation.json",
       "pointImpact": 0,
-      "note": "Expert Intelligence remains a qualitative residual; primary ledger is losslessly synchronized (90 ledger records; 0 missing)."
+      "note": "Expert Intelligence remains a qualitative residual; primary ledger is losslessly synchronized (0 ledger records; 0 missing)."
     },
     "upsetResearchIsolation": {
       "status": "PASS",
