@@ -1,12 +1,12 @@
 {
   "season": 2026,
   "week": 2,
-  "generated_at": "2026-09-19T13:09:00.064Z",
+  "generated_at": "2026-09-19T14:32:19.372Z",
   "method": "Wednesday spread-based upset screen plus exact-price governance",
   "coverage": {
     "all_current_threshold_candidates_represented": true,
     "selected_week_games": 16,
-    "spread_screen_candidates": 7,
+    "spread_screen_candidates": 6,
     "price_policy": "Exact moneylines never inferred from spreads."
   },
   "candidates": [
@@ -210,48 +210,6 @@
           "status": "FAIL",
           "passed": false,
           "evidence": "Prior-week scoring margin -14."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
-    },
-    {
-      "game_id": "2026-W2-IND-KC",
-      "team": "IND",
-      "moneyline": null,
-      "eligible": false,
-      "status": "PRICE_PENDING",
-      "spread": "Kansas City Chiefs -6.5",
-      "structuralFair": "Kansas City Chiefs -5",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Indianapolis Colts is 6.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Frozen structural lean IND; structural fair Kansas City Chiefs -5."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Preseason prior 2.50 vs opponent 2.64."
-        },
-        {
-          "name": "recent-form",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Prior-week scoring margin -18."
         },
         {
           "name": "availability",
@@ -507,48 +465,6 @@
           "status": "FAIL",
           "passed": false,
           "evidence": "Prior-week scoring margin -14."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
-    },
-    {
-      "game_id": "2026-W2-IND-KC",
-      "team": "IND",
-      "moneyline": null,
-      "eligible": false,
-      "status": "PRICE_PENDING",
-      "spread": "Kansas City Chiefs -6.5",
-      "structuralFair": "Kansas City Chiefs -5",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Indianapolis Colts is 6.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Frozen structural lean IND; structural fair Kansas City Chiefs -5."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Preseason prior 2.50 vs opponent 2.64."
-        },
-        {
-          "name": "recent-form",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Prior-week scoring margin -18."
         },
         {
           "name": "availability",
