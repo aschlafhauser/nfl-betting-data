@@ -2,8 +2,8 @@
   "version": "NFL-WEEKLY-MANIFEST-v3",
   "season": 2026,
   "week": 2,
-  "updatedAt": "2026-09-19T11:14:07.559Z",
-  "status": "FAIL",
+  "updatedAt": "2026-09-19T13:06:28.726Z",
+  "status": "PASS-WITH-WARNINGS",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-09-19.json",
   "gates": {
@@ -29,40 +29,37 @@
     "matchupMatrix": {
       "status": "PASS",
       "requiredDimensions": 6,
-      "declaredDimensions": 7,
+      "declaredDimensions": 6,
       "pointImpact": 0,
       "note": "Current personnel/unit overlays and older matchup diagnostics remain research-only unless separately validated."
     },
     "statisticalDisplay": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-09-19T11:14:02.190Z",
+      "verifiedAt": "2026-09-19T13:06:28.661Z",
       "artifact": "data/statistical-display-integrity-2026-w2.json",
-      "note": "Current selected-week statistical display source refreshed for 32/32 teams using completed Week 1 results plus ESPN team statistics. Missing advanced fields are not inferred."
+      "note": "All 32 live team-stat rows and all 16 current matchup dossiers resolve to the canonical Week 2 slate; matchup matrix dimensions remain display/research-only."
     },
     "marketDerivedIntegrity": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-09-19T11:14:02.190Z",
+      "verifiedAt": "2026-09-19T13:06:28.661Z",
       "artifact": "data/market-derived-integrity-2026-w2.json",
-      "note": "All 16 current spread-derived production fairs independently reconciled as 80% market + 20% frozen structural line with calculation timestamps at/after market dependency."
+      "note": "All 16 canonical games reconcile current market home margin, frozen structural fair, production fair and executable edge under the declared home-margin convention."
     },
     "currentWeekCompleteness": {
-      "status": "FAIL",
+      "status": "PASS-WITH-WARNINGS",
       "blocking": true,
       "unplayedGames": 15,
       "freshMarketGames": 15,
       "calculationFreshGames": 15,
       "moneylineAvailableGames": 0,
       "availabilityCheckpointDue": 8,
-      "availabilityCheckpointComplete": 0,
+      "availabilityCheckpointComplete": 8,
       "weatherCheckpointDue": 8,
-      "weatherCheckpointComplete": 0,
+      "weatherCheckpointComplete": 8,
       "upsetLabVerified": true,
-      "issues": [
-        "availability review due 0/8",
-        "weather review due 0/8"
-      ],
+      "issues": [],
       "warnings": [
         "exact moneyline available for 0/15; missing prices remain PRICE_PENDING and are never inferred"
       ],
@@ -77,7 +74,7 @@
       "primaryLedgerStatus": "SYNCHRONIZED",
       "ledgerSyncReport": "data/expert-ledger-reconciliation.json",
       "pointImpact": 0,
-      "note": "Expert Intelligence remains a qualitative residual; primary ledger is losslessly synchronized (0 ledger records; 0 missing)."
+      "note": "Expert Intelligence remains a qualitative residual; primary ledger is losslessly synchronized (90 ledger records; 0 missing)."
     },
     "upsetResearchIsolation": {
       "status": "PASS",
@@ -110,9 +107,7 @@
       ]
     }
   },
-  "failures": [
-    "CURRENTWEEKCOMPLETENESS_INCOMPLETE"
-  ],
+  "failures": [],
   "historicalWarnings": [
     "exact moneyline available for 0/15; missing prices remain PRICE_PENDING and are never inferred"
   ]

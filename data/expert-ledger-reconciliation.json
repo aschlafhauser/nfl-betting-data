@@ -2,23 +2,11 @@
   "sport": "NFL",
   "season": 2026,
   "week": 2,
-  "generatedAt": "2026-09-19T11:13:41.118Z",
-  "status": "SYNCHRONIZED",
-  "primaryLedger": "data/nfl-expert-weekly.json",
-  "auditDirectory": "data/expert-episode-audit",
-  "auditFilesScanned": 116,
-  "governedCandidateRecords": 74,
-  "appendedRecords": 0,
+  "updatedAt": "2026-09-19T13:06:28.661Z",
+  "primaryLedgerStatus": "SYNCHRONIZED",
+  "ledgerRecords": 90,
   "ledgerRecordCount": 90,
   "missingGovernedRecords": 0,
-  "primaryLedgerStatus": "SYNCHRONIZED",
-  "detail": "Lossless local merge completed for selected Week 2; historical records preserved and all governed audit records represented.",
-  "productionImpact": {
-    "fairPoints": 0,
-    "modelWeights": 0,
-    "upsetRouting": 0,
-    "betActivationGate": 0,
-    "officialLedger": 0,
-    "units": 0
-  }
+  "currentSlateRecords": 16,
+  "detail": "The full historical ledger is retained, while the portal filters display and join validation to the current canonical slate. Expert records remain qualitative with zero automatic production-fair impact."
 }
