@@ -35,6 +35,8 @@ COMPOSITE = {
     "netPressureRate": .10,
     "netSituationalRate": .10,
 }
+ADV_OFF = ("plays", "epaPerPlay", "successRate", "earlyDownEpa", "earlyDownSuccessRate", "dropbackEpa", "dropbackSuccessRate", "rushEpa", "rushSuccessRate", "explosivePlayRate", "pressureRateAllowed", "sackRateAllowed", "turnoverRate", "neutralPassRate", "thirdDownRatePbp", "redZoneSuccessRate", "stuffRateAllowed", "motionRate", "playActionRate", "shotgunRate", "noHuddleRate", "airYardsPerAttempt")
+ADV_DEF = ("plays", "epaAllowedPerPlay", "successRateAllowed", "earlyDownEpaAllowed", "earlyDownSuccessRateAllowed", "dropbackEpaAllowed", "dropbackSuccessRateAllowed", "rushEpaAllowed", "rushSuccessRateAllowed", "explosivePlayRateAllowed", "pressureRate", "sackRate", "takeawayRate", "thirdDownRateAllowedPbp", "redZoneSuccessRateAllowed", "stuffRate", "motionPassProfile", "motionRunProfile", "motionNumericEpaAvailable")
 
 
 def n(v, default=0.0):
@@ -249,6 +251,8 @@ def main():
     # This file is fetched directly by the browser; compact serialization avoids
     # unnecessary transfer size while preserving the identical JSON contract.
     (DATA / "live-team-stats.json").write_text(json.dumps(stats, separators=(",", ":")) + "\n")
+    advanced = {"season": stats.get("season"), "week": week, "updatedAt": now, "throughWeek": through, "source": "nflverse play-by-play + governed motion tendency sources", "schemaVersion": "1.0-browser-compact", "teams": [{"team": t.get("team"), "abbr": t.get("abbr"), "games": t.get("games"), "offense": {k: t.get("offense", {}).get(k) for k in ADV_OFF}, "defense": {k: t.get("defense", {}).get(k) for k in ADV_DEF}, "process": t.get("process", {}), "context": {"throughWeek": through, "advancedSource": "nflverse play-by-play"}} for t in rows]}
+    (DATA / "live-team-advanced.json").write_text(json.dumps(advanced, separators=(",", ":")) + "\n")
     save("weekly-board.json", board); save("nfl-weekly-board.json", legacy); save(f"advanced-process-integrity-{stats.get('season')}-w{week}.json", audit)
     print(f"Advanced process runtime: teams={len(rows)} throughWeek={through} motion={audit['motionCoverage']} status={audit['status']}")
 
