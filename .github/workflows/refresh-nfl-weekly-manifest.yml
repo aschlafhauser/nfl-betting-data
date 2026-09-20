@@ -48,6 +48,8 @@ jobs:
         run: node scripts/normalize-live-team-stats.mjs
       - name: Build NFL motion and scheme style matchup research
         run: node scripts/build-style-matchups.mjs
+      - name: Enrich offense/defense metrics and apply governed process model
+        run: python scripts/enrich-advanced-team-stats.py
       - name: Enforce canonical-to-portal model synchronization
         run: |
           node - <<'NODE'

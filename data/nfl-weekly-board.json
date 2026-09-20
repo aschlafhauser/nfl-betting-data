@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 2,
-  "generated_at": "2026-09-20T06:28:44.016Z",
+  "generated_at": "2026-09-20T11:13:56.263892+00:00",
   "schedule_source": "Canonical selected-week NFL board + ESPN scoreboard reconciliation",
   "market_source": "ESPN selected-week odds feed; exact sportsbook/juice required before execution",
   "games": [
@@ -33,17 +33,44 @@
       },
       "model": {
         "fair_spread_display": "Buffalo Bills -4.9",
-        "fair_spread_home_margin": 4.943,
-        "executable_edge": -0.557,
+        "fair_spread_home_margin": 4.881,
+        "executable_edge": -0.619,
         "edge_side": "DET",
         "confidence": "medium",
-        "edge_reconciled_at": "2026-09-20T06:28:44.016Z",
+        "edge_reconciled_at": "2026-09-20T11:13:56.263892+00:00",
         "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Buffalo Bills -4.9",
-        "structural_home_margin": 2.714,
-        "structural_fair": "Buffalo Bills -2.7",
-        "structural_edge": 2.786,
-        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
+        "structural_home_margin": 2.406,
+        "structural_fair": "Buffalo Bills -2.4",
+        "structural_edge": 3.094,
+        "model_version": "NFL-v1.2 advanced process + capped motion-aware matchup",
+        "base_structural_home_margin": 2.714,
+        "advanced_process_adjustment": -0.155,
+        "motion_matchup_adjustment": -0.154,
+        "advanced_process": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 0.242,
+          "homeProcessRatingPoints": 0.371,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -0.155
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": -0.154,
+          "earlySample": true
+        }
       },
       "availability": {
         "high_risk_flags": [],
@@ -80,18 +107,45 @@
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "Carolina Panthers -1.4",
-        "fair_spread_home_margin": -1.414,
-        "executable_edge": 1.086,
+        "fair_spread_display": "Carolina Panthers -1.5",
+        "fair_spread_home_margin": -1.473,
+        "executable_edge": 1.027,
         "edge_side": "ATL",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-09-20T06:28:44.016Z",
+        "edge_reconciled_at": "2026-09-20T11:13:56.263892+00:00",
         "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Carolina Panthers -1.4",
-        "structural_home_margin": 2.932,
-        "structural_fair": "Atlanta Falcons -2.9",
-        "structural_edge": 5.432,
-        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
+        "fair_spread": "Carolina Panthers -1.5",
+        "structural_home_margin": 2.633,
+        "structural_fair": "Atlanta Falcons -2.6",
+        "structural_edge": 5.133,
+        "model_version": "NFL-v1.2 advanced process + capped motion-aware matchup",
+        "base_structural_home_margin": 2.932,
+        "advanced_process_adjustment": -0.549,
+        "motion_matchup_adjustment": 0.25,
+        "advanced_process": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -1.358,
+          "homeProcessRatingPoints": -0.076,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -0.549
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": 0.25,
+          "earlySample": true
+        }
       },
       "availability": {
         "high_risk_flags": [
@@ -132,17 +186,44 @@
       },
       "model": {
         "fair_spread_display": "Chicago Bears -3.9",
-        "fair_spread_home_margin": 3.914,
-        "executable_edge": -0.586,
+        "fair_spread_home_margin": 3.86,
+        "executable_edge": -0.64,
         "edge_side": "MIN",
         "confidence": "medium",
-        "edge_reconciled_at": "2026-09-20T06:28:44.016Z",
+        "edge_reconciled_at": "2026-09-20T11:13:56.263892+00:00",
         "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Chicago Bears -3.9",
-        "structural_home_margin": 1.572,
-        "structural_fair": "Chicago Bears -1.6",
-        "structural_edge": 2.928,
-        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
+        "structural_home_margin": 1.301,
+        "structural_fair": "Chicago Bears -1.3",
+        "structural_edge": 3.199,
+        "model_version": "NFL-v1.2 advanced process + capped motion-aware matchup",
+        "base_structural_home_margin": 1.572,
+        "advanced_process_adjustment": -0.164,
+        "motion_matchup_adjustment": -0.107,
+        "advanced_process": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 0.467,
+          "homeProcessRatingPoints": 1.358,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -0.164
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": -0.107,
+          "earlySample": true
+        }
       },
       "availability": {
         "high_risk_flags": [
@@ -181,18 +262,45 @@
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "Philadelphia Eagles -6.7",
-        "fair_spread_home_margin": -6.686,
-        "executable_edge": 0.314,
+        "fair_spread_display": "Philadelphia Eagles -6.6",
+        "fair_spread_home_margin": -6.604,
+        "executable_edge": 0.396,
         "edge_side": "TEN",
         "confidence": "medium",
-        "edge_reconciled_at": "2026-09-20T06:28:44.016Z",
+        "edge_reconciled_at": "2026-09-20T11:13:56.263892+00:00",
         "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Philadelphia Eagles -6.7",
-        "structural_home_margin": -5.432,
-        "structural_fair": "Philadelphia Eagles -5.4",
-        "structural_edge": 1.568,
-        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
+        "fair_spread": "Philadelphia Eagles -6.6",
+        "structural_home_margin": -5.018,
+        "structural_fair": "Philadelphia Eagles -5",
+        "structural_edge": 1.982,
+        "model_version": "NFL-v1.2 advanced process + capped motion-aware matchup",
+        "base_structural_home_margin": -5.432,
+        "advanced_process_adjustment": 0.537,
+        "motion_matchup_adjustment": -0.123,
+        "advanced_process": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -0.344,
+          "homeProcessRatingPoints": -1.922,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": 0.537
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": -0.123,
+          "earlySample": true
+        }
       },
       "availability": {
         "high_risk_flags": [],
@@ -229,18 +337,45 @@
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "New England Patriots -5",
-        "fair_spread_home_margin": 5.019,
-        "executable_edge": -0.481,
+        "fair_spread_display": "New England Patriots -5.1",
+        "fair_spread_home_margin": 5.095,
+        "executable_edge": -0.405,
         "edge_side": "PIT",
         "confidence": "medium",
-        "edge_reconciled_at": "2026-09-20T06:28:44.016Z",
+        "edge_reconciled_at": "2026-09-20T11:13:56.263892+00:00",
         "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "New England Patriots -5",
-        "structural_home_margin": 3.096,
-        "structural_fair": "New England Patriots -3.1",
-        "structural_edge": 2.404,
-        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
+        "fair_spread": "New England Patriots -5.1",
+        "structural_home_margin": 3.473,
+        "structural_fair": "New England Patriots -3.5",
+        "structural_edge": 2.027,
+        "model_version": "NFL-v1.2 advanced process + capped motion-aware matchup",
+        "base_structural_home_margin": 3.096,
+        "advanced_process_adjustment": 0.377,
+        "motion_matchup_adjustment": 0.0,
+        "advanced_process": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 0.076,
+          "homeProcessRatingPoints": -0.5,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": 0.377
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": 0.0,
+          "earlySample": true
+        }
       },
       "availability": {
         "high_risk_flags": [
@@ -280,18 +415,45 @@
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "Green Bay Packers -3.2",
-        "fair_spread_home_margin": -3.188,
-        "executable_edge": 0.312,
+        "fair_spread_display": "Green Bay Packers -3.4",
+        "fair_spread_home_margin": -3.414,
+        "executable_edge": 0.086,
         "edge_side": "NYJ",
         "confidence": "medium",
-        "edge_reconciled_at": "2026-09-20T06:28:44.016Z",
+        "edge_reconciled_at": "2026-09-20T11:13:56.263892+00:00",
         "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Green Bay Packers -3.2",
-        "structural_home_margin": -1.94,
-        "structural_fair": "Green Bay Packers -1.9",
-        "structural_edge": 1.56,
-        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
+        "fair_spread": "Green Bay Packers -3.4",
+        "structural_home_margin": -3.068,
+        "structural_fair": "Green Bay Packers -3.1",
+        "structural_edge": 0.432,
+        "model_version": "NFL-v1.2 advanced process + capped motion-aware matchup",
+        "base_structural_home_margin": -1.94,
+        "advanced_process_adjustment": -1.104,
+        "motion_matchup_adjustment": -0.024,
+        "advanced_process": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -0.467,
+          "homeProcessRatingPoints": 1.922,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -1.104
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": -0.024,
+          "earlySample": true
+        }
       },
       "availability": {
         "high_risk_flags": [],
@@ -328,18 +490,45 @@
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "Tampa Bay Buccaneers -7.5",
-        "fair_spread_home_margin": 7.51,
-        "executable_edge": 0.01,
-        "edge_side": "TB",
+        "fair_spread_display": "Tampa Bay Buccaneers -7.4",
+        "fair_spread_home_margin": 7.411,
+        "executable_edge": -0.089,
+        "edge_side": "CLE",
         "confidence": "low",
-        "edge_reconciled_at": "2026-09-20T06:28:44.016Z",
+        "edge_reconciled_at": "2026-09-20T11:13:56.263892+00:00",
         "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Tampa Bay Buccaneers -7.5",
-        "structural_home_margin": 7.552,
-        "structural_fair": "Tampa Bay Buccaneers -7.6",
-        "structural_edge": 0.052,
-        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
+        "fair_spread": "Tampa Bay Buccaneers -7.4",
+        "structural_home_margin": 7.057,
+        "structural_fair": "Tampa Bay Buccaneers -7.1",
+        "structural_edge": 0.443,
+        "model_version": "NFL-v1.2 advanced process + capped motion-aware matchup",
+        "base_structural_home_margin": 7.552,
+        "advanced_process_adjustment": -0.601,
+        "motion_matchup_adjustment": 0.106,
+        "advanced_process": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -4.138,
+          "homeProcessRatingPoints": -1.174,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -0.601
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": 0.106,
+          "earlySample": true
+        }
       },
       "availability": {
         "high_risk_flags": [
@@ -379,18 +568,45 @@
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "Baltimore Ravens -8.1",
-        "fair_spread_home_margin": 8.118,
-        "executable_edge": -0.382,
+        "fair_spread_display": "Baltimore Ravens -8",
+        "fair_spread_home_margin": 8.0,
+        "executable_edge": -0.5,
         "edge_side": "NO",
         "confidence": "medium",
-        "edge_reconciled_at": "2026-09-20T06:28:44.016Z",
+        "edge_reconciled_at": "2026-09-20T11:13:56.263892+00:00",
         "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Baltimore Ravens -8.1",
-        "structural_home_margin": 6.59,
-        "structural_fair": "Baltimore Ravens -6.6",
-        "structural_edge": 1.91,
-        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
+        "fair_spread": "Baltimore Ravens -8",
+        "structural_home_margin": 6.001,
+        "structural_fair": "Baltimore Ravens -6",
+        "structural_edge": 2.499,
+        "model_version": "NFL-v1.2 advanced process + capped motion-aware matchup",
+        "base_structural_home_margin": 6.59,
+        "advanced_process_adjustment": -0.628,
+        "motion_matchup_adjustment": 0.039,
+        "advanced_process": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -0.242,
+          "homeProcessRatingPoints": 3.051,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -0.628
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": 0.039,
+          "earlySample": true
+        }
       },
       "availability": {
         "high_risk_flags": [],
@@ -427,18 +643,45 @@
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "Houston Texans -3.3",
-        "fair_spread_home_margin": 3.28,
-        "executable_edge": 0.78,
+        "fair_spread_display": "Houston Texans -3.4",
+        "fair_spread_home_margin": 3.355,
+        "executable_edge": 0.855,
         "edge_side": "HOU",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-09-20T06:28:44.016Z",
+        "edge_reconciled_at": "2026-09-20T11:13:56.263892+00:00",
         "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Houston Texans -3.3",
-        "structural_home_margin": 6.398,
-        "structural_fair": "Houston Texans -6.4",
-        "structural_edge": 3.898,
-        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
+        "fair_spread": "Houston Texans -3.4",
+        "structural_home_margin": 6.776,
+        "structural_fair": "Houston Texans -6.8",
+        "structural_edge": 4.276,
+        "model_version": "NFL-v1.2 advanced process + capped motion-aware matchup",
+        "base_structural_home_margin": 6.398,
+        "advanced_process_adjustment": 0.378,
+        "motion_matchup_adjustment": 0.0,
+        "advanced_process": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 1.174,
+          "homeProcessRatingPoints": -0.371,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": 0.378
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": 0.0,
+          "earlySample": true
+        }
       },
       "availability": {
         "high_risk_flags": [
@@ -478,18 +721,45 @@
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "Denver Broncos -1.2",
-        "fair_spread_home_margin": 1.246,
-        "executable_edge": -1.754,
+        "fair_spread_display": "Denver Broncos -1.5",
+        "fair_spread_home_margin": 1.547,
+        "executable_edge": -1.453,
         "edge_side": "JAX",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-09-20T06:28:44.016Z",
+        "edge_reconciled_at": "2026-09-20T11:13:56.263892+00:00",
         "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Denver Broncos -1.2",
-        "structural_home_margin": -5.768,
-        "structural_fair": "Jacksonville Jaguars -5.8",
-        "structural_edge": 8.768,
-        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
+        "fair_spread": "Denver Broncos -1.5",
+        "structural_home_margin": -4.266,
+        "structural_fair": "Jacksonville Jaguars -4.3",
+        "structural_edge": 7.266,
+        "model_version": "NFL-v1.2 advanced process + capped motion-aware matchup",
+        "base_structural_home_margin": -5.768,
+        "advanced_process_adjustment": 1.529,
+        "motion_matchup_adjustment": -0.027,
+        "advanced_process": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 4.138,
+          "homeProcessRatingPoints": -2.627,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": 1.529
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": -0.027,
+          "earlySample": true
+        }
       },
       "availability": {
         "high_risk_flags": [],
@@ -526,18 +796,45 @@
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "Los Angeles Chargers -6.3",
-        "fair_spread_home_margin": 6.32,
-        "executable_edge": -0.68,
+        "fair_spread_display": "Los Angeles Chargers -6.5",
+        "fair_spread_home_margin": 6.5,
+        "executable_edge": -0.5,
         "edge_side": "LV",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-09-20T06:28:44.016Z",
+        "edge_reconciled_at": "2026-09-20T11:13:56.263892+00:00",
         "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Los Angeles Chargers -6.3",
-        "structural_home_margin": 3.602,
-        "structural_fair": "Los Angeles Chargers -3.6",
-        "structural_edge": 3.398,
-        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
+        "fair_spread": "Los Angeles Chargers -6.5",
+        "structural_home_margin": 4.498,
+        "structural_fair": "Los Angeles Chargers -4.5",
+        "structural_edge": 2.502,
+        "model_version": "NFL-v1.2 advanced process + capped motion-aware matchup",
+        "base_structural_home_margin": 3.602,
+        "advanced_process_adjustment": 0.915,
+        "motion_matchup_adjustment": -0.019,
+        "advanced_process": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 0.957,
+          "homeProcessRatingPoints": -2.178,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": 0.915
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": -0.019,
+          "earlySample": true
+        }
       },
       "availability": {
         "high_risk_flags": [],
@@ -575,17 +872,44 @@
       },
       "model": {
         "fair_spread_display": "Dallas Cowboys -3.3",
-        "fair_spread_home_margin": 3.287,
-        "executable_edge": -0.213,
+        "fair_spread_home_margin": 3.319,
+        "executable_edge": -0.181,
         "edge_side": "WSH",
         "confidence": "low",
-        "edge_reconciled_at": "2026-09-20T06:28:44.016Z",
+        "edge_reconciled_at": "2026-09-20T11:13:56.263892+00:00",
         "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Dallas Cowboys -3.3",
-        "structural_home_margin": 2.434,
-        "structural_fair": "Dallas Cowboys -2.4",
-        "structural_edge": 1.066,
-        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
+        "structural_home_margin": 2.597,
+        "structural_fair": "Dallas Cowboys -2.6",
+        "structural_edge": 0.903,
+        "model_version": "NFL-v1.2 advanced process + capped motion-aware matchup",
+        "base_structural_home_margin": 2.434,
+        "advanced_process_adjustment": 0.163,
+        "motion_matchup_adjustment": 0.0,
+        "advanced_process": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 0.344,
+          "homeProcessRatingPoints": -1.581,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": 0.163
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": 0.0,
+          "earlySample": true
+        }
       },
       "availability": {
         "high_risk_flags": [],
@@ -622,18 +946,45 @@
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "Seattle Seahawks -4.2",
-        "fair_spread_home_margin": -4.188,
-        "executable_edge": -0.688,
+        "fair_spread_display": "Seattle Seahawks -4.3",
+        "fair_spread_home_margin": -4.266,
+        "executable_edge": -0.766,
         "edge_side": "SEA",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-09-20T06:28:44.016Z",
+        "edge_reconciled_at": "2026-09-20T11:13:56.263892+00:00",
         "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Seattle Seahawks -4.2",
-        "structural_home_margin": -6.938,
-        "structural_fair": "Seattle Seahawks -6.9",
-        "structural_edge": 3.438,
-        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
+        "fair_spread": "Seattle Seahawks -4.3",
+        "structural_home_margin": -7.328,
+        "structural_fair": "Seattle Seahawks -7.3",
+        "structural_edge": 3.828,
+        "model_version": "NFL-v1.2 advanced process + capped motion-aware matchup",
+        "base_structural_home_margin": -6.938,
+        "advanced_process_adjustment": -0.293,
+        "motion_matchup_adjustment": -0.097,
+        "advanced_process": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 0.5,
+          "homeProcessRatingPoints": 2.178,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -0.293
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": -0.097,
+          "earlySample": true
+        }
       },
       "availability": {
         "high_risk_flags": [],
@@ -670,18 +1021,45 @@
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "San Francisco 49ers -13.2",
-        "fair_spread_home_margin": 13.188,
-        "executable_edge": -0.312,
+        "fair_spread_display": "San Francisco 49ers -13",
+        "fair_spread_home_margin": 12.955,
+        "executable_edge": -0.545,
         "edge_side": "MIA",
         "confidence": "medium",
-        "edge_reconciled_at": "2026-09-20T06:28:44.016Z",
+        "edge_reconciled_at": "2026-09-20T11:13:56.263892+00:00",
         "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "San Francisco 49ers -13.2",
-        "structural_home_margin": 11.942,
-        "structural_fair": "San Francisco 49ers -11.9",
-        "structural_edge": 1.558,
-        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
+        "fair_spread": "San Francisco 49ers -13",
+        "structural_home_margin": 10.773,
+        "structural_fair": "San Francisco 49ers -10.8",
+        "structural_edge": 2.727,
+        "model_version": "NFL-v1.2 advanced process + capped motion-aware matchup",
+        "base_structural_home_margin": 11.942,
+        "advanced_process_adjustment": -1.189,
+        "motion_matchup_adjustment": 0.02,
+        "advanced_process": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -0.957,
+          "homeProcessRatingPoints": 3.306,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -1.189
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": 0.02,
+          "earlySample": true
+        }
       },
       "availability": {
         "high_risk_flags": [
@@ -721,18 +1099,45 @@
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "Kansas City Chiefs -5.8",
-        "fair_spread_home_margin": 5.805,
-        "executable_edge": -0.195,
+        "fair_spread_display": "Kansas City Chiefs -5.6",
+        "fair_spread_home_margin": 5.571,
+        "executable_edge": -0.429,
         "edge_side": "IND",
         "confidence": "low",
-        "edge_reconciled_at": "2026-09-20T06:28:44.016Z",
+        "edge_reconciled_at": "2026-09-20T11:13:56.263892+00:00",
         "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Kansas City Chiefs -5.8",
-        "structural_home_margin": 5.026,
-        "structural_fair": "Kansas City Chiefs -5",
-        "structural_edge": 0.974,
-        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
+        "fair_spread": "Kansas City Chiefs -5.6",
+        "structural_home_margin": 3.853,
+        "structural_fair": "Kansas City Chiefs -3.9",
+        "structural_edge": 2.147,
+        "model_version": "NFL-v1.2 advanced process + capped motion-aware matchup",
+        "base_structural_home_margin": 5.026,
+        "advanced_process_adjustment": -1.333,
+        "motion_matchup_adjustment": 0.16,
+        "advanced_process": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -3.051,
+          "homeProcessRatingPoints": 2.627,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -1.333
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": 0.16,
+          "earlySample": true
+        }
       },
       "availability": {
         "high_risk_flags": [
@@ -772,18 +1177,45 @@
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "Los Angeles Rams -7",
-        "fair_spread_home_margin": 6.979,
-        "executable_edge": -0.021,
-        "edge_side": "NYG",
+        "fair_spread_display": "Los Angeles Rams -7.2",
+        "fair_spread_home_margin": 7.173,
+        "executable_edge": 0.173,
+        "edge_side": "LAR",
         "confidence": "low",
-        "edge_reconciled_at": "2026-09-20T06:28:44.016Z",
+        "edge_reconciled_at": "2026-09-20T11:13:56.263892+00:00",
         "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Los Angeles Rams -7",
-        "structural_home_margin": 6.894,
-        "structural_fair": "Los Angeles Rams -6.9",
-        "structural_edge": 0.106,
-        "model_version": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural"
+        "fair_spread": "Los Angeles Rams -7.2",
+        "structural_home_margin": 7.865,
+        "structural_fair": "Los Angeles Rams -7.9",
+        "structural_edge": 0.865,
+        "model_version": "NFL-v1.2 advanced process + capped motion-aware matchup",
+        "base_structural_home_margin": 6.894,
+        "advanced_process_adjustment": 0.925,
+        "motion_matchup_adjustment": 0.046,
+        "advanced_process": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 1.581,
+          "homeProcessRatingPoints": -3.306,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": 0.925
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": 0.046,
+          "earlySample": true
+        }
       },
       "availability": {
         "high_risk_flags": [],
@@ -807,5 +1239,14 @@
     "canonicalWeek": 2,
     "matchedGames": 16,
     "verifiedAt": "2026-09-20T06:28:44.016Z"
+  },
+  "model_methodology_version": "1.2-advanced-process-motion-aware",
+  "advanced_process_runtime": {
+    "status": "ACTIVE",
+    "throughWeek": 1,
+    "teamCoverage": 32,
+    "processShareOfLiveLayer": 0.4,
+    "motionPointCap": 0.25,
+    "leakageRule": "Target Week 2 uses Weeks 1-1 only"
   }
 }

@@ -1,0 +1,25 @@
+{
+  "season": 2026,
+  "week": 2,
+  "verifiedAt": "2026-09-20T11:13:56.263892+00:00",
+  "status": "PASS",
+  "teamCoverage": 32,
+  "throughWeek": 1,
+  "requiredMetricFamilies": [
+    "netEpa",
+    "netSuccess",
+    "netEarlyDownEpa",
+    "netDropbackEpa",
+    "netRushEpa",
+    "netExplosiveRate",
+    "netPressureRate",
+    "netSituationalRate"
+  ],
+  "motionCoverage": 32,
+  "modelIntegration": {
+    "processShareOfLiveLayer": 0.4,
+    "motionPointCap": 0.25,
+    "productionStructuralWeight": 0.2
+  },
+  "leakageRule": "Target Week 2 uses only completed plays through Week 1."
+}

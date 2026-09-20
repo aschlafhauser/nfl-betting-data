@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 2,
-  "updatedAt": "2026-09-20T06:28:36.857Z",
+  "updatedAt": "2026-09-20T11:13:56.263892+00:00",
   "scheduleSource": "ESPN selected-week rollover",
   "marketSource": "Current ESPN NFL selected-week odds feed; exact sportsbook/juice required before execution",
   "games": [
@@ -16,20 +16,20 @@
       "currentTotal": 54.5,
       "currentMoneyline": null,
       "productionSpread": "Buffalo Bills -4.9",
-      "productionHomeMargin": 4.943,
+      "productionHomeMargin": 4.881,
       "modelEdge": 0.557,
       "stage": "potential-research",
       "priority": "Medium",
       "marketSource": "ESPN DraftKings",
       "marketObservedAt": "2026-09-17T21:32:20.865Z",
       "eventState": "final",
-      "validatedStructuralSpread": "Buffalo Bills -2.7",
-      "structuralHomeMargin": 2.714,
+      "validatedStructuralSpread": "Buffalo Bills -2.4",
+      "structuralHomeMargin": 2.406,
       "productionTotal": 54.5,
-      "structuralEdge": 2.786,
+      "structuralEdge": 3.094,
       "structuralLean": "DET",
       "modelCalculatedAt": "2026-09-20T06:28:36.857Z",
-      "modelVersion": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural",
+      "modelVersion": "NFL-v1.2 advanced process + capped motion-aware matchup",
       "modelInputs": {
         "preseasonWeight": 0.9,
         "liveWeight": 0.1,
@@ -38,8 +38,35 @@
         "awayLive": 1,
         "homeLive": 5,
         "homeField": 1,
-        "marketHomeMargin": 5.5
-      }
+        "marketHomeMargin": 5.5,
+        "advancedProcess": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 0.242,
+          "homeProcessRatingPoints": 0.371,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -0.155
+        },
+        "motionMatchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": -0.154,
+          "earlySample": true
+        }
+      },
+      "baseStructuralHomeMargin": 2.714,
+      "advancedProcessAdjustment": -0.155,
+      "motionMatchupAdjustment": -0.154
     },
     {
       "gameId": "2026-W2-CAR-ATL",
@@ -51,21 +78,21 @@
       "currentSpread": "Carolina Panthers -2.5",
       "currentTotal": 43.5,
       "currentMoneyline": null,
-      "productionSpread": "Carolina Panthers -1.4",
-      "productionHomeMargin": -1.414,
+      "productionSpread": "Carolina Panthers -1.5",
+      "productionHomeMargin": -1.473,
       "modelEdge": 1.086,
       "stage": "high-priority-audit",
       "priority": "High",
       "marketSource": "ESPN DraftKings",
       "marketObservedAt": "2026-09-20T06:28:36.628Z",
       "eventState": "scheduled",
-      "validatedStructuralSpread": "Atlanta Falcons -2.9",
-      "structuralHomeMargin": 2.932,
+      "validatedStructuralSpread": "Atlanta Falcons -2.6",
+      "structuralHomeMargin": 2.633,
       "productionTotal": 43.5,
-      "structuralEdge": 5.432,
+      "structuralEdge": 5.133,
       "structuralLean": "ATL",
       "modelCalculatedAt": "2026-09-20T06:28:36.857Z",
-      "modelVersion": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural",
+      "modelVersion": "NFL-v1.2 advanced process + capped motion-aware matchup",
       "modelInputs": {
         "preseasonWeight": 0.9,
         "liveWeight": 0.1,
@@ -74,8 +101,35 @@
         "awayLive": -22,
         "homeLive": -7,
         "homeField": 1,
-        "marketHomeMargin": -2.5
-      }
+        "marketHomeMargin": -2.5,
+        "advancedProcess": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -1.358,
+          "homeProcessRatingPoints": -0.076,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -0.549
+        },
+        "motionMatchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": 0.25,
+          "earlySample": true
+        }
+      },
+      "baseStructuralHomeMargin": 2.932,
+      "advancedProcessAdjustment": -0.549,
+      "motionMatchupAdjustment": 0.25
     },
     {
       "gameId": "2026-W2-MIN-CHI",
@@ -88,20 +142,20 @@
       "currentTotal": 47.5,
       "currentMoneyline": null,
       "productionSpread": "Chicago Bears -3.9",
-      "productionHomeMargin": 3.914,
+      "productionHomeMargin": 3.86,
       "modelEdge": 0.586,
       "stage": "potential-research",
       "priority": "Medium",
       "marketSource": "ESPN DraftKings",
       "marketObservedAt": "2026-09-20T06:28:36.628Z",
       "eventState": "scheduled",
-      "validatedStructuralSpread": "Chicago Bears -1.6",
-      "structuralHomeMargin": 1.572,
+      "validatedStructuralSpread": "Chicago Bears -1.3",
+      "structuralHomeMargin": 1.301,
       "productionTotal": 47.5,
-      "structuralEdge": 2.928,
+      "structuralEdge": 3.199,
       "structuralLean": "MIN",
       "modelCalculatedAt": "2026-09-20T06:28:36.857Z",
-      "modelVersion": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural",
+      "modelVersion": "NFL-v1.2 advanced process + capped motion-aware matchup",
       "modelInputs": {
         "preseasonWeight": 0.9,
         "liveWeight": 0.1,
@@ -110,8 +164,35 @@
         "awayLive": 17,
         "homeLive": 22,
         "homeField": 1,
-        "marketHomeMargin": 4.5
-      }
+        "marketHomeMargin": 4.5,
+        "advancedProcess": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 0.467,
+          "homeProcessRatingPoints": 1.358,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -0.164
+        },
+        "motionMatchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": -0.107,
+          "earlySample": true
+        }
+      },
+      "baseStructuralHomeMargin": 1.572,
+      "advancedProcessAdjustment": -0.164,
+      "motionMatchupAdjustment": -0.107
     },
     {
       "gameId": "2026-W2-PHI-TEN",
@@ -123,21 +204,21 @@
       "currentSpread": "Philadelphia Eagles -7",
       "currentTotal": 39.5,
       "currentMoneyline": null,
-      "productionSpread": "Philadelphia Eagles -6.7",
-      "productionHomeMargin": -6.686,
+      "productionSpread": "Philadelphia Eagles -6.6",
+      "productionHomeMargin": -6.604,
       "modelEdge": 0.314,
       "stage": "research",
       "priority": "Medium",
       "marketSource": "ESPN DraftKings",
       "marketObservedAt": "2026-09-20T06:28:36.628Z",
       "eventState": "scheduled",
-      "validatedStructuralSpread": "Philadelphia Eagles -5.4",
-      "structuralHomeMargin": -5.432,
+      "validatedStructuralSpread": "Philadelphia Eagles -5",
+      "structuralHomeMargin": -5.018,
       "productionTotal": 39.5,
-      "structuralEdge": 1.568,
+      "structuralEdge": 1.982,
       "structuralLean": "TEN",
       "modelCalculatedAt": "2026-09-20T06:28:36.857Z",
-      "modelVersion": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural",
+      "modelVersion": "NFL-v1.2 advanced process + capped motion-aware matchup",
       "modelInputs": {
         "preseasonWeight": 0.9,
         "liveWeight": 0.1,
@@ -146,8 +227,35 @@
         "awayLive": 2,
         "homeLive": -13,
         "homeField": 1,
-        "marketHomeMargin": -7
-      }
+        "marketHomeMargin": -7,
+        "advancedProcess": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -0.344,
+          "homeProcessRatingPoints": -1.922,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": 0.537
+        },
+        "motionMatchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": -0.123,
+          "earlySample": true
+        }
+      },
+      "baseStructuralHomeMargin": -5.432,
+      "advancedProcessAdjustment": 0.537,
+      "motionMatchupAdjustment": -0.123
     },
     {
       "gameId": "2026-W2-PIT-NE",
@@ -159,21 +267,21 @@
       "currentSpread": "New England Patriots -5.5",
       "currentTotal": 41.5,
       "currentMoneyline": null,
-      "productionSpread": "New England Patriots -5",
-      "productionHomeMargin": 5.019,
+      "productionSpread": "New England Patriots -5.1",
+      "productionHomeMargin": 5.095,
       "modelEdge": 0.481,
       "stage": "research",
       "priority": "Medium",
       "marketSource": "ESPN DraftKings",
       "marketObservedAt": "2026-09-20T06:28:36.628Z",
       "eventState": "scheduled",
-      "validatedStructuralSpread": "New England Patriots -3.1",
-      "structuralHomeMargin": 3.096,
+      "validatedStructuralSpread": "New England Patriots -3.5",
+      "structuralHomeMargin": 3.473,
       "productionTotal": 41.5,
-      "structuralEdge": 2.404,
+      "structuralEdge": 2.027,
       "structuralLean": "PIT",
       "modelCalculatedAt": "2026-09-20T06:28:36.857Z",
-      "modelVersion": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural",
+      "modelVersion": "NFL-v1.2 advanced process + capped motion-aware matchup",
       "modelInputs": {
         "preseasonWeight": 0.9,
         "liveWeight": 0.1,
@@ -182,8 +290,35 @@
         "awayLive": 7,
         "homeLive": -3,
         "homeField": 1,
-        "marketHomeMargin": 5.5
-      }
+        "marketHomeMargin": 5.5,
+        "advancedProcess": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 0.076,
+          "homeProcessRatingPoints": -0.5,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": 0.377
+        },
+        "motionMatchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": 0.0,
+          "earlySample": true
+        }
+      },
+      "baseStructuralHomeMargin": 3.096,
+      "advancedProcessAdjustment": 0.377,
+      "motionMatchupAdjustment": 0.0
     },
     {
       "gameId": "2026-W2-GB-NYJ",
@@ -195,21 +330,21 @@
       "currentSpread": "Green Bay Packers -3.5",
       "currentTotal": 44.5,
       "currentMoneyline": null,
-      "productionSpread": "Green Bay Packers -3.2",
-      "productionHomeMargin": -3.188,
+      "productionSpread": "Green Bay Packers -3.4",
+      "productionHomeMargin": -3.414,
       "modelEdge": 0.312,
       "stage": "research",
       "priority": "Medium",
       "marketSource": "ESPN DraftKings",
       "marketObservedAt": "2026-09-20T06:28:36.628Z",
       "eventState": "scheduled",
-      "validatedStructuralSpread": "Green Bay Packers -1.9",
-      "structuralHomeMargin": -1.94,
+      "validatedStructuralSpread": "Green Bay Packers -3.1",
+      "structuralHomeMargin": -3.068,
       "productionTotal": 44.5,
-      "structuralEdge": 1.56,
+      "structuralEdge": 0.432,
       "structuralLean": "NYJ",
       "modelCalculatedAt": "2026-09-20T06:28:36.857Z",
-      "modelVersion": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural",
+      "modelVersion": "NFL-v1.2 advanced process + capped motion-aware matchup",
       "modelInputs": {
         "preseasonWeight": 0.9,
         "liveWeight": 0.1,
@@ -218,8 +353,35 @@
         "awayLive": -17,
         "homeLive": 13,
         "homeField": 1,
-        "marketHomeMargin": -3.5
-      }
+        "marketHomeMargin": -3.5,
+        "advancedProcess": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -0.467,
+          "homeProcessRatingPoints": 1.922,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -1.104
+        },
+        "motionMatchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": -0.024,
+          "earlySample": true
+        }
+      },
+      "baseStructuralHomeMargin": -1.94,
+      "advancedProcessAdjustment": -1.104,
+      "motionMatchupAdjustment": -0.024
     },
     {
       "gameId": "2026-W2-CLE-TB",
@@ -231,21 +393,21 @@
       "currentSpread": "Tampa Bay Buccaneers -7.5",
       "currentTotal": 41.5,
       "currentMoneyline": null,
-      "productionSpread": "Tampa Bay Buccaneers -7.5",
-      "productionHomeMargin": 7.51,
+      "productionSpread": "Tampa Bay Buccaneers -7.4",
+      "productionHomeMargin": 7.411,
       "modelEdge": 0.01,
       "stage": "no-signal",
       "priority": "Low",
       "marketSource": "ESPN DraftKings",
       "marketObservedAt": "2026-09-20T06:28:36.628Z",
       "eventState": "scheduled",
-      "validatedStructuralSpread": "Tampa Bay Buccaneers -7.6",
-      "structuralHomeMargin": 7.552,
+      "validatedStructuralSpread": "Tampa Bay Buccaneers -7.1",
+      "structuralHomeMargin": 7.057,
       "productionTotal": 41.5,
-      "structuralEdge": 0.052,
-      "structuralLean": "TB",
+      "structuralEdge": 0.443,
+      "structuralLean": "CLE",
       "modelCalculatedAt": "2026-09-20T06:28:36.857Z",
-      "modelVersion": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural",
+      "modelVersion": "NFL-v1.2 advanced process + capped motion-aware matchup",
       "modelInputs": {
         "preseasonWeight": 0.9,
         "liveWeight": 0.1,
@@ -254,8 +416,35 @@
         "awayLive": -24,
         "homeLive": -6,
         "homeField": 1,
-        "marketHomeMargin": 7.5
-      }
+        "marketHomeMargin": 7.5,
+        "advancedProcess": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -4.138,
+          "homeProcessRatingPoints": -1.174,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -0.601
+        },
+        "motionMatchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": 0.106,
+          "earlySample": true
+        }
+      },
+      "baseStructuralHomeMargin": 7.552,
+      "advancedProcessAdjustment": -0.601,
+      "motionMatchupAdjustment": 0.106
     },
     {
       "gameId": "2026-W2-NO-BAL",
@@ -267,21 +456,21 @@
       "currentSpread": "Baltimore Ravens -8.5",
       "currentTotal": 45.5,
       "currentMoneyline": null,
-      "productionSpread": "Baltimore Ravens -8.1",
-      "productionHomeMargin": 8.118,
+      "productionSpread": "Baltimore Ravens -8",
+      "productionHomeMargin": 8.0,
       "modelEdge": 0.382,
       "stage": "research",
       "priority": "Medium",
       "marketSource": "ESPN DraftKings",
       "marketObservedAt": "2026-09-20T06:28:36.628Z",
       "eventState": "scheduled",
-      "validatedStructuralSpread": "Baltimore Ravens -6.6",
-      "structuralHomeMargin": 6.59,
+      "validatedStructuralSpread": "Baltimore Ravens -6",
+      "structuralHomeMargin": 6.001,
       "productionTotal": 45.5,
-      "structuralEdge": 1.91,
+      "structuralEdge": 2.499,
       "structuralLean": "NO",
       "modelCalculatedAt": "2026-09-20T06:28:36.857Z",
-      "modelVersion": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural",
+      "modelVersion": "NFL-v1.2 advanced process + capped motion-aware matchup",
       "modelInputs": {
         "preseasonWeight": 0.9,
         "liveWeight": 0.1,
@@ -290,8 +479,35 @@
         "awayLive": -1,
         "homeLive": 18,
         "homeField": 1,
-        "marketHomeMargin": 8.5
-      }
+        "marketHomeMargin": 8.5,
+        "advancedProcess": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -0.242,
+          "homeProcessRatingPoints": 3.051,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -0.628
+        },
+        "motionMatchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": 0.039,
+          "earlySample": true
+        }
+      },
+      "baseStructuralHomeMargin": 6.59,
+      "advancedProcessAdjustment": -0.628,
+      "motionMatchupAdjustment": 0.039
     },
     {
       "gameId": "2026-W2-CIN-HOU",
@@ -303,21 +519,21 @@
       "currentSpread": "Houston Texans -2.5",
       "currentTotal": 45.5,
       "currentMoneyline": null,
-      "productionSpread": "Houston Texans -3.3",
-      "productionHomeMargin": 3.28,
+      "productionSpread": "Houston Texans -3.4",
+      "productionHomeMargin": 3.355,
       "modelEdge": 0.78,
       "stage": "high-priority-audit",
       "priority": "High",
       "marketSource": "ESPN DraftKings",
       "marketObservedAt": "2026-09-20T06:28:36.628Z",
       "eventState": "scheduled",
-      "validatedStructuralSpread": "Houston Texans -6.4",
-      "structuralHomeMargin": 6.398,
+      "validatedStructuralSpread": "Houston Texans -6.8",
+      "structuralHomeMargin": 6.776,
       "productionTotal": 45.5,
-      "structuralEdge": 3.898,
+      "structuralEdge": 4.276,
       "structuralLean": "HOU",
       "modelCalculatedAt": "2026-09-20T06:28:36.857Z",
-      "modelVersion": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural",
+      "modelVersion": "NFL-v1.2 advanced process + capped motion-aware matchup",
       "modelInputs": {
         "preseasonWeight": 0.9,
         "liveWeight": 0.1,
@@ -326,8 +542,35 @@
         "awayLive": 6,
         "homeLive": -5,
         "homeField": 1,
-        "marketHomeMargin": 2.5
-      }
+        "marketHomeMargin": 2.5,
+        "advancedProcess": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 1.174,
+          "homeProcessRatingPoints": -0.371,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": 0.378
+        },
+        "motionMatchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": 0.0,
+          "earlySample": true
+        }
+      },
+      "baseStructuralHomeMargin": 6.398,
+      "advancedProcessAdjustment": 0.378,
+      "motionMatchupAdjustment": 0.0
     },
     {
       "gameId": "2026-W2-JAX-DEN",
@@ -339,21 +582,21 @@
       "currentSpread": "Denver Broncos -3",
       "currentTotal": 45.5,
       "currentMoneyline": null,
-      "productionSpread": "Denver Broncos -1.2",
-      "productionHomeMargin": 1.246,
+      "productionSpread": "Denver Broncos -1.5",
+      "productionHomeMargin": 1.547,
       "modelEdge": 1.754,
       "stage": "high-priority-audit",
       "priority": "High",
       "marketSource": "ESPN DraftKings",
       "marketObservedAt": "2026-09-20T06:28:36.628Z",
       "eventState": "scheduled",
-      "validatedStructuralSpread": "Jacksonville Jaguars -5.8",
-      "structuralHomeMargin": -5.768,
+      "validatedStructuralSpread": "Jacksonville Jaguars -4.3",
+      "structuralHomeMargin": -4.266,
       "productionTotal": 45.5,
-      "structuralEdge": 8.768,
+      "structuralEdge": 7.266,
       "structuralLean": "JAX",
       "modelCalculatedAt": "2026-09-20T06:28:36.857Z",
-      "modelVersion": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural",
+      "modelVersion": "NFL-v1.2 advanced process + capped motion-aware matchup",
       "modelInputs": {
         "preseasonWeight": 0.9,
         "liveWeight": 0.1,
@@ -362,8 +605,35 @@
         "awayLive": 24,
         "homeLive": -21,
         "homeField": 1,
-        "marketHomeMargin": 3
-      }
+        "marketHomeMargin": 3,
+        "advancedProcess": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 4.138,
+          "homeProcessRatingPoints": -2.627,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": 1.529
+        },
+        "motionMatchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": -0.027,
+          "earlySample": true
+        }
+      },
+      "baseStructuralHomeMargin": -5.768,
+      "advancedProcessAdjustment": 1.529,
+      "motionMatchupAdjustment": -0.027
     },
     {
       "gameId": "2026-W2-LV-LAC",
@@ -375,21 +645,21 @@
       "currentSpread": "Los Angeles Chargers -7",
       "currentTotal": 43.5,
       "currentMoneyline": null,
-      "productionSpread": "Los Angeles Chargers -6.3",
-      "productionHomeMargin": 6.32,
+      "productionSpread": "Los Angeles Chargers -6.5",
+      "productionHomeMargin": 6.5,
       "modelEdge": 0.68,
       "stage": "high-priority-audit",
       "priority": "High",
       "marketSource": "ESPN DraftKings",
       "marketObservedAt": "2026-09-20T06:28:36.628Z",
       "eventState": "scheduled",
-      "validatedStructuralSpread": "Los Angeles Chargers -3.6",
-      "structuralHomeMargin": 3.602,
+      "validatedStructuralSpread": "Los Angeles Chargers -4.5",
+      "structuralHomeMargin": 4.498,
       "productionTotal": 43.5,
-      "structuralEdge": 3.398,
+      "structuralEdge": 2.502,
       "structuralLean": "LV",
       "modelCalculatedAt": "2026-09-20T06:28:36.857Z",
-      "modelVersion": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural",
+      "modelVersion": "NFL-v1.2 advanced process + capped motion-aware matchup",
       "modelInputs": {
         "preseasonWeight": 0.9,
         "liveWeight": 0.1,
@@ -398,8 +668,35 @@
         "awayLive": 14,
         "homeLive": -12,
         "homeField": 1,
-        "marketHomeMargin": 7
-      }
+        "marketHomeMargin": 7,
+        "advancedProcess": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 0.957,
+          "homeProcessRatingPoints": -2.178,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": 0.915
+        },
+        "motionMatchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": -0.019,
+          "earlySample": true
+        }
+      },
+      "baseStructuralHomeMargin": 3.602,
+      "advancedProcessAdjustment": 0.915,
+      "motionMatchupAdjustment": -0.019
     },
     {
       "gameId": "2026-W2-WSH-DAL",
@@ -412,20 +709,20 @@
       "currentTotal": 50.5,
       "currentMoneyline": null,
       "productionSpread": "Dallas Cowboys -3.3",
-      "productionHomeMargin": 3.287,
+      "productionHomeMargin": 3.319,
       "modelEdge": 0.213,
       "stage": "monitor",
       "priority": "Low",
       "marketSource": "ESPN DraftKings",
       "marketObservedAt": "2026-09-20T06:28:36.628Z",
       "eventState": "scheduled",
-      "validatedStructuralSpread": "Dallas Cowboys -2.4",
-      "structuralHomeMargin": 2.434,
+      "validatedStructuralSpread": "Dallas Cowboys -2.6",
+      "structuralHomeMargin": 2.597,
       "productionTotal": 50.5,
-      "structuralEdge": 1.066,
+      "structuralEdge": 0.903,
       "structuralLean": "WSH",
       "modelCalculatedAt": "2026-09-20T06:28:36.857Z",
-      "modelVersion": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural",
+      "modelVersion": "NFL-v1.2 advanced process + capped motion-aware matchup",
       "modelInputs": {
         "preseasonWeight": 0.9,
         "liveWeight": 0.1,
@@ -434,8 +731,35 @@
         "awayLive": -2,
         "homeLive": -8,
         "homeField": 1,
-        "marketHomeMargin": 3.5
-      }
+        "marketHomeMargin": 3.5,
+        "advancedProcess": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 0.344,
+          "homeProcessRatingPoints": -1.581,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": 0.163
+        },
+        "motionMatchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": 0.0,
+          "earlySample": true
+        }
+      },
+      "baseStructuralHomeMargin": 2.434,
+      "advancedProcessAdjustment": 0.163,
+      "motionMatchupAdjustment": 0.0
     },
     {
       "gameId": "2026-W2-SEA-ARI",
@@ -447,21 +771,21 @@
       "currentSpread": "Seattle Seahawks -3.5",
       "currentTotal": 40.5,
       "currentMoneyline": null,
-      "productionSpread": "Seattle Seahawks -4.2",
-      "productionHomeMargin": -4.188,
+      "productionSpread": "Seattle Seahawks -4.3",
+      "productionHomeMargin": -4.266,
       "modelEdge": 0.688,
       "stage": "high-priority-audit",
       "priority": "High",
       "marketSource": "ESPN DraftKings",
       "marketObservedAt": "2026-09-20T06:28:36.628Z",
       "eventState": "scheduled",
-      "validatedStructuralSpread": "Seattle Seahawks -6.9",
-      "structuralHomeMargin": -6.938,
+      "validatedStructuralSpread": "Seattle Seahawks -7.3",
+      "structuralHomeMargin": -7.328,
       "productionTotal": 40.5,
-      "structuralEdge": 3.438,
+      "structuralEdge": 3.828,
       "structuralLean": "SEA",
       "modelCalculatedAt": "2026-09-20T06:28:36.857Z",
-      "modelVersion": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural",
+      "modelVersion": "NFL-v1.2 advanced process + capped motion-aware matchup",
       "modelInputs": {
         "preseasonWeight": 0.9,
         "liveWeight": 0.1,
@@ -470,8 +794,35 @@
         "awayLive": 3,
         "homeLive": 12,
         "homeField": 1,
-        "marketHomeMargin": -3.5
-      }
+        "marketHomeMargin": -3.5,
+        "advancedProcess": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 0.5,
+          "homeProcessRatingPoints": 2.178,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -0.293
+        },
+        "motionMatchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": -0.097,
+          "earlySample": true
+        }
+      },
+      "baseStructuralHomeMargin": -6.938,
+      "advancedProcessAdjustment": -0.293,
+      "motionMatchupAdjustment": -0.097
     },
     {
       "gameId": "2026-W2-MIA-SF",
@@ -483,21 +834,21 @@
       "currentSpread": "San Francisco 49ers -13.5",
       "currentTotal": 44.5,
       "currentMoneyline": null,
-      "productionSpread": "San Francisco 49ers -13.2",
-      "productionHomeMargin": 13.188,
+      "productionSpread": "San Francisco 49ers -13",
+      "productionHomeMargin": 12.955,
       "modelEdge": 0.312,
       "stage": "research",
       "priority": "Medium",
       "marketSource": "ESPN DraftKings",
       "marketObservedAt": "2026-09-20T06:28:36.628Z",
       "eventState": "scheduled",
-      "validatedStructuralSpread": "San Francisco 49ers -11.9",
-      "structuralHomeMargin": 11.942,
+      "validatedStructuralSpread": "San Francisco 49ers -10.8",
+      "structuralHomeMargin": 10.773,
       "productionTotal": 44.5,
-      "structuralEdge": 1.558,
+      "structuralEdge": 2.727,
       "structuralLean": "MIA",
       "modelCalculatedAt": "2026-09-20T06:28:36.857Z",
-      "modelVersion": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural",
+      "modelVersion": "NFL-v1.2 advanced process + capped motion-aware matchup",
       "modelInputs": {
         "preseasonWeight": 0.9,
         "liveWeight": 0.1,
@@ -506,8 +857,35 @@
         "awayLive": -14,
         "homeLive": 20,
         "homeField": 1,
-        "marketHomeMargin": 13.5
-      }
+        "marketHomeMargin": 13.5,
+        "advancedProcess": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -0.957,
+          "homeProcessRatingPoints": 3.306,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -1.189
+        },
+        "motionMatchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": 0.02,
+          "earlySample": true
+        }
+      },
+      "baseStructuralHomeMargin": 11.942,
+      "advancedProcessAdjustment": -1.189,
+      "motionMatchupAdjustment": 0.02
     },
     {
       "gameId": "2026-W2-IND-KC",
@@ -519,21 +897,21 @@
       "currentSpread": "Kansas City Chiefs -6",
       "currentTotal": 46.5,
       "currentMoneyline": null,
-      "productionSpread": "Kansas City Chiefs -5.8",
-      "productionHomeMargin": 5.805,
+      "productionSpread": "Kansas City Chiefs -5.6",
+      "productionHomeMargin": 5.571,
       "modelEdge": 0.195,
       "stage": "no-signal",
       "priority": "Low",
       "marketSource": "ESPN DraftKings",
       "marketObservedAt": "2026-09-20T06:28:36.628Z",
       "eventState": "scheduled",
-      "validatedStructuralSpread": "Kansas City Chiefs -5",
-      "structuralHomeMargin": 5.026,
+      "validatedStructuralSpread": "Kansas City Chiefs -3.9",
+      "structuralHomeMargin": 3.853,
       "productionTotal": 46.5,
-      "structuralEdge": 0.974,
+      "structuralEdge": 2.147,
       "structuralLean": "IND",
       "modelCalculatedAt": "2026-09-20T06:28:36.857Z",
-      "modelVersion": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural",
+      "modelVersion": "NFL-v1.2 advanced process + capped motion-aware matchup",
       "modelInputs": {
         "preseasonWeight": 0.9,
         "liveWeight": 0.1,
@@ -542,8 +920,35 @@
         "awayLive": -18,
         "homeLive": 21,
         "homeField": 1,
-        "marketHomeMargin": 6
-      }
+        "marketHomeMargin": 6,
+        "advancedProcess": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -3.051,
+          "homeProcessRatingPoints": 2.627,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -1.333
+        },
+        "motionMatchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": 0.16,
+          "earlySample": true
+        }
+      },
+      "baseStructuralHomeMargin": 5.026,
+      "advancedProcessAdjustment": -1.333,
+      "motionMatchupAdjustment": 0.16
     },
     {
       "gameId": "2026-W2-NYG-LAR",
@@ -555,21 +960,21 @@
       "currentSpread": "Los Angeles Rams -7",
       "currentTotal": 47.5,
       "currentMoneyline": null,
-      "productionSpread": "Los Angeles Rams -7",
-      "productionHomeMargin": 6.979,
+      "productionSpread": "Los Angeles Rams -7.2",
+      "productionHomeMargin": 7.173,
       "modelEdge": 0.021,
       "stage": "no-signal",
       "priority": "Low",
       "marketSource": "ESPN DraftKings",
       "marketObservedAt": "2026-09-20T06:28:36.628Z",
       "eventState": "scheduled",
-      "validatedStructuralSpread": "Los Angeles Rams -6.9",
-      "structuralHomeMargin": 6.894,
+      "validatedStructuralSpread": "Los Angeles Rams -7.9",
+      "structuralHomeMargin": 7.865,
       "productionTotal": 47.5,
-      "structuralEdge": 0.106,
-      "structuralLean": "NYG",
+      "structuralEdge": 0.865,
+      "structuralLean": "LAR",
       "modelCalculatedAt": "2026-09-20T06:28:36.857Z",
-      "modelVersion": "NFL-v1.1 frozen 90/10 live blend + 80/20 market/structural",
+      "modelVersion": "NFL-v1.2 advanced process + capped motion-aware matchup",
       "modelInputs": {
         "preseasonWeight": 0.9,
         "liveWeight": 0.1,
@@ -578,8 +983,35 @@
         "awayLive": 8,
         "homeLive": -20,
         "homeField": 1,
-        "marketHomeMargin": 7
-      }
+        "marketHomeMargin": 7,
+        "advancedProcess": {
+          "throughWeek": 1,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 1.581,
+          "homeProcessRatingPoints": -3.306,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": 0.925
+        },
+        "motionMatchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0.25,
+          "structuralAdjustment": 0.046,
+          "earlySample": true
+        }
+      },
+      "baseStructuralHomeMargin": 6.894,
+      "advancedProcessAdjustment": 0.925,
+      "motionMatchupAdjustment": 0.046
     }
   ],
   "runtimeRefresh": {
@@ -599,5 +1031,14 @@
     },
     "coefficientsChanged": false,
     "note": "Wednesday selected-week rebuild applied frozen coefficients. Prior-week results update live state; no retrospective retuning."
+  },
+  "methodologyVersion": "1.2-advanced-process-motion-aware",
+  "advancedProcessRuntime": {
+    "status": "ACTIVE",
+    "throughWeek": 1,
+    "teamCoverage": 32,
+    "processShareOfLiveLayer": 0.4,
+    "motionPointCap": 0.25,
+    "leakageRule": "Target Week 2 uses Weeks 1-1 only"
   }
 }
