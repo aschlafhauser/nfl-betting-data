@@ -203,6 +203,10 @@ def main():
             "netPressureRate": n(defense["pressureRate"]) - n(offense["pressureRateAllowed"]),
             "netSituationalRate": mean([n(offense["thirdDownRatePbp"]) - n(defense["thirdDownRateAllowedPbp"]), n(offense["redZoneSuccessRate"]) - n(defense["redZoneSuccessRateAllowed"])]) or 0.0,
         }
+        # The raw ESPN response is normalized above and is not a portal/model input.
+        # Dropping it keeps the browser-facing JSON compact and avoids transport
+        # compression issues observed with the much larger redundant payload.
+        t.pop("espnStatistics", None)
     zs = {k: zscores(rows, k) for k in COMPOSITE}
     for t in rows:
         z = sum(w * zs[k][t["abbr"]] for k, w in COMPOSITE.items())
@@ -242,7 +246,10 @@ def main():
         x["model"] = {**x.get("model", {}), "fair_spread_display": g.get("productionSpread"), "fair_spread": g.get("productionSpread"), "fair_spread_home_margin": fair, "base_structural_home_margin": g.get("baseStructuralHomeMargin"), "advanced_process_adjustment": g.get("advancedProcessAdjustment"), "motion_matchup_adjustment": g.get("motionMatchupAdjustment"), "structural_home_margin": g.get("structuralHomeMargin"), "structural_fair": g.get("validatedStructuralSpread"), "structural_edge": g.get("structuralEdge"), "executable_edge": None if edge is None else round(edge, 3), "edge_side": g.get("homeAbbr") if edge and edge > 0 else g.get("awayAbbr") if edge and edge < 0 else "NONE", "model_version": g.get("modelVersion"), "advanced_process": g.get("modelInputs", {}).get("advancedProcess"), "motion_matchup": g.get("modelInputs", {}).get("motionMatchup"), "edge_reconciled_at": now}
     legacy.update({"generated_at": now, "model_methodology_version": "1.2-advanced-process-motion-aware", "advanced_process_runtime": board["advancedProcessRuntime"]})
     audit = {"season": stats.get("season"), "week": week, "verifiedAt": now, "status": "PASS" if len(rows) == 32 and all(t.get("process", {}).get("ratingPoints") is not None for t in rows) else "FAIL", "teamCoverage": len(rows), "throughWeek": through, "requiredMetricFamilies": list(COMPOSITE), "motionCoverage": sum(1 for t in rows if t.get("offense", {}).get("motionRate") is not None), "modelIntegration": {"processShareOfLiveLayer": .40, "motionPointCap": .25, "productionStructuralWeight": .20}, "leakageRule": f"Target Week {week} uses only completed plays through Week {through}."}
-    save("live-team-stats.json", stats); save("weekly-board.json", board); save("nfl-weekly-board.json", legacy); save(f"advanced-process-integrity-{stats.get('season')}-w{week}.json", audit)
+    # This file is fetched directly by the browser; compact serialization avoids
+    # unnecessary transfer size while preserving the identical JSON contract.
+    (DATA / "live-team-stats.json").write_text(json.dumps(stats, separators=(",", ":")) + "\n")
+    save("weekly-board.json", board); save("nfl-weekly-board.json", legacy); save(f"advanced-process-integrity-{stats.get('season')}-w{week}.json", audit)
     print(f"Advanced process runtime: teams={len(rows)} throughWeek={through} motion={audit['motionCoverage']} status={audit['status']}")
 
 
