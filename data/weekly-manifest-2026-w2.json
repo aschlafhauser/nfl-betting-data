@@ -2,7 +2,7 @@
   "version": "NFL-WEEKLY-MANIFEST-v3",
   "season": 2026,
   "week": 2,
-  "updatedAt": "2026-09-21T01:16:39.424Z",
+  "updatedAt": "2026-09-21T06:34:53.796Z",
   "status": "FAIL",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-09-21.json",
@@ -36,34 +36,34 @@
     "statisticalDisplay": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-09-21T01:16:32.925Z",
+      "verifiedAt": "2026-09-21T06:34:47.679Z",
       "artifact": "data/statistical-display-integrity-2026-w2.json",
       "note": "Current selected-week statistical display source refreshed for 32/32 teams using completed Week 1 results plus ESPN team statistics. Missing advanced fields are not inferred."
     },
     "marketDerivedIntegrity": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-09-21T01:16:32.925Z",
+      "verifiedAt": "2026-09-21T06:34:47.679Z",
       "artifact": "data/market-derived-integrity-2026-w2.json",
       "note": "All 16 current spread-derived production fairs independently reconciled as 80% market + 20% frozen structural line with calculation timestamps at/after market dependency."
     },
     "currentWeekCompleteness": {
       "status": "FAIL",
       "blocking": true,
-      "unplayedGames": 2,
-      "freshMarketGames": 2,
-      "calculationFreshGames": 2,
+      "unplayedGames": 1,
+      "freshMarketGames": 1,
+      "calculationFreshGames": 1,
       "moneylineAvailableGames": 0,
-      "availabilityCheckpointDue": 2,
-      "availabilityCheckpointComplete": 2,
-      "weatherCheckpointDue": 2,
+      "availabilityCheckpointDue": 1,
+      "availabilityCheckpointComplete": 1,
+      "weatherCheckpointDue": 1,
       "weatherCheckpointComplete": 0,
       "upsetLabVerified": true,
       "issues": [
-        "weather review due 0/2"
+        "weather review due 0/1"
       ],
       "warnings": [
-        "exact moneyline available for 0/2; missing prices remain PRICE_PENDING and are never inferred"
+        "exact moneyline available for 0/1; missing prices remain PRICE_PENDING and are never inferred"
       ],
       "note": "Wednesday certification requires fresh spread/total, selected-week model calculations, universal Deep Dives and upset research. Exact ML, final injury designations and weather become blocking only when their execution checkpoints are due; missing values are never inferred."
     },
@@ -105,7 +105,7 @@
     "timeLimitedOverlays": {
       "status": "IN_PROGRESS",
       "items": [
-        "exact moneyline available for 0/2; missing prices remain PRICE_PENDING and are never inferred"
+        "exact moneyline available for 0/1; missing prices remain PRICE_PENDING and are never inferred"
       ]
     }
   },
@@ -113,6 +113,6 @@
     "CURRENTWEEKCOMPLETENESS_INCOMPLETE"
   ],
   "historicalWarnings": [
-    "exact moneyline available for 0/2; missing prices remain PRICE_PENDING and are never inferred"
+    "exact moneyline available for 0/1; missing prices remain PRICE_PENDING and are never inferred"
   ]
 }
