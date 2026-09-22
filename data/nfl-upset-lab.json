@@ -1,57 +1,15 @@
 {
   "season": 2026,
   "week": 3,
-  "generated_at": "2026-09-22T01:40:49.579Z",
+  "generated_at": "2026-09-22T07:48:39.420Z",
   "method": "Wednesday spread-based upset screen plus exact-price governance",
   "coverage": {
     "all_current_threshold_candidates_represented": true,
     "selected_week_games": 16,
-    "spread_screen_candidates": 6,
+    "spread_screen_candidates": 5,
     "price_policy": "Exact moneylines never inferred from spreads."
   },
   "candidates": [
-    {
-      "game_id": "2026-W3-ATL-GB",
-      "team": "ATL",
-      "moneyline": null,
-      "eligible": false,
-      "status": "PRICE_PENDING",
-      "spread": "Green Bay Packers -6.5",
-      "structuralFair": "Green Bay Packers -6.9",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Atlanta Falcons is 6.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Frozen structural lean GB; structural fair Green Bay Packers -6.9."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Preseason prior -2.68 vs opponent 0.10."
-        },
-        {
-          "name": "recent-form",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Prior-week scoring margin -31."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
-    },
     {
       "game_id": "2026-W3-LAC-BUF",
       "team": "LAC",
@@ -265,48 +223,6 @@
   ],
   "near_threshold_watch": [],
   "price_pending": [
-    {
-      "game_id": "2026-W3-ATL-GB",
-      "team": "ATL",
-      "moneyline": null,
-      "eligible": false,
-      "status": "PRICE_PENDING",
-      "spread": "Green Bay Packers -6.5",
-      "structuralFair": "Green Bay Packers -6.9",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Atlanta Falcons is 6.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Frozen structural lean GB; structural fair Green Bay Packers -6.9."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Preseason prior -2.68 vs opponent 0.10."
-        },
-        {
-          "name": "recent-form",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Prior-week scoring margin -31."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
-    },
     {
       "game_id": "2026-W3-LAC-BUF",
       "team": "LAC",
