@@ -1,33 +1,33 @@
 {
   "season": 2026,
-  "week": 2,
-  "generatedAt": "2026-09-21T23:23:51.009Z",
+  "week": 3,
+  "generatedAt": "2026-09-22T01:40:49.579Z",
   "status": "COMPLETE",
   "gameCount": 16,
   "dossiers": [
     {
-      "canonicalGameId": "2026-W2-DET-BUF",
-      "matchup": "Detroit Lions at Buffalo Bills",
+      "canonicalGameId": "2026-W3-ATL-GB",
+      "matchup": "Atlanta Falcons at Green Bay Packers",
       "status": "COMPLETE",
       "informationQuality": "SOURCE-LIMITED-EXPERT",
       "evidenceCount": 6,
       "market": {
-        "spread": "Buffalo Bills -5.5",
-        "total": 54.5,
+        "spread": "Green Bay Packers -6.5",
+        "total": 44.5,
         "moneyline": null,
-        "observedAt": "2026-09-17T21:32:20.865Z"
+        "observedAt": "2026-09-22T01:40:49.401Z"
       },
       "model": {
-        "spread": "Buffalo Bills -4.9",
-        "homeMargin": 4.943,
-        "structural": "Buffalo Bills -2.7",
-        "structuralEdge": 2.786,
-        "total": 54.5
+        "spread": "Green Bay Packers -6.6",
+        "homeMargin": 6.58,
+        "structural": "Green Bay Packers -6.9",
+        "structuralEdge": 0.402,
+        "total": 44.5
       },
       "mechanisms": [
-        "Frozen v1.1 structural fair: Buffalo Bills -2.7; production fair: Buffalo Bills -4.9; current market: Buffalo Bills -5.5.",
-        "Prior-week live state incorporated at 10%: Detroit Lions margin 1, Buffalo Bills margin 5.",
-        "Preseason priors remain 90%: Detroit Lions 1.54, Buffalo Bills 3.00.",
+        "Frozen v1.1 structural fair: Green Bay Packers -6.9; production fair: Green Bay Packers -6.6; current market: Green Bay Packers -6.5.",
+        "Prior-week live state incorporated at 10%: Atlanta Falcons margin -31, Green Bay Packers margin 3.",
+        "Preseason priors remain 90%: Atlanta Falcons -2.68, Green Bay Packers 0.10.",
         "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
       ],
       "invalidators": [
@@ -39,28 +39,127 @@
       "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
     },
     {
-      "canonicalGameId": "2026-W2-CAR-ATL",
-      "matchup": "Carolina Panthers at Atlanta Falcons",
+      "canonicalGameId": "2026-W3-LAC-BUF",
+      "matchup": "Los Angeles Chargers at Buffalo Bills",
+      "status": "COMPLETE",
+      "informationQuality": "SOURCE-LIMITED-EXPERT",
+      "evidenceCount": 6,
+      "market": {
+        "spread": "Buffalo Bills -7",
+        "total": 50.5,
+        "moneyline": null,
+        "observedAt": "2026-09-22T01:40:49.401Z"
+      },
+      "model": {
+        "spread": "Buffalo Bills -6.5",
+        "homeMargin": 6.514,
+        "structural": "Buffalo Bills -4.6",
+        "structuralEdge": 2.432,
+        "total": 50.5
+      },
+      "mechanisms": [
+        "Frozen v1.1 structural fair: Buffalo Bills -4.6; production fair: Buffalo Bills -6.5; current market: Buffalo Bills -7.",
+        "Prior-week live state incorporated at 10%: Los Angeles Chargers margin -12, Buffalo Bills margin 10.",
+        "Preseason priors remain 90%: Los Angeles Chargers 1.48, Buffalo Bills 3.00.",
+        "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
+      ],
+      "invalidators": [
+        "Late QB/injury/availability change",
+        "Meaningful market move through key number",
+        "Current expert or source evidence contradicts the frozen structural thesis"
+      ],
+      "expertRecordCount": 0,
+      "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
+    },
+    {
+      "canonicalGameId": "2026-W3-CAR-CLE",
+      "matchup": "Carolina Panthers at Cleveland Browns",
       "status": "COMPLETE",
       "informationQuality": "SOURCE-LIMITED-EXPERT",
       "evidenceCount": 6,
       "market": {
         "spread": "Carolina Panthers -2.5",
-        "total": 43.5,
+        "total": 42.5,
         "moneyline": null,
-        "observedAt": "2026-09-20T16:53:52.843Z"
+        "observedAt": "2026-09-22T01:40:49.401Z"
       },
       "model": {
-        "spread": "Carolina Panthers -1.4",
-        "homeMargin": -1.414,
-        "structural": "Atlanta Falcons -2.9",
-        "structuralEdge": 5.432,
+        "spread": "Carolina Panthers -2.8",
+        "homeMargin": -2.75,
+        "structural": "Carolina Panthers -3.8",
+        "structuralEdge": 1.252,
+        "total": 42.5
+      },
+      "mechanisms": [
+        "Frozen v1.1 structural fair: Carolina Panthers -3.8; production fair: Carolina Panthers -2.8; current market: Carolina Panthers -2.5.",
+        "Prior-week live state incorporated at 10%: Carolina Panthers margin 31, Cleveland Browns margin 4.",
+        "Preseason priors remain 90%: Carolina Panthers -3.16, Cleveland Browns -5.44.",
+        "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
+      ],
+      "invalidators": [
+        "Late QB/injury/availability change",
+        "Meaningful market move through key number",
+        "Current expert or source evidence contradicts the frozen structural thesis"
+      ],
+      "expertRecordCount": 0,
+      "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
+    },
+    {
+      "canonicalGameId": "2026-W3-NYJ-DET",
+      "matchup": "New York Jets at Detroit Lions",
+      "status": "COMPLETE",
+      "informationQuality": "SOURCE-LIMITED-EXPERT",
+      "evidenceCount": 6,
+      "market": {
+        "spread": "Detroit Lions -6.5",
+        "total": 48.5,
+        "moneyline": null,
+        "observedAt": "2026-09-22T01:40:49.401Z"
+      },
+      "model": {
+        "spread": "Detroit Lions -6.7",
+        "homeMargin": 6.707,
+        "structural": "Detroit Lions -7.5",
+        "structuralEdge": 1.036,
+        "total": 48.5
+      },
+      "mechanisms": [
+        "Frozen v1.1 structural fair: Detroit Lions -7.5; production fair: Detroit Lions -6.7; current market: Detroit Lions -6.5.",
+        "Prior-week live state incorporated at 10%: New York Jets margin -3, Detroit Lions margin -10.",
+        "Preseason priors remain 90%: New York Jets -6.50, Detroit Lions 1.54.",
+        "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
+      ],
+      "invalidators": [
+        "Late QB/injury/availability change",
+        "Meaningful market move through key number",
+        "Current expert or source evidence contradicts the frozen structural thesis"
+      ],
+      "expertRecordCount": 0,
+      "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
+    },
+    {
+      "canonicalGameId": "2026-W3-HOU-IND",
+      "matchup": "Houston Texans at Indianapolis Colts",
+      "status": "COMPLETE",
+      "informationQuality": "SOURCE-LIMITED-EXPERT",
+      "evidenceCount": 6,
+      "market": {
+        "spread": "Houston Texans -2.5",
+        "total": 43.5,
+        "moneyline": null,
+        "observedAt": "2026-09-22T01:40:49.401Z"
+      },
+      "model": {
+        "spread": "Houston Texans -2.1",
+        "homeMargin": -2.149,
+        "structural": "Houston Texans -0.7",
+        "structuralEdge": 1.756,
         "total": 43.5
       },
       "mechanisms": [
-        "Frozen v1.1 structural fair: Atlanta Falcons -2.9; production fair: Carolina Panthers -1.4; current market: Carolina Panthers -2.5.",
-        "Prior-week live state incorporated at 10%: Carolina Panthers margin -22, Atlanta Falcons margin -7.",
-        "Preseason priors remain 90%: Carolina Panthers -3.16, Atlanta Falcons -2.68.",
+        "Frozen v1.1 structural fair: Houston Texans -0.7; production fair: Houston Texans -2.1; current market: Houston Texans -2.5.",
+        "Prior-week live state incorporated at 10%: Houston Texans margin -14, Indianapolis Colts margin -3.",
+        "Preseason priors remain 90%: Houston Texans 5.66, Indianapolis Colts 2.50.",
         "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
       ],
       "invalidators": [
@@ -72,193 +171,28 @@
       "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
     },
     {
-      "canonicalGameId": "2026-W2-MIN-CHI",
-      "matchup": "Minnesota Vikings at Chicago Bears",
+      "canonicalGameId": "2026-W3-KC-MIA",
+      "matchup": "Kansas City Chiefs at Miami Dolphins",
       "status": "COMPLETE",
       "informationQuality": "SOURCE-LIMITED-EXPERT",
       "evidenceCount": 6,
       "market": {
-        "spread": "Chicago Bears -4.5",
-        "total": 46.5,
-        "moneyline": null,
-        "observedAt": "2026-09-20T16:53:52.843Z"
-      },
-      "model": {
-        "spread": "Chicago Bears -3.9",
-        "homeMargin": 3.914,
-        "structural": "Chicago Bears -1.6",
-        "structuralEdge": 2.928,
-        "total": 46.5
-      },
-      "mechanisms": [
-        "Frozen v1.1 structural fair: Chicago Bears -1.6; production fair: Chicago Bears -3.9; current market: Chicago Bears -4.5.",
-        "Prior-week live state incorporated at 10%: Minnesota Vikings margin 17, Chicago Bears margin 22.",
-        "Preseason priors remain 90%: Minnesota Vikings 0.72, Chicago Bears 0.80.",
-        "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
-      ],
-      "invalidators": [
-        "Late QB/injury/availability change",
-        "Meaningful market move through key number",
-        "Current expert or source evidence contradicts the frozen structural thesis"
-      ],
-      "expertRecordCount": 0,
-      "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
-    },
-    {
-      "canonicalGameId": "2026-W2-PHI-TEN",
-      "matchup": "Philadelphia Eagles at Tennessee Titans",
-      "status": "COMPLETE",
-      "informationQuality": "SOURCE-LIMITED-EXPERT",
-      "evidenceCount": 6,
-      "market": {
-        "spread": "Philadelphia Eagles -7",
-        "total": 39.5,
-        "moneyline": null,
-        "observedAt": "2026-09-20T16:53:52.843Z"
-      },
-      "model": {
-        "spread": "Philadelphia Eagles -6.7",
-        "homeMargin": -6.686,
-        "structural": "Philadelphia Eagles -5.4",
-        "structuralEdge": 1.568,
-        "total": 39.5
-      },
-      "mechanisms": [
-        "Frozen v1.1 structural fair: Philadelphia Eagles -5.4; production fair: Philadelphia Eagles -6.7; current market: Philadelphia Eagles -7.",
-        "Prior-week live state incorporated at 10%: Philadelphia Eagles margin 2, Tennessee Titans margin -13.",
-        "Preseason priors remain 90%: Philadelphia Eagles 2.18, Tennessee Titans -3.30.",
-        "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
-      ],
-      "invalidators": [
-        "Late QB/injury/availability change",
-        "Meaningful market move through key number",
-        "Current expert or source evidence contradicts the frozen structural thesis"
-      ],
-      "expertRecordCount": 0,
-      "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
-    },
-    {
-      "canonicalGameId": "2026-W2-PIT-NE",
-      "matchup": "Pittsburgh Steelers at New England Patriots",
-      "status": "COMPLETE",
-      "informationQuality": "SOURCE-LIMITED-EXPERT",
-      "evidenceCount": 6,
-      "market": {
-        "spread": "New England Patriots -4.5",
-        "total": 41.5,
-        "moneyline": null,
-        "observedAt": "2026-09-20T16:53:52.843Z"
-      },
-      "model": {
-        "spread": "New England Patriots -4.2",
-        "homeMargin": 4.219,
-        "structural": "New England Patriots -3.1",
-        "structuralEdge": 1.404,
-        "total": 41.5
-      },
-      "mechanisms": [
-        "Frozen v1.1 structural fair: New England Patriots -3.1; production fair: New England Patriots -4.2; current market: New England Patriots -4.5.",
-        "Prior-week live state incorporated at 10%: Pittsburgh Steelers margin 7, New England Patriots margin -3.",
-        "Preseason priors remain 90%: Pittsburgh Steelers 0.86, New England Patriots 4.30.",
-        "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
-      ],
-      "invalidators": [
-        "Late QB/injury/availability change",
-        "Meaningful market move through key number",
-        "Current expert or source evidence contradicts the frozen structural thesis"
-      ],
-      "expertRecordCount": 0,
-      "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
-    },
-    {
-      "canonicalGameId": "2026-W2-GB-NYJ",
-      "matchup": "Green Bay Packers at New York Jets",
-      "status": "COMPLETE",
-      "informationQuality": "SOURCE-LIMITED-EXPERT",
-      "evidenceCount": 6,
-      "market": {
-        "spread": "Green Bay Packers -3.5",
-        "total": 44.5,
-        "moneyline": null,
-        "observedAt": "2026-09-20T16:53:52.843Z"
-      },
-      "model": {
-        "spread": "Green Bay Packers -3.2",
-        "homeMargin": -3.188,
-        "structural": "Green Bay Packers -1.9",
-        "structuralEdge": 1.56,
-        "total": 44.5
-      },
-      "mechanisms": [
-        "Frozen v1.1 structural fair: Green Bay Packers -1.9; production fair: Green Bay Packers -3.2; current market: Green Bay Packers -3.5.",
-        "Prior-week live state incorporated at 10%: Green Bay Packers margin -17, New York Jets margin 13.",
-        "Preseason priors remain 90%: Green Bay Packers 0.10, New York Jets -6.50.",
-        "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
-      ],
-      "invalidators": [
-        "Late QB/injury/availability change",
-        "Meaningful market move through key number",
-        "Current expert or source evidence contradicts the frozen structural thesis"
-      ],
-      "expertRecordCount": 0,
-      "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
-    },
-    {
-      "canonicalGameId": "2026-W2-CLE-TB",
-      "matchup": "Cleveland Browns at Tampa Bay Buccaneers",
-      "status": "COMPLETE",
-      "informationQuality": "SOURCE-LIMITED-EXPERT",
-      "evidenceCount": 6,
-      "market": {
-        "spread": "Tampa Bay Buccaneers -8.5",
-        "total": 41.5,
-        "moneyline": null,
-        "observedAt": "2026-09-20T16:53:52.843Z"
-      },
-      "model": {
-        "spread": "Tampa Bay Buccaneers -8.3",
-        "homeMargin": 8.31,
-        "structural": "Tampa Bay Buccaneers -7.6",
-        "structuralEdge": 0.948,
-        "total": 41.5
-      },
-      "mechanisms": [
-        "Frozen v1.1 structural fair: Tampa Bay Buccaneers -7.6; production fair: Tampa Bay Buccaneers -8.3; current market: Tampa Bay Buccaneers -8.5.",
-        "Prior-week live state incorporated at 10%: Cleveland Browns margin -24, Tampa Bay Buccaneers margin -6.",
-        "Preseason priors remain 90%: Cleveland Browns -5.44, Tampa Bay Buccaneers -0.16.",
-        "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
-      ],
-      "invalidators": [
-        "Late QB/injury/availability change",
-        "Meaningful market move through key number",
-        "Current expert or source evidence contradicts the frozen structural thesis"
-      ],
-      "expertRecordCount": 0,
-      "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
-    },
-    {
-      "canonicalGameId": "2026-W2-NO-BAL",
-      "matchup": "New Orleans Saints at Baltimore Ravens",
-      "status": "COMPLETE",
-      "informationQuality": "SOURCE-LIMITED-EXPERT",
-      "evidenceCount": 6,
-      "market": {
-        "spread": "Baltimore Ravens -8.5",
+        "spread": "Kansas City Chiefs -11.5",
         "total": 45.5,
         "moneyline": null,
-        "observedAt": "2026-09-20T16:53:52.843Z"
+        "observedAt": "2026-09-22T01:40:49.401Z"
       },
       "model": {
-        "spread": "Baltimore Ravens -8.1",
-        "homeMargin": 8.118,
-        "structural": "Baltimore Ravens -6.6",
-        "structuralEdge": 1.91,
+        "spread": "Kansas City Chiefs -10.8",
+        "homeMargin": -10.836,
+        "structural": "Kansas City Chiefs -8.2",
+        "structuralEdge": 3.322,
         "total": 45.5
       },
       "mechanisms": [
-        "Frozen v1.1 structural fair: Baltimore Ravens -6.6; production fair: Baltimore Ravens -8.1; current market: Baltimore Ravens -8.5.",
-        "Prior-week live state incorporated at 10%: New Orleans Saints margin -1, Baltimore Ravens margin 18.",
-        "Preseason priors remain 90%: New Orleans Saints -1.94, Baltimore Ravens 2.16.",
+        "Frozen v1.1 structural fair: Kansas City Chiefs -8.2; production fair: Kansas City Chiefs -10.8; current market: Kansas City Chiefs -11.5.",
+        "Prior-week live state incorporated at 10%: Kansas City Chiefs margin 3, Miami Dolphins margin -22.",
+        "Preseason priors remain 90%: Kansas City Chiefs 2.64, Miami Dolphins -4.78.",
         "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
       ],
       "invalidators": [
@@ -270,28 +204,28 @@
       "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
     },
     {
-      "canonicalGameId": "2026-W2-CIN-HOU",
-      "matchup": "Cincinnati Bengals at Houston Texans",
+      "canonicalGameId": "2026-W3-TEN-NYG",
+      "matchup": "Tennessee Titans at New York Giants",
       "status": "COMPLETE",
       "informationQuality": "SOURCE-LIMITED-EXPERT",
       "evidenceCount": 6,
       "market": {
-        "spread": "Houston Texans -3",
-        "total": 45.5,
+        "spread": "New York Giants -6",
+        "total": 42.5,
         "moneyline": null,
-        "observedAt": "2026-09-20T16:53:52.843Z"
+        "observedAt": "2026-09-22T01:40:49.401Z"
       },
       "model": {
-        "spread": "Houston Texans -3.7",
-        "homeMargin": 3.68,
-        "structural": "Houston Texans -6.4",
-        "structuralEdge": 3.398,
-        "total": 45.5
+        "spread": "New York Giants -5.2",
+        "homeMargin": 5.155,
+        "structural": "New York Giants -1.8",
+        "structuralEdge": 4.224,
+        "total": 42.5
       },
       "mechanisms": [
-        "Frozen v1.1 structural fair: Houston Texans -6.4; production fair: Houston Texans -3.7; current market: Houston Texans -3.",
-        "Prior-week live state incorporated at 10%: Cincinnati Bengals margin 6, Houston Texans margin -5.",
-        "Preseason priors remain 90%: Cincinnati Bengals -1.56, Houston Texans 5.66.",
+        "Frozen v1.1 structural fair: New York Giants -1.8; production fair: New York Giants -5.2; current market: New York Giants -6.",
+        "Prior-week live state incorporated at 10%: Tennessee Titans margin -4, New York Giants margin -11.",
+        "Preseason priors remain 90%: Tennessee Titans -3.30, New York Giants -1.66.",
         "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
       ],
       "invalidators": [
@@ -303,28 +237,28 @@
       "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
     },
     {
-      "canonicalGameId": "2026-W2-JAX-DEN",
-      "matchup": "Jacksonville Jaguars at Denver Broncos",
+      "canonicalGameId": "2026-W3-CIN-PIT",
+      "matchup": "Cincinnati Bengals at Pittsburgh Steelers",
       "status": "COMPLETE",
       "informationQuality": "SOURCE-LIMITED-EXPERT",
       "evidenceCount": 6,
       "market": {
-        "spread": "Denver Broncos -2.5",
-        "total": 45.5,
+        "spread": "Cincinnati Bengals -3.5",
+        "total": 42.5,
         "moneyline": null,
-        "observedAt": "2026-09-20T19:33:58.732Z"
+        "observedAt": "2026-09-22T01:40:49.401Z"
       },
       "model": {
-        "spread": "Denver Broncos -0.8",
-        "homeMargin": 0.846,
-        "structural": "Jacksonville Jaguars -5.8",
-        "structuralEdge": 8.268,
-        "total": 45.5
+        "spread": "Cincinnati Bengals -2.8",
+        "homeMargin": -2.784,
+        "structural": "Pittsburgh Steelers -0.1",
+        "structuralEdge": 3.578,
+        "total": 42.5
       },
       "mechanisms": [
-        "Frozen v1.1 structural fair: Jacksonville Jaguars -5.8; production fair: Denver Broncos -0.8; current market: Denver Broncos -2.5.",
-        "Prior-week live state incorporated at 10%: Jacksonville Jaguars margin 24, Denver Broncos margin -21.",
-        "Preseason priors remain 90%: Jacksonville Jaguars 5.42, Denver Broncos 2.90.",
+        "Frozen v1.1 structural fair: Pittsburgh Steelers -0.1; production fair: Cincinnati Bengals -2.8; current market: Cincinnati Bengals -3.5.",
+        "Prior-week live state incorporated at 10%: Cincinnati Bengals margin 14, Pittsburgh Steelers margin -17.",
+        "Preseason priors remain 90%: Cincinnati Bengals -1.56, Pittsburgh Steelers 0.86.",
         "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
       ],
       "invalidators": [
@@ -336,94 +270,28 @@
       "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
     },
     {
-      "canonicalGameId": "2026-W2-LV-LAC",
-      "matchup": "Las Vegas Raiders at Los Angeles Chargers",
+      "canonicalGameId": "2026-W3-SEA-WSH",
+      "matchup": "Seattle Seahawks at Washington Commanders",
       "status": "COMPLETE",
       "informationQuality": "SOURCE-LIMITED-EXPERT",
       "evidenceCount": 6,
       "market": {
-        "spread": "Los Angeles Chargers -6.5",
-        "total": 43.5,
-        "moneyline": null,
-        "observedAt": "2026-09-20T19:33:58.732Z"
-      },
-      "model": {
-        "spread": "Los Angeles Chargers -5.9",
-        "homeMargin": 5.92,
-        "structural": "Los Angeles Chargers -3.6",
-        "structuralEdge": 2.898,
-        "total": 43.5
-      },
-      "mechanisms": [
-        "Frozen v1.1 structural fair: Los Angeles Chargers -3.6; production fair: Los Angeles Chargers -5.9; current market: Los Angeles Chargers -6.5.",
-        "Prior-week live state incorporated at 10%: Las Vegas Raiders margin 14, Los Angeles Chargers margin -12.",
-        "Preseason priors remain 90%: Las Vegas Raiders -4.30, Los Angeles Chargers 1.48.",
-        "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
-      ],
-      "invalidators": [
-        "Late QB/injury/availability change",
-        "Meaningful market move through key number",
-        "Current expert or source evidence contradicts the frozen structural thesis"
-      ],
-      "expertRecordCount": 0,
-      "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
-    },
-    {
-      "canonicalGameId": "2026-W2-WSH-DAL",
-      "matchup": "Washington Commanders at Dallas Cowboys",
-      "status": "COMPLETE",
-      "informationQuality": "SOURCE-LIMITED-EXPERT",
-      "evidenceCount": 6,
-      "market": {
-        "spread": "Dallas Cowboys -3.5",
-        "total": 51.5,
-        "moneyline": null,
-        "observedAt": "2026-09-20T19:33:58.732Z"
-      },
-      "model": {
-        "spread": "Dallas Cowboys -3.3",
-        "homeMargin": 3.287,
-        "structural": "Dallas Cowboys -2.4",
-        "structuralEdge": 1.066,
-        "total": 51.5
-      },
-      "mechanisms": [
-        "Frozen v1.1 structural fair: Dallas Cowboys -2.4; production fair: Dallas Cowboys -3.3; current market: Dallas Cowboys -3.5.",
-        "Prior-week live state incorporated at 10%: Washington Commanders margin -2, Dallas Cowboys margin -8.",
-        "Preseason priors remain 90%: Washington Commanders -4.22, Dallas Cowboys -1.96.",
-        "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
-      ],
-      "invalidators": [
-        "Late QB/injury/availability change",
-        "Meaningful market move through key number",
-        "Current expert or source evidence contradicts the frozen structural thesis"
-      ],
-      "expertRecordCount": 0,
-      "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
-    },
-    {
-      "canonicalGameId": "2026-W2-SEA-ARI",
-      "matchup": "Seattle Seahawks at Arizona Cardinals",
-      "status": "COMPLETE",
-      "informationQuality": "SOURCE-LIMITED-EXPERT",
-      "evidenceCount": 6,
-      "market": {
-        "spread": "Seattle Seahawks -3.5",
+        "spread": "Seattle Seahawks -7",
         "total": 40.5,
         "moneyline": null,
-        "observedAt": "2026-09-20T19:33:58.732Z"
+        "observedAt": "2026-09-22T01:40:49.401Z"
       },
       "model": {
-        "spread": "Seattle Seahawks -4.2",
-        "homeMargin": -4.188,
-        "structural": "Seattle Seahawks -6.9",
-        "structuralEdge": 3.438,
+        "spread": "Seattle Seahawks -8.4",
+        "homeMargin": -8.362,
+        "structural": "Seattle Seahawks -13.8",
+        "structuralEdge": 6.81,
         "total": 40.5
       },
       "mechanisms": [
-        "Frozen v1.1 structural fair: Seattle Seahawks -6.9; production fair: Seattle Seahawks -4.2; current market: Seattle Seahawks -3.5.",
-        "Prior-week live state incorporated at 10%: Seattle Seahawks margin 3, Arizona Cardinals margin 12.",
-        "Preseason priors remain 90%: Seattle Seahawks 7.68, Arizona Cardinals -2.14.",
+        "Frozen v1.1 structural fair: Seattle Seahawks -13.8; production fair: Seattle Seahawks -8.4; current market: Seattle Seahawks -7.",
+        "Prior-week live state incorporated at 10%: Seattle Seahawks margin 24, Washington Commanders margin -17.",
+        "Preseason priors remain 90%: Seattle Seahawks 7.68, Washington Commanders -4.22.",
         "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
       ],
       "invalidators": [
@@ -435,28 +303,28 @@
       "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
     },
     {
-      "canonicalGameId": "2026-W2-MIA-SF",
-      "matchup": "Miami Dolphins at San Francisco 49ers",
+      "canonicalGameId": "2026-W3-NE-JAX",
+      "matchup": "New England Patriots at Jacksonville Jaguars",
       "status": "COMPLETE",
       "informationQuality": "SOURCE-LIMITED-EXPERT",
       "evidenceCount": 6,
       "market": {
-        "spread": "San Francisco 49ers -12.5",
-        "total": 44.5,
+        "spread": "Jacksonville Jaguars -3",
+        "total": 45.5,
         "moneyline": null,
-        "observedAt": "2026-09-20T19:33:58.732Z"
+        "observedAt": "2026-09-22T01:40:49.401Z"
       },
       "model": {
-        "spread": "San Francisco 49ers -12.4",
-        "homeMargin": 12.388,
-        "structural": "San Francisco 49ers -11.9",
-        "structuralEdge": 0.558,
-        "total": 44.5
+        "spread": "Jacksonville Jaguars -2.3",
+        "homeMargin": 2.322,
+        "structural": "New England Patriots -0.4",
+        "structuralEdge": 3.392,
+        "total": 45.5
       },
       "mechanisms": [
-        "Frozen v1.1 structural fair: San Francisco 49ers -11.9; production fair: San Francisco 49ers -12.4; current market: San Francisco 49ers -12.5.",
-        "Prior-week live state incorporated at 10%: Miami Dolphins margin -14, San Francisco 49ers margin 20.",
-        "Preseason priors remain 90%: Miami Dolphins -4.78, San Francisco 49ers 3.60.",
+        "Frozen v1.1 structural fair: New England Patriots -0.4; production fair: Jacksonville Jaguars -2.3; current market: Jacksonville Jaguars -3.",
+        "Prior-week live state incorporated at 10%: New England Patriots margin 17, Jacksonville Jaguars margin -7.",
+        "Preseason priors remain 90%: New England Patriots 4.30, Jacksonville Jaguars 5.42.",
         "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
       ],
       "invalidators": [
@@ -468,61 +336,193 @@
       "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
     },
     {
-      "canonicalGameId": "2026-W2-IND-KC",
-      "matchup": "Indianapolis Colts at Kansas City Chiefs",
+      "canonicalGameId": "2026-W3-ARI-SF",
+      "matchup": "Arizona Cardinals at San Francisco 49ers",
       "status": "COMPLETE",
       "informationQuality": "SOURCE-LIMITED-EXPERT",
       "evidenceCount": 6,
       "market": {
-        "spread": "Kansas City Chiefs -6",
-        "total": 46.5,
-        "moneyline": null,
-        "observedAt": "2026-09-20T22:34:03.566Z"
-      },
-      "model": {
-        "spread": "Kansas City Chiefs -5.8",
-        "homeMargin": 5.805,
-        "structural": "Kansas City Chiefs -5",
-        "structuralEdge": 0.974,
-        "total": 46.5
-      },
-      "mechanisms": [
-        "Frozen v1.1 structural fair: Kansas City Chiefs -5; production fair: Kansas City Chiefs -5.8; current market: Kansas City Chiefs -6.",
-        "Prior-week live state incorporated at 10%: Indianapolis Colts margin -18, Kansas City Chiefs margin 21.",
-        "Preseason priors remain 90%: Indianapolis Colts 2.50, Kansas City Chiefs 2.64.",
-        "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
-      ],
-      "invalidators": [
-        "Late QB/injury/availability change",
-        "Meaningful market move through key number",
-        "Current expert or source evidence contradicts the frozen structural thesis"
-      ],
-      "expertRecordCount": 0,
-      "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
-    },
-    {
-      "canonicalGameId": "2026-W2-NYG-LAR",
-      "matchup": "New York Giants at Los Angeles Rams",
-      "status": "COMPLETE",
-      "informationQuality": "SOURCE-LIMITED-EXPERT",
-      "evidenceCount": 6,
-      "market": {
-        "spread": "Los Angeles Rams -6.5",
+        "spread": "San Francisco 49ers -8.5",
         "total": 47.5,
         "moneyline": null,
-        "observedAt": "2026-09-21T23:23:50.782Z"
+        "observedAt": "2026-09-22T01:40:49.401Z"
       },
       "model": {
-        "spread": "Los Angeles Rams -6.6",
-        "homeMargin": 6.579,
-        "structural": "Los Angeles Rams -6.9",
-        "structuralEdge": 0.394,
+        "spread": "San Francisco 49ers -9",
+        "homeMargin": 8.953,
+        "structural": "San Francisco 49ers -10.8",
+        "structuralEdge": 2.266,
         "total": 47.5
       },
       "mechanisms": [
-        "Frozen v1.1 structural fair: Los Angeles Rams -6.9; production fair: Los Angeles Rams -6.6; current market: Los Angeles Rams -6.5.",
-        "Prior-week live state incorporated at 10%: New York Giants margin 8, Los Angeles Rams margin -20.",
-        "Preseason priors remain 90%: New York Giants -1.66, Los Angeles Rams 8.00.",
+        "Frozen v1.1 structural fair: San Francisco 49ers -10.8; production fair: San Francisco 49ers -9; current market: San Francisco 49ers -8.5.",
+        "Prior-week live state incorporated at 10%: Arizona Cardinals margin -24, San Francisco 49ers margin 22.",
+        "Preseason priors remain 90%: Arizona Cardinals -2.14, San Francisco 49ers 3.60.",
+        "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
+      ],
+      "invalidators": [
+        "Late QB/injury/availability change",
+        "Meaningful market move through key number",
+        "Current expert or source evidence contradicts the frozen structural thesis"
+      ],
+      "expertRecordCount": 0,
+      "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
+    },
+    {
+      "canonicalGameId": "2026-W3-MIN-TB",
+      "matchup": "Minnesota Vikings at Tampa Bay Buccaneers",
+      "status": "COMPLETE",
+      "informationQuality": "SOURCE-LIMITED-EXPERT",
+      "evidenceCount": 6,
+      "market": {
+        "spread": "Minnesota Vikings -1.5",
+        "total": 42.5,
+        "moneyline": null,
+        "observedAt": "2026-09-22T01:40:49.401Z"
+      },
+      "model": {
+        "spread": "Minnesota Vikings -1.4",
+        "homeMargin": -1.358,
+        "structural": "Minnesota Vikings -0.8",
+        "structuralEdge": 0.708,
+        "total": 42.5
+      },
+      "mechanisms": [
+        "Frozen v1.1 structural fair: Minnesota Vikings -0.8; production fair: Minnesota Vikings -1.4; current market: Minnesota Vikings -1.5.",
+        "Prior-week live state incorporated at 10%: Minnesota Vikings margin 6, Tampa Bay Buccaneers margin -4.",
+        "Preseason priors remain 90%: Minnesota Vikings 0.72, Tampa Bay Buccaneers -0.16.",
+        "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
+      ],
+      "invalidators": [
+        "Late QB/injury/availability change",
+        "Meaningful market move through key number",
+        "Current expert or source evidence contradicts the frozen structural thesis"
+      ],
+      "expertRecordCount": 0,
+      "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
+    },
+    {
+      "canonicalGameId": "2026-W3-BAL-DAL",
+      "matchup": "Baltimore Ravens at Dallas Cowboys",
+      "status": "COMPLETE",
+      "informationQuality": "SOURCE-LIMITED-EXPERT",
+      "evidenceCount": 6,
+      "market": {
+        "spread": "Baltimore Ravens -3",
+        "total": 52.5,
+        "moneyline": null,
+        "observedAt": "2026-09-22T01:40:49.401Z"
+      },
+      "model": {
+        "spread": "Baltimore Ravens -2.5",
+        "homeMargin": -2.462,
+        "structural": "Baltimore Ravens -0.3",
+        "structuralEdge": 2.692,
+        "total": 52.5
+      },
+      "mechanisms": [
+        "Frozen v1.1 structural fair: Baltimore Ravens -0.3; production fair: Baltimore Ravens -2.5; current market: Baltimore Ravens -3.",
+        "Prior-week live state incorporated at 10%: Baltimore Ravens margin -7, Dallas Cowboys margin 17.",
+        "Preseason priors remain 90%: Baltimore Ravens 2.16, Dallas Cowboys -1.96.",
+        "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
+      ],
+      "invalidators": [
+        "Late QB/injury/availability change",
+        "Meaningful market move through key number",
+        "Current expert or source evidence contradicts the frozen structural thesis"
+      ],
+      "expertRecordCount": 0,
+      "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
+    },
+    {
+      "canonicalGameId": "2026-W3-LV-NO",
+      "matchup": "Las Vegas Raiders at New Orleans Saints",
+      "status": "COMPLETE",
+      "informationQuality": "SOURCE-LIMITED-EXPERT",
+      "evidenceCount": 6,
+      "market": {
+        "spread": "New Orleans Saints -3",
+        "total": 43.5,
+        "moneyline": null,
+        "observedAt": "2026-09-22T01:40:49.401Z"
+      },
+      "model": {
+        "spread": "New Orleans Saints -2.9",
+        "homeMargin": 2.925,
+        "structural": "New Orleans Saints -2.6",
+        "structuralEdge": 0.376,
+        "total": 43.5
+      },
+      "mechanisms": [
+        "Frozen v1.1 structural fair: New Orleans Saints -2.6; production fair: New Orleans Saints -2.9; current market: New Orleans Saints -3.",
+        "Prior-week live state incorporated at 10%: Las Vegas Raiders margin 12, New Orleans Saints margin 7.",
+        "Preseason priors remain 90%: Las Vegas Raiders -4.30, New Orleans Saints -1.94.",
+        "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
+      ],
+      "invalidators": [
+        "Late QB/injury/availability change",
+        "Meaningful market move through key number",
+        "Current expert or source evidence contradicts the frozen structural thesis"
+      ],
+      "expertRecordCount": 0,
+      "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
+    },
+    {
+      "canonicalGameId": "2026-W3-LAR-DEN",
+      "matchup": "Los Angeles Rams at Denver Broncos",
+      "status": "COMPLETE",
+      "informationQuality": "SOURCE-LIMITED-EXPERT",
+      "evidenceCount": 6,
+      "market": {
+        "spread": "Los Angeles Rams -2.5",
+        "total": 45.5,
+        "moneyline": null,
+        "observedAt": "2026-09-22T01:40:49.401Z"
+      },
+      "model": {
+        "spread": "Los Angeles Rams -2.8",
+        "homeMargin": -2.798,
+        "structural": "Los Angeles Rams -4",
+        "structuralEdge": 1.49,
+        "total": 45.5
+      },
+      "mechanisms": [
+        "Frozen v1.1 structural fair: Los Angeles Rams -4; production fair: Los Angeles Rams -2.8; current market: Los Angeles Rams -2.5.",
+        "Prior-week live state incorporated at 10%: Los Angeles Rams margin 11, Denver Broncos margin 7.",
+        "Preseason priors remain 90%: Los Angeles Rams 8.00, Denver Broncos 2.90.",
+        "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
+      ],
+      "invalidators": [
+        "Late QB/injury/availability change",
+        "Meaningful market move through key number",
+        "Current expert or source evidence contradicts the frozen structural thesis"
+      ],
+      "expertRecordCount": 0,
+      "execution": "Research complete; no wager without exact executable book/line/juice and final availability review."
+    },
+    {
+      "canonicalGameId": "2026-W3-PHI-CHI",
+      "matchup": "Philadelphia Eagles at Chicago Bears",
+      "status": "COMPLETE",
+      "informationQuality": "SOURCE-LIMITED-EXPERT",
+      "evidenceCount": 6,
+      "market": {
+        "spread": "Philadelphia Eagles -3.5",
+        "total": 44.5,
+        "moneyline": null,
+        "observedAt": "2026-09-22T01:40:49.401Z"
+      },
+      "model": {
+        "spread": "Philadelphia Eagles -3",
+        "homeMargin": -3.048,
+        "structural": "Philadelphia Eagles -1.2",
+        "structuralEdge": 2.258,
+        "total": 44.5
+      },
+      "mechanisms": [
+        "Frozen v1.1 structural fair: Philadelphia Eagles -1.2; production fair: Philadelphia Eagles -3; current market: Philadelphia Eagles -3.5.",
+        "Prior-week live state incorporated at 10%: Philadelphia Eagles margin 4, Chicago Bears margin -6.",
+        "Preseason priors remain 90%: Philadelphia Eagles 2.18, Chicago Bears 0.80.",
         "0 governed current expert record(s) join this canonical game ID; expert analysis remains qualitative/no automatic points."
       ],
       "invalidators": [

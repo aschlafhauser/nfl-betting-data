@@ -1,7 +1,7 @@
 {
   "season": 2026,
-  "week": 2,
-  "updatedAt": "2026-09-21T23:23:55.098Z",
+  "week": 3,
+  "updatedAt": "2026-09-22T01:40:52.628Z",
   "status": "CURRENT-MOTION-RATE",
   "governance": "Research/display and Deep Dive confidence only. 0.0 automatic production fair-line points until incremental holdout validation demonstrates value beyond existing priors/current team stats/QB/market inputs.",
   "sources": {
@@ -9,14 +9,14 @@
       "primary": {
         "provider": "Sharp Football Analysis",
         "url": "https://www.sharpfootballanalysis.com/stats-nfl/nfl-offensive-tendencies-stats/amp/",
-        "retrievedAt": "2026-09-21T23:23:55.098Z",
+        "retrievedAt": "2026-09-22T01:40:52.628Z",
         "parsedTeams": 32,
         "error": null
       },
       "fallback": {
         "provider": "StatRankings",
         "url": "https://statrankings.com/nfl/advanced/teams/pace-playcalling/motion-rate",
-        "retrievedAt": "2026-09-21T23:23:55.098Z",
+        "retrievedAt": "2026-09-22T01:40:52.628Z",
         "parsedTeams": 0,
         "error": null
       }
@@ -35,72 +35,6 @@
   },
   "teams": [
     {
-      "team": "Detroit Lions",
-      "abbr": "DET",
-      "offense": {
-        "motionRate": 0.644,
-        "motionUsage": "AVERAGE",
-        "playActionRate": 0.192,
-        "airYardsPerAttempt": 6.1,
-        "shotgunRate": 0.35600000000000004,
-        "noHuddleRate": 0.013999999999999999,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "neutral",
-        "runProfile": "strong",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
-      "team": "Buffalo Bills",
-      "abbr": "BUF",
-      "offense": {
-        "motionRate": 0.519,
-        "motionUsage": "LOW",
-        "playActionRate": 0.25,
-        "airYardsPerAttempt": 11.5,
-        "shotgunRate": 0.48100000000000004,
-        "noHuddleRate": 0.019,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "weak",
-        "runProfile": "weak",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
-      "team": "Carolina Panthers",
-      "abbr": "CAR",
-      "offense": {
-        "motionRate": 0.613,
-        "motionUsage": "AVERAGE",
-        "playActionRate": 0.21,
-        "airYardsPerAttempt": 8.7,
-        "shotgunRate": 0.6940000000000001,
-        "noHuddleRate": 0.081,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "very-weak",
-        "runProfile": "very-weak",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
       "team": "Atlanta Falcons",
       "abbr": "ATL",
       "offense": {
@@ -118,139 +52,7 @@
         "numericEpaAvailable": false
       },
       "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
-      "team": "Minnesota Vikings",
-      "abbr": "MIN",
-      "offense": {
-        "motionRate": 0.607,
-        "motionUsage": "AVERAGE",
-        "playActionRate": 0.14800000000000002,
-        "airYardsPerAttempt": 7.7,
-        "shotgunRate": 0.45899999999999996,
-        "noHuddleRate": 0.066,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "weak",
-        "runProfile": "weak",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
-      "team": "Chicago Bears",
-      "abbr": "CHI",
-      "offense": {
-        "motionRate": 0.5,
-        "motionUsage": "LOW",
-        "playActionRate": 0.18600000000000003,
-        "airYardsPerAttempt": 9.6,
-        "shotgunRate": 0.47100000000000003,
-        "noHuddleRate": 0.057,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "weak",
-        "runProfile": "weak",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
-      "team": "Philadelphia Eagles",
-      "abbr": "PHI",
-      "offense": {
-        "motionRate": 0.623,
-        "motionUsage": "AVERAGE",
-        "playActionRate": 0.057,
-        "airYardsPerAttempt": 9.2,
-        "shotgunRate": 0.66,
-        "noHuddleRate": 0.151,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "strong",
-        "runProfile": "weak",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
-      "team": "Tennessee Titans",
-      "abbr": "TEN",
-      "offense": {
-        "motionRate": 0.429,
-        "motionUsage": "LOW",
-        "playActionRate": 0.204,
-        "airYardsPerAttempt": 4.4,
-        "shotgunRate": 0.857,
-        "noHuddleRate": 0.22399999999999998,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "weak",
-        "runProfile": "weak",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
-      "team": "Pittsburgh Steelers",
-      "abbr": "PIT",
-      "offense": {
-        "motionRate": 0.469,
-        "motionUsage": "LOW",
-        "playActionRate": 0.172,
-        "airYardsPerAttempt": 8.6,
-        "shotgunRate": 0.547,
-        "noHuddleRate": 0.063,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "very-strong",
-        "runProfile": "strong",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
-      "team": "New England Patriots",
-      "abbr": "NE",
-      "offense": {
-        "motionRate": 0.373,
-        "motionUsage": "LOW",
-        "playActionRate": 0.149,
-        "airYardsPerAttempt": 6.2,
-        "shotgunRate": 0.552,
-        "noHuddleRate": 0,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "neutral",
-        "runProfile": "strong",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
+        "throughWeek": 2,
         "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
       }
     },
@@ -272,227 +74,7 @@
         "numericEpaAvailable": false
       },
       "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
-      "team": "New York Jets",
-      "abbr": "NYJ",
-      "offense": {
-        "motionRate": 0.524,
-        "motionUsage": "LOW",
-        "playActionRate": 0.14300000000000002,
-        "airYardsPerAttempt": 6.4,
-        "shotgunRate": 0.429,
-        "noHuddleRate": 0.016,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "strong",
-        "runProfile": "weak",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
-      "team": "Cleveland Browns",
-      "abbr": "CLE",
-      "offense": {
-        "motionRate": 0.36700000000000005,
-        "motionUsage": "LOW",
-        "playActionRate": 0.204,
-        "airYardsPerAttempt": 9,
-        "shotgunRate": 0.6729999999999999,
-        "noHuddleRate": 0.040999999999999995,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "very-weak",
-        "runProfile": "strong",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
-      "team": "Tampa Bay Buccaneers",
-      "abbr": "TB",
-      "offense": {
-        "motionRate": 0.7120000000000001,
-        "motionUsage": "HIGH",
-        "playActionRate": 0.25,
-        "airYardsPerAttempt": 4.5,
-        "shotgunRate": 0.5579999999999999,
-        "noHuddleRate": 0.096,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "weak",
-        "runProfile": "weak",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
-      "team": "New Orleans Saints",
-      "abbr": "NO",
-      "offense": {
-        "motionRate": 0.605,
-        "motionUsage": "AVERAGE",
-        "playActionRate": 0.14,
-        "airYardsPerAttempt": 8.3,
-        "shotgunRate": 0.698,
-        "noHuddleRate": 0.233,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "neutral",
-        "runProfile": "weak",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
-      "team": "Baltimore Ravens",
-      "abbr": "BAL",
-      "offense": {
-        "motionRate": 0.578,
-        "motionUsage": "AVERAGE",
-        "playActionRate": 0.172,
-        "airYardsPerAttempt": 10.5,
-        "shotgunRate": 0.42200000000000004,
-        "noHuddleRate": 0.031,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "strong",
-        "runProfile": "weak",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
-      "team": "Cincinnati Bengals",
-      "abbr": "CIN",
-      "offense": {
-        "motionRate": 0.413,
-        "motionUsage": "LOW",
-        "playActionRate": 0.079,
-        "airYardsPerAttempt": 7.7,
-        "shotgunRate": 0.698,
-        "noHuddleRate": 0.048,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "strong",
-        "runProfile": "weak",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
-      "team": "Houston Texans",
-      "abbr": "HOU",
-      "offense": {
-        "motionRate": 0.575,
-        "motionUsage": "AVERAGE",
-        "playActionRate": 0.12300000000000001,
-        "airYardsPerAttempt": 8,
-        "shotgunRate": 0.685,
-        "noHuddleRate": 0.08199999999999999,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "weak",
-        "runProfile": "very-strong",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
-      "team": "Jacksonville Jaguars",
-      "abbr": "JAX",
-      "offense": {
-        "motionRate": 0.5539999999999999,
-        "motionUsage": "AVERAGE",
-        "playActionRate": 0.196,
-        "airYardsPerAttempt": 10.5,
-        "shotgunRate": 0.375,
-        "noHuddleRate": 0.071,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "weak",
-        "runProfile": "strong",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
-      "team": "Denver Broncos",
-      "abbr": "DEN",
-      "offense": {
-        "motionRate": 0.511,
-        "motionUsage": "LOW",
-        "playActionRate": 0.149,
-        "airYardsPerAttempt": 3.8,
-        "shotgunRate": 0.787,
-        "noHuddleRate": 0.064,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "weak",
-        "runProfile": "neutral",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
-      "team": "Las Vegas Raiders",
-      "abbr": "LV",
-      "offense": {
-        "motionRate": 0.537,
-        "motionUsage": "LOW",
-        "playActionRate": 0.134,
-        "airYardsPerAttempt": 7.5,
-        "shotgunRate": 0.34299999999999997,
-        "noHuddleRate": 0.015,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "strong",
-        "runProfile": "weak",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
+        "throughWeek": 2,
         "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
       }
     },
@@ -514,42 +96,20 @@
         "numericEpaAvailable": false
       },
       "sample": {
-        "throughWeek": 1,
+        "throughWeek": 2,
         "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
       }
     },
     {
-      "team": "Washington Commanders",
-      "abbr": "WAS",
+      "team": "Buffalo Bills",
+      "abbr": "BUF",
       "offense": {
-        "motionRate": 0.433,
+        "motionRate": 0.519,
         "motionUsage": "LOW",
-        "playActionRate": 0.10400000000000001,
-        "airYardsPerAttempt": 7.6,
-        "shotgunRate": 0.731,
-        "noHuddleRate": 0.11900000000000001,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "weak",
-        "runProfile": "very-strong",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
-      "team": "Dallas Cowboys",
-      "abbr": "DAL",
-      "offense": {
-        "motionRate": 0.462,
-        "motionUsage": "LOW",
-        "playActionRate": 0.135,
-        "airYardsPerAttempt": 7.9,
-        "shotgunRate": 0.769,
-        "noHuddleRate": 0.096,
+        "playActionRate": 0.25,
+        "airYardsPerAttempt": 11.5,
+        "shotgunRate": 0.48100000000000004,
+        "noHuddleRate": 0.019,
         "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
@@ -558,95 +118,117 @@
         "numericEpaAvailable": false
       },
       "sample": {
-        "throughWeek": 1,
+        "throughWeek": 2,
         "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
       }
     },
     {
-      "team": "Seattle Seahawks",
-      "abbr": "SEA",
+      "team": "Carolina Panthers",
+      "abbr": "CAR",
       "offense": {
-        "motionRate": 0.542,
-        "motionUsage": "LOW",
-        "playActionRate": 0.22899999999999998,
-        "airYardsPerAttempt": 6.3,
-        "shotgunRate": 0.5,
-        "noHuddleRate": 0.021,
-        "source": "Sharp Football Analysis"
-      },
-      "defenseVsMotion": {
-        "passProfile": "neutral",
-        "runProfile": "very-strong",
-        "numericEpaAvailable": false
-      },
-      "sample": {
-        "throughWeek": 1,
-        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
-      }
-    },
-    {
-      "team": "Arizona Cardinals",
-      "abbr": "ARI",
-      "offense": {
-        "motionRate": 0.597,
+        "motionRate": 0.613,
         "motionUsage": "AVERAGE",
-        "playActionRate": 0.083,
-        "airYardsPerAttempt": 7.7,
-        "shotgunRate": 0.528,
-        "noHuddleRate": 0.055999999999999994,
+        "playActionRate": 0.21,
+        "airYardsPerAttempt": 8.7,
+        "shotgunRate": 0.6940000000000001,
+        "noHuddleRate": 0.081,
         "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
-        "passProfile": "weak",
-        "runProfile": "strong",
+        "passProfile": "very-weak",
+        "runProfile": "very-weak",
         "numericEpaAvailable": false
       },
       "sample": {
-        "throughWeek": 1,
+        "throughWeek": 2,
         "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
       }
     },
     {
-      "team": "Miami Dolphins",
-      "abbr": "MIA",
+      "team": "Cleveland Browns",
+      "abbr": "CLE",
       "offense": {
-        "motionRate": 0.52,
+        "motionRate": 0.36700000000000005,
         "motionUsage": "LOW",
-        "playActionRate": 0.12,
-        "airYardsPerAttempt": 11.4,
-        "shotgunRate": 0.76,
-        "noHuddleRate": 0.02,
+        "playActionRate": 0.204,
+        "airYardsPerAttempt": 9,
+        "shotgunRate": 0.6729999999999999,
+        "noHuddleRate": 0.040999999999999995,
         "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
-        "passProfile": "weak",
+        "passProfile": "very-weak",
         "runProfile": "strong",
         "numericEpaAvailable": false
       },
       "sample": {
-        "throughWeek": 1,
+        "throughWeek": 2,
         "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
       }
     },
     {
-      "team": "San Francisco 49ers",
-      "abbr": "SF",
+      "team": "New York Jets",
+      "abbr": "NYJ",
       "offense": {
-        "motionRate": 0.703,
-        "motionUsage": "HIGH",
-        "playActionRate": 0.109,
-        "airYardsPerAttempt": 4.9,
-        "shotgunRate": 0.42200000000000004,
-        "noHuddleRate": 0,
+        "motionRate": 0.524,
+        "motionUsage": "LOW",
+        "playActionRate": 0.14300000000000002,
+        "airYardsPerAttempt": 6.4,
+        "shotgunRate": 0.429,
+        "noHuddleRate": 0.016,
         "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "strong",
+        "runProfile": "weak",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "Detroit Lions",
+      "abbr": "DET",
+      "offense": {
+        "motionRate": 0.644,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.192,
+        "airYardsPerAttempt": 6.1,
+        "shotgunRate": 0.35600000000000004,
+        "noHuddleRate": 0.013999999999999999,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "neutral",
         "runProfile": "strong",
         "numericEpaAvailable": false
       },
       "sample": {
-        "throughWeek": 1,
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "Houston Texans",
+      "abbr": "HOU",
+      "offense": {
+        "motionRate": 0.575,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.12300000000000001,
+        "airYardsPerAttempt": 8,
+        "shotgunRate": 0.685,
+        "noHuddleRate": 0.08199999999999999,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "weak",
+        "runProfile": "very-strong",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
         "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
       }
     },
@@ -668,7 +250,7 @@
         "numericEpaAvailable": false
       },
       "sample": {
-        "throughWeek": 1,
+        "throughWeek": 2,
         "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
       }
     },
@@ -690,7 +272,51 @@
         "numericEpaAvailable": false
       },
       "sample": {
-        "throughWeek": 1,
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "Miami Dolphins",
+      "abbr": "MIA",
+      "offense": {
+        "motionRate": 0.52,
+        "motionUsage": "LOW",
+        "playActionRate": 0.12,
+        "airYardsPerAttempt": 11.4,
+        "shotgunRate": 0.76,
+        "noHuddleRate": 0.02,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "weak",
+        "runProfile": "strong",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "Tennessee Titans",
+      "abbr": "TEN",
+      "offense": {
+        "motionRate": 0.429,
+        "motionUsage": "LOW",
+        "playActionRate": 0.204,
+        "airYardsPerAttempt": 4.4,
+        "shotgunRate": 0.857,
+        "noHuddleRate": 0.22399999999999998,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "weak",
+        "runProfile": "weak",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
         "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
       }
     },
@@ -712,7 +338,315 @@
         "numericEpaAvailable": false
       },
       "sample": {
-        "throughWeek": 1,
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "Cincinnati Bengals",
+      "abbr": "CIN",
+      "offense": {
+        "motionRate": 0.413,
+        "motionUsage": "LOW",
+        "playActionRate": 0.079,
+        "airYardsPerAttempt": 7.7,
+        "shotgunRate": 0.698,
+        "noHuddleRate": 0.048,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "strong",
+        "runProfile": "weak",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "Pittsburgh Steelers",
+      "abbr": "PIT",
+      "offense": {
+        "motionRate": 0.469,
+        "motionUsage": "LOW",
+        "playActionRate": 0.172,
+        "airYardsPerAttempt": 8.6,
+        "shotgunRate": 0.547,
+        "noHuddleRate": 0.063,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "very-strong",
+        "runProfile": "strong",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "Seattle Seahawks",
+      "abbr": "SEA",
+      "offense": {
+        "motionRate": 0.542,
+        "motionUsage": "LOW",
+        "playActionRate": 0.22899999999999998,
+        "airYardsPerAttempt": 6.3,
+        "shotgunRate": 0.5,
+        "noHuddleRate": 0.021,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "neutral",
+        "runProfile": "very-strong",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "Washington Commanders",
+      "abbr": "WAS",
+      "offense": {
+        "motionRate": 0.433,
+        "motionUsage": "LOW",
+        "playActionRate": 0.10400000000000001,
+        "airYardsPerAttempt": 7.6,
+        "shotgunRate": 0.731,
+        "noHuddleRate": 0.11900000000000001,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "weak",
+        "runProfile": "very-strong",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "New England Patriots",
+      "abbr": "NE",
+      "offense": {
+        "motionRate": 0.373,
+        "motionUsage": "LOW",
+        "playActionRate": 0.149,
+        "airYardsPerAttempt": 6.2,
+        "shotgunRate": 0.552,
+        "noHuddleRate": 0,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "neutral",
+        "runProfile": "strong",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "Jacksonville Jaguars",
+      "abbr": "JAX",
+      "offense": {
+        "motionRate": 0.5539999999999999,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.196,
+        "airYardsPerAttempt": 10.5,
+        "shotgunRate": 0.375,
+        "noHuddleRate": 0.071,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "weak",
+        "runProfile": "strong",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "Arizona Cardinals",
+      "abbr": "ARI",
+      "offense": {
+        "motionRate": 0.597,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.083,
+        "airYardsPerAttempt": 7.7,
+        "shotgunRate": 0.528,
+        "noHuddleRate": 0.055999999999999994,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "weak",
+        "runProfile": "strong",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "San Francisco 49ers",
+      "abbr": "SF",
+      "offense": {
+        "motionRate": 0.703,
+        "motionUsage": "HIGH",
+        "playActionRate": 0.109,
+        "airYardsPerAttempt": 4.9,
+        "shotgunRate": 0.42200000000000004,
+        "noHuddleRate": 0,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "strong",
+        "runProfile": "strong",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "Minnesota Vikings",
+      "abbr": "MIN",
+      "offense": {
+        "motionRate": 0.607,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.14800000000000002,
+        "airYardsPerAttempt": 7.7,
+        "shotgunRate": 0.45899999999999996,
+        "noHuddleRate": 0.066,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "weak",
+        "runProfile": "weak",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "Tampa Bay Buccaneers",
+      "abbr": "TB",
+      "offense": {
+        "motionRate": 0.7120000000000001,
+        "motionUsage": "HIGH",
+        "playActionRate": 0.25,
+        "airYardsPerAttempt": 4.5,
+        "shotgunRate": 0.5579999999999999,
+        "noHuddleRate": 0.096,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "weak",
+        "runProfile": "weak",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "Baltimore Ravens",
+      "abbr": "BAL",
+      "offense": {
+        "motionRate": 0.578,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.172,
+        "airYardsPerAttempt": 10.5,
+        "shotgunRate": 0.42200000000000004,
+        "noHuddleRate": 0.031,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "strong",
+        "runProfile": "weak",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "Dallas Cowboys",
+      "abbr": "DAL",
+      "offense": {
+        "motionRate": 0.462,
+        "motionUsage": "LOW",
+        "playActionRate": 0.135,
+        "airYardsPerAttempt": 7.9,
+        "shotgunRate": 0.769,
+        "noHuddleRate": 0.096,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "weak",
+        "runProfile": "weak",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "Las Vegas Raiders",
+      "abbr": "LV",
+      "offense": {
+        "motionRate": 0.537,
+        "motionUsage": "LOW",
+        "playActionRate": 0.134,
+        "airYardsPerAttempt": 7.5,
+        "shotgunRate": 0.34299999999999997,
+        "noHuddleRate": 0.015,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "strong",
+        "runProfile": "weak",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "New Orleans Saints",
+      "abbr": "NO",
+      "offense": {
+        "motionRate": 0.605,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.14,
+        "airYardsPerAttempt": 8.3,
+        "shotgunRate": 0.698,
+        "noHuddleRate": 0.233,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "neutral",
+        "runProfile": "weak",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
         "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
       }
     },
@@ -734,40 +668,106 @@
         "numericEpaAvailable": false
       },
       "sample": {
-        "throughWeek": 1,
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "Denver Broncos",
+      "abbr": "DEN",
+      "offense": {
+        "motionRate": 0.511,
+        "motionUsage": "LOW",
+        "playActionRate": 0.149,
+        "airYardsPerAttempt": 3.8,
+        "shotgunRate": 0.787,
+        "noHuddleRate": 0.064,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "weak",
+        "runProfile": "neutral",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "Philadelphia Eagles",
+      "abbr": "PHI",
+      "offense": {
+        "motionRate": 0.623,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.057,
+        "airYardsPerAttempt": 9.2,
+        "shotgunRate": 0.66,
+        "noHuddleRate": 0.151,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "strong",
+        "runProfile": "weak",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
+        "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
+      }
+    },
+    {
+      "team": "Chicago Bears",
+      "abbr": "CHI",
+      "offense": {
+        "motionRate": 0.5,
+        "motionUsage": "LOW",
+        "playActionRate": 0.18600000000000003,
+        "airYardsPerAttempt": 9.6,
+        "shotgunRate": 0.47100000000000003,
+        "noHuddleRate": 0.057,
+        "source": "Sharp Football Analysis"
+      },
+      "defenseVsMotion": {
+        "passProfile": "weak",
+        "runProfile": "weak",
+        "numericEpaAvailable": false
+      },
+      "sample": {
+        "throughWeek": 2,
         "warning": "Early-season schematic split; research-only until larger sample and holdout validation."
       }
     }
   ],
   "games": [
     {
-      "gameId": "2026-W2-DET-BUF",
-      "matchup": "Detroit Lions at Buffalo Bills",
+      "gameId": "2026-W3-ATL-GB",
+      "matchup": "Atlanta Falcons at Green Bay Packers",
       "awayOffenseVsHomeDefense": {
-        "offense": "DET",
-        "defense": "BUF",
-        "motionRate": 0.644,
-        "motionUsage": "AVERAGE",
-        "playActionRate": 0.192,
-        "shotgunRate": 0.35600000000000004,
-        "noHuddleRate": 0.013999999999999999,
-        "defensePassVsMotion": "weak",
-        "defenseRunVsMotion": "weak",
+        "offense": "ATL",
+        "defense": "GB",
+        "motionRate": 0.7020000000000001,
+        "motionUsage": "HIGH",
+        "playActionRate": 0.053,
+        "shotgunRate": 0.614,
+        "noHuddleRate": 0.035,
+        "defensePassVsMotion": "strong",
+        "defenseRunVsMotion": "strong",
         "flags": [
-          "STYLE NEUTRAL / MIXED",
+          "HIGH-MOTION OFFENSE vs MOTION-RESISTANT DEFENSE",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
       },
       "homeOffenseVsAwayDefense": {
-        "offense": "BUF",
-        "defense": "DET",
-        "motionRate": 0.519,
+        "offense": "GB",
+        "defense": "ATL",
+        "motionRate": 0.38799999999999996,
         "motionUsage": "LOW",
-        "playActionRate": 0.25,
-        "shotgunRate": 0.48100000000000004,
-        "noHuddleRate": 0.019,
-        "defensePassVsMotion": "neutral",
+        "playActionRate": 0.16399999999999998,
+        "shotgunRate": 0.597,
+        "noHuddleRate": 0.149,
+        "defensePassVsMotion": "strong",
         "defenseRunVsMotion": "strong",
         "flags": [
           "STYLE NEUTRAL / MIXED",
@@ -777,34 +777,18 @@
       }
     },
     {
-      "gameId": "2026-W2-CAR-ATL",
-      "matchup": "Carolina Panthers at Atlanta Falcons",
+      "gameId": "2026-W3-LAC-BUF",
+      "matchup": "Los Angeles Chargers at Buffalo Bills",
       "awayOffenseVsHomeDefense": {
-        "offense": "CAR",
-        "defense": "ATL",
-        "motionRate": 0.613,
-        "motionUsage": "AVERAGE",
-        "playActionRate": 0.21,
-        "shotgunRate": 0.6940000000000001,
-        "noHuddleRate": 0.081,
-        "defensePassVsMotion": "strong",
-        "defenseRunVsMotion": "strong",
-        "flags": [
-          "STYLE NEUTRAL / MIXED",
-          "SMALL-SAMPLE WARNING"
-        ],
-        "modelPointImpact": 0
-      },
-      "homeOffenseVsAwayDefense": {
-        "offense": "ATL",
-        "defense": "CAR",
-        "motionRate": 0.7020000000000001,
+        "offense": "LAC",
+        "defense": "BUF",
+        "motionRate": 0.765,
         "motionUsage": "HIGH",
-        "playActionRate": 0.053,
-        "shotgunRate": 0.614,
-        "noHuddleRate": 0.035,
-        "defensePassVsMotion": "very-weak",
-        "defenseRunVsMotion": "very-weak",
+        "playActionRate": 0.255,
+        "shotgunRate": 0.765,
+        "noHuddleRate": 0.02,
+        "defensePassVsMotion": "weak",
+        "defenseRunVsMotion": "weak",
         "flags": [
           "PASS-MOTION ADVANTAGE",
           "RUN-MOTION ADVANTAGE",
@@ -812,92 +796,36 @@
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
+      },
+      "homeOffenseVsAwayDefense": {
+        "offense": "BUF",
+        "defense": "LAC",
+        "motionRate": 0.519,
+        "motionUsage": "LOW",
+        "playActionRate": 0.25,
+        "shotgunRate": 0.48100000000000004,
+        "noHuddleRate": 0.019,
+        "defensePassVsMotion": "weak",
+        "defenseRunVsMotion": "neutral",
+        "flags": [
+          "STYLE NEUTRAL / MIXED",
+          "SMALL-SAMPLE WARNING"
+        ],
+        "modelPointImpact": 0
       }
     },
     {
-      "gameId": "2026-W2-MIN-CHI",
-      "matchup": "Minnesota Vikings at Chicago Bears",
+      "gameId": "2026-W3-CAR-CLE",
+      "matchup": "Carolina Panthers at Cleveland Browns",
       "awayOffenseVsHomeDefense": {
-        "offense": "MIN",
-        "defense": "CHI",
-        "motionRate": 0.607,
+        "offense": "CAR",
+        "defense": "CLE",
+        "motionRate": 0.613,
         "motionUsage": "AVERAGE",
-        "playActionRate": 0.14800000000000002,
-        "shotgunRate": 0.45899999999999996,
-        "noHuddleRate": 0.066,
-        "defensePassVsMotion": "weak",
-        "defenseRunVsMotion": "weak",
-        "flags": [
-          "STYLE NEUTRAL / MIXED",
-          "SMALL-SAMPLE WARNING"
-        ],
-        "modelPointImpact": 0
-      },
-      "homeOffenseVsAwayDefense": {
-        "offense": "CHI",
-        "defense": "MIN",
-        "motionRate": 0.5,
-        "motionUsage": "LOW",
-        "playActionRate": 0.18600000000000003,
-        "shotgunRate": 0.47100000000000003,
-        "noHuddleRate": 0.057,
-        "defensePassVsMotion": "weak",
-        "defenseRunVsMotion": "weak",
-        "flags": [
-          "STYLE NEUTRAL / MIXED",
-          "SMALL-SAMPLE WARNING"
-        ],
-        "modelPointImpact": 0
-      }
-    },
-    {
-      "gameId": "2026-W2-PHI-TEN",
-      "matchup": "Philadelphia Eagles at Tennessee Titans",
-      "awayOffenseVsHomeDefense": {
-        "offense": "PHI",
-        "defense": "TEN",
-        "motionRate": 0.623,
-        "motionUsage": "AVERAGE",
-        "playActionRate": 0.057,
-        "shotgunRate": 0.66,
-        "noHuddleRate": 0.151,
-        "defensePassVsMotion": "weak",
-        "defenseRunVsMotion": "weak",
-        "flags": [
-          "STYLE NEUTRAL / MIXED",
-          "SMALL-SAMPLE WARNING"
-        ],
-        "modelPointImpact": 0
-      },
-      "homeOffenseVsAwayDefense": {
-        "offense": "TEN",
-        "defense": "PHI",
-        "motionRate": 0.429,
-        "motionUsage": "LOW",
-        "playActionRate": 0.204,
-        "shotgunRate": 0.857,
-        "noHuddleRate": 0.22399999999999998,
-        "defensePassVsMotion": "strong",
-        "defenseRunVsMotion": "weak",
-        "flags": [
-          "STYLE NEUTRAL / MIXED",
-          "SMALL-SAMPLE WARNING"
-        ],
-        "modelPointImpact": 0
-      }
-    },
-    {
-      "gameId": "2026-W2-PIT-NE",
-      "matchup": "Pittsburgh Steelers at New England Patriots",
-      "awayOffenseVsHomeDefense": {
-        "offense": "PIT",
-        "defense": "NE",
-        "motionRate": 0.469,
-        "motionUsage": "LOW",
-        "playActionRate": 0.172,
-        "shotgunRate": 0.547,
-        "noHuddleRate": 0.063,
-        "defensePassVsMotion": "neutral",
+        "playActionRate": 0.21,
+        "shotgunRate": 0.6940000000000001,
+        "noHuddleRate": 0.081,
+        "defensePassVsMotion": "very-weak",
         "defenseRunVsMotion": "strong",
         "flags": [
           "STYLE NEUTRAL / MIXED",
@@ -906,71 +834,35 @@
         "modelPointImpact": 0
       },
       "homeOffenseVsAwayDefense": {
-        "offense": "NE",
-        "defense": "PIT",
-        "motionRate": 0.373,
-        "motionUsage": "LOW",
-        "playActionRate": 0.149,
-        "shotgunRate": 0.552,
-        "noHuddleRate": 0,
-        "defensePassVsMotion": "very-strong",
-        "defenseRunVsMotion": "strong",
-        "flags": [
-          "STYLE NEUTRAL / MIXED",
-          "SMALL-SAMPLE WARNING"
-        ],
-        "modelPointImpact": 0
-      }
-    },
-    {
-      "gameId": "2026-W2-GB-NYJ",
-      "matchup": "Green Bay Packers at New York Jets",
-      "awayOffenseVsHomeDefense": {
-        "offense": "GB",
-        "defense": "NYJ",
-        "motionRate": 0.38799999999999996,
-        "motionUsage": "LOW",
-        "playActionRate": 0.16399999999999998,
-        "shotgunRate": 0.597,
-        "noHuddleRate": 0.149,
-        "defensePassVsMotion": "strong",
-        "defenseRunVsMotion": "weak",
-        "flags": [
-          "STYLE NEUTRAL / MIXED",
-          "SMALL-SAMPLE WARNING"
-        ],
-        "modelPointImpact": 0
-      },
-      "homeOffenseVsAwayDefense": {
-        "offense": "NYJ",
-        "defense": "GB",
-        "motionRate": 0.524,
-        "motionUsage": "LOW",
-        "playActionRate": 0.14300000000000002,
-        "shotgunRate": 0.429,
-        "noHuddleRate": 0.016,
-        "defensePassVsMotion": "strong",
-        "defenseRunVsMotion": "strong",
-        "flags": [
-          "STYLE NEUTRAL / MIXED",
-          "SMALL-SAMPLE WARNING"
-        ],
-        "modelPointImpact": 0
-      }
-    },
-    {
-      "gameId": "2026-W2-CLE-TB",
-      "matchup": "Cleveland Browns at Tampa Bay Buccaneers",
-      "awayOffenseVsHomeDefense": {
         "offense": "CLE",
-        "defense": "TB",
+        "defense": "CAR",
         "motionRate": 0.36700000000000005,
         "motionUsage": "LOW",
         "playActionRate": 0.204,
         "shotgunRate": 0.6729999999999999,
         "noHuddleRate": 0.040999999999999995,
-        "defensePassVsMotion": "weak",
-        "defenseRunVsMotion": "weak",
+        "defensePassVsMotion": "very-weak",
+        "defenseRunVsMotion": "very-weak",
+        "flags": [
+          "STYLE NEUTRAL / MIXED",
+          "SMALL-SAMPLE WARNING"
+        ],
+        "modelPointImpact": 0
+      }
+    },
+    {
+      "gameId": "2026-W3-NYJ-DET",
+      "matchup": "New York Jets at Detroit Lions",
+      "awayOffenseVsHomeDefense": {
+        "offense": "NYJ",
+        "defense": "DET",
+        "motionRate": 0.524,
+        "motionUsage": "LOW",
+        "playActionRate": 0.14300000000000002,
+        "shotgunRate": 0.429,
+        "noHuddleRate": 0.016,
+        "defensePassVsMotion": "neutral",
+        "defenseRunVsMotion": "strong",
         "flags": [
           "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
@@ -978,34 +870,13 @@
         "modelPointImpact": 0
       },
       "homeOffenseVsAwayDefense": {
-        "offense": "TB",
-        "defense": "CLE",
-        "motionRate": 0.7120000000000001,
-        "motionUsage": "HIGH",
-        "playActionRate": 0.25,
-        "shotgunRate": 0.5579999999999999,
-        "noHuddleRate": 0.096,
-        "defensePassVsMotion": "very-weak",
-        "defenseRunVsMotion": "strong",
-        "flags": [
-          "PASS-MOTION ADVANTAGE",
-          "HIGH-MOTION OFFENSE vs MOTION-VULNERABLE DEFENSE",
-          "SMALL-SAMPLE WARNING"
-        ],
-        "modelPointImpact": 0
-      }
-    },
-    {
-      "gameId": "2026-W2-NO-BAL",
-      "matchup": "New Orleans Saints at Baltimore Ravens",
-      "awayOffenseVsHomeDefense": {
-        "offense": "NO",
-        "defense": "BAL",
-        "motionRate": 0.605,
+        "offense": "DET",
+        "defense": "NYJ",
+        "motionRate": 0.644,
         "motionUsage": "AVERAGE",
-        "playActionRate": 0.14,
-        "shotgunRate": 0.698,
-        "noHuddleRate": 0.233,
+        "playActionRate": 0.192,
+        "shotgunRate": 0.35600000000000004,
+        "noHuddleRate": 0.013999999999999999,
         "defensePassVsMotion": "strong",
         "defenseRunVsMotion": "weak",
         "flags": [
@@ -1013,46 +884,14 @@
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
-      },
-      "homeOffenseVsAwayDefense": {
-        "offense": "BAL",
-        "defense": "NO",
-        "motionRate": 0.578,
-        "motionUsage": "AVERAGE",
-        "playActionRate": 0.172,
-        "shotgunRate": 0.42200000000000004,
-        "noHuddleRate": 0.031,
-        "defensePassVsMotion": "neutral",
-        "defenseRunVsMotion": "weak",
-        "flags": [
-          "STYLE NEUTRAL / MIXED",
-          "SMALL-SAMPLE WARNING"
-        ],
-        "modelPointImpact": 0
       }
     },
     {
-      "gameId": "2026-W2-CIN-HOU",
-      "matchup": "Cincinnati Bengals at Houston Texans",
+      "gameId": "2026-W3-HOU-IND",
+      "matchup": "Houston Texans at Indianapolis Colts",
       "awayOffenseVsHomeDefense": {
-        "offense": "CIN",
-        "defense": "HOU",
-        "motionRate": 0.413,
-        "motionUsage": "LOW",
-        "playActionRate": 0.079,
-        "shotgunRate": 0.698,
-        "noHuddleRate": 0.048,
-        "defensePassVsMotion": "weak",
-        "defenseRunVsMotion": "very-strong",
-        "flags": [
-          "STYLE NEUTRAL / MIXED",
-          "SMALL-SAMPLE WARNING"
-        ],
-        "modelPointImpact": 0
-      },
-      "homeOffenseVsAwayDefense": {
         "offense": "HOU",
-        "defense": "CIN",
+        "defense": "IND",
         "motionRate": 0.575,
         "motionUsage": "AVERAGE",
         "playActionRate": 0.12300000000000001,
@@ -1065,75 +904,19 @@
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
-      }
-    },
-    {
-      "gameId": "2026-W2-JAX-DEN",
-      "matchup": "Jacksonville Jaguars at Denver Broncos",
-      "awayOffenseVsHomeDefense": {
-        "offense": "JAX",
-        "defense": "DEN",
-        "motionRate": 0.5539999999999999,
-        "motionUsage": "AVERAGE",
-        "playActionRate": 0.196,
-        "shotgunRate": 0.375,
-        "noHuddleRate": 0.071,
-        "defensePassVsMotion": "weak",
-        "defenseRunVsMotion": "neutral",
-        "flags": [
-          "STYLE NEUTRAL / MIXED",
-          "SMALL-SAMPLE WARNING"
-        ],
-        "modelPointImpact": 0
       },
       "homeOffenseVsAwayDefense": {
-        "offense": "DEN",
-        "defense": "JAX",
-        "motionRate": 0.511,
-        "motionUsage": "LOW",
-        "playActionRate": 0.149,
-        "shotgunRate": 0.787,
-        "noHuddleRate": 0.064,
-        "defensePassVsMotion": "weak",
-        "defenseRunVsMotion": "strong",
-        "flags": [
-          "STYLE NEUTRAL / MIXED",
-          "SMALL-SAMPLE WARNING"
-        ],
-        "modelPointImpact": 0
-      }
-    },
-    {
-      "gameId": "2026-W2-LV-LAC",
-      "matchup": "Las Vegas Raiders at Los Angeles Chargers",
-      "awayOffenseVsHomeDefense": {
-        "offense": "LV",
-        "defense": "LAC",
-        "motionRate": 0.537,
-        "motionUsage": "LOW",
-        "playActionRate": 0.134,
-        "shotgunRate": 0.34299999999999997,
-        "noHuddleRate": 0.015,
-        "defensePassVsMotion": "weak",
-        "defenseRunVsMotion": "neutral",
-        "flags": [
-          "STYLE NEUTRAL / MIXED",
-          "SMALL-SAMPLE WARNING"
-        ],
-        "modelPointImpact": 0
-      },
-      "homeOffenseVsAwayDefense": {
-        "offense": "LAC",
-        "defense": "LV",
-        "motionRate": 0.765,
+        "offense": "IND",
+        "defense": "HOU",
+        "motionRate": 0.66,
         "motionUsage": "HIGH",
-        "playActionRate": 0.255,
-        "shotgunRate": 0.765,
-        "noHuddleRate": 0.02,
-        "defensePassVsMotion": "strong",
-        "defenseRunVsMotion": "weak",
+        "playActionRate": 0.132,
+        "shotgunRate": 0.642,
+        "noHuddleRate": 0.132,
+        "defensePassVsMotion": "weak",
+        "defenseRunVsMotion": "very-strong",
         "flags": [
-          "RUN-MOTION ADVANTAGE",
+          "PASS-MOTION ADVANTAGE",
           "HIGH-MOTION OFFENSE vs MOTION-VULNERABLE DEFENSE",
           "SMALL-SAMPLE WARNING"
         ],
@@ -1141,48 +924,16 @@
       }
     },
     {
-      "gameId": "2026-W2-WSH-DAL",
-      "matchup": "Washington Commanders at Dallas Cowboys",
+      "gameId": "2026-W3-KC-MIA",
+      "matchup": "Kansas City Chiefs at Miami Dolphins",
       "awayOffenseVsHomeDefense": {
-        "defense": "DAL",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "defensePassVsMotion": "weak",
-        "defenseRunVsMotion": "weak",
-        "flags": [
-          "MOTION-RATE SOURCE PENDING",
-          "SMALL-SAMPLE WARNING"
-        ],
-        "modelPointImpact": 0
-      },
-      "homeOffenseVsAwayDefense": {
-        "offense": "DAL",
-        "motionRate": 0.462,
-        "motionUsage": "LOW",
-        "playActionRate": 0.135,
-        "shotgunRate": 0.769,
-        "noHuddleRate": 0.096,
-        "flags": [
-          "STYLE NEUTRAL / MIXED",
-          "SMALL-SAMPLE WARNING"
-        ],
-        "modelPointImpact": 0
-      }
-    },
-    {
-      "gameId": "2026-W2-SEA-ARI",
-      "matchup": "Seattle Seahawks at Arizona Cardinals",
-      "awayOffenseVsHomeDefense": {
-        "offense": "SEA",
-        "defense": "ARI",
-        "motionRate": 0.542,
-        "motionUsage": "LOW",
-        "playActionRate": 0.22899999999999998,
-        "shotgunRate": 0.5,
-        "noHuddleRate": 0.021,
+        "offense": "KC",
+        "defense": "MIA",
+        "motionRate": 0.597,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.149,
+        "shotgunRate": 0.5670000000000001,
+        "noHuddleRate": 0,
         "defensePassVsMotion": "weak",
         "defenseRunVsMotion": "strong",
         "flags": [
@@ -1192,28 +943,8 @@
         "modelPointImpact": 0
       },
       "homeOffenseVsAwayDefense": {
-        "offense": "ARI",
-        "defense": "SEA",
-        "motionRate": 0.597,
-        "motionUsage": "AVERAGE",
-        "playActionRate": 0.083,
-        "shotgunRate": 0.528,
-        "noHuddleRate": 0.055999999999999994,
-        "defensePassVsMotion": "neutral",
-        "defenseRunVsMotion": "very-strong",
-        "flags": [
-          "STYLE NEUTRAL / MIXED",
-          "SMALL-SAMPLE WARNING"
-        ],
-        "modelPointImpact": 0
-      }
-    },
-    {
-      "gameId": "2026-W2-MIA-SF",
-      "matchup": "Miami Dolphins at San Francisco 49ers",
-      "awayOffenseVsHomeDefense": {
         "offense": "MIA",
-        "defense": "SF",
+        "defense": "KC",
         "motionRate": 0.52,
         "motionUsage": "LOW",
         "playActionRate": 0.12,
@@ -1226,10 +957,170 @@
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
+      }
+    },
+    {
+      "gameId": "2026-W3-TEN-NYG",
+      "matchup": "Tennessee Titans at New York Giants",
+      "awayOffenseVsHomeDefense": {
+        "offense": "TEN",
+        "defense": "NYG",
+        "motionRate": 0.429,
+        "motionUsage": "LOW",
+        "playActionRate": 0.204,
+        "shotgunRate": 0.857,
+        "noHuddleRate": 0.22399999999999998,
+        "defensePassVsMotion": "weak",
+        "defenseRunVsMotion": "weak",
+        "flags": [
+          "STYLE NEUTRAL / MIXED",
+          "SMALL-SAMPLE WARNING"
+        ],
+        "modelPointImpact": 0
+      },
+      "homeOffenseVsAwayDefense": {
+        "offense": "NYG",
+        "defense": "TEN",
+        "motionRate": 0.515,
+        "motionUsage": "LOW",
+        "playActionRate": 0.17600000000000002,
+        "shotgunRate": 0.485,
+        "noHuddleRate": 0.015,
+        "defensePassVsMotion": "weak",
+        "defenseRunVsMotion": "weak",
+        "flags": [
+          "STYLE NEUTRAL / MIXED",
+          "SMALL-SAMPLE WARNING"
+        ],
+        "modelPointImpact": 0
+      }
+    },
+    {
+      "gameId": "2026-W3-CIN-PIT",
+      "matchup": "Cincinnati Bengals at Pittsburgh Steelers",
+      "awayOffenseVsHomeDefense": {
+        "offense": "CIN",
+        "defense": "PIT",
+        "motionRate": 0.413,
+        "motionUsage": "LOW",
+        "playActionRate": 0.079,
+        "shotgunRate": 0.698,
+        "noHuddleRate": 0.048,
+        "defensePassVsMotion": "very-strong",
+        "defenseRunVsMotion": "strong",
+        "flags": [
+          "STYLE NEUTRAL / MIXED",
+          "SMALL-SAMPLE WARNING"
+        ],
+        "modelPointImpact": 0
+      },
+      "homeOffenseVsAwayDefense": {
+        "offense": "PIT",
+        "defense": "CIN",
+        "motionRate": 0.469,
+        "motionUsage": "LOW",
+        "playActionRate": 0.172,
+        "shotgunRate": 0.547,
+        "noHuddleRate": 0.063,
+        "defensePassVsMotion": "strong",
+        "defenseRunVsMotion": "weak",
+        "flags": [
+          "STYLE NEUTRAL / MIXED",
+          "SMALL-SAMPLE WARNING"
+        ],
+        "modelPointImpact": 0
+      }
+    },
+    {
+      "gameId": "2026-W3-SEA-WSH",
+      "matchup": "Seattle Seahawks at Washington Commanders",
+      "awayOffenseVsHomeDefense": {
+        "offense": "SEA",
+        "motionRate": 0.542,
+        "motionUsage": "LOW",
+        "playActionRate": 0.22899999999999998,
+        "shotgunRate": 0.5,
+        "noHuddleRate": 0.021,
+        "flags": [
+          "STYLE NEUTRAL / MIXED",
+          "SMALL-SAMPLE WARNING"
+        ],
+        "modelPointImpact": 0
+      },
+      "homeOffenseVsAwayDefense": {
+        "defense": "SEA",
+        "motionRate": null,
+        "motionUsage": "SOURCE_PENDING",
+        "playActionRate": null,
+        "shotgunRate": null,
+        "noHuddleRate": null,
+        "defensePassVsMotion": "neutral",
+        "defenseRunVsMotion": "very-strong",
+        "flags": [
+          "MOTION-RATE SOURCE PENDING",
+          "SMALL-SAMPLE WARNING"
+        ],
+        "modelPointImpact": 0
+      }
+    },
+    {
+      "gameId": "2026-W3-NE-JAX",
+      "matchup": "New England Patriots at Jacksonville Jaguars",
+      "awayOffenseVsHomeDefense": {
+        "offense": "NE",
+        "defense": "JAX",
+        "motionRate": 0.373,
+        "motionUsage": "LOW",
+        "playActionRate": 0.149,
+        "shotgunRate": 0.552,
+        "noHuddleRate": 0,
+        "defensePassVsMotion": "weak",
+        "defenseRunVsMotion": "strong",
+        "flags": [
+          "STYLE NEUTRAL / MIXED",
+          "SMALL-SAMPLE WARNING"
+        ],
+        "modelPointImpact": 0
+      },
+      "homeOffenseVsAwayDefense": {
+        "offense": "JAX",
+        "defense": "NE",
+        "motionRate": 0.5539999999999999,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.196,
+        "shotgunRate": 0.375,
+        "noHuddleRate": 0.071,
+        "defensePassVsMotion": "neutral",
+        "defenseRunVsMotion": "strong",
+        "flags": [
+          "STYLE NEUTRAL / MIXED",
+          "SMALL-SAMPLE WARNING"
+        ],
+        "modelPointImpact": 0
+      }
+    },
+    {
+      "gameId": "2026-W3-ARI-SF",
+      "matchup": "Arizona Cardinals at San Francisco 49ers",
+      "awayOffenseVsHomeDefense": {
+        "offense": "ARI",
+        "defense": "SF",
+        "motionRate": 0.597,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.083,
+        "shotgunRate": 0.528,
+        "noHuddleRate": 0.055999999999999994,
+        "defensePassVsMotion": "strong",
+        "defenseRunVsMotion": "strong",
+        "flags": [
+          "STYLE NEUTRAL / MIXED",
+          "SMALL-SAMPLE WARNING"
+        ],
+        "modelPointImpact": 0
       },
       "homeOffenseVsAwayDefense": {
         "offense": "SF",
-        "defense": "MIA",
+        "defense": "ARI",
         "motionRate": 0.703,
         "motionUsage": "HIGH",
         "playActionRate": 0.109,
@@ -1246,32 +1137,70 @@
       }
     },
     {
-      "gameId": "2026-W2-IND-KC",
-      "matchup": "Indianapolis Colts at Kansas City Chiefs",
+      "gameId": "2026-W3-MIN-TB",
+      "matchup": "Minnesota Vikings at Tampa Bay Buccaneers",
       "awayOffenseVsHomeDefense": {
-        "offense": "IND",
-        "defense": "KC",
-        "motionRate": 0.66,
-        "motionUsage": "HIGH",
-        "playActionRate": 0.132,
-        "shotgunRate": 0.642,
-        "noHuddleRate": 0.132,
-        "defensePassVsMotion": "strong",
-        "defenseRunVsMotion": "strong",
+        "offense": "MIN",
+        "defense": "TB",
+        "motionRate": 0.607,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.14800000000000002,
+        "shotgunRate": 0.45899999999999996,
+        "noHuddleRate": 0.066,
+        "defensePassVsMotion": "weak",
+        "defenseRunVsMotion": "weak",
         "flags": [
-          "HIGH-MOTION OFFENSE vs MOTION-RESISTANT DEFENSE",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
       },
       "homeOffenseVsAwayDefense": {
-        "offense": "KC",
-        "defense": "IND",
-        "motionRate": 0.597,
+        "offense": "TB",
+        "defense": "MIN",
+        "motionRate": 0.7120000000000001,
+        "motionUsage": "HIGH",
+        "playActionRate": 0.25,
+        "shotgunRate": 0.5579999999999999,
+        "noHuddleRate": 0.096,
+        "defensePassVsMotion": "weak",
+        "defenseRunVsMotion": "weak",
+        "flags": [
+          "PASS-MOTION ADVANTAGE",
+          "RUN-MOTION ADVANTAGE",
+          "HIGH-MOTION OFFENSE vs MOTION-VULNERABLE DEFENSE",
+          "SMALL-SAMPLE WARNING"
+        ],
+        "modelPointImpact": 0
+      }
+    },
+    {
+      "gameId": "2026-W3-BAL-DAL",
+      "matchup": "Baltimore Ravens at Dallas Cowboys",
+      "awayOffenseVsHomeDefense": {
+        "offense": "BAL",
+        "defense": "DAL",
+        "motionRate": 0.578,
         "motionUsage": "AVERAGE",
-        "playActionRate": 0.149,
-        "shotgunRate": 0.5670000000000001,
-        "noHuddleRate": 0,
+        "playActionRate": 0.172,
+        "shotgunRate": 0.42200000000000004,
+        "noHuddleRate": 0.031,
+        "defensePassVsMotion": "weak",
+        "defenseRunVsMotion": "weak",
+        "flags": [
+          "STYLE NEUTRAL / MIXED",
+          "SMALL-SAMPLE WARNING"
+        ],
+        "modelPointImpact": 0
+      },
+      "homeOffenseVsAwayDefense": {
+        "offense": "DAL",
+        "defense": "BAL",
+        "motionRate": 0.462,
+        "motionUsage": "LOW",
+        "playActionRate": 0.135,
+        "shotgunRate": 0.769,
+        "noHuddleRate": 0.096,
         "defensePassVsMotion": "strong",
         "defenseRunVsMotion": "weak",
         "flags": [
@@ -1282,16 +1211,88 @@
       }
     },
     {
-      "gameId": "2026-W2-NYG-LAR",
-      "matchup": "New York Giants at Los Angeles Rams",
+      "gameId": "2026-W3-LV-NO",
+      "matchup": "Las Vegas Raiders at New Orleans Saints",
       "awayOffenseVsHomeDefense": {
-        "offense": "NYG",
-        "defense": "LAR",
-        "motionRate": 0.515,
+        "offense": "LV",
+        "defense": "NO",
+        "motionRate": 0.537,
         "motionUsage": "LOW",
-        "playActionRate": 0.17600000000000002,
-        "shotgunRate": 0.485,
+        "playActionRate": 0.134,
+        "shotgunRate": 0.34299999999999997,
         "noHuddleRate": 0.015,
+        "defensePassVsMotion": "neutral",
+        "defenseRunVsMotion": "weak",
+        "flags": [
+          "STYLE NEUTRAL / MIXED",
+          "SMALL-SAMPLE WARNING"
+        ],
+        "modelPointImpact": 0
+      },
+      "homeOffenseVsAwayDefense": {
+        "offense": "NO",
+        "defense": "LV",
+        "motionRate": 0.605,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.14,
+        "shotgunRate": 0.698,
+        "noHuddleRate": 0.233,
+        "defensePassVsMotion": "strong",
+        "defenseRunVsMotion": "weak",
+        "flags": [
+          "STYLE NEUTRAL / MIXED",
+          "SMALL-SAMPLE WARNING"
+        ],
+        "modelPointImpact": 0
+      }
+    },
+    {
+      "gameId": "2026-W3-LAR-DEN",
+      "matchup": "Los Angeles Rams at Denver Broncos",
+      "awayOffenseVsHomeDefense": {
+        "offense": "LAR",
+        "defense": "DEN",
+        "motionRate": 0.561,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.105,
+        "shotgunRate": 0.474,
+        "noHuddleRate": 0.12300000000000001,
+        "defensePassVsMotion": "weak",
+        "defenseRunVsMotion": "neutral",
+        "flags": [
+          "STYLE NEUTRAL / MIXED",
+          "SMALL-SAMPLE WARNING"
+        ],
+        "modelPointImpact": 0
+      },
+      "homeOffenseVsAwayDefense": {
+        "offense": "DEN",
+        "defense": "LAR",
+        "motionRate": 0.511,
+        "motionUsage": "LOW",
+        "playActionRate": 0.149,
+        "shotgunRate": 0.787,
+        "noHuddleRate": 0.064,
+        "defensePassVsMotion": "weak",
+        "defenseRunVsMotion": "weak",
+        "flags": [
+          "STYLE NEUTRAL / MIXED",
+          "SMALL-SAMPLE WARNING"
+        ],
+        "modelPointImpact": 0
+      }
+    },
+    {
+      "gameId": "2026-W3-PHI-CHI",
+      "matchup": "Philadelphia Eagles at Chicago Bears",
+      "awayOffenseVsHomeDefense": {
+        "offense": "PHI",
+        "defense": "CHI",
+        "motionRate": 0.623,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.057,
+        "shotgunRate": 0.66,
+        "noHuddleRate": 0.151,
         "defensePassVsMotion": "weak",
         "defenseRunVsMotion": "weak",
         "flags": [
@@ -1301,14 +1302,14 @@
         "modelPointImpact": 0
       },
       "homeOffenseVsAwayDefense": {
-        "offense": "LAR",
-        "defense": "NYG",
-        "motionRate": 0.561,
-        "motionUsage": "AVERAGE",
-        "playActionRate": 0.105,
-        "shotgunRate": 0.474,
-        "noHuddleRate": 0.12300000000000001,
-        "defensePassVsMotion": "weak",
+        "offense": "CHI",
+        "defense": "PHI",
+        "motionRate": 0.5,
+        "motionUsage": "LOW",
+        "playActionRate": 0.18600000000000003,
+        "shotgunRate": 0.47100000000000003,
+        "noHuddleRate": 0.057,
+        "defensePassVsMotion": "strong",
         "defenseRunVsMotion": "weak",
         "flags": [
           "STYLE NEUTRAL / MIXED",
