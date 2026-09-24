@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 3,
-  "generated_at": "2026-09-23T23:49:12.313Z",
+  "generated_at": "2026-09-24T00:37:30.288Z",
   "schedule_source": "Canonical selected-week NFL board + ESPN scoreboard reconciliation",
   "market_source": "ESPN selected-week odds feed; exact sportsbook/juice required before execution",
   "games": [
@@ -73,11 +73,24 @@
         }
       },
       "availability": {
-        "high_risk_flags": [],
-        "timestamp": null
+        "high_risk_flags": [
+          "ATL: QB Michael Penix Jr. will start and had no final game designation; QB Tua Tagovailoa is available as the backup.",
+          "ATL OUT: DE Samson Ebukam (hamstring). CB Billy Bowman Jr. (Achilles) is QUESTIONABLE. CB A.J. Terrell Jr. was placed on injured reserve.",
+          "GB OUT: WR Jayden Reed (neck), G Aaron Banks (knee/toe), OL Zach Bako-Bewele (knee), DT Warren Brinson (calf).",
+          "GB QUESTIONABLE: DT Javon Hargrave (knee/concussion), DT Anthony Campbell (ankle)."
+        ],
+        "timestamp": "2026-09-24T00:37:30.288Z",
+        "status": "official final designation review complete"
       },
       "why": "Selected-week governed model rebuilt 2026-09-23T23:49:12.313Z; NFL-v1.2 advanced process + capped motion-aware matchup.",
-      "event_state": "scheduled"
+      "event_state": "scheduled",
+      "weather": {
+        "environment": "outdoor",
+        "status": "reviewed",
+        "summary": "Green Bay Thursday night: cloudy becoming partly cloudy, around the mid-50s, east-southeast wind near 5 mph becoming calm; no meaningful wind or precipitation penalty indicated.",
+        "observed_at": "2026-09-24T00:37:30.288Z",
+        "total_adjustment_points": 0
+      }
     },
     {
       "id": "401872953",

@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 3,
-  "updatedAt": "2026-09-23T23:49:11.801413+00:00",
+  "updatedAt": "2026-09-24T00:37:30.288Z",
   "scheduleSource": "ESPN selected-week rollover",
   "marketSource": "Current ESPN NFL selected-week odds feed; exact sportsbook/juice required before execution",
   "games": [
@@ -66,7 +66,24 @@
       },
       "baseStructuralHomeMargin": 6.902,
       "advancedProcessAdjustment": -1.29,
-      "motionMatchupAdjustment": 0.048
+      "motionMatchupAdjustment": 0.048,
+      "availability": {
+        "highRiskFlags": [
+          "ATL: QB Michael Penix Jr. will start and had no final game designation; QB Tua Tagovailoa is available as the backup.",
+          "ATL OUT: DE Samson Ebukam (hamstring). CB Billy Bowman Jr. (Achilles) is QUESTIONABLE. CB A.J. Terrell Jr. was placed on injured reserve.",
+          "GB OUT: WR Jayden Reed (neck), G Aaron Banks (knee/toe), OL Zach Bako-Bewele (knee), DT Warren Brinson (calf).",
+          "GB QUESTIONABLE: DT Javon Hargrave (knee/concussion), DT Anthony Campbell (ankle)."
+        ],
+        "high_risk_flags": [
+          "ATL: QB Michael Penix Jr. will start and had no final game designation; QB Tua Tagovailoa is available as the backup.",
+          "ATL OUT: DE Samson Ebukam (hamstring). CB Billy Bowman Jr. (Achilles) is QUESTIONABLE. CB A.J. Terrell Jr. was placed on injured reserve.",
+          "GB OUT: WR Jayden Reed (neck), G Aaron Banks (knee/toe), OL Zach Bako-Bewele (knee), DT Warren Brinson (calf).",
+          "GB QUESTIONABLE: DT Javon Hargrave (knee/concussion), DT Anthony Campbell (ankle)."
+        ],
+        "timestamp": "2026-09-24T00:37:30.288Z",
+        "status": "official final designation review complete"
+      },
+      "why": "Thursday overlay: Penix starts; Atlanta/Green Bay final designations and low-risk Green Bay weather are now checkpointed. Expert record: Richter ATL +7, but the cited price is stale to the current market and has zero automatic model impact. Thursday overlay: Penix starts; Atlanta/Green Bay final designations and low-risk Green Bay weather are now checkpointed. Expert record: Richter ATL +7, but the cited price is stale to the current market and has zero automatic model impact."
     },
     {
       "gameId": "2026-W3-LAC-BUF",
@@ -438,13 +455,13 @@
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
           "directPointCap": 0.25,
-          "structuralAdjustment": 0.0,
+          "structuralAdjustment": 0,
           "earlySample": true
         }
       },
       "baseStructuralHomeMargin": 1.776,
       "advancedProcessAdjustment": 0.64,
-      "motionMatchupAdjustment": 0.0
+      "motionMatchupAdjustment": 0
     },
     {
       "gameId": "2026-W3-CIN-PIT",
@@ -501,13 +518,13 @@
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
           "directPointCap": 0.25,
-          "structuralAdjustment": 0.0,
+          "structuralAdjustment": 0,
           "earlySample": true
         }
       },
       "baseStructuralHomeMargin": 0.078,
       "advancedProcessAdjustment": 1.146,
-      "motionMatchupAdjustment": 0.0
+      "motionMatchupAdjustment": 0
     },
     {
       "gameId": "2026-W3-SEA-WSH",
@@ -564,13 +581,13 @@
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
           "directPointCap": 0.25,
-          "structuralAdjustment": 0.0,
+          "structuralAdjustment": 0,
           "earlySample": true
         }
       },
       "baseStructuralHomeMargin": -13.81,
       "advancedProcessAdjustment": 1.526,
-      "motionMatchupAdjustment": 0.0
+      "motionMatchupAdjustment": 0
     },
     {
       "gameId": "2026-W3-NE-JAX",
@@ -682,7 +699,7 @@
             "netSituationalRate"
           ],
           "awayProcessRatingPoints": -0.531,
-          "homeProcessRatingPoints": 5.0,
+          "homeProcessRatingPoints": 5,
           "liveScoringMarginShare": 0.6,
           "liveAdvancedProcessShare": 0.4,
           "structuralAdjustment": -1.619
