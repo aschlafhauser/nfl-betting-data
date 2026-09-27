@@ -1,0 +1,54 @@
+{
+  "sport": "NFL",
+  "season": 2026,
+  "week": 3,
+  "auditedAt": "2026-09-27T12:30:00Z",
+  "sourceFamily": "NFL / team beat reporting",
+  "status": "CURRENT",
+  "sourceUrls": [
+    "https://www.commanders.com/news/game-status-commanders-seahawks-week-3",
+    "https://www.seahawks.com/news/week-3-injury-report-seahawks-vs-commanders"
+  ],
+  "newStructuredRecordsIntended": [
+    {
+      "id": "w3-beat-sea-wsh-was-outs",
+      "game_id": "2026-W3-SEA-WSH",
+      "source_family": "NFL / team beat reporting",
+      "source": "Washington Commanders official",
+      "analyst": "Commanders.com",
+      "source_date": "2026-09-25",
+      "timestamp": "2026-09-27T12:30:00Z",
+      "kind": "official availability",
+      "category": "injury-availability",
+      "summary": "Washington officially ruled out Jayden Daniels for Week 3 and also ruled out Sam Cosmi, Frankie Luvu and Chig Okonkwo, materially weakening the quarterback, protection and defensive picture against Seattle.",
+      "direction": "Seattle-positive availability",
+      "freshness": "current-week",
+      "independence": "primary-reporting",
+      "incremental_information": true,
+      "model_relationship": "availability-veto/context",
+      "source_url": "https://www.commanders.com/news/game-status-commanders-seahawks-week-3",
+      "governance": "Expert Intelligence qualitative residual only; zero automatic fair/model/gate/ledger/units impact."
+    },
+    {
+      "id": "w3-beat-sea-wsh-darnold-back",
+      "game_id": "2026-W3-SEA-WSH",
+      "source_family": "NFL / team beat reporting",
+      "source": "Seattle Seahawks official",
+      "analyst": "John Boyle",
+      "source_date": "2026-09-25",
+      "timestamp": "2026-09-27T12:30:00Z",
+      "kind": "official availability",
+      "category": "QB availability",
+      "summary": "Seattle confirmed Sam Darnold is back and ready to start in Week 3 after fully practicing Thursday and Friday; safety Julian Love is out.",
+      "direction": "Seattle QB-positive / secondary-negative",
+      "freshness": "current-week",
+      "independence": "primary-reporting",
+      "incremental_information": true,
+      "model_relationship": "availability-context",
+      "source_url": "https://www.seahawks.com/news/week-3-injury-report-seahawks-vs-commanders",
+      "governance": "Expert Intelligence qualitative residual only; zero automatic fair/model/gate/ledger/units impact."
+    }
+  ],
+  "note": "Official team availability verified.",
+  "governance": "Only attributable current-week material is ingested. Source-limited metadata never becomes an inferred wager."
+}

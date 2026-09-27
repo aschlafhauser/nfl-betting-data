@@ -1,14 +1,14 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-13T15:05:00Z",
+  "updatedAt": "2026-09-27T12:30:00Z",
   "policy": "Preserve analyst-level notes but count correlated publications under a single sourceFamily/independenceKey. Information, analysis and explicit betting opinions are tagged separately. Every matchup record must join the canonical nfl-weekly-board game ID; unmatched records are an ingestion failure. Expert Intelligence is qualitative context/residual and may not silently overwrite the quantitative NFL fair.",
   "sources": [
     {
       "sourceFamily": "Sharp Football Analysis",
       "independenceKey": "sharp-football-analysis",
       "priority": 1,
-      "status": "active",
-      "latestChecked": "2026-09-06",
+      "status": "active-current",
+      "latestChecked": "2026-09-27",
       "coverage": [
         "all 32 teams",
         "power rankings",
@@ -23,15 +23,15 @@
       "publicMaterialSeeded": [
         "2026 NFL Power Rankings — Aug. 24"
       ],
-      "latestFinding": "Week 1 odds board is live; Josh Shepardson's Week 1 best-bet section still says Coming Soon as of Sept. 6.",
+      "latestFinding": "Week 3 best bets verified: Bills -7 and Lions team total over 27.5, plus current referee/odds analysis.",
       "notes": "Do not count multiple Warren Sharp/Sharp articles as independent confirmations."
     },
     {
       "sourceFamily": "Mina Kimes / ESPN NFL analysis",
       "independenceKey": "mina-kimes-espn",
       "priority": 1,
-      "status": "active",
-      "latestChecked": "2026-09-06",
+      "status": "active-current-source-limited",
+      "latestChecked": "2026-09-27",
       "coverage": [
         "QB",
         "OL",
@@ -45,14 +45,15 @@
       "publicMaterialSeeded": [
         "Donald, Duck! The Loaded Rams, Plus Raiders and Falcons QB Battles — Sept. 1"
       ],
-      "notes": "Mina and guests within the same episode are correlated for consensus. Team Draft / season-ranking content is not promoted to weekly matchup evidence unless a matchup-specific mechanism is explicit."
+      "notes": "Mina and guests within the same episode are correlated for consensus. Team Draft / season-ranking content is not promoted to weekly matchup evidence unless a matchup-specific mechanism is explicit.",
+      "latestFinding": "Sept. 24 Week 3 preview episode verified covering all 16 games with picks; accessible metadata exposes timestamps but not individual picks, so no pick was inferred."
     },
     {
       "sourceFamily": "The Ringer NFL family",
       "independenceKey": "ringer-nfl",
       "priority": 1,
-      "status": "active",
-      "latestChecked": "2026-09-06",
+      "status": "active-current",
+      "latestChecked": "2026-09-27",
       "coverage": [
         "team rankings",
         "scheme",
@@ -61,14 +62,15 @@
         "weekly matchup previews",
         "betting"
       ],
-      "notes": "Treat The Ringer NFL Show and related Ringer NFL analysts as one correlated family unless demonstrably independent reporting is involved."
+      "notes": "Treat The Ringer NFL Show and related Ringer NFL analysts as one correlated family unless demonstrably independent reporting is involved.",
+      "latestFinding": "Anthony Dabbundo's Sept. 24 Week 3 betting card and Sept. 25 Ringer Gambling Show mega-preview verified and incorporated."
     },
     {
       "sourceFamily": "PFF",
       "independenceKey": "pff",
       "priority": 1,
-      "status": "active",
-      "latestChecked": "2026-09-06",
+      "status": "active-current",
+      "latestChecked": "2026-09-27",
       "coverage": [
         "grades",
         "QB",
@@ -78,14 +80,15 @@
         "team previews",
         "weekly matchup analysis"
       ],
-      "notes": "PFF grades/metrics already represented in quantitative or personnel layers receive zero incremental expert credit unless the publication adds a distinct matchup mechanism or explicit betting construction."
+      "notes": "PFF grades/metrics already represented in quantitative or personnel layers receive zero incremental expert credit unless the publication adds a distinct matchup mechanism or explicit betting construction.",
+      "latestFinding": "Week 3 power rankings and current trench/coverage context verified and incorporated as qualitative matchup evidence."
     },
     {
       "sourceFamily": "Establish The Run",
       "independenceKey": "establish-the-run",
       "priority": 2,
-      "status": "active",
-      "latestChecked": "2026-09-06",
+      "status": "active-current-partial-public",
+      "latestChecked": "2026-09-27",
       "coverage": [
         "projections",
         "usage",
@@ -94,15 +97,15 @@
         "injury impact",
         "betting where public"
       ],
-      "latestFinding": "Public site currently emphasizes survivor/fantasy content; no new freely accessible Week 1 game-side betting card was identified in this pass.",
+      "latestFinding": "Brandon Thorn's Sept. 26 Week 3 OL/DL mismatch preview verified; public excerpt identifies Kansas City DL over Miami OL as a major mismatch. Premium-only detail was not inferred.",
       "notes": "Use public material directly; premium material only when legitimately accessible or user-supplied. Fantasy-oriented evidence is context unless it has direct football/betting relevance."
     },
     {
       "sourceFamily": "Action Network",
       "independenceKey": "action-network",
       "priority": 1,
-      "status": "active",
-      "latestChecked": "2026-09-06",
+      "status": "active-current",
+      "latestChecked": "2026-09-27",
       "coverage": [
         "QB rankings",
         "offensive line rankings",
@@ -122,14 +125,15 @@
         "2026 Defense Rankings — Aug. 26",
         "2026 schedule/SOS analysis"
       ],
-      "notes": "Analysts remain individually attributed, but Action Network counts as one correlated family for consensus unless evidence is demonstrably independent."
+      "notes": "Analysts remain individually attributed, but Action Network counts as one correlated family for consensus unless evidence is demonstrably independent.",
+      "latestFinding": "Sept. 27 Week 3 Sunday best-bet card verified with eight game-level recommendations and incorporated."
     },
     {
       "sourceFamily": "NFL / team beat reporting",
       "independenceKey": "primary-reporting",
       "priority": 1,
-      "status": "active",
-      "latestChecked": "2026-09-06",
+      "status": "active-current",
+      "latestChecked": "2026-09-27",
       "coverage": [
         "official schedule",
         "injuries",
@@ -139,14 +143,15 @@
         "coaching statements",
         "matchup-specific beat reporting"
       ],
-      "notes": "Primary reporting is Game Intelligence, not expert consensus. Official/team sources take precedence for factual availability."
+      "notes": "Primary reporting is Game Intelligence, not expert consensus. Official/team sources take precedence for factual availability.",
+      "latestFinding": "Current official team availability checked; Seattle-Washington QB and injury statuses incorporated from team sources."
     },
     {
       "sourceFamily": "You Better You Bet",
       "independenceKey": "you-better-you-bet",
       "priority": 1,
-      "status": "active-source-limited",
-      "latestChecked": "2026-09-13",
+      "status": "active-current",
+      "latestChecked": "2026-09-27",
       "coverage": [
         "NFL weekly picks",
         "game sides",
@@ -157,7 +162,7 @@
       "publicMaterialSeeded": [
         "Hour 3 — NFL Week 1 Picks, Brad Evans Joins — Sept. 11, 2026"
       ],
-      "latestFinding": "Current Week 1 episode was discovered and audited. Public episode metadata confirms a Week 1 picks segment, but no reliable indexed transcript or explicit selection list was available in this pass, so no matchup opinion or price was inferred.",
+      "latestFinding": "Nick Kostos' current Week 3 You Better You Bet/BetMGM matchup rankings verified. Qualitative game opinions were incorporated; no wager was inferred where none was stated.",
       "notes": "Keep the source visible as checked even when zero attributable records clear ingestion. Do not turn episode titles into picks."
     }
   ]
