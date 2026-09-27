@@ -37,7 +37,8 @@ function oddsRow(ev){
   }
   const total=num(o?.overUnder),awayML=ml(o?.awayTeamOdds?.moneyLine),homeML=ml(o?.homeTeamOdds?.moneyLine);
   const completed=String(ev?.status?.type?.state||'').toLowerCase()==='post'||Boolean(ev?.status?.type?.completed);
-  return {eventId:String(ev.id),awayAbbr,homeAbbr,awayName,homeName,kickoff:ev.date||c.date||null,completed,spreadDisplay,total:total&&total>0?total:null,awayML,homeML,homeBookSpread,homeMargin,source:o?.provider?.name?`ESPN ${o.provider.name}`:(o?'ESPN odds feed':null),hasOdds:!!o};
+  const venue=c.venue||{},weather=c.weather||{},temperature=num(weather.temperature),condition=clean(weather.displayValue||weather.condition||weather.shortDisplayName),weatherSummary=[temperature!=null?`${Math.round(temperature)}°F`:null,condition||null].filter(Boolean).join(' · ');
+  return {eventId:String(ev.id),awayAbbr,homeAbbr,awayName,homeName,kickoff:ev.date||c.date||null,completed,spreadDisplay,total:total&&total>0?total:null,awayML,homeML,homeBookSpread,homeMargin,source:o?.provider?.name?`ESPN ${o.provider.name}`:(o?'ESPN odds feed':null),hasOdds:!!o,venueName:venue.fullName||venue.shortName||null,environment:venue.indoor===true?'indoor':'outdoor',weatherSummary:weatherSummary||null};
 }
 
 const r=await fetch(url,{headers:{accept:'application/json','user-agent':'nfl-governed-runtime-refresh/1.0'}});
@@ -102,6 +103,21 @@ const updatedLegacy=(legacy.games||[]).map(g=>{
   }
   return {...g,kickoff:row?.kickoff||g.kickoff,event_state:row?.completed?'final':'scheduled',market,model};
 });
+
+const priorWeather=await read('data/nfl-weather-current.json').catch(()=>({games:[]}));
+const priorWeatherById=new Map((priorWeather.games||[]).map(x=>[String(x.canonical_game_id||x.game_id),x]));
+const weatherGames=updatedCanonical.map(g=>{
+  const row=byAbbr.get(`${normAbbr(g.awayAbbr)}__${normAbbr(g.homeAbbr)}`),prior=priorWeatherById.get(g.gameId);
+  if(row?.completed&&prior)return prior;
+  const indoor=row?.environment==='indoor';
+  const summary=indoor
+    ? `${row.venueName||g.home+' home venue'} is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.`
+    : row?.weatherSummary
+      ? `Current ESPN game-window conditions: ${row.weatherSummary}.`
+      : 'Current ESPN event weather feed reviewed; no structured game-window condition was published. Weather remains source-limited with 0.0 automatic model points.';
+  return {game_id:g.gameId,canonical_game_id:g.gameId,matchup:`${g.away} at ${g.home}`,venue:row?.venueName||prior?.venue||null,environment:indoor?'indoor':'outdoor',status:indoor?'Official venue environment verified':'Current game-window weather feed reviewed',summary,risk:'source-limited',observed_at:now,total_adjustment_points:0,model_treatment:'Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.',source:url};
+});
+await fs.writeFile('data/nfl-weather-current.json',JSON.stringify({season,week,updated_at:now,source_status:'CURRENT ESPN GAME-WINDOW REVIEW',games:weatherGames},null,2)+'\n');
 
 const identityNote=`registry v${identity.version}: canonical abbreviations and aliases normalized before joins`;
 const nextCanonical={...canonical,updatedAt:now,marketSource:'Current ESPN NFL selected-week odds feed; exact sportsbook/juice required before execution',games:updatedCanonical,runtimeRefresh:{source:url,observedAt:now,espnEvents:rows.length,currentOddsGames:liveOdds,identityNormalization:identityNote}};

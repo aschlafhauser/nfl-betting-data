@@ -4,8 +4,8 @@
 For target Week N, only regular-season plays through Week N-1 are used.  The
 advanced process layer is deliberately conservative: it replaces 40% of the
 existing live scoring-margin signal, and the complete live layer remains phase
-weighted.  Motion is a separately capped matchup term because the current
-defensive source is categorical and early-season.
+weighted.  Motion remains a separately displayed research/confidence term. It contributes 0.0
+automatic fair-line points until holdout validation clears a governed promotion gate.
 """
 from __future__ import annotations
 
@@ -214,7 +214,7 @@ def main():
         z = sum(w * zs[k][t["abbr"]] for k, w in COMPOSITE.items())
         t["process"]["compositeZ"] = round(z, 4); t["process"]["ratingPoints"] = round(max(-5.0, min(5.0, z * 2.5)), 3)
         t["context"] = {**t.get("context", {}), "throughWeek": through, "advancedSource": "nflverse play-by-play", "leakageRule": f"Week {week} uses plays through Week {through} only"}
-    stats.update({"updatedAt": now, "schemaVersion": "3.0-advanced-process-model", "advancedSource": PBP_URL, "advancedThroughWeek": through, "method": "Leakage-safe nflverse play-by-play advanced metrics plus ESPN standard stats and governed motion tendencies. Advanced process replaces 40% of the live scoring-margin input; motion matchup is capped at 0.25 structural points.", "teams": rows})
+    stats.update({"updatedAt": now, "schemaVersion": "3.0-advanced-process-model", "advancedSource": PBP_URL, "advancedThroughWeek": through, "method": "Leakage-safe nflverse play-by-play advanced metrics plus ESPN standard stats and governed motion tendencies. Advanced process replaces 40% of the live scoring-margin input; motion matchup remains research-only with 0.0 structural points.", "teams": rows})
     by_abbr = {t["abbr"]: t for t in rows}; style_games = {x["gameId"]: x for x in style.get("games", [])}
     for g in board.get("games", []):
         a, h = by_abbr.get(g.get("awayAbbr")), by_abbr.get(g.get("homeAbbr"))
@@ -225,7 +225,7 @@ def main():
         process_adj = live_w * .40 * ((h_proc - h_score) - (a_proc - a_score))
         sg = style_games.get(g.get("gameId"), {}); away_i, home_i = sg.get("awayOffenseVsHomeDefense", {}), sg.get("homeOffenseVsAwayDefense", {})
         motion_raw = motion_advantage(home_i) - motion_advantage(away_i)
-        motion_adj = max(-.25, min(.25, .25 * motion_raw))
+        motion_adj = 0.0  # research/confidence only until validated
         base_struct = n(g.get("baseStructuralHomeMargin", g.get("structuralHomeMargin")), None)
         market = parse_spread(g.get("currentSpread"), g.get("away"), g.get("home"))
         if base_struct is None:
@@ -234,9 +234,9 @@ def main():
         production = .8 * market + .2 * structural if market is not None else None
         edge = abs(structural - market) if market is not None else None
         lean = g.get("homeAbbr") if market is not None and structural > market else g.get("awayAbbr") if market is not None and structural < market else "NONE"
-        g.update({"baseStructuralHomeMargin": round(base_struct, 3), "advancedProcessAdjustment": round(process_adj, 3), "motionMatchupAdjustment": round(motion_adj, 3), "structuralHomeMargin": round(structural, 3), "validatedStructuralSpread": fmt(structural, g["away"], g["home"]), "productionHomeMargin": None if production is None else round(production, 3), "productionSpread": fmt(production, g["away"], g["home"]), "structuralEdge": None if edge is None else round(edge, 3), "structuralLean": lean, "modelVersion": "NFL-v1.2 advanced process + capped motion-aware matchup"})
-        g["modelInputs"] = {**inp, "advancedProcess": {"throughWeek": through, "offenseDefenseMetrics": list(COMPOSITE), "awayProcessRatingPoints": a_proc, "homeProcessRatingPoints": h_proc, "liveScoringMarginShare": .60, "liveAdvancedProcessShare": .40, "structuralAdjustment": round(process_adj, 3)}, "motionMatchup": {"source": "governed motion-rate + categorical defensive response", "directPointCap": .25, "structuralAdjustment": round(motion_adj, 3), "earlySample": True}}
-    board.update({"updatedAt": now, "methodologyVersion": "1.2-advanced-process-motion-aware", "advancedProcessRuntime": {"status": "ACTIVE", "throughWeek": through, "teamCoverage": len(rows), "processShareOfLiveLayer": .40, "motionPointCap": .25, "leakageRule": f"Target Week {week} uses Weeks 1-{through} only"}})
+        g.update({"baseStructuralHomeMargin": round(base_struct, 3), "advancedProcessAdjustment": round(process_adj, 3), "motionMatchupAdjustment": round(motion_adj, 3), "structuralHomeMargin": round(structural, 3), "validatedStructuralSpread": fmt(structural, g["away"], g["home"]), "productionHomeMargin": None if production is None else round(production, 3), "productionSpread": fmt(production, g["away"], g["home"]), "structuralEdge": None if edge is None else round(edge, 3), "structuralLean": lean, "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup"})
+        g["modelInputs"] = {**inp, "advancedProcess": {"throughWeek": through, "offenseDefenseMetrics": list(COMPOSITE), "awayProcessRatingPoints": a_proc, "homeProcessRatingPoints": h_proc, "liveScoringMarginShare": .60, "liveAdvancedProcessShare": .40, "structuralAdjustment": round(process_adj, 3)}, "motionMatchup": {"source": "governed motion-rate + categorical defensive response", "directPointCap": 0.0, "structuralAdjustment": 0.0, "researchSignal": round(motion_raw, 3), "earlySample": True, "governance": "research/confidence only; 0.0 automatic fair-line points until validated"}}
+    board.update({"updatedAt": now, "methodologyVersion": "1.2-advanced-process-motion-research-only", "advancedProcessRuntime": {"status": "ACTIVE", "throughWeek": through, "teamCoverage": len(rows), "processShareOfLiveLayer": .40, "motionPointCap": 0.0, "leakageRule": f"Target Week {week} uses Weeks 1-{through} only"}})
     canon = {g["gameId"]: g for g in board.get("games", [])}
     for x in legacy.get("games", []):
         g = canon.get(x.get("canonical_game_id") or x.get("gameId"))
@@ -246,8 +246,8 @@ def main():
         edge = None if market is None or fair is None else fair - market
         x["stage"], x["priority"] = g.get("stage", x.get("stage")), g.get("priority", x.get("priority"))
         x["model"] = {**x.get("model", {}), "fair_spread_display": g.get("productionSpread"), "fair_spread": g.get("productionSpread"), "fair_spread_home_margin": fair, "base_structural_home_margin": g.get("baseStructuralHomeMargin"), "advanced_process_adjustment": g.get("advancedProcessAdjustment"), "motion_matchup_adjustment": g.get("motionMatchupAdjustment"), "structural_home_margin": g.get("structuralHomeMargin"), "structural_fair": g.get("validatedStructuralSpread"), "structural_edge": g.get("structuralEdge"), "executable_edge": None if edge is None else round(edge, 3), "edge_side": g.get("homeAbbr") if edge and edge > 0 else g.get("awayAbbr") if edge and edge < 0 else "NONE", "model_version": g.get("modelVersion"), "advanced_process": g.get("modelInputs", {}).get("advancedProcess"), "motion_matchup": g.get("modelInputs", {}).get("motionMatchup"), "edge_reconciled_at": now}
-    legacy.update({"generated_at": now, "model_methodology_version": "1.2-advanced-process-motion-aware", "advanced_process_runtime": board["advancedProcessRuntime"]})
-    audit = {"season": stats.get("season"), "week": week, "verifiedAt": now, "status": "PASS" if len(rows) == 32 and all(t.get("process", {}).get("ratingPoints") is not None for t in rows) else "FAIL", "teamCoverage": len(rows), "throughWeek": through, "requiredMetricFamilies": list(COMPOSITE), "motionCoverage": sum(1 for t in rows if t.get("offense", {}).get("motionRate") is not None), "modelIntegration": {"processShareOfLiveLayer": .40, "motionPointCap": .25, "productionStructuralWeight": .20}, "leakageRule": f"Target Week {week} uses only completed plays through Week {through}."}
+    legacy.update({"generated_at": now, "model_methodology_version": "1.2-advanced-process-motion-research-only", "advanced_process_runtime": board["advancedProcessRuntime"]})
+    audit = {"season": stats.get("season"), "week": week, "verifiedAt": now, "status": "PASS" if len(rows) == 32 and all(t.get("process", {}).get("ratingPoints") is not None for t in rows) else "FAIL", "teamCoverage": len(rows), "throughWeek": through, "requiredMetricFamilies": list(COMPOSITE), "motionCoverage": sum(1 for t in rows if t.get("offense", {}).get("motionRate") is not None), "modelIntegration": {"processShareOfLiveLayer": .40, "motionPointCap": 0.0, "motionGovernance": "research/confidence only until validated", "productionStructuralWeight": .20}, "leakageRule": f"Target Week {week} uses only completed plays through Week {through}."}
     # This file is fetched directly by the browser; compact serialization avoids
     # unnecessary transfer size while preserving the identical JSON contract.
     (DATA / "live-team-stats.json").write_text(json.dumps(stats, separators=(",", ":")) + "\n")
