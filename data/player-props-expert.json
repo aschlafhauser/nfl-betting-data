@@ -1,20 +1,40 @@
 {
   "season": 2026,
   "week": 3,
-  "updatedAt": "2026-09-27T23:59:00.000Z",
-  "status": "CURRENT-WEEK-VERIFIED-RECOMMENDATIONS",
+  "updatedAt": "2026-09-28T13:13:28.246Z",
+  "status": "CURRENT-WEEK-NO-UPCOMING-VERIFIED-RECOMMENDATIONS",
   "slate": {
     "gameId": "2026-W3-LAR-DEN",
     "matchup": "Los Angeles Rams at Denver Broncos",
     "kickoff": "2026-09-28T00:20:00.000Z",
-    "label": "Sunday Night Football"
+    "label": "Sunday Night Football",
+    "status": "FINAL",
+    "actionable": false
   },
   "governance": {
     "description": "Expert-driven only. No quantitative player-prop model impact. Every active recommendation has an explicit current-week direction and cited threshold; current sportsbook prices are not inferred.",
     "staleDataPolicy": "Prior-week recommendations are archived and never carried forward.",
     "injuryGate": "Final inactives checked before publication. Puka Nacua and Marvin Mims Jr. are inactive."
   },
-  "recommendations": [
+  "recommendations": [],
+  "watch": [],
+  "watchlist": [],
+  "sourceAudit": {
+    "currentWeekSourcesChecked": 5,
+    "checkedAt": "2026-09-28T13:13:28.246Z",
+    "expertSourceFamilies": [
+      "Covers",
+      "DraftKings Network",
+      "CBS Sports",
+      "Action Network"
+    ],
+    "officialAvailabilitySources": [
+      "NFL.com final inactives",
+      "Los Angeles Rams official injury report"
+    ],
+    "note": "Completed-game rows are archived automatically and cannot remain actionable. Current recommendations contain only not-yet-started selected-week games."
+  },
+  "closedRecommendations": [
     {
       "id": "2026-W3-LAR-DEN-CORUM-RUSH-OVER",
       "week": 3,
@@ -49,7 +69,8 @@
       "sourceUrl": "https://dknetwork.draftkings.com/2026/09/27/rams-vs-broncos-nfl-player-prop-bets-and-picks-for-sunday-night-football/",
       "marketSource": "Expert cited threshold",
       "marketTimestamp": "2026-09-27",
-      "status": "Active — verify available line before wager"
+      "status": "Closed — game final",
+      "closedAt": "2026-09-28T13:13:28.246Z"
     },
     {
       "id": "2026-W3-LAR-DEN-SUTTON-LONGEST-UNDER",
@@ -76,7 +97,8 @@
       "sourceUrl": "https://www.covers.com/nfl/rams-vs-broncos-props-best-bets-tonight-week-3-2026",
       "marketSource": "Expert cited threshold",
       "marketTimestamp": "2026-09-27",
-      "status": "Active — verify available line before wager"
+      "status": "Closed — game final",
+      "closedAt": "2026-09-28T13:13:28.246Z"
     },
     {
       "id": "2026-W3-LAR-DEN-NIX-COMPLETIONS-OVER",
@@ -103,7 +125,8 @@
       "sourceUrl": "https://www.covers.com/nfl/rams-vs-broncos-props-best-bets-tonight-week-3-2026",
       "marketSource": "Expert cited threshold",
       "marketTimestamp": "2026-09-27",
-      "status": "Active — verify available line before wager"
+      "status": "Closed — game final",
+      "closedAt": "2026-09-28T13:13:28.246Z"
     },
     {
       "id": "2026-W3-LAR-DEN-ADAMS-TD",
@@ -131,7 +154,8 @@
       "sourceUrl": "https://www.cbssports.com/betting/news/davante-adams-among-best-anytime-touchdown-scorer-picks-for-nfl-week-3-rams-vs-broncos-sunday-night-football/",
       "marketSource": "CBS Sports cited DraftKings price",
       "marketTimestamp": "2026-09-27",
-      "status": "Active — price sensitive"
+      "status": "Closed — game final",
+      "closedAt": "2026-09-28T13:13:28.246Z"
     },
     {
       "id": "2026-W3-LAR-DEN-WADDLE-TD",
@@ -159,11 +183,11 @@
       "sourceUrl": "https://www.cbssports.com/betting/news/davante-adams-among-best-anytime-touchdown-scorer-picks-for-nfl-week-3-rams-vs-broncos-sunday-night-football/",
       "marketSource": "CBS Sports cited DraftKings price",
       "marketTimestamp": "2026-09-27",
-      "status": "Active — price sensitive"
+      "status": "Closed — game final",
+      "closedAt": "2026-09-28T13:13:28.246Z"
     }
   ],
-  "watch": [],
-  "watchlist": [
+  "closedWatchlist": [
     {
       "id": "2026-W3-LAR-DEN-DOBBINS-ATTEMPTS-WATCH",
       "week": 3,
@@ -189,7 +213,8 @@
       "sourceUrl": "https://www.actionnetwork.com/news/best-nfl-prop-bets-today-broncos-vs-rams-prediction-best-nfl-player-props-anytime-td-scorer-snf-best-bets",
       "marketSource": "Expert cited alt threshold",
       "marketTimestamp": "2026-09-27",
-      "status": "Watch — committee risk"
+      "status": "Closed — game final",
+      "closedAt": "2026-09-28T13:13:28.246Z"
     },
     {
       "id": "2026-W3-LAR-DEN-NIX-RUSH-CONFLICT",
@@ -220,22 +245,8 @@
       "sourceUrl": "https://dknetwork.draftkings.com/2026/09/27/rams-vs-broncos-nfl-player-prop-bets-and-picks-for-sunday-night-football/",
       "marketSource": "Conflicting expert thresholds",
       "marketTimestamp": "2026-09-27",
-      "status": "Pass — conflicting signals"
+      "status": "Closed — game final",
+      "closedAt": "2026-09-28T13:13:28.246Z"
     }
-  ],
-  "sourceAudit": {
-    "currentWeekSourcesChecked": 5,
-    "checkedAt": "2026-09-27T23:59:00.000Z",
-    "expertSourceFamilies": [
-      "Covers",
-      "DraftKings Network",
-      "CBS Sports",
-      "Action Network"
-    ],
-    "officialAvailabilitySources": [
-      "NFL.com final inactives",
-      "Los Angeles Rams official injury report"
-    ],
-    "note": "Week 3 recommendations are limited to tonight's remaining game. Final inactives were checked; inactive players were excluded. No prior-week recommendations were carried forward."
-  }
+  ]
 }
