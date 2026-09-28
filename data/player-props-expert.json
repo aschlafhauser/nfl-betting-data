@@ -1,14 +1,241 @@
 {
   "season": 2026,
   "week": 3,
-  "updatedAt": "2026-09-24T00:37:30.288Z",
-  "status": "CURRENT-WEEK-NO-VERIFIED-RECOMMENDATIONS",
-  "governance": "Only explicit current-week expert player-prop recommendations may appear. Prior-week recommendations are archived and never carried forward.",
-  "recommendations": [],
+  "updatedAt": "2026-09-27T23:59:00.000Z",
+  "status": "CURRENT-WEEK-VERIFIED-RECOMMENDATIONS",
+  "slate": {
+    "gameId": "2026-W3-LAR-DEN",
+    "matchup": "Los Angeles Rams at Denver Broncos",
+    "kickoff": "2026-09-28T00:20:00.000Z",
+    "label": "Sunday Night Football"
+  },
+  "governance": {
+    "description": "Expert-driven only. No quantitative player-prop model impact. Every active recommendation has an explicit current-week direction and cited threshold; current sportsbook prices are not inferred.",
+    "staleDataPolicy": "Prior-week recommendations are archived and never carried forward.",
+    "injuryGate": "Final inactives checked before publication. Puka Nacua and Marvin Mims Jr. are inactive."
+  },
+  "recommendations": [
+    {
+      "id": "2026-W3-LAR-DEN-CORUM-RUSH-OVER",
+      "week": 3,
+      "gameId": "2026-W3-LAR-DEN",
+      "game": "Los Angeles Rams at Denver Broncos",
+      "team": "LAR",
+      "player": "Blake Corum",
+      "category": "Rushing",
+      "market": "Rushing yards",
+      "direction": "Over",
+      "line": "47.5",
+      "playTo": "50+ rushing yards",
+      "citedPrice": "-113 cited by DraftKings Network",
+      "confidence": "A",
+      "independentSourceCount": 3,
+      "thesis": "Three independent expert source families converge on Corum's rushing volume. He cleared this range with 54 and 79 rushing yards in Weeks 1-2, Denver has allowed 5.1 yards per carry, and Puka Nacua's absence increases the likelihood of a run-heavier Rams plan.",
+      "risk": "Kyren Williams can absorb passing-down and goal-line work; a negative game script would reduce Corum's early-down volume.",
+      "sources": [
+        {
+          "source": "DraftKings Network",
+          "url": "https://dknetwork.draftkings.com/2026/09/27/rams-vs-broncos-nfl-player-prop-bets-and-picks-for-sunday-night-football/"
+        },
+        {
+          "source": "Covers",
+          "url": "https://www.covers.com/nfl/rams-vs-broncos-props-best-bets-tonight-week-3-2026"
+        },
+        {
+          "source": "Action Network",
+          "url": "https://www.actionnetwork.com/news/best-nfl-prop-bets-today-broncos-vs-rams-prediction-best-nfl-player-props-anytime-td-scorer-snf-best-bets"
+        }
+      ],
+      "sourceUrl": "https://dknetwork.draftkings.com/2026/09/27/rams-vs-broncos-nfl-player-prop-bets-and-picks-for-sunday-night-football/",
+      "marketSource": "Expert cited threshold",
+      "marketTimestamp": "2026-09-27",
+      "status": "Active — verify available line before wager"
+    },
+    {
+      "id": "2026-W3-LAR-DEN-SUTTON-LONGEST-UNDER",
+      "week": 3,
+      "gameId": "2026-W3-LAR-DEN",
+      "game": "Los Angeles Rams at Denver Broncos",
+      "team": "DEN",
+      "player": "Courtland Sutton",
+      "category": "Receiving",
+      "market": "Longest reception",
+      "direction": "Under",
+      "line": "17.5",
+      "playTo": "Under 17.5 yards",
+      "confidence": "B",
+      "independentSourceCount": 1,
+      "thesis": "Sutton's longest catches through two games are 6 and 10 yards. The Rams have suppressed explosive passes, while Denver's quick-game structure and Jaylen Waddle's arrival reduce Sutton's downfield role.",
+      "risk": "A single broken coverage or contested catch defeats a longest-reception under.",
+      "sources": [
+        {
+          "source": "Covers",
+          "url": "https://www.covers.com/nfl/rams-vs-broncos-props-best-bets-tonight-week-3-2026"
+        }
+      ],
+      "sourceUrl": "https://www.covers.com/nfl/rams-vs-broncos-props-best-bets-tonight-week-3-2026",
+      "marketSource": "Expert cited threshold",
+      "marketTimestamp": "2026-09-27",
+      "status": "Active — verify available line before wager"
+    },
+    {
+      "id": "2026-W3-LAR-DEN-NIX-COMPLETIONS-OVER",
+      "week": 3,
+      "gameId": "2026-W3-LAR-DEN",
+      "game": "Los Angeles Rams at Denver Broncos",
+      "team": "DEN",
+      "player": "Bo Nix",
+      "category": "Completions",
+      "market": "Pass completions",
+      "direction": "Over",
+      "line": "21.5",
+      "playTo": "22+ completions; playable up to 23.5",
+      "confidence": "B",
+      "independentSourceCount": 1,
+      "thesis": "The supporting expert case expects Denver to lean on quick, high-percentage throws and notes Nix has reached 22 completions in 23 of 38 career games.",
+      "risk": "Denver could play from ahead and reduce pass volume; the edge disappears if the market moves beyond 23.5.",
+      "sources": [
+        {
+          "source": "Covers",
+          "url": "https://www.covers.com/nfl/rams-vs-broncos-props-best-bets-tonight-week-3-2026"
+        }
+      ],
+      "sourceUrl": "https://www.covers.com/nfl/rams-vs-broncos-props-best-bets-tonight-week-3-2026",
+      "marketSource": "Expert cited threshold",
+      "marketTimestamp": "2026-09-27",
+      "status": "Active — verify available line before wager"
+    },
+    {
+      "id": "2026-W3-LAR-DEN-ADAMS-TD",
+      "week": 3,
+      "gameId": "2026-W3-LAR-DEN",
+      "game": "Los Angeles Rams at Denver Broncos",
+      "team": "LAR",
+      "player": "Davante Adams",
+      "category": "Touchdown",
+      "market": "Anytime touchdown",
+      "direction": "Yes",
+      "line": "+130",
+      "playTo": "+115 or better",
+      "citedPrice": "+130 cited by CBS Sports",
+      "confidence": "B",
+      "independentSourceCount": 1,
+      "thesis": "With Puka Nacua inactive, Adams again projects as Matthew Stafford's primary red-zone and high-leverage target. He drew 10 targets and scored twice last week without Nacua.",
+      "risk": "Touchdown props are inherently high variance and Kyren Williams or the tight ends can capture goal-line opportunities.",
+      "sources": [
+        {
+          "source": "CBS Sports",
+          "url": "https://www.cbssports.com/betting/news/davante-adams-among-best-anytime-touchdown-scorer-picks-for-nfl-week-3-rams-vs-broncos-sunday-night-football/"
+        }
+      ],
+      "sourceUrl": "https://www.cbssports.com/betting/news/davante-adams-among-best-anytime-touchdown-scorer-picks-for-nfl-week-3-rams-vs-broncos-sunday-night-football/",
+      "marketSource": "CBS Sports cited DraftKings price",
+      "marketTimestamp": "2026-09-27",
+      "status": "Active — price sensitive"
+    },
+    {
+      "id": "2026-W3-LAR-DEN-WADDLE-TD",
+      "week": 3,
+      "gameId": "2026-W3-LAR-DEN",
+      "game": "Los Angeles Rams at Denver Broncos",
+      "team": "DEN",
+      "player": "Jaylen Waddle",
+      "category": "Touchdown",
+      "market": "Anytime touchdown",
+      "direction": "Yes",
+      "line": "+200",
+      "playTo": "+180 or better",
+      "citedPrice": "+200 cited by CBS Sports",
+      "confidence": "B",
+      "independentSourceCount": 1,
+      "thesis": "Waddle drew 10 targets and produced 138 receiving yards in Week 2, and Marvin Mims Jr.'s inactive status further concentrates Denver's wide-receiver opportunities.",
+      "risk": "Denver can finish drives through its running backs, and Waddle's touchdown role is less established than his yardage volume.",
+      "sources": [
+        {
+          "source": "CBS Sports",
+          "url": "https://www.cbssports.com/betting/news/davante-adams-among-best-anytime-touchdown-scorer-picks-for-nfl-week-3-rams-vs-broncos-sunday-night-football/"
+        }
+      ],
+      "sourceUrl": "https://www.cbssports.com/betting/news/davante-adams-among-best-anytime-touchdown-scorer-picks-for-nfl-week-3-rams-vs-broncos-sunday-night-football/",
+      "marketSource": "CBS Sports cited DraftKings price",
+      "marketTimestamp": "2026-09-27",
+      "status": "Active — price sensitive"
+    }
+  ],
   "watch": [],
-  "watchlist": [],
+  "watchlist": [
+    {
+      "id": "2026-W3-LAR-DEN-DOBBINS-ATTEMPTS-WATCH",
+      "week": 3,
+      "gameId": "2026-W3-LAR-DEN",
+      "game": "Los Angeles Rams at Denver Broncos",
+      "team": "DEN",
+      "player": "J.K. Dobbins",
+      "category": "Attempts",
+      "market": "Rushing attempts",
+      "direction": "Over",
+      "line": "15.5",
+      "playTo": "16+ attempts",
+      "confidence": "Watch",
+      "independentSourceCount": 1,
+      "thesis": "One expert source projects Dobbins as Denver's lead early-down back and recommends 16+ carries.",
+      "risk": "RJ Harvey is active and the backfield can remain a committee; no independent-source confirmation cleared the recommendation threshold.",
+      "sources": [
+        {
+          "source": "Action Network",
+          "url": "https://www.actionnetwork.com/news/best-nfl-prop-bets-today-broncos-vs-rams-prediction-best-nfl-player-props-anytime-td-scorer-snf-best-bets"
+        }
+      ],
+      "sourceUrl": "https://www.actionnetwork.com/news/best-nfl-prop-bets-today-broncos-vs-rams-prediction-best-nfl-player-props-anytime-td-scorer-snf-best-bets",
+      "marketSource": "Expert cited alt threshold",
+      "marketTimestamp": "2026-09-27",
+      "status": "Watch — committee risk"
+    },
+    {
+      "id": "2026-W3-LAR-DEN-NIX-RUSH-CONFLICT",
+      "week": 3,
+      "gameId": "2026-W3-LAR-DEN",
+      "game": "Los Angeles Rams at Denver Broncos",
+      "team": "DEN",
+      "player": "Bo Nix",
+      "category": "Rushing",
+      "market": "Rushing yards",
+      "direction": "No bet",
+      "line": "Conflicting thresholds",
+      "playTo": "Pass",
+      "confidence": "Watch",
+      "independentSourceCount": 2,
+      "thesis": "Current expert directions conflict: DraftKings Network argues under 15.5 rushing yards while Action Network proposes 25+ rushing yards. The disagreement is preserved instead of forcing a pick.",
+      "risk": "Quarterback rushing is sensitive to scramble opportunities and kneel-down scoring.",
+      "sources": [
+        {
+          "source": "DraftKings Network",
+          "url": "https://dknetwork.draftkings.com/2026/09/27/rams-vs-broncos-nfl-player-prop-bets-and-picks-for-sunday-night-football/"
+        },
+        {
+          "source": "Action Network",
+          "url": "https://www.actionnetwork.com/news/best-nfl-prop-bets-today-broncos-vs-rams-prediction-best-nfl-player-props-anytime-td-scorer-snf-best-bets"
+        }
+      ],
+      "sourceUrl": "https://dknetwork.draftkings.com/2026/09/27/rams-vs-broncos-nfl-player-prop-bets-and-picks-for-sunday-night-football/",
+      "marketSource": "Conflicting expert thresholds",
+      "marketTimestamp": "2026-09-27",
+      "status": "Pass — conflicting signals"
+    }
+  ],
   "sourceAudit": {
-    "currentWeekSourcesChecked": 0,
-    "note": "No verified Week 3 player-prop source record has been ingested yet. Empty is the correct governed state; Week 2 recommendations were removed from the active tab."
+    "currentWeekSourcesChecked": 5,
+    "checkedAt": "2026-09-27T23:59:00.000Z",
+    "expertSourceFamilies": [
+      "Covers",
+      "DraftKings Network",
+      "CBS Sports",
+      "Action Network"
+    ],
+    "officialAvailabilitySources": [
+      "NFL.com final inactives",
+      "Los Angeles Rams official injury report"
+    ],
+    "note": "Week 3 recommendations are limited to tonight's remaining game. Final inactives were checked; inactive players were excluded. No prior-week recommendations were carried forward."
   }
 }
