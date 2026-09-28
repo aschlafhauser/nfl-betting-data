@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+// Completed-game player props are archived before current-week portal publication.
 
 const read=async p=>JSON.parse(await fs.readFile(p,'utf8'));
 const canonicalPath='data/weekly-board.json';
