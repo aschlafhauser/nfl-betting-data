@@ -104,6 +104,22 @@ const updatedLegacy=(legacy.games||[]).map(g=>{
   return {...g,kickoff:row?.kickoff||g.kickoff,event_state:row?.completed?'final':'scheduled',market,model};
 });
 
+const propsPath='data/player-props-expert.json';
+const props=await read(propsPath).catch(()=>null);
+if(props&&Number(props.week)===week){
+  const finalIds=new Set(updatedCanonical.filter(g=>g.eventState==='final').map(g=>String(g.gameId)));
+  const recommendations=Array.isArray(props.recommendations)?props.recommendations:[];
+  const watchlist=Array.isArray(props.watchlist)?props.watchlist:[];
+  const closedRecommendations=[...(props.closedRecommendations||[]),...recommendations.filter(p=>finalIds.has(String(p.gameId))).map(p=>({...p,status:'Closed — game final',closedAt:now}))];
+  const closedWatchlist=[...(props.closedWatchlist||[]),...watchlist.filter(p=>finalIds.has(String(p.gameId))).map(p=>({...p,status:'Closed — game final',closedAt:now}))];
+  const activeRecommendations=recommendations.filter(p=>!finalIds.has(String(p.gameId)));
+  const activeWatchlist=watchlist.filter(p=>!finalIds.has(String(p.gameId)));
+  const slateFinal=props.slate?.gameId&&finalIds.has(String(props.slate.gameId));
+  const nextProps={...props,updatedAt:now,status:activeRecommendations.length?'CURRENT-WEEK-VERIFIED-RECOMMENDATIONS':'CURRENT-WEEK-NO-UPCOMING-VERIFIED-RECOMMENDATIONS',slate:slateFinal?{...props.slate,status:'FINAL',actionable:false}:props.slate,recommendations:activeRecommendations,watchlist:activeWatchlist,closedRecommendations,closedWatchlist,sourceAudit:{...(props.sourceAudit||{}),checkedAt:now,note:'Completed-game rows are archived automatically and cannot remain actionable. Current recommendations contain only not-yet-started selected-week games.'}};
+  await fs.writeFile(propsPath,JSON.stringify(nextProps,null,2)+'\n');
+  console.log(`NFL player props reconciled: active=${activeRecommendations.length}, archived=${closedRecommendations.length}, activeWatch=${activeWatchlist.length}`);
+}
+
 const priorWeather=await read('data/nfl-weather-current.json').catch(()=>({games:[]}));
 const priorWeatherById=new Map((priorWeather.games||[]).map(x=>[String(x.canonical_game_id||x.game_id),x]));
 const weatherGames=updatedCanonical.map(g=>{
