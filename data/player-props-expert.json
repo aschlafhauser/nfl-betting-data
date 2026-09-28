@@ -1,38 +1,170 @@
 {
   "season": 2026,
   "week": 3,
-  "updatedAt": "2026-09-28T13:13:28.246Z",
-  "status": "CURRENT-WEEK-NO-UPCOMING-VERIFIED-RECOMMENDATIONS",
+  "updatedAt": "2026-09-28T13:15:28.434Z",
+  "status": "CURRENT-WEEK-VERIFIED-RECOMMENDATIONS",
   "slate": {
-    "gameId": "2026-W3-LAR-DEN",
-    "matchup": "Los Angeles Rams at Denver Broncos",
-    "kickoff": "2026-09-28T00:20:00.000Z",
-    "label": "Sunday Night Football",
-    "status": "FINAL",
-    "actionable": false
+    "gameId": "2026-W3-PHI-CHI",
+    "matchup": "Philadelphia Eagles at Chicago Bears",
+    "kickoff": "2026-09-29T00:15:00.000Z",
+    "label": "Monday Night Football",
+    "status": "SCHEDULED",
+    "actionable": true
   },
   "governance": {
-    "description": "Expert-driven only. No quantitative player-prop model impact. Every active recommendation has an explicit current-week direction and cited threshold; current sportsbook prices are not inferred.",
-    "staleDataPolicy": "Prior-week recommendations are archived and never carried forward.",
-    "injuryGate": "Final inactives checked before publication. Puka Nacua and Marvin Mims Jr. are inactive."
+    "description": "Expert-driven only. No quantitative player-prop model impact. Recommendations require a current-week direction and an explicit quoted threshold; sportsbook availability and final inactives must be rechecked before execution.",
+    "staleDataPolicy": "Completed-game recommendations are archived automatically and cannot remain actionable.",
+    "injuryGate": "Monday final inactives remain pending. Every recommendation is conditional on the cited player being active and the listed price threshold remaining available."
   },
-  "recommendations": [],
+  "recommendations": [
+    {
+      "id": "2026-W3-PHI-CHI-WICKS-REC-OVER",
+      "week": 3,
+      "gameId": "2026-W3-PHI-CHI",
+      "game": "Philadelphia Eagles at Chicago Bears",
+      "team": "PHI",
+      "player": "Dontayvion Wicks",
+      "category": "Receiving",
+      "market": "Receiving yards",
+      "direction": "Over",
+      "line": "40+ yards",
+      "playTo": "40+ alt yards; standard over playable to 40.5",
+      "citedPrice": "-124 at DraftKings for 40+ yards",
+      "confidence": "B+",
+      "independentSourceCount": 2,
+      "thesis": "Covers projects Wicks into favorable single coverage against Chicago's man-heavy defense and notes 73 and 74 receiving yards in Weeks 1-2. Lineups independently recommends over 40.5, while DraftKings lists 40+ at -124.",
+      "risk": "Chicago can tilt safety help away from DeVonta Smith, or Philadelphia can play from ahead and reduce pass volume.",
+      "sources": [
+        {
+          "source": "Covers",
+          "url": "https://www.covers.com/nfl/eagles-vs-bears-props-best-bets-week-3-2026"
+        },
+        {
+          "source": "Lineups",
+          "url": "https://www.lineups.com/articles/eagles-bears-best-nfl-week-3-player-props/"
+        },
+        {
+          "source": "DraftKings Network market board",
+          "url": "https://dknetwork.draftkings.com/draftkings-sportsbook-player-props/"
+        }
+      ],
+      "sourceUrl": "https://www.covers.com/nfl/eagles-vs-bears-props-best-bets-week-3-2026",
+      "marketSource": "DraftKings current prop board",
+      "marketTimestamp": "2026-09-28T13:15:28.434Z",
+      "status": "Active — verify exact price and final inactives before wager"
+    },
+    {
+      "id": "2026-W3-PHI-CHI-SWIFT-REC-OVER",
+      "week": 3,
+      "gameId": "2026-W3-PHI-CHI",
+      "game": "Philadelphia Eagles at Chicago Bears",
+      "team": "CHI",
+      "player": "D'Andre Swift",
+      "category": "Receiving",
+      "market": "Receptions",
+      "direction": "Over",
+      "line": "1.5",
+      "playTo": "Over 1.5 receptions; 2+ catches",
+      "citedPrice": "-149 at DraftKings",
+      "confidence": "B",
+      "independentSourceCount": 2,
+      "thesis": "Covers expects Chicago's backup-QB plan to emphasize screens and checkdowns and notes Swift drew six targets last week. Action Network independently includes Swift among its Monday prop targets; DraftKings lists over 1.5 receptions at -149.",
+      "risk": "The price is expensive, Chicago can split passing-down work, and game script may not force enough dropbacks.",
+      "sources": [
+        {
+          "source": "Covers",
+          "url": "https://www.covers.com/nfl/eagles-vs-bears-props-best-bets-week-3-2026"
+        },
+        {
+          "source": "Action Network via Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/eagles-vs-bears-player-props-020000735.html"
+        },
+        {
+          "source": "DraftKings Network market board",
+          "url": "https://dknetwork.draftkings.com/draftkings-sportsbook-player-props/"
+        }
+      ],
+      "sourceUrl": "https://www.covers.com/nfl/eagles-vs-bears-props-best-bets-week-3-2026",
+      "marketSource": "DraftKings current prop board",
+      "marketTimestamp": "2026-09-28T13:15:28.434Z",
+      "status": "Active — verify exact price and final inactives before wager"
+    },
+    {
+      "id": "2026-W3-PHI-CHI-MUNDT-REC-OVER",
+      "week": 3,
+      "gameId": "2026-W3-PHI-CHI",
+      "game": "Philadelphia Eagles at Chicago Bears",
+      "team": "CHI",
+      "player": "Johnny Mundt",
+      "category": "Receiving",
+      "market": "Receptions",
+      "direction": "Over",
+      "line": "1.5",
+      "playTo": "Over 1.5 receptions",
+      "citedPrice": "-115 at bet365",
+      "confidence": "B-",
+      "independentSourceCount": 1,
+      "thesis": "Action Network's current Monday-night prop card targets Mundt over 1.5 receptions at -115, a low threshold suited to Chicago's expected short-area passing plan without Caleb Williams.",
+      "risk": "Single-source recommendation, role competition at tight end and uncertain backup-quarterback efficiency keep this below the two-source plays.",
+      "sources": [
+        {
+          "source": "Action Network via Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/eagles-vs-bears-player-props-020000735.html"
+        }
+      ],
+      "sourceUrl": "https://sports.yahoo.com/articles/eagles-vs-bears-player-props-020000735.html",
+      "marketSource": "bet365 price cited by Action Network",
+      "marketTimestamp": "2026-09-28T13:15:28.434Z",
+      "status": "Active — single-source; verify exact price, role and final inactives"
+    }
+  ],
   "watch": [],
-  "watchlist": [],
+  "watchlist": [
+    {
+      "id": "2026-W3-PHI-CHI-RAYMOND-REC-WATCH",
+      "week": 3,
+      "gameId": "2026-W3-PHI-CHI",
+      "game": "Philadelphia Eagles at Chicago Bears",
+      "team": "CHI",
+      "player": "Kalif Raymond",
+      "category": "Receiving",
+      "market": "Receiving yards",
+      "direction": "Over",
+      "line": "25+ yards",
+      "playTo": "25+ receiving yards only with an executable current price",
+      "confidence": "Watch",
+      "independentSourceCount": 2,
+      "thesis": "Covers and Action Network both identify Raymond as a short-area beneficiary of Chicago's backup-QB plan; he opened with 40 and 84 yards on 13 catches from 14 targets.",
+      "risk": "No current exact sportsbook price was captured in the governed source pass, so this remains watchlist-only.",
+      "sources": [
+        {
+          "source": "Covers",
+          "url": "https://www.covers.com/nfl/eagles-vs-bears-props-best-bets-week-3-2026"
+        },
+        {
+          "source": "Action Network via Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/eagles-vs-bears-player-props-020000735.html"
+        }
+      ],
+      "sourceUrl": "https://www.covers.com/nfl/eagles-vs-bears-props-best-bets-week-3-2026",
+      "marketSource": "PRICE_PENDING",
+      "marketTimestamp": "2026-09-28T13:15:28.434Z",
+      "status": "Watch — exact sportsbook price required"
+    }
+  ],
   "sourceAudit": {
-    "currentWeekSourcesChecked": 5,
-    "checkedAt": "2026-09-28T13:13:28.246Z",
+    "currentWeekSourcesChecked": 4,
+    "checkedAt": "2026-09-28T13:15:28.434Z",
     "expertSourceFamilies": [
       "Covers",
-      "DraftKings Network",
-      "CBS Sports",
-      "Action Network"
+      "Action Network",
+      "Lineups",
+      "DraftKings Network market board"
     ],
     "officialAvailabilitySources": [
-      "NFL.com final inactives",
-      "Los Angeles Rams official injury report"
+      "Official final inactive lists pending"
     ],
-    "note": "Completed-game rows are archived automatically and cannot remain actionable. Current recommendations contain only not-yet-started selected-week games."
+    "note": "Week 3 active recommendations are limited to tonight's Eagles-Bears game. Completed Rams-Broncos rows are preserved under closedRecommendations/closedWatchlist. All current plays require exact-price and final-inactive recheck."
   },
   "closedRecommendations": [
     {
