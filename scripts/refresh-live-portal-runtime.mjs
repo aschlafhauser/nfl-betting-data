@@ -107,6 +107,14 @@ const updatedLegacy=(legacy.games||[]).map(g=>{
 
 const propsPath='data/player-props-expert.json';
 const props=await read(propsPath).catch(()=>null);
+if(props&&Number(props.week)!==week){
+  const priorSeason=Number(props.season||season),priorWeek=Number(props.week);
+  const archivePath=`data/player-props-expert-${priorSeason}-w${priorWeek}.json`;
+  await fs.writeFile(archivePath,JSON.stringify(props,null,2)+'\n');
+  const nextProps={season,week,updatedAt:now,status:'CURRENT-WEEK-NO-VERIFIED-RECOMMENDATIONS',slate:null,governance:props.governance||'Expert-driven props require current selected-week evidence and exact executable prices.',recommendations:[],watch:[],watchlist:[],sourceAudit:{checkedAt:now,sourceWeek:week,note:`Prior Week ${priorWeek} props were archived to ${archivePath}; no Week ${week} recommendation is carried forward without current evidence.`},closedRecommendations:[],closedWatchlist:[]};
+  await fs.writeFile(propsPath,JSON.stringify(nextProps,null,2)+'\n');
+  console.log(`NFL player props rolled forward: archived Week ${priorWeek}; initialized Week ${week} with zero verified recommendations.`);
+}
 if(props&&Number(props.week)===week){
   const finalIds=new Set(updatedCanonical.filter(g=>g.eventState==='final').map(g=>String(g.gameId)));
   const recommendations=Array.isArray(props.recommendations)?props.recommendations:[];
