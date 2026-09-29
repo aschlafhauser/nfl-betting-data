@@ -103,7 +103,6 @@ jobs:
       - name: Capture immutable final results and CLV status when games complete
         run: node scripts/capture-results-clv.mjs
       - name: Rebuild selected-week manifest
-        continue-on-error: true
         run: node scripts/refresh-weekly-manifest.mjs
       - name: Persist governed NFL runtime safely
         if: ${{ always() }}
@@ -114,7 +113,6 @@ jobs:
           if ! git diff --quiet -- data/; then git add data/; git commit -m 'chore: refresh governed NFL runtime [skip ci]'; git push origin HEAD:main; fi
       - name: Enforce NFL weekly gates
         if: ${{ always() }}
-        continue-on-error: true
         run: node scripts/verify-weekly-gates.mjs
       - name: Verify every live NFL portal tab
         if: ${{ always() }}
