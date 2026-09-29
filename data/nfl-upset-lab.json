@@ -1,23 +1,149 @@
 {
   "season": 2026,
-  "week": 3,
-  "generated_at": "2026-09-28T22:10:09.155Z",
+  "week": 4,
+  "generated_at": "2026-09-29T02:05:33.821Z",
   "method": "Wednesday spread-based upset screen plus exact-price governance",
   "coverage": {
     "all_current_threshold_candidates_represented": true,
     "selected_week_games": 16,
-    "spread_screen_candidates": 5,
+    "spread_screen_candidates": 4,
     "price_policy": "Exact moneylines never inferred from spreads."
   },
   "candidates": [
     {
-      "game_id": "2026-W3-LAC-BUF",
-      "team": "LAC",
+      "game_id": "2026-W4-NE-BUF",
+      "team": "NE",
       "moneyline": null,
       "eligible": false,
       "status": "PRICE_PENDING",
       "spread": "Buffalo Bills -7",
-      "structuralFair": "Buffalo Bills -4.6",
+      "structuralFair": "Buffalo Bills -8.3",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "New England Patriots is 7 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Frozen structural lean BUF; structural fair Buffalo Bills -8.3."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Preseason prior 4.30 vs opponent 3.00."
+        },
+        {
+          "name": "recent-form",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Prior-week scoring margin -29."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
+    },
+    {
+      "game_id": "2026-W4-TEN-BAL",
+      "team": "TEN",
+      "moneyline": null,
+      "eligible": false,
+      "status": "PRICE_PENDING",
+      "spread": "Baltimore Ravens -11.5",
+      "structuralFair": "Baltimore Ravens -7",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Tennessee Titans is 11.5 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Frozen structural lean TEN; structural fair Baltimore Ravens -7."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Preseason prior -3.30 vs opponent 2.16."
+        },
+        {
+          "name": "recent-form",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Prior-week scoring margin -5."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
+    },
+    {
+      "game_id": "2026-W4-MIA-MIN",
+      "team": "MIA",
+      "moneyline": null,
+      "eligible": false,
+      "status": "PRICE_PENDING",
+      "spread": "Minnesota Vikings -10.5",
+      "structuralFair": "Minnesota Vikings -10",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Miami Dolphins is 10.5 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Frozen structural lean MIA; structural fair Minnesota Vikings -10."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Preseason prior -4.78 vs opponent 0.72."
+        },
+        {
+          "name": "recent-form",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Prior-week scoring margin -14."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
+    },
+    {
+      "game_id": "2026-W4-LAC-SEA",
+      "team": "LAC",
+      "moneyline": null,
+      "eligible": false,
+      "status": "PRICE_PENDING",
+      "spread": "Seattle Seahawks -7",
+      "structuralFair": "Seattle Seahawks -7.2",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -27,189 +153,21 @@
         },
         {
           "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Frozen structural lean LAC; structural fair Buffalo Bills -4.6."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Preseason prior 1.48 vs opponent 3.00."
-        },
-        {
-          "name": "recent-form",
           "status": "FAIL",
           "passed": false,
-          "evidence": "Prior-week scoring margin -12."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
-    },
-    {
-      "game_id": "2026-W3-NYJ-DET",
-      "team": "NYJ",
-      "moneyline": null,
-      "eligible": false,
-      "status": "PRICE_PENDING",
-      "spread": "Detroit Lions -6.5",
-      "structuralFair": "Detroit Lions -7.5",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "New York Jets is 6.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Frozen structural lean DET; structural fair Detroit Lions -7.5."
+          "evidence": "Frozen structural lean SEA; structural fair Seattle Seahawks -7.2."
         },
         {
           "name": "prior-quality-gap",
           "status": "FAIL",
           "passed": false,
-          "evidence": "Preseason prior -6.50 vs opponent 1.54."
-        },
-        {
-          "name": "recent-form",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Prior-week scoring margin -3."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
-    },
-    {
-      "game_id": "2026-W3-KC-MIA",
-      "team": "MIA",
-      "moneyline": null,
-      "eligible": false,
-      "status": "PRICE_PENDING",
-      "spread": "Kansas City Chiefs -9.5",
-      "structuralFair": "Kansas City Chiefs -8.2",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Miami Dolphins is 9.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Frozen structural lean MIA; structural fair Kansas City Chiefs -8.2."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Preseason prior -4.78 vs opponent 2.64."
+          "evidence": "Preseason prior 1.48 vs opponent 7.68."
         },
         {
           "name": "recent-form",
           "status": "FAIL",
           "passed": false,
-          "evidence": "Prior-week scoring margin -22."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
-    },
-    {
-      "game_id": "2026-W3-SEA-WSH",
-      "team": "WSH",
-      "moneyline": null,
-      "eligible": false,
-      "status": "PRICE_PENDING",
-      "spread": "Seattle Seahawks -8.5",
-      "structuralFair": "Seattle Seahawks -13.8",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Washington Commanders is 8.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Frozen structural lean SEA; structural fair Seattle Seahawks -13.8."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Preseason prior -4.22 vs opponent 7.68."
-        },
-        {
-          "name": "recent-form",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Prior-week scoring margin -17."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
-    },
-    {
-      "game_id": "2026-W3-ARI-SF",
-      "team": "ARI",
-      "moneyline": null,
-      "eligible": false,
-      "status": "PRICE_PENDING",
-      "spread": "San Francisco 49ers -7.5",
-      "structuralFair": "San Francisco 49ers -10.8",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Arizona Cardinals is 7.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Frozen structural lean SF; structural fair San Francisco 49ers -10.8."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Preseason prior -2.14 vs opponent 3.60."
-        },
-        {
-          "name": "recent-form",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Prior-week scoring margin -24."
+          "evidence": "Prior-week scoring margin -8."
         },
         {
           "name": "availability",
@@ -224,13 +182,139 @@
   "near_threshold_watch": [],
   "price_pending": [
     {
-      "game_id": "2026-W3-LAC-BUF",
-      "team": "LAC",
+      "game_id": "2026-W4-NE-BUF",
+      "team": "NE",
       "moneyline": null,
       "eligible": false,
       "status": "PRICE_PENDING",
       "spread": "Buffalo Bills -7",
-      "structuralFair": "Buffalo Bills -4.6",
+      "structuralFair": "Buffalo Bills -8.3",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "New England Patriots is 7 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Frozen structural lean BUF; structural fair Buffalo Bills -8.3."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Preseason prior 4.30 vs opponent 3.00."
+        },
+        {
+          "name": "recent-form",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Prior-week scoring margin -29."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
+    },
+    {
+      "game_id": "2026-W4-TEN-BAL",
+      "team": "TEN",
+      "moneyline": null,
+      "eligible": false,
+      "status": "PRICE_PENDING",
+      "spread": "Baltimore Ravens -11.5",
+      "structuralFair": "Baltimore Ravens -7",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Tennessee Titans is 11.5 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Frozen structural lean TEN; structural fair Baltimore Ravens -7."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Preseason prior -3.30 vs opponent 2.16."
+        },
+        {
+          "name": "recent-form",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Prior-week scoring margin -5."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
+    },
+    {
+      "game_id": "2026-W4-MIA-MIN",
+      "team": "MIA",
+      "moneyline": null,
+      "eligible": false,
+      "status": "PRICE_PENDING",
+      "spread": "Minnesota Vikings -10.5",
+      "structuralFair": "Minnesota Vikings -10",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Miami Dolphins is 10.5 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Frozen structural lean MIA; structural fair Minnesota Vikings -10."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Preseason prior -4.78 vs opponent 0.72."
+        },
+        {
+          "name": "recent-form",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Prior-week scoring margin -14."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
+    },
+    {
+      "game_id": "2026-W4-LAC-SEA",
+      "team": "LAC",
+      "moneyline": null,
+      "eligible": false,
+      "status": "PRICE_PENDING",
+      "spread": "Seattle Seahawks -7",
+      "structuralFair": "Seattle Seahawks -7.2",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -240,189 +324,21 @@
         },
         {
           "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Frozen structural lean LAC; structural fair Buffalo Bills -4.6."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Preseason prior 1.48 vs opponent 3.00."
-        },
-        {
-          "name": "recent-form",
           "status": "FAIL",
           "passed": false,
-          "evidence": "Prior-week scoring margin -12."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
-    },
-    {
-      "game_id": "2026-W3-NYJ-DET",
-      "team": "NYJ",
-      "moneyline": null,
-      "eligible": false,
-      "status": "PRICE_PENDING",
-      "spread": "Detroit Lions -6.5",
-      "structuralFair": "Detroit Lions -7.5",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "New York Jets is 6.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Frozen structural lean DET; structural fair Detroit Lions -7.5."
+          "evidence": "Frozen structural lean SEA; structural fair Seattle Seahawks -7.2."
         },
         {
           "name": "prior-quality-gap",
           "status": "FAIL",
           "passed": false,
-          "evidence": "Preseason prior -6.50 vs opponent 1.54."
-        },
-        {
-          "name": "recent-form",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Prior-week scoring margin -3."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
-    },
-    {
-      "game_id": "2026-W3-KC-MIA",
-      "team": "MIA",
-      "moneyline": null,
-      "eligible": false,
-      "status": "PRICE_PENDING",
-      "spread": "Kansas City Chiefs -9.5",
-      "structuralFair": "Kansas City Chiefs -8.2",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Miami Dolphins is 9.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Frozen structural lean MIA; structural fair Kansas City Chiefs -8.2."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Preseason prior -4.78 vs opponent 2.64."
+          "evidence": "Preseason prior 1.48 vs opponent 7.68."
         },
         {
           "name": "recent-form",
           "status": "FAIL",
           "passed": false,
-          "evidence": "Prior-week scoring margin -22."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
-    },
-    {
-      "game_id": "2026-W3-SEA-WSH",
-      "team": "WSH",
-      "moneyline": null,
-      "eligible": false,
-      "status": "PRICE_PENDING",
-      "spread": "Seattle Seahawks -8.5",
-      "structuralFair": "Seattle Seahawks -13.8",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Washington Commanders is 8.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Frozen structural lean SEA; structural fair Seattle Seahawks -13.8."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Preseason prior -4.22 vs opponent 7.68."
-        },
-        {
-          "name": "recent-form",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Prior-week scoring margin -17."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
-    },
-    {
-      "game_id": "2026-W3-ARI-SF",
-      "team": "ARI",
-      "moneyline": null,
-      "eligible": false,
-      "status": "PRICE_PENDING",
-      "spread": "San Francisco 49ers -7.5",
-      "structuralFair": "San Francisco 49ers -10.8",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Arizona Cardinals is 7.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Frozen structural lean SF; structural fair San Francisco 49ers -10.8."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Preseason prior -2.14 vs opponent 3.60."
-        },
-        {
-          "name": "recent-form",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Prior-week scoring margin -24."
+          "evidence": "Prior-week scoring margin -8."
         },
         {
           "name": "availability",
