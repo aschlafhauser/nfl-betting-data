@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-27T12:30:00Z",
+  "updatedAt": "2026-09-30T14:00:23.047Z",
   "policy": "Preserve analyst-level notes but count correlated publications under a single sourceFamily/independenceKey. Information, analysis and explicit betting opinions are tagged separately. Every matchup record must join the canonical nfl-weekly-board game ID; unmatched records are an ingestion failure. Expert Intelligence is qualitative context/residual and may not silently overwrite the quantitative NFL fair.",
   "sources": [
     {
@@ -150,8 +150,8 @@
       "sourceFamily": "You Better You Bet",
       "independenceKey": "you-better-you-bet",
       "priority": 1,
-      "status": "active-current",
-      "latestChecked": "2026-09-27",
+      "status": "active-current-source-limited",
+      "latestChecked": "2026-09-30",
       "coverage": [
         "NFL weekly picks",
         "game sides",
@@ -162,8 +162,10 @@
       "publicMaterialSeeded": [
         "Hour 3 — NFL Week 1 Picks, Brad Evans Joins — Sept. 11, 2026"
       ],
-      "latestFinding": "Nick Kostos' current Week 3 You Better You Bet/BetMGM matchup rankings verified. Qualitative game opinions were incorporated; no wager was inferred where none was stated.",
-      "notes": "Keep the source visible as checked even when zero attributable records clear ingestion. Do not turn episode titles into picks."
+      "latestFinding": "Audacy You Better You Bet episode index checked 2026-09-30 for selected Week 4. Accessible public metadata did not yield an attributable governed Week 4 pick at this checkpoint; zero selections were inferred from titles or metadata.",
+      "notes": "Keep the source visible as checked even when zero attributable records clear ingestion. Do not turn episode titles into picks.",
+      "selectedWeek": 4,
+      "sourceUrl": "https://www.audacy.com/podcast/you-better-you-bet-2015a/episodes"
     }
   ]
 }

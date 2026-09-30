@@ -2,7 +2,7 @@
   "sport": "NFL",
   "season": 2026,
   "week": 4,
-  "generatedAt": "2026-09-30T13:57:02.457Z",
+  "generatedAt": "2026-09-30T14:00:23.190Z",
   "status": "SYNCHRONIZED",
   "primaryLedger": "data/nfl-expert-weekly.json",
   "auditDirectory": "data/expert-episode-audit",
@@ -14,6 +14,18 @@
   "missingGovernedRecords": 0,
   "primaryLedgerStatus": "SYNCHRONIZED",
   "detail": "Lossless local merge completed for selected Week 4; historical records preserved and all governed audit records represented.",
+  "sourceAudit": {
+    "youBetterYouBet": {
+      "status": "CURRENT-SOURCE-LIMITED",
+      "checkedAt": "2026-09-30T14:00:23.047Z",
+      "selectedWeek": 4,
+      "sourceUrl": "https://www.audacy.com/podcast/you-better-you-bet-2015a/episodes",
+      "httpStatus": 200,
+      "error": null,
+      "attributableRecordsAdded": 0,
+      "noPickInference": true
+    }
+  },
   "productionImpact": {
     "fairPoints": 0,
     "modelWeights": 0,
