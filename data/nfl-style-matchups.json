@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 4,
-  "updatedAt": "2026-09-30T13:15:00.072Z",
+  "updatedAt": "2026-09-30T13:32:51.273Z",
   "status": "CURRENT-MOTION-RATE",
   "governance": "Research/display and Deep Dive confidence only. 0.0 automatic production fair-line points until incremental holdout validation demonstrates value beyond existing priors/current team stats/QB/market inputs.",
   "sources": {
@@ -9,14 +9,14 @@
       "primary": {
         "provider": "Sharp Football Analysis",
         "url": "https://www.sharpfootballanalysis.com/stats-nfl/nfl-offensive-tendencies-stats/amp/",
-        "retrievedAt": "2026-09-30T13:15:00.072Z",
+        "retrievedAt": "2026-09-30T13:32:51.273Z",
         "parsedTeams": 32,
         "error": null
       },
       "fallback": {
         "provider": "StatRankings",
         "url": "https://statrankings.com/nfl/advanced/teams/pace-playcalling/motion-rate",
-        "retrievedAt": "2026-09-30T13:15:00.072Z",
+        "retrievedAt": "2026-09-30T13:32:51.273Z",
         "parsedTeams": 0,
         "error": null
       }
@@ -781,11 +781,14 @@
       "matchup": "Indianapolis Colts at Washington Commanders",
       "awayOffenseVsHomeDefense": {
         "offense": "IND",
+        "defense": "WAS",
         "motionRate": 0.636,
         "motionUsage": "AVERAGE",
         "playActionRate": 0.203,
         "shotgunRate": 0.556,
         "noHuddleRate": 0.043,
+        "defensePassVsMotion": "weak",
+        "defenseRunVsMotion": "very-strong",
         "flags": [
           "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
@@ -793,16 +796,17 @@
         "modelPointImpact": 0
       },
       "homeOffenseVsAwayDefense": {
+        "offense": "WAS",
         "defense": "IND",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.442,
+        "motionUsage": "LOW",
+        "playActionRate": 0.141,
+        "shotgunRate": 0.6829999999999999,
+        "noHuddleRate": 0.08,
         "defensePassVsMotion": "strong",
         "defenseRunVsMotion": "weak",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
