@@ -21,7 +21,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          # Reruns and queued jobs must bind to the latest serialized branch state,
+          # not the original event SHA, before generating governed data.
+          ref: main
+          fetch-depth: 20
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -108,9 +111,14 @@ jobs:
         if: ${{ always() }}
         run: |
           set -e
-          git config user.name 'nfl-runtime-bot'; git config user.email 'nfl-runtime-bot@users.noreply.github.com'; git fetch origin main
-          if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then git rebase origin/main || { git rebase --abort || true; exit 1; }; fi
-          if ! git diff --quiet -- data/; then git add data/; git commit -m 'chore: refresh governed NFL runtime [skip ci]'; git push origin HEAD:main; fi
+          git config user.name 'nfl-runtime-bot'
+          git config user.email 'nfl-runtime-bot@users.noreply.github.com'
+          if git diff --quiet -- data/; then echo 'No governed NFL data changes.'; exit 0; fi
+          git add data/
+          git commit -m 'chore: refresh governed NFL runtime [skip ci]'
+          git fetch origin main
+          git rebase origin/main || { git rebase --abort || true; echo 'Could not safely reconcile NFL runtime with latest main.'; exit 1; }
+          git push origin HEAD:main
       - name: Enforce NFL weekly gates
         if: ${{ always() }}
         run: node scripts/verify-weekly-gates.mjs
