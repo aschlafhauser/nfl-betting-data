@@ -124,6 +124,14 @@ jobs:
         run: node scripts/verify-weekly-gates.mjs
       - name: Verify every live NFL portal tab
         if: ${{ always() }}
+        timeout-minutes: 6
         env:
           NFL_PORTAL_URL: https://nfl-betting-intelligence.netlify.app/
-        run: node scripts/verify-live-portal.mjs
+        run: |
+          set -e
+          for attempt in 1 2 3 4 5 6; do
+            echo "NFL live portal verification attempt ${attempt}/6"
+            if node scripts/verify-live-portal.mjs; then exit 0; fi
+            if [ "$attempt" -lt 6 ]; then sleep 30; fi
+          done
+          exit 1
