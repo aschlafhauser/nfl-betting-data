@@ -97,6 +97,20 @@ jobs:
           fs.writeFileSync('data/nfl-weekly-board.json',JSON.stringify(portal,null,2)+'\n');
           console.log(`NFL portal model runtime synchronized ${matched}/${matched}; no null fairs/edges.`);
           NODE
+      - name: Rebuild selected-week advanced Matchup Advantages
+        run: node scripts/build-advanced-matchup-advantages.mjs
+      - name: Enforce Matchup Advantages selected-week completeness
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const board=JSON.parse(fs.readFileSync('data/nfl-weekly-board.json','utf8'));
+          const layer=JSON.parse(fs.readFileSync('data/advanced-matchup-advantages-current.json','utf8'));
+          const ids=new Set((board.games||[]).map(g=>String(g.canonical_game_id||g.canonicalGameId||g.id)));
+          const rows=layer.games||[];
+          if(Number(layer.week)!==Number(board.week)||rows.length!==ids.size||new Set(rows.map(g=>String(g.gameId))).size!==ids.size||rows.some(g=>!ids.has(String(g.gameId))||!Number.isFinite(Number(g.awayScore))||!Number.isFinite(Number(g.homeScore))))throw new Error('Matchup Advantages selected-week coverage, IDs, or scores failed');
+          if(Number(layer.productionPointImpact)!==0)throw new Error('Diagnostic matchup layer cannot alter production fair lines');
+          console.log('Matchup Advantages verified',rows.length,'games for week',board.week);
+          NODE
       - name: Reconcile canonical NFL team identities
         run: node scripts/audit-team-identities.mjs
       - name: Freeze due immutable pre-kickoff snapshots after official inactives
