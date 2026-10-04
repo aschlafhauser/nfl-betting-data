@@ -2,7 +2,7 @@
   "version": "NFL-WEEKLY-MANIFEST-v3",
   "season": 2026,
   "week": 4,
-  "updatedAt": "2026-10-04T08:35:43.099Z",
+  "updatedAt": "2026-10-04T13:19:25.612Z",
   "status": "PASS-WITH-WARNINGS",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-10-04.json",
@@ -74,10 +74,12 @@
       "primaryLedgerStatus": "SYNCHRONIZED",
       "ledgerSyncReport": "data/expert-ledger-reconciliation.json",
       "sourceCoverageReport": "data/expert-source-coverage-current.json",
+      "sourceCoverage": "8/8",
+      "selectedWeekRecords": 12,
       "youBetterYouBetStatus": "active-current-source-limited",
       "youBetterYouBetChecked": "2026-10-04",
       "pointImpact": 0,
-      "note": "Expert Intelligence remains a qualitative residual; primary ledger is losslessly synchronized (116 ledger records; 0 missing). You Better You Bet/Audacy selected-week audit is current and source-limited with zero inferred picks."
+      "note": "Expert Intelligence remains a qualitative residual with zero automatic model impact. Primary ledger is losslessly synchronized (128 ledger records; 0 missing). Selected-week source coverage passes at 8/8 current sources with 12 attributable Week 4 records. You Better You Bet/Audacy is current and source-limited with zero inferred picks."
     },
     "upsetResearchIsolation": {
       "status": "PASS",
@@ -93,8 +95,15 @@
       "artifact": "data/player-props-expert.json",
       "artifactWeek": 4,
       "selectedWeek": 4,
-      "verifiedRecommendations": 0,
-      "watchlistRows": 0,
+      "verifiedRecommendations": 4,
+      "watchlistRows": 2,
+      "verification": {
+        "seasonMatch": true,
+        "weekMatch": true,
+        "fresh": true,
+        "canonicalGameIds": true,
+        "missingGameIds": []
+      },
       "note": "Player Props ledger is current for the selected week; prior-week recommendations are archived and never carried forward."
     },
     "officialExecution": {

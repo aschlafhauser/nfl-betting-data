@@ -14,11 +14,19 @@ const selectedWeek=Number(board?.week||process.env.NFL_WEEK||ledger.week||1);
 if(!ledger||!Array.isArray(ledger.records)) throw new Error(`${LEDGER} must contain a records array`);
 const names=(await fs.readdir(AUDIT_DIR)).filter(n=>n.endsWith('.json')).sort();
 const candidates=[];
+const selectedWeekChecks=new Map();
 
 for(const name of names){
   const path=`${AUDIT_DIR}/${name}`;
   const a=await read(path).catch(()=>null);
   if(!a||String(a.sport||'NFL').toUpperCase()!=='NFL') continue;
+  if(Number(a.week)===selectedWeek){
+    const checks=Array.isArray(a.sourceChecks)?a.sourceChecks:(a.sourceFamily?[{sourceFamily:a.sourceFamily,status:a.status,sourceUrl:(a.sourceUrls||[])[0]||a.sourceUrl,latestFinding:a.note||a.latestFinding}]:[]);
+    for(const check of checks){
+      if(!check?.sourceFamily)continue;
+      selectedWeekChecks.set(norm(check.sourceFamily),{...check,checkedAt:a.auditedAt||a.discoveredAt||a.sourceDate||null,auditFile:path});
+    }
+  }
   const source=a.sourceFamily||a.source||a.analyst||'Governed audit';
   const sourceDate=a.sourceDate||a.published||a.auditedAt||a.discoveredAt||null;
   const groups=[['newStructuredRecordsIntended',a.newStructuredRecordsIntended],['newStructuredRecords',Array.isArray(a.newStructuredRecords)?a.newStructuredRecords:null],['materialRecords',a.materialRecords],['newMaterialRecords',Array.isArray(a.newMaterialRecords)?a.newMaterialRecords:null]];
@@ -29,7 +37,7 @@ for(const name of names){
       const gameId=r.game_id||r.gameId||r.canonicalGameId||a.canonicalGameId||null,sourceFamily=r.source_family||r.sourceFamily||source;
       const summary=r.summary||r.sourceAnalysis||r.materialAnalysis||r.matchupImplication||r.mechanism||r.detail||r.construction||r.constructionDetail||'';
       if(!gameId||!summary)return;
-      candidates.push({...r,season:Number(r.season||a.season||board?.season||ledger.season||2026),week:Number(r.week||a.week||selectedWeek),game_id:gameId,canonical_game_id:r.canonical_game_id||r.canonicalGameId||gameId,source_family:sourceFamily,analyst:r.analyst||a.analyst||null,source_date:r.source_date||r.sourceDate||sourceDate,summary,timestamp:r.timestamp||a.auditedAt||a.discoveredAt||sourceDate||new Date().toISOString(),independence:r.independence||'governed-audit-source',kind:r.kind||r.opinionType||'expert/context',freshness:r.freshness||'current-week',incremental_information:r.incremental_information??true,model_relationship:r.model_relationship||'orthogonal-new-information',construction_detail:r.construction_detail||r.constructionDetail||r.construction||null,audit_provenance:`${path}#${field}[${i}]`,audit_id:r.id||`audit-${hash([name,field,i,gameId,sourceFamily,summary].join('|'))}`,governance:'Expert Intelligence qualitative residual only; zero automatic fair/model/gate/ledger/units impact.'});
+      candidates.push({...r,season:Number(r.season||a.season||board?.season||ledger.season||2026),week:Number(r.week||a.week||ledger.week||1),game_id:gameId,canonical_game_id:r.canonical_game_id||r.canonicalGameId||gameId,source_family:sourceFamily,analyst:r.analyst||a.analyst||null,source_date:r.source_date||r.sourceDate||sourceDate,summary,timestamp:r.timestamp||a.auditedAt||a.discoveredAt||sourceDate||new Date().toISOString(),independence:r.independence||'governed-audit-source',kind:r.kind||r.opinionType||'expert/context',freshness:r.freshness||'current-week',incremental_information:r.incremental_information??true,model_relationship:r.model_relationship||'orthogonal-new-information',construction_detail:r.construction_detail||r.constructionDetail||r.construction||null,audit_provenance:`${path}#${field}[${i}]`,audit_id:r.id||`audit-${hash([name,field,i,gameId,sourceFamily,summary].join('|'))}`,governance:'Expert Intelligence qualitative residual only; zero automatic fair/model/gate/ledger/units impact.'});
     });
   }
   if(a.canonicalGameId&&(a.materialAnalysis||a.matchupImplication)){
@@ -40,6 +48,8 @@ for(const name of names){
 
 const key=r=>r.audit_id?`audit:${r.audit_id}`:`sig:${norm(r.game_id)}|${norm(r.source_family)}|${norm(r.summary)}|${norm(r.construction_detail)}`;
 const sig=r=>`${norm(r.game_id)}|${norm(r.source_family)}|${norm(r.summary)}|${norm(r.construction_detail)}`;
+const selectedWeekGameIds=new Set((board?.games||[]).map(g=>String(g.canonical_game_id||g.gameId||g.id||'')).filter(Boolean));
+ledger.records=ledger.records.filter(r=>Number(r.week)!==selectedWeek||selectedWeekGameIds.has(String(r.game_id||r.canonical_game_id||'')));
 const candidateByKey=new Map(candidates.map(r=>[key(r),r])),candidateBySig=new Map(candidates.map(r=>[sig(r),r]));let enriched=0;
 ledger.records=ledger.records.map(r=>{const c=candidateByKey.get(key(r))||candidateBySig.get(sig(r));if(!c)return r;const next={...r,season:r.season??c.season,week:r.week??c.week,canonical_game_id:r.canonical_game_id||r.canonicalGameId||c.canonical_game_id||c.game_id};if(next.season!==r.season||next.week!==r.week||next.canonical_game_id!==r.canonical_game_id)enriched++;return next});
 const existingKeys=new Set(ledger.records.map(key)),existingSigs=new Set(ledger.records.map(sig));let appended=0;
@@ -63,15 +73,43 @@ const coverage=await read(coveragePath).catch(()=>({season:Number(board?.season|
 const finding=audacyReachable
   ?`Audacy You Better You Bet episode index checked ${auditDay} for selected Week ${selectedWeek}. Accessible public metadata did not yield an attributable governed Week ${selectedWeek} pick at this checkpoint; zero selections were inferred from titles or metadata.`
   :`Audacy You Better You Bet episode index check failed ${auditDay} for selected Week ${selectedWeek} (HTTP ${audacyHttpStatus??'unavailable'}${audacyError?'; '+audacyError:''}). No selection was inferred.`;
-const auditRow=(sourceAudit.sources||[]).find(x=>/You Better You Bet/i.test(String(x.sourceFamily||'')));
-if(auditRow){auditRow.status=audacyReachable?'active-current-source-limited':'check-failed';auditRow.latestChecked=auditDay;auditRow.selectedWeek=selectedWeek;auditRow.latestFinding=finding;auditRow.sourceUrl=audacyUrl}
-sourceAudit.updatedAt=auditIso;await fs.writeFile(sourceAuditPath,JSON.stringify(sourceAudit,null,2)+'\n');
-const coverageRow=(coverage.sources||[]).find(x=>/You Better You Bet/i.test(String(x.sourceFamily||'')));
-if(coverageRow){
-  for(const k of Object.keys(coverageRow))if(/^week\d+RecordCount$/.test(k))delete coverageRow[k];
-  coverageRow.status=audacyReachable?'active-current-source-limited':'check-failed';coverageRow.latestChecked=auditDay;coverageRow.current=audacyReachable;coverageRow.selectedWeekRecordCount=0;coverageRow.latestFinding=finding;coverageRow.sourceUrl=audacyUrl;
+const ybybKey=norm('You Better You Bet');
+selectedWeekChecks.set(ybybKey,{...(selectedWeekChecks.get(ybybKey)||{}),sourceFamily:'You Better You Bet',status:audacyReachable?'active-current-source-limited':'check-failed',sourceUrl:audacyUrl,latestFinding:finding,checkedAt:auditIso});
+const selectedWeekRecordCounts=new Map();
+for(const record of candidates){
+  if(Number(record.week)!==selectedWeek)continue;
+  const k=norm(record.source_family);
+  selectedWeekRecordCounts.set(k,(selectedWeekRecordCounts.get(k)||0)+1);
 }
-coverage.week=selectedWeek;coverage.generatedAt=auditIso;coverage.status=audacyReachable?'CURRENT_WITH_SOURCE_LIMITS':'FAIL';coverage.summary={...(coverage.summary||{}),required:(coverage.requiredSourceFamilies||[]).length,current:(coverage.sources||[]).filter(x=>x.current).length,selectedWeekRecords:(coverage.sources||[]).reduce((n,x)=>n+Number(x.selectedWeekRecordCount||0),0)};await fs.writeFile(coveragePath,JSON.stringify(coverage,null,2)+'\n');
+for(const row of sourceAudit.sources||[]){
+  const check=selectedWeekChecks.get(norm(row.sourceFamily));
+  if(!check)continue;
+  row.status=check.status||'active-current-source-limited';
+  row.latestChecked=String(check.checkedAt||auditIso).slice(0,10);
+  row.selectedWeek=selectedWeek;
+  row.selectedWeekRecordCount=selectedWeekRecordCounts.get(norm(row.sourceFamily))||0;
+  row.latestFinding=check.latestFinding||`Selected Week ${selectedWeek} source checked; no attributable record was inferred.`;
+  if(check.sourceUrl)row.sourceUrl=check.sourceUrl;
+}
+sourceAudit.updatedAt=auditIso;await fs.writeFile(sourceAuditPath,JSON.stringify(sourceAudit,null,2)+'\n');
+for(const row of coverage.sources||[]){
+  for(const k of Object.keys(row))if(/^week\d+RecordCount$/.test(k))delete row[k];
+  const check=selectedWeekChecks.get(norm(row.sourceFamily));
+  row.selectedWeekRecordCount=selectedWeekRecordCounts.get(norm(row.sourceFamily))||0;
+  row.current=Boolean(check)&&!/fail|stale|missing/i.test(String(check.status||''));
+  row.status=check?.status||'missing-selected-week-audit';
+  row.latestChecked=check?.checkedAt?String(check.checkedAt).slice(0,10):null;
+  row.latestFinding=check?.latestFinding||`No governed source audit exists for selected Week ${selectedWeek}.`;
+  if(check?.sourceUrl)row.sourceUrl=check.sourceUrl;
+}
+const requiredCount=(coverage.requiredSourceFamilies||[]).length;
+const currentCount=(coverage.sources||[]).filter(x=>x.current).length;
+const selectedWeekRecords=(coverage.sources||[]).reduce((n,x)=>n+Number(x.selectedWeekRecordCount||0),0);
+coverage.week=selectedWeek;
+coverage.generatedAt=auditIso;
+coverage.status=currentCount===requiredCount?'CURRENT_WITH_SOURCE_LIMITS':'FAIL';
+coverage.summary={required:requiredCount,current:currentCount,selectedWeekRecords};
+await fs.writeFile(coveragePath,JSON.stringify(coverage,null,2)+'\n');
 const intendedSigs=new Set(candidates.map(sig)),ledgerSigs=new Set(ledger.records.map(sig)),missing=[...intendedSigs].filter(s=>!ledgerSigs.has(s));
 const report={sport:'NFL',season:Number(board?.season||ledger.season||2026),week:selectedWeek,generatedAt:new Date().toISOString(),status:missing.length===0?'SYNCHRONIZED':'FAIL',primaryLedger:LEDGER,auditDirectory:AUDIT_DIR,auditFilesScanned:names.length,governedCandidateRecords:intendedSigs.size,appendedRecords:appended,enrichedRecords:enriched,ledgerRecordCount:ledger.records.length,missingGovernedRecords:missing.length,primaryLedgerStatus:missing.length===0?'SYNCHRONIZED':'UNRESOLVED_INGESTION_FAILURE',detail:missing.length===0?`Lossless local merge completed for selected Week ${selectedWeek}; historical records preserved and all governed audit records represented.`:'One or more governed audit records are absent after merge.',sourceAudit:{youBetterYouBet:{status:audacyReachable?'CURRENT-SOURCE-LIMITED':'FAIL',checkedAt:auditIso,selectedWeek,sourceUrl:audacyUrl,httpStatus:audacyHttpStatus,error:audacyError,attributableRecordsAdded:0,noPickInference:true}},productionImpact:{fairPoints:0,modelWeights:0,upsetRouting:0,betActivationGate:0,officialLedger:0,units:0}};
 await fs.writeFile(REPORT,JSON.stringify(report,null,2)+'\n');console.log(`NFL expert ledger sync ${report.status}: week=${selectedWeek}, appended=${appended}, enriched=${enriched}, ledger=${ledger.records.length}, governed=${intendedSigs.size}, missing=${missing.length}`);if(missing.length)process.exitCode=1;
