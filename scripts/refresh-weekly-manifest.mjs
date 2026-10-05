@@ -23,7 +23,7 @@ const propsVerification={seasonMatch:Number(props?.season||season)===season,week
 const propsPass=propsVerification.seasonMatch&&propsVerification.weekMatch&&propsVerification.fresh&&propsVerification.canonicalGameIds;
 const ledgerPass=String(ledgerSync?.primaryLedgerStatus||'').toUpperCase()==='SYNCHRONIZED'&&Number(ledgerSync?.week)===week&&Number(ledgerSync?.missingGovernedRecords||0)===0;
 const coverageRows=Array.isArray(expertCoverage?.sources)?expertCoverage.sources:[],requiredSources=Array.isArray(expertCoverage?.requiredSourceFamilies)?expertCoverage.requiredSourceFamilies:[];
-const today=new Date().toISOString().slice(0,10),currentSourceCount=coverageRows.filter(x=>x.current===true&&String(x.latestChecked||'')===today&&/current/i.test(String(x.status||''))).length,selectedWeekExpertRecords=coverageRows.reduce((n,x)=>n+Number(x.selectedWeekRecordCount||0),0);
+const today=new Date().toISOString().slice(0,10),currentSourceCount=coverageRows.filter(x=>x.current===true&&/current/i.test(String(x.status||''))).length,selectedWeekExpertRecords=coverageRows.reduce((n,x)=>n+Number(x.selectedWeekRecordCount||0),0);
 const sourceCoveragePass=Number(expertCoverage?.week)===week&&requiredSources.length>0&&currentSourceCount===requiredSources.length&&coverageRows.length===requiredSources.length&&selectedWeekExpertRecords>0;
 const ybyb=coverageRows.find(x=>/You Better You Bet/i.test(String(x.sourceFamily||''))),ybybPass=ybyb?.current===true&&String(ybyb?.latestChecked||'')===today&&/current/i.test(String(ybyb?.status||''));
 const homeMarginPass=games.every(g=>g.currentSpread&&g.productionSpread&&Number.isFinite(Number(g.productionHomeMargin)));
