@@ -14,7 +14,8 @@ const spreadText=(hm,away,home)=>!Number.isFinite(hm)?null:Math.abs(hm)<.05?'Pic
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 const priorByName=priors.teams||{};
 const priorByKey=new Map(Object.entries(priorByName).map(([k,v])=>[norm(k),{name:k,...v}]));
-const currentTeams=new Map();for(const g of games){currentTeams.set(norm(g.away),{name:g.away,abbr:g.awayAbbr});currentTeams.set(norm(g.home),{name:g.home,abbr:g.homeAbbr})}
+const ABBR_BY_TEAM={'Arizona Cardinals':'ARI','Atlanta Falcons':'ATL','Baltimore Ravens':'BAL','Buffalo Bills':'BUF','Carolina Panthers':'CAR','Chicago Bears':'CHI','Cincinnati Bengals':'CIN','Cleveland Browns':'CLE','Dallas Cowboys':'DAL','Denver Broncos':'DEN','Detroit Lions':'DET','Green Bay Packers':'GB','Houston Texans':'HOU','Indianapolis Colts':'IND','Jacksonville Jaguars':'JAX','Kansas City Chiefs':'KC','Las Vegas Raiders':'LV','Los Angeles Chargers':'LAC','Los Angeles Rams':'LAR','Miami Dolphins':'MIA','Minnesota Vikings':'MIN','New England Patriots':'NE','New Orleans Saints':'NO','New York Giants':'NYG','New York Jets':'NYJ','Philadelphia Eagles':'PHI','Pittsburgh Steelers':'PIT','San Francisco 49ers':'SF','Seattle Seahawks':'SEA','Tampa Bay Buccaneers':'TB','Tennessee Titans':'TEN','Washington Commanders':'WAS'};
+const currentTeams=new Map(Object.keys(priorByName).map(name=>[norm(name),{name,abbr:ABBR_BY_TEAM[name]||null}]));for(const g of games){currentTeams.set(norm(g.away),{name:g.away,abbr:g.awayAbbr});currentTeams.set(norm(g.home),{name:g.home,abbr:g.homeAbbr})}
 
 // Completed prior-week results are the only live performance sample used in the frozen Week 2/3 90/10 blend.
 const prevWeek=Math.max(1,week-1);
