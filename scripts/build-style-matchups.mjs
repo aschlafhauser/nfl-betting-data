@@ -55,7 +55,7 @@ async function statRankingsMotion(){
 const [sharp,fallback]=await Promise.all([sharpTendencies(),statRankingsMotion()]);
 const offenseByAbbr=new Map(fallback.rows.map(x=>[x.abbr,x]));
 for(const x of sharp.rows)offenseByAbbr.set(x.abbr,{...(offenseByAbbr.get(x.abbr)||{}),...x});
-const allTeams=[...new Set(games.flatMap(g=>[g.away,g.home]).filter(Boolean))];
+const allTeams=TEAM_NAMES; // Full-league scheme coverage is required even when teams are on bye.
 const teamRows=allTeams.map(team=>{
   const abbr=ABBR[team]||games.flatMap(g=>[{n:g.away,a:g.awayAbbr},{n:g.home,a:g.homeAbbr}]).find(x=>x.n===team)?.a||null;
   const o=offenseByAbbr.get(abbr)||{},d=DEFENSE[abbr]||[null,null],rate=Number.isFinite(o.motionRate)?o.motionRate:null;
