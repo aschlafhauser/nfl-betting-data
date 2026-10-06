@@ -1,0 +1,26 @@
+{
+  "season": 2026,
+  "week": 5,
+  "verifiedAt": "2026-10-06T03:09:12.965742+00:00",
+  "status": "FAIL",
+  "teamCoverage": 30,
+  "throughWeek": 4,
+  "requiredMetricFamilies": [
+    "netEpa",
+    "netSuccess",
+    "netEarlyDownEpa",
+    "netDropbackEpa",
+    "netRushEpa",
+    "netExplosiveRate",
+    "netPressureRate",
+    "netSituationalRate"
+  ],
+  "motionCoverage": 30,
+  "modelIntegration": {
+    "processShareOfLiveLayer": 0.4,
+    "motionPointCap": 0.0,
+    "motionGovernance": "research/confidence only until validated",
+    "productionStructuralWeight": 0.2
+  },
+  "leakageRule": "Target Week 5 uses only completed plays through Week 4."
+}
