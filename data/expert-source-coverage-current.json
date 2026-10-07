@@ -1,8 +1,8 @@
 {
   "season": 2026,
   "week": 5,
-  "generatedAt": "2026-10-07T13:56:15.109Z",
-  "status": "FAIL",
+  "generatedAt": "2026-10-07T14:07:27.165Z",
+  "status": "CURRENT_WITH_SOURCE_LIMITS",
   "requiredSourceFamilies": [
     "Sharp Football Analysis",
     "Mina Kimes / ESPN NFL analysis",
@@ -16,66 +16,66 @@
   "sources": [
     {
       "sourceFamily": "Sharp Football Analysis",
-      "status": "missing-selected-week-audit",
-      "latestChecked": null,
-      "current": false,
-      "latestFinding": "No governed source audit exists for selected Week 5.",
+      "status": "active-current",
+      "latestChecked": "2026-10-07",
+      "current": true,
+      "latestFinding": "Official Week 5 matchup tool checked October 7, 2026; current offense/defense comparisons are available. No selection was inferred from matchup rankings.",
       "selectedWeekRecordCount": 0,
-      "sourceUrl": "https://podfollow.com/sharp-football-analysis-by-warren-sharp/episode/0372d6eeed8ee647c8a7ac0d518ebcf5d9e3b69a/view"
+      "sourceUrl": "https://www.sharpfootballanalysis.com/analysis/nfl-matchups/"
     },
     {
       "sourceFamily": "Mina Kimes / ESPN NFL analysis",
-      "status": "missing-selected-week-audit",
-      "latestChecked": null,
-      "current": false,
-      "latestFinding": "No governed source audit exists for selected Week 5.",
+      "status": "active-current-source-limited",
+      "latestChecked": "2026-10-07",
+      "current": true,
+      "latestFinding": "Official ESPN Mina Kimes show inventory checked October 7, 2026. The October 6 Week 4 winners/losers episode is current, but no attributable Week 5 game pick was exposed at this checkpoint; zero selections inferred.",
       "selectedWeekRecordCount": 0,
-      "sourceUrl": "https://www.espn.com/espnradio/podcast/archive/_/id/3634017"
+      "sourceUrl": "https://www.espn.com/espnradio/podcast/archive?id=2544457"
     },
     {
       "sourceFamily": "The Ringer NFL family",
-      "status": "missing-selected-week-audit",
-      "latestChecked": null,
-      "current": false,
-      "latestFinding": "No governed source audit exists for selected Week 5.",
+      "status": "active-current-source-limited",
+      "latestChecked": "2026-10-07",
+      "current": true,
+      "latestFinding": "Official Ringer NFL inventory checked October 7, 2026. Current Week 4 recap and October 6 Week 5 waiver coverage are visible; no explicit governed Week 5 game-side recommendation was promoted.",
       "selectedWeekRecordCount": 0,
-      "sourceUrl": "https://www.theringer.com/2026/10/01/nfl/nfl-best-bets-week-4"
+      "sourceUrl": "https://www.theringer.com/topic/nfl"
     },
     {
       "sourceFamily": "PFF",
-      "status": "missing-selected-week-audit",
-      "latestChecked": null,
-      "current": false,
-      "latestFinding": "No governed source audit exists for selected Week 5.",
+      "status": "active-current",
+      "latestChecked": "2026-10-07",
+      "current": true,
+      "latestFinding": "PFF's October 7, 2026 Week 5 playoff-leverage update was checked as current model/context evidence; no betting selection was inferred.",
       "selectedWeekRecordCount": 0,
-      "sourceUrl": "https://www.pff.com/news/the-10-best-nfl-player-matchups-to-watch-in-week-4-2"
+      "sourceUrl": "https://www.pff.com/news/nfl-playoff-picture-2026"
     },
     {
       "sourceFamily": "Establish The Run",
-      "status": "missing-selected-week-audit",
-      "latestChecked": null,
-      "current": false,
-      "latestFinding": "No governed source audit exists for selected Week 5.",
+      "status": "active-current-source-limited",
+      "latestChecked": "2026-10-07",
+      "current": true,
+      "latestFinding": "Establish The Run's October 7, 2026 Week 5 waiver analysis and current NFL inventory were checked. Public material is fantasy/context oriented at this checkpoint; no game-side pick was inferred.",
       "selectedWeekRecordCount": 0,
-      "sourceUrl": "https://establishtherun.com/"
+      "sourceUrl": "https://establishtherun.com/waiver-wire-analysis-week-5-7/"
     },
     {
       "sourceFamily": "Action Network",
-      "status": "missing-selected-week-audit",
-      "latestChecked": null,
-      "current": false,
-      "latestFinding": "No governed source audit exists for selected Week 5.",
+      "status": "active-current",
+      "latestChecked": "2026-10-07",
+      "current": true,
+      "latestFinding": "Action Network's October 7, 2026 Week 5 betting primer was checked as current slate context. Explicit picks require record-level attribution and were not inferred from the index summary.",
       "selectedWeekRecordCount": 0,
-      "sourceUrl": "https://www.actionnetwork.com/nfl/nfl-week-4-sunday-mega-preview-brandon-anderson-picks-props-same-game-parlays/embed"
+      "sourceUrl": "https://www.actionnetwork.com/nfl/nfl-betting-primer-trends-stats-systems-for-every-game"
     },
     {
       "sourceFamily": "NFL / team beat reporting",
-      "status": "missing-selected-week-audit",
-      "latestChecked": null,
-      "current": false,
-      "latestFinding": "No governed source audit exists for selected Week 5.",
+      "status": "active-current",
+      "latestChecked": "2026-10-07",
+      "current": true,
+      "latestFinding": "Official NFL Week 5 injury report and schedule surfaces checked October 7, 2026. Availability remains an evidence/veto layer with zero automatic fair-line points outside validated rules.",
       "selectedWeekRecordCount": 0,
-      "sourceUrl": "https://www.nfl.com/news/nfl-picks-week-4-2026-nfl-season"
+      "sourceUrl": "https://www.nfl.com/injuries/"
     },
     {
       "sourceFamily": "You Better You Bet",
@@ -89,7 +89,7 @@
   ],
   "summary": {
     "required": 8,
-    "current": 1,
+    "current": 8,
     "selectedWeekRecords": 0
   },
   "governance": "A source can be CURRENT but SOURCE-LIMITED when fresh material is verified but specific game opinions cannot be reliably extracted. No picks are inferred from titles or metadata."
