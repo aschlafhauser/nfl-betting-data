@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 5,
-  "generated_at": "2026-10-11T12:42:12.740620+00:00",
+  "generated_at": "2026-10-11T15:50:10.071Z",
   "schedule_source": "Canonical selected-week NFL board + ESPN scoreboard reconciliation",
   "market_source": "ESPN selected-week odds feed; exact sportsbook/juice required before execution",
   "games": [
@@ -37,8 +37,8 @@
         "executable_edge": -1.799,
         "edge_side": "TB",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "edge_reconciled_at": "2026-10-11T15:50:10.071Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Dallas Cowboys -7.7",
         "base_structural_home_margin": 1.18,
         "advanced_process_adjustment": -0.677,
@@ -88,8 +88,13 @@
           "https://www.buccaneers.com/news/buccaneers-cowboys-injury-report-oct-7-week-5"
         ]
       },
-      "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
-      "event_state": "final"
+      "why": "Selected-week governed model rebuilt 2026-10-11T15:50:10.071Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "final",
+      "research": {
+        "stage": "high-priority-audit",
+        "priority": "High",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401872981",
@@ -102,7 +107,7 @@
       "kickoff_local": "2026-10-11T13:30Z",
       "tv": "NFL Net",
       "priority": "Medium",
-      "stage": "potential-research",
+      "stage": "research",
       "market": {
         "spread_display": "Jacksonville Jaguars -7.5",
         "spread": "JAX -7",
@@ -115,23 +120,23 @@
         },
         "source": "ESPN DraftKings",
         "timestamp": "2026-10-11T12:40:06.942Z",
-        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+        "status": "PRICE-RECHECK-REQUIRED"
       },
       "model": {
-        "fair_spread_display": "Jacksonville Jaguars -7.0",
+        "fair_spread_display": "Jacksonville Jaguars -7",
         "fair_spread_home_margin": 7.041,
         "executable_edge": -0.459,
         "edge_side": "PHI",
         "confidence": "medium",
-        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
-        "fair_spread": "Jacksonville Jaguars -7.0",
+        "edge_reconciled_at": "2026-10-11T15:50:10.071Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Jacksonville Jaguars -7",
         "base_structural_home_margin": 5.536,
         "advanced_process_adjustment": -0.331,
         "motion_matchup_adjustment": 0,
         "structural_home_margin": 5.205,
         "structural_fair": "Jacksonville Jaguars -5.2",
-        "structural_edge": 3.295,
+        "structural_edge": 2.295,
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
           "throughWeek": 4,
@@ -173,8 +178,13 @@
           "https://www.philadelphiaeagles.com/news/eagles-at-jaguars-inactives-2026-nfl-week-6-london-international-game-saquon-barkley-lane-johnson"
         ]
       },
-      "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-11T15:50:10.071Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "research",
+        "priority": "Medium",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401872990",
@@ -199,7 +209,7 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T12:40:06.942Z",
+        "timestamp": "2026-10-11T15:50:01.859Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
@@ -208,8 +218,8 @@
         "executable_edge": 0.095,
         "edge_side": "GB",
         "confidence": "low",
-        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "edge_reconciled_at": "2026-10-11T15:50:10.071Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Chicago Bears -1.4",
         "base_structural_home_margin": -1.343,
         "advanced_process_adjustment": 0.317,
@@ -249,7 +259,7 @@
         "high_risk_flags": [
           "CHI OUT: Kyle Monangai (toe/thumb), Keyshaun Elliott (quad).",
           "CHI questionable: Caleb Williams (hamstring), Kyler Gordon, Shemar Turner, Noah Sewell (return windows).",
-          "Tyson Bagent named starter by coach; Caleb questionable does not imply expected starter. D\u2019Andre Swift has no designation.",
+          "Tyson Bagent named starter by coach; Caleb questionable does not imply expected starter. D’Andre Swift has no designation.",
           "GB OUT: Chris Brooks (ankle), Savion Williams (ankle; IR return window).",
           "GB doubtful: Aaron Banks (knee/toe), Jacob Monk (quad).",
           "GB questionable: Javon Hargrave (toe), Anthony Campbell (ankle), Jager Burton (back)."
@@ -262,8 +272,13 @@
           "https://www.packers.com/news/packers-list-three-questionable-two-doubtful-vs-bears-week-5-injury-report"
         ]
       },
-      "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-11T15:50:10.071Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "no-signal",
+        "priority": "Low",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401872984",
@@ -278,34 +293,34 @@
       "priority": "Low",
       "stage": "no-signal",
       "market": {
-        "spread_display": "Houston Texans -7",
+        "spread_display": "Houston Texans -6.5",
         "spread": "HOU -7",
         "total": 37.5,
-        "home_margin": -7,
-        "home_team_sportsbook_spread": 7,
+        "home_margin": -6.5,
+        "home_team_sportsbook_spread": 6.5,
         "moneyline": {
           "away": null,
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T12:40:06.942Z",
+        "timestamp": "2026-10-11T15:50:01.859Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "Houston Texans -6.9",
-        "fair_spread_home_margin": -6.873,
-        "executable_edge": 0.127,
+        "fair_spread_display": "Houston Texans -6.5",
+        "fair_spread_home_margin": -6.473,
+        "executable_edge": 0.027,
         "edge_side": "TEN",
         "confidence": "low",
-        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
-        "fair_spread": "Houston Texans -6.9",
+        "edge_reconciled_at": "2026-10-11T15:50:10.071Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Houston Texans -6.5",
         "base_structural_home_margin": -6.394,
         "advanced_process_adjustment": 0.028,
         "motion_matchup_adjustment": 0,
         "structural_home_margin": -6.366,
         "structural_fair": "Houston Texans -6.4",
-        "structural_edge": 0.634,
+        "structural_edge": 0.134,
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
           "throughWeek": 4,
@@ -352,8 +367,13 @@
           "https://www.tennesseetitans.com/news/week-5-injury-report-titans-vs-texans"
         ]
       },
-      "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-11T15:50:10.071Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "no-signal",
+        "priority": "Low",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401872982",
@@ -370,7 +390,7 @@
       "market": {
         "spread_display": "Cincinnati Bengals -7",
         "spread": "CIN -7",
-        "total": 43.5,
+        "total": 44.5,
         "home_margin": -7,
         "home_team_sportsbook_spread": 7,
         "moneyline": {
@@ -378,18 +398,18 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T12:40:06.942Z",
+        "timestamp": "2026-10-11T15:50:01.859Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "Cincinnati Bengals -6.0",
+        "fair_spread_display": "Cincinnati Bengals -6",
         "fair_spread_home_margin": -5.965,
         "executable_edge": 1.035,
         "edge_side": "MIA",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
-        "fair_spread": "Cincinnati Bengals -6.0",
+        "edge_reconciled_at": "2026-10-11T15:50:10.071Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Cincinnati Bengals -6",
         "base_structural_home_margin": -1.496,
         "advanced_process_adjustment": -0.328,
         "motion_matchup_adjustment": 0,
@@ -427,7 +447,7 @@
       "availability": {
         "high_risk_flags": [
           "CIN OUT: Kyle Dugger (quad).",
-          "CIN questionable: Ja\u2019Marr Chase (concussion), Tee Higgins (groin/neck), Bryan Cook (ankle), Swayze Bozeman (groin), Colbie Young (knee).",
+          "CIN questionable: Ja’Marr Chase (concussion), Tee Higgins (groin/neck), Bryan Cook (ankle), Swayze Bozeman (groin), Colbie Young (knee).",
           "MIA OUT: Rob Beal Jr. (hamstring), Caleb Douglas (ankle), Justin Joly (concussion), Reese Taylor (quad).",
           "MIA questionable: Storm Duck (knee), Kenneth Grant (toe), Jackson Woodard (ankle), Jaylen Wright (shin)."
         ],
@@ -439,8 +459,13 @@
           "https://www.miamidolphins.com/news/injury-report-week-5-dolphins-vs-bengals"
         ]
       },
-      "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-11T15:50:10.071Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "high-priority-audit",
+        "priority": "High",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401872986",
@@ -465,7 +490,7 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T12:40:06.942Z",
+        "timestamp": "2026-10-11T15:50:01.859Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
@@ -474,8 +499,8 @@
         "executable_edge": 0.988,
         "edge_side": "NE",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "edge_reconciled_at": "2026-10-11T15:50:10.071Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "New England Patriots -4.5",
         "base_structural_home_margin": 9.015,
         "advanced_process_adjustment": -0.577,
@@ -513,10 +538,10 @@
       },
       "availability": {
         "high_risk_flags": [
-          "LV OUT: Jalen Nailor (concussion), Dont\u2019e Thornton (hamstring; return window), Trey Zuhn (knee).",
+          "LV OUT: Jalen Nailor (concussion), Dont’e Thornton (hamstring; return window), Trey Zuhn (knee).",
           "LV questionable: Ashton Jeanty (ankle/foot); Brock Bowers has no designation.",
           "NE OUT: Channing Canada, Carlton Davis III, Christian Gonzalez, Karon Prunty, Reggie Gilliam, Mack Hollins.",
-          "NE questionable: Christian Barmore, Christian Elliss, Dre\u2019Mont Jones, Morgan Moses, Rhamondre Stevenson, Charles Woods, Craig Woodson.",
+          "NE questionable: Christian Barmore, Christian Elliss, Dre’Mont Jones, Morgan Moses, Rhamondre Stevenson, Charles Woods, Craig Woodson.",
           "NE Drake Maye has no designation (right shoulder; full practice)."
         ],
         "timestamp": "2026-10-11T12:42:12.740620+00:00",
@@ -526,8 +551,13 @@
           "https://www.patriots.com/news/week-5-injury-report-patriots-vs-raiders"
         ]
       },
-      "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-11T15:50:10.071Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "high-priority-audit",
+        "priority": "High",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401872987",
@@ -542,28 +572,28 @@
       "priority": "High",
       "stage": "high-priority-audit",
       "market": {
-        "spread_display": "Minnesota Vikings -1.5",
+        "spread_display": "Minnesota Vikings -2.5",
         "spread": "MIN -1.5",
         "total": 41.5,
-        "home_margin": -1.5,
-        "home_team_sportsbook_spread": 1.5,
+        "home_margin": -2.5,
+        "home_team_sportsbook_spread": 2.5,
         "moneyline": {
           "away": null,
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T12:40:06.942Z",
+        "timestamp": "2026-10-11T15:50:01.859Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "Minnesota Vikings -2.2",
-        "fair_spread_home_margin": -2.175,
-        "executable_edge": -0.675,
+        "fair_spread_display": "Minnesota Vikings -3",
+        "fair_spread_home_margin": -2.975,
+        "executable_edge": -0.475,
         "edge_side": "MIN",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
-        "fair_spread": "Minnesota Vikings -2.2",
+        "edge_reconciled_at": "2026-10-11T15:50:10.071Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Minnesota Vikings -3",
         "base_structural_home_margin": -6.912,
         "advanced_process_adjustment": 2.038,
         "motion_matchup_adjustment": 0,
@@ -601,7 +631,7 @@
       "availability": {
         "high_risk_flags": [
           "MIN OUT: Christian Darrisaw (concussion), Charles/Chuck Demmings (hamstring).",
-          "MIN questionable: Jordan Addison (hamstring), Justin Jefferson (ankle), Brian O\u2019Neill (knee), Michael Jurgens (elbow; return window), Ben Yurosek (ankle; return window).",
+          "MIN questionable: Jordan Addison (hamstring), Justin Jefferson (ankle), Brian O’Neill (knee), Michael Jurgens (elbow; return window), Ben Yurosek (ankle; return window).",
           "NO OUT: Kaden Elliss (calf), Anfernee Jennings (knee), Jeremiah Wright (concussion).",
           "NO questionable: Julian Blackmon (shoulder), Barion Brown (thigh), Jaylan Ford (ankle; return window), Alvin Kamara (back), Christen Miller (illness), Lorenzo Styles Jr. (calf; return window).",
           "NO Chris Olave and Tyler Shough have no designation."
@@ -614,8 +644,13 @@
           "https://www.vikings.com/news/saints-injury-report-week-5-2026-nfl-season"
         ]
       },
-      "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-11T15:50:10.071Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "high-priority-audit",
+        "priority": "High",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401872983",
@@ -632,7 +667,7 @@
       "market": {
         "spread_display": "New York Jets -2.5",
         "spread": "NYJ -2.5",
-        "total": 39.5,
+        "total": 38.5,
         "home_margin": 2.5,
         "home_team_sportsbook_spread": -2.5,
         "moneyline": {
@@ -640,7 +675,7 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T12:40:06.942Z",
+        "timestamp": "2026-10-11T15:50:01.859Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
@@ -649,8 +684,8 @@
         "executable_edge": -0.838,
         "edge_side": "CLE",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "edge_reconciled_at": "2026-10-11T15:50:10.071Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "New York Jets -1.7",
         "base_structural_home_margin": -2.972,
         "advanced_process_adjustment": 1.283,
@@ -701,8 +736,13 @@
           "https://www.newyorkjets.com/news/jets-injury-report-week-5-vs-browns-friday-10-09-2026"
         ]
       },
-      "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-11T15:50:10.071Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "high-priority-audit",
+        "priority": "High",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401872985",
@@ -719,7 +759,7 @@
       "market": {
         "spread_display": "Pittsburgh Steelers -3",
         "spread": "PIT -2.5",
-        "total": 43.5,
+        "total": 41.5,
         "home_margin": 3,
         "home_team_sportsbook_spread": -3,
         "moneyline": {
@@ -727,7 +767,7 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T12:40:06.942Z",
+        "timestamp": "2026-10-11T15:50:01.859Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
@@ -736,15 +776,15 @@
         "executable_edge": -1.198,
         "edge_side": "IND",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "edge_reconciled_at": "2026-10-11T15:50:10.071Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Pittsburgh Steelers -1.8",
         "base_structural_home_margin": -4.771,
         "advanced_process_adjustment": 1.782,
         "motion_matchup_adjustment": 0,
         "structural_home_margin": -2.989,
         "structural_fair": "Indianapolis Colts -3",
-        "structural_edge": 5.489,
+        "structural_edge": 5.989,
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
           "throughWeek": 4,
@@ -787,8 +827,13 @@
           "https://www.steelers.com/news/week-5-injury-report-colts"
         ]
       },
-      "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-11T15:50:10.071Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "high-priority-audit",
+        "priority": "High",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401872988",
@@ -813,7 +858,7 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T12:40:06.942Z",
+        "timestamp": "2026-10-11T15:50:01.859Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
@@ -822,8 +867,8 @@
         "executable_edge": -1.676,
         "edge_side": "NYG",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "edge_reconciled_at": "2026-10-11T15:50:10.071Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Washington Commanders -1.8",
         "base_structural_home_margin": -7.509,
         "advanced_process_adjustment": 2.629,
@@ -875,8 +920,13 @@
           "https://www.commanders.com/news/game-status-commanders-giants-week-5"
         ]
       },
-      "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-11T15:50:10.071Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "high-priority-audit",
+        "priority": "High",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401872989",
@@ -901,7 +951,7 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T12:40:06.942Z",
+        "timestamp": "2026-10-11T15:50:01.859Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
@@ -910,8 +960,8 @@
         "executable_edge": 0.746,
         "edge_side": "LAC",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "edge_reconciled_at": "2026-10-11T15:50:10.071Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Denver Broncos -2.8",
         "base_structural_home_margin": 0.575,
         "advanced_process_adjustment": -0.344,
@@ -963,8 +1013,13 @@
           "https://www.chargers.com/news/injury-report-mcconkey-johnston-alt-week-5-broncos"
         ]
       },
-      "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-11T15:50:10.071Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "high-priority-audit",
+        "priority": "High",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401872991",
@@ -989,7 +1044,7 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T12:40:06.942Z",
+        "timestamp": "2026-10-11T15:50:01.859Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
@@ -998,8 +1053,8 @@
         "executable_edge": 0.56,
         "edge_side": "ARI",
         "confidence": "medium",
-        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "edge_reconciled_at": "2026-10-11T15:50:10.071Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Detroit Lions -4.9",
         "base_structural_home_margin": -3.202,
         "advanced_process_adjustment": 0.504,
@@ -1049,8 +1104,13 @@
           "https://www.azcardinals.com/news/injury-report-week-5-vs-lions"
         ]
       },
-      "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-11T15:50:10.071Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "research",
+        "priority": "Medium",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401872992",
@@ -1075,7 +1135,7 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T12:40:06.942Z",
+        "timestamp": "2026-10-11T15:50:01.859Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
@@ -1084,8 +1144,8 @@
         "executable_edge": 0.115,
         "edge_side": "SEA",
         "confidence": "low",
-        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "edge_reconciled_at": "2026-10-11T15:50:10.071Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Seattle Seahawks -3.1",
         "base_structural_home_margin": 3.487,
         "advanced_process_adjustment": 0.09,
@@ -1136,8 +1196,13 @@
           "https://www.seahawks.com/news/week-5-injury-report-seahawks-vs-49ers"
         ]
       },
-      "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-11T15:50:10.071Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "no-signal",
+        "priority": "Low",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401872993",
@@ -1162,7 +1227,7 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T12:40:06.942Z",
+        "timestamp": "2026-10-11T15:50:01.859Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
@@ -1171,8 +1236,8 @@
         "executable_edge": -0.763,
         "edge_side": "BAL",
         "confidence": "medium",
-        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "edge_reconciled_at": "2026-10-11T15:50:10.071Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Atlanta Falcons -2.2",
         "base_structural_home_margin": 0.624,
         "advanced_process_adjustment": -1.439,
@@ -1214,7 +1279,7 @@
           "BAL questionable: Zay Flowers (foot), Marlon Humphrey (hamstring/calf).",
           "Cam Jurgens (concussion) will not debut until next week per official team article; unavailable per team, formal designation not independently obtained.",
           "ATL OUT: Yasir Abdullah (hamstring; subsequently IR).",
-          "ATL questionable: Divine Deablo (hamstring), Samson Ebukam (hamstring), Jake Matthews (groin), Za\u2019Darius Smith (concussion/neck)."
+          "ATL questionable: Divine Deablo (hamstring), Samson Ebukam (hamstring), Jake Matthews (groin), Za’Darius Smith (concussion/neck)."
         ],
         "timestamp": "2026-10-11T12:42:12.740620+00:00",
         "status": "official final designation review complete; game-day inactives pending",
@@ -1224,8 +1289,13 @@
           "https://www.atlantafalcons.com/news/falcons-injury-report-vs-ravens-za-darius-smith-jake-matthews"
         ]
       },
-      "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-11T15:50:10.071Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "research",
+        "priority": "Medium",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401872994",
@@ -1237,37 +1307,37 @@
       "kickoff": "2026-10-13T00:15Z",
       "kickoff_local": "2026-10-13T00:15Z",
       "tv": "ESPN",
-      "priority": "Medium",
-      "stage": "potential-research",
+      "priority": "High",
+      "stage": "high-priority-audit",
       "market": {
-        "spread_display": "Los Angeles Rams -3.5",
+        "spread_display": "Los Angeles Rams -3",
         "spread": "LAR -2.5",
         "total": 54.5,
-        "home_margin": 3.5,
-        "home_team_sportsbook_spread": -3.5,
+        "home_margin": 3,
+        "home_team_sportsbook_spread": -3,
         "moneyline": {
           "away": null,
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T12:40:06.942Z",
+        "timestamp": "2026-10-11T15:50:01.859Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "Los Angeles Rams -4.0",
-        "fair_spread_home_margin": 3.977,
-        "executable_edge": 0.477,
+        "fair_spread_display": "Los Angeles Rams -3.6",
+        "fair_spread_home_margin": 3.577,
+        "executable_edge": 0.577,
         "edge_side": "LAR",
-        "confidence": "medium",
-        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
-        "fair_spread": "Los Angeles Rams -4.0",
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-10-11T15:50:10.071Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Los Angeles Rams -3.6",
         "base_structural_home_margin": 6.45,
         "advanced_process_adjustment": -0.566,
         "motion_matchup_adjustment": 0,
         "structural_home_margin": 5.884,
         "structural_fair": "Los Angeles Rams -5.9",
-        "structural_edge": 2.384,
+        "structural_edge": 2.884,
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
           "throughWeek": 4,
@@ -1311,15 +1381,20 @@
           "https://www.therams.com/news/rams-injury-report-week-5-2026-vs-bills-aaron-donald-colby-parkinson-and-jaylen-watson-good-to-go-for-monday-night-football"
         ]
       },
-      "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-11T15:50:10.071Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "high-priority-audit",
+        "priority": "High",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     }
   ],
   "runtime_refresh": {
     "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
-    "observed_at": "2026-10-11T12:40:06.942Z",
+    "observed_at": "2026-10-11T15:50:01.859Z",
     "espn_events": 15,
-    "current_odds_games": 14,
+    "current_odds_games": 13,
     "identity_normalization": "registry v1: canonical abbreviations and aliases normalized before joins",
     "edge_reconciliation": "Every legacy portal executable edge recomputed from fair_spread_home_margin - current market.home_margin"
   },
@@ -1336,6 +1411,6 @@
     "status": "SYNCHRONIZED",
     "canonicalWeek": 5,
     "matchedGames": 15,
-    "verifiedAt": "2026-10-11T09:05:19.321Z"
+    "verifiedAt": "2026-10-11T15:50:10.071Z"
   }
 }
