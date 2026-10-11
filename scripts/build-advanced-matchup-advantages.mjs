@@ -4,7 +4,7 @@ const read=async p=>JSON.parse(await fs.readFile(p,'utf8'));
 const write=async(p,x)=>fs.writeFile(p,JSON.stringify(x,null,2)+'\n');
 const adv=await read('data/live-team-advanced.json');
 const board=await read('data/nfl-weekly-board.json');
-const teams=adv.teams||[],by=Object.fromEntries(teams.map(t=>[t.abbr,t]));
+const teams=adv.teams||[],by=Object.fromEntries(teams.flatMap(t=>[[t.abbr,t],...(t.abbr==='WSH'?[['WAS',t]]:t.abbr==='WAS'?[['WSH',t]]:[])]));
 const meanSd=vals=>{vals=vals.filter(Number.isFinite);const m=vals.reduce((a,b)=>a+b,0)/vals.length;const sd=Math.sqrt(vals.reduce((a,b)=>a+(b-m)**2,0)/vals.length)||1;return{m,sd}};
 const z=(x,s)=>(Number(x)-s.m)/s.sd,clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 const defs=[
@@ -19,7 +19,7 @@ const norm={};for(const d of defs)norm[d.key]={o:meanSd(teams.map(d.of)),d:meanS
 const pa=meanSd(teams.map(t=>t.offense.pressureRateAllowed)),pr=meanSd(teams.map(t=>t.defense.pressureRate));
 function side(T,O){
  const drivers=defs.map(d=>({key:d.key,label:d.label,weight:d.w,z:+(z(d.of(T),norm[d.key].o)+z(d.df(O),norm[d.key].d)).toFixed(3)}));
- drivers.push({key:'passProtection',label:'Pass protection vs pressure',weight:.12,z:+((-z(T.offense.pressureRateAllowed,pa)-z(O.defense.pressureRate,pr))).toFixed(3)});
+ drivers.push({key:'passProtection',label:'Pass protection vs QB hits/sacks',weight:.12,z:+((-z(T.offense.pressureRateAllowed,pa)-z(O.defense.pressureRate,pr))).toFixed(3)});
  const raw=drivers.reduce((s,x)=>s+x.weight*x.z,0);
  return{raw:+raw.toFixed(3),score:+clamp(50+12*raw,0,100).toFixed(1),drivers:drivers.sort((a,b)=>Math.abs(b.z)-Math.abs(a.z)).slice(0,4)};
 }
