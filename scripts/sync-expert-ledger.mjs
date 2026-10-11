@@ -24,7 +24,9 @@ for(const name of names){
     const checks=Array.isArray(a.sourceChecks)?a.sourceChecks:(a.sourceFamily?[{sourceFamily:a.sourceFamily,status:a.status,sourceUrl:(a.sourceUrls||[])[0]||a.sourceUrl,latestFinding:a.note||a.latestFinding}]:[]);
     for(const check of checks){
       if(!check?.sourceFamily)continue;
-      selectedWeekChecks.set(norm(check.sourceFamily),{...check,checkedAt:a.auditedAt||a.discoveredAt||a.sourceDate||null,auditFile:path});
+      const checkedAt=a.auditedAt||a.discoveredAt||a.sourceDate||null;
+      const prior=selectedWeekChecks.get(norm(check.sourceFamily));
+      if(!prior||Date.parse(checkedAt||'')>=Date.parse(prior.checkedAt||''))selectedWeekChecks.set(norm(check.sourceFamily),{...check,checkedAt,auditFile:path});
     }
   }
   const source=a.sourceFamily||a.source||a.analyst||'Governed audit';

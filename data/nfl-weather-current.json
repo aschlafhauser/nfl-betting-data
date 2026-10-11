@@ -1,8 +1,8 @@
 {
   "season": 2026,
   "week": 5,
-  "updated_at": "2026-10-11T09:05:15.291Z",
-  "source_status": "CURRENT ESPN GAME-WINDOW REVIEW",
+  "updated_at": "2026-10-11T12:50:03.214444+00:00",
+  "source_status": "Official NWS kickoff-hour forecasts and verified Met Office London snapshot",
   "games": [
     {
       "game_id": "2026-W5-TB-DAL",
@@ -24,13 +24,43 @@
       "matchup": "Philadelphia Eagles at Jacksonville Jaguars",
       "venue": "Tottenham Hotspur Stadium",
       "environment": "outdoor",
-      "status": "Current game-window weather feed reviewed",
-      "summary": "Current ESPN event weather feed reviewed; no structured game-window condition was published. Weather remains source-limited with 0.0 automatic model points.",
-      "risk": "source-limited",
-      "observed_at": "2026-10-11T09:05:15.291Z",
+      "status": "Official kickoff-hour forecast verified",
+      "summary": "Sunny intervals at kickoff: 59\u00b0F; wind W 2 mph, gust 9 mph; precipitation chance <5%.",
+      "risk": "no major hourly weather flag",
+      "observed_at": "2026-10-11T12:46:42+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100"
+      "source": "https://weather.metoffice.gov.uk/forecast/gcpvwd6uv?nearestTo=Tottenham+(Haringey)",
+      "forecast_timestamp": null,
+      "forecast_verified": true,
+      "forecast": {
+        "game_id": "2026-W5-PHI-JAX",
+        "kickoff": "2026-10-11T13:30Z",
+        "temp_f": 59,
+        "wind_mph": 2,
+        "gust_mph": 9,
+        "precip_chance_pct": null,
+        "precip_chance_upper_bound_pct": 5,
+        "precip_chance_display": "<5%",
+        "forecast_timestamp": null,
+        "retrieved_at": "2026-10-11T12:46:42+00:00",
+        "forecast_hour_start": "2026-10-11T14:00:00+01:00",
+        "forecast_hour_end": "2026-10-11T15:00:00+01:00",
+        "conditions": "Sunny intervals",
+        "wind_direction": "W",
+        "verification_status": "verified official Met Office current Sunday Oct 11 hourly table; manual snapshot",
+        "sources": [
+          "https://weather.metoffice.gov.uk/forecast/gcpvwd6uv?nearestTo=Tottenham+(Haringey)"
+        ],
+        "limitations": [
+          "Met Office issuance timestamp not exposed; retrieved_at is retrieval time, not issue time.",
+          "14:30 BST kickoff bracketed by 14:00 and 15:00 forecasts; both 15 C, wind 2 mph, gust 9 mph, precipitation <5%.",
+          "Manual London snapshot is not automatically refreshed by this script."
+        ]
+      },
+      "sources": [
+        "https://weather.metoffice.gov.uk/forecast/gcpvwd6uv?nearestTo=Tottenham+(Haringey)"
+      ]
     },
     {
       "game_id": "2026-W5-CHI-GB",
@@ -38,13 +68,42 @@
       "matchup": "Chicago Bears at Green Bay Packers",
       "venue": "Lambeau Field",
       "environment": "outdoor",
-      "status": "Current game-window weather feed reviewed",
-      "summary": "Current ESPN event weather feed reviewed; no structured game-window condition was published. Weather remains source-limited with 0.0 automatic model points.",
-      "risk": "source-limited",
-      "observed_at": "2026-10-11T09:05:15.291Z",
+      "status": "Official kickoff-hour forecast verified",
+      "summary": "Sunny at kickoff: 75\u00b0F; wind S 13.0 mph, gust 21.9 mph; precipitation chance 0%.",
+      "risk": "weather review required",
+      "observed_at": "2026-10-11T12:50:03.213220+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100"
+      "source": "https://api.weather.gov/points/44.5013,-88.0622",
+      "forecast_timestamp": "2026-10-11T10:36:19+00:00",
+      "forecast_verified": true,
+      "forecast": {
+        "game_id": "2026-W5-CHI-GB",
+        "kickoff": "2026-10-11T17:00Z",
+        "temp_f": 75,
+        "wind_mph": 13.0,
+        "gust_mph": 21.9,
+        "precip_chance_pct": 0,
+        "forecast_timestamp": "2026-10-11T10:36:19+00:00",
+        "sources": [
+          "https://api.weather.gov/points/44.5013,-88.0622",
+          "https://api.weather.gov/gridpoints/GRB/78,31/forecast/hourly",
+          "https://api.weather.gov/gridpoints/GRB/78,31"
+        ],
+        "wind_speed_raw": "13 mph",
+        "wind_direction": "S",
+        "forecast_hour_start": "2026-10-11T12:00:00-05:00",
+        "forecast_hour_end": "2026-10-11T13:00:00-05:00",
+        "conditions": "Sunny",
+        "verification_status": "verified official NWS kickoff-containing hourly forecast",
+        "gust_unit_original": "wmoUnit:km_h-1",
+        "retrieved_at": "2026-10-11T12:50:03.213220+00:00"
+      },
+      "sources": [
+        "https://api.weather.gov/points/44.5013,-88.0622",
+        "https://api.weather.gov/gridpoints/GRB/78,31/forecast/hourly",
+        "https://api.weather.gov/gridpoints/GRB/78,31"
+      ]
     },
     {
       "game_id": "2026-W5-HOU-TEN",
@@ -52,13 +111,42 @@
       "matchup": "Houston Texans at Tennessee Titans",
       "venue": "Nissan Stadium",
       "environment": "outdoor",
-      "status": "Current game-window weather feed reviewed",
-      "summary": "Current ESPN event weather feed reviewed; no structured game-window condition was published. Weather remains source-limited with 0.0 automatic model points.",
-      "risk": "source-limited",
-      "observed_at": "2026-10-11T09:05:15.291Z",
+      "status": "Official kickoff-hour forecast verified",
+      "summary": "Mostly Cloudy at kickoff: 68\u00b0F; wind WNW 10.0 mph, gust 18.4 mph; precipitation chance 4%.",
+      "risk": "no major hourly weather flag",
+      "observed_at": "2026-10-11T12:50:03.213226+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100"
+      "source": "https://api.weather.gov/points/36.1665,-86.7713",
+      "forecast_timestamp": "2026-10-11T11:11:35+00:00",
+      "forecast_verified": true,
+      "forecast": {
+        "game_id": "2026-W5-HOU-TEN",
+        "kickoff": "2026-10-11T17:00Z",
+        "temp_f": 68,
+        "wind_mph": 10.0,
+        "gust_mph": 18.4,
+        "precip_chance_pct": 4,
+        "forecast_timestamp": "2026-10-11T11:11:35+00:00",
+        "sources": [
+          "https://api.weather.gov/points/36.1665,-86.7713",
+          "https://api.weather.gov/gridpoints/OHX/50,57/forecast/hourly",
+          "https://api.weather.gov/gridpoints/OHX/50,57"
+        ],
+        "wind_speed_raw": "10 mph",
+        "wind_direction": "WNW",
+        "forecast_hour_start": "2026-10-11T12:00:00-05:00",
+        "forecast_hour_end": "2026-10-11T13:00:00-05:00",
+        "conditions": "Mostly Cloudy",
+        "verification_status": "verified official NWS kickoff-containing hourly forecast",
+        "gust_unit_original": "wmoUnit:km_h-1",
+        "retrieved_at": "2026-10-11T12:50:03.213226+00:00"
+      },
+      "sources": [
+        "https://api.weather.gov/points/36.1665,-86.7713",
+        "https://api.weather.gov/gridpoints/OHX/50,57/forecast/hourly",
+        "https://api.weather.gov/gridpoints/OHX/50,57"
+      ]
     },
     {
       "game_id": "2026-W5-CIN-MIA",
@@ -66,13 +154,42 @@
       "matchup": "Cincinnati Bengals at Miami Dolphins",
       "venue": "Hard Rock Stadium",
       "environment": "outdoor",
-      "status": "Current game-window weather feed reviewed",
-      "summary": "Current ESPN event weather feed reviewed; no structured game-window condition was published. Weather remains source-limited with 0.0 automatic model points.",
-      "risk": "source-limited",
-      "observed_at": "2026-10-11T09:05:15.291Z",
+      "status": "Official kickoff-hour forecast verified",
+      "summary": "Sunny at kickoff: 91\u00b0F; wind SE 9.0 mph, gust 15.0 mph; precipitation chance 5%.",
+      "risk": "no major hourly weather flag",
+      "observed_at": "2026-10-11T12:50:03.213230+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100"
+      "source": "https://api.weather.gov/points/25.958,-80.2389",
+      "forecast_timestamp": "2026-10-11T08:31:51+00:00",
+      "forecast_verified": true,
+      "forecast": {
+        "game_id": "2026-W5-CIN-MIA",
+        "kickoff": "2026-10-11T17:00Z",
+        "temp_f": 91,
+        "wind_mph": 9.0,
+        "gust_mph": 15.0,
+        "precip_chance_pct": 5,
+        "forecast_timestamp": "2026-10-11T08:31:51+00:00",
+        "sources": [
+          "https://api.weather.gov/points/25.958,-80.2389",
+          "https://api.weather.gov/gridpoints/MFL/107,58/forecast/hourly",
+          "https://api.weather.gov/gridpoints/MFL/107,58"
+        ],
+        "wind_speed_raw": "9 mph",
+        "wind_direction": "SE",
+        "forecast_hour_start": "2026-10-11T13:00:00-04:00",
+        "forecast_hour_end": "2026-10-11T14:00:00-04:00",
+        "conditions": "Sunny",
+        "verification_status": "verified official NWS kickoff-containing hourly forecast",
+        "gust_unit_original": "wmoUnit:km_h-1",
+        "retrieved_at": "2026-10-11T12:50:03.213230+00:00"
+      },
+      "sources": [
+        "https://api.weather.gov/points/25.958,-80.2389",
+        "https://api.weather.gov/gridpoints/MFL/107,58/forecast/hourly",
+        "https://api.weather.gov/gridpoints/MFL/107,58"
+      ]
     },
     {
       "game_id": "2026-W5-LV-NE",
@@ -80,13 +197,42 @@
       "matchup": "Las Vegas Raiders at New England Patriots",
       "venue": "Gillette Stadium",
       "environment": "outdoor",
-      "status": "Current game-window weather feed reviewed",
-      "summary": "Current ESPN event weather feed reviewed; no structured game-window condition was published. Weather remains source-limited with 0.0 automatic model points.",
-      "risk": "source-limited",
-      "observed_at": "2026-10-11T09:05:15.291Z",
+      "status": "Official kickoff-hour forecast verified",
+      "summary": "Cloudy at kickoff: 60\u00b0F; wind S 6.0 mph, gust 12.7 mph; precipitation chance 4%.",
+      "risk": "no major hourly weather flag",
+      "observed_at": "2026-10-11T12:50:03.213233+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100"
+      "source": "https://api.weather.gov/points/42.0909,-71.2643",
+      "forecast_timestamp": "2026-10-11T06:17:26+00:00",
+      "forecast_verified": true,
+      "forecast": {
+        "game_id": "2026-W5-LV-NE",
+        "kickoff": "2026-10-11T17:00Z",
+        "temp_f": 60,
+        "wind_mph": 6.0,
+        "gust_mph": 12.7,
+        "precip_chance_pct": 4,
+        "forecast_timestamp": "2026-10-11T06:17:26+00:00",
+        "sources": [
+          "https://api.weather.gov/points/42.0909,-71.2643",
+          "https://api.weather.gov/gridpoints/BOX/67,88/forecast/hourly",
+          "https://api.weather.gov/gridpoints/BOX/67,88"
+        ],
+        "wind_speed_raw": "6 mph",
+        "wind_direction": "S",
+        "forecast_hour_start": "2026-10-11T13:00:00-04:00",
+        "forecast_hour_end": "2026-10-11T14:00:00-04:00",
+        "conditions": "Cloudy",
+        "verification_status": "verified official NWS kickoff-containing hourly forecast",
+        "gust_unit_original": "wmoUnit:km_h-1",
+        "retrieved_at": "2026-10-11T12:50:03.213233+00:00"
+      },
+      "sources": [
+        "https://api.weather.gov/points/42.0909,-71.2643",
+        "https://api.weather.gov/gridpoints/BOX/67,88/forecast/hourly",
+        "https://api.weather.gov/gridpoints/BOX/67,88"
+      ]
     },
     {
       "game_id": "2026-W5-MIN-NO",
@@ -94,13 +240,36 @@
       "matchup": "Minnesota Vikings at New Orleans Saints",
       "venue": "Caesars Superdome",
       "environment": "indoor",
-      "status": "Official venue environment verified",
+      "status": "Official indoor venue verified",
       "summary": "Caesars Superdome is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
-      "risk": "source-limited",
-      "observed_at": "2026-10-11T09:05:15.291Z",
+      "risk": "indoor / roof controlled",
+      "observed_at": "2026-10-11T12:50:03.213240+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100"
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+      "forecast_timestamp": null,
+      "forecast_verified": true,
+      "forecast": {
+        "game_id": "2026-W5-MIN-NO",
+        "kickoff": "2026-10-11T17:00Z",
+        "temp_f": null,
+        "wind_mph": null,
+        "gust_mph": null,
+        "precip_chance_pct": null,
+        "forecast_timestamp": null,
+        "verification_status": "indoor venue; outdoor weather forecast not applicable",
+        "venue": "Caesars Superdome",
+        "sources": [
+          "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100"
+        ],
+        "limitations": [
+          "Roof status is governed by venue/event information; outside air values are not on-field conditions."
+        ],
+        "retrieved_at": "2026-10-11T12:50:03.213240+00:00"
+      },
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100"
+      ]
     },
     {
       "game_id": "2026-W5-CLE-NYJ",
@@ -108,13 +277,42 @@
       "matchup": "Cleveland Browns at New York Jets",
       "venue": "MetLife Stadium",
       "environment": "outdoor",
-      "status": "Current game-window weather feed reviewed",
-      "summary": "Current ESPN event weather feed reviewed; no structured game-window condition was published. Weather remains source-limited with 0.0 automatic model points.",
-      "risk": "source-limited",
-      "observed_at": "2026-10-11T09:05:15.291Z",
+      "status": "Official kickoff-hour forecast verified",
+      "summary": "Light Rain at kickoff: 63\u00b0F; wind E 12.0 mph, gust 21.9 mph; precipitation chance 92%.",
+      "risk": "weather review required",
+      "observed_at": "2026-10-11T12:50:03.213244+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100"
+      "source": "https://api.weather.gov/points/40.8135,-74.0745",
+      "forecast_timestamp": "2026-10-11T09:35:19+00:00",
+      "forecast_verified": true,
+      "forecast": {
+        "game_id": "2026-W5-CLE-NYJ",
+        "kickoff": "2026-10-11T17:00Z",
+        "temp_f": 63,
+        "wind_mph": 12.0,
+        "gust_mph": 21.9,
+        "precip_chance_pct": 92,
+        "forecast_timestamp": "2026-10-11T09:35:19+00:00",
+        "sources": [
+          "https://api.weather.gov/points/40.8135,-74.0745",
+          "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
+          "https://api.weather.gov/gridpoints/OKX/30,46"
+        ],
+        "wind_speed_raw": "12 mph",
+        "wind_direction": "E",
+        "forecast_hour_start": "2026-10-11T13:00:00-04:00",
+        "forecast_hour_end": "2026-10-11T14:00:00-04:00",
+        "conditions": "Light Rain",
+        "verification_status": "verified official NWS kickoff-containing hourly forecast",
+        "gust_unit_original": "wmoUnit:km_h-1",
+        "retrieved_at": "2026-10-11T12:50:03.213244+00:00"
+      },
+      "sources": [
+        "https://api.weather.gov/points/40.8135,-74.0745",
+        "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
+        "https://api.weather.gov/gridpoints/OKX/30,46"
+      ]
     },
     {
       "game_id": "2026-W5-IND-PIT",
@@ -122,13 +320,42 @@
       "matchup": "Indianapolis Colts at Pittsburgh Steelers",
       "venue": "Acrisure Stadium",
       "environment": "outdoor",
-      "status": "Current game-window weather feed reviewed",
-      "summary": "Current ESPN event weather feed reviewed; no structured game-window condition was published. Weather remains source-limited with 0.0 automatic model points.",
-      "risk": "source-limited",
-      "observed_at": "2026-10-11T09:05:15.291Z",
+      "status": "Official kickoff-hour forecast verified",
+      "summary": "Rain Showers at kickoff: 61\u00b0F; wind E 12.0 mph, gust 20.7 mph; precipitation chance 94%.",
+      "risk": "weather review required",
+      "observed_at": "2026-10-11T12:50:03.213248+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100"
+      "source": "https://api.weather.gov/points/40.4468,-80.0158",
+      "forecast_timestamp": "2026-10-11T10:56:35+00:00",
+      "forecast_verified": true,
+      "forecast": {
+        "game_id": "2026-W5-IND-PIT",
+        "kickoff": "2026-10-11T17:00Z",
+        "temp_f": 61,
+        "wind_mph": 12.0,
+        "gust_mph": 20.7,
+        "precip_chance_pct": 94,
+        "forecast_timestamp": "2026-10-11T10:56:35+00:00",
+        "sources": [
+          "https://api.weather.gov/points/40.4468,-80.0158",
+          "https://api.weather.gov/gridpoints/PBZ/77,66/forecast/hourly",
+          "https://api.weather.gov/gridpoints/PBZ/77,66"
+        ],
+        "wind_speed_raw": "12 mph",
+        "wind_direction": "E",
+        "forecast_hour_start": "2026-10-11T13:00:00-04:00",
+        "forecast_hour_end": "2026-10-11T14:00:00-04:00",
+        "conditions": "Rain Showers",
+        "verification_status": "verified official NWS kickoff-containing hourly forecast",
+        "gust_unit_original": "wmoUnit:km_h-1",
+        "retrieved_at": "2026-10-11T12:50:03.213248+00:00"
+      },
+      "sources": [
+        "https://api.weather.gov/points/40.4468,-80.0158",
+        "https://api.weather.gov/gridpoints/PBZ/77,66/forecast/hourly",
+        "https://api.weather.gov/gridpoints/PBZ/77,66"
+      ]
     },
     {
       "game_id": "2026-W5-NYG-WSH",
@@ -136,13 +363,42 @@
       "matchup": "New York Giants at Washington Commanders",
       "venue": "Northwest Stadium",
       "environment": "outdoor",
-      "status": "Current game-window weather feed reviewed",
-      "summary": "Current ESPN event weather feed reviewed; no structured game-window condition was published. Weather remains source-limited with 0.0 automatic model points.",
-      "risk": "source-limited",
-      "observed_at": "2026-10-11T09:05:15.291Z",
+      "status": "Official kickoff-hour forecast verified",
+      "summary": "Rain Showers at kickoff: 68\u00b0F; wind E 14.0 mph, gust 26.5 mph; precipitation chance 77%.",
+      "risk": "weather review required",
+      "observed_at": "2026-10-11T12:50:03.213251+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100"
+      "source": "https://api.weather.gov/points/38.9076,-76.8645",
+      "forecast_timestamp": "2026-10-11T11:53:13+00:00",
+      "forecast_verified": true,
+      "forecast": {
+        "game_id": "2026-W5-NYG-WSH",
+        "kickoff": "2026-10-11T17:00Z",
+        "temp_f": 68,
+        "wind_mph": 14.0,
+        "gust_mph": 26.5,
+        "precip_chance_pct": 77,
+        "forecast_timestamp": "2026-10-11T11:53:13+00:00",
+        "sources": [
+          "https://api.weather.gov/points/38.9076,-76.8645",
+          "https://api.weather.gov/gridpoints/LWX/102,73/forecast/hourly",
+          "https://api.weather.gov/gridpoints/LWX/102,73"
+        ],
+        "wind_speed_raw": "14 mph",
+        "wind_direction": "E",
+        "forecast_hour_start": "2026-10-11T13:00:00-04:00",
+        "forecast_hour_end": "2026-10-11T14:00:00-04:00",
+        "conditions": "Rain Showers",
+        "verification_status": "verified official NWS kickoff-containing hourly forecast",
+        "gust_unit_original": "wmoUnit:km_h-1",
+        "retrieved_at": "2026-10-11T12:50:03.213251+00:00"
+      },
+      "sources": [
+        "https://api.weather.gov/points/38.9076,-76.8645",
+        "https://api.weather.gov/gridpoints/LWX/102,73/forecast/hourly",
+        "https://api.weather.gov/gridpoints/LWX/102,73"
+      ]
     },
     {
       "game_id": "2026-W5-DEN-LAC",
@@ -150,13 +406,43 @@
       "matchup": "Denver Broncos at Los Angeles Chargers",
       "venue": "SoFi Stadium",
       "environment": "outdoor",
-      "status": "Current game-window weather feed reviewed",
-      "summary": "Current ESPN event weather feed reviewed; no structured game-window condition was published. Weather remains source-limited with 0.0 automatic model points.",
-      "risk": "source-limited",
-      "observed_at": "2026-10-11T09:05:15.291Z",
+      "status": "Official kickoff-hour forecast verified",
+      "summary": "Chance Rain Showers at kickoff: 72\u00b0F; wind SW 20.0 mph, gust 25.3 mph; precipitation chance 45%. SoFi is covered/open-sided; surrounding point forecast is not on-field wind or rain exposure. No automatic weather model adjustment.",
+      "risk": "weather review required",
+      "observed_at": "2026-10-11T12:50:03.213255+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100"
+      "source": "https://api.weather.gov/points/33.9535,-118.3392",
+      "forecast_timestamp": "2026-10-11T06:16:34+00:00",
+      "forecast_verified": true,
+      "forecast": {
+        "game_id": "2026-W5-DEN-LAC",
+        "kickoff": "2026-10-11T20:05Z",
+        "temp_f": 72,
+        "wind_mph": 20.0,
+        "gust_mph": 25.3,
+        "precip_chance_pct": 45,
+        "forecast_timestamp": "2026-10-11T06:16:34+00:00",
+        "sources": [
+          "https://api.weather.gov/points/33.9535,-118.3392",
+          "https://api.weather.gov/gridpoints/LOX/151,41/forecast/hourly",
+          "https://api.weather.gov/gridpoints/LOX/151,41"
+        ],
+        "wind_speed_raw": "20 mph",
+        "wind_direction": "SW",
+        "forecast_hour_start": "2026-10-11T13:00:00-07:00",
+        "forecast_hour_end": "2026-10-11T14:00:00-07:00",
+        "conditions": "Chance Rain Showers",
+        "verification_status": "verified official NWS kickoff-containing hourly forecast",
+        "gust_unit_original": "wmoUnit:km_h-1",
+        "venue_limitation": "SoFi is covered/open-sided; surrounding point forecast is not on-field wind or rain exposure. No automatic weather model adjustment.",
+        "retrieved_at": "2026-10-11T12:50:03.213255+00:00"
+      },
+      "sources": [
+        "https://api.weather.gov/points/33.9535,-118.3392",
+        "https://api.weather.gov/gridpoints/LOX/151,41/forecast/hourly",
+        "https://api.weather.gov/gridpoints/LOX/151,41"
+      ]
     },
     {
       "game_id": "2026-W5-DET-ARI",
@@ -164,13 +450,36 @@
       "matchup": "Detroit Lions at Arizona Cardinals",
       "venue": "State Farm Stadium",
       "environment": "indoor",
-      "status": "Official venue environment verified",
+      "status": "Official indoor venue verified",
       "summary": "State Farm Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
-      "risk": "source-limited",
-      "observed_at": "2026-10-11T09:05:15.291Z",
+      "risk": "indoor / roof controlled",
+      "observed_at": "2026-10-11T12:50:03.213260+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100"
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+      "forecast_timestamp": null,
+      "forecast_verified": true,
+      "forecast": {
+        "game_id": "2026-W5-DET-ARI",
+        "kickoff": "2026-10-11T20:25Z",
+        "temp_f": null,
+        "wind_mph": null,
+        "gust_mph": null,
+        "precip_chance_pct": null,
+        "forecast_timestamp": null,
+        "verification_status": "indoor venue; outdoor weather forecast not applicable",
+        "venue": "State Farm Stadium",
+        "sources": [
+          "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100"
+        ],
+        "limitations": [
+          "Roof status is governed by venue/event information; outside air values are not on-field conditions."
+        ],
+        "retrieved_at": "2026-10-11T12:50:03.213260+00:00"
+      },
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100"
+      ]
     },
     {
       "game_id": "2026-W5-SF-SEA",
@@ -178,13 +487,42 @@
       "matchup": "San Francisco 49ers at Seattle Seahawks",
       "venue": "Lumen Field",
       "environment": "outdoor",
-      "status": "Current game-window weather feed reviewed",
-      "summary": "Current ESPN event weather feed reviewed; no structured game-window condition was published. Weather remains source-limited with 0.0 automatic model points.",
-      "risk": "source-limited",
-      "observed_at": "2026-10-11T09:05:15.291Z",
+      "status": "Official kickoff-hour forecast verified",
+      "summary": "Sunny at kickoff: 57\u00b0F; wind N 9.0 mph, gust 12.7 mph; precipitation chance 0%.",
+      "risk": "no major hourly weather flag",
+      "observed_at": "2026-10-11T12:50:03.213264+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100"
+      "source": "https://api.weather.gov/points/47.5952,-122.3316",
+      "forecast_timestamp": "2026-10-11T06:26:38+00:00",
+      "forecast_verified": true,
+      "forecast": {
+        "game_id": "2026-W5-SF-SEA",
+        "kickoff": "2026-10-11T20:25Z",
+        "temp_f": 57,
+        "wind_mph": 9.0,
+        "gust_mph": 12.7,
+        "precip_chance_pct": 0,
+        "forecast_timestamp": "2026-10-11T06:26:38+00:00",
+        "sources": [
+          "https://api.weather.gov/points/47.5952,-122.3316",
+          "https://api.weather.gov/gridpoints/SEW/125,67/forecast/hourly",
+          "https://api.weather.gov/gridpoints/SEW/125,67"
+        ],
+        "wind_speed_raw": "9 mph",
+        "wind_direction": "N",
+        "forecast_hour_start": "2026-10-11T13:00:00-07:00",
+        "forecast_hour_end": "2026-10-11T14:00:00-07:00",
+        "conditions": "Sunny",
+        "verification_status": "verified official NWS kickoff-containing hourly forecast",
+        "gust_unit_original": "wmoUnit:km_h-1",
+        "retrieved_at": "2026-10-11T12:50:03.213264+00:00"
+      },
+      "sources": [
+        "https://api.weather.gov/points/47.5952,-122.3316",
+        "https://api.weather.gov/gridpoints/SEW/125,67/forecast/hourly",
+        "https://api.weather.gov/gridpoints/SEW/125,67"
+      ]
     },
     {
       "game_id": "2026-W5-BAL-ATL",
@@ -192,13 +530,36 @@
       "matchup": "Baltimore Ravens at Atlanta Falcons",
       "venue": "Mercedes-Benz Stadium",
       "environment": "indoor",
-      "status": "Official venue environment verified",
+      "status": "Official indoor venue verified",
       "summary": "Mercedes-Benz Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
-      "risk": "source-limited",
-      "observed_at": "2026-10-11T09:05:15.291Z",
+      "risk": "indoor / roof controlled",
+      "observed_at": "2026-10-11T12:50:03.213268+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100"
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
+      "forecast_timestamp": null,
+      "forecast_verified": true,
+      "forecast": {
+        "game_id": "2026-W5-BAL-ATL",
+        "kickoff": "2026-10-12T00:20Z",
+        "temp_f": null,
+        "wind_mph": null,
+        "gust_mph": null,
+        "precip_chance_pct": null,
+        "forecast_timestamp": null,
+        "verification_status": "indoor venue; outdoor weather forecast not applicable",
+        "venue": "Mercedes-Benz Stadium",
+        "sources": [
+          "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100"
+        ],
+        "limitations": [
+          "Roof status is governed by venue/event information; outside air values are not on-field conditions."
+        ],
+        "retrieved_at": "2026-10-11T12:50:03.213268+00:00"
+      },
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100"
+      ]
     },
     {
       "game_id": "2026-W5-BUF-LAR",
@@ -206,13 +567,43 @@
       "matchup": "Buffalo Bills at Los Angeles Rams",
       "venue": "SoFi Stadium",
       "environment": "outdoor",
-      "status": "Current game-window weather feed reviewed",
-      "summary": "Current ESPN event weather feed reviewed; no structured game-window condition was published. Weather remains source-limited with 0.0 automatic model points.",
-      "risk": "source-limited",
-      "observed_at": "2026-10-11T09:05:15.291Z",
+      "status": "Official kickoff-hour forecast verified",
+      "summary": "Slight Chance Rain Showers at kickoff: 62\u00b0F; wind WSW 10.0 mph, gust 15.0 mph; precipitation chance 20%. SoFi is covered/open-sided; surrounding point forecast is not on-field wind or rain exposure. No automatic weather model adjustment.",
+      "risk": "no major hourly weather flag",
+      "observed_at": "2026-10-11T12:50:03.213272+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100"
+      "source": "https://api.weather.gov/points/33.9535,-118.3392",
+      "forecast_timestamp": "2026-10-11T06:16:34+00:00",
+      "forecast_verified": true,
+      "forecast": {
+        "game_id": "2026-W5-BUF-LAR",
+        "kickoff": "2026-10-13T00:15Z",
+        "temp_f": 62,
+        "wind_mph": 10.0,
+        "gust_mph": 15.0,
+        "precip_chance_pct": 20,
+        "forecast_timestamp": "2026-10-11T06:16:34+00:00",
+        "sources": [
+          "https://api.weather.gov/points/33.9535,-118.3392",
+          "https://api.weather.gov/gridpoints/LOX/151,41/forecast/hourly",
+          "https://api.weather.gov/gridpoints/LOX/151,41"
+        ],
+        "wind_speed_raw": "10 mph",
+        "wind_direction": "WSW",
+        "forecast_hour_start": "2026-10-12T17:00:00-07:00",
+        "forecast_hour_end": "2026-10-12T18:00:00-07:00",
+        "conditions": "Slight Chance Rain Showers",
+        "verification_status": "verified official NWS kickoff-containing hourly forecast",
+        "gust_unit_original": "wmoUnit:km_h-1",
+        "venue_limitation": "SoFi is covered/open-sided; surrounding point forecast is not on-field wind or rain exposure. No automatic weather model adjustment.",
+        "retrieved_at": "2026-10-11T12:50:03.213272+00:00"
+      },
+      "sources": [
+        "https://api.weather.gov/points/33.9535,-118.3392",
+        "https://api.weather.gov/gridpoints/LOX/151,41/forecast/hourly",
+        "https://api.weather.gov/gridpoints/LOX/151,41"
+      ]
     }
   ]
 }

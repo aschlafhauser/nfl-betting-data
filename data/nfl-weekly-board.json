@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 5,
-  "generated_at": "2026-10-11T09:05:19.321Z",
+  "generated_at": "2026-10-11T12:42:12.740620+00:00",
   "schedule_source": "Canonical selected-week NFL board + ESPN scoreboard reconciliation",
   "market_source": "ESPN selected-week odds feed; exact sportsbook/juice required before execution",
   "games": [
@@ -37,8 +37,8 @@
         "executable_edge": -1.799,
         "edge_side": "TB",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-10-11T09:05:19.321Z",
-        "edge_convention": "production fair home margin - current market home margin",
+        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
+        "edge_convention": "fair_spread_home_margin - market.home_margin",
         "fair_spread": "Dallas Cowboys -7.7",
         "base_structural_home_margin": 1.18,
         "advanced_process_adjustment": -0.677,
@@ -75,8 +75,18 @@
         }
       },
       "availability": {
-        "high_risk_flags": [],
-        "timestamp": null
+        "high_risk_flags": [
+          "TB OUT: QB Baker Mayfield (right thumb), S Antoine Winfield Jr. (rib), CB Benjamin Morrison (quad), LB SirVocea Dennis (ankle/foot).",
+          "DAL OUT: CB Cobie Durant (hamstring), LB DeMarvion Overshown (hamstring), T Drew Shelton (hamstring).",
+          "DAL QUESTIONABLE: G Tyler Smith (thumb), WR Jonathan Mingo (illness)."
+        ],
+        "timestamp": "2026-10-08T13:18:30.000Z",
+        "status": "official final designation review complete",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.nfl.com/injuries/league/2026/reg5",
+          "https://www.buccaneers.com/news/buccaneers-cowboys-injury-report-oct-7-week-5"
+        ]
       },
       "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "final"
@@ -94,28 +104,28 @@
       "priority": "Medium",
       "stage": "potential-research",
       "market": {
-        "spread_display": "Jacksonville Jaguars -8.5",
+        "spread_display": "Jacksonville Jaguars -7.5",
         "spread": "JAX -7",
         "total": 41.5,
-        "home_margin": 8.5,
-        "home_team_sportsbook_spread": -8.5,
+        "home_margin": 7.5,
+        "home_team_sportsbook_spread": -7.5,
         "moneyline": {
           "away": null,
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T09:05:15.291Z",
+        "timestamp": "2026-10-11T12:40:06.942Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "Jacksonville Jaguars -7.8",
-        "fair_spread_home_margin": 7.841,
-        "executable_edge": -0.659,
-        "edge_side": "PHI",
+        "fair_spread_display": "Jacksonville Jaguars -7.0",
+        "fair_spread_home_margin": 7.041,
+        "executable_edge": -0.459,
+        "edge_side": "JAX",
         "confidence": "medium",
-        "edge_reconciled_at": "2026-10-11T09:05:19.321Z",
-        "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Jacksonville Jaguars -7.8",
+        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
+        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "fair_spread": "Jacksonville Jaguars -7.0",
         "base_structural_home_margin": 5.536,
         "advanced_process_adjustment": -0.331,
         "motion_matchup_adjustment": 0,
@@ -151,8 +161,17 @@
         }
       },
       "availability": {
-        "high_risk_flags": [],
-        "timestamp": null
+        "high_risk_flags": [
+          "PHI confirmed inactive: Saquon Barkley, DeVonta Smith, Hollywood Brown, Marcus Epps, Jonathan Greenard, Drew Kendall.",
+          "PHI Tank Bigsby on IR; Jalen Hurts active.",
+          "JAX confirmed inactive: CJ Williams, Alijah Huzzie, Eric Murray, Jaylon Jones, Daniel Faalele, Wesley Williams, Albert Regis."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official game-day inactives confirmed",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.philadelphiaeagles.com/news/eagles-at-jaguars-inactives-2026-nfl-week-6-london-international-game-saquon-barkley-lane-johnson"
+        ]
       },
       "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled"
@@ -172,7 +191,7 @@
       "market": {
         "spread_display": "Chicago Bears -1.5",
         "spread": "CHI -3",
-        "total": 46.5,
+        "total": 47.5,
         "home_margin": -1.5,
         "home_team_sportsbook_spread": 1.5,
         "moneyline": {
@@ -180,7 +199,7 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T09:05:15.291Z",
+        "timestamp": "2026-10-11T12:40:06.942Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
@@ -189,8 +208,8 @@
         "executable_edge": 0.095,
         "edge_side": "GB",
         "confidence": "low",
-        "edge_reconciled_at": "2026-10-11T09:05:19.321Z",
-        "edge_convention": "production fair home margin - current market home margin",
+        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
+        "edge_convention": "fair_spread_home_margin - market.home_margin",
         "fair_spread": "Chicago Bears -1.4",
         "base_structural_home_margin": -1.343,
         "advanced_process_adjustment": 0.317,
@@ -227,8 +246,21 @@
         }
       },
       "availability": {
-        "high_risk_flags": [],
-        "timestamp": null
+        "high_risk_flags": [
+          "CHI OUT: Kyle Monangai (toe/thumb), Keyshaun Elliott (quad).",
+          "CHI questionable: Caleb Williams (hamstring), Kyler Gordon, Shemar Turner, Noah Sewell (return windows).",
+          "Tyson Bagent named starter by coach; Caleb questionable does not imply expected starter. D\u2019Andre Swift has no designation.",
+          "GB OUT: Chris Brooks (ankle), Savion Williams (ankle; IR return window).",
+          "GB doubtful: Aaron Banks (knee/toe), Jacob Monk (quad).",
+          "GB questionable: Javon Hargrave (toe), Anthony Campbell (ankle), Jager Burton (back)."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.chicagobears.com/news/injury-update-bears-rb-kyle-monangai-ruled-out-qb-caleb-williams-questionable-for-packers-game",
+          "https://www.packers.com/news/packers-list-three-questionable-two-doubtful-vs-bears-week-5-injury-report"
+        ]
       },
       "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled"
@@ -256,7 +288,7 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T09:05:15.291Z",
+        "timestamp": "2026-10-11T12:40:06.942Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
@@ -265,8 +297,8 @@
         "executable_edge": 0.127,
         "edge_side": "TEN",
         "confidence": "low",
-        "edge_reconciled_at": "2026-10-11T09:05:19.321Z",
-        "edge_convention": "production fair home margin - current market home margin",
+        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
+        "edge_convention": "fair_spread_home_margin - market.home_margin",
         "fair_spread": "Houston Texans -6.9",
         "base_structural_home_margin": -6.394,
         "advanced_process_adjustment": 0.028,
@@ -303,8 +335,22 @@
         }
       },
       "availability": {
-        "high_risk_flags": [],
-        "timestamp": null
+        "high_risk_flags": [
+          "HOU OUT: Tank Dell (knee), Braden Smith (foot).",
+          "HOU questionable: Aireontae Ersery, Blake Fisher, Ed Ingram (illness), Kayden McDonald (ankle), M.J. Stewart (knee).",
+          "HOU Will Anderson and Azeez Al-Shaair have no designation.",
+          "TEN OUT: Amani Hooker (concussion).",
+          "TEN questionable: David Martin-Robinson (hamstring), Carnell Tate, Joshua Williams (pec; return window).",
+          "Carnell Tate injury body part conflicts between official team copies; questionable status agrees.",
+          "TEN Tony Pollard, Jeffery Simmons, Gunnar Helm have no designation."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.houstontexans.com/news/week-5-injury-report-texans-at-titans",
+          "https://www.tennesseetitans.com/news/week-5-injury-report-titans-vs-texans"
+        ]
       },
       "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled"
@@ -332,18 +378,18 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T09:05:15.291Z",
+        "timestamp": "2026-10-11T12:40:06.942Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "Cincinnati Bengals -6",
+        "fair_spread_display": "Cincinnati Bengals -6.0",
         "fair_spread_home_margin": -5.965,
         "executable_edge": 1.035,
         "edge_side": "MIA",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-10-11T09:05:19.321Z",
-        "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Cincinnati Bengals -6",
+        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
+        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "fair_spread": "Cincinnati Bengals -6.0",
         "base_structural_home_margin": -1.496,
         "advanced_process_adjustment": -0.328,
         "motion_matchup_adjustment": 0,
@@ -379,8 +425,19 @@
         }
       },
       "availability": {
-        "high_risk_flags": [],
-        "timestamp": null
+        "high_risk_flags": [
+          "CIN OUT: Kyle Dugger (quad).",
+          "CIN questionable: Ja\u2019Marr Chase (concussion), Tee Higgins (groin/neck), Bryan Cook (ankle), Swayze Bozeman (groin), Colbie Young (knee).",
+          "MIA OUT: Rob Beal Jr. (hamstring), Caleb Douglas (ankle), Justin Joly (concussion), Reese Taylor (quad).",
+          "MIA questionable: Storm Duck (knee), Kenneth Grant (toe), Jackson Woodard (ankle), Jaylen Wright (shin)."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.bengals.com/news/bengals-dolphins-week-5-2026-injury-report",
+          "https://www.miamidolphins.com/news/injury-report-week-5-dolphins-vs-bengals"
+        ]
       },
       "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled"
@@ -408,7 +465,7 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T09:05:15.291Z",
+        "timestamp": "2026-10-11T12:40:06.942Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
@@ -417,8 +474,8 @@
         "executable_edge": 0.988,
         "edge_side": "NE",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-10-11T09:05:19.321Z",
-        "edge_convention": "production fair home margin - current market home margin",
+        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
+        "edge_convention": "fair_spread_home_margin - market.home_margin",
         "fair_spread": "New England Patriots -4.5",
         "base_structural_home_margin": 9.015,
         "advanced_process_adjustment": -0.577,
@@ -455,8 +512,19 @@
         }
       },
       "availability": {
-        "high_risk_flags": [],
-        "timestamp": null
+        "high_risk_flags": [
+          "LV OUT: Jalen Nailor (concussion), Dont\u2019e Thornton (hamstring; return window), Trey Zuhn (knee).",
+          "LV questionable: Ashton Jeanty (ankle/foot); Brock Bowers has no designation.",
+          "NE OUT: Channing Canada, Carlton Davis III, Christian Gonzalez, Karon Prunty, Reggie Gilliam, Mack Hollins.",
+          "NE questionable: Christian Barmore, Christian Elliss, Dre\u2019Mont Jones, Morgan Moses, Rhamondre Stevenson, Charles Woods, Craig Woodson.",
+          "NE Drake Maye has no designation (right shoulder; full practice)."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.patriots.com/news/week-5-injury-report-patriots-vs-raiders"
+        ]
       },
       "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled"
@@ -474,28 +542,28 @@
       "priority": "High",
       "stage": "high-priority-audit",
       "market": {
-        "spread_display": "Minnesota Vikings -2.5",
+        "spread_display": "Minnesota Vikings -1.5",
         "spread": "MIN -1.5",
         "total": 41.5,
-        "home_margin": -2.5,
-        "home_team_sportsbook_spread": 2.5,
+        "home_margin": -1.5,
+        "home_team_sportsbook_spread": 1.5,
         "moneyline": {
           "away": null,
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T09:05:15.291Z",
+        "timestamp": "2026-10-11T12:40:06.942Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "Minnesota Vikings -3",
-        "fair_spread_home_margin": -2.975,
-        "executable_edge": -0.475,
+        "fair_spread_display": "Minnesota Vikings -2.2",
+        "fair_spread_home_margin": -2.175,
+        "executable_edge": -0.675,
         "edge_side": "MIN",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-10-11T09:05:19.321Z",
-        "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Minnesota Vikings -3",
+        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
+        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "fair_spread": "Minnesota Vikings -2.2",
         "base_structural_home_margin": -6.912,
         "advanced_process_adjustment": 2.038,
         "motion_matchup_adjustment": 0,
@@ -531,8 +599,20 @@
         }
       },
       "availability": {
-        "high_risk_flags": [],
-        "timestamp": null
+        "high_risk_flags": [
+          "MIN OUT: Christian Darrisaw (concussion), Charles/Chuck Demmings (hamstring).",
+          "MIN questionable: Jordan Addison (hamstring), Justin Jefferson (ankle), Brian O\u2019Neill (knee), Michael Jurgens (elbow; return window), Ben Yurosek (ankle; return window).",
+          "NO OUT: Kaden Elliss (calf), Anfernee Jennings (knee), Jeremiah Wright (concussion).",
+          "NO questionable: Julian Blackmon (shoulder), Barion Brown (thigh), Jaylan Ford (ankle; return window), Alvin Kamara (back), Christen Miller (illness), Lorenzo Styles Jr. (calf; return window).",
+          "NO Chris Olave and Tyler Shough have no designation."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.neworleanssaints.com/news/injury-report-minnesota-vikings-vs-new-orleans-saints-2026-nfl-week-5-friday",
+          "https://www.vikings.com/news/saints-injury-report-week-5-2026-nfl-season"
+        ]
       },
       "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled"
@@ -560,7 +640,7 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T09:05:15.291Z",
+        "timestamp": "2026-10-11T12:40:06.942Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
@@ -569,8 +649,8 @@
         "executable_edge": -0.838,
         "edge_side": "CLE",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-10-11T09:05:19.321Z",
-        "edge_convention": "production fair home margin - current market home margin",
+        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
+        "edge_convention": "fair_spread_home_margin - market.home_margin",
         "fair_spread": "New York Jets -1.7",
         "base_structural_home_margin": -2.972,
         "advanced_process_adjustment": 1.283,
@@ -607,8 +687,19 @@
         }
       },
       "availability": {
-        "high_risk_flags": [],
-        "timestamp": null
+        "high_risk_flags": [
+          "CLE OUT: Mason Graham (knee/ankle), Kalia Davis (quad), Dillon Gabriel (back), Mike Hall Jr. (ankle), Teven Jenkins (back), Carsen Ryan (calf), Tylan Wallace (knee).",
+          "NYJ OUT: Breece Hall (quad), Kiko Mauigoa (quad), Adonai Mitchell (finger), Dylan Parham (knee).",
+          "NYJ questionable: Kingsley Enagbare (knee), Will McDonald (calf), Tim Patrick (groin).",
+          "Jets report has incomplete Friday/status cells for Jarvis Brownlee and Mason Taylor; their availability cannot be inferred from blank fields."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.clevelandbrowns.com/news/mason-graham-out-for-week-5-against-the-jets-injury-report",
+          "https://www.newyorkjets.com/news/jets-injury-report-week-5-vs-browns-friday-10-09-2026"
+        ]
       },
       "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled"
@@ -626,28 +717,28 @@
       "priority": "High",
       "stage": "high-priority-audit",
       "market": {
-        "spread_display": "Pittsburgh Steelers -2.5",
+        "spread_display": "Pittsburgh Steelers -3",
         "spread": "PIT -2.5",
         "total": 43.5,
-        "home_margin": 2.5,
-        "home_team_sportsbook_spread": -2.5,
+        "home_margin": 3,
+        "home_team_sportsbook_spread": -3,
         "moneyline": {
           "away": null,
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T09:05:15.291Z",
+        "timestamp": "2026-10-11T12:40:06.942Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "Pittsburgh Steelers -1.4",
-        "fair_spread_home_margin": 1.402,
-        "executable_edge": -1.098,
+        "fair_spread_display": "Pittsburgh Steelers -1.8",
+        "fair_spread_home_margin": 1.802,
+        "executable_edge": -1.198,
         "edge_side": "IND",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-10-11T09:05:19.321Z",
-        "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Pittsburgh Steelers -1.4",
+        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
+        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "fair_spread": "Pittsburgh Steelers -1.8",
         "base_structural_home_margin": -4.771,
         "advanced_process_adjustment": 1.782,
         "motion_matchup_adjustment": 0,
@@ -683,8 +774,18 @@
         }
       },
       "availability": {
-        "high_risk_flags": [],
-        "timestamp": null
+        "high_risk_flags": [
+          "PIT OUT: Michael Pittman Jr. (foot), DeShon Elliott (knee; return window), Jamel Dean (ankle).",
+          "PIT questionable: Jalen Ramsey (wrist), Rico Dowdle (toe), Yahya Black (personal; added Saturday).",
+          "IND OUT: Darius Slayton (knee), Ashton Dulin (hamstring), Jaylon Carlies (ribs), Will Mallory (thumb; return window), Arden Key (hamstring).",
+          "IND questionable: Charvarius Ward Sr. (rest), Keenan Allen (rest/groin)."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.steelers.com/news/week-5-injury-report-colts"
+        ]
       },
       "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled"
@@ -712,7 +813,7 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T09:05:15.291Z",
+        "timestamp": "2026-10-11T12:40:06.942Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
@@ -721,8 +822,8 @@
         "executable_edge": -1.676,
         "edge_side": "NYG",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-10-11T09:05:19.321Z",
-        "edge_convention": "production fair home margin - current market home margin",
+        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
+        "edge_convention": "fair_spread_home_margin - market.home_margin",
         "fair_spread": "Washington Commanders -1.8",
         "base_structural_home_margin": -7.509,
         "advanced_process_adjustment": 2.629,
@@ -759,8 +860,20 @@
         }
       },
       "availability": {
-        "high_risk_flags": [],
-        "timestamp": null
+        "high_risk_flags": [
+          "NYG OUT: Chauncey Golston (neck), Jason Pinnock (concussion).",
+          "NYG Malik Nabers, Andrew Thomas, Isaiah Likely, Cam Skattebo have no designation.",
+          "WSH OUT: Percy Butler, Stefon Diggs, Marcus Mariota, Charles Omenihu, Tyler Owens, Nick Cross.",
+          "WSH questionable: Terry McLaurin (hamstring), Trey Amos (ankle), Jeremy McNichols (quad).",
+          "WSH Jayden Daniels cleared and named starter."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.giants.com/news/giants-vs-commanders-week-5-injury-report-malik-nabers-andrew-thomas-cam-skattebo",
+          "https://www.commanders.com/news/game-status-commanders-giants-week-5"
+        ]
       },
       "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled"
@@ -788,7 +901,7 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T09:05:15.291Z",
+        "timestamp": "2026-10-11T12:40:06.942Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
@@ -797,8 +910,8 @@
         "executable_edge": 0.746,
         "edge_side": "LAC",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-10-11T09:05:19.321Z",
-        "edge_convention": "production fair home margin - current market home margin",
+        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
+        "edge_convention": "fair_spread_home_margin - market.home_margin",
         "fair_spread": "Denver Broncos -2.8",
         "base_structural_home_margin": 0.575,
         "advanced_process_adjustment": -0.344,
@@ -835,8 +948,20 @@
         }
       },
       "availability": {
-        "high_risk_flags": [],
-        "timestamp": null
+        "high_risk_flags": [
+          "DEN OUT: Pat Surtain II (ankle), Riley Moss (ribs). Pat Bryant (ankle) on IR.",
+          "Other Denver active-roster players available per team.",
+          "LAC OUT: Joe Alt (neck), Kayode Awosika (fibula), Donte Jackson (hamstring), Derwin James (hamstring), Quentin Johnston (chest), Trevor Penning (concussion), Brenen Thompson (quad).",
+          "LAC doubtful: Trey Lance (groin).",
+          "LAC questionable: Charlie Kolar, Scott Matlock, Ladd McConkey, Branson Taylor, Rodney Shelley."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.denverbroncos.com/news/injuryreport/injury-report-cbs-pat-surtain-ii-riley-moss-ruled-out-for-broncos-week-5-game-vs-chargers",
+          "https://www.chargers.com/news/injury-report-mcconkey-johnston-alt-week-5-broncos"
+        ]
       },
       "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled"
@@ -864,7 +989,7 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T09:05:15.291Z",
+        "timestamp": "2026-10-11T12:40:06.942Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
@@ -873,8 +998,8 @@
         "executable_edge": 0.56,
         "edge_side": "ARI",
         "confidence": "medium",
-        "edge_reconciled_at": "2026-10-11T09:05:19.321Z",
-        "edge_convention": "production fair home margin - current market home margin",
+        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
+        "edge_convention": "fair_spread_home_margin - market.home_margin",
         "fair_spread": "Detroit Lions -4.9",
         "base_structural_home_margin": -3.202,
         "advanced_process_adjustment": 0.504,
@@ -911,8 +1036,18 @@
         }
       },
       "availability": {
-        "high_risk_flags": [],
-        "timestamp": null
+        "high_risk_flags": [
+          "ARI OUT: Isaiah Adams (ankle), Andrew/Dewey Wingard (knee).",
+          "ARI questionable: Walter Nolen III (calf), Karson Sharar (hamstring); Jeremiyah Love cleared.",
+          "DET OUT: Ben Bartch (foot), Rock Ya-Sin (hamstring), Brian Branch (Achilles; return window), Cade Mays (wrist; return window).",
+          "DET questionable: Tyleik Williams (foot)."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.azcardinals.com/news/injury-report-week-5-vs-lions"
+        ]
       },
       "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled"
@@ -932,7 +1067,7 @@
       "market": {
         "spread_display": "Seattle Seahawks -3",
         "spread": "SEA -2.5",
-        "total": 45.5,
+        "total": 46.5,
         "home_margin": 3,
         "home_team_sportsbook_spread": -3,
         "moneyline": {
@@ -940,7 +1075,7 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T09:05:15.291Z",
+        "timestamp": "2026-10-11T12:40:06.942Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
@@ -949,8 +1084,8 @@
         "executable_edge": 0.115,
         "edge_side": "SEA",
         "confidence": "low",
-        "edge_reconciled_at": "2026-10-11T09:05:19.321Z",
-        "edge_convention": "production fair home margin - current market home margin",
+        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
+        "edge_convention": "fair_spread_home_margin - market.home_margin",
         "fair_spread": "Seattle Seahawks -3.1",
         "base_structural_home_margin": 3.487,
         "advanced_process_adjustment": 0.09,
@@ -987,8 +1122,19 @@
         }
       },
       "availability": {
-        "high_risk_flags": [],
-        "timestamp": null
+        "high_risk_flags": [
+          "SF OUT: Nick Bosa (knee/calf), James Thompson Jr. (ankle), Kyle Juszczyk (knee), Marques Sigle (ankle).",
+          "SF questionable: Upton Stout (shoulder), Mykel Williams (knee; return window). Mike Evans has no designation.",
+          "SEA OUT: Zach Charbonnet (knee; PUP), Julian Neal (hamstring), Chazz Surratt (calf).",
+          "SEA questionable: Irv Charles (knee; return window), George Holani (ribs/knee). Leonard Williams cleared."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.49ers.com/news/juszczyk-and-three-more-ruled-out-vs-seahawks-in-week-5-williams-questionable-ahead-of-sfvssea",
+          "https://www.seahawks.com/news/week-5-injury-report-seahawks-vs-49ers"
+        ]
       },
       "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled"
@@ -1016,7 +1162,7 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T09:05:15.291Z",
+        "timestamp": "2026-10-11T12:40:06.942Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
@@ -1025,8 +1171,8 @@
         "executable_edge": -0.763,
         "edge_side": "BAL",
         "confidence": "medium",
-        "edge_reconciled_at": "2026-10-11T09:05:19.321Z",
-        "edge_convention": "production fair home margin - current market home margin",
+        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
+        "edge_convention": "fair_spread_home_margin - market.home_margin",
         "fair_spread": "Atlanta Falcons -2.2",
         "base_structural_home_margin": 0.624,
         "advanced_process_adjustment": -1.439,
@@ -1063,8 +1209,20 @@
         }
       },
       "availability": {
-        "high_risk_flags": [],
-        "timestamp": null
+        "high_risk_flags": [
+          "BAL OUT: Lamar Jackson (ankle), Trey Hendrickson (finger). Tyler Huntley named starter.",
+          "BAL questionable: Zay Flowers (foot), Marlon Humphrey (hamstring/calf).",
+          "Cam Jurgens (concussion) will not debut until next week per official team article; unavailable per team, formal designation not independently obtained.",
+          "ATL OUT: Yasir Abdullah (hamstring; subsequently IR).",
+          "ATL questionable: Divine Deablo (hamstring), Samson Ebukam (hamstring), Jake Matthews (groin), Za\u2019Darius Smith (concussion/neck)."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.baltimoreravens.com/news/lamar-jackson-trey-hendrickson-injury-report-marlon-humphrey-zay-flowers-ronnie-stanley-ravens-falcons",
+          "https://www.atlantafalcons.com/news/falcons-injury-report-vs-ravens-za-darius-smith-jake-matthews"
+        ]
       },
       "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled"
@@ -1092,18 +1250,18 @@
           "home": null
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-11T09:05:15.291Z",
+        "timestamp": "2026-10-11T12:40:06.942Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": "Los Angeles Rams -4",
+        "fair_spread_display": "Los Angeles Rams -4.0",
         "fair_spread_home_margin": 3.977,
         "executable_edge": 0.477,
         "edge_side": "LAR",
         "confidence": "medium",
-        "edge_reconciled_at": "2026-10-11T09:05:19.321Z",
-        "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Los Angeles Rams -4",
+        "edge_reconciled_at": "2026-10-11T12:42:12.740620+00:00",
+        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "fair_spread": "Los Angeles Rams -4.0",
         "base_structural_home_margin": 6.45,
         "advanced_process_adjustment": -0.566,
         "motion_matchup_adjustment": 0,
@@ -1139,8 +1297,19 @@
         }
       },
       "availability": {
-        "high_risk_flags": [],
-        "timestamp": null
+        "high_risk_flags": [
+          "BUF OUT: Ed Oliver (knee), Joshua Palmer (shoulder).",
+          "BUF questionable: DJ Moore (shoulder), Dee Alford (ankle), Landon Jackson (knee). Christian Benford cleared.",
+          "LAR questionable: Quentin Lake (hip).",
+          "LAR Aaron Donald, Colby Parkinson, Jaylen Watson, Konata Mumpfield, Grant Stuard, Josaiah Stewart have no designation."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.buffalobills.com/news/buffalo-bills-injury-report-vs-rams-week-5",
+          "https://www.therams.com/news/rams-injury-report-week-5-2026-vs-bills-aaron-donald-colby-parkinson-and-jaylen-watson-good-to-go-for-monday-night-football"
+        ]
       },
       "why": "Selected-week governed model rebuilt 2026-10-11T09:05:19.321Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled"
@@ -1148,7 +1317,7 @@
   ],
   "runtime_refresh": {
     "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
-    "observed_at": "2026-10-11T09:05:15.291Z",
+    "observed_at": "2026-10-11T12:40:06.942Z",
     "espn_events": 15,
     "current_odds_games": 14,
     "identity_normalization": "registry v1: canonical abbreviations and aliases normalized before joins",

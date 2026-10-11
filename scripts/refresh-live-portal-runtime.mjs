@@ -134,6 +134,7 @@ const priorWeatherById=new Map((priorWeather.games||[]).map(x=>[String(x.canonic
 const weatherGames=updatedCanonical.map(g=>{
   const row=byAbbr.get(`${normAbbr(g.awayAbbr)}__${normAbbr(g.homeAbbr)}`),prior=priorWeatherById.get(g.gameId);
   if(row?.completed&&prior)return prior;
+  if(prior?.forecast_verified===true&&Date.now()-Date.parse(prior.observed_at||'')<12*3600000)return prior;
   const indoor=row?.environment==='indoor';
   const summary=indoor
     ? `${row.venueName||g.home+' home venue'} is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.`

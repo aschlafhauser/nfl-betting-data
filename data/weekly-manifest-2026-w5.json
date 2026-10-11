@@ -2,7 +2,7 @@
   "version": "NFL-WEEKLY-MANIFEST-v3",
   "season": 2026,
   "week": 5,
-  "updatedAt": "2026-10-11T09:05:19.839Z",
+  "updatedAt": "2026-10-11T12:50:06.651Z",
   "status": "PASS-WITH-WARNINGS",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-10-11.json",
@@ -36,16 +36,16 @@
     "statisticalDisplay": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-10-11T09:05:15.462Z",
+      "verifiedAt": "2026-10-11T12:39:00.792041+00:00",
       "artifact": "data/statistical-display-integrity-2026-w5.json",
-      "note": "Current selected-week statistical display source refreshed for 32/32 teams using completed Week 4 results plus ESPN team statistics. Missing advanced fields are not inferred."
+      "note": "32 observed season-to-date profiles through Week 4; defensive yardage independently aggregated from each opponent box score. Advanced inputs use the same pregame cutoff."
     },
     "marketDerivedIntegrity": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-10-11T09:05:15.462Z",
+      "verifiedAt": "2026-10-11T12:42:12.740620+00:00",
       "artifact": "data/market-derived-integrity-2026-w5.json",
-      "note": "All 15 current spread-derived production fairs independently reconciled as 80% market + 20% frozen structural line with calculation timestamps at/after market dependency."
+      "note": "All current production home margins reconcile to 80% market + 20% structural; legacy/canonical display fairs and signed executable edges agree. Completed game history retained."
     },
     "currentWeekCompleteness": {
       "status": "PASS-WITH-WARNINGS",
@@ -75,11 +75,11 @@
       "ledgerSyncReport": "data/expert-ledger-reconciliation.json",
       "sourceCoverageReport": "data/expert-source-coverage-current.json",
       "sourceCoverage": "8/8",
-      "selectedWeekRecords": 0,
+      "selectedWeekRecords": 77,
       "youBetterYouBetStatus": "active-current-source-limited",
       "youBetterYouBetChecked": "2026-10-11",
       "pointImpact": 0,
-      "note": "Expert Intelligence remains a qualitative residual with zero automatic model impact. Primary ledger is losslessly synchronized (128 ledger records; 0 missing). Selected-week source inventory is complete; 8/8 families currently have selected-week checks and 0 attributable Week 5 records. You Better You Bet/Audacy is current and source-limited with zero inferred picks."
+      "note": "Expert Intelligence remains a qualitative residual with zero automatic model impact. Primary ledger is losslessly synchronized (205 ledger records; 0 missing). Selected-week source inventory is complete; 8/8 families currently have selected-week checks and 77 attributable Week 5 records. You Better You Bet/Audacy is current and source-limited with zero inferred picks."
     },
     "upsetResearchIsolation": {
       "status": "PASS",
@@ -95,7 +95,7 @@
       "artifact": "data/player-props-expert.json",
       "artifactWeek": 5,
       "selectedWeek": 5,
-      "verifiedRecommendations": 0,
+      "verifiedRecommendations": 8,
       "watchlistRows": 0,
       "verification": {
         "seasonMatch": true,

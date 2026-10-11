@@ -1,8 +1,8 @@
 {
   "season": 2026,
   "week": 5,
-  "updated_at": "2026-10-08T13:18:30.000Z",
-  "source_status": "Current Week 5 checkpoint. Thursday final designations are captured from official NFL and Buccaneers reports; later games remain explicitly scheduled for their due windows. No automatic point values are inferred.",
+  "updated_at": "2026-10-11T12:42:12.740620+00:00",
+  "source_status": "OFFICIAL FINAL DESIGNATIONS REVIEWED; PHI-JAX INACTIVES CONFIRMED",
   "games": [
     {
       "game_id": "2026-W5-TB-DAL",
@@ -23,171 +23,274 @@
     },
     {
       "game_id": "2026-W5-PHI-JAX",
-      "canonical_game_id": "2026-W5-PHI-JAX",
-      "matchup": "Philadelphia Eagles at Jacksonville Jaguars",
-      "status": "selected-week availability review scheduled; final designation checkpoint not yet due",
-      "updated_at": "2026-10-08T13:18:30.000Z",
-      "flags": [],
-      "source_status": "checkpoint not due; no injury conclusion inferred",
+      "reviewComplete": true,
+      "status": "official game-day inactives confirmed",
+      "source_date": "2026-10-11",
+      "flags": [
+        "PHI confirmed inactive: Saquon Barkley, DeVonta Smith, Hollywood Brown, Marcus Epps, Jonathan Greenard, Drew Kendall.",
+        "PHI Tank Bigsby on IR; Jalen Hurts active.",
+        "JAX confirmed inactive: CJ Williams, Alijah Huzzie, Eric Murray, Jaylon Jones, Daniel Faalele, Wesley Williams, Albert Regis."
+      ],
       "sources": [
-        "https://www.nfl.com/injuries/league/2026/reg5"
-      ]
+        "https://www.philadelphiaeagles.com/news/eagles-at-jaguars-inactives-2026-nfl-week-6-london-international-game-saquon-barkley-lane-johnson"
+      ],
+      "canonical_game_id": "2026-W5-PHI-JAX",
+      "updated_at": "2026-10-11T12:42:12.740620+00:00",
+      "matchup": "Philadelphia Eagles at Jacksonville Jaguars"
     },
     {
       "game_id": "2026-W5-CHI-GB",
-      "canonical_game_id": "2026-W5-CHI-GB",
-      "matchup": "Chicago Bears at Green Bay Packers",
-      "status": "selected-week availability review scheduled; final designation checkpoint not yet due",
-      "updated_at": "2026-10-08T13:18:30.000Z",
-      "flags": [],
-      "source_status": "checkpoint not due; no injury conclusion inferred",
+      "reviewComplete": true,
+      "status": "official final designation review complete; game-day inactives pending",
+      "source_date": "2026-10-09",
+      "flags": [
+        "CHI OUT: Kyle Monangai (toe/thumb), Keyshaun Elliott (quad).",
+        "CHI questionable: Caleb Williams (hamstring), Kyler Gordon, Shemar Turner, Noah Sewell (return windows).",
+        "Tyson Bagent named starter by coach; Caleb questionable does not imply expected starter. D\u2019Andre Swift has no designation.",
+        "GB OUT: Chris Brooks (ankle), Savion Williams (ankle; IR return window).",
+        "GB doubtful: Aaron Banks (knee/toe), Jacob Monk (quad).",
+        "GB questionable: Javon Hargrave (toe), Anthony Campbell (ankle), Jager Burton (back)."
+      ],
       "sources": [
-        "https://www.nfl.com/injuries/league/2026/reg5"
-      ]
+        "https://www.chicagobears.com/news/injury-update-bears-rb-kyle-monangai-ruled-out-qb-caleb-williams-questionable-for-packers-game",
+        "https://www.packers.com/news/packers-list-three-questionable-two-doubtful-vs-bears-week-5-injury-report"
+      ],
+      "canonical_game_id": "2026-W5-CHI-GB",
+      "updated_at": "2026-10-11T12:42:12.740620+00:00",
+      "matchup": "Chicago Bears at Green Bay Packers"
     },
     {
       "game_id": "2026-W5-HOU-TEN",
-      "canonical_game_id": "2026-W5-HOU-TEN",
-      "matchup": "Houston Texans at Tennessee Titans",
-      "status": "selected-week availability review scheduled; final designation checkpoint not yet due",
-      "updated_at": "2026-10-08T13:18:30.000Z",
-      "flags": [],
-      "source_status": "checkpoint not due; no injury conclusion inferred",
+      "reviewComplete": true,
+      "status": "official final designation review complete; game-day inactives pending",
+      "source_date": "2026-10-10",
+      "flags": [
+        "HOU OUT: Tank Dell (knee), Braden Smith (foot).",
+        "HOU questionable: Aireontae Ersery, Blake Fisher, Ed Ingram (illness), Kayden McDonald (ankle), M.J. Stewart (knee).",
+        "HOU Will Anderson and Azeez Al-Shaair have no designation.",
+        "TEN OUT: Amani Hooker (concussion).",
+        "TEN questionable: David Martin-Robinson (hamstring), Carnell Tate, Joshua Williams (pec; return window).",
+        "Carnell Tate injury body part conflicts between official team copies; questionable status agrees.",
+        "TEN Tony Pollard, Jeffery Simmons, Gunnar Helm have no designation."
+      ],
       "sources": [
-        "https://www.nfl.com/injuries/league/2026/reg5"
-      ]
+        "https://www.houstontexans.com/news/week-5-injury-report-texans-at-titans",
+        "https://www.tennesseetitans.com/news/week-5-injury-report-titans-vs-texans"
+      ],
+      "canonical_game_id": "2026-W5-HOU-TEN",
+      "updated_at": "2026-10-11T12:42:12.740620+00:00",
+      "matchup": "Houston Texans at Tennessee Titans"
     },
     {
       "game_id": "2026-W5-CIN-MIA",
-      "canonical_game_id": "2026-W5-CIN-MIA",
-      "matchup": "Cincinnati Bengals at Miami Dolphins",
-      "status": "selected-week availability review scheduled; final designation checkpoint not yet due",
-      "updated_at": "2026-10-08T13:18:30.000Z",
-      "flags": [],
-      "source_status": "checkpoint not due; no injury conclusion inferred",
+      "reviewComplete": true,
+      "status": "official final designation review complete; game-day inactives pending",
+      "source_date": "2026-10-09",
+      "flags": [
+        "CIN OUT: Kyle Dugger (quad).",
+        "CIN questionable: Ja\u2019Marr Chase (concussion), Tee Higgins (groin/neck), Bryan Cook (ankle), Swayze Bozeman (groin), Colbie Young (knee).",
+        "MIA OUT: Rob Beal Jr. (hamstring), Caleb Douglas (ankle), Justin Joly (concussion), Reese Taylor (quad).",
+        "MIA questionable: Storm Duck (knee), Kenneth Grant (toe), Jackson Woodard (ankle), Jaylen Wright (shin)."
+      ],
       "sources": [
-        "https://www.nfl.com/injuries/league/2026/reg5"
-      ]
+        "https://www.bengals.com/news/bengals-dolphins-week-5-2026-injury-report",
+        "https://www.miamidolphins.com/news/injury-report-week-5-dolphins-vs-bengals"
+      ],
+      "canonical_game_id": "2026-W5-CIN-MIA",
+      "updated_at": "2026-10-11T12:42:12.740620+00:00",
+      "matchup": "Cincinnati Bengals at Miami Dolphins"
     },
     {
       "game_id": "2026-W5-LV-NE",
-      "canonical_game_id": "2026-W5-LV-NE",
-      "matchup": "Las Vegas Raiders at New England Patriots",
-      "status": "selected-week availability review scheduled; final designation checkpoint not yet due",
-      "updated_at": "2026-10-08T13:18:30.000Z",
-      "flags": [],
-      "source_status": "checkpoint not due; no injury conclusion inferred",
+      "reviewComplete": true,
+      "status": "official final designation review complete; game-day inactives pending",
+      "source_date": "2026-10-09",
+      "flags": [
+        "LV OUT: Jalen Nailor (concussion), Dont\u2019e Thornton (hamstring; return window), Trey Zuhn (knee).",
+        "LV questionable: Ashton Jeanty (ankle/foot); Brock Bowers has no designation.",
+        "NE OUT: Channing Canada, Carlton Davis III, Christian Gonzalez, Karon Prunty, Reggie Gilliam, Mack Hollins.",
+        "NE questionable: Christian Barmore, Christian Elliss, Dre\u2019Mont Jones, Morgan Moses, Rhamondre Stevenson, Charles Woods, Craig Woodson.",
+        "NE Drake Maye has no designation (right shoulder; full practice)."
+      ],
       "sources": [
-        "https://www.nfl.com/injuries/league/2026/reg5"
-      ]
+        "https://www.patriots.com/news/week-5-injury-report-patriots-vs-raiders"
+      ],
+      "canonical_game_id": "2026-W5-LV-NE",
+      "updated_at": "2026-10-11T12:42:12.740620+00:00",
+      "matchup": "Las Vegas Raiders at New England Patriots"
     },
     {
       "game_id": "2026-W5-MIN-NO",
-      "canonical_game_id": "2026-W5-MIN-NO",
-      "matchup": "Minnesota Vikings at New Orleans Saints",
-      "status": "selected-week availability review scheduled; final designation checkpoint not yet due",
-      "updated_at": "2026-10-08T13:18:30.000Z",
-      "flags": [],
-      "source_status": "checkpoint not due; no injury conclusion inferred",
+      "reviewComplete": true,
+      "status": "official final designation review complete; game-day inactives pending",
+      "source_date": "2026-10-09",
+      "flags": [
+        "MIN OUT: Christian Darrisaw (concussion), Charles/Chuck Demmings (hamstring).",
+        "MIN questionable: Jordan Addison (hamstring), Justin Jefferson (ankle), Brian O\u2019Neill (knee), Michael Jurgens (elbow; return window), Ben Yurosek (ankle; return window).",
+        "NO OUT: Kaden Elliss (calf), Anfernee Jennings (knee), Jeremiah Wright (concussion).",
+        "NO questionable: Julian Blackmon (shoulder), Barion Brown (thigh), Jaylan Ford (ankle; return window), Alvin Kamara (back), Christen Miller (illness), Lorenzo Styles Jr. (calf; return window).",
+        "NO Chris Olave and Tyler Shough have no designation."
+      ],
       "sources": [
-        "https://www.nfl.com/injuries/league/2026/reg5"
-      ]
+        "https://www.neworleanssaints.com/news/injury-report-minnesota-vikings-vs-new-orleans-saints-2026-nfl-week-5-friday",
+        "https://www.vikings.com/news/saints-injury-report-week-5-2026-nfl-season"
+      ],
+      "canonical_game_id": "2026-W5-MIN-NO",
+      "updated_at": "2026-10-11T12:42:12.740620+00:00",
+      "matchup": "Minnesota Vikings at New Orleans Saints"
     },
     {
       "game_id": "2026-W5-CLE-NYJ",
-      "canonical_game_id": "2026-W5-CLE-NYJ",
-      "matchup": "Cleveland Browns at New York Jets",
-      "status": "selected-week availability review scheduled; final designation checkpoint not yet due",
-      "updated_at": "2026-10-08T13:18:30.000Z",
-      "flags": [],
-      "source_status": "checkpoint not due; no injury conclusion inferred",
+      "reviewComplete": true,
+      "status": "official final designation review complete; game-day inactives pending",
+      "source_date": "2026-10-09",
+      "flags": [
+        "CLE OUT: Mason Graham (knee/ankle), Kalia Davis (quad), Dillon Gabriel (back), Mike Hall Jr. (ankle), Teven Jenkins (back), Carsen Ryan (calf), Tylan Wallace (knee).",
+        "NYJ OUT: Breece Hall (quad), Kiko Mauigoa (quad), Adonai Mitchell (finger), Dylan Parham (knee).",
+        "NYJ questionable: Kingsley Enagbare (knee), Will McDonald (calf), Tim Patrick (groin).",
+        "Jets report has incomplete Friday/status cells for Jarvis Brownlee and Mason Taylor; their availability cannot be inferred from blank fields."
+      ],
       "sources": [
-        "https://www.nfl.com/injuries/league/2026/reg5"
-      ]
+        "https://www.clevelandbrowns.com/news/mason-graham-out-for-week-5-against-the-jets-injury-report",
+        "https://www.newyorkjets.com/news/jets-injury-report-week-5-vs-browns-friday-10-09-2026"
+      ],
+      "canonical_game_id": "2026-W5-CLE-NYJ",
+      "updated_at": "2026-10-11T12:42:12.740620+00:00",
+      "matchup": "Cleveland Browns at New York Jets"
     },
     {
       "game_id": "2026-W5-IND-PIT",
-      "canonical_game_id": "2026-W5-IND-PIT",
-      "matchup": "Indianapolis Colts at Pittsburgh Steelers",
-      "status": "selected-week availability review scheduled; final designation checkpoint not yet due",
-      "updated_at": "2026-10-08T13:18:30.000Z",
-      "flags": [],
-      "source_status": "checkpoint not due; no injury conclusion inferred",
+      "reviewComplete": true,
+      "status": "official final designation review complete; game-day inactives pending",
+      "source_date": "2026-10-10",
+      "flags": [
+        "PIT OUT: Michael Pittman Jr. (foot), DeShon Elliott (knee; return window), Jamel Dean (ankle).",
+        "PIT questionable: Jalen Ramsey (wrist), Rico Dowdle (toe), Yahya Black (personal; added Saturday).",
+        "IND OUT: Darius Slayton (knee), Ashton Dulin (hamstring), Jaylon Carlies (ribs), Will Mallory (thumb; return window), Arden Key (hamstring).",
+        "IND questionable: Charvarius Ward Sr. (rest), Keenan Allen (rest/groin)."
+      ],
       "sources": [
-        "https://www.nfl.com/injuries/league/2026/reg5"
-      ]
+        "https://www.steelers.com/news/week-5-injury-report-colts"
+      ],
+      "canonical_game_id": "2026-W5-IND-PIT",
+      "updated_at": "2026-10-11T12:42:12.740620+00:00",
+      "matchup": "Indianapolis Colts at Pittsburgh Steelers"
     },
     {
       "game_id": "2026-W5-NYG-WSH",
-      "canonical_game_id": "2026-W5-NYG-WSH",
-      "matchup": "New York Giants at Washington Commanders",
-      "status": "selected-week availability review scheduled; final designation checkpoint not yet due",
-      "updated_at": "2026-10-08T13:18:30.000Z",
-      "flags": [],
-      "source_status": "checkpoint not due; no injury conclusion inferred",
+      "reviewComplete": true,
+      "status": "official final designation review complete; game-day inactives pending",
+      "source_date": "2026-10-09",
+      "flags": [
+        "NYG OUT: Chauncey Golston (neck), Jason Pinnock (concussion).",
+        "NYG Malik Nabers, Andrew Thomas, Isaiah Likely, Cam Skattebo have no designation.",
+        "WSH OUT: Percy Butler, Stefon Diggs, Marcus Mariota, Charles Omenihu, Tyler Owens, Nick Cross.",
+        "WSH questionable: Terry McLaurin (hamstring), Trey Amos (ankle), Jeremy McNichols (quad).",
+        "WSH Jayden Daniels cleared and named starter."
+      ],
       "sources": [
-        "https://www.nfl.com/injuries/league/2026/reg5"
-      ]
+        "https://www.giants.com/news/giants-vs-commanders-week-5-injury-report-malik-nabers-andrew-thomas-cam-skattebo",
+        "https://www.commanders.com/news/game-status-commanders-giants-week-5"
+      ],
+      "canonical_game_id": "2026-W5-NYG-WSH",
+      "updated_at": "2026-10-11T12:42:12.740620+00:00",
+      "matchup": "New York Giants at Washington Commanders"
     },
     {
       "game_id": "2026-W5-DEN-LAC",
-      "canonical_game_id": "2026-W5-DEN-LAC",
-      "matchup": "Denver Broncos at Los Angeles Chargers",
-      "status": "selected-week availability review scheduled; final designation checkpoint not yet due",
-      "updated_at": "2026-10-08T13:18:30.000Z",
-      "flags": [],
-      "source_status": "checkpoint not due; no injury conclusion inferred",
+      "reviewComplete": true,
+      "status": "official final designation review complete; game-day inactives pending",
+      "source_date": "2026-10-09",
+      "flags": [
+        "DEN OUT: Pat Surtain II (ankle), Riley Moss (ribs). Pat Bryant (ankle) on IR.",
+        "Other Denver active-roster players available per team.",
+        "LAC OUT: Joe Alt (neck), Kayode Awosika (fibula), Donte Jackson (hamstring), Derwin James (hamstring), Quentin Johnston (chest), Trevor Penning (concussion), Brenen Thompson (quad).",
+        "LAC doubtful: Trey Lance (groin).",
+        "LAC questionable: Charlie Kolar, Scott Matlock, Ladd McConkey, Branson Taylor, Rodney Shelley."
+      ],
       "sources": [
-        "https://www.nfl.com/injuries/league/2026/reg5"
-      ]
+        "https://www.denverbroncos.com/news/injuryreport/injury-report-cbs-pat-surtain-ii-riley-moss-ruled-out-for-broncos-week-5-game-vs-chargers",
+        "https://www.chargers.com/news/injury-report-mcconkey-johnston-alt-week-5-broncos"
+      ],
+      "canonical_game_id": "2026-W5-DEN-LAC",
+      "updated_at": "2026-10-11T12:42:12.740620+00:00",
+      "matchup": "Denver Broncos at Los Angeles Chargers"
     },
     {
       "game_id": "2026-W5-DET-ARI",
-      "canonical_game_id": "2026-W5-DET-ARI",
-      "matchup": "Detroit Lions at Arizona Cardinals",
-      "status": "selected-week availability review scheduled; final designation checkpoint not yet due",
-      "updated_at": "2026-10-08T13:18:30.000Z",
-      "flags": [],
-      "source_status": "checkpoint not due; no injury conclusion inferred",
+      "reviewComplete": true,
+      "status": "official final designation review complete; game-day inactives pending",
+      "source_date": "2026-10-09",
+      "flags": [
+        "ARI OUT: Isaiah Adams (ankle), Andrew/Dewey Wingard (knee).",
+        "ARI questionable: Walter Nolen III (calf), Karson Sharar (hamstring); Jeremiyah Love cleared.",
+        "DET OUT: Ben Bartch (foot), Rock Ya-Sin (hamstring), Brian Branch (Achilles; return window), Cade Mays (wrist; return window).",
+        "DET questionable: Tyleik Williams (foot)."
+      ],
       "sources": [
-        "https://www.nfl.com/injuries/league/2026/reg5"
-      ]
+        "https://www.azcardinals.com/news/injury-report-week-5-vs-lions"
+      ],
+      "canonical_game_id": "2026-W5-DET-ARI",
+      "updated_at": "2026-10-11T12:42:12.740620+00:00",
+      "matchup": "Detroit Lions at Arizona Cardinals"
     },
     {
       "game_id": "2026-W5-SF-SEA",
-      "canonical_game_id": "2026-W5-SF-SEA",
-      "matchup": "San Francisco 49ers at Seattle Seahawks",
-      "status": "selected-week availability review scheduled; final designation checkpoint not yet due",
-      "updated_at": "2026-10-08T13:18:30.000Z",
-      "flags": [],
-      "source_status": "checkpoint not due; no injury conclusion inferred",
+      "reviewComplete": true,
+      "status": "official final designation review complete; game-day inactives pending",
+      "source_date": "2026-10-09",
+      "flags": [
+        "SF OUT: Nick Bosa (knee/calf), James Thompson Jr. (ankle), Kyle Juszczyk (knee), Marques Sigle (ankle).",
+        "SF questionable: Upton Stout (shoulder), Mykel Williams (knee; return window). Mike Evans has no designation.",
+        "SEA OUT: Zach Charbonnet (knee; PUP), Julian Neal (hamstring), Chazz Surratt (calf).",
+        "SEA questionable: Irv Charles (knee; return window), George Holani (ribs/knee). Leonard Williams cleared."
+      ],
       "sources": [
-        "https://www.nfl.com/injuries/league/2026/reg5"
-      ]
+        "https://www.49ers.com/news/juszczyk-and-three-more-ruled-out-vs-seahawks-in-week-5-williams-questionable-ahead-of-sfvssea",
+        "https://www.seahawks.com/news/week-5-injury-report-seahawks-vs-49ers"
+      ],
+      "canonical_game_id": "2026-W5-SF-SEA",
+      "updated_at": "2026-10-11T12:42:12.740620+00:00",
+      "matchup": "San Francisco 49ers at Seattle Seahawks"
     },
     {
       "game_id": "2026-W5-BAL-ATL",
-      "canonical_game_id": "2026-W5-BAL-ATL",
-      "matchup": "Baltimore Ravens at Atlanta Falcons",
-      "status": "selected-week availability review scheduled; final designation checkpoint not yet due",
-      "updated_at": "2026-10-08T13:18:30.000Z",
-      "flags": [],
-      "source_status": "checkpoint not due; no injury conclusion inferred",
+      "reviewComplete": true,
+      "status": "official final designation review complete; game-day inactives pending",
+      "source_date": "2026-10-09",
+      "flags": [
+        "BAL OUT: Lamar Jackson (ankle), Trey Hendrickson (finger). Tyler Huntley named starter.",
+        "BAL questionable: Zay Flowers (foot), Marlon Humphrey (hamstring/calf).",
+        "Cam Jurgens (concussion) will not debut until next week per official team article; unavailable per team, formal designation not independently obtained.",
+        "ATL OUT: Yasir Abdullah (hamstring; subsequently IR).",
+        "ATL questionable: Divine Deablo (hamstring), Samson Ebukam (hamstring), Jake Matthews (groin), Za\u2019Darius Smith (concussion/neck)."
+      ],
       "sources": [
-        "https://www.nfl.com/injuries/league/2026/reg5"
-      ]
+        "https://www.baltimoreravens.com/news/lamar-jackson-trey-hendrickson-injury-report-marlon-humphrey-zay-flowers-ronnie-stanley-ravens-falcons",
+        "https://www.atlantafalcons.com/news/falcons-injury-report-vs-ravens-za-darius-smith-jake-matthews"
+      ],
+      "canonical_game_id": "2026-W5-BAL-ATL",
+      "updated_at": "2026-10-11T12:42:12.740620+00:00",
+      "matchup": "Baltimore Ravens at Atlanta Falcons"
     },
     {
       "game_id": "2026-W5-BUF-LAR",
-      "canonical_game_id": "2026-W5-BUF-LAR",
-      "matchup": "Buffalo Bills at Los Angeles Rams",
-      "status": "selected-week availability review scheduled; final designation checkpoint not yet due",
-      "updated_at": "2026-10-08T13:18:30.000Z",
-      "flags": [],
-      "source_status": "checkpoint not due; no injury conclusion inferred",
+      "reviewComplete": true,
+      "status": "official final designation review complete; game-day inactives pending",
+      "source_date": "2026-10-10",
+      "flags": [
+        "BUF OUT: Ed Oliver (knee), Joshua Palmer (shoulder).",
+        "BUF questionable: DJ Moore (shoulder), Dee Alford (ankle), Landon Jackson (knee). Christian Benford cleared.",
+        "LAR questionable: Quentin Lake (hip).",
+        "LAR Aaron Donald, Colby Parkinson, Jaylen Watson, Konata Mumpfield, Grant Stuard, Josaiah Stewart have no designation."
+      ],
       "sources": [
-        "https://www.nfl.com/injuries/league/2026/reg5"
-      ]
+        "https://www.buffalobills.com/news/buffalo-bills-injury-report-vs-rams-week-5",
+        "https://www.therams.com/news/rams-injury-report-week-5-2026-vs-bills-aaron-donald-colby-parkinson-and-jaylen-watson-good-to-go-for-monday-night-football"
+      ],
+      "canonical_game_id": "2026-W5-BUF-LAR",
+      "updated_at": "2026-10-11T12:42:12.740620+00:00",
+      "matchup": "Buffalo Bills at Los Angeles Rams"
     }
   ]
 }

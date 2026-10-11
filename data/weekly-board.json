@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 5,
-  "updatedAt": "2026-10-11T09:05:18.448106+00:00",
+  "updatedAt": "2026-10-11T12:42:12.740620+00:00",
   "scheduleSource": "ESPN selected-week rollover",
   "marketSource": "Current ESPN NFL selected-week odds feed; exact sportsbook/juice required before execution",
   "games": [
@@ -26,9 +26,9 @@
       "validatedStructuralSpread": "Dallas Cowboys -0.5",
       "structuralHomeMargin": 0.503,
       "productionTotal": 48.5,
-      "structuralEdge": 8.997,
+      "structuralEdge": 9,
       "structuralLean": "TB",
-      "modelCalculatedAt": "2026-10-11T09:05:15.462Z",
+      "modelCalculatedAt": "2026-10-11T12:42:12.740620+00:00",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.775,
@@ -59,8 +59,8 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": -0.828,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -68,7 +68,26 @@
       },
       "baseStructuralHomeMargin": 1.18,
       "advancedProcessAdjustment": -0.677,
-      "motionMatchupAdjustment": 0.0
+      "motionMatchupAdjustment": 0,
+      "availability": {
+        "highRiskFlags": [
+          "TB OUT: QB Baker Mayfield (right thumb), S Antoine Winfield Jr. (rib), CB Benjamin Morrison (quad), LB SirVocea Dennis (ankle/foot).",
+          "DAL OUT: CB Cobie Durant (hamstring), LB DeMarvion Overshown (hamstring), T Drew Shelton (hamstring).",
+          "DAL QUESTIONABLE: G Tyler Smith (thumb), WR Jonathan Mingo (illness)."
+        ],
+        "high_risk_flags": [
+          "TB OUT: QB Baker Mayfield (right thumb), S Antoine Winfield Jr. (rib), CB Benjamin Morrison (quad), LB SirVocea Dennis (ankle/foot).",
+          "DAL OUT: CB Cobie Durant (hamstring), LB DeMarvion Overshown (hamstring), T Drew Shelton (hamstring).",
+          "DAL QUESTIONABLE: G Tyler Smith (thumb), WR Jonathan Mingo (illness)."
+        ],
+        "timestamp": "2026-10-08T13:18:30.000Z",
+        "status": "official final designation review complete",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.nfl.com/injuries/league/2026/reg5",
+          "https://www.buccaneers.com/news/buccaneers-cowboys-injury-report-oct-7-week-5"
+        ]
+      }
     },
     {
       "gameId": "2026-W5-PHI-JAX",
@@ -77,23 +96,23 @@
       "awayAbbr": "PHI",
       "home": "Jacksonville Jaguars",
       "homeAbbr": "JAX",
-      "currentSpread": "Jacksonville Jaguars -8.5",
+      "currentSpread": "Jacksonville Jaguars -7.5",
       "currentTotal": 41.5,
       "currentMoneyline": null,
-      "productionSpread": "Jacksonville Jaguars -7.8",
-      "productionHomeMargin": 7.841,
-      "modelEdge": 0.593,
+      "productionSpread": "Jacksonville Jaguars -7.0",
+      "productionHomeMargin": 7.041,
+      "modelEdge": 0.459,
       "stage": "potential-research",
       "priority": "Medium",
       "marketSource": "ESPN DraftKings",
-      "marketObservedAt": "2026-10-11T09:05:15.291Z",
+      "marketObservedAt": "2026-10-11T12:40:06.942Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Jacksonville Jaguars -5.2",
       "structuralHomeMargin": 5.205,
       "productionTotal": 41.5,
-      "structuralEdge": 3.295,
+      "structuralEdge": 2.295,
       "structuralLean": "PHI",
-      "modelCalculatedAt": "2026-10-11T09:05:15.462Z",
+      "modelCalculatedAt": "2026-10-11T12:42:12.740620+00:00",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.775,
@@ -103,7 +122,7 @@
         "awayLive": -4,
         "homeLive": 5,
         "homeField": 1,
-        "marketHomeMargin": 8.5,
+        "marketHomeMargin": 7.5,
         "advancedProcess": {
           "throughWeek": 4,
           "offenseDefenseMetrics": [
@@ -124,16 +143,34 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
-          "researchSignal": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": 0,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
       },
       "baseStructuralHomeMargin": 5.536,
       "advancedProcessAdjustment": -0.331,
-      "motionMatchupAdjustment": 0.0
+      "motionMatchupAdjustment": 0,
+      "availability": {
+        "highRiskFlags": [
+          "PHI confirmed inactive: Saquon Barkley, DeVonta Smith, Hollywood Brown, Marcus Epps, Jonathan Greenard, Drew Kendall.",
+          "PHI Tank Bigsby on IR; Jalen Hurts active.",
+          "JAX confirmed inactive: CJ Williams, Alijah Huzzie, Eric Murray, Jaylon Jones, Daniel Faalele, Wesley Williams, Albert Regis."
+        ],
+        "high_risk_flags": [
+          "PHI confirmed inactive: Saquon Barkley, DeVonta Smith, Hollywood Brown, Marcus Epps, Jonathan Greenard, Drew Kendall.",
+          "PHI Tank Bigsby on IR; Jalen Hurts active.",
+          "JAX confirmed inactive: CJ Williams, Alijah Huzzie, Eric Murray, Jaylon Jones, Daniel Faalele, Wesley Williams, Albert Regis."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official game-day inactives confirmed",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.philadelphiaeagles.com/news/eagles-at-jaguars-inactives-2026-nfl-week-6-london-international-game-saquon-barkley-lane-johnson"
+        ]
+      }
     },
     {
       "gameId": "2026-W5-CHI-GB",
@@ -143,22 +180,22 @@
       "home": "Green Bay Packers",
       "homeAbbr": "GB",
       "currentSpread": "Chicago Bears -1.5",
-      "currentTotal": 46.5,
+      "currentTotal": 47.5,
       "currentMoneyline": null,
       "productionSpread": "Chicago Bears -1.4",
       "productionHomeMargin": -1.405,
-      "modelEdge": 0.031,
+      "modelEdge": 0.095,
       "stage": "no-signal",
       "priority": "Low",
       "marketSource": "ESPN DraftKings",
-      "marketObservedAt": "2026-10-11T09:05:15.291Z",
+      "marketObservedAt": "2026-10-11T12:40:06.942Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Chicago Bears -1",
       "structuralHomeMargin": -1.026,
       "productionTotal": 46.5,
       "structuralEdge": 0.474,
       "structuralLean": "GB",
-      "modelCalculatedAt": "2026-10-11T09:05:15.462Z",
+      "modelCalculatedAt": "2026-10-11T12:42:12.740620+00:00",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.775,
@@ -189,16 +226,41 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
-          "researchSignal": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": 0,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
       },
       "baseStructuralHomeMargin": -1.343,
       "advancedProcessAdjustment": 0.317,
-      "motionMatchupAdjustment": 0.0
+      "motionMatchupAdjustment": 0,
+      "availability": {
+        "highRiskFlags": [
+          "CHI OUT: Kyle Monangai (toe/thumb), Keyshaun Elliott (quad).",
+          "CHI questionable: Caleb Williams (hamstring), Kyler Gordon, Shemar Turner, Noah Sewell (return windows).",
+          "Tyson Bagent named starter by coach; Caleb questionable does not imply expected starter. D\u2019Andre Swift has no designation.",
+          "GB OUT: Chris Brooks (ankle), Savion Williams (ankle; IR return window).",
+          "GB doubtful: Aaron Banks (knee/toe), Jacob Monk (quad).",
+          "GB questionable: Javon Hargrave (toe), Anthony Campbell (ankle), Jager Burton (back)."
+        ],
+        "high_risk_flags": [
+          "CHI OUT: Kyle Monangai (toe/thumb), Keyshaun Elliott (quad).",
+          "CHI questionable: Caleb Williams (hamstring), Kyler Gordon, Shemar Turner, Noah Sewell (return windows).",
+          "Tyson Bagent named starter by coach; Caleb questionable does not imply expected starter. D\u2019Andre Swift has no designation.",
+          "GB OUT: Chris Brooks (ankle), Savion Williams (ankle; IR return window).",
+          "GB doubtful: Aaron Banks (knee/toe), Jacob Monk (quad).",
+          "GB questionable: Javon Hargrave (toe), Anthony Campbell (ankle), Jager Burton (back)."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.chicagobears.com/news/injury-update-bears-rb-kyle-monangai-ruled-out-qb-caleb-williams-questionable-for-packers-game",
+          "https://www.packers.com/news/packers-list-three-questionable-two-doubtful-vs-bears-week-5-injury-report"
+        ]
+      }
     },
     {
       "gameId": "2026-W5-HOU-TEN",
@@ -212,18 +274,18 @@
       "currentMoneyline": null,
       "productionSpread": "Houston Texans -6.9",
       "productionHomeMargin": -6.873,
-      "modelEdge": 0.121,
+      "modelEdge": 0.127,
       "stage": "no-signal",
       "priority": "Low",
       "marketSource": "ESPN DraftKings",
-      "marketObservedAt": "2026-10-11T09:05:15.291Z",
+      "marketObservedAt": "2026-10-11T12:40:06.942Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Houston Texans -6.4",
       "structuralHomeMargin": -6.366,
       "productionTotal": 37.5,
       "structuralEdge": 0.634,
       "structuralLean": "TEN",
-      "modelCalculatedAt": "2026-10-11T09:05:15.462Z",
+      "modelCalculatedAt": "2026-10-11T12:42:12.740620+00:00",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.775,
@@ -254,8 +316,8 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": -0.392,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -263,7 +325,34 @@
       },
       "baseStructuralHomeMargin": -6.394,
       "advancedProcessAdjustment": 0.028,
-      "motionMatchupAdjustment": 0.0
+      "motionMatchupAdjustment": 0,
+      "availability": {
+        "highRiskFlags": [
+          "HOU OUT: Tank Dell (knee), Braden Smith (foot).",
+          "HOU questionable: Aireontae Ersery, Blake Fisher, Ed Ingram (illness), Kayden McDonald (ankle), M.J. Stewart (knee).",
+          "HOU Will Anderson and Azeez Al-Shaair have no designation.",
+          "TEN OUT: Amani Hooker (concussion).",
+          "TEN questionable: David Martin-Robinson (hamstring), Carnell Tate, Joshua Williams (pec; return window).",
+          "Carnell Tate injury body part conflicts between official team copies; questionable status agrees.",
+          "TEN Tony Pollard, Jeffery Simmons, Gunnar Helm have no designation."
+        ],
+        "high_risk_flags": [
+          "HOU OUT: Tank Dell (knee), Braden Smith (foot).",
+          "HOU questionable: Aireontae Ersery, Blake Fisher, Ed Ingram (illness), Kayden McDonald (ankle), M.J. Stewart (knee).",
+          "HOU Will Anderson and Azeez Al-Shaair have no designation.",
+          "TEN OUT: Amani Hooker (concussion).",
+          "TEN questionable: David Martin-Robinson (hamstring), Carnell Tate, Joshua Williams (pec; return window).",
+          "Carnell Tate injury body part conflicts between official team copies; questionable status agrees.",
+          "TEN Tony Pollard, Jeffery Simmons, Gunnar Helm have no designation."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.houstontexans.com/news/week-5-injury-report-texans-at-titans",
+          "https://www.tennesseetitans.com/news/week-5-injury-report-titans-vs-texans"
+        ]
+      }
     },
     {
       "gameId": "2026-W5-CIN-MIA",
@@ -275,20 +364,20 @@
       "currentSpread": "Cincinnati Bengals -7",
       "currentTotal": 43.5,
       "currentMoneyline": null,
-      "productionSpread": "Cincinnati Bengals -6",
+      "productionSpread": "Cincinnati Bengals -6.0",
       "productionHomeMargin": -5.965,
-      "modelEdge": 1.101,
+      "modelEdge": 1.035,
       "stage": "high-priority-audit",
       "priority": "High",
       "marketSource": "ESPN DraftKings",
-      "marketObservedAt": "2026-10-11T09:05:15.291Z",
+      "marketObservedAt": "2026-10-11T12:40:06.942Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Cincinnati Bengals -1.8",
       "structuralHomeMargin": -1.824,
       "productionTotal": 43.5,
       "structuralEdge": 5.176,
       "structuralLean": "MIA",
-      "modelCalculatedAt": "2026-10-11T09:05:15.462Z",
+      "modelCalculatedAt": "2026-10-11T12:42:12.740620+00:00",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.775,
@@ -319,16 +408,37 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
-          "researchSignal": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": 0,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
       },
       "baseStructuralHomeMargin": -1.496,
       "advancedProcessAdjustment": -0.328,
-      "motionMatchupAdjustment": 0.0
+      "motionMatchupAdjustment": 0,
+      "availability": {
+        "highRiskFlags": [
+          "CIN OUT: Kyle Dugger (quad).",
+          "CIN questionable: Ja\u2019Marr Chase (concussion), Tee Higgins (groin/neck), Bryan Cook (ankle), Swayze Bozeman (groin), Colbie Young (knee).",
+          "MIA OUT: Rob Beal Jr. (hamstring), Caleb Douglas (ankle), Justin Joly (concussion), Reese Taylor (quad).",
+          "MIA questionable: Storm Duck (knee), Kenneth Grant (toe), Jackson Woodard (ankle), Jaylen Wright (shin)."
+        ],
+        "high_risk_flags": [
+          "CIN OUT: Kyle Dugger (quad).",
+          "CIN questionable: Ja\u2019Marr Chase (concussion), Tee Higgins (groin/neck), Bryan Cook (ankle), Swayze Bozeman (groin), Colbie Young (knee).",
+          "MIA OUT: Rob Beal Jr. (hamstring), Caleb Douglas (ankle), Justin Joly (concussion), Reese Taylor (quad).",
+          "MIA questionable: Storm Duck (knee), Kenneth Grant (toe), Jackson Woodard (ankle), Jaylen Wright (shin)."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.bengals.com/news/bengals-dolphins-week-5-2026-injury-report",
+          "https://www.miamidolphins.com/news/injury-report-week-5-dolphins-vs-bengals"
+        ]
+      }
     },
     {
       "gameId": "2026-W5-LV-NE",
@@ -342,18 +452,18 @@
       "currentMoneyline": null,
       "productionSpread": "New England Patriots -4.5",
       "productionHomeMargin": 4.488,
-      "modelEdge": 1.103,
+      "modelEdge": 0.988,
       "stage": "high-priority-audit",
       "priority": "High",
       "marketSource": "ESPN DraftKings",
-      "marketObservedAt": "2026-10-11T09:05:15.291Z",
+      "marketObservedAt": "2026-10-11T12:40:06.942Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "New England Patriots -8.4",
       "structuralHomeMargin": 8.438,
       "productionTotal": 45.5,
       "structuralEdge": 4.938,
       "structuralLean": "NE",
-      "modelCalculatedAt": "2026-10-11T09:05:15.462Z",
+      "modelCalculatedAt": "2026-10-11T12:42:12.740620+00:00",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.775,
@@ -384,8 +494,8 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": 0.18,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -393,7 +503,29 @@
       },
       "baseStructuralHomeMargin": 9.015,
       "advancedProcessAdjustment": -0.577,
-      "motionMatchupAdjustment": 0.0
+      "motionMatchupAdjustment": 0,
+      "availability": {
+        "highRiskFlags": [
+          "LV OUT: Jalen Nailor (concussion), Dont\u2019e Thornton (hamstring; return window), Trey Zuhn (knee).",
+          "LV questionable: Ashton Jeanty (ankle/foot); Brock Bowers has no designation.",
+          "NE OUT: Channing Canada, Carlton Davis III, Christian Gonzalez, Karon Prunty, Reggie Gilliam, Mack Hollins.",
+          "NE questionable: Christian Barmore, Christian Elliss, Dre\u2019Mont Jones, Morgan Moses, Rhamondre Stevenson, Charles Woods, Craig Woodson.",
+          "NE Drake Maye has no designation (right shoulder; full practice)."
+        ],
+        "high_risk_flags": [
+          "LV OUT: Jalen Nailor (concussion), Dont\u2019e Thornton (hamstring; return window), Trey Zuhn (knee).",
+          "LV questionable: Ashton Jeanty (ankle/foot); Brock Bowers has no designation.",
+          "NE OUT: Channing Canada, Carlton Davis III, Christian Gonzalez, Karon Prunty, Reggie Gilliam, Mack Hollins.",
+          "NE questionable: Christian Barmore, Christian Elliss, Dre\u2019Mont Jones, Morgan Moses, Rhamondre Stevenson, Charles Woods, Craig Woodson.",
+          "NE Drake Maye has no designation (right shoulder; full practice)."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.patriots.com/news/week-5-injury-report-patriots-vs-raiders"
+        ]
+      }
     },
     {
       "gameId": "2026-W5-MIN-NO",
@@ -402,23 +534,23 @@
       "awayAbbr": "MIN",
       "home": "New Orleans Saints",
       "homeAbbr": "NO",
-      "currentSpread": "Minnesota Vikings -2.5",
+      "currentSpread": "Minnesota Vikings -1.5",
       "currentTotal": 41.5,
       "currentMoneyline": null,
-      "productionSpread": "Minnesota Vikings -3",
-      "productionHomeMargin": -2.975,
-      "modelEdge": 0.882,
+      "productionSpread": "Minnesota Vikings -2.2",
+      "productionHomeMargin": -2.175,
+      "modelEdge": 0.675,
       "stage": "high-priority-audit",
       "priority": "High",
       "marketSource": "ESPN DraftKings",
-      "marketObservedAt": "2026-10-11T09:05:15.291Z",
+      "marketObservedAt": "2026-10-11T12:40:06.942Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Minnesota Vikings -4.9",
       "structuralHomeMargin": -4.874,
       "productionTotal": 41.5,
-      "structuralEdge": 2.374,
+      "structuralEdge": 3.374,
       "structuralLean": "MIN",
-      "modelCalculatedAt": "2026-10-11T09:05:15.462Z",
+      "modelCalculatedAt": "2026-10-11T12:42:12.740620+00:00",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.775,
@@ -428,7 +560,7 @@
         "awayLive": 5,
         "homeLive": -21,
         "homeField": 1,
-        "marketHomeMargin": -2.5,
+        "marketHomeMargin": -1.5,
         "advancedProcess": {
           "throughWeek": 4,
           "offenseDefenseMetrics": [
@@ -449,8 +581,8 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": 0.378,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -458,7 +590,30 @@
       },
       "baseStructuralHomeMargin": -6.912,
       "advancedProcessAdjustment": 2.038,
-      "motionMatchupAdjustment": 0.0
+      "motionMatchupAdjustment": 0,
+      "availability": {
+        "highRiskFlags": [
+          "MIN OUT: Christian Darrisaw (concussion), Charles/Chuck Demmings (hamstring).",
+          "MIN questionable: Jordan Addison (hamstring), Justin Jefferson (ankle), Brian O\u2019Neill (knee), Michael Jurgens (elbow; return window), Ben Yurosek (ankle; return window).",
+          "NO OUT: Kaden Elliss (calf), Anfernee Jennings (knee), Jeremiah Wright (concussion).",
+          "NO questionable: Julian Blackmon (shoulder), Barion Brown (thigh), Jaylan Ford (ankle; return window), Alvin Kamara (back), Christen Miller (illness), Lorenzo Styles Jr. (calf; return window).",
+          "NO Chris Olave and Tyler Shough have no designation."
+        ],
+        "high_risk_flags": [
+          "MIN OUT: Christian Darrisaw (concussion), Charles/Chuck Demmings (hamstring).",
+          "MIN questionable: Jordan Addison (hamstring), Justin Jefferson (ankle), Brian O\u2019Neill (knee), Michael Jurgens (elbow; return window), Ben Yurosek (ankle; return window).",
+          "NO OUT: Kaden Elliss (calf), Anfernee Jennings (knee), Jeremiah Wright (concussion).",
+          "NO questionable: Julian Blackmon (shoulder), Barion Brown (thigh), Jaylan Ford (ankle; return window), Alvin Kamara (back), Christen Miller (illness), Lorenzo Styles Jr. (calf; return window).",
+          "NO Chris Olave and Tyler Shough have no designation."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.neworleanssaints.com/news/injury-report-minnesota-vikings-vs-new-orleans-saints-2026-nfl-week-5-friday",
+          "https://www.vikings.com/news/saints-injury-report-week-5-2026-nfl-season"
+        ]
+      }
     },
     {
       "gameId": "2026-W5-CLE-NYJ",
@@ -472,18 +627,18 @@
       "currentMoneyline": null,
       "productionSpread": "New York Jets -1.7",
       "productionHomeMargin": 1.662,
-      "modelEdge": 1.094,
+      "modelEdge": 0.838,
       "stage": "high-priority-audit",
       "priority": "High",
       "marketSource": "ESPN DraftKings",
-      "marketObservedAt": "2026-10-11T09:05:15.291Z",
+      "marketObservedAt": "2026-10-11T12:40:06.942Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Cleveland Browns -1.7",
       "structuralHomeMargin": -1.689,
       "productionTotal": 39.5,
       "structuralEdge": 4.189,
       "structuralLean": "CLE",
-      "modelCalculatedAt": "2026-10-11T09:05:15.462Z",
+      "modelCalculatedAt": "2026-10-11T12:42:12.740620+00:00",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.775,
@@ -514,16 +669,37 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
-          "researchSignal": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": 0,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
       },
       "baseStructuralHomeMargin": -2.972,
       "advancedProcessAdjustment": 1.283,
-      "motionMatchupAdjustment": 0.0
+      "motionMatchupAdjustment": 0,
+      "availability": {
+        "highRiskFlags": [
+          "CLE OUT: Mason Graham (knee/ankle), Kalia Davis (quad), Dillon Gabriel (back), Mike Hall Jr. (ankle), Teven Jenkins (back), Carsen Ryan (calf), Tylan Wallace (knee).",
+          "NYJ OUT: Breece Hall (quad), Kiko Mauigoa (quad), Adonai Mitchell (finger), Dylan Parham (knee).",
+          "NYJ questionable: Kingsley Enagbare (knee), Will McDonald (calf), Tim Patrick (groin).",
+          "Jets report has incomplete Friday/status cells for Jarvis Brownlee and Mason Taylor; their availability cannot be inferred from blank fields."
+        ],
+        "high_risk_flags": [
+          "CLE OUT: Mason Graham (knee/ankle), Kalia Davis (quad), Dillon Gabriel (back), Mike Hall Jr. (ankle), Teven Jenkins (back), Carsen Ryan (calf), Tylan Wallace (knee).",
+          "NYJ OUT: Breece Hall (quad), Kiko Mauigoa (quad), Adonai Mitchell (finger), Dylan Parham (knee).",
+          "NYJ questionable: Kingsley Enagbare (knee), Will McDonald (calf), Tim Patrick (groin).",
+          "Jets report has incomplete Friday/status cells for Jarvis Brownlee and Mason Taylor; their availability cannot be inferred from blank fields."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.clevelandbrowns.com/news/mason-graham-out-for-week-5-against-the-jets-injury-report",
+          "https://www.newyorkjets.com/news/jets-injury-report-week-5-vs-browns-friday-10-09-2026"
+        ]
+      }
     },
     {
       "gameId": "2026-W5-IND-PIT",
@@ -532,23 +708,23 @@
       "awayAbbr": "IND",
       "home": "Pittsburgh Steelers",
       "homeAbbr": "PIT",
-      "currentSpread": "Pittsburgh Steelers -2.5",
+      "currentSpread": "Pittsburgh Steelers -3",
       "currentTotal": 43.5,
       "currentMoneyline": null,
-      "productionSpread": "Pittsburgh Steelers -1.4",
-      "productionHomeMargin": 1.402,
-      "modelEdge": 1.454,
+      "productionSpread": "Pittsburgh Steelers -1.8",
+      "productionHomeMargin": 1.802,
+      "modelEdge": 1.198,
       "stage": "high-priority-audit",
       "priority": "High",
       "marketSource": "ESPN DraftKings",
-      "marketObservedAt": "2026-10-11T09:05:15.291Z",
+      "marketObservedAt": "2026-10-11T12:40:06.942Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Indianapolis Colts -3",
       "structuralHomeMargin": -2.989,
       "productionTotal": 43.5,
-      "structuralEdge": 5.489,
+      "structuralEdge": 5.989,
       "structuralLean": "IND",
-      "modelCalculatedAt": "2026-10-11T09:05:15.462Z",
+      "modelCalculatedAt": "2026-10-11T12:42:12.740620+00:00",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.775,
@@ -558,7 +734,7 @@
         "awayLive": 17,
         "homeLive": -3,
         "homeField": 1,
-        "marketHomeMargin": 2.5,
+        "marketHomeMargin": 3,
         "advancedProcess": {
           "throughWeek": 4,
           "offenseDefenseMetrics": [
@@ -579,8 +755,8 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": 0.768,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -588,7 +764,27 @@
       },
       "baseStructuralHomeMargin": -4.771,
       "advancedProcessAdjustment": 1.782,
-      "motionMatchupAdjustment": 0.0
+      "motionMatchupAdjustment": 0,
+      "availability": {
+        "highRiskFlags": [
+          "PIT OUT: Michael Pittman Jr. (foot), DeShon Elliott (knee; return window), Jamel Dean (ankle).",
+          "PIT questionable: Jalen Ramsey (wrist), Rico Dowdle (toe), Yahya Black (personal; added Saturday).",
+          "IND OUT: Darius Slayton (knee), Ashton Dulin (hamstring), Jaylon Carlies (ribs), Will Mallory (thumb; return window), Arden Key (hamstring).",
+          "IND questionable: Charvarius Ward Sr. (rest), Keenan Allen (rest/groin)."
+        ],
+        "high_risk_flags": [
+          "PIT OUT: Michael Pittman Jr. (foot), DeShon Elliott (knee; return window), Jamel Dean (ankle).",
+          "PIT questionable: Jalen Ramsey (wrist), Rico Dowdle (toe), Yahya Black (personal; added Saturday).",
+          "IND OUT: Darius Slayton (knee), Ashton Dulin (hamstring), Jaylon Carlies (ribs), Will Mallory (thumb; return window), Arden Key (hamstring).",
+          "IND questionable: Charvarius Ward Sr. (rest), Keenan Allen (rest/groin)."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.steelers.com/news/week-5-injury-report-colts"
+        ]
+      }
     },
     {
       "gameId": "2026-W5-NYG-WSH",
@@ -602,18 +798,18 @@
       "currentMoneyline": null,
       "productionSpread": "Washington Commanders -1.8",
       "productionHomeMargin": 1.824,
-      "modelEdge": 2.202,
+      "modelEdge": 1.676,
       "stage": "high-priority-audit",
       "priority": "High",
       "marketSource": "ESPN DraftKings",
-      "marketObservedAt": "2026-10-11T09:05:15.291Z",
+      "marketObservedAt": "2026-10-11T12:40:06.942Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "New York Giants -4.9",
       "structuralHomeMargin": -4.88,
       "productionTotal": 41.5,
       "structuralEdge": 8.38,
       "structuralLean": "NYG",
-      "modelCalculatedAt": "2026-10-11T09:05:15.462Z",
+      "modelCalculatedAt": "2026-10-11T12:42:12.740620+00:00",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.775,
@@ -644,16 +840,39 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
-          "researchSignal": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": 0,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
       },
       "baseStructuralHomeMargin": -7.509,
       "advancedProcessAdjustment": 2.629,
-      "motionMatchupAdjustment": 0.0
+      "motionMatchupAdjustment": 0,
+      "availability": {
+        "highRiskFlags": [
+          "NYG OUT: Chauncey Golston (neck), Jason Pinnock (concussion).",
+          "NYG Malik Nabers, Andrew Thomas, Isaiah Likely, Cam Skattebo have no designation.",
+          "WSH OUT: Percy Butler, Stefon Diggs, Marcus Mariota, Charles Omenihu, Tyler Owens, Nick Cross.",
+          "WSH questionable: Terry McLaurin (hamstring), Trey Amos (ankle), Jeremy McNichols (quad).",
+          "WSH Jayden Daniels cleared and named starter."
+        ],
+        "high_risk_flags": [
+          "NYG OUT: Chauncey Golston (neck), Jason Pinnock (concussion).",
+          "NYG Malik Nabers, Andrew Thomas, Isaiah Likely, Cam Skattebo have no designation.",
+          "WSH OUT: Percy Butler, Stefon Diggs, Marcus Mariota, Charles Omenihu, Tyler Owens, Nick Cross.",
+          "WSH questionable: Terry McLaurin (hamstring), Trey Amos (ankle), Jeremy McNichols (quad).",
+          "WSH Jayden Daniels cleared and named starter."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.giants.com/news/giants-vs-commanders-week-5-injury-report-malik-nabers-andrew-thomas-cam-skattebo",
+          "https://www.commanders.com/news/game-status-commanders-giants-week-5"
+        ]
+      }
     },
     {
       "gameId": "2026-W5-DEN-LAC",
@@ -667,18 +886,18 @@
       "currentMoneyline": null,
       "productionSpread": "Denver Broncos -2.8",
       "productionHomeMargin": -2.754,
-      "modelEdge": 0.815,
+      "modelEdge": 0.746,
       "stage": "high-priority-audit",
       "priority": "High",
       "marketSource": "ESPN DraftKings",
-      "marketObservedAt": "2026-10-11T09:05:15.291Z",
+      "marketObservedAt": "2026-10-11T12:40:06.942Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Los Angeles Chargers -0.2",
       "structuralHomeMargin": 0.231,
       "productionTotal": 41.5,
       "structuralEdge": 3.731,
       "structuralLean": "LAC",
-      "modelCalculatedAt": "2026-10-11T09:05:15.462Z",
+      "modelCalculatedAt": "2026-10-11T12:42:12.740620+00:00",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.775,
@@ -709,8 +928,8 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": 0.282,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -718,7 +937,30 @@
       },
       "baseStructuralHomeMargin": 0.575,
       "advancedProcessAdjustment": -0.344,
-      "motionMatchupAdjustment": 0.0
+      "motionMatchupAdjustment": 0,
+      "availability": {
+        "highRiskFlags": [
+          "DEN OUT: Pat Surtain II (ankle), Riley Moss (ribs). Pat Bryant (ankle) on IR.",
+          "Other Denver active-roster players available per team.",
+          "LAC OUT: Joe Alt (neck), Kayode Awosika (fibula), Donte Jackson (hamstring), Derwin James (hamstring), Quentin Johnston (chest), Trevor Penning (concussion), Brenen Thompson (quad).",
+          "LAC doubtful: Trey Lance (groin).",
+          "LAC questionable: Charlie Kolar, Scott Matlock, Ladd McConkey, Branson Taylor, Rodney Shelley."
+        ],
+        "high_risk_flags": [
+          "DEN OUT: Pat Surtain II (ankle), Riley Moss (ribs). Pat Bryant (ankle) on IR.",
+          "Other Denver active-roster players available per team.",
+          "LAC OUT: Joe Alt (neck), Kayode Awosika (fibula), Donte Jackson (hamstring), Derwin James (hamstring), Quentin Johnston (chest), Trevor Penning (concussion), Brenen Thompson (quad).",
+          "LAC doubtful: Trey Lance (groin).",
+          "LAC questionable: Charlie Kolar, Scott Matlock, Ladd McConkey, Branson Taylor, Rodney Shelley."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.denverbroncos.com/news/injuryreport/injury-report-cbs-pat-surtain-ii-riley-moss-ruled-out-for-broncos-week-5-game-vs-chargers",
+          "https://www.chargers.com/news/injury-report-mcconkey-johnston-alt-week-5-broncos"
+        ]
+      }
     },
     {
       "gameId": "2026-W5-DET-ARI",
@@ -732,18 +974,18 @@
       "currentMoneyline": null,
       "productionSpread": "Detroit Lions -4.9",
       "productionHomeMargin": -4.94,
-      "modelEdge": 0.46,
+      "modelEdge": 0.56,
       "stage": "research",
       "priority": "Medium",
       "marketSource": "ESPN DraftKings",
-      "marketObservedAt": "2026-10-11T09:05:15.291Z",
+      "marketObservedAt": "2026-10-11T12:40:06.942Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Detroit Lions -2.7",
       "structuralHomeMargin": -2.698,
       "productionTotal": 54.5,
       "structuralEdge": 2.802,
       "structuralLean": "ARI",
-      "modelCalculatedAt": "2026-10-11T09:05:15.462Z",
+      "modelCalculatedAt": "2026-10-11T12:42:12.740620+00:00",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.775,
@@ -774,8 +1016,8 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": -0.126,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -783,7 +1025,27 @@
       },
       "baseStructuralHomeMargin": -3.202,
       "advancedProcessAdjustment": 0.504,
-      "motionMatchupAdjustment": 0.0
+      "motionMatchupAdjustment": 0,
+      "availability": {
+        "highRiskFlags": [
+          "ARI OUT: Isaiah Adams (ankle), Andrew/Dewey Wingard (knee).",
+          "ARI questionable: Walter Nolen III (calf), Karson Sharar (hamstring); Jeremiyah Love cleared.",
+          "DET OUT: Ben Bartch (foot), Rock Ya-Sin (hamstring), Brian Branch (Achilles; return window), Cade Mays (wrist; return window).",
+          "DET questionable: Tyleik Williams (foot)."
+        ],
+        "high_risk_flags": [
+          "ARI OUT: Isaiah Adams (ankle), Andrew/Dewey Wingard (knee).",
+          "ARI questionable: Walter Nolen III (calf), Karson Sharar (hamstring); Jeremiyah Love cleared.",
+          "DET OUT: Ben Bartch (foot), Rock Ya-Sin (hamstring), Brian Branch (Achilles; return window), Cade Mays (wrist; return window).",
+          "DET questionable: Tyleik Williams (foot)."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.azcardinals.com/news/injury-report-week-5-vs-lions"
+        ]
+      }
     },
     {
       "gameId": "2026-W5-SF-SEA",
@@ -793,22 +1055,22 @@
       "home": "Seattle Seahawks",
       "homeAbbr": "SEA",
       "currentSpread": "Seattle Seahawks -3",
-      "currentTotal": 45.5,
+      "currentTotal": 46.5,
       "currentMoneyline": null,
       "productionSpread": "Seattle Seahawks -3.1",
       "productionHomeMargin": 3.115,
-      "modelEdge": 0.097,
+      "modelEdge": 0.115,
       "stage": "no-signal",
       "priority": "Low",
       "marketSource": "ESPN DraftKings",
-      "marketObservedAt": "2026-10-11T09:05:15.291Z",
+      "marketObservedAt": "2026-10-11T12:40:06.942Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Seattle Seahawks -3.6",
       "structuralHomeMargin": 3.577,
       "productionTotal": 45.5,
       "structuralEdge": 0.577,
       "structuralLean": "SEA",
-      "modelCalculatedAt": "2026-10-11T09:05:15.462Z",
+      "modelCalculatedAt": "2026-10-11T12:42:12.740620+00:00",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.775,
@@ -839,8 +1101,8 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": 0.476,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -848,7 +1110,28 @@
       },
       "baseStructuralHomeMargin": 3.487,
       "advancedProcessAdjustment": 0.09,
-      "motionMatchupAdjustment": 0.0
+      "motionMatchupAdjustment": 0,
+      "availability": {
+        "highRiskFlags": [
+          "SF OUT: Nick Bosa (knee/calf), James Thompson Jr. (ankle), Kyle Juszczyk (knee), Marques Sigle (ankle).",
+          "SF questionable: Upton Stout (shoulder), Mykel Williams (knee; return window). Mike Evans has no designation.",
+          "SEA OUT: Zach Charbonnet (knee; PUP), Julian Neal (hamstring), Chazz Surratt (calf).",
+          "SEA questionable: Irv Charles (knee; return window), George Holani (ribs/knee). Leonard Williams cleared."
+        ],
+        "high_risk_flags": [
+          "SF OUT: Nick Bosa (knee/calf), James Thompson Jr. (ankle), Kyle Juszczyk (knee), Marques Sigle (ankle).",
+          "SF questionable: Upton Stout (shoulder), Mykel Williams (knee; return window). Mike Evans has no designation.",
+          "SEA OUT: Zach Charbonnet (knee; PUP), Julian Neal (hamstring), Chazz Surratt (calf).",
+          "SEA questionable: Irv Charles (knee; return window), George Holani (ribs/knee). Leonard Williams cleared."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.49ers.com/news/juszczyk-and-three-more-ruled-out-vs-seahawks-in-week-5-williams-questionable-ahead-of-sfvssea",
+          "https://www.seahawks.com/news/week-5-injury-report-seahawks-vs-49ers"
+        ]
+      }
     },
     {
       "gameId": "2026-W5-BAL-ATL",
@@ -862,18 +1145,18 @@
       "currentMoneyline": null,
       "productionSpread": "Atlanta Falcons -2.2",
       "productionHomeMargin": 2.237,
-      "modelEdge": 0.475,
+      "modelEdge": 0.763,
       "stage": "research",
       "priority": "Medium",
       "marketSource": "ESPN DraftKings",
-      "marketObservedAt": "2026-10-11T09:05:15.291Z",
+      "marketObservedAt": "2026-10-11T12:40:06.942Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Baltimore Ravens -0.8",
       "structuralHomeMargin": -0.815,
       "productionTotal": 43.5,
       "structuralEdge": 3.815,
       "structuralLean": "BAL",
-      "modelCalculatedAt": "2026-10-11T09:05:15.462Z",
+      "modelCalculatedAt": "2026-10-11T12:42:12.740620+00:00",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.775,
@@ -904,8 +1187,8 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": 0.476,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -913,7 +1196,30 @@
       },
       "baseStructuralHomeMargin": 0.624,
       "advancedProcessAdjustment": -1.439,
-      "motionMatchupAdjustment": 0.0
+      "motionMatchupAdjustment": 0,
+      "availability": {
+        "highRiskFlags": [
+          "BAL OUT: Lamar Jackson (ankle), Trey Hendrickson (finger). Tyler Huntley named starter.",
+          "BAL questionable: Zay Flowers (foot), Marlon Humphrey (hamstring/calf).",
+          "Cam Jurgens (concussion) will not debut until next week per official team article; unavailable per team, formal designation not independently obtained.",
+          "ATL OUT: Yasir Abdullah (hamstring; subsequently IR).",
+          "ATL questionable: Divine Deablo (hamstring), Samson Ebukam (hamstring), Jake Matthews (groin), Za\u2019Darius Smith (concussion/neck)."
+        ],
+        "high_risk_flags": [
+          "BAL OUT: Lamar Jackson (ankle), Trey Hendrickson (finger). Tyler Huntley named starter.",
+          "BAL questionable: Zay Flowers (foot), Marlon Humphrey (hamstring/calf).",
+          "Cam Jurgens (concussion) will not debut until next week per official team article; unavailable per team, formal designation not independently obtained.",
+          "ATL OUT: Yasir Abdullah (hamstring; subsequently IR).",
+          "ATL questionable: Divine Deablo (hamstring), Samson Ebukam (hamstring), Jake Matthews (groin), Za\u2019Darius Smith (concussion/neck)."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.baltimoreravens.com/news/lamar-jackson-trey-hendrickson-injury-report-marlon-humphrey-zay-flowers-ronnie-stanley-ravens-falcons",
+          "https://www.atlantafalcons.com/news/falcons-injury-report-vs-ravens-za-darius-smith-jake-matthews"
+        ]
+      }
     },
     {
       "gameId": "2026-W5-BUF-LAR",
@@ -925,20 +1231,20 @@
       "currentSpread": "Los Angeles Rams -3.5",
       "currentTotal": 54.5,
       "currentMoneyline": null,
-      "productionSpread": "Los Angeles Rams -4",
+      "productionSpread": "Los Angeles Rams -4.0",
       "productionHomeMargin": 3.977,
-      "modelEdge": 0.59,
+      "modelEdge": 0.477,
       "stage": "potential-research",
       "priority": "Medium",
       "marketSource": "ESPN DraftKings",
-      "marketObservedAt": "2026-10-11T09:05:15.291Z",
+      "marketObservedAt": "2026-10-11T12:40:06.942Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Los Angeles Rams -5.9",
       "structuralHomeMargin": 5.884,
       "productionTotal": 54.5,
       "structuralEdge": 2.384,
       "structuralLean": "LAR",
-      "modelCalculatedAt": "2026-10-11T09:05:15.462Z",
+      "modelCalculatedAt": "2026-10-11T12:42:12.740620+00:00",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.775,
@@ -969,8 +1275,8 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": 0.032,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -978,12 +1284,33 @@
       },
       "baseStructuralHomeMargin": 6.45,
       "advancedProcessAdjustment": -0.566,
-      "motionMatchupAdjustment": 0.0
+      "motionMatchupAdjustment": 0,
+      "availability": {
+        "highRiskFlags": [
+          "BUF OUT: Ed Oliver (knee), Joshua Palmer (shoulder).",
+          "BUF questionable: DJ Moore (shoulder), Dee Alford (ankle), Landon Jackson (knee). Christian Benford cleared.",
+          "LAR questionable: Quentin Lake (hip).",
+          "LAR Aaron Donald, Colby Parkinson, Jaylen Watson, Konata Mumpfield, Grant Stuard, Josaiah Stewart have no designation."
+        ],
+        "high_risk_flags": [
+          "BUF OUT: Ed Oliver (knee), Joshua Palmer (shoulder).",
+          "BUF questionable: DJ Moore (shoulder), Dee Alford (ankle), Landon Jackson (knee). Christian Benford cleared.",
+          "LAR questionable: Quentin Lake (hip).",
+          "LAR Aaron Donald, Colby Parkinson, Jaylen Watson, Konata Mumpfield, Grant Stuard, Josaiah Stewart have no designation."
+        ],
+        "timestamp": "2026-10-11T12:42:12.740620+00:00",
+        "status": "official final designation review complete; game-day inactives pending",
+        "reviewComplete": true,
+        "sources": [
+          "https://www.buffalobills.com/news/buffalo-bills-injury-report-vs-rams-week-5",
+          "https://www.therams.com/news/rams-injury-report-week-5-2026-vs-bills-aaron-donald-colby-parkinson-and-jaylen-watson-good-to-go-for-monday-night-football"
+        ]
+      }
     }
   ],
   "runtimeRefresh": {
     "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=5&limit=100",
-    "observedAt": "2026-10-11T09:05:15.291Z",
+    "observedAt": "2026-10-11T12:40:06.942Z",
     "espnEvents": 15,
     "currentOddsGames": 14,
     "identityNormalization": "registry v1: canonical abbreviations and aliases normalized before joins"
@@ -1005,7 +1332,7 @@
     "throughWeek": 4,
     "teamCoverage": 32,
     "processShareOfLiveLayer": 0.4,
-    "motionPointCap": 0.0,
+    "motionPointCap": 0,
     "leakageRule": "Target Week 5 uses Weeks 1-4 only"
   }
 }

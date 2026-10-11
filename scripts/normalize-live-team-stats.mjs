@@ -7,7 +7,8 @@ const byAbbr=new Map(teams.map(t=>[t.abbr,t]));
 for(const t of teams){
   const r=t.espnStatistics||{};
   const opp=teams.find(x=>x.team===t.opponent)||null;
-  const o=opp?.espnStatistics||{};
+  // Opponent season offense is not this team's defense. Preserve observed defensive totals.
+  const o={};
   const plays=num(r.totalOffensivePlays),yards=num(r.totalYards);
   const third=num(r.thirdDownConvPct),rz=num(r.redzoneTouchdownPct);
   const off={
@@ -22,10 +23,10 @@ for(const t of teams){
     redZoneTdRate:rz==null?null:rz/100
   };
   const def={
-    pointsAllowedPerGame:num(t.pointsAgainstPerGame),
-    yardsAllowedPerGame:num(o.yardsPerGame),
-    passingYardsAllowedPerGame:num(o.passingYardsPerGame),
-    rushingYardsAllowedPerGame:num(o.rushingYardsPerGame)
+    pointsAllowedPerGame:t.defense?.pointsAllowedPerGame??null,
+    yardsAllowedPerGame:t.defense?.yardsAllowedPerGame??null,
+    passingYardsAllowedPerGame:t.defense?.passingYardsAllowedPerGame??null,
+    rushingYardsAllowedPerGame:t.defense?.rushingYardsAllowedPerGame??null
   };
   t.offense={...(t.offense||{}),...off};
   t.defense={...(t.defense||{}),...def};

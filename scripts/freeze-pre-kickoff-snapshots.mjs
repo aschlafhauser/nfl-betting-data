@@ -16,7 +16,7 @@ let frozen=0,existing=0,notDue=0,blocked=0;
 for(const g of board.games||[]){
   const kickoff=Date.parse(g.dateTime||''),id=g.gameId;if(!id||!Number.isFinite(kickoff)){notDue++;continue}
   const delta=(kickoff-now.getTime())/60000;if(delta<=0||delta>lookahead){notDue++;continue}
-  const matchup=`${g.away} at ${g.home}`,inj=injuryByMatchup.get(matchup),inactiveVerified=/inactive checkpoint (complete|verified)|official inactives (reviewed|verified)/i.test(String(inj?.status||''));
+  const matchup=`${g.away} at ${g.home}`,inj=injuryByMatchup.get(matchup),inactiveVerified=/inactive checkpoint (complete|verified)|official (?:game-day )?inactives (reviewed|verified|confirmed)/i.test(String(inj?.status||''));
   if(!inactiveVerified){blocked++;console.log(`Snapshot blocked for ${id}: official inactive checkpoint not yet verified.`);continue}
   const file=path.join('data/final-snapshots',`${season}-w${week}-${safe(id)}.json`);try{await fs.access(file);existing++;continue}catch{}
   const wx=weatherByGame.get(id)||null;
