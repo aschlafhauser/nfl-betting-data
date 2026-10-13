@@ -1,14 +1,14 @@
 {
   "season": 2026,
-  "updatedAt": "2026-10-13T11:57:33.598Z",
+  "updatedAt": "2026-10-13T13:22:25.105Z",
   "policy": "Preserve analyst-level notes but count correlated publications under a single sourceFamily/independenceKey. Information, analysis and explicit betting opinions are tagged separately. Every matchup record must join the canonical nfl-weekly-board game ID; unmatched records are an ingestion failure. Expert Intelligence is qualitative context/residual and may not silently overwrite the quantitative NFL fair.",
   "sources": [
     {
       "sourceFamily": "Sharp Football Analysis",
       "independenceKey": "sharp-football-analysis",
       "priority": 1,
-      "status": "active-current",
-      "latestChecked": "2026-10-11",
+      "status": "active-current-source-limited",
+      "latestChecked": "2026-10-13",
       "coverage": [
         "all 32 teams",
         "power rankings",
@@ -23,18 +23,18 @@
       "publicMaterialSeeded": [
         "2026 NFL Power Rankings — Aug. 24"
       ],
-      "latestFinding": "Checked October 11: 6 attributable matchup records from Warren Sharp and Rich Hribar, published 2026-10-08T20:17:00Z; access: publisher_show_notes_only.",
+      "latestFinding": "Official Sharp Football matchup surface checked October 13, 2026 for selected Week 6. The accessible page was current through October 11 but still displayed Week 5 matchups; no Week 6 selection was inferred and zero records were promoted.",
       "notes": "Do not count multiple Warren Sharp/Sharp articles as independent confirmations.",
-      "selectedWeek": 5,
-      "selectedWeekRecordCount": 6,
-      "sourceUrl": "https://podcasts.apple.com/au/podcast/nfl-week-5-preview-49ers-seahawks-eagles-jaguars-and-more/id1485652145?i=1000793927177"
+      "selectedWeek": 6,
+      "selectedWeekRecordCount": 0,
+      "sourceUrl": "https://www.sharpfootballanalysis.com/analysis/nfl-matchups/"
     },
     {
       "sourceFamily": "Mina Kimes / ESPN NFL analysis",
       "independenceKey": "mina-kimes-espn",
       "priority": 1,
       "status": "active-current-source-limited",
-      "latestChecked": "2026-10-11",
+      "latestChecked": "2026-10-13",
       "coverage": [
         "QB",
         "OL",
@@ -49,17 +49,17 @@
         "Donald, Duck! The Loaded Rams, Plus Raiders and Falcons QB Battles — Sept. 1"
       ],
       "notes": "Mina and guests within the same episode are correlated for consensus. Team Draft / season-ranking content is not promoted to weekly matchup evidence unless a matchup-specific mechanism is explicit.",
-      "latestFinding": "Current Week 5 episode verified (2026-10-08T11:00:00Z); only episode metadata available, with zero attributable analysis or inferred picks.",
-      "selectedWeek": 5,
+      "latestFinding": "Official ESPN podcast inventory checked October 13, 2026 for selected Week 6. The public surface required JavaScript/robot verification and exposed no attributable Week 6 game recommendation; zero selections were inferred.",
+      "selectedWeek": 6,
       "selectedWeekRecordCount": 0,
-      "sourceUrl": "https://podcasts.apple.com/ca/podcast/kincaid-in-full-previewing-every-week-5-game/id1437647915?i=1000793850918"
+      "sourceUrl": "https://www.espn.com/espnradio/podcast/archive?id=2544457"
     },
     {
       "sourceFamily": "The Ringer NFL family",
       "independenceKey": "ringer-nfl",
       "priority": 1,
-      "status": "active-current",
-      "latestChecked": "2026-10-11",
+      "status": "active-current-source-limited",
+      "latestChecked": "2026-10-13",
       "coverage": [
         "team rankings",
         "scheme",
@@ -69,17 +69,17 @@
         "betting"
       ],
       "notes": "Treat The Ringer NFL Show and related Ringer NFL analysts as one correlated family unless demonstrably independent reporting is involved.",
-      "latestFinding": "Checked October 11: 15 attributable matchup records from Anthony Dabbundo, published 2026-10-08; access: substantive_public.",
-      "selectedWeek": 5,
-      "selectedWeekRecordCount": 15,
-      "sourceUrl": "https://www.theringer.com/2026/10/08/nfl/nfl-best-bets-week-5"
+      "latestFinding": "Official Ringer NFL inventory checked October 13, 2026 for selected Week 6. Accessible material remained centered on Week 5 and earlier; no attributable Week 6 game recommendation was promoted and zero selections were inferred.",
+      "selectedWeek": 6,
+      "selectedWeekRecordCount": 0,
+      "sourceUrl": "https://www.theringer.com/topic/nfl"
     },
     {
       "sourceFamily": "PFF",
       "independenceKey": "pff",
       "priority": 1,
-      "status": "active-current",
-      "latestChecked": "2026-10-11",
+      "status": "active-current-source-limited",
+      "latestChecked": "2026-10-13",
       "coverage": [
         "grades",
         "QB",
@@ -90,17 +90,17 @@
         "weekly matchup analysis"
       ],
       "notes": "PFF grades/metrics already represented in quantitative or personnel layers receive zero incremental expert credit unless the publication adds a distinct matchup mechanism or explicit betting construction.",
-      "latestFinding": "Checked October 11: 5 attributable matchup records from Bradley Locker, published 2026-10-09T06:15:00-04:00; access: substantive_public.",
-      "selectedWeek": 5,
-      "selectedWeekRecordCount": 14,
-      "sourceUrl": "https://www.pff.com/news/the-10-best-nfl-player-matchups-to-watch-in-week-5-2"
+      "latestFinding": "Official PFF NFL inventory checked October 13, 2026 for selected Week 6. The public index was accessible but did not expose an attributable Week 6 recommendation meeting governed record requirements; zero selections were inferred.",
+      "selectedWeek": 6,
+      "selectedWeekRecordCount": 0,
+      "sourceUrl": "https://www.pff.com/nfl"
     },
     {
       "sourceFamily": "Establish The Run",
       "independenceKey": "establish-the-run",
       "priority": 2,
-      "status": "active-current",
-      "latestChecked": "2026-10-11",
+      "status": "active-current-source-limited",
+      "latestChecked": "2026-10-13",
       "coverage": [
         "projections",
         "usage",
@@ -109,18 +109,18 @@
         "injury impact",
         "betting where public"
       ],
-      "latestFinding": "Checked October 11: 1 attributable matchup records from John Daigle with Evan Silva input, published 2026-10-09; access: substantive_public_opening_paragraph_full_article_paid.",
+      "latestFinding": "Official Establish The Run inventory checked October 13, 2026 for selected Week 6. Public index-level material did not expose an attributable Week 6 recommendation meeting governed requirements; premium or metadata-only content was not inferred.",
       "notes": "Use public material directly; premium material only when legitimately accessible or user-supplied. Fantasy-oriented evidence is context unless it has direct football/betting relevance.",
-      "selectedWeek": 5,
-      "selectedWeekRecordCount": 14,
-      "sourceUrl": "https://establishtherun.com/evan-silvas-matchups-bills-at-rams-3/"
+      "selectedWeek": 6,
+      "selectedWeekRecordCount": 0,
+      "sourceUrl": "https://establishtherun.com/"
     },
     {
       "sourceFamily": "Action Network",
       "independenceKey": "action-network",
       "priority": 1,
-      "status": "active-current",
-      "latestChecked": "2026-10-11",
+      "status": "active-current-source-limited",
+      "latestChecked": "2026-10-13",
       "coverage": [
         "QB rankings",
         "offensive line rankings",
@@ -141,17 +141,17 @@
         "2026 schedule/SOS analysis"
       ],
       "notes": "Analysts remain individually attributed, but Action Network counts as one correlated family for consensus unless evidence is demonstrably independent.",
-      "latestFinding": "Checked October 11: 1 attributable matchup records from Stuckey, published 2026-10-11T06:21:00-04:00; access: substantive_public.",
-      "selectedWeek": 5,
-      "selectedWeekRecordCount": 14,
-      "sourceUrl": "https://www.actionnetwork.com/nfl/indianapolis-colts-vs-pittsburgh-steelers-prediction-pick-odds-nfl-week-5-october-11/embed"
+      "latestFinding": "Official Action Network NFL inventory checked October 13, 2026 for selected Week 6. The current public index was accessible but no attributable Week 6 record was promoted from index or metadata alone; zero selections were inferred.",
+      "selectedWeek": 6,
+      "selectedWeekRecordCount": 0,
+      "sourceUrl": "https://www.actionnetwork.com/nfl"
     },
     {
       "sourceFamily": "NFL / team beat reporting",
       "independenceKey": "primary-reporting",
       "priority": 1,
-      "status": "active-current",
-      "latestChecked": "2026-10-11",
+      "status": "active-current-source-limited",
+      "latestChecked": "2026-10-13",
       "coverage": [
         "official schedule",
         "injuries",
@@ -162,10 +162,10 @@
         "matchup-specific beat reporting"
       ],
       "notes": "Primary reporting is Game Intelligence, not expert consensus. Official/team sources take precedence for factual availability.",
-      "latestFinding": "All 14 upcoming Week 5 matchups have official final designation reviews. PHI-JAX game-day inactives are confirmed; later-game inactives await official releases.",
-      "selectedWeek": 5,
-      "selectedWeekRecordCount": 14,
-      "sourceUrl": "https://www.philadelphiaeagles.com/news/eagles-at-jaguars-inactives-2026-nfl-week-6-london-international-game-saquon-barkley-lane-johnson"
+      "latestFinding": "Official NFL injury surface checked October 13, 2026 for selected Week 6. It still displayed Week 5 at this checkpoint, before Week 6 final designations were due; no availability claim or selection was inferred.",
+      "selectedWeek": 6,
+      "selectedWeekRecordCount": 0,
+      "sourceUrl": "https://www.nfl.com/injuries/"
     },
     {
       "sourceFamily": "You Better You Bet",
