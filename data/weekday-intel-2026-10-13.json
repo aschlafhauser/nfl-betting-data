@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 6,
-  "generatedAt": "2026-10-13T03:40:34.687Z",
+  "generatedAt": "2026-10-13T11:57:57.023Z",
   "mode": "Wednesday full reprice / universal research",
   "scheduleCoverage": {
     "canonicalGameCount": 14,
@@ -24,10 +24,10 @@
       "matchup": "Seattle Seahawks at Denver Broncos",
       "stage": "research",
       "priority": "Medium",
-      "currentSpread": "Seattle Seahawks -3",
-      "productionSpread": "Seattle Seahawks -2.5",
+      "currentSpread": "Seattle Seahawks -2.5",
+      "productionSpread": "Seattle Seahawks -2.1",
       "structuralSpread": "Seattle Seahawks -0.7",
-      "structuralEdge": 2.321,
+      "structuralEdge": 1.821,
       "lean": "DEN",
       "deepDiveStatus": "COMPLETE",
       "upsetResearch": "SCREENED-NOT-LARGE-SPREAD-DOG"
@@ -139,15 +139,15 @@
     {
       "gameId": "2026-W6-ARI-LAR",
       "matchup": "Arizona Cardinals at Los Angeles Rams",
-      "stage": "market-pending",
-      "priority": "Medium",
-      "currentSpread": null,
-      "productionSpread": null,
-      "structuralSpread": "Los Angeles Rams -14.3",
-      "structuralEdge": null,
-      "lean": null,
+      "stage": "no-signal",
+      "priority": "Low",
+      "currentSpread": "Los Angeles Rams -13.5",
+      "productionSpread": "Los Angeles Rams -13.5",
+      "structuralSpread": "Los Angeles Rams -13.6",
+      "structuralEdge": 0.084,
+      "lean": "LAR",
       "deepDiveStatus": "COMPLETE",
-      "upsetResearch": "SCREENED-NOT-LARGE-SPREAD-DOG"
+      "upsetResearch": "COMPLETE-PRICE-PENDING"
     },
     {
       "gameId": "2026-W6-LAC-KC",
@@ -165,13 +165,13 @@
     {
       "gameId": "2026-W6-BUF-LV",
       "matchup": "Buffalo Bills at Las Vegas Raiders",
-      "stage": "market-pending",
-      "priority": "Medium",
-      "currentSpread": null,
-      "productionSpread": null,
-      "structuralSpread": "Buffalo Bills -11",
-      "structuralEdge": null,
-      "lean": null,
+      "stage": "high-priority-audit",
+      "priority": "High",
+      "currentSpread": "Buffalo Bills -6",
+      "productionSpread": "Buffalo Bills -7.1",
+      "structuralSpread": "Buffalo Bills -11.6",
+      "structuralEdge": 5.633,
+      "lean": "BUF",
       "deepDiveStatus": "COMPLETE",
       "upsetResearch": "SCREENED-NOT-LARGE-SPREAD-DOG"
     },
@@ -204,7 +204,7 @@
   ],
   "modelReview": {
     "status": "COMPLETE",
-    "reviewedAt": "2026-10-13T03:40:34.687Z",
+    "reviewedAt": "2026-10-13T11:57:57.023Z",
     "methodologyVersion": "1.1-validated-structural-market-aware+expert-intelligence-v1",
     "phase": {
       "preseasonWeight": 0.775,
@@ -218,7 +218,7 @@
     "throughWeek": 5
   },
   "upsetResearch": {
-    "candidates": 4,
-    "pricePending": 4
+    "candidates": 5,
+    "pricePending": 5
   }
 }
