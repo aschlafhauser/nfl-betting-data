@@ -2,8 +2,8 @@
   "version": "NFL-WEEKLY-MANIFEST-v3",
   "season": 2026,
   "week": 6,
-  "updatedAt": "2026-10-14T13:52:59.392Z",
-  "status": "PASS-WITH-WARNINGS",
+  "updatedAt": "2026-10-14T18:45:08.069Z",
+  "status": "FAIL",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-10-14.json",
   "gates": {
@@ -36,34 +36,35 @@
     "statisticalDisplay": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-10-14T13:52:57.321206+00:00",
+      "verifiedAt": "2026-10-14T18:45:06.461682+00:00",
       "artifact": "data/statistical-display-integrity-2026-w6.json",
       "note": "32 observed season-to-date profiles through Week 5; defensive yardage independently aggregated from each opponent box score. Advanced inputs use the same pregame cutoff."
     },
     "marketDerivedIntegrity": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-10-14T13:52:40.434Z",
+      "verifiedAt": "2026-10-14T18:44:59.228Z",
       "artifact": "data/market-derived-integrity-2026-w6.json",
       "note": "All 14 current spread-derived production fairs independently reconciled as 80% market + 20% frozen structural line with calculation timestamps at/after market dependency."
     },
     "currentWeekCompleteness": {
-      "status": "PASS-WITH-WARNINGS",
+      "status": "FAIL",
       "blocking": true,
       "unplayedGames": 14,
       "freshMarketGames": 14,
       "calculationFreshGames": 14,
       "moneylineAvailableGames": 0,
-      "availabilityCheckpointDue": 0,
+      "availabilityCheckpointDue": 1,
       "availabilityCheckpointComplete": 0,
-      "weatherCheckpointDue": 0,
+      "weatherCheckpointDue": 1,
       "weatherCheckpointComplete": 0,
       "upsetLabVerified": true,
-      "issues": [],
+      "issues": [
+        "availability review due 0/1",
+        "weather review due 0/1"
+      ],
       "warnings": [
-        "exact moneyline available for 0/14; missing prices remain PRICE_PENDING and are never inferred",
-        "final injury designations are not yet due under the 30-hour pre-kickoff gate",
-        "game-specific weather verification is not yet due under the 30-hour pre-kickoff gate"
+        "exact moneyline available for 0/14; missing prices remain PRICE_PENDING and are never inferred"
       ],
       "note": "Wednesday certification requires fresh spread/total, selected-week model calculations, universal Deep Dives and upset research. Exact ML, final injury designations and weather become blocking only when their execution checkpoints are due; missing values are never inferred."
     },
@@ -127,16 +128,14 @@
     "timeLimitedOverlays": {
       "status": "IN_PROGRESS",
       "items": [
-        "exact moneyline available for 0/14; missing prices remain PRICE_PENDING and are never inferred",
-        "final injury designations are not yet due under the 30-hour pre-kickoff gate",
-        "game-specific weather verification is not yet due under the 30-hour pre-kickoff gate"
+        "exact moneyline available for 0/14; missing prices remain PRICE_PENDING and are never inferred"
       ]
     }
   },
-  "failures": [],
+  "failures": [
+    "CURRENTWEEKCOMPLETENESS_INCOMPLETE"
+  ],
   "historicalWarnings": [
-    "exact moneyline available for 0/14; missing prices remain PRICE_PENDING and are never inferred",
-    "final injury designations are not yet due under the 30-hour pre-kickoff gate",
-    "game-specific weather verification is not yet due under the 30-hour pre-kickoff gate"
+    "exact moneyline available for 0/14; missing prices remain PRICE_PENDING and are never inferred"
   ]
 }
