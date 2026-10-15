@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 6,
-  "updated_at": "2026-10-15T11:45:56.296289+00:00",
+  "updated_at": "2026-10-15T13:09:53.000Z",
   "source_status": "Official NWS kickoff-hour forecasts and verified Met Office London snapshot",
   "games": [
     {
@@ -10,13 +10,36 @@
       "matchup": "Seattle Seahawks at Denver Broncos",
       "venue": "Empower Field at Mile High",
       "environment": "outdoor",
-      "status": "Current game-window weather feed reviewed",
-      "summary": "Current ESPN event weather feed reviewed; no structured game-window condition was published. Weather remains source-limited with 0.0 automatic model points.",
-      "risk": "source-limited",
-      "observed_at": "2026-10-15T11:45:55.948Z",
+      "status": "Official NWS game-window forecast verified",
+      "summary": "Mostly clear around kickoff, approximately 52°F and falling into the upper 40s, with north wind around 5–7 mph becoming calm. Earlier daytime showers are forecast to end before the game.",
+      "risk": "low; cool and drying",
+      "observed_at": "2026-10-15T13:09:53.000Z",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100"
+      "source": "https://forecast.weather.gov/MapClick.php?textField1=39.7392&textField2=-104.9903",
+      "forecast_verified": true,
+      "forecast_timestamp": "2026-10-15T13:09:53.000Z",
+      "forecast": {
+        "game_id": "2026-W6-SEA-DEN",
+        "kickoff": "2026-10-16T00:15Z",
+        "temp_f": 52,
+        "wind_mph": 6,
+        "gust_mph": null,
+        "precip_chance_pct": 0,
+        "forecast_timestamp": "2026-10-15T13:09:53.000Z",
+        "verification_status": "NWS Denver forecast current for Thursday evening; daytime showers ending before kickoff",
+        "venue": "Empower Field at Mile High",
+        "sources": [
+          "https://forecast.weather.gov/MapClick.php?textField1=39.7392&textField2=-104.9903"
+        ],
+        "limitations": [
+          "Point forecast is for central Denver; final stadium observations remain subject to game-day recheck."
+        ],
+        "retrieved_at": "2026-10-15T13:09:53.000Z"
+      },
+      "sources": [
+        "https://forecast.weather.gov/MapClick.php?textField1=39.7392&textField2=-104.9903"
+      ]
     },
     {
       "game_id": "2026-W6-HOU-JAX",
