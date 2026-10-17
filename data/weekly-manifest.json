@@ -2,7 +2,7 @@
   "version": "NFL-WEEKLY-MANIFEST-v3",
   "season": 2026,
   "week": 6,
-  "updatedAt": "2026-10-17T09:31:08.949Z",
+  "updatedAt": "2026-10-17T13:49:03.793Z",
   "status": "FAIL",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-10-17.json",
@@ -36,14 +36,14 @@
     "statisticalDisplay": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-10-17T09:31:06.976788+00:00",
+      "verifiedAt": "2026-10-17T13:49:01.694082+00:00",
       "artifact": "data/statistical-display-integrity-2026-w6.json",
       "note": "32 observed season-to-date profiles through Week 5; defensive yardage independently aggregated from each opponent box score. Advanced inputs use the same pregame cutoff."
     },
     "marketDerivedIntegrity": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-10-17T09:30:55.776Z",
+      "verifiedAt": "2026-10-17T13:48:54.523Z",
       "artifact": "data/market-derived-integrity-2026-w6.json",
       "note": "All 14 current spread-derived production fairs independently reconciled as 80% market + 20% frozen structural line with calculation timestamps at/after market dependency."
     },
@@ -54,14 +54,14 @@
       "freshMarketGames": 13,
       "calculationFreshGames": 13,
       "moneylineAvailableGames": 0,
-      "availabilityCheckpointDue": 1,
+      "availabilityCheckpointDue": 8,
       "availabilityCheckpointComplete": 0,
-      "weatherCheckpointDue": 1,
-      "weatherCheckpointComplete": 0,
+      "weatherCheckpointDue": 8,
+      "weatherCheckpointComplete": 2,
       "upsetLabVerified": true,
       "issues": [
-        "availability review due 0/1",
-        "weather review due 0/1"
+        "availability review due 0/8",
+        "weather review due 2/8"
       ],
       "warnings": [
         "exact moneyline available for 0/13; missing prices remain PRICE_PENDING and are never inferred"
