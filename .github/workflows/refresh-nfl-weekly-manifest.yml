@@ -129,7 +129,12 @@ jobs:
         run: node scripts/capture-results-clv.mjs
       - name: Reconcile narratives to final governed prices
         run: node scripts/reconcile-current-narratives.mjs
+      - name: Verify exact moneyline and Upset Lab coverage
+        run: node scripts/verify-moneyline-coverage.mjs
+      - name: Verify complete selected-week podcast review evidence
+        run: node scripts/verify-podcast-process.mjs
       - name: Rebuild selected-week manifest
+        if: ${{ always() }}
         run: node scripts/refresh-weekly-manifest.mjs
       - name: Persist governed NFL runtime safely
         if: ${{ always() }}

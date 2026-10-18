@@ -9,6 +9,7 @@ const props=await read('data/player-props-expert.json').catch(()=>null);
 const style=await read('data/nfl-style-matchups.json').catch(()=>null);
 const failures=[];
 const warnings=[];
+if(manifest.gates?.podcastTranscripts?.status!=='PASS'||Number(manifest.gates?.podcastTranscripts?.pointImpact)!==0)failures.push('Selected-week podcast transcript review is incomplete or violates qualitative-only governance');
 if(Number(manifest.season)!==season||Number(manifest.week)!==week)failures.push('Manifest selected week does not match canonical Weekly Board');
 for(const [name,gate] of Object.entries(manifest.gates||{})){
   const status=String(gate.status||'').toUpperCase();

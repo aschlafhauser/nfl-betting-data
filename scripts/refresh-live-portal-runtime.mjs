@@ -10,7 +10,7 @@ const identity=await read('data/team-identity-registry.json');
 const season=Number(canonical.season||2026),week=Number(canonical.week||1);
 const now=new Date().toISOString();
 const url=`https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=${season}&seasontype=2&week=${week}&limit=100`;
-const ml=v=>{const n=Number(v);return Number.isFinite(n)?`${n>0?'+':''}${n}`:null};
+const ml=v=>{if(v==null||v==='')return null;const n=Number(v);return Number.isFinite(n)&&Math.abs(n)>=100?`${n>0?'+':''}${n}`:null};
 const num=v=>{const n=Number(v);return Number.isFinite(n)?n:null};
 const clean=s=>String(s||'').trim();
 const raw=s=>clean(s).toUpperCase().replace(/[^A-Z0-9]/g,'');
@@ -36,7 +36,7 @@ function oddsRow(ev){
     if(favoriteAbbr===homeAbbr){spreadDisplay=`${homeName} -${pts}`;homeBookSpread=-pts;homeMargin=pts;}
     else if(favoriteAbbr===awayAbbr){spreadDisplay=`${awayName} -${pts}`;homeBookSpread=pts;homeMargin=-pts;}
   }
-  const total=num(o?.overUnder),awayML=ml(o?.awayTeamOdds?.moneyLine),homeML=ml(o?.homeTeamOdds?.moneyLine);
+  const total=num(o?.overUnder),awayML=ml(o?.moneyline?.away?.close?.odds??o?.awayTeamOdds?.moneyLine),homeML=ml(o?.moneyline?.home?.close?.odds??o?.homeTeamOdds?.moneyLine);
   const completed=String(ev?.status?.type?.state||'').toLowerCase()==='post'||Boolean(ev?.status?.type?.completed);
   const venue=c.venue||{},weather=c.weather||{},temperature=num(weather.temperature),condition=clean(weather.displayValue||weather.condition||weather.shortDisplayName),weatherSummary=[temperature!=null?`${Math.round(temperature)}°F`:null,condition||null].filter(Boolean).join(' · ');
   return {eventId:String(ev.id),awayAbbr,homeAbbr,awayName,homeName,kickoff:ev.date||c.date||null,completed,spreadDisplay,total:total&&total>0?total:null,awayML,homeML,homeBookSpread,homeMargin,source:o?.provider?.name?`ESPN ${o.provider.name}`:(o?'ESPN odds feed':null),hasOdds:!!o,venueName:venue.fullName||venue.shortName||null,environment:venue.indoor===true?'indoor':'outdoor',weatherSummary:weatherSummary||null};
@@ -69,7 +69,8 @@ const updatedCanonical=canonicalGames.map(g=>{
   if(hasCurrent)liveOdds++;
   const currentSpread=hasCurrent?row.spreadDisplay:g.currentSpread;
   const currentTotal=hasCurrent?row.total:g.currentTotal;
-  const currentMoneyline=(row.awayML||row.homeML)?`${g.awayAbbr} ${row.awayML||'—'} / ${g.homeAbbr} ${row.homeML||'—'}`:g.currentMoneyline;
+  const currentMoneyline=row.awayML&&row.homeML?`${g.awayAbbr} ${row.awayML} / ${g.homeAbbr} ${row.homeML}`:null;
+  const moneyline={away:row.awayML?Number(row.awayML):null,home:row.homeML?Number(row.homeML):null,observedAt:row.awayML&&row.homeML?now:null,source:row.source,sourceUrl:url};
   const marketHM=hasCurrent?row.homeMargin:parseTeamLine(g.currentSpread,g.homeAbbr,g.awayAbbr,g.home,g.away);
   const structuralHM=parseTeamLine(g.validatedStructuralSpread,g.homeAbbr,g.awayAbbr,g.home,g.away);
   let productionSpread=g.productionSpread,structuralEdge=g.structuralEdge,structuralLean=g.structuralLean;
@@ -79,7 +80,7 @@ const updatedCanonical=canonicalGames.map(g=>{
     structuralEdge=Number(Math.abs(structuralHM-marketHM).toFixed(1));
     structuralLean=structuralHM>marketHM?g.homeAbbr:structuralHM<marketHM?g.awayAbbr:'NONE';
   }
-  return {...g,dateTime:row.kickoff||g.dateTime,currentSpread,currentTotal,currentMoneyline,marketSource:hasCurrent?(row.source||'ESPN odds feed'):g.marketSource,marketObservedAt:hasCurrent?now:(g.marketObservedAt||null),eventState:row.completed?'final':'scheduled',productionSpread,structuralEdge,structuralLean};
+  return {...g,dateTime:row.kickoff||g.dateTime,currentSpread,currentTotal,currentMoneyline,moneyline,marketSource:hasCurrent?(row.source||'ESPN odds feed'):g.marketSource,marketObservedAt:hasCurrent?now:(g.marketObservedAt||null),eventState:row.completed?'final':'scheduled',productionSpread,structuralEdge,structuralLean};
 });
 
 const canonByTeams=new Map(updatedCanonical.map(g=>[`${String(g.away).toLowerCase()}__${String(g.home).toLowerCase()}`,g]));

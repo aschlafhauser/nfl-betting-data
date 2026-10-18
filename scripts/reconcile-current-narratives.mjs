@@ -10,7 +10,7 @@ for(const d of deep.dossiers||[]){
  d.mechanisms=[line,...(d.mechanisms||[]).filter(x=>!/^(Frozen v1\.1|Current governed) structural fair:/.test(x))];
  d.summary=d.mechanisms.join(' ');d.mechanism=line;d.modelCalculatedAt=g.modelCalculatedAt;
 }
-for(const x of upset.candidates||[]){
+for(const x of [...(upset.candidates||[]),...(upset.near_threshold_watch||[]),...(upset.price_pending||[])]){
  const g=byId.get(x.game_id);if(!g||g.eventState==='final')continue;
  x.structuralFair=g.validatedStructuralSpread;
  const criterion=(x.criteria||[]).find(c=>c.name==='structural-resistance');
