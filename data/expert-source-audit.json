@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-10-18T01:14:35.312Z",
+  "updatedAt": "2026-10-18T02:46:07.861Z",
   "policy": "Preserve analyst-level notes but count correlated publications under a single sourceFamily/independenceKey. Information, analysis and explicit betting opinions are tagged separately. Every matchup record must join the canonical nfl-weekly-board game ID; unmatched records are an ingestion failure. Expert Intelligence is qualitative context/residual and may not silently overwrite the quantitative NFL fair.",
   "sources": [
     {
@@ -8,7 +8,7 @@
       "independenceKey": "sharp-football-analysis",
       "priority": 1,
       "status": "active-current-source-limited",
-      "latestChecked": "2026-10-13",
+      "latestChecked": "2026-10-18",
       "coverage": [
         "all 32 teams",
         "power rankings",
@@ -23,18 +23,19 @@
       "publicMaterialSeeded": [
         "2026 NFL Power Rankings — Aug. 24"
       ],
-      "latestFinding": "Official Sharp Football matchup surface checked October 13, 2026 for selected Week 6. The accessible page was current through October 11 but still displayed Week 5 matchups; no Week 6 selection was inferred and zero records were promoted.",
+      "latestFinding": "Week 6 rank tables reviewed; matchup context joined, no picks inferred.",
       "notes": "Do not count multiple Warren Sharp/Sharp articles as independent confirmations.",
       "selectedWeek": 6,
-      "selectedWeekRecordCount": 0,
-      "sourceUrl": "https://www.sharpfootballanalysis.com/analysis/nfl-matchups/"
+      "selectedWeekRecordCount": 13,
+      "sourceUrl": "https://www.sharpfootballanalysis.com/analysis/nfl-matchups/",
+      "checkedAt": "2026-10-18T02:44:48.049691+00:00"
     },
     {
       "sourceFamily": "Mina Kimes / ESPN NFL analysis",
       "independenceKey": "mina-kimes-espn",
       "priority": 1,
       "status": "active-current-source-limited",
-      "latestChecked": "2026-10-13",
+      "latestChecked": "2026-10-18",
       "coverage": [
         "QB",
         "OL",
@@ -49,17 +50,18 @@
         "Donald, Duck! The Loaded Rams, Plus Raiders and Falcons QB Battles — Sept. 1"
       ],
       "notes": "Mina and guests within the same episode are correlated for consensus. Team Draft / season-ranking content is not promoted to weekly matchup evidence unless a matchup-specific mechanism is explicit.",
-      "latestFinding": "Official ESPN podcast inventory checked October 13, 2026 for selected Week 6. The public surface required JavaScript/robot verification and exposed no attributable Week 6 game recommendation; zero selections were inferred.",
+      "latestFinding": "October 15 Week 6 episode metadata found; playable body/transcript unavailable. No picks extracted.",
       "selectedWeek": 6,
       "selectedWeekRecordCount": 0,
-      "sourceUrl": "https://www.espn.com/espnradio/podcast/archive?id=2544457"
+      "sourceUrl": "https://www.espn.com/espnradio/play?id=50188020",
+      "checkedAt": "2026-10-18T02:44:48.049691+00:00"
     },
     {
       "sourceFamily": "The Ringer NFL family",
       "independenceKey": "ringer-nfl",
       "priority": 1,
       "status": "active-current-source-limited",
-      "latestChecked": "2026-10-13",
+      "latestChecked": "2026-10-18",
       "coverage": [
         "team rankings",
         "scheme",
@@ -69,17 +71,18 @@
         "betting"
       ],
       "notes": "Treat The Ringer NFL Show and related Ringer NFL analysts as one correlated family unless demonstrably independent reporting is involved.",
-      "latestFinding": "Official Ringer NFL inventory checked October 13, 2026 for selected Week 6. Accessible material remained centered on Week 5 and earlier; no attributable Week 6 game recommendation was promoted and zero selections were inferred.",
+      "latestFinding": "Dabbundo written Week 6 analysis reviewed; podcast transcripts remain unreviewed.",
       "selectedWeek": 6,
-      "selectedWeekRecordCount": 0,
-      "sourceUrl": "https://www.theringer.com/topic/nfl"
+      "selectedWeekRecordCount": 7,
+      "sourceUrl": "https://www.theringer.com/2026/10/15/nfl/nfl-best-bets-week-6",
+      "checkedAt": "2026-10-18T02:44:48.049691+00:00"
     },
     {
       "sourceFamily": "PFF",
       "independenceKey": "pff",
       "priority": 1,
       "status": "active-current-source-limited",
-      "latestChecked": "2026-10-13",
+      "latestChecked": "2026-10-18",
       "coverage": [
         "grades",
         "QB",
@@ -90,17 +93,18 @@
         "weekly matchup analysis"
       ],
       "notes": "PFF grades/metrics already represented in quantitative or personnel layers receive zero incremental expert credit unless the publication adds a distinct matchup mechanism or explicit betting construction.",
-      "latestFinding": "Official PFF NFL inventory checked October 13, 2026 for selected Week 6. The public index was accessible but did not expose an attributable Week 6 recommendation meeting governed record requirements; zero selections were inferred.",
+      "latestFinding": "Current written matchup analysis reviewed; no player prop inferred.",
       "selectedWeek": 6,
-      "selectedWeekRecordCount": 0,
-      "sourceUrl": "https://www.pff.com/nfl"
+      "selectedWeekRecordCount": 2,
+      "sourceUrl": "https://www.pff.com/news/the-10-best-nfl-player-matchups-to-watch-in-week-6-2",
+      "checkedAt": "2026-10-18T02:44:48.049691+00:00"
     },
     {
       "sourceFamily": "Establish The Run",
       "independenceKey": "establish-the-run",
       "priority": 2,
       "status": "active-current-source-limited",
-      "latestChecked": "2026-10-13",
+      "latestChecked": "2026-10-18",
       "coverage": [
         "projections",
         "usage",
@@ -109,18 +113,19 @@
         "injury impact",
         "betting where public"
       ],
-      "latestFinding": "Official Establish The Run inventory checked October 13, 2026 for selected Week 6. Public index-level material did not expose an attributable Week 6 recommendation meeting governed requirements; premium or metadata-only content was not inferred.",
+      "latestFinding": "Week 6 public preview reviewed; premium article body remains unavailable.",
       "notes": "Use public material directly; premium material only when legitimately accessible or user-supplied. Fantasy-oriented evidence is context unless it has direct football/betting relevance.",
       "selectedWeek": 6,
-      "selectedWeekRecordCount": 0,
-      "sourceUrl": "https://establishtherun.com/"
+      "selectedWeekRecordCount": 1,
+      "sourceUrl": "https://establishtherun.com/evan-silvas-matchups-commanders-at-49ers-2/",
+      "checkedAt": "2026-10-18T02:44:48.049691+00:00"
     },
     {
       "sourceFamily": "Action Network",
       "independenceKey": "action-network",
       "priority": 1,
       "status": "active-current-source-limited",
-      "latestChecked": "2026-10-13",
+      "latestChecked": "2026-10-18",
       "coverage": [
         "QB rankings",
         "offensive line rankings",
@@ -141,17 +146,18 @@
         "2026 schedule/SOS analysis"
       ],
       "notes": "Analysts remain individually attributed, but Action Network counts as one correlated family for consensus unless evidence is demonstrably independent.",
-      "latestFinding": "Official Action Network NFL inventory checked October 13, 2026 for selected Week 6. The current public index was accessible but no attributable Week 6 record was promoted from index or metadata alone; zero selections were inferred.",
+      "latestFinding": "Two current written prop articles reviewed; six source opinions joined. Current executable prices not independently observed.",
       "selectedWeek": 6,
-      "selectedWeekRecordCount": 0,
-      "sourceUrl": "https://www.actionnetwork.com/nfl"
+      "selectedWeekRecordCount": 6,
+      "sourceUrl": "https://www.actionnetwork.com/nfl/player-props-for-nfl-week-6-jacoby-brissett-jaylen-warren-kaimi-fairbairn/embed",
+      "checkedAt": "2026-10-18T02:44:48.049691+00:00"
     },
     {
       "sourceFamily": "NFL / team beat reporting",
       "independenceKey": "primary-reporting",
       "priority": 1,
       "status": "active-current-source-limited",
-      "latestChecked": "2026-10-13",
+      "latestChecked": "2026-10-18",
       "coverage": [
         "official schedule",
         "injuries",
@@ -162,10 +168,11 @@
         "matchup-specific beat reporting"
       ],
       "notes": "Primary reporting is Game Intelligence, not expert consensus. Official/team sources take precedence for factual availability.",
-      "latestFinding": "Official NFL injury surface checked October 13, 2026 for selected Week 6. It still displayed Week 5 at this checkpoint, before Week 6 final designations were due; no availability claim or selection was inferred.",
+      "latestFinding": "Selected-week official injury table reviewed for all 13 unplayed games; game-day inactive checks remain due later.",
       "selectedWeek": 6,
       "selectedWeekRecordCount": 0,
-      "sourceUrl": "https://www.nfl.com/injuries/"
+      "sourceUrl": "https://www.nfl.com/injuries/league/2026/reg6",
+      "checkedAt": "2026-10-18T02:44:48.049691+00:00"
     },
     {
       "sourceFamily": "You Better You Bet",
@@ -183,11 +190,12 @@
       "publicMaterialSeeded": [
         "Hour 3 — NFL Week 1 Picks, Brad Evans Joins — Sept. 11, 2026"
       ],
-      "latestFinding": "Audacy You Better You Bet episode index checked 2026-10-18 for selected Week 6. Accessible public metadata did not yield an attributable governed Week 6 pick at this checkpoint; zero selections were inferred from titles or metadata.",
+      "latestFinding": "Audacy You Better You Bet episode index checked 2026-10-18 for selected Week 6. HTTP availability checked only; episode contents/transcripts were not reviewed by this reconciliation job. No Week 6 pick was inferred.",
       "notes": "Keep the source visible as checked even when zero attributable records clear ingestion. Do not turn episode titles into picks.",
       "selectedWeek": 6,
       "sourceUrl": "https://www.audacy.com/podcast/you-better-you-bet-2015a/episodes",
-      "selectedWeekRecordCount": 0
+      "selectedWeekRecordCount": 0,
+      "checkedAt": "2026-10-18T02:46:07.861Z"
     }
   ]
 }

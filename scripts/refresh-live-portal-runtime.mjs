@@ -124,7 +124,7 @@ if(props&&Number(props.week)===week){
   const activeRecommendations=recommendations.filter(p=>!finalIds.has(String(p.gameId)));
   const activeWatchlist=watchlist.filter(p=>!finalIds.has(String(p.gameId)));
   const slateFinal=props.slate?.gameId&&finalIds.has(String(props.slate.gameId));
-  const nextProps={...props,updatedAt:now,status:activeRecommendations.length?'CURRENT-WEEK-VERIFIED-RECOMMENDATIONS':'CURRENT-WEEK-NO-UPCOMING-VERIFIED-RECOMMENDATIONS',slate:slateFinal?{...props.slate,status:'FINAL',actionable:false}:props.slate,recommendations:activeRecommendations,watchlist:activeWatchlist,closedRecommendations,closedWatchlist,sourceAudit:{...(props.sourceAudit||{}),checkedAt:now,note:'Completed-game rows are archived automatically and cannot remain actionable. Current recommendations contain only not-yet-started selected-week games.'}};
+  const nextProps={...props,evidenceCheckedAt:props.evidenceCheckedAt||props.sourceAudit?.checkedAt||props.updatedAt,updatedAt:now,status:activeRecommendations.length?'CURRENT-WEEK-VERIFIED-RECOMMENDATIONS':'CURRENT-WEEK-NO-UPCOMING-VERIFIED-RECOMMENDATIONS',slate:slateFinal?{...props.slate,status:'FINAL',actionable:false}:props.slate,recommendations:activeRecommendations,watchlist:activeWatchlist,closedRecommendations,closedWatchlist,sourceAudit:{...(props.sourceAudit||{}),checkedAt:now,note:'Completed-game rows are archived automatically and cannot remain actionable. Current recommendations contain only not-yet-started selected-week games.'}};
   await fs.writeFile(propsPath,JSON.stringify(nextProps,null,2)+'\n');
   console.log(`NFL player props reconciled: active=${activeRecommendations.length}, archived=${closedRecommendations.length}, activeWatch=${activeWatchlist.length}`);
 }

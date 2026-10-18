@@ -1,8 +1,59 @@
+import fs from 'node:fs/promises';
 import { chromium } from 'playwright';
-const portal=process.env.NFL_PORTAL_URL||'https://nfl-betting-intelligence.netlify.app/';
-const expected=Number(process.env.NFL_EXPECTED_GAMES||16);
-const selectedWeek=Number(process.env.NFL_WEEK||4);
-const browser=await chromium.launch({headless:true});const page=await browser.newPage({viewport:{width:1440,height:1100}});const browserErrors=[];page.on('pageerror',e=>browserErrors.push(e.message));
-await page.goto(portal,{waitUntil:'domcontentloaded',timeout:120000});await page.waitForFunction(n=>Number(document.getElementById('gameCount')?.textContent||0)>0,null,{timeout:60000});await page.waitForTimeout(1200);
-const report=await page.evaluate(async ({expected,selectedWeek})=>{const out={tabs:{},failures:[]};const sleep=ms=>new Promise(r=>setTimeout(r,ms));const ids=['board','best','match','teams','injuries','expert','props','upset','ledger','changed','coverage','model'];for(const id of ids){const b=document.querySelector(`nav button[data-tab="${id}"]`),s=document.getElementById(id);if(!b||!s){out.failures.push(`missing tab ${id}`);continue;}b.click();await sleep(100);const txt=(s.innerText||'').trim();out.tabs[id]={length:txt.length,active:s.classList.contains('active')};if(!s.classList.contains('active'))out.failures.push(`${id} did not activate`);if(txt.length<25)out.failures.push(`${id} appears unpopulated`);}const rows=document.querySelectorAll('#scheduleRows tr[data-id]').length;out.boardRows=rows;if(rows!==expected)out.failures.push(`Weekly Board ${rows}/${expected}`);const matches=document.querySelectorAll('#matchSel option').length;out.matchOptions=matches;if(matches!==expected)out.failures.push(`Matchup selector ${matches}/${expected}`);const status=(document.getElementById('boardStatus')?.textContent||'').trim();out.boardStatus=status;if(/not production-complete/i.test(status))out.failures.push(`portal QC says ${status}`);const cov=(document.getElementById('coverageContent')?.innerText||'').trim();if(/Runtime load failure|Only \d+\/32|missing canonical|older than|Spread-sign normalization failure|do not match a canonical/i.test(cov))out.failures.push('Coverage/QC contains blocking runtime issue');const upset=(document.getElementById('upsetContent')?.innerText||'').trim();if(!upset)out.failures.push('Upset Lab empty without explicit state');const expert=(document.getElementById('expertContent')?.innerText||'').trim();out.expert={textLength:expert.length};if(!expert)out.failures.push('Expert Intelligence empty without explicit state');if(new RegExp(`Week (?!${selectedWeek}\\b)\\d+ record`,'i').test(expert))out.failures.push('Expert Intelligence displays stale prior-week record labels');if(!/Primary ledger is losslessly synchronized/i.test(cov))out.failures.push('Expert Intelligence primary ledger is not visibly synchronized in Coverage');const today=new Date().toISOString().slice(0,10);if(!/CURRENT · You Better You Bet/i.test(expert)||!new RegExp(`checked ${today}`,'i').test(expert))out.failures.push('You Better You Bet current-run audit is not visibly current');if(!/recommends|citing|because|arguing|matchup|advantage/i.test(expert))out.failures.push('Expert Intelligence exposes references but no substantive analysis');const props=(document.getElementById('propContent')?.innerText||'').trim();out.props={textLength:props.length,status:(document.getElementById('propStatus')?.textContent||'').trim()};if(!props)out.failures.push('Player Props empty without explicit state');if(!/expert|recommend|evidence|threshold|prop/i.test(props))out.failures.push('Player Props does not expose expert-driven governance/evidence state');const changed=(document.getElementById('changedContent')?.innerText||'').trim();if(!changed)out.failures.push('What Changed empty without explicit state');return out;},{expected,selectedWeek});
-await browser.close();if(browserErrors.length)report.failures.push(...browserErrors.map(x=>`pageerror:${x}`));console.log(JSON.stringify(report,null,2));if(report.failures.length)throw new Error(`NFL LIVE PORTAL QA FAIL: ${report.failures.join(' | ')}`);console.log('NFL LIVE PORTAL QA PASS');
+const canonical=JSON.parse(await fs.readFile('data/weekly-board.json','utf8'));
+const expected=Number(process.env.NFL_EXPECTED_GAMES||canonical.games.length),week=Number(process.env.NFL_WEEK||canonical.week);
+const browser=await chromium.launch({headless:true});
+const report={week,expected,tabs:{},matchups:[],mobile:{},failures:[]};
+const fail=message=>report.failures.push(message);
+try{
+ const page=await browser.newPage({viewport:{width:1440,height:1100}});
+ page.on('pageerror',e=>fail('pageerror: '+e.message));
+ await page.goto(process.env.NFL_PORTAL_URL||'https://nfl-betting-intelligence.netlify.app/',{waitUntil:'domcontentloaded',timeout:90000});
+ await page.waitForFunction(()=>/Governance|Production QC/.test(document.getElementById('boardStatus')?.textContent||'')&&document.querySelector('#nflSchemeStylePanel')&&document.querySelector('#propStatus')?.textContent.includes('recommendations'),null,{timeout:60000});
+ const tabs=await page.locator('nav button[data-tab]').evaluateAll(xs=>xs.map(x=>({id:x.dataset.tab,name:x.textContent.trim()})));
+ if(tabs.length!==13)fail('Navigation contains '+tabs.length+'/13 tabs');
+ for(const t of tabs){
+  await page.getByRole('button',{name:t.name,exact:true}).click();
+  const section=page.locator('#'+t.id),text=(await section.innerText()).trim();
+  report.tabs[t.id]={visible:await section.isVisible(),textLength:text.length};
+  if(!report.tabs[t.id].visible||text.length<25)fail(t.name+' did not activate with content');
+  if(/\bNaN\b|\bundefined\b/.test(text))fail(t.name+' contains invalid numeric/text values');
+ }
+ const status=await page.locator('#boardStatus').innerText();report.status=status;
+ if(/FAIL|not production-complete|loading/i.test(status))fail('Portal status: '+status);
+ if(await page.locator('#scheduleRows tr[data-id]').count()!==expected)fail('Board selected-week game count mismatch');
+ if(await page.locator('#advantageContent tbody tr').count()!==expected)fail('Matchup Advantages coverage mismatch');
+ const coverage=await page.locator('#coverageContent').innerText();
+ if(!/0 blocking/.test(coverage)||/Runtime load failure|Only \d+\/32|missing canonical|Spread-sign normalization failure|vs expected/.test(coverage))fail('Coverage contains a blocking issue or wrong schedule expectation');
+ const expert=await page.locator('#expertContent').innerText();
+ if(!/source checks within 48h/.test(expert)||/STALE ·/.test(expert))fail('Expert source coverage is stale/missing');
+ await page.getByRole('button',{name:'Matchup Center',exact:true}).click();
+ const options=await page.locator('#matchSel option').evaluateAll(xs=>xs.map(x=>({value:x.value,label:x.textContent})));
+ if(options.length!==expected)fail('Matchup selector coverage mismatch');
+ for(const option of options){
+  await page.locator('#matchSel').selectOption(option.value);
+  const text=await page.locator('#matchContent').innerText();
+  const checks=['Broader offensive / defensive metrics','Position-group matchup matrix','Scheme / Style Matchup','Weather / venue','Deep Dive thesis','Expert Intelligence'];
+  const missing=checks.filter(x=>!text.includes(x));if(missing.length)fail(option.label+': missing '+missing.join(', '));
+  if(!text.includes('Current board and model: Week '+week)||!text.includes('through Week '+(week-1)))fail(option.label+': stale statistical cutoff');
+  if(!option.label.includes('FINAL')&&/Availability review pending|Timestamp missing|Weather row missing/.test(text))fail(option.label+': missing injury/weather checkpoint');
+  report.matchups.push({game:option.label,missing});
+ }
+ await page.getByRole('button',{name:'Weekly Board',exact:true}).click();
+ await page.locator('#gameSearch').fill('Houston');if(await page.locator('#scheduleRows tr[data-id]').count()!==1)fail('Board search failed');
+ await page.locator('#gameSearch').fill('');
+ await page.getByRole('button',{name:'Player Props',exact:true}).click();
+ const propCount=await page.locator('#propContent tbody tr').count();report.propCount=propCount;
+ if(propCount){await page.locator('#propSearch').fill('no-such-player-qa');if(!/No recommendations match/.test(await page.locator('#propContent').innerText()))fail('Props search failed');await page.locator('#propSearch').fill('');}
+ for(const width of [390,768]){
+  await page.setViewportSize({width,height:844});
+  const overflow=[];
+  for(const t of tabs){await page.getByRole('button',{name:t.name,exact:true}).click();if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1))overflow.push(t.name);}
+  report.mobile[width]={checkedTabs:tabs.length,pageOverflow:overflow};if(overflow.length)fail(width+'px page overflow: '+overflow.join(', '));
+ }
+ await page.getByRole('button',{name:'Best Bets',exact:true}).click();const before=await page.locator('#bestContent').innerText();
+ await page.waitForTimeout(5500);if(before!==await page.locator('#bestContent').innerText())fail('Best Bets changed unexpectedly during 5.5s stability check');
+}finally{await browser.close();}
+console.log(JSON.stringify(report,null,2));
+if(report.failures.length)throw Error('NFL LIVE PORTAL QA FAIL: '+report.failures.join(' | '));
+console.log('NFL LIVE PORTAL QA PASS');

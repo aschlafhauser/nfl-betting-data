@@ -1,13 +1,15 @@
 import json, urllib.request, datetime, concurrent.futures, re, argparse
 from pathlib import Path
 from zoneinfo import ZoneInfo
-parser=argparse.ArgumentParser(description='Research official NWS kickoff weather; preserve manually verified London snapshot.')
+parser=argparse.ArgumentParser(description='Refresh official kickoff-hour forecasts for domestic and supported international venues.')
 parser.add_argument('--repo',default=str(Path(__file__).resolve().parents[1]))
 parser.add_argument('--output',default=str(Path(__file__).resolve().parents[1]/'data/weather-audit-current.json'))
 args=parser.parse_args()
 
-coords={'CHI-GB':(44.5013,-88.0622),'HOU-TEN':(36.1665,-86.7713),'CIN-MIA':(25.9580,-80.2389),'LV-NE':(42.0909,-71.2643),'CLE-NYJ':(40.8135,-74.0745),'IND-PIT':(40.4468,-80.0158),'NYG-WSH':(38.9076,-76.8645),'DEN-LAC':(33.9535,-118.3392),'SF-SEA':(47.5952,-122.3316),'BUF-LAR':(33.9535,-118.3392)}
+coords={'GB':(44.5013,-88.0622),'NE':(42.0909,-71.2643),'NYG':(40.8135,-74.0745),'NYJ':(40.8135,-74.0745),'CLE':(41.5061,-81.6995),'PHI':(39.9008,-75.1675),'TB':(27.9759,-82.5033),'KC':(39.0489,-94.4839),'SF':(37.403,-121.970),'LAR':(33.9535,-118.3392),'LAC':(33.9535,-118.3392),'DEN':(39.7439,-105.0201),'SEA':(47.5952,-122.3316),'TEN':(36.1665,-86.7713),'ARI':(33.5276,-112.2626),'ATL':(33.7554,-84.4008),'BAL':(39.278,-76.6227),'BUF':(42.774,-78.787),'CAR':(35.2258,-80.8528),'CHI':(41.8623,-87.6167),'CIN':(39.0954,-84.516),'DAL':(32.7473,-97.0945),'DET':(42.340,-83.0456),'HOU':(29.6847,-95.4107),'IND':(39.7601,-86.1639),'JAX':(30.3239,-81.6373),'LV':(36.09,-115.183),'MIA':(25.958,-80.2389),'MIN':(44.9738,-93.2578),'NO':(29.9511,-90.0812),'PIT':(40.4468,-80.0158),'WAS':(38.9076,-76.8645),'WSH':(38.9076,-76.8645)}
 board=json.load(open(args.repo+'/data/weekly-board.json'))
+venue_data=json.load(open(args.repo+'/data/nfl-weather-current.json'))
+venue_by_id={v['game_id']:v for v in venue_data['games']}
 def get(u):
     with urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'NFL portal weather QA (forecast research)'}),timeout=25) as r:return json.load(r)
 def dt(t):return datetime.datetime.fromisoformat(t.replace('Z','+00:00'))
@@ -17,7 +19,7 @@ def field_at(values,t):
         if end and dt(start)<=t<end:return x['value']
     return None
 def fetch(g):
-    pair=g['gameId'].split('-',2)[-1]; lat,lon=coords[pair]; t=dt(g['dateTime']); u=f'https://api.weather.gov/points/{lat},{lon}'
+    pair=g['gameId'].split('-',2)[-1]; lat,lon=coords[g['homeAbbr']]; t=dt(g['dateTime']); u=f'https://api.weather.gov/points/{lat},{lon}'
     rec={'game_id':g['gameId'],'kickoff':g['dateTime'],'temp_f':None,'wind_mph':None,'gust_mph':None,'precip_chance_pct':None,'forecast_timestamp':None,'sources':[u]}
     try:
         p=get(u)['properties']; hu=p['forecastHourly']; rec['sources'].append(hu); f=get(hu)['properties']
@@ -32,17 +34,35 @@ def fetch(g):
             if gust is not None:rec['gust_mph']=round(gust*0.621371,1) if grid['windGust'].get('uom')=='wmoUnit:km_h-1' else gust
             rec['gust_unit_original']=grid.get('windGust',{}).get('uom')
         except Exception as e:rec['gust_limitation']=str(e)
-        if pair in ('DEN-LAC','BUF-LAR'):rec['venue_limitation']='SoFi is covered/open-sided; surrounding point forecast is not on-field wind or rain exposure. No automatic weather model adjustment.'
+        if g['homeAbbr'] in ('LAC','LAR'):rec['venue_limitation']='SoFi is covered/open-sided; surrounding point forecast is not on-field wind or rain exposure. No automatic weather model adjustment.'
     except Exception as e:rec['verification_status']='unavailable: '+str(e)
     return rec
-with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:rows=list(pool.map(fetch,[g for g in board['games'] if g['gameId'].split('-',2)[-1] in coords]))
+with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:rows=list(pool.map(fetch,[g for g in board['games'] if g.get('homeAbbr') in coords and g.get('eventState')!='final' and not any(k in str(venue_by_id.get(g['gameId'],{}).get('venue','')).lower() for k in ('wembley','tottenham','berlin','munich','madrid','melbourne','mexico','sao paulo','dublin','paris'))]))
 try:previous=json.load(open(args.output))
 except (OSError,ValueError):previous={}
-if board['season']==2026 and board['week']==5:
-    london=next((g for g in previous.get('games',[]) if g['game_id']=='2026-W5-PHI-JAX'),None)
-    if not london:
-        london={'game_id':'2026-W5-PHI-JAX','kickoff':'2026-10-11T13:30Z','temp_f':59,'wind_mph':2,'gust_mph':9,'precip_chance_pct':None,'precip_chance_upper_bound_pct':5,'precip_chance_display':'<5%','forecast_timestamp':None,'retrieved_at':'2026-10-11T12:46:42+00:00','forecast_hour_start':'2026-10-11T14:00:00+01:00','forecast_hour_end':'2026-10-11T15:00:00+01:00','conditions':'Sunny intervals','wind_direction':'W','verification_status':'verified official Met Office current Sunday Oct 11 hourly table; manual snapshot','sources':['https://weather.metoffice.gov.uk/forecast/gcpvwd6uv?nearestTo=Tottenham+(Haringey)'],'limitations':['Met Office issuance timestamp not exposed; retrieved_at is retrieval time, not issue time.','14:30 BST kickoff bracketed by 14:00 and 15:00 forecasts; both 15 C, wind 2 mph, gust 9 mph, precipitation <5%.','Manual London snapshot is not automatically refreshed by this script.']}
-    rows.append(london)
+# Preserve only fresh selected-week international forecasts reviewed separately.
+for prior in previous.get('games',[]):
+    if prior.get('game_id') in {g['gameId'] for g in board['games']} and prior.get('manual_international') and (datetime.datetime.now(datetime.timezone.utc)-dt(prior.get('retrieved_at','2000-01-01T00:00:00Z'))).total_seconds()<12*3600:rows.append(prior)
+# International venue mapping is explicit; never use the nominal home city's weather.
+for game in board['games']:
+    if game.get('eventState')=='final':continue
+    venue=next((v for v in json.load(open(args.repo+'/data/nfl-weather-current.json'))['games'] if v['game_id']==game['gameId']),{})
+    if 'wembley' not in str(venue.get('venue','')).lower():continue
+    u='https://weather.metoffice.gov.uk/forecast/gcpv39krt'
+    try:
+        with urllib.request.urlopen(u,timeout=25) as response:page=response.read().decode()
+        local=dt(game['dateTime']).astimezone(ZoneInfo('Europe/London'));date=local.date().isoformat()
+        table=re.search(r'<table[^>]*data-date="'+date+r'"[^>]*>(.*?)</table>',page,re.S).group(1)
+        clean=lambda x:re.sub(r'<[^>]+>',' ',x).strip()
+        trs=re.findall(r'<tr[^>]*>(.*?)</tr>',table,re.S)
+        cells=lambda row:re.findall(r'<td[^>]*>(.*?)</td>',row,re.S)
+        times=[clean(c) for c in cells(trs[0])];hour=local.hour%12 or 12;label=str(hour)+('pm' if local.hour>=12 else 'am');ix=times.index(label)
+        number=lambda x:float(re.search(r'-?\d+(?:\.\d+)?',clean(x)).group())
+        temp=cells(trs[1])[ix];condition=re.search(r'alt="([^"]+)"',temp).group(1)
+        precip=number(cells(trs[3])[ix]);wind=number(cells(trs[4])[ix]);gust=number(cells(trs[5])[ix])
+        rows=[r for r in rows if r['game_id']!=game['gameId']]
+        rows.append({'game_id':game['gameId'],'kickoff':game['dateTime'],'temp_f':round(number(temp)*9/5+32,1),'wind_mph':wind,'gust_mph':gust,'precip_chance_pct':precip,'forecast_timestamp':None,'retrieved_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'forecast_hour_start':local.replace(minute=0,second=0).isoformat(),'forecast_hour_end':(local.replace(minute=0,second=0)+datetime.timedelta(hours=1)).isoformat(),'conditions':condition,'verification_status':'verified official Met Office kickoff-containing hourly forecast','sources':[u],'limitations':['Hourly forecast is not an on-field observation. Issuance time unavailable; retrieved_at records retrieval.']})
+    except Exception as e:rows.append({'game_id':game['gameId'],'verification_status':'unavailable: international forecast '+str(e),'sources':[u]})
 venue_data=json.load(open(args.repo+'/data/nfl-weather-current.json'))
 for g in board['games']:
     if g.get('eventState')=='final':continue

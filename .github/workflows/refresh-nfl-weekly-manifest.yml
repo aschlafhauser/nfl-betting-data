@@ -45,6 +45,8 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Refresh canonical and live-portal NFL market runtime
         run: node scripts/refresh-live-portal-runtime.mjs
+      - name: Refresh official selected-week injury designations
+        run: python scripts/refresh-official-injuries.py
       - name: Refresh official kickoff-hour weather forecasts
         run: python scripts/refresh-weather-forecasts.py
       - name: Rebuild selected-week models, prior-week stats, Deep Dives and upset research
@@ -125,6 +127,8 @@ jobs:
         run: node scripts/freeze-pre-kickoff-snapshots.mjs
       - name: Capture immutable final results and CLV status when games complete
         run: node scripts/capture-results-clv.mjs
+      - name: Reconcile narratives to final governed prices
+        run: node scripts/reconcile-current-narratives.mjs
       - name: Rebuild selected-week manifest
         run: node scripts/refresh-weekly-manifest.mjs
       - name: Persist governed NFL runtime safely

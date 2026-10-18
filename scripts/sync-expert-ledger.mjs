@@ -73,7 +73,7 @@ const sourceAuditPath='data/expert-source-audit.json',coveragePath='data/expert-
 const sourceAudit=await read(sourceAuditPath).catch(()=>({season:Number(board?.season||2026),sources:[]}));
 const coverage=await read(coveragePath).catch(()=>({season:Number(board?.season||2026),requiredSourceFamilies:[],sources:[]}));
 const finding=audacyReachable
-  ?`Audacy You Better You Bet episode index checked ${auditDay} for selected Week ${selectedWeek}. Accessible public metadata did not yield an attributable governed Week ${selectedWeek} pick at this checkpoint; zero selections were inferred from titles or metadata.`
+  ?`Audacy You Better You Bet episode index checked ${auditDay} for selected Week ${selectedWeek}. HTTP availability checked only; episode contents/transcripts were not reviewed by this reconciliation job. No Week ${selectedWeek} pick was inferred.`
   :`Audacy You Better You Bet episode index check failed ${auditDay} for selected Week ${selectedWeek} (HTTP ${audacyHttpStatus??'unavailable'}${audacyError?'; '+audacyError:''}). No selection was inferred.`;
 const ybybKey=norm('You Better You Bet');
 selectedWeekChecks.set(ybybKey,{...(selectedWeekChecks.get(ybybKey)||{}),sourceFamily:'You Better You Bet',status:audacyReachable?'active-current-source-limited':'check-failed',sourceUrl:audacyUrl,latestFinding:finding,checkedAt:auditIso});
@@ -87,6 +87,7 @@ for(const row of sourceAudit.sources||[]){
   const check=selectedWeekChecks.get(norm(row.sourceFamily));
   if(!check)continue;
   row.status=check.status||'active-current-source-limited';
+  row.checkedAt=check.checkedAt||null;
   row.latestChecked=String(check.checkedAt||auditIso).slice(0,10);
   row.selectedWeek=selectedWeek;
   row.selectedWeekRecordCount=selectedWeekRecordCounts.get(norm(row.sourceFamily))||0;
@@ -98,8 +99,9 @@ for(const row of coverage.sources||[]){
   for(const k of Object.keys(row))if(/^week\d+RecordCount$/.test(k))delete row[k];
   const check=selectedWeekChecks.get(norm(row.sourceFamily));
   row.selectedWeekRecordCount=selectedWeekRecordCounts.get(norm(row.sourceFamily))||0;
-  row.current=Boolean(check)&&!/fail|stale|missing/i.test(String(check.status||''));
+  row.current=Boolean(check)&&Date.now()-Date.parse(check.checkedAt||'')<48*3600000&&!/fail|stale|missing/i.test(String(check.status||''));
   row.status=check?.status||'missing-selected-week-audit';
+  row.checkedAt=check?.checkedAt||null;
   row.latestChecked=check?.checkedAt?String(check.checkedAt).slice(0,10):null;
   row.latestFinding=check?.latestFinding||`No governed source audit exists for selected Week ${selectedWeek}.`;
   if(check?.sourceUrl)row.sourceUrl=check.sourceUrl;
