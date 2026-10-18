@@ -2,8 +2,8 @@
   "version": "NFL-WEEKLY-MANIFEST-v3",
   "season": 2026,
   "week": 6,
-  "updatedAt": "2026-10-18T11:26:08.851Z",
-  "status": "PASS-WITH-WARNINGS",
+  "updatedAt": "2026-10-18T12:01:41.687Z",
+  "status": "PASS",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-10-18.json",
   "gates": {
@@ -36,33 +36,31 @@
     "statisticalDisplay": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-10-18T11:26:06.317505+00:00",
+      "verifiedAt": "2026-10-18T12:01:39.628889+00:00",
       "artifact": "data/statistical-display-integrity-2026-w6.json",
       "note": "32 observed season-to-date profiles through Week 5; defensive yardage independently aggregated from each opponent box score. Advanced inputs use the same pregame cutoff."
     },
     "marketDerivedIntegrity": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-10-18T11:26:01.458Z",
+      "verifiedAt": "2026-10-18T12:01:33.674Z",
       "artifact": "data/market-derived-integrity-2026-w6.json",
       "note": "All 14 current spread-derived production fairs independently reconciled as 80% market + 20% frozen structural line with calculation timestamps at/after market dependency."
     },
     "currentWeekCompleteness": {
-      "status": "PASS-WITH-WARNINGS",
+      "status": "PASS",
       "blocking": true,
       "unplayedGames": 13,
       "freshMarketGames": 13,
       "calculationFreshGames": 13,
-      "moneylineAvailableGames": 0,
+      "moneylineAvailableGames": 13,
       "availabilityCheckpointDue": 12,
       "availabilityCheckpointComplete": 12,
       "weatherCheckpointDue": 12,
       "weatherCheckpointComplete": 12,
       "upsetLabVerified": true,
       "issues": [],
-      "warnings": [
-        "exact moneyline available for 0/13; missing prices remain PRICE_PENDING and are never inferred"
-      ],
+      "warnings": [],
       "note": "Wednesday certification requires fresh spread/total, selected-week model calculations, universal Deep Dives and upset research. Exact ML, final injury designations and weather become blocking only when their execution checkpoints are due; missing values are never inferred."
     },
     "homeMarginConvention": {
@@ -76,11 +74,23 @@
       "ledgerSyncReport": "data/expert-ledger-reconciliation.json",
       "sourceCoverageReport": "data/expert-source-coverage-current.json",
       "sourceCoverage": "8/8",
-      "selectedWeekRecords": 29,
-      "youBetterYouBetStatus": "active-current-source-limited",
+      "selectedWeekRecords": 213,
+      "youBetterYouBetStatus": "active-current-transcript-reviewed",
       "youBetterYouBetChecked": "2026-10-18",
       "pointImpact": 0,
-      "note": "Expert Intelligence remains a qualitative residual with zero automatic model impact. Primary ledger is losslessly synchronized (234 ledger records; 0 missing). Selected-week source inventory is complete; 8/8 families currently have selected-week checks and 29 attributable Week 6 records. You Better You Bet/Audacy is current and source-limited with zero inferred picks."
+      "note": "Expert Intelligence remains a qualitative residual with zero automatic model impact. Primary ledger is losslessly synchronized (418 ledger records; 0 missing). Selected-week source inventory is complete; 8/8 families currently have selected-week checks and 213 attributable Week 6 records. You Better You Bet/Audacy has a current substantive source check with zero title-inferred picks."
+    },
+    "podcastTranscripts": {
+      "status": "PASS",
+      "blocking": true,
+      "artifact": "data/expert-podcast-process-current.json",
+      "requiredEpisodes": 10,
+      "completedTranscripts": 10,
+      "reviewedEpisodes": 10,
+      "minutesReviewed": 581.8,
+      "sourceFamilies": 6,
+      "pointImpact": 0,
+      "note": "10/10 selected public episodes have complete automated transcripts and NFL-material reviews across 6 source families. Only this explicit inventory is certified; publisher-certified transcripts, premium content and executable book quotes are separate. Missing future-week review cannot inherit a prior-week PASS."
     },
     "upsetResearchIsolation": {
       "status": "PASS",
@@ -96,7 +106,7 @@
       "artifact": "data/player-props-expert.json",
       "artifactWeek": 6,
       "selectedWeek": 6,
-      "verifiedRecommendations": 6,
+      "verifiedRecommendations": 24,
       "watchlistRows": 0,
       "verification": {
         "seasonMatch": true,
@@ -124,14 +134,10 @@
       "note": "Historical snapshot debt from prior weeks is retained separately and never rewritten; completed games are exempt from live freshness."
     },
     "timeLimitedOverlays": {
-      "status": "IN_PROGRESS",
-      "items": [
-        "exact moneyline available for 0/13; missing prices remain PRICE_PENDING and are never inferred"
-      ]
+      "status": "PASS",
+      "items": []
     }
   },
   "failures": [],
-  "historicalWarnings": [
-    "exact moneyline available for 0/13; missing prices remain PRICE_PENDING and are never inferred"
-  ]
+  "historicalWarnings": []
 }
