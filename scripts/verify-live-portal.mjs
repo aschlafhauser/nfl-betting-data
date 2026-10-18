@@ -64,12 +64,12 @@ try{
  if(propCount!==activeProps.length)fail('Live props count '+propCount+' differs from '+activeProps.length+' upcoming source opinions');
  const propText=await page.locator('#propContent').innerText();
  for(const p of activeProps)if(!propText.includes(p.player)||(p.thesis&&!propText.includes(p.thesis)))fail('Live prop evidence missing: '+p.id);
+ if(propCount){await page.locator('#propSearch').fill('no-such-player-qa');if(!/No recommendations match/.test(await page.locator('#propContent').innerText()))fail('Props search failed');await page.locator('#propSearch').fill('');}
  await page.getByRole('button',{name:'Upset Lab',exact:true}).click();
  const upset=await read('data/nfl-upset-lab.json'),upsetText=await page.locator('#upsetContent').innerText();
  const qualifiers=(upset.candidates||[]).filter(x=>x.eligible&&upcomingIds.has(x.game_id));
  if(!upsetText.includes(`${qualifiers.length} verified +250 qualifiers`))fail('Live Upset Lab qualifier count mismatch');
  for(const p of [...qualifiers,...(upset.near_threshold_watch||[])])if(!upsetText.includes(p.team+' '+p.moneyline))fail('Live Upset Lab price missing: '+p.team);
- if(propCount){await page.locator('#propSearch').fill('no-such-player-qa');if(!/No recommendations match/.test(await page.locator('#propContent').innerText()))fail('Props search failed');await page.locator('#propSearch').fill('');}
  for(const width of [390,768]){
   await page.setViewportSize({width,height:844});
   const overflow=[];
