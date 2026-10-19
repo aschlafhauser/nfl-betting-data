@@ -2,8 +2,8 @@
   "version": "NFL-WEEKLY-MANIFEST-v3",
   "season": 2026,
   "week": 6,
-  "updatedAt": "2026-10-19T07:56:55.600Z",
-  "status": "FAIL",
+  "updatedAt": "2026-10-19T13:23:39.790Z",
+  "status": "PASS",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-10-19.json",
   "gates": {
@@ -36,14 +36,14 @@
     "statisticalDisplay": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-10-19T07:56:53.348018+00:00",
+      "verifiedAt": "2026-10-19T13:23:37.829330+00:00",
       "artifact": "data/statistical-display-integrity-2026-w6.json",
       "note": "32 observed season-to-date profiles through Week 5; defensive yardage independently aggregated from each opponent box score. Advanced inputs use the same pregame cutoff."
     },
     "marketDerivedIntegrity": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-10-19T07:56:44.714Z",
+      "verifiedAt": "2026-10-19T13:23:30.825Z",
       "artifact": "data/market-derived-integrity-2026-w6.json",
       "note": "All 14 current spread-derived production fairs independently reconciled as 80% market + 20% frozen structural line with calculation timestamps at/after market dependency."
     },
@@ -69,16 +69,16 @@
     },
     "expertIntelligence": {
       "blocking": true,
-      "status": "FAIL",
+      "status": "PASS",
       "primaryLedgerStatus": "SYNCHRONIZED",
       "ledgerSyncReport": "data/expert-ledger-reconciliation.json",
       "sourceCoverageReport": "data/expert-source-coverage-current.json",
       "sourceCoverage": "8/8",
       "selectedWeekRecords": 213,
       "youBetterYouBetStatus": "active-current-transcript-reviewed",
-      "youBetterYouBetChecked": "2026-10-18",
+      "youBetterYouBetChecked": "2026-10-19",
       "pointImpact": 0,
-      "note": "Expert Intelligence remains a qualitative residual with zero automatic model impact. Primary ledger is losslessly synchronized (418 ledger records; 0 missing). Selected-week source inventory is complete; 8/8 families currently have selected-week checks and 213 attributable Week 6 records. You Better You Bet/Audacy is stale, missing or failed."
+      "note": "Expert Intelligence remains a qualitative residual with zero automatic model impact. Primary ledger is losslessly synchronized (418 ledger records; 0 missing). Selected-week source inventory is complete; 8/8 families currently have selected-week checks and 213 attributable Week 6 records. You Better You Bet/Audacy has a current substantive source check with zero title-inferred picks."
     },
     "podcastTranscripts": {
       "status": "PASS",
@@ -138,8 +138,6 @@
       "items": []
     }
   },
-  "failures": [
-    "EXPERTINTELLIGENCE_INCOMPLETE"
-  ],
+  "failures": [],
   "historicalWarnings": []
 }
