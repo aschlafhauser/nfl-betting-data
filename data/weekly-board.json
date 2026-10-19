@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 6,
-  "updatedAt": "2026-10-18T23:24:16.746662+00:00",
+  "updatedAt": "2026-10-19T01:27:51.147893+00:00",
   "scheduleSource": "ESPN selected-week rollover",
   "marketSource": "Current ESPN NFL selected-week odds feed; exact sportsbook/juice required before execution",
   "games": [
@@ -742,7 +742,7 @@
       "priority": "High",
       "marketSource": "ESPN DraftKings",
       "marketObservedAt": "2026-10-18T18:12:59.775Z",
-      "eventState": "scheduled",
+      "eventState": "final",
       "validatedStructuralSpread": "Kansas City Chiefs -3.4",
       "structuralHomeMargin": 3.45,
       "productionTotal": 41.5,
@@ -813,7 +813,7 @@
       "stage": "high-priority-audit",
       "priority": "High",
       "marketObservedAt": "2026-10-18T18:12:59.775Z",
-      "eventState": "scheduled",
+      "eventState": "final",
       "validatedStructuralSpread": "Buffalo Bills -8.4",
       "structuralHomeMargin": -8.395,
       "productionTotal": 53.5,
@@ -878,7 +878,7 @@
       "homeAbbr": "GB",
       "currentSpread": "Dallas Cowboys -1.5",
       "currentTotal": 53.5,
-      "currentMoneyline": "DAL -112 / GB -108",
+      "currentMoneyline": null,
       "productionSpread": "Green Bay Packers -0.2",
       "productionHomeMargin": 0.205,
       "modelEdge": 2.259,
@@ -892,7 +892,7 @@
       "productionTotal": 53.5,
       "structuralEdge": 8.524,
       "structuralLean": "GB",
-      "modelCalculatedAt": "2026-10-18T23:24:14.082Z",
+      "modelCalculatedAt": "2026-10-19T01:27:47.022Z",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.775,
@@ -934,10 +934,10 @@
       "advancedProcessAdjustment": -2.772,
       "motionMatchupAdjustment": 0.0,
       "moneyline": {
-        "away": -112,
-        "home": -108,
-        "observedAt": "2026-10-18T23:24:12.785Z",
-        "source": "ESPN DraftKings",
+        "away": null,
+        "home": null,
+        "observedAt": null,
+        "source": null,
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100"
       }
     },
@@ -956,15 +956,15 @@
       "modelEdge": 0.047,
       "stage": "no-signal",
       "priority": "Low",
-      "marketSource": "ESPN DraftKings",
-      "marketObservedAt": "2026-10-18T23:24:12.785Z",
+      "marketSource": "ESPN Draft Kings",
+      "marketObservedAt": "2026-10-19T01:27:45.830Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "San Francisco 49ers -8",
       "structuralHomeMargin": 8.003,
       "productionTotal": 52.5,
       "structuralEdge": 0.503,
       "structuralLean": "SF",
-      "modelCalculatedAt": "2026-10-18T23:24:14.082Z",
+      "modelCalculatedAt": "2026-10-19T01:27:47.022Z",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.775,
@@ -1008,22 +1008,22 @@
       "moneyline": {
         "away": 350,
         "home": -455,
-        "observedAt": "2026-10-18T23:24:12.785Z",
-        "source": "ESPN DraftKings",
+        "observedAt": "2026-10-19T01:27:45.830Z",
+        "source": "ESPN Draft Kings",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100"
       }
     }
   ],
   "runtimeRefresh": {
     "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=6&limit=100",
-    "observedAt": "2026-10-18T23:24:12.785Z",
+    "observedAt": "2026-10-19T01:27:45.830Z",
     "espnEvents": 14,
-    "currentOddsGames": 2,
+    "currentOddsGames": 1,
     "identityNormalization": "registry v1: canonical abbreviations and aliases normalized before joins"
   },
   "modelReview": {
     "status": "COMPLETE",
-    "reviewedAt": "2026-10-18T23:24:14.082Z",
+    "reviewedAt": "2026-10-19T01:27:47.022Z",
     "methodologyVersion": "1.1-validated-structural-market-aware+expert-intelligence-v1",
     "phase": {
       "preseasonWeight": 0.775,

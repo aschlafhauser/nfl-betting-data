@@ -1,64 +1,16 @@
 {
   "season": 2026,
   "week": 6,
-  "generated_at": "2026-10-18T23:24:14.082Z",
+  "generated_at": "2026-10-19T01:27:47.022Z",
   "method": "Wednesday spread-based upset screen plus exact-price governance",
   "coverage": {
     "all_current_threshold_candidates_represented": true,
     "selected_week_games": 14,
-    "spread_screen_candidates": 1,
+    "spread_screen_candidates": 0,
     "near_threshold_watch": 0,
     "price_policy": "Exact moneylines never inferred from spreads."
   },
   "candidates": [
-    {
-      "game_id": "2026-W6-LAC-KC",
-      "team": "LAC",
-      "moneyline": null,
-      "eligible": false,
-      "nearThreshold": false,
-      "status": "PRICE_PENDING",
-      "minimum_playable_ml": "PRICE_PENDING",
-      "priceSource": null,
-      "priceObservedAt": null,
-      "market_implied_probability": null,
-      "reason": null,
-      "spread": "Kansas City Chiefs -7.5",
-      "structuralFair": "Kansas City Chiefs -3.4",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Los Angeles Chargers is 7.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Current structural lean LAC; structural fair Kansas City Chiefs -3.4."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Preseason prior 1.48 vs opponent 2.64."
-        },
-        {
-          "name": "recent-form",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Prior-week scoring margin -6."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
-    },
     {
       "game_id": "2026-W6-WSH-SF",
       "team": "WSH",
@@ -67,8 +19,8 @@
       "nearThreshold": false,
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-10-18T23:24:12.785Z",
+      "priceSource": "ESPN Draft Kings",
+      "priceObservedAt": "2026-10-19T01:27:45.830Z",
       "market_implied_probability": 0.2222,
       "reason": null,
       "spread": "San Francisco 49ers -7.5",
@@ -105,59 +57,10 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 350 via ESPN DraftKings; threshold qualification is separate from recommendation."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 350 via ESPN Draft Kings; threshold qualification is separate from recommendation."
     }
   ],
   "near_threshold_watch": [],
-  "price_pending": [
-    {
-      "game_id": "2026-W6-LAC-KC",
-      "team": "LAC",
-      "moneyline": null,
-      "eligible": false,
-      "nearThreshold": false,
-      "status": "PRICE_PENDING",
-      "minimum_playable_ml": "PRICE_PENDING",
-      "priceSource": null,
-      "priceObservedAt": null,
-      "market_implied_probability": null,
-      "reason": null,
-      "spread": "Kansas City Chiefs -7.5",
-      "structuralFair": "Kansas City Chiefs -3.4",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Los Angeles Chargers is 7.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Current structural lean LAC; structural fair Kansas City Chiefs -3.4."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Preseason prior 1.48 vs opponent 2.64."
-        },
-        {
-          "name": "recent-form",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Prior-week scoring margin -6."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
-    }
-  ],
-  "narrativeReconciledAt": "2026-10-18T23:24:21.448Z"
+  "price_pending": [],
+  "narrativeReconciledAt": "2026-10-19T01:27:57.005Z"
 }
