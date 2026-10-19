@@ -77,10 +77,23 @@ const finding=audacyReachable
   :`Audacy You Better You Bet episode index check failed ${auditDay} for selected Week ${selectedWeek} (HTTP ${audacyHttpStatus??'unavailable'}${audacyError?'; '+audacyError:''}). No selection was inferred.`;
 const ybybKey=norm('You Better You Bet');
 const priorYbyb=selectedWeekChecks.get(ybybKey);
-// HTTP reachability cannot replace or renew a substantive episode review.
-if(!priorYbyb||Date.now()-Date.parse(priorYbyb.checkedAt||'')>=48*3600000||/fail|missing|stale/i.test(String(priorYbyb.status||''))){
- selectedWeekChecks.set(ybybKey,{sourceFamily:'You Better You Bet',status:audacyReachable?'active-current-source-limited':'check-failed',sourceUrl:audacyUrl,latestFinding:finding,checkedAt:priorYbyb?.checkedAt||null});
-}
+// Persist a same-run official index check every time. A successful HTTP/index
+// check may preserve a current substantive transcript-review status, but it
+// never creates or infers a pick and never masquerades as a new transcript
+// review. A failed daily check remains a hard governance failure.
+const substantiveReviewed=Boolean(priorYbyb)&&/transcript-reviewed/i.test(String(priorYbyb.status||''))&&!/fail|missing|stale/i.test(String(priorYbyb.status||''));
+const dailyStatus=audacyReachable?(substantiveReviewed?priorYbyb.status:'active-current-source-limited'):'check-failed';
+const substantiveFinding=substantiveReviewed&&priorYbyb?.latestFinding?String(priorYbyb.latestFinding).trim():'';
+selectedWeekChecks.set(ybybKey,{
+ sourceFamily:'You Better You Bet',
+ status:dailyStatus,
+ sourceUrl:audacyUrl,
+ latestFinding:[substantiveFinding,finding].filter(Boolean).join(' '),
+ checkedAt:auditIso,
+ substantiveCheckedAt:substantiveReviewed?priorYbyb.checkedAt||null:null,
+ httpStatus:audacyHttpStatus,
+ noTitleInference:true
+});
 
 const selectedWeekRecordCounts=new Map();
 for(const record of candidates){
