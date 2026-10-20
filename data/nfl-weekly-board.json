@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 7,
-  "generated_at": "2026-10-20T11:53:18.806Z",
+  "generated_at": "2026-10-20T13:40:06.832Z",
   "schedule_source": "Canonical selected-week NFL board + ESPN scoreboard reconciliation",
   "market_source": "ESPN selected-week odds feed; exact sportsbook/juice required before execution",
   "games": [
@@ -15,8 +15,8 @@
       "kickoff": "2026-10-23T00:15Z",
       "kickoff_local": "2026-10-23T00:15Z",
       "tv": "Prime Video",
-      "priority": "Medium",
-      "stage": "Pre-scan",
+      "priority": "High",
+      "stage": "high-priority-audit",
       "market": {
         "spread_display": "Chicago Bears -3",
         "spread": "CHI -3",
@@ -27,25 +27,64 @@
           "away": 124,
           "home": -148
         },
-        "source": "ESPN DraftKings",
-        "timestamp": "2026-10-20T11:53:18.806Z",
+        "source": "ESPN Draft Kings",
+        "timestamp": "2026-10-20T13:39:54.689Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": -3,
+        "fair_spread_display": "Chicago Bears -2.3",
+        "fair_spread_home_margin": 2.321,
+        "executable_edge": -0.679,
         "edge_side": "NE",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-10-20T11:53:18.806Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-10-20T13:40:06.832Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Chicago Bears -2.3",
+        "structural_home_margin": -0.393,
+        "structural_edge": 3.393,
+        "base_structural_home_margin": -0.138,
+        "advanced_process_adjustment": -0.255,
+        "motion_matchup_adjustment": 0,
+        "structural_fair": "New England Patriots -0.4",
+        "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
+        "advanced_process": {
+          "throughWeek": 6,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 1.108,
+          "homeProcessRatingPoints": 0.894,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -0.255
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": -0.016,
+          "earlySample": true,
+          "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
+        }
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 7 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-20T13:40:06.832Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "high-priority-audit",
+        "priority": "High",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401873011",
@@ -57,8 +96,8 @@
       "kickoff": "2026-10-25T13:30Z",
       "kickoff_local": "2026-10-25T13:30Z",
       "tv": "NFL Net",
-      "priority": "Medium",
-      "stage": "Pre-scan",
+      "priority": "High",
+      "stage": "high-priority-audit",
       "market": {
         "spread_display": "Pittsburgh Steelers -3.5",
         "spread": "PIT -3",
@@ -69,25 +108,64 @@
           "away": -180,
           "home": 150
         },
-        "source": "ESPN DraftKings",
-        "timestamp": "2026-10-20T11:53:18.806Z",
+        "source": "ESPN Draft Kings",
+        "timestamp": "2026-10-20T13:39:54.689Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": 3.5,
+        "fair_spread_display": "Pittsburgh Steelers -2.9",
+        "fair_spread_home_margin": -2.941,
+        "executable_edge": 0.559,
         "edge_side": "NO",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-10-20T11:53:18.806Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-10-20T13:40:06.832Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Pittsburgh Steelers -2.9",
+        "structural_home_margin": -0.705,
+        "structural_edge": 2.795,
+        "base_structural_home_margin": -0.33,
+        "advanced_process_adjustment": -0.375,
+        "motion_matchup_adjustment": 0,
+        "structural_fair": "Pittsburgh Steelers -0.7",
+        "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
+        "advanced_process": {
+          "throughWeek": 6,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -0.314,
+          "homeProcessRatingPoints": -2.101,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -0.375
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": -0.558,
+          "earlySample": true,
+          "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
+        }
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 7 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-20T13:40:06.832Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "high-priority-audit",
+        "priority": "High",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401873017",
@@ -99,8 +177,8 @@
       "kickoff": "2026-10-25T17:00Z",
       "kickoff_local": "2026-10-25T17:00Z",
       "tv": "Fox",
-      "priority": "Medium",
-      "stage": "Pre-scan",
+      "priority": "High",
+      "stage": "high-priority-audit",
       "market": {
         "spread_display": "San Francisco 49ers -3.5",
         "spread": null,
@@ -108,28 +186,67 @@
         "home_margin": -3.5,
         "home_team_sportsbook_spread": 3.5,
         "moneyline": {
-          "away": -218,
-          "home": 180
+          "away": -205,
+          "home": 170
         },
-        "source": "ESPN DraftKings",
-        "timestamp": "2026-10-20T11:53:18.806Z",
+        "source": "ESPN Draft Kings",
+        "timestamp": "2026-10-20T13:39:54.689Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": 3.5,
-        "edge_side": "ATL",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-10-20T11:53:18.806Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "fair_spread_display": "San Francisco 49ers -4.3",
+        "fair_spread_home_margin": -4.25,
+        "executable_edge": -0.75,
+        "edge_side": "SF",
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-10-20T13:40:06.832Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "San Francisco 49ers -4.3",
+        "structural_home_margin": -7.252,
+        "structural_edge": 3.752,
+        "base_structural_home_margin": -9.333,
+        "advanced_process_adjustment": 2.081,
+        "motion_matchup_adjustment": 0,
+        "structural_fair": "San Francisco 49ers -7.3",
+        "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
+        "advanced_process": {
+          "throughWeek": 6,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 4.72,
+          "homeProcessRatingPoints": 0.629,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": 2.081
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": 0.392,
+          "earlySample": true,
+          "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
+        }
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 7 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-20T13:40:06.832Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "high-priority-audit",
+        "priority": "High",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401873013",
@@ -141,8 +258,8 @@
       "kickoff": "2026-10-25T17:00Z",
       "kickoff_local": "2026-10-25T17:00Z",
       "tv": "CBS",
-      "priority": "Medium",
-      "stage": "Pre-scan",
+      "priority": "High",
+      "stage": "high-priority-audit",
       "market": {
         "spread_display": "Cleveland Browns -1.5",
         "spread": "CLE -1.5",
@@ -153,25 +270,64 @@
           "away": -130,
           "home": 110
         },
-        "source": "ESPN DraftKings",
-        "timestamp": "2026-10-20T11:53:18.806Z",
+        "source": "ESPN Draft Kings",
+        "timestamp": "2026-10-20T13:39:54.689Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": 1.5,
+        "fair_spread_display": "Cleveland Browns -0.6",
+        "fair_spread_home_margin": -0.645,
+        "executable_edge": 0.855,
         "edge_side": "TEN",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-10-20T11:53:18.806Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-10-20T13:40:06.832Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Cleveland Browns -0.6",
+        "structural_home_margin": 2.774,
+        "structural_edge": 4.274,
+        "base_structural_home_margin": 3.592,
+        "advanced_process_adjustment": -0.818,
+        "motion_matchup_adjustment": 0,
+        "structural_fair": "Tennessee Titans -2.8",
+        "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
+        "advanced_process": {
+          "throughWeek": 6,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -1.389,
+          "homeProcessRatingPoints": -2.286,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -0.818
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": -0.096,
+          "earlySample": true,
+          "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
+        }
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 7 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-20T13:40:06.832Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "high-priority-audit",
+        "priority": "High",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401873014",
@@ -184,7 +340,7 @@
       "kickoff_local": "2026-10-25T17:00Z",
       "tv": "CBS",
       "priority": "Medium",
-      "stage": "Pre-scan",
+      "stage": "potential-research",
       "market": {
         "spread_display": "Minnesota Vikings -6.5",
         "spread": "MIN -6",
@@ -195,25 +351,64 @@
           "away": 225,
           "home": -278
         },
-        "source": "ESPN DraftKings",
-        "timestamp": "2026-10-20T11:53:18.806Z",
+        "source": "ESPN Draft Kings",
+        "timestamp": "2026-10-20T13:39:54.689Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": -6.5,
+        "fair_spread_display": "Minnesota Vikings -5.8",
+        "fair_spread_home_margin": 5.816,
+        "executable_edge": -0.684,
         "edge_side": "IND",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-10-20T11:53:18.806Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "medium",
+        "edge_reconciled_at": "2026-10-20T13:40:06.832Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Minnesota Vikings -5.8",
+        "structural_home_margin": 3.08,
+        "structural_edge": 3.42,
+        "base_structural_home_margin": 3.683,
+        "advanced_process_adjustment": -0.603,
+        "motion_matchup_adjustment": 0,
+        "structural_fair": "Minnesota Vikings -3.1",
+        "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
+        "advanced_process": {
+          "throughWeek": 6,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -1.638,
+          "homeProcessRatingPoints": 2.21,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -0.603
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": -0.46,
+          "earlySample": true,
+          "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
+        }
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 7 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-20T13:40:06.832Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "potential-research",
+        "priority": "Medium",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401873015",
@@ -225,8 +420,8 @@
       "kickoff": "2026-10-25T17:00Z",
       "kickoff_local": "2026-10-25T17:00Z",
       "tv": "CBS",
-      "priority": "Medium",
-      "stage": "Pre-scan",
+      "priority": "High",
+      "stage": "high-priority-audit",
       "market": {
         "spread_display": "New York Jets -4.5",
         "spread": "NYJ -4.5",
@@ -237,25 +432,64 @@
           "away": 190,
           "home": -230
         },
-        "source": "ESPN DraftKings",
-        "timestamp": "2026-10-20T11:53:18.806Z",
+        "source": "ESPN Draft Kings",
+        "timestamp": "2026-10-20T13:39:54.689Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": -4.5,
+        "fair_spread_display": "New York Jets -3.6",
+        "fair_spread_home_margin": 3.608,
+        "executable_edge": -0.892,
         "edge_side": "MIA",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-10-20T11:53:18.806Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-10-20T13:40:06.832Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "New York Jets -3.6",
+        "structural_home_margin": 0.038,
+        "structural_edge": 4.462,
+        "base_structural_home_margin": -0.982,
+        "advanced_process_adjustment": 1.02,
+        "motion_matchup_adjustment": 0,
+        "structural_fair": "Pick",
+        "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
+        "advanced_process": {
+          "throughWeek": 6,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -2.871,
+          "homeProcessRatingPoints": -0.235,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": 1.02
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": 0,
+          "earlySample": true,
+          "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
+        }
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 7 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-20T13:40:06.832Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "high-priority-audit",
+        "priority": "High",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401873018",
@@ -267,8 +501,8 @@
       "kickoff": "2026-10-25T17:00Z",
       "kickoff_local": "2026-10-25T17:00Z",
       "tv": "Fox",
-      "priority": "Medium",
-      "stage": "Pre-scan",
+      "priority": "High",
+      "stage": "high-priority-audit",
       "market": {
         "spread_display": "Carolina Panthers -3.5",
         "spread": "CAR -3.5",
@@ -279,25 +513,64 @@
           "away": 160,
           "home": -192
         },
-        "source": "ESPN DraftKings",
-        "timestamp": "2026-10-20T11:53:18.806Z",
+        "source": "ESPN Draft Kings",
+        "timestamp": "2026-10-20T13:39:54.689Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": -3.5,
-        "edge_side": "TB",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-10-20T11:53:18.806Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "fair_spread_display": "Carolina Panthers -3.9",
+        "fair_spread_home_margin": 3.926,
+        "executable_edge": 0.426,
+        "edge_side": "CAR",
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-10-20T13:40:06.832Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Carolina Panthers -3.9",
+        "structural_home_margin": 5.628,
+        "structural_edge": 2.128,
+        "base_structural_home_margin": 9.025,
+        "advanced_process_adjustment": -3.397,
+        "motion_matchup_adjustment": 0,
+        "structural_fair": "Carolina Panthers -5.6",
+        "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
+        "advanced_process": {
+          "throughWeek": 6,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -0.509,
+          "homeProcessRatingPoints": 1.315,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -3.397
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": -0.88,
+          "earlySample": true,
+          "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
+        }
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 7 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-20T13:40:06.832Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "high-priority-audit",
+        "priority": "High",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401873012",
@@ -309,37 +582,76 @@
       "kickoff": "2026-10-25T17:00Z",
       "kickoff_local": "2026-10-25T17:00Z",
       "tv": "CBS",
-      "priority": "Medium",
-      "stage": "Pre-scan",
+      "priority": "Low",
+      "stage": "no-signal",
       "market": {
-        "spread_display": "Baltimore Ravens -3",
+        "spread_display": "Baltimore Ravens -2.5",
         "spread": "BAL -2.5",
         "total": 51.5,
-        "home_margin": 3,
-        "home_team_sportsbook_spread": -3,
+        "home_margin": 2.5,
+        "home_team_sportsbook_spread": -2.5,
         "moneyline": {
           "away": 124,
           "home": -148
         },
-        "source": "ESPN DraftKings",
-        "timestamp": "2026-10-20T11:53:18.806Z",
+        "source": "ESPN Draft Kings",
+        "timestamp": "2026-10-20T13:39:54.689Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": -3,
-        "edge_side": "CIN",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-10-20T11:53:18.806Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "fair_spread_display": "Baltimore Ravens -2.5",
+        "fair_spread_home_margin": 2.543,
+        "executable_edge": 0.043,
+        "edge_side": "BAL",
+        "confidence": "low",
+        "edge_reconciled_at": "2026-10-20T13:40:06.832Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Baltimore Ravens -2.5",
+        "structural_home_margin": 2.716,
+        "structural_edge": 0.216,
+        "base_structural_home_margin": 2.011,
+        "advanced_process_adjustment": 0.705,
+        "motion_matchup_adjustment": 0,
+        "structural_fair": "Baltimore Ravens -2.7",
+        "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
+        "advanced_process": {
+          "throughWeek": 6,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 0.919,
+          "homeProcessRatingPoints": 2.836,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": 0.705
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": 0,
+          "earlySample": true,
+          "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
+        }
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 7 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-20T13:40:06.832Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "no-signal",
+        "priority": "Low",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401873016",
@@ -351,8 +663,8 @@
       "kickoff": "2026-10-25T17:00Z",
       "kickoff_local": "2026-10-25T17:00Z",
       "tv": "Fox",
-      "priority": "Medium",
-      "stage": "Pre-scan",
+      "priority": "Low",
+      "stage": "no-signal",
       "market": {
         "spread_display": "Houston Texans -10",
         "spread": "HOU -9.5",
@@ -363,25 +675,64 @@
           "away": 390,
           "home": -520
         },
-        "source": "ESPN DraftKings",
-        "timestamp": "2026-10-20T11:53:18.806Z",
+        "source": "ESPN Draft Kings",
+        "timestamp": "2026-10-20T13:39:54.689Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": -10,
+        "fair_spread_display": "Houston Texans -9.6",
+        "fair_spread_home_margin": 9.626,
+        "executable_edge": -0.374,
         "edge_side": "NYG",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-10-20T11:53:18.806Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "low",
+        "edge_reconciled_at": "2026-10-20T13:40:06.832Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Houston Texans -9.6",
+        "structural_home_margin": 8.132,
+        "structural_edge": 1.868,
+        "base_structural_home_margin": 9.727,
+        "advanced_process_adjustment": -1.595,
+        "motion_matchup_adjustment": 0,
+        "structural_fair": "Houston Texans -8.1",
+        "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
+        "advanced_process": {
+          "throughWeek": 6,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -1.514,
+          "homeProcessRatingPoints": 0.892,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -1.595
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": 0.372,
+          "earlySample": true,
+          "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
+        }
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 7 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-20T13:40:06.832Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "no-signal",
+        "priority": "Low",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401873019",
@@ -394,7 +745,7 @@
       "kickoff_local": "2026-10-25T20:05Z",
       "tv": "CBS",
       "priority": "Medium",
-      "stage": "Pre-scan",
+      "stage": "potential-research",
       "market": {
         "spread_display": "Denver Broncos -4.5",
         "spread": "DEN -4.5",
@@ -405,25 +756,64 @@
           "away": -238,
           "home": 195
         },
-        "source": "ESPN DraftKings",
-        "timestamp": "2026-10-20T11:53:18.806Z",
+        "source": "ESPN Draft Kings",
+        "timestamp": "2026-10-20T13:39:54.689Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": 4.5,
+        "fair_spread_display": "Denver Broncos -4",
+        "fair_spread_home_margin": -3.959,
+        "executable_edge": 0.541,
         "edge_side": "ARI",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-10-20T11:53:18.806Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "medium",
+        "edge_reconciled_at": "2026-10-20T13:40:06.832Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Denver Broncos -4",
+        "structural_home_margin": -1.796,
+        "structural_edge": 2.704,
+        "base_structural_home_margin": -1.919,
+        "advanced_process_adjustment": 0.123,
+        "motion_matchup_adjustment": 0,
+        "structural_fair": "Denver Broncos -1.8",
+        "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
+        "advanced_process": {
+          "throughWeek": 6,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -0.65,
+          "homeProcessRatingPoints": -1.063,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": 0.123
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": 0.078,
+          "earlySample": true,
+          "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
+        }
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 7 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-20T13:40:06.832Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "potential-research",
+        "priority": "Medium",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401873020",
@@ -435,8 +825,8 @@
       "kickoff": "2026-10-25T20:25Z",
       "kickoff_local": "2026-10-25T20:25Z",
       "tv": "Fox",
-      "priority": "Medium",
-      "stage": "Pre-scan",
+      "priority": "High",
+      "stage": "high-priority-audit",
       "market": {
         "spread_display": "Detroit Lions -3",
         "spread": "DET -3",
@@ -447,25 +837,64 @@
           "away": 140,
           "home": -166
         },
-        "source": "ESPN DraftKings",
-        "timestamp": "2026-10-20T11:53:18.806Z",
+        "source": "ESPN Draft Kings",
+        "timestamp": "2026-10-20T13:39:54.689Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": -3,
+        "fair_spread_display": "Detroit Lions -2.2",
+        "fair_spread_home_margin": 2.235,
+        "executable_edge": -0.765,
         "edge_side": "GB",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-10-20T11:53:18.806Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-10-20T13:40:06.832Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Detroit Lions -2.2",
+        "structural_home_margin": -0.823,
+        "structural_edge": 3.823,
+        "base_structural_home_margin": -2.758,
+        "advanced_process_adjustment": 1.935,
+        "motion_matchup_adjustment": 0,
+        "structural_fair": "Green Bay Packers -0.8",
+        "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
+        "advanced_process": {
+          "throughWeek": 6,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -0.438,
+          "homeProcessRatingPoints": 0.314,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": 1.935
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": 0.02,
+          "earlySample": true,
+          "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
+        }
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 7 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-20T13:40:06.832Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "high-priority-audit",
+        "priority": "High",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401873021",
@@ -477,8 +906,8 @@
       "kickoff": "2026-10-25T20:25Z",
       "kickoff_local": "2026-10-25T20:25Z",
       "tv": "Fox",
-      "priority": "Medium",
-      "stage": "Pre-scan",
+      "priority": "Low",
+      "stage": "no-signal",
       "market": {
         "spread_display": "Los Angeles Rams -4.5",
         "spread": "LAR -4.5",
@@ -486,28 +915,67 @@
         "home_margin": -4.5,
         "home_team_sportsbook_spread": 4.5,
         "moneyline": {
-          "away": -230,
-          "home": 190
+          "away": -225,
+          "home": 185
         },
-        "source": "ESPN DraftKings",
-        "timestamp": "2026-10-20T11:53:18.806Z",
+        "source": "ESPN Draft Kings",
+        "timestamp": "2026-10-20T13:39:54.689Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": 4.5,
-        "edge_side": "LV",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-10-20T11:53:18.806Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "fair_spread_display": "Los Angeles Rams -4.7",
+        "fair_spread_home_margin": -4.716,
+        "executable_edge": -0.216,
+        "edge_side": "LAR",
+        "confidence": "low",
+        "edge_reconciled_at": "2026-10-20T13:40:06.832Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Los Angeles Rams -4.7",
+        "structural_home_margin": -5.578,
+        "structural_edge": 1.078,
+        "base_structural_home_margin": -5.367,
+        "advanced_process_adjustment": -0.211,
+        "motion_matchup_adjustment": 0,
+        "structural_fair": "Los Angeles Rams -5.6",
+        "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
+        "advanced_process": {
+          "throughWeek": 6,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 0.846,
+          "homeProcessRatingPoints": -1.157,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -0.211
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": 0.276,
+          "earlySample": true,
+          "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
+        }
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 7 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-20T13:40:06.832Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "no-signal",
+        "priority": "Low",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401873022",
@@ -519,8 +987,8 @@
       "kickoff": "2026-10-26T00:20Z",
       "kickoff_local": "2026-10-26T00:20Z",
       "tv": "NBC",
-      "priority": "Medium",
-      "stage": "Pre-scan",
+      "priority": "High",
+      "stage": "high-priority-audit",
       "market": {
         "spread_display": "Seattle Seahawks -2.5",
         "spread": "SEA -2.5",
@@ -531,25 +999,64 @@
           "away": 114,
           "home": -135
         },
-        "source": "ESPN DraftKings",
-        "timestamp": "2026-10-20T11:53:18.806Z",
+        "source": "ESPN Draft Kings",
+        "timestamp": "2026-10-20T13:39:54.689Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": -2.5,
+        "fair_spread_display": "Seattle Seahawks -1.4",
+        "fair_spread_home_margin": 1.364,
+        "executable_edge": -1.136,
         "edge_side": "KC",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-10-20T11:53:18.806Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-10-20T13:40:06.832Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Seattle Seahawks -1.4",
+        "structural_home_margin": -3.18,
+        "structural_edge": 5.68,
+        "base_structural_home_margin": -6.581,
+        "advanced_process_adjustment": 3.401,
+        "motion_matchup_adjustment": 0,
+        "structural_fair": "Kansas City Chiefs -3.2",
+        "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
+        "advanced_process": {
+          "throughWeek": 6,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": 3.898,
+          "homeProcessRatingPoints": 1.093,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": 3.401
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": -0.052,
+          "earlySample": true,
+          "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
+        }
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 7 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-20T13:40:06.832Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "high-priority-audit",
+        "priority": "High",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     },
     {
       "id": "401873009",
@@ -561,8 +1068,8 @@
       "kickoff": "2026-10-27T00:15Z",
       "kickoff_local": "2026-10-27T00:15Z",
       "tv": "ESPN",
-      "priority": "Medium",
-      "stage": "Pre-scan",
+      "priority": "High",
+      "stage": "high-priority-audit",
       "market": {
         "spread_display": "Dallas Cowboys -4.5",
         "spread": "DAL -4.5",
@@ -573,33 +1080,87 @@
           "away": -218,
           "home": 180
         },
-        "source": "ESPN DraftKings",
-        "timestamp": "2026-10-20T11:53:18.806Z",
+        "source": "ESPN Draft Kings",
+        "timestamp": "2026-10-20T13:39:54.689Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": 4.5,
+        "fair_spread_display": "Dallas Cowboys -3.1",
+        "fair_spread_home_margin": -3.136,
+        "executable_edge": 1.364,
         "edge_side": "PHI",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-10-20T11:53:18.806Z",
-        "edge_convention": "fair_spread_home_margin - market.home_margin"
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-10-20T13:40:06.832Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Dallas Cowboys -3.1",
+        "structural_home_margin": 2.318,
+        "structural_edge": 6.818,
+        "base_structural_home_margin": 2.441,
+        "advanced_process_adjustment": -0.123,
+        "motion_matchup_adjustment": 0,
+        "structural_fair": "Philadelphia Eagles -2.3",
+        "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
+        "advanced_process": {
+          "throughWeek": 6,
+          "offenseDefenseMetrics": [
+            "netEpa",
+            "netSuccess",
+            "netEarlyDownEpa",
+            "netDropbackEpa",
+            "netRushEpa",
+            "netExplosiveRate",
+            "netPressureRate",
+            "netSituationalRate"
+          ],
+          "awayProcessRatingPoints": -1.859,
+          "homeProcessRatingPoints": -3.443,
+          "liveScoringMarginShare": 0.6,
+          "liveAdvancedProcessShare": 0.4,
+          "structuralAdjustment": -0.123
+        },
+        "motion_matchup": {
+          "source": "governed motion-rate + categorical defensive response",
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": 0.312,
+          "earlySample": true,
+          "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
+        }
       },
       "availability": {
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 7 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
-      "event_state": "scheduled"
+      "why": "Selected-week governed model rebuilt 2026-10-20T13:40:06.832Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "event_state": "scheduled",
+      "research": {
+        "stage": "high-priority-audit",
+        "priority": "High",
+        "model_review": "frozen v1.1 Wednesday rebuild"
+      }
     }
   ],
   "runtime_refresh": {
     "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
-    "observed_at": "2026-10-20T11:53:18.806Z",
+    "observed_at": "2026-10-20T13:39:54.689Z",
     "espn_events": 14,
     "current_odds_games": 14,
     "identity_normalization": "registry v1: canonical abbreviations and aliases normalized before joins",
     "edge_reconciliation": "Every legacy portal executable edge recomputed from fair_spread_home_margin - current market.home_margin"
+  },
+  "model_methodology_version": "1.2-advanced-process-motion-research-only",
+  "advanced_process_runtime": {
+    "status": "ACTIVE",
+    "throughWeek": 6,
+    "teamCoverage": 32,
+    "processShareOfLiveLayer": 0.4,
+    "motionPointCap": 0,
+    "leakageRule": "Target Week 7 uses Weeks 1-6 only"
+  },
+  "model_runtime": {
+    "status": "SYNCHRONIZED",
+    "canonicalWeek": 7,
+    "matchedGames": 14,
+    "verifiedAt": "2026-10-20T13:40:06.832Z"
   }
 }
