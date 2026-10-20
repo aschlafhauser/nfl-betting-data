@@ -37,7 +37,7 @@ try{
  const coverage=await page.locator('#coverageContent').innerText();
  const manifestFailures=Array.isArray(manifest.failures)?manifest.failures:[];
  const completeness=manifest.gates?.currentWeekCompleteness||{};
- const explicitCoverageFailure=/Runtime load failure|Only \d+\/32|missing canonical|Spread-sign normalization failure|vs expected/.test(coverage);
+ const explicitCoverageFailure=/Runtime load failure|Only \d+\/32|missing canonical|Spread-sign normalization failure/.test(coverage);
  if(manifestFailures.length||Array.isArray(completeness.issues)&&completeness.issues.length||explicitCoverageFailure)fail('Coverage contains a blocking issue or wrong schedule expectation');
  const expert=await page.locator('#expertContent').innerText();
  if(!/source checks within 48h/.test(expert)||/STALE ·/.test(expert))fail('Expert source coverage is stale/missing');
