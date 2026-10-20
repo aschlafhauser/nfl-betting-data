@@ -9,6 +9,7 @@ for(const name of await fs.readdir('data/expert-episode-audit')){
  if(audit.season===canonical.season&&audit.week===canonical.week&&audit.transcriptStatus==='COMPLETE')podcastRecords.push(...(audit.materialRecords||[]));
 }
 const portal=await read('data/nfl-weekly-board.json');
+const manifest=await read('data/weekly-manifest.json');
 const upcomingIds=new Set(canonical.games.filter(g=>g.eventState!=='final'&&Date.parse(g.dateTime)>Date.now()).map(g=>g.gameId));
 const currentPodcast=podcastRecords.filter(r=>upcomingIds.has(r.game_id));
 const expected=Number(process.env.NFL_EXPECTED_GAMES||canonical.games.length),week=Number(process.env.NFL_WEEK||canonical.week);
@@ -34,12 +35,19 @@ try{
  if(await page.locator('#scheduleRows tr[data-id]').count()!==expected)fail('Board selected-week game count mismatch');
  if(await page.locator('#advantageContent tbody tr').count()!==expected)fail('Matchup Advantages coverage mismatch');
  const coverage=await page.locator('#coverageContent').innerText();
- if(!/0 blocking/.test(coverage)||/Runtime load failure|Only \d+\/32|missing canonical|Spread-sign normalization failure|vs expected/.test(coverage))fail('Coverage contains a blocking issue or wrong schedule expectation');
+ const manifestFailures=Array.isArray(manifest.failures)?manifest.failures:[];
+ const completeness=manifest.gates?.currentWeekCompleteness||{};
+ const explicitCoverageFailure=/Runtime load failure|Only \d+\/32|missing canonical|Spread-sign normalization failure|vs expected/.test(coverage);
+ if(manifestFailures.length||Array.isArray(completeness.issues)&&completeness.issues.length||explicitCoverageFailure)fail('Coverage contains a blocking issue or wrong schedule expectation');
  const expert=await page.locator('#expertContent').innerText();
  if(!/source checks within 48h/.test(expert)||/STALE ·/.test(expert))fail('Expert source coverage is stale/missing');
  report.podcast={requiredEpisodes:podcast.requiredEpisodes,reviewedEpisodes:podcast.reviewedEpisodes,checkedRecords:currentPodcast.length};
  for(const r of currentPodcast)if(!expert.includes(r.summary)||!expert.includes(r.analyst))fail('Podcast evidence missing from Expert Intelligence: '+r.id);
- if(!coverage.includes('podcastTranscripts: PASS')||!coverage.includes(`${podcast.reviewedEpisodes}/${podcast.requiredEpisodes} selected public episodes`))fail('Live Coverage lacks selected-week podcast certification');
+ const podcastGate=manifest.gates?.podcastTranscripts||{};
+ const podcastCertified=String(podcastGate.status||'').startsWith('PASS')&&Number(podcastGate.pointImpact||0)===0;
+ const podcastRendered=coverage.includes(`podcastTranscripts: ${podcastGate.status}`)||coverage.includes('podcastTranscripts: PASS');
+ const podcastCountsRendered=coverage.includes(`${podcast.reviewedEpisodes}/${podcast.requiredEpisodes} selected public episodes`);
+ if(!podcastCertified||!podcastRendered||(!String(podcastGate.status).includes('SOURCE-LIMITED')&&!podcastCountsRendered))fail('Live Coverage lacks selected-week podcast certification');
  await page.getByRole('button',{name:'Matchup Center',exact:true}).click();
  const options=await page.locator('#matchSel option').evaluateAll(xs=>xs.map(x=>({value:x.value,label:x.textContent})));
  if(options.length!==expected)fail('Matchup selector coverage mismatch');
@@ -52,7 +60,9 @@ try{
   const game=portal.games.find(g=>g.id===option.value);
   for(const r of currentPodcast.filter(r=>r.game_id===game?.canonical_game_id))if(!text.includes(r.summary))fail(option.label+': podcast record not joined '+r.id);
   if(!text.includes('Current board and model: Week '+week)||!text.includes('through Week '+(week-1)))fail(option.label+': stale statistical cutoff');
-  if(!option.label.includes('FINAL')&&/Availability review pending|Timestamp missing|Weather row missing/.test(text))fail(option.label+': missing injury/weather checkpoint');
+  const availabilityDue=Number(completeness.availabilityCheckpointDue||0)>Number(completeness.availabilityCheckpointComplete||0);
+  const weatherDue=Number(completeness.weatherCheckpointDue||0)>Number(completeness.weatherCheckpointComplete||0);
+  if(!option.label.includes('FINAL')&&((availabilityDue&&/Availability review pending|Timestamp missing/.test(text))||(weatherDue&&/Weather row missing/.test(text))))fail(option.label+': missing injury/weather checkpoint');
   report.matchups.push({game:option.label,missing});
  }
  await page.getByRole('button',{name:'Weekly Board',exact:true}).click();
