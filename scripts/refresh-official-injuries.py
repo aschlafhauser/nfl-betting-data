@@ -15,8 +15,38 @@ if args.html:
 else:
     with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'NFL-portal-availability-QA/1.0'}), timeout=30) as response:
         page = response.read().decode()
+now_dt = datetime.datetime.now(datetime.timezone.utc)
+def persist_source_limited(reason):
+    injuries = read('injuries.json')
+    old = {x.get('canonical_game_id', x.get('game_id')): x for x in injuries.get('games', [])}
+    due = []
+    for game in board['games']:
+        if str(game.get('eventState', '')).lower() == 'final':
+            continue
+        kickoff = datetime.datetime.fromisoformat(game['dateTime'].replace('Z', '+00:00'))
+        if kickoff - datetime.timedelta(hours=30) <= now_dt:
+            due.append(game['gameId'])
+        old[game['gameId']] = dict(
+            game_id=game['gameId'],
+            canonical_game_id=game['gameId'],
+            matchup=f"{game['away']} at {game['home']}",
+            reviewComplete=False,
+            status='official selected-week table checked; source-limited; final checkpoint pending',
+            updated_at=now_dt.isoformat(),
+            flags=[],
+            players=[],
+            sources=[url],
+            source_status=reason,
+            limitations=['No designation inferred from an unlabeled or unpublished official table.', 'Official final designations and inactives remain mandatory at the pre-kickoff checkpoint.'])
+    if due:
+        raise SystemExit(f"{reason}; final injury checkpoint due for {', '.join(due)}")
+    injuries.update(season=season, week=week, updated_at=now_dt.isoformat(), source_status='CURRENT-SOURCE-LIMITED', games=list(old.values()))
+    (root/'data/injuries.json').write_text(json.dumps(injuries, indent=2)+'\n')
+    print(f'Official injury source checked for Week {week}; source-limited placeholders persisted for {len(board["games"])} games; no designation inferred')
+    raise SystemExit(0)
+
 if not re.search(rf'Injuries\s*-\s*WEEK\s*{week}\b', page, re.I):
-    raise SystemExit('Official response does not identify the selected week; existing evidence preserved')
+    persist_source_limited('Official response does not identify the selected week')
 clean = lambda text: ' '.join(html.unescape(re.sub('<[^>]+>', ' ', text)).split())
 normalize = lambda code: {'AZ':'ARI', 'WSH':'WAS'}.get(code, code)
 by_pair = {}
