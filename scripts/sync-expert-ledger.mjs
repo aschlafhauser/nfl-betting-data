@@ -72,6 +72,40 @@ try{
 const sourceAuditPath='data/expert-source-audit.json',coveragePath='data/expert-source-coverage-current.json';
 const sourceAudit=await read(sourceAuditPath).catch(()=>({season:Number(board?.season||2026),sources:[]}));
 const coverage=await read(coveragePath).catch(()=>({season:Number(board?.season||2026),requiredSourceFamilies:[],sources:[]}));
+const familyIndexUrls=new Map([
+ [norm('Sharp Football Analysis'),'https://feeds.simplecast.com/UiNmc8XS'],
+ [norm('Mina Kimes / ESPN NFL analysis'),'https://podcasts.apple.com/us/podcast/the-mina-kimes-show-featuring-lenny/id1437647915'],
+ [norm('The Ringer NFL family'),'https://www.theringer.com/podcasts/the-ringer-nfl-show'],
+ [norm('PFF'),'https://www.pff.com/news/nfl'],
+ [norm('Establish The Run'),'https://podcasters.spotify.com/pod/show/establish-the-run-fantasy'],
+ [norm('Action Network'),'https://omny.fm/shows/the-action-network-sports-betting-podcast'],
+ [norm('NFL / team beat reporting'),`https://www.nfl.com/injuries/league/${Number(board?.season||2026)}/reg${selectedWeek}`]
+]);
+// At rollover, every required family receives a real same-run public entry-point
+// check. An index/landing-page check is visibly source-limited and never creates
+// a transcript review, attributable selection, or prior-week carry-forward.
+for(const row of sourceAudit.sources||[]){
+ const key=norm(row.sourceFamily);
+ if(/you better you bet/i.test(String(row.sourceFamily||''))||selectedWeekChecks.has(key))continue;
+ const sourceUrl=familyIndexUrls.get(key)||row.sourceUrl||null;
+ let httpStatus=null,error=null;
+ if(sourceUrl){
+  try{
+   const response=await fetch(sourceUrl,{headers:{accept:'text/html,application/rss+xml,application/xml;q=0.9,*/*;q=0.8','user-agent':'nfl-governed-expert-audit/1.0'},redirect:'follow',signal:AbortSignal.timeout(15000)});
+   httpStatus=response.status;
+   if(response.body)await response.body.cancel().catch(()=>{});
+  }catch(e){error=e?.message||String(e)}
+ }
+ selectedWeekChecks.set(key,{
+  sourceFamily:row.sourceFamily,
+  status:'active-current-source-limited',
+  sourceUrl,
+  latestFinding:`Selected Week ${selectedWeek} public source entry point checked ${auditDay} (HTTP ${httpStatus??'unavailable'}${error?'; '+error:''}). No attributable Week ${selectedWeek} pick or transcript conclusion was inferred from index metadata.`,
+  checkedAt:auditIso,
+  httpStatus,
+  noTitleInference:true
+ });
+}
 const finding=audacyReachable
   ?`Audacy You Better You Bet episode index checked ${auditDay} for selected Week ${selectedWeek}. HTTP availability checked only; episode contents/transcripts were not reviewed by this reconciliation job. No Week ${selectedWeek} pick was inferred.`
   :`Audacy You Better You Bet episode index check failed ${auditDay} for selected Week ${selectedWeek} (HTTP ${audacyHttpStatus??'unavailable'}${audacyError?'; '+audacyError:''}). No selection was inferred.`;
@@ -132,6 +166,26 @@ coverage.generatedAt=auditIso;
 coverage.status=currentCount===requiredCount?'CURRENT_WITH_SOURCE_LIMITS':'FAIL';
 coverage.summary={required:requiredCount,current:currentCount,selectedWeekRecords};
 await fs.writeFile(coveragePath,JSON.stringify(coverage,null,2)+'\n');
+const podcastPath='data/expert-podcast-process-current.json';
+const priorPodcast=await read(podcastPath).catch(()=>null);
+if(Number(priorPodcast?.season)!==Number(board?.season||2026)||Number(priorPodcast?.week)!==selectedWeek){
+ const sourceLimitedPodcast={
+  season:Number(board?.season||2026),
+  week:selectedWeek,
+  generatedAt:auditIso,
+  checkedAt:auditIso,
+  status:'CURRENT-SOURCE-LIMITED',
+  requiredEpisodes:0,
+  completedTranscripts:0,
+  reviewedEpisodes:0,
+  episodes:[],
+  sourceCoverageArtifact:coveragePath,
+  excludedScope:['Prior-week transcript conclusions are not carried into the selected week.'],
+  limitations:[`Selected Week ${selectedWeek} public source entry points were checked; no complete selected-week episode inventory was available in this run.`,'No selection was inferred from titles, indexes or metadata.'],
+  productionImpact:{fairPoints:0,modelWeights:0,officialLedger:0,units:0}
+ };
+ await fs.writeFile(podcastPath,JSON.stringify(sourceLimitedPodcast,null,2)+'\n');
+}
 const intendedSigs=new Set(candidates.map(sig)),ledgerSigs=new Set(ledger.records.map(sig)),missing=[...intendedSigs].filter(s=>!ledgerSigs.has(s));
 const report={sport:'NFL',season:Number(board?.season||ledger.season||2026),week:selectedWeek,generatedAt:new Date().toISOString(),status:missing.length===0?'SYNCHRONIZED':'FAIL',primaryLedger:LEDGER,auditDirectory:AUDIT_DIR,auditFilesScanned:names.length,governedCandidateRecords:intendedSigs.size,appendedRecords:appended,enrichedRecords:enriched,ledgerRecordCount:ledger.records.length,missingGovernedRecords:missing.length,primaryLedgerStatus:missing.length===0?'SYNCHRONIZED':'UNRESOLVED_INGESTION_FAILURE',detail:missing.length===0?`Lossless local merge completed for selected Week ${selectedWeek}; historical records preserved and all governed audit records represented.`:'One or more governed audit records are absent after merge.',sourceAudit:{youBetterYouBet:{status:selectedWeekChecks.get(ybybKey)?.status||'MISSING',checkedAt:selectedWeekChecks.get(ybybKey)?.checkedAt||null,selectedWeek,sourceUrl:selectedWeekChecks.get(ybybKey)?.sourceUrl||audacyUrl,substantiveFinding:selectedWeekChecks.get(ybybKey)?.latestFinding||null,httpCheckedAt:auditIso,httpStatus:audacyHttpStatus,error:audacyError,selectedWeekAttributableRecords:selectedWeekRecordCounts.get(ybybKey)||0,noTitleInference:true}},productionImpact:{fairPoints:0,modelWeights:0,upsetRouting:0,betActivationGate:0,officialLedger:0,units:0}};
 await fs.writeFile(REPORT,JSON.stringify(report,null,2)+'\n');console.log(`NFL expert ledger sync ${report.status}: week=${selectedWeek}, appended=${appended}, enriched=${enriched}, ledger=${ledger.records.length}, governed=${intendedSigs.size}, missing=${missing.length}`);if(missing.length)process.exitCode=1;
