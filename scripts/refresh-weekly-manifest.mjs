@@ -19,7 +19,8 @@ const statPass=String(stat?.status||'').toUpperCase()==='PASS'&&Number(stat?.wee
 const upsetPass=Number(upset?.week)===week&&fresh(upset?.generated_at,12)&&upset?.coverage?.all_current_threshold_candidates_represented===true;
 const propRows=[...(Array.isArray(props?.recommendations)?props.recommendations:[]),...(Array.isArray(props?.watchlist)?props.watchlist:[])];
 const missingPropGameIds=[...new Set(propRows.map(p=>String(p.gameId||'')).filter(id=>id&&!ids.has(id)))];
-const propsVerification={seasonMatch:Number(props?.season||season)===season,weekMatch:Number(props?.week)===week,fresh:fresh(props?.evidenceCheckedAt||props?.updatedAt||props?.generatedAt,48),canonicalGameIds:missingPropGameIds.length===0,missingGameIds:missingPropGameIds};
+const propsFreshnessTimestamp=propRows.length?(props?.evidenceCheckedAt||props?.updatedAt||props?.generatedAt):(props?.sourceAudit?.checkedAt||props?.updatedAt||props?.generatedAt);
+const propsVerification={seasonMatch:Number(props?.season||season)===season,weekMatch:Number(props?.week)===week,fresh:fresh(propsFreshnessTimestamp,48),canonicalGameIds:missingPropGameIds.length===0,missingGameIds:missingPropGameIds};
 const propsPass=propsVerification.seasonMatch&&propsVerification.weekMatch&&propsVerification.fresh&&propsVerification.canonicalGameIds;
 const ledgerPass=String(ledgerSync?.primaryLedgerStatus||'').toUpperCase()==='SYNCHRONIZED'&&Number(ledgerSync?.week)===week&&Number(ledgerSync?.missingGovernedRecords||0)===0;
 const coverageRows=Array.isArray(expertCoverage?.sources)?expertCoverage.sources:[],requiredSources=Array.isArray(expertCoverage?.requiredSourceFamilies)?expertCoverage.requiredSourceFamilies:[];
