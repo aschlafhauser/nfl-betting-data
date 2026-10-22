@@ -49,6 +49,13 @@ const rows=(payload.events||[]).map(oddsRow).filter(Boolean);
 const byAbbr=new Map(rows.map(x=>[`${normAbbr(x.awayAbbr)}__${normAbbr(x.homeAbbr)}`,x]));
 const canonicalGames=Array.isArray(canonical.games)?canonical.games:[];
 if(rows.length!==canonicalGames.length)throw new Error(`ESPN selected-week slate mismatch: ${rows.length}/${canonicalGames.length}`);
+// Publish the independently observed schedule count for bye weeks. The UI's
+// 16-game fallback must not flag a complete 14-game slate as missing games.
+if(!rows.length||new Set(rows.map(x=>x.eventId)).size!==rows.length||new Set(rows.flatMap(x=>[x.awayAbbr,x.homeAbbr])).size!==rows.length*2)throw new Error('Ambiguous selected-week ESPN schedule; preserve config');
+const config=await read('data/nfl-config.json');
+config.expected_games_by_week={...(config.expected_games_by_week||{}),[String(week)]:rows.length};
+config.scheduleExpectationSource={season,week,games:rows.length,sourceUrl:url,observedAt:now};
+await fs.writeFile('data/nfl-config.json',JSON.stringify(config,null,2)+'\n');
 
 function parseTeamLine(display,homeAbbr,awayAbbr,homeName,awayName){
   const s=String(display||'');const m=s.match(/^(.*?)\s+(-?\d+(?:\.\d+)?)$/);if(!m)return null;
