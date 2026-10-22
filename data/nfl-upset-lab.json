@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 7,
-  "generated_at": "2026-10-22T18:39:55.490Z",
+  "generated_at": "2026-10-22T22:30:54.032Z",
   "method": "Wednesday spread-based upset screen plus exact-price governance",
   "coverage": {
     "all_current_threshold_candidates_represented": true,
@@ -19,12 +19,12 @@
       "nearThreshold": false,
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-10-22T18:39:53.253Z",
+      "priceSource": "ESPN DraftKings",
+      "priceObservedAt": "2026-10-22T22:30:51.812Z",
       "market_implied_probability": 0.2041,
       "reason": null,
       "spread": "Houston Texans -10.5",
-      "structuralFair": "Houston Texans -9.7",
+      "structuralFair": "Houston Texans -8.1",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -36,7 +36,7 @@
           "name": "structural-resistance",
           "status": "PASS",
           "passed": true,
-          "evidence": "Frozen structural lean NYG; structural fair Houston Texans -9.7."
+          "evidence": "Current structural lean NYG; structural fair Houston Texans -8.1."
         },
         {
           "name": "prior-quality-gap",
@@ -57,24 +57,24 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 390 via ESPN Draft Kings; threshold qualification is separate from recommendation."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 390 via ESPN DraftKings; threshold qualification is separate from recommendation."
     }
   ],
   "near_threshold_watch": [
     {
       "game_id": "2026-W7-IND-MIN",
       "team": "IND",
-      "moneyline": 235,
+      "moneyline": 230,
       "eligible": false,
       "nearThreshold": true,
       "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
       "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-10-22T18:39:53.253Z",
-      "market_implied_probability": 0.2985,
+      "priceSource": "ESPN DraftKings",
+      "priceObservedAt": "2026-10-22T22:30:51.812Z",
+      "market_implied_probability": 0.303,
       "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
       "spread": "Minnesota Vikings -6.5",
-      "structuralFair": "Minnesota Vikings -3.7",
+      "structuralFair": "Minnesota Vikings -3.1",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -86,7 +86,7 @@
           "name": "structural-resistance",
           "status": "PASS",
           "passed": true,
-          "evidence": "Frozen structural lean IND; structural fair Minnesota Vikings -3.7."
+          "evidence": "Current structural lean IND; structural fair Minnesota Vikings -3.1."
         },
         {
           "name": "prior-quality-gap",
@@ -107,8 +107,9 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 235 via ESPN Draft Kings; threshold qualification is separate from recommendation."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 230 via ESPN DraftKings; threshold qualification is separate from recommendation."
     }
   ],
-  "price_pending": []
+  "price_pending": [],
+  "narrativeReconciledAt": "2026-10-22T22:31:02.306Z"
 }
