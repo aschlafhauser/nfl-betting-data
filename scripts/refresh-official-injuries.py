@@ -1,6 +1,7 @@
 """Refresh selected-week official designations without inferring cleared/inactive status."""
 import argparse, datetime, html, json, re, urllib.request
 from pathlib import Path
+from official_inactives import apply_official_inactives
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--html', help='Saved official response for reproducible QA')
@@ -72,7 +73,7 @@ injuries = read('injuries.json')
 old = {x.get('canonical_game_id', x.get('game_id')): x for x in injuries.get('games', [])}
 updated = 0
 for game in board['games']:
-    if str(game.get('eventState', '')).lower() == 'final':
+    if str(game.get('eventState', '')).lower() == 'final' or datetime.datetime.fromisoformat(game['dateTime'].replace('Z', '+00:00')) <= now_dt:
         continue  # Never rewrite completed-game evidence.
     players = by_pair.get((normalize(game['awayAbbr']), normalize(game['homeAbbr'])))
     if not players:
@@ -87,5 +88,6 @@ for game in board['games']:
 if not updated:
     raise SystemExit('No unplayed selected-week injury reports parsed; existing evidence preserved')
 injuries.update(season=season, week=week, updated_at=now, source_status='OFFICIAL SELECTED-WEEK DESIGNATIONS', games=list(old.values()))
+injuries = apply_official_inactives(root, injuries, board, now_dt)
 (root/'data/injuries.json').write_text(json.dumps(injuries, indent=2)+'\n')
 print(f'Official injury reports refreshed: {updated} unplayed games; historical evidence preserved')

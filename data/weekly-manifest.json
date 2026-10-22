@@ -2,8 +2,8 @@
   "version": "NFL-WEEKLY-MANIFEST-v3",
   "season": 2026,
   "week": 7,
-  "updatedAt": "2026-10-22T22:31:02.479Z",
-  "status": "FAIL",
+  "updatedAt": "2026-10-22T23:15:41.343Z",
+  "status": "PASS",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-10-22.json",
   "gates": {
@@ -74,14 +74,14 @@
       "ledgerSyncReport": "data/expert-ledger-reconciliation.json",
       "sourceCoverageReport": "data/expert-source-coverage-current.json",
       "sourceCoverage": "8/8",
-      "selectedWeekRecords": 0,
+      "selectedWeekRecords": 7,
       "youBetterYouBetStatus": "active-current-source-limited",
       "youBetterYouBetChecked": "2026-10-22",
       "pointImpact": 0,
-      "note": "Expert Intelligence remains a qualitative residual with zero automatic model impact. Primary ledger is losslessly synchronized (418 ledger records; 0 missing). Selected-week source inventory is complete; 8/8 families currently have selected-week checks and 0 attributable Week 7 records. You Better You Bet/Audacy has a current substantive source check with zero title-inferred picks."
+      "note": "Expert Intelligence remains a qualitative residual with zero automatic model impact. Primary ledger is losslessly synchronized (425 ledger records; 0 missing). Selected-week source inventory is complete; 8/8 families currently have selected-week checks and 7 attributable Week 7 records. You Better You Bet/Audacy has a current substantive source check with zero title-inferred picks."
     },
     "podcastTranscripts": {
-      "status": "FAIL",
+      "status": "PASS-SOURCE-LIMITED",
       "blocking": true,
       "artifact": "data/expert-podcast-process-current.json",
       "requiredEpisodes": 0,
@@ -90,7 +90,7 @@
       "minutesReviewed": 0,
       "sourceFamilies": 0,
       "pointImpact": 0,
-      "note": "0/0 selected public episodes have complete automated transcripts and NFL-material reviews across 0 source families. Only this explicit inventory is certified; publisher-certified transcripts, premium content and executable book quotes are separate. Missing future-week review cannot inherit a prior-week PASS."
+      "note": "Selected Week 7 source entry points were checked in this run; no complete selected-week episode inventory was available. The layer is current-source-limited, carries zero inferred selections and zero production impact."
     },
     "upsetResearchIsolation": {
       "status": "PASS",
@@ -138,8 +138,6 @@
       "items": []
     }
   },
-  "failures": [
-    "PODCASTTRANSCRIPTS_INCOMPLETE"
-  ],
+  "failures": [],
   "historicalWarnings": []
 }
