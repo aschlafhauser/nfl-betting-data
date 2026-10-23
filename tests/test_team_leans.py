@@ -30,6 +30,9 @@ class TeamLeansTests(unittest.TestCase):
   self.assertEqual(self.build()['price']['minimumSpreadAtSnapshot'],-1.5)
   self.profiles['A']['season']['adjustedNetEpa']=.2
   self.assertEqual(self.build()['price']['minimumSpreadAtSnapshot'],5)
+ def test_international_venue_rejects_us_forecast(self):
+  self.i['weather']={**self.b,'games':[{'gameId':self.g['canonical_game_id'],'venue':'Stade de France','source':'https://api.weather.gov/points/29.9,-90.1','summary':'Sunny in New Orleans'}]}
+  r=self.build();self.assertFalse(r['weather']['forecast_verified']);self.assertNotIn('Sunny',r['weather']['summary'])
  def test_no_official_bet_inferred(self):
   r=self.build();self.assertIn(r['status'],('PRICE WATCH','FOOTBALL LEAN','PASS'));self.assertTrue(r['researchOnly']);self.assertEqual(r['productionPointImpact'],0)
  def test_ats_grading_both_sides_push(self):
