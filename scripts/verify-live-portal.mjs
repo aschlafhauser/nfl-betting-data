@@ -22,14 +22,24 @@ try{
  await page.goto(process.env.NFL_PORTAL_URL||'https://nfl-betting-intelligence.netlify.app/',{waitUntil:'domcontentloaded',timeout:90000});
  await page.waitForFunction(()=>/Governance|Production QC/.test(document.getElementById('boardStatus')?.textContent||'')&&document.querySelector('#nflSchemeStylePanel')&&document.querySelector('#propStatus')?.textContent.includes('recommendations'),null,{timeout:60000});
  const tabs=await page.locator('nav button[data-tab]').evaluateAll(xs=>xs.map(x=>({id:x.dataset.tab,name:x.textContent.trim()})));
- if(tabs.length!==13)fail('Navigation contains '+tabs.length+'/13 tabs');
+ if(tabs.length!==14)fail('Navigation contains '+tabs.length+'/14 tabs');
  for(const t of tabs){
   await page.getByRole('button',{name:t.name,exact:true}).click();
+  if(t.id==='leans')await page.locator('#leanGames').waitFor({state:'attached',timeout:30000});
   const section=page.locator('#'+t.id),text=(await section.innerText()).trim();
   report.tabs[t.id]={visible:await section.isVisible(),textLength:text.length};
   if(!report.tabs[t.id].visible||text.length<25)fail(t.name+' did not activate with content');
   if(/\bNaN\b|\bundefined\b/.test(text))fail(t.name+' contains invalid numeric/text values');
  }
+ const leanRuntime=await read('data/team-leans-current.json');
+ await page.getByRole('button',{name:'Team Leans',exact:true}).click();
+ await page.locator('#leanFilter').selectOption('all');
+ if(await page.locator('.lean-card').count()!==expected)fail('Team Leans all-game coverage mismatch');
+ await page.locator('#leanSearch').fill('no-such-team');
+ if(await page.locator('.lean-card').count()!==0)fail('Team Leans search failed');
+ await page.locator('#leanSearch').fill('');
+ await page.locator('#leanFilter').selectOption('upcoming');
+ report.teamLeans={games:leanRuntime.games.length,graded:leanRuntime.tracking.gradedGames};
  const status=await page.locator('#boardStatus').innerText();report.status=status;
  if(/FAIL|not production-complete|loading/i.test(status))fail('Portal status: '+status);
  if(await page.locator('#scheduleRows tr[data-id]').count()!==expected)fail('Board selected-week game count mismatch');

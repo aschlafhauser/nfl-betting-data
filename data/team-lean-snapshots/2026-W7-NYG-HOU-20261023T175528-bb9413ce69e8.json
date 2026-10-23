@@ -1,0 +1,532 @@
+{
+  "gameId": "2026-W7-NYG-HOU",
+  "portalGameId": "401873016",
+  "week": 7,
+  "away": "New York Giants",
+  "home": "Houston Texans",
+  "awayAbbr": "NYG",
+  "homeAbbr": "HOU",
+  "kickoff": "2026-10-25T17:00Z",
+  "generatedAt": "2026-10-23T17:55:28.189903+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "HOU",
+  "assessmentSide": "HOU",
+  "structuralValueSide": "NYG",
+  "alignment": "CONFLICT",
+  "thesis": "HOU has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "HOU",
+      "gap": 0.053,
+      "unit": "EPA/play",
+      "awayOffense": 0.06103986820744234,
+      "homeDefenseAllowed": 0.05606990194856175,
+      "homeOffense": 0.1486023126354526,
+      "awayDefenseAllowed": 0.0749565480826308,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "HOU",
+      "gap": 0.119,
+      "unit": "EPA/play",
+      "awayOffense": -0.06022881543204239,
+      "homeDefenseAllowed": -0.0082554049306444,
+      "homeOffense": 0.10119776246850813,
+      "awayDefenseAllowed": 0.06925325310239941,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "HOU",
+      "gap": 0.071,
+      "unit": "EPA/play",
+      "awayOffense": -0.10618204592312559,
+      "homeDefenseAllowed": -0.09334568627745177,
+      "homeOffense": -0.09922424570416669,
+      "awayDefenseAllowed": 0.04264484088854431,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "HOU",
+      "gap": 1.745,
+      "unit": "percentage points",
+      "awayOffense": 0.07397959183673469,
+      "homeDefenseAllowed": 0.08970976253298153,
+      "homeOffense": 0.1,
+      "awayDefenseAllowed": 0.09859154929577464,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "HOU",
+      "gap": 4.718,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.16806722689075632,
+      "homeDefenseAllowed": 0.1598360655737705,
+      "homeOffense": 0.13025210084033614,
+      "awayDefenseAllowed": 0.10328638497652583,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "counterarguments": [],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "HOU",
+      "gap": 0.053,
+      "unit": "EPA/play",
+      "awayOffense": 0.06103986820744234,
+      "homeDefenseAllowed": 0.05606990194856175,
+      "homeOffense": 0.1486023126354526,
+      "awayDefenseAllowed": 0.0749565480826308,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "HOU",
+      "gap": 0.119,
+      "unit": "EPA/play",
+      "awayOffense": -0.06022881543204239,
+      "homeDefenseAllowed": -0.0082554049306444,
+      "homeOffense": 0.10119776246850813,
+      "awayDefenseAllowed": 0.06925325310239941,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "HOU",
+      "gap": 0.071,
+      "unit": "EPA/play",
+      "awayOffense": -0.10618204592312559,
+      "homeDefenseAllowed": -0.09334568627745177,
+      "homeOffense": -0.09922424570416669,
+      "awayDefenseAllowed": 0.04264484088854431,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "HOU",
+      "gap": 1.745,
+      "unit": "percentage points",
+      "awayOffense": 0.07397959183673469,
+      "homeDefenseAllowed": 0.08970976253298153,
+      "homeOffense": 0.1,
+      "awayDefenseAllowed": 0.09859154929577464,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "HOU",
+      "gap": 4.718,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.16806722689075632,
+      "homeDefenseAllowed": 0.1598360655737705,
+      "homeOffense": 0.13025210084033614,
+      "awayDefenseAllowed": 0.10328638497652583,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": 0.173,
+  "profiles": {
+    "NYG": {
+      "season": {
+        "games": 6,
+        "offPlays": 392,
+        "defPlays": 355,
+        "offEpa": -0.0247,
+        "defEpa": 0.0224,
+        "netEpa": -0.0471,
+        "adjustedNetEpa": -0.1303,
+        "earlyOffEpa": -0.0617,
+        "earlyDefEpa": 0.0657,
+        "passOffEpa": 0.061,
+        "passDefEpa": 0.075
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 215,
+        "defPlays": 190,
+        "offEpa": -0.016,
+        "defEpa": -0.06,
+        "netEpa": 0.044,
+        "adjustedNetEpa": -0.0404,
+        "earlyOffEpa": -0.1153,
+        "earlyDefEpa": 0.065,
+        "passOffEpa": 0.1022,
+        "passDefEpa": -0.0616
+      }
+    },
+    "HOU": {
+      "season": {
+        "games": 6,
+        "offPlays": 370,
+        "defPlays": 379,
+        "offEpa": 0.0399,
+        "defEpa": -0.0049,
+        "netEpa": 0.0448,
+        "adjustedNetEpa": 0.0427,
+        "earlyOffEpa": 0.1012,
+        "earlyDefEpa": -0.0051,
+        "passOffEpa": 0.1486,
+        "passDefEpa": 0.0561
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 170,
+        "defPlays": 198,
+        "offEpa": 0.1955,
+        "defEpa": -0.0018,
+        "netEpa": 0.1973,
+        "adjustedNetEpa": 0.2142,
+        "earlyOffEpa": 0.196,
+        "earlyDefEpa": 0.0512,
+        "passOffEpa": 0.3793,
+        "passDefEpa": 0.0197
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 8.132,
+    "structuralHomeMargin": 8.132
+  },
+  "market": {
+    "spread_display": "Houston Texans -10.5",
+    "spread": "HOU -9.5",
+    "total": 42.5,
+    "home_margin": 10.5,
+    "home_team_sportsbook_spread": -10.5,
+    "moneyline": {
+      "away": 390,
+      "home": -520
+    },
+    "source": "ESPN Draft Kings",
+    "timestamp": "2026-10-23T13:45:42.910Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": 10.026,
+  "structuralFair": 8.132,
+  "structuralDifference": -2.368,
+  "price": {
+    "side": "HOU",
+    "minimumSpreadAtSnapshot": -8.5,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-10-23T13:45:43.160974+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [
+      {
+        "team": "NYG",
+        "player": "Paulson Adebo",
+        "position": "CB",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "NYG",
+        "player": "Tremaine Edmunds",
+        "position": "LB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYG",
+        "player": "Jermaine Eluemunor",
+        "position": "T",
+        "status": "Limited Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "NYG",
+        "player": "Jevon Holland",
+        "position": "S",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "NYG",
+        "player": "Theo Johnson",
+        "position": "TE",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYG",
+        "player": "Charlie Jones",
+        "position": "WR",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYG",
+        "player": "Chris Manhertz",
+        "position": "TE",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYG",
+        "player": "Marcus Mbow",
+        "position": "T",
+        "status": "Limited Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "NYG",
+        "player": "Greg Newsome II",
+        "position": "CB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "NYG",
+        "player": "Tyler Nubin",
+        "position": "S",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "NYG",
+        "player": "Andrew Thomas",
+        "position": "T",
+        "status": "Limited Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "HOU",
+        "player": "Azeez Al-Shaair",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "HOU",
+        "player": "Will Anderson Jr.",
+        "position": "DE",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "HOU",
+        "player": "Reed Blankenship",
+        "position": "S",
+        "status": "Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "HOU",
+        "player": "Nico Collins",
+        "position": "WR",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "HOU",
+        "player": "Blake Fisher",
+        "position": "T",
+        "status": "Did Not Participate In Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "HOU",
+        "player": "Brevin Jordan",
+        "position": "TE",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "HOU",
+        "player": "David Montgomery",
+        "position": "RB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "HOU",
+        "player": "Jalen Pitre",
+        "position": "S",
+        "status": "Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "HOU",
+        "player": "Dalton Schultz",
+        "position": "TE",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "HOU",
+        "player": "Henry To'oTo'o",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "NYG",
+        "unit": "OL",
+        "count": 3,
+        "players": [
+          "Jermaine Eluemunor",
+          "Marcus Mbow",
+          "Andrew Thomas"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "NYG",
+        "unit": "Secondary",
+        "count": 4,
+        "players": [
+          "Paulson Adebo",
+          "Jevon Holland",
+          "Greg Newsome II",
+          "Tyler Nubin"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "HOU",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Blake Fisher"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "HOU",
+        "unit": "Secondary",
+        "count": 2,
+        "players": [
+          "Reed Blankenship",
+          "Jalen Pitre"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W7-NYG-HOU",
+    "canonical_game_id": "2026-W7-NYG-HOU",
+    "matchup": "New York Giants at Houston Texans",
+    "venue": "Reliant Stadium",
+    "environment": "indoor",
+    "status": "Official indoor venue verified",
+    "summary": "Reliant Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
+    "risk": "indoor / roof controlled",
+    "observed_at": "2026-10-23T13:45:44.469120+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+    "forecast_timestamp": null,
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W7-NYG-HOU",
+      "kickoff": "2026-10-25T17:00Z",
+      "temp_f": null,
+      "wind_mph": null,
+      "gust_mph": null,
+      "precip_chance_pct": null,
+      "forecast_timestamp": null,
+      "verification_status": "indoor venue; outdoor weather forecast not applicable",
+      "venue": "Reliant Stadium",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+      ],
+      "limitations": [
+        "Roof status is governed by venue/event information; outside air values are not on-field conditions."
+      ],
+      "retrieved_at": "2026-10-23T13:45:44.469120+00:00"
+    },
+    "sources": [
+      "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+    ]
+  },
+  "sustainability": {
+    "NYG": {
+      "turnoverRate": 0.025510204081632654,
+      "takeawayRate": 0.022535211267605635,
+      "thirdDownConversion": 0.43209876543209874,
+      "redZoneTdRate": 0.6111111111111112
+    },
+    "HOU": {
+      "turnoverRate": 0.008108108108108109,
+      "takeawayRate": 0.0158311345646438,
+      "thirdDownConversion": 0.39473684210526316,
+      "redZoneTdRate": 0.5652173913043478
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 7
+  },
+  "scheme": {
+    "offenseThroughWeek": 6,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-10-23T13:45:42.910Z",
+      "capturedAt": "2026-10-23T17:52:35.979514+00:00",
+      "spread": "Houston Texans -10.5",
+      "homeMargin": 10.5,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-10-23T13:45:42.910Z",
+      "capturedAt": "2026-10-23T17:53:53.678505+00:00",
+      "spread": "Houston Texans -10.5",
+      "homeMargin": 10.5,
+      "source": "ESPN Draft Kings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}

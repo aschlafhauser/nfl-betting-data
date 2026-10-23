@@ -127,6 +127,10 @@ jobs:
         run: node scripts/freeze-pre-kickoff-snapshots.mjs
       - name: Capture immutable final results and CLV status when games complete
         run: node scripts/capture-results-clv.mjs
+      - name: Build prospective Team Leans and grade archived assessments
+        run: python scripts/build-team-leans.py
+      - name: Verify Team Leans research contracts
+        run: python -m unittest discover -s tests -p "test_team_leans.py"
       - name: Reconcile narratives to final governed prices
         run: node scripts/reconcile-current-narratives.mjs
       - name: Verify exact moneyline and Upset Lab coverage
