@@ -2,7 +2,7 @@
   "version": "NFL-WEEKLY-MANIFEST-v3",
   "season": 2026,
   "week": 7,
-  "updatedAt": "2026-10-24T21:00:10.826Z",
+  "updatedAt": "2026-10-24T23:26:00.989Z",
   "status": "FAIL",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-10-24.json",
@@ -74,19 +74,19 @@
     },
     "expertIntelligence": {
       "blocking": true,
-      "status": "PASS",
+      "status": "FAIL",
       "primaryLedgerStatus": "SYNCHRONIZED",
       "ledgerSyncReport": "data/expert-ledger-reconciliation.json",
       "sourceCoverageReport": "data/expert-source-coverage-current.json",
-      "sourceCoverage": "8/8",
+      "sourceCoverage": "1/8",
       "selectedWeekRecords": 7,
       "youBetterYouBetStatus": "active-current-source-limited",
       "youBetterYouBetChecked": "2026-10-24",
       "pointImpact": 0,
-      "note": "Expert Intelligence remains a qualitative residual with zero automatic model impact. Primary ledger is losslessly synchronized (425 ledger records; 0 missing). Selected-week source inventory is complete; 8/8 families currently have selected-week checks and 7 attributable Week 7 records. You Better You Bet/Audacy has a current substantive source check with zero title-inferred picks."
+      "note": "Expert Intelligence remains a qualitative residual with zero automatic model impact. Primary ledger is losslessly synchronized (425 ledger records; 0 missing). Selected-week source inventory is incomplete; 1/8 families currently have selected-week checks and 7 attributable Week 7 records. You Better You Bet/Audacy has a current substantive source check with zero title-inferred picks."
     },
     "podcastTranscripts": {
-      "status": "PASS-SOURCE-LIMITED",
+      "status": "FAIL",
       "blocking": true,
       "artifact": "data/expert-podcast-process-current.json",
       "requiredEpisodes": 0,
@@ -95,7 +95,7 @@
       "minutesReviewed": 0,
       "sourceFamilies": 0,
       "pointImpact": 0,
-      "note": "Selected Week 7 source entry points were checked in this run; no complete selected-week episode inventory was available. The layer is current-source-limited, carries zero inferred selections and zero production impact."
+      "note": "0/0 selected public episodes have complete automated transcripts and NFL-material reviews across 0 source families. Only this explicit inventory is certified; publisher-certified transcripts, premium content and executable book quotes are separate. Missing future-week review cannot inherit a prior-week PASS."
     },
     "upsetResearchIsolation": {
       "status": "FAIL",
@@ -147,6 +147,8 @@
     "STATISTICALDISPLAY_INCOMPLETE",
     "MARKETDERIVEDINTEGRITY_INCOMPLETE",
     "CURRENTWEEKCOMPLETENESS_INCOMPLETE",
+    "EXPERTINTELLIGENCE_INCOMPLETE",
+    "PODCASTTRANSCRIPTS_INCOMPLETE",
     "UPSETRESEARCHISOLATION_INCOMPLETE"
   ],
   "historicalWarnings": []
