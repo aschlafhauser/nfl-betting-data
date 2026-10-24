@@ -2,7 +2,7 @@
   "version": "NFL-WEEKLY-MANIFEST-v3",
   "season": 2026,
   "week": 7,
-  "updatedAt": "2026-10-24T14:40:44.343Z",
+  "updatedAt": "2026-10-24T18:15:15.725Z",
   "status": "FAIL",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-10-24.json",
@@ -34,14 +34,14 @@
       "note": "Current personnel/unit overlays and older matchup diagnostics remain research-only unless separately validated."
     },
     "statisticalDisplay": {
-      "status": "PASS",
+      "status": "FAIL",
       "blocking": true,
       "verifiedAt": "2026-10-24T06:02:10.982359+00:00",
       "artifact": "data/statistical-display-integrity-2026-w7.json",
       "note": "32 observed season-to-date profiles through Week 6; defensive yardage independently aggregated from each opponent box score. Advanced inputs use the same pregame cutoff."
     },
     "marketDerivedIntegrity": {
-      "status": "PASS",
+      "status": "FAIL",
       "blocking": true,
       "verifiedAt": "2026-10-24T06:02:05.602Z",
       "artifact": "data/market-derived-integrity-2026-w7.json",
@@ -57,11 +57,13 @@
       "availabilityCheckpointDue": 11,
       "availabilityCheckpointComplete": 0,
       "weatherCheckpointDue": 11,
-      "weatherCheckpointComplete": 11,
-      "upsetLabVerified": true,
+      "weatherCheckpointComplete": 0,
+      "upsetLabVerified": false,
       "issues": [
         "fresh spread/total market coverage 0/13",
-        "availability review due 0/11"
+        "selected-week upset research incomplete",
+        "availability review due 0/11",
+        "weather review due 0/11"
       ],
       "warnings": [],
       "note": "Wednesday certification requires fresh spread/total, selected-week model calculations, universal Deep Dives and upset research. Exact ML, final injury designations and weather become blocking only when their execution checkpoints are due; missing values are never inferred."
@@ -96,7 +98,7 @@
       "note": "Selected Week 7 source entry points were checked in this run; no complete selected-week episode inventory was available. The layer is current-source-limited, carries zero inferred selections and zero production impact."
     },
     "upsetResearchIsolation": {
-      "status": "PASS",
+      "status": "FAIL",
       "productionFairImpact": 0,
       "modelWeightImpact": 0,
       "officialLedgerImpact": 0,
@@ -142,7 +144,10 @@
     }
   },
   "failures": [
-    "CURRENTWEEKCOMPLETENESS_INCOMPLETE"
+    "STATISTICALDISPLAY_INCOMPLETE",
+    "MARKETDERIVEDINTEGRITY_INCOMPLETE",
+    "CURRENTWEEKCOMPLETENESS_INCOMPLETE",
+    "UPSETRESEARCHISOLATION_INCOMPLETE"
   ],
   "historicalWarnings": []
 }
