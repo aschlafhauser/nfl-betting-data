@@ -1,0 +1,447 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W7-TB-CAR",
+  "portalGameId": "401873018",
+  "week": 7,
+  "away": "Tampa Bay Buccaneers",
+  "home": "Carolina Panthers",
+  "awayAbbr": "TB",
+  "homeAbbr": "CAR",
+  "kickoff": "2026-10-25T17:00Z",
+  "generatedAt": "2026-10-24T06:02:13.135844+00:00",
+  "status": "PRICE WATCH",
+  "footballLean": "CAR",
+  "assessmentSide": "CAR",
+  "structuralValueSide": "CAR",
+  "alignment": "ALIGNED",
+  "thesis": "CAR has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "CAR",
+      "gap": 0.162,
+      "unit": "EPA/play",
+      "awayOffense": -0.18125333092198845,
+      "homeDefenseAllowed": 0.0136759929709115,
+      "homeOffense": 0.2039216788422183,
+      "awayDefenseAllowed": -0.047779288795151684,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "CAR",
+      "gap": 0.126,
+      "unit": "EPA/play",
+      "awayOffense": -0.11529894206740335,
+      "homeDefenseAllowed": 0.021223423557110592,
+      "homeOffense": 0.17898845751532205,
+      "awayDefenseAllowed": -0.020810021932107972,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "CAR",
+      "gap": 1.512,
+      "unit": "percentage points",
+      "awayOffense": 0.08021390374331551,
+      "homeDefenseAllowed": 0.0701219512195122,
+      "homeOffense": 0.10650887573964497,
+      "awayDefenseAllowed": 0.07407407407407407,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Rushing efficiency",
+      "side": "TB",
+      "gap": 0.089,
+      "unit": "EPA/play",
+      "awayOffense": 0.028363527074718405,
+      "homeDefenseAllowed": 0.018920802719111684,
+      "homeOffense": -0.004897079123076345,
+      "awayDefenseAllowed": -0.1267084856915446,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "TB",
+      "gap": 0.113,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.15767634854771784,
+      "homeDefenseAllowed": 0.12903225806451613,
+      "homeOffense": 0.1590909090909091,
+      "awayDefenseAllowed": 0.12987012987012986,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "CAR",
+      "gap": 0.162,
+      "unit": "EPA/play",
+      "awayOffense": -0.18125333092198845,
+      "homeDefenseAllowed": 0.0136759929709115,
+      "homeOffense": 0.2039216788422183,
+      "awayDefenseAllowed": -0.047779288795151684,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "CAR",
+      "gap": 0.126,
+      "unit": "EPA/play",
+      "awayOffense": -0.11529894206740335,
+      "homeDefenseAllowed": 0.021223423557110592,
+      "homeOffense": 0.17898845751532205,
+      "awayDefenseAllowed": -0.020810021932107972,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "TB",
+      "gap": 0.089,
+      "unit": "EPA/play",
+      "awayOffense": 0.028363527074718405,
+      "homeDefenseAllowed": 0.018920802719111684,
+      "homeOffense": -0.004897079123076345,
+      "awayDefenseAllowed": -0.1267084856915446,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "CAR",
+      "gap": 1.512,
+      "unit": "percentage points",
+      "awayOffense": 0.08021390374331551,
+      "homeDefenseAllowed": 0.0701219512195122,
+      "homeOffense": 0.10650887573964497,
+      "awayDefenseAllowed": 0.07407407407407407,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "TB",
+      "gap": 0.113,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.15767634854771784,
+      "homeDefenseAllowed": 0.12903225806451613,
+      "homeOffense": 0.1590909090909091,
+      "awayDefenseAllowed": 0.12987012987012986,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": 0.1441,
+  "profiles": {
+    "TB": {
+      "season": {
+        "games": 6,
+        "offPlays": 374,
+        "defPlays": 351,
+        "offEpa": -0.1298,
+        "defEpa": -0.0867,
+        "netEpa": -0.0431,
+        "adjustedNetEpa": -0.0359,
+        "earlyOffEpa": -0.1153,
+        "earlyDefEpa": -0.0173,
+        "passOffEpa": -0.1813,
+        "passDefEpa": -0.0478
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 197,
+        "defPlays": 181,
+        "offEpa": -0.0727,
+        "defEpa": -0.0902,
+        "netEpa": 0.0176,
+        "adjustedNetEpa": -0.0015,
+        "earlyOffEpa": -0.0889,
+        "earlyDefEpa": -0.0081,
+        "passOffEpa": -0.1104,
+        "passDefEpa": -0.081
+      }
+    },
+    "CAR": {
+      "season": {
+        "games": 5,
+        "offPlays": 338,
+        "defPlays": 328,
+        "offEpa": 0.1159,
+        "defEpa": -0.0088,
+        "netEpa": 0.1247,
+        "adjustedNetEpa": 0.1082,
+        "earlyOffEpa": 0.1876,
+        "earlyDefEpa": 0.0171,
+        "passOffEpa": 0.2039,
+        "passDefEpa": 0.0137
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 143,
+        "defPlays": 129,
+        "offEpa": 0.2023,
+        "defEpa": 0.0119,
+        "netEpa": 0.1905,
+        "adjustedNetEpa": 0.1452,
+        "earlyOffEpa": 0.2233,
+        "earlyDefEpa": 0.0734,
+        "passOffEpa": 0.2858,
+        "passDefEpa": 0.0366
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 5.628,
+    "structuralHomeMargin": 5.628
+  },
+  "market": {
+    "spread_display": "Carolina Panthers -3",
+    "spread": "CAR -3.5",
+    "total": 44.5,
+    "home_margin": 3,
+    "home_team_sportsbook_spread": -3,
+    "moneyline": {
+      "away": 130,
+      "home": -155
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-10-24T06:02:03.882Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": 3.526,
+  "structuralFair": 5.628,
+  "structuralDifference": 2.628,
+  "price": {
+    "side": "CAR",
+    "minimumSpreadAtSnapshot": -2.0,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-10-24T06:02:04.265858+00:00",
+    "reviewComplete": false,
+    "flags": [
+      "TB OUT: WR Emeka Egbuka (Concussion, Foot).",
+      "TB OUT: T Luke Goedeke (Calf).",
+      "TB QUESTIONABLE: QB Baker Mayfield (Thumb).",
+      "TB OUT: S Antoine Winfield Jr. (Rib).",
+      "CAR QUESTIONABLE: T Monroe Freeling (Knee).",
+      "CAR OUT: LB Thomas Incoom (Calf).",
+      "CAR QUESTIONABLE: LB Bam Martin-Scott (Hamstring).",
+      "CAR OUT: LB Jaelan Phillips (Hamstring)."
+    ],
+    "watch": [
+      {
+        "team": "TB",
+        "player": "Emeka Egbuka",
+        "position": "WR",
+        "status": "Out Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "TB",
+        "player": "Luke Goedeke",
+        "position": "T",
+        "status": "Out Limited Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "TB",
+        "player": "Baker Mayfield",
+        "position": "QB",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "QB",
+        "scenario": "If unavailable, reassess starter/replacement performance and the game script."
+      },
+      {
+        "team": "TB",
+        "player": "Christian Rozeboom",
+        "position": "LB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "TB",
+        "player": "Antoine Winfield Jr.",
+        "position": "S",
+        "status": "Out Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "CAR",
+        "player": "Monroe Freeling",
+        "position": "T",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "CAR",
+        "player": "Thomas Incoom",
+        "position": "LB",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "CAR",
+        "player": "Bam Martin-Scott",
+        "position": "LB",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "CAR",
+        "player": "Jaelan Phillips",
+        "position": "LB",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "TB",
+        "unit": "QB",
+        "count": 1,
+        "players": [
+          "Baker Mayfield"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "TB",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Luke Goedeke"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "TB",
+        "unit": "Secondary",
+        "count": 1,
+        "players": [
+          "Antoine Winfield Jr."
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "CAR",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Monroe Freeling"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W7-TB-CAR",
+    "canonical_game_id": "2026-W7-TB-CAR",
+    "matchup": "Tampa Bay Buccaneers at Carolina Panthers",
+    "venue": "Bank of America Stadium",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Sunny at kickoff: 64\u00b0F; wind NE 12.0 mph, gust 19.6 mph; precipitation chance 0%.",
+    "risk": "no major hourly weather flag",
+    "observed_at": "2026-10-24T06:02:05.542331+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/35.2258,-80.8528",
+    "forecast_timestamp": "2026-10-23T23:25:07+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W7-TB-CAR",
+      "kickoff": "2026-10-25T17:00Z",
+      "temp_f": 64,
+      "wind_mph": 12.0,
+      "gust_mph": 19.6,
+      "precip_chance_pct": 0,
+      "forecast_timestamp": "2026-10-23T23:25:07+00:00",
+      "sources": [
+        "https://api.weather.gov/points/35.2258,-80.8528",
+        "https://api.weather.gov/gridpoints/GSP/118,65/forecast/hourly",
+        "https://api.weather.gov/gridpoints/GSP/118,65"
+      ],
+      "wind_speed_raw": "12 mph",
+      "wind_direction": "NE",
+      "forecast_hour_start": "2026-10-25T13:00:00-04:00",
+      "forecast_hour_end": "2026-10-25T14:00:00-04:00",
+      "conditions": "Sunny",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-10-24T06:02:05.542331+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/35.2258,-80.8528",
+      "https://api.weather.gov/gridpoints/GSP/118,65/forecast/hourly",
+      "https://api.weather.gov/gridpoints/GSP/118,65"
+    ]
+  },
+  "sustainability": {
+    "TB": {
+      "turnoverRate": 0.029411764705882353,
+      "takeawayRate": 0.019943019943019943,
+      "thirdDownConversion": 0.367816091954023,
+      "redZoneTdRate": 0.47368421052631576
+    },
+    "CAR": {
+      "turnoverRate": 0.008875739644970414,
+      "takeawayRate": 0.018292682926829267,
+      "thirdDownConversion": 0.3880597014925373,
+      "redZoneTdRate": 0.6666666666666666
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 7
+  },
+  "scheme": {
+    "offenseThroughWeek": 6,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-10-23T13:45:42.910Z",
+      "capturedAt": "2026-10-23T17:52:35.979514+00:00",
+      "spread": "Carolina Panthers -3",
+      "homeMargin": 3,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-10-24T00:53:00.577Z",
+      "capturedAt": "2026-10-24T00:53:17.230126+00:00",
+      "spread": "Carolina Panthers -3",
+      "homeMargin": 3,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
