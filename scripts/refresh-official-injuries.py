@@ -82,7 +82,7 @@ for game in board['games']:
     # Monday reports may still be preliminary; a final review is due only inside 30h.
     kickoff = datetime.datetime.fromisoformat(game['dateTime'].replace('Z', '+00:00'))
     final_window = kickoff - datetime.timedelta(hours=30) <= datetime.datetime.now(datetime.timezone.utc)
-    complete = final_window and all(any(p['team']==code and p['designation'] for p in players) for code in (normalize(game['awayAbbr']), normalize(game['homeAbbr'])))
+    complete = final_window and all(any(p['team']==code for p in players) for code in (normalize(game['awayAbbr']), normalize(game['homeAbbr'])))
     old[game['gameId']] = dict(game_id=game['gameId'], canonical_game_id=game['gameId'], matchup=f"{game['away']} at {game['home']}", reviewComplete=complete, status='official final designation review complete; game-day inactives pending' if complete else 'official practice/designation report reviewed; final checkpoint pending', updated_at=now, flags=flags, players=players, sources=[url], source_status='Official selected-week NFL table; blank designation is not inferred as active/healthy', limitations=['Retrieval timestamp is not the report issuance time.', 'Official inactives must be checked at the pre-kickoff checkpoint.'])
     updated += 1
 if not updated:
