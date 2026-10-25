@@ -1,75 +1,27 @@
 {
   "season": 2026,
   "week": 7,
-  "generated_at": "2026-10-25T16:37:32.390Z",
+  "generated_at": "2026-10-25T19:47:31.485Z",
   "method": "Wednesday spread-based upset screen plus exact-price governance",
   "coverage": {
     "all_current_threshold_candidates_represented": true,
     "selected_week_games": 14,
-    "spread_screen_candidates": 0,
+    "spread_screen_candidates": 1,
     "near_threshold_watch": 0,
     "price_policy": "Exact moneylines never inferred from spreads."
   },
   "candidates": [
     {
-      "game_id": "2026-W7-IND-MIN",
-      "team": "IND",
-      "moneyline": 260,
-      "eligible": true,
-      "nearThreshold": false,
-      "status": "PRICE_QUALIFIED-RESEARCH",
-      "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-10-25T16:37:29.866Z",
-      "market_implied_probability": 0.2778,
-      "reason": null,
-      "spread": "Minnesota Vikings -6.5",
-      "structuralFair": "Minnesota Vikings -3.1",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Indianapolis Colts is 6.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Current structural lean IND; structural fair Minnesota Vikings -3.1."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Preseason prior 2.50 vs opponent 0.72."
-        },
-        {
-          "name": "recent-form",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Prior-week scoring margin -6."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 260 via ESPN DraftKings; threshold qualification is separate from recommendation."
-    },
-    {
       "game_id": "2026-W7-NYG-HOU",
       "team": "NYG",
-      "moneyline": 390,
-      "eligible": true,
+      "moneyline": null,
+      "eligible": false,
       "nearThreshold": false,
-      "status": "PRICE_QUALIFIED-RESEARCH",
-      "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-10-25T16:37:29.866Z",
-      "market_implied_probability": 0.2041,
+      "status": "PRICE_PENDING",
+      "minimum_playable_ml": "PRICE_PENDING",
+      "priceSource": null,
+      "priceObservedAt": null,
+      "market_implied_probability": null,
       "reason": null,
       "spread": "Houston Texans -10",
       "structuralFair": "Houston Texans -8.1",
@@ -105,10 +57,59 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 390 via ESPN DraftKings; threshold qualification is separate from recommendation."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
     }
   ],
   "near_threshold_watch": [],
-  "price_pending": [],
-  "narrativeReconciledAt": "2026-10-25T16:37:43.390Z"
+  "price_pending": [
+    {
+      "game_id": "2026-W7-NYG-HOU",
+      "team": "NYG",
+      "moneyline": null,
+      "eligible": false,
+      "nearThreshold": false,
+      "status": "PRICE_PENDING",
+      "minimum_playable_ml": "PRICE_PENDING",
+      "priceSource": null,
+      "priceObservedAt": null,
+      "market_implied_probability": null,
+      "reason": null,
+      "spread": "Houston Texans -10",
+      "structuralFair": "Houston Texans -8.1",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "New York Giants is 10 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Current structural lean NYG; structural fair Houston Texans -8.1."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Preseason prior -1.66 vs opponent 5.66."
+        },
+        {
+          "name": "recent-form",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Prior-week scoring margin -7."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
+    }
+  ],
+  "narrativeReconciledAt": "2026-10-25T19:47:43.391Z"
 }
