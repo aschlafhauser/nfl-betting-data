@@ -2,10 +2,10 @@
   "version": "NFL-WEEKLY-MANIFEST-v3",
   "season": 2026,
   "week": 7,
-  "updatedAt": "2026-10-25T11:53:24.127Z",
+  "updatedAt": "2026-10-25T13:24:04.150Z",
   "status": "FAIL",
   "sourceOfTruth": "data/weekly-board.json",
-  "latestWeekdayIntel": "data/weekday-intel-2026-10-24.json",
+  "latestWeekdayIntel": "data/weekday-intel-2026-10-25.json",
   "gates": {
     "canonicalSchedule": {
       "status": "PASS",
@@ -24,7 +24,7 @@
       "status": "PASS",
       "classifiedGames": 14,
       "expected": 14,
-      "source": "data/weekday-intel-2026-10-24.json"
+      "source": "data/weekday-intel-2026-10-25.json"
     },
     "matchupMatrix": {
       "status": "PASS",
@@ -34,16 +34,16 @@
       "note": "Current personnel/unit overlays and older matchup diagnostics remain research-only unless separately validated."
     },
     "statisticalDisplay": {
-      "status": "FAIL",
+      "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-10-24T06:02:10.982359+00:00",
+      "verifiedAt": "2026-10-25T13:24:01.017632+00:00",
       "artifact": "data/statistical-display-integrity-2026-w7.json",
       "note": "32 observed season-to-date profiles through Week 6; defensive yardage independently aggregated from each opponent box score. Advanced inputs use the same pregame cutoff."
     },
     "marketDerivedIntegrity": {
-      "status": "FAIL",
+      "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-10-24T06:02:05.602Z",
+      "verifiedAt": "2026-10-25T13:23:55.014Z",
       "artifact": "data/market-derived-integrity-2026-w7.json",
       "note": "All 14 current spread-derived production fairs independently reconciled as 80% market + 20% frozen structural line with calculation timestamps at/after market dependency."
     },
@@ -51,19 +51,16 @@
       "status": "FAIL",
       "blocking": true,
       "unplayedGames": 13,
-      "freshMarketGames": 0,
+      "freshMarketGames": 13,
       "calculationFreshGames": 13,
       "moneylineAvailableGames": 13,
       "availabilityCheckpointDue": 12,
-      "availabilityCheckpointComplete": 0,
+      "availabilityCheckpointComplete": 11,
       "weatherCheckpointDue": 12,
-      "weatherCheckpointComplete": 0,
-      "upsetLabVerified": false,
+      "weatherCheckpointComplete": 12,
+      "upsetLabVerified": true,
       "issues": [
-        "fresh spread/total market coverage 0/13",
-        "selected-week upset research incomplete",
-        "availability review due 0/12",
-        "weather review due 0/12"
+        "availability review due 11/12"
       ],
       "warnings": [],
       "note": "Wednesday certification requires fresh spread/total, selected-week model calculations, universal Deep Dives and upset research. Exact ML, final injury designations and weather become blocking only when their execution checkpoints are due; missing values are never inferred."
@@ -98,7 +95,7 @@
       "note": "0/0 selected public episodes have complete automated transcripts and NFL-material reviews across 0 source families. Only this explicit inventory is certified; publisher-certified transcripts, premium content and executable book quotes are separate. Missing future-week review cannot inherit a prior-week PASS."
     },
     "upsetResearchIsolation": {
-      "status": "FAIL",
+      "status": "PASS",
       "productionFairImpact": 0,
       "modelWeightImpact": 0,
       "officialLedgerImpact": 0,
@@ -144,12 +141,9 @@
     }
   },
   "failures": [
-    "STATISTICALDISPLAY_INCOMPLETE",
-    "MARKETDERIVEDINTEGRITY_INCOMPLETE",
     "CURRENTWEEKCOMPLETENESS_INCOMPLETE",
     "EXPERTINTELLIGENCE_INCOMPLETE",
-    "PODCASTTRANSCRIPTS_INCOMPLETE",
-    "UPSETRESEARCHISOLATION_INCOMPLETE"
+    "PODCASTTRANSCRIPTS_INCOMPLETE"
   ],
   "historicalWarnings": []
 }

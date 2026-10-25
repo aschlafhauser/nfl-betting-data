@@ -2,8 +2,8 @@
   "schemaVersion": "1.0-team-leans-research",
   "season": 2026,
   "week": 7,
-  "generatedAt": "2026-10-24T06:02:13.135844+00:00",
-  "inputBoardAt": "2026-10-24T06:02:12.552Z",
+  "generatedAt": "2026-10-25T13:24:02.920261+00:00",
+  "inputBoardAt": "2026-10-25T13:24:02.448Z",
   "throughWeek": 6,
   "researchOnly": true,
   "productionPointImpact": 0,
@@ -26,7 +26,7 @@
       "awayAbbr": "NE",
       "homeAbbr": "CHI",
       "kickoff": "2026-10-23T00:15Z",
-      "generatedAt": "2026-10-24T06:02:13.135844+00:00",
+      "generatedAt": "2026-10-25T13:24:02.920261+00:00",
       "status": "STARTED \u2014 NOT ISSUED",
       "footballLean": null,
       "assessmentSide": "NE",
@@ -643,7 +643,7 @@
       ],
       "sourceCoverage": {
         "required": 8,
-        "current": 8,
+        "current": 1,
         "selectedWeekRecords": 7
       },
       "scheme": {
@@ -653,6 +653,7 @@
       },
       "limitations": [
         "Market snapshot older than 6 hours or missing.",
+        "Current game injury report missing or older than 48 hours.",
         "Defense versus motion is Week 1; excluded from lean direction."
       ],
       "started": true,
@@ -672,7 +673,7 @@
       "awayAbbr": "PIT",
       "homeAbbr": "NO",
       "kickoff": "2026-10-25T13:30Z",
-      "generatedAt": "2026-10-24T06:02:13.135844+00:00",
+      "generatedAt": "2026-10-25T13:24:02.920261+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "PIT",
       "assessmentSide": "PIT",
@@ -863,15 +864,15 @@
       "market": {
         "spread_display": "Pittsburgh Steelers -3",
         "spread": "PIT -3",
-        "total": 44.5,
+        "total": 43.5,
         "home_margin": -3,
         "home_team_sportsbook_spread": 3,
         "moneyline": {
-          "away": -162,
-          "home": 136
+          "away": -166,
+          "home": 140
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-24T06:02:03.882Z",
+        "timestamp": "2026-10-25T13:23:53.615Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": -2.541,
@@ -886,8 +887,8 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-10-24T06:02:04.265858+00:00",
-        "reviewComplete": false,
+        "observedAt": "2026-10-25T13:23:53.870380+00:00",
+        "reviewComplete": true,
         "flags": [
           "PIT QUESTIONABLE: RB Rico Dowdle (Knee).",
           "PIT OUT: CB Brandin Echols (Hamstring).",
@@ -995,20 +996,20 @@
         "status": "LOCATION MISMATCH \u2014 WITHHELD",
         "summary": "Forecast withheld: the listed international venue does not match this U.S. NWS forecast source. Verify a local kickoff-hour forecast.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-10-24T06:02:05.542293+00:00",
+        "observed_at": "2026-10-25T13:23:54.957888+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/29.9511,-90.0812",
-        "forecast_timestamp": "2026-10-24T04:16:21+00:00",
+        "forecast_timestamp": "2026-10-25T10:01:06+00:00",
         "forecast_verified": false,
         "forecast": {
           "game_id": "2026-W7-PIT-NO",
           "kickoff": "2026-10-25T13:30Z",
-          "temp_f": 63,
+          "temp_f": 61,
           "wind_mph": 10.0,
-          "gust_mph": 19.6,
+          "gust_mph": 17.3,
           "precip_chance_pct": 0,
-          "forecast_timestamp": "2026-10-24T04:16:21+00:00",
+          "forecast_timestamp": "2026-10-25T10:01:06+00:00",
           "sources": [
             "https://api.weather.gov/points/29.9511,-90.0812",
             "https://api.weather.gov/gridpoints/LIX/67,88/forecast/hourly",
@@ -1021,7 +1022,7 @@
           "conditions": "Sunny",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-10-24T06:02:05.542293+00:00"
+          "retrieved_at": "2026-10-25T13:23:54.957888+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/29.9511,-90.0812",
@@ -1047,7 +1048,7 @@
       "expertFamilies": [],
       "sourceCoverage": {
         "required": 8,
-        "current": 8,
+        "current": 1,
         "selectedWeekRecords": 7
       },
       "scheme": {
@@ -1074,8 +1075,8 @@
           "source": "ESPN Draft Kings"
         },
         {
-          "observedAt": "2026-10-24T00:53:00.577Z",
-          "capturedAt": "2026-10-24T00:53:17.230126+00:00",
+          "observedAt": "2026-10-24T06:02:03.882Z",
+          "capturedAt": "2026-10-24T06:02:13.135844+00:00",
           "spread": "Pittsburgh Steelers -3",
           "homeMargin": -3,
           "source": "ESPN DraftKings"
@@ -1093,7 +1094,7 @@
       "awayAbbr": "SF",
       "homeAbbr": "ATL",
       "kickoff": "2026-10-25T17:00Z",
-      "generatedAt": "2026-10-24T06:02:13.135844+00:00",
+      "generatedAt": "2026-10-25T13:24:02.920261+00:00",
       "status": "PRICE WATCH",
       "footballLean": "SF",
       "assessmentSide": "SF",
@@ -1284,7 +1285,7 @@
       "market": {
         "spread_display": "San Francisco 49ers -2.5",
         "spread": null,
-        "total": 49.5,
+        "total": 50.5,
         "home_margin": -2.5,
         "home_team_sportsbook_spread": 2.5,
         "moneyline": {
@@ -1292,7 +1293,7 @@
           "home": 124
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-24T06:02:03.882Z",
+        "timestamp": "2026-10-25T13:23:53.615Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": -3.45,
@@ -1307,8 +1308,8 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-10-24T06:02:04.265858+00:00",
-        "reviewComplete": false,
+        "observedAt": "2026-10-25T13:23:53.870380+00:00",
+        "reviewComplete": true,
         "flags": [
           "SF OUT: DE Nick Bosa (Knee, Calf).",
           "SF OUT: WR Mike Evans (Ribs, Achilles).",
@@ -1320,7 +1321,7 @@
           "SF QUESTIONABLE: CB Upton Stout (Shoulder).",
           "SF OUT: LB Garret Wallow (Hamstring).",
           "ATL OUT: CB Billy Bowman Jr. (Hamstring).",
-          "ATL QUESTIONABLE: WR Beaux Collins (Hip).",
+          "ATL OUT: WR Beaux Collins (Hip).",
           "ATL QUESTIONABLE: LB Kendal Daniels (Neck).",
           "ATL OUT: LB Divine Deablo (Forearm).",
           "ATL QUESTIONABLE: DT Gervon Dexter Sr. (Hamstring).",
@@ -1331,7 +1332,7 @@
           "ATL QUESTIONABLE: DE Za'Darius Smith (Neck).",
           "ATL QUESTIONABLE: CB A.J. Terrell (Groin).",
           "ATL QUESTIONABLE: CB Avieon Terrell (Back).",
-          "ATL QUESTIONABLE: T Cameron Williams (Ankle).",
+          "ATL OUT: T Cameron Williams (Ankle).",
           "ATL QUESTIONABLE: WR Olamide Zaccheaus (Shoulder)."
         ],
         "watch": [
@@ -1419,7 +1420,7 @@
             "team": "ATL",
             "player": "Beaux Collins",
             "position": "WR",
-            "status": "Questionable Full Participation in Practice",
+            "status": "Out Full Participation in Practice",
             "unit": "Other",
             "scenario": "Verify role and replacement before execution."
           },
@@ -1515,7 +1516,7 @@
             "team": "ATL",
             "player": "Cameron Williams",
             "position": "T",
-            "status": "Questionable Limited Participation in Practice",
+            "status": "Out Limited Participation in Practice",
             "unit": "OL",
             "scenario": "If unavailable, reassess protection and the passing matchup."
           },
@@ -1576,7 +1577,7 @@
         "status": "Official indoor venue verified",
         "summary": "Mercedes-Benz Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-10-24T06:02:05.542312+00:00",
+        "observed_at": "2026-10-25T13:23:54.957908+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
@@ -1598,7 +1599,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-10-24T06:02:05.542312+00:00"
+          "retrieved_at": "2026-10-25T13:23:54.957908+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
@@ -1622,7 +1623,7 @@
       "expertFamilies": [],
       "sourceCoverage": {
         "required": 8,
-        "current": 8,
+        "current": 1,
         "selectedWeekRecords": 7
       },
       "scheme": {
@@ -1648,8 +1649,8 @@
           "source": "ESPN Draft Kings"
         },
         {
-          "observedAt": "2026-10-24T00:53:00.577Z",
-          "capturedAt": "2026-10-24T00:53:17.230126+00:00",
+          "observedAt": "2026-10-24T06:02:03.882Z",
+          "capturedAt": "2026-10-24T06:02:13.135844+00:00",
           "spread": "San Francisco 49ers -2.5",
           "homeMargin": -2.5,
           "source": "ESPN DraftKings"
@@ -1667,7 +1668,7 @@
       "awayAbbr": "CLE",
       "homeAbbr": "TEN",
       "kickoff": "2026-10-25T17:00Z",
-      "generatedAt": "2026-10-24T06:02:13.135844+00:00",
+      "generatedAt": "2026-10-25T13:24:02.920261+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "CLE",
       "assessmentSide": "CLE",
@@ -1856,40 +1857,38 @@
         "structuralHomeMargin": 2.774
       },
       "market": {
-        "spread_display": "Cleveland Browns -2.5",
+        "spread_display": "Cleveland Browns -1.5",
         "spread": "CLE -1.5",
         "total": 36.5,
-        "home_margin": -2.5,
-        "home_team_sportsbook_spread": 2.5,
+        "home_margin": -1.5,
+        "home_team_sportsbook_spread": 1.5,
         "moneyline": {
           "away": -130,
           "home": 110
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-24T06:02:03.882Z",
+        "timestamp": "2026-10-25T13:23:53.615Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
-      "productionFair": -1.445,
+      "productionFair": -0.645,
       "structuralFair": 2.774,
-      "structuralDifference": 5.274,
+      "structuralDifference": 4.274,
       "price": {
         "side": "CLE",
-        "minimumSpreadAtSnapshot": 0.5,
+        "minimumSpreadAtSnapshot": 1.0,
         "assumedJuice": -110,
         "minimumModelPoints": 1.5,
         "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-10-24T06:02:04.265858+00:00",
-        "reviewComplete": false,
+        "observedAt": "2026-10-25T13:23:53.870380+00:00",
+        "reviewComplete": true,
         "flags": [
           "CLE OUT: DT Kalia Davis (Quadricep).",
-          "CLE QUESTIONABLE: S Grant Delpit (Concussion, Shoulder).",
           "CLE OUT: QB Dillon Gabriel (Back).",
           "CLE OUT: DT Mike Hall Jr. (Ankle).",
           "CLE OUT: G Teven Jenkins (Back).",
-          "CLE QUESTIONABLE: RB Dylan Sampson (Knee).",
           "CLE QUESTIONABLE: CB Denzel Ward (Hand).",
           "CLE QUESTIONABLE: LB Quincy Williams (Neck).",
           "TEN QUESTIONABLE: S Tony Adams (Ankle).",
@@ -1911,7 +1910,7 @@
             "team": "CLE",
             "player": "Grant Delpit",
             "position": "S",
-            "status": "Questionable Limited Participation in Practice",
+            "status": "Limited Participation in Practice",
             "unit": "Secondary",
             "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
           },
@@ -1938,14 +1937,6 @@
             "status": "Out Did Not Participate In Practice",
             "unit": "OL",
             "scenario": "If unavailable, reassess protection and the passing matchup."
-          },
-          {
-            "team": "CLE",
-            "player": "Dylan Sampson",
-            "position": "RB",
-            "status": "Questionable Full Participation in Practice",
-            "unit": "Other",
-            "scenario": "Verify role and replacement before execution."
           },
           {
             "team": "CLE",
@@ -2062,22 +2053,22 @@
         "venue": "Nissan Stadium",
         "environment": "outdoor",
         "status": "Official kickoff-hour forecast verified",
-        "summary": "Sunny at kickoff: 72\u00b0F; wind  0.0 mph, gust 3.5 mph; precipitation chance 0%.",
+        "summary": "Sunny at kickoff: 72\u00b0F; wind  0.0 mph, gust 4.6 mph; precipitation chance 0%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-10-24T06:02:05.542316+00:00",
+        "observed_at": "2026-10-25T13:23:54.957910+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/36.1665,-86.7713",
-        "forecast_timestamp": "2026-10-23T18:31:21+00:00",
+        "forecast_timestamp": "2026-10-25T10:16:27+00:00",
         "forecast_verified": true,
         "forecast": {
           "game_id": "2026-W7-CLE-TEN",
           "kickoff": "2026-10-25T17:00Z",
           "temp_f": 72,
           "wind_mph": 0.0,
-          "gust_mph": 3.5,
+          "gust_mph": 4.6,
           "precip_chance_pct": 0,
-          "forecast_timestamp": "2026-10-23T18:31:21+00:00",
+          "forecast_timestamp": "2026-10-25T10:16:27+00:00",
           "sources": [
             "https://api.weather.gov/points/36.1665,-86.7713",
             "https://api.weather.gov/gridpoints/OHX/50,57/forecast/hourly",
@@ -2090,7 +2081,7 @@
           "conditions": "Sunny",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-10-24T06:02:05.542316+00:00"
+          "retrieved_at": "2026-10-25T13:23:54.957910+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/36.1665,-86.7713",
@@ -2116,7 +2107,7 @@
       "expertFamilies": [],
       "sourceCoverage": {
         "required": 8,
-        "current": 8,
+        "current": 1,
         "selectedWeekRecords": 7
       },
       "scheme": {
@@ -2142,8 +2133,8 @@
           "source": "ESPN Draft Kings"
         },
         {
-          "observedAt": "2026-10-24T00:53:00.577Z",
-          "capturedAt": "2026-10-24T00:53:17.230126+00:00",
+          "observedAt": "2026-10-24T06:02:03.882Z",
+          "capturedAt": "2026-10-24T06:02:13.135844+00:00",
           "spread": "Cleveland Browns -2.5",
           "homeMargin": -2.5,
           "source": "ESPN DraftKings"
@@ -2161,7 +2152,7 @@
       "awayAbbr": "IND",
       "homeAbbr": "MIN",
       "kickoff": "2026-10-25T17:00Z",
-      "generatedAt": "2026-10-24T06:02:13.135844+00:00",
+      "generatedAt": "2026-10-25T13:24:02.920261+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "MIN",
       "assessmentSide": "MIN",
@@ -2356,11 +2347,11 @@
         "home_margin": 6.5,
         "home_team_sportsbook_spread": -6.5,
         "moneyline": {
-          "away": 235,
-          "home": -290
+          "away": 260,
+          "home": -325
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-24T06:02:03.882Z",
+        "timestamp": "2026-10-25T13:23:53.615Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": 5.816,
@@ -2375,14 +2366,13 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-10-24T06:02:04.265858+00:00",
-        "reviewComplete": false,
+        "observedAt": "2026-10-25T13:23:53.870380+00:00",
+        "reviewComplete": true,
         "flags": [
-          "IND QUESTIONABLE: LB CJ Allen (Ankle).",
+          "IND OUT: LB CJ Allen (Ankle).",
           "IND QUESTIONABLE: LB Bryce Boettcher (Groin).",
           "IND OUT: CB Sauce Gardner (Calf).",
           "IND OUT: WR Anthony Gould (Concussion).",
-          "IND QUESTIONABLE: P Rigoberto Sanchez (Foot).",
           "IND QUESTIONABLE: CB Justin Walley (Knee).",
           "IND OUT: TE Tyler Warren (Groin).",
           "MIN QUESTIONABLE: RB Jordan Mason (Thumb)."
@@ -2400,7 +2390,7 @@
             "team": "IND",
             "player": "CJ Allen",
             "position": "LB",
-            "status": "Questionable Did Not Participate In Practice",
+            "status": "Out Did Not Participate In Practice",
             "unit": "Other",
             "scenario": "Verify role and replacement before execution."
           },
@@ -2440,7 +2430,7 @@
             "team": "IND",
             "player": "Rigoberto Sanchez",
             "position": "P",
-            "status": "Questionable Did Not Participate In Practice",
+            "status": "Did Not Participate In Practice",
             "unit": "Other",
             "scenario": "Verify role and replacement before execution."
           },
@@ -2527,7 +2517,7 @@
         "status": "Official indoor venue verified",
         "summary": "U.S. Bank Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-10-24T06:02:05.542324+00:00",
+        "observed_at": "2026-10-25T13:23:54.957917+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
@@ -2549,7 +2539,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-10-24T06:02:05.542324+00:00"
+          "retrieved_at": "2026-10-25T13:23:54.957917+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
@@ -2573,7 +2563,7 @@
       "expertFamilies": [],
       "sourceCoverage": {
         "required": 8,
-        "current": 8,
+        "current": 1,
         "selectedWeekRecords": 7
       },
       "scheme": {
@@ -2599,8 +2589,8 @@
           "source": "ESPN Draft Kings"
         },
         {
-          "observedAt": "2026-10-24T00:53:00.577Z",
-          "capturedAt": "2026-10-24T00:53:17.230126+00:00",
+          "observedAt": "2026-10-24T06:02:03.882Z",
+          "capturedAt": "2026-10-24T06:02:13.135844+00:00",
           "spread": "Minnesota Vikings -6.5",
           "homeMargin": 6.5,
           "source": "ESPN DraftKings"
@@ -2618,7 +2608,7 @@
       "awayAbbr": "MIA",
       "homeAbbr": "NYJ",
       "kickoff": "2026-10-25T17:00Z",
-      "generatedAt": "2026-10-24T06:02:13.135844+00:00",
+      "generatedAt": "2026-10-25T13:24:02.920261+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "NYJ",
       "assessmentSide": "NYJ",
@@ -2807,33 +2797,33 @@
         "structuralHomeMargin": 0.038
       },
       "market": {
-        "spread_display": "New York Jets -4.5",
+        "spread_display": "New York Jets -3.5",
         "spread": "NYJ -4.5",
         "total": 39.5,
-        "home_margin": 4.5,
-        "home_team_sportsbook_spread": -4.5,
+        "home_margin": 3.5,
+        "home_team_sportsbook_spread": -3.5,
         "moneyline": {
-          "away": 185,
-          "home": -225
+          "away": 180,
+          "home": -218
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-24T06:02:03.882Z",
+        "timestamp": "2026-10-25T13:23:53.615Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
-      "productionFair": 3.608,
+      "productionFair": 2.808,
       "structuralFair": 0.038,
-      "structuralDifference": -4.462,
+      "structuralDifference": -3.462,
       "price": {
         "side": "NYJ",
-        "minimumSpreadAtSnapshot": -2.0,
+        "minimumSpreadAtSnapshot": -1.0,
         "assumedJuice": -110,
         "minimumModelPoints": 1.5,
         "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-10-24T06:02:04.265858+00:00",
-        "reviewComplete": false,
+        "observedAt": "2026-10-25T13:23:53.870380+00:00",
+        "reviewComplete": true,
         "flags": [
           "MIA DOUBTFUL: DE Rob Beal Jr. (Hamstring).",
           "MIA QUESTIONABLE: LB Willie Gay Jr. (Illness).",
@@ -2968,22 +2958,22 @@
         "venue": "MetLife Stadium",
         "environment": "outdoor",
         "status": "Official kickoff-hour forecast verified",
-        "summary": "Sunny at kickoff: 64\u00b0F; wind W 2.0 mph, gust None mph; precipitation chance 0%.",
+        "summary": "Sunny at kickoff: 65\u00b0F; wind W 2.0 mph, gust 3.5 mph; precipitation chance 0%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-10-24T06:02:05.542327+00:00",
+        "observed_at": "2026-10-25T13:23:54.957919+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/40.8135,-74.0745",
-        "forecast_timestamp": "2026-10-23T23:59:50+00:00",
+        "forecast_timestamp": "2026-10-25T07:10:05+00:00",
         "forecast_verified": true,
         "forecast": {
           "game_id": "2026-W7-MIA-NYJ",
           "kickoff": "2026-10-25T17:00Z",
-          "temp_f": 64,
+          "temp_f": 65,
           "wind_mph": 2.0,
-          "gust_mph": null,
+          "gust_mph": 3.5,
           "precip_chance_pct": 0,
-          "forecast_timestamp": "2026-10-23T23:59:50+00:00",
+          "forecast_timestamp": "2026-10-25T07:10:05+00:00",
           "sources": [
             "https://api.weather.gov/points/40.8135,-74.0745",
             "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
@@ -2996,7 +2986,7 @@
           "conditions": "Sunny",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-10-24T06:02:05.542327+00:00"
+          "retrieved_at": "2026-10-25T13:23:54.957919+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/40.8135,-74.0745",
@@ -3022,7 +3012,7 @@
       "expertFamilies": [],
       "sourceCoverage": {
         "required": 8,
-        "current": 8,
+        "current": 1,
         "selectedWeekRecords": 7
       },
       "scheme": {
@@ -3048,8 +3038,8 @@
           "source": "ESPN Draft Kings"
         },
         {
-          "observedAt": "2026-10-24T00:53:00.577Z",
-          "capturedAt": "2026-10-24T00:53:17.230126+00:00",
+          "observedAt": "2026-10-24T06:02:03.882Z",
+          "capturedAt": "2026-10-24T06:02:13.135844+00:00",
           "spread": "New York Jets -4.5",
           "homeMargin": 4.5,
           "source": "ESPN DraftKings"
@@ -3067,7 +3057,7 @@
       "awayAbbr": "TB",
       "homeAbbr": "CAR",
       "kickoff": "2026-10-25T17:00Z",
-      "generatedAt": "2026-10-24T06:02:13.135844+00:00",
+      "generatedAt": "2026-10-25T13:24:02.920261+00:00",
       "status": "PRICE WATCH",
       "footballLean": "CAR",
       "assessmentSide": "CAR",
@@ -3262,11 +3252,11 @@
         "home_margin": 3,
         "home_team_sportsbook_spread": -3,
         "moneyline": {
-          "away": 130,
-          "home": -155
+          "away": 136,
+          "home": -162
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-24T06:02:03.882Z",
+        "timestamp": "2026-10-25T13:23:53.615Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": 3.526,
@@ -3281,8 +3271,8 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-10-24T06:02:04.265858+00:00",
-        "reviewComplete": false,
+        "observedAt": "2026-10-25T13:23:53.870380+00:00",
+        "reviewComplete": true,
         "flags": [
           "TB OUT: WR Emeka Egbuka (Concussion, Foot).",
           "TB OUT: T Luke Goedeke (Calf).",
@@ -3415,35 +3405,35 @@
         "venue": "Bank of America Stadium",
         "environment": "outdoor",
         "status": "Official kickoff-hour forecast verified",
-        "summary": "Sunny at kickoff: 64\u00b0F; wind NE 12.0 mph, gust 19.6 mph; precipitation chance 0%.",
+        "summary": "Sunny at kickoff: 67\u00b0F; wind NE 10.0 mph, gust 19.6 mph; precipitation chance 0%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-10-24T06:02:05.542331+00:00",
+        "observed_at": "2026-10-25T13:23:54.957922+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/35.2258,-80.8528",
-        "forecast_timestamp": "2026-10-23T23:25:07+00:00",
+        "forecast_timestamp": "2026-10-25T10:29:53+00:00",
         "forecast_verified": true,
         "forecast": {
           "game_id": "2026-W7-TB-CAR",
           "kickoff": "2026-10-25T17:00Z",
-          "temp_f": 64,
-          "wind_mph": 12.0,
+          "temp_f": 67,
+          "wind_mph": 10.0,
           "gust_mph": 19.6,
           "precip_chance_pct": 0,
-          "forecast_timestamp": "2026-10-23T23:25:07+00:00",
+          "forecast_timestamp": "2026-10-25T10:29:53+00:00",
           "sources": [
             "https://api.weather.gov/points/35.2258,-80.8528",
             "https://api.weather.gov/gridpoints/GSP/118,65/forecast/hourly",
             "https://api.weather.gov/gridpoints/GSP/118,65"
           ],
-          "wind_speed_raw": "12 mph",
+          "wind_speed_raw": "10 mph",
           "wind_direction": "NE",
           "forecast_hour_start": "2026-10-25T13:00:00-04:00",
           "forecast_hour_end": "2026-10-25T14:00:00-04:00",
           "conditions": "Sunny",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-10-24T06:02:05.542331+00:00"
+          "retrieved_at": "2026-10-25T13:23:54.957922+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/35.2258,-80.8528",
@@ -3469,7 +3459,7 @@
       "expertFamilies": [],
       "sourceCoverage": {
         "required": 8,
-        "current": 8,
+        "current": 1,
         "selectedWeekRecords": 7
       },
       "scheme": {
@@ -3495,8 +3485,8 @@
           "source": "ESPN Draft Kings"
         },
         {
-          "observedAt": "2026-10-24T00:53:00.577Z",
-          "capturedAt": "2026-10-24T00:53:17.230126+00:00",
+          "observedAt": "2026-10-24T06:02:03.882Z",
+          "capturedAt": "2026-10-24T06:02:13.135844+00:00",
           "spread": "Carolina Panthers -3",
           "homeMargin": 3,
           "source": "ESPN DraftKings"
@@ -3514,7 +3504,7 @@
       "awayAbbr": "CIN",
       "homeAbbr": "BAL",
       "kickoff": "2026-10-25T17:00Z",
-      "generatedAt": "2026-10-24T06:02:13.135844+00:00",
+      "generatedAt": "2026-10-25T13:24:02.920261+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "CIN",
       "assessmentSide": "CIN",
@@ -3702,36 +3692,36 @@
         "structuralHomeMargin": 2.716
       },
       "market": {
-        "spread_display": "Cincinnati Bengals -1.5",
+        "spread_display": "Cincinnati Bengals -3",
         "spread": "BAL -2.5",
-        "total": 48.5,
-        "home_margin": -1.5,
-        "home_team_sportsbook_spread": 1.5,
+        "total": 46.5,
+        "home_margin": -3,
+        "home_team_sportsbook_spread": 3,
         "moneyline": {
-          "away": -115,
-          "home": -105
+          "away": -148,
+          "home": 124
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-24T06:02:03.882Z",
+        "timestamp": "2026-10-25T13:23:53.615Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
-      "productionFair": -0.657,
+      "productionFair": -1.857,
       "structuralFair": 2.716,
-      "structuralDifference": 4.216,
+      "structuralDifference": 5.716,
       "price": {
         "side": "CIN",
-        "minimumSpreadAtSnapshot": 1.0,
+        "minimumSpreadAtSnapshot": 0.0,
         "assumedJuice": -110,
         "minimumModelPoints": 1.5,
         "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-10-24T06:02:04.265858+00:00",
+        "observedAt": "2026-10-25T13:23:53.870380+00:00",
         "reviewComplete": false,
         "flags": [
           "BAL OUT: S Jaylinn Hawkins (Knee).",
-          "BAL QUESTIONABLE: QB Lamar Jackson (Ankle).",
+          "BAL OUT: QB Lamar Jackson (Ankle).",
           "BAL OUT: LB Tavius Robinson (Pectoral).",
           "BAL DOUBTFUL: CB T.J. Tampa (Knee).",
           "BAL QUESTIONABLE: DE Broderick Washington (Ankle)."
@@ -3781,7 +3771,7 @@
             "team": "BAL",
             "player": "Lamar Jackson",
             "position": "QB",
-            "status": "Questionable Limited Participation in Practice",
+            "status": "Out Limited Participation in Practice",
             "unit": "QB",
             "scenario": "If unavailable, reassess starter/replacement performance and the game script."
           },
@@ -3858,13 +3848,13 @@
         "venue": "M&T Bank Stadium",
         "environment": "outdoor",
         "status": "Official kickoff-hour forecast verified",
-        "summary": "Sunny at kickoff: 64\u00b0F; wind E 2.0 mph, gust 3.5 mph; precipitation chance 0%.",
+        "summary": "Sunny at kickoff: 64\u00b0F; wind SE 2.0 mph, gust 3.5 mph; precipitation chance 0%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-10-24T06:02:05.542335+00:00",
+        "observed_at": "2026-10-25T13:23:54.957925+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/39.278,-76.6227",
-        "forecast_timestamp": "2026-10-24T04:33:42+00:00",
+        "forecast_timestamp": "2026-10-25T11:52:40+00:00",
         "forecast_verified": true,
         "forecast": {
           "game_id": "2026-W7-CIN-BAL",
@@ -3873,20 +3863,20 @@
           "wind_mph": 2.0,
           "gust_mph": 3.5,
           "precip_chance_pct": 0,
-          "forecast_timestamp": "2026-10-24T04:33:42+00:00",
+          "forecast_timestamp": "2026-10-25T11:52:40+00:00",
           "sources": [
             "https://api.weather.gov/points/39.278,-76.6227",
             "https://api.weather.gov/gridpoints/LWX/109,90/forecast/hourly",
             "https://api.weather.gov/gridpoints/LWX/109,90"
           ],
           "wind_speed_raw": "2 mph",
-          "wind_direction": "E",
+          "wind_direction": "SE",
           "forecast_hour_start": "2026-10-25T13:00:00-04:00",
           "forecast_hour_end": "2026-10-25T14:00:00-04:00",
           "conditions": "Sunny",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-10-24T06:02:05.542335+00:00"
+          "retrieved_at": "2026-10-25T13:23:54.957925+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/39.278,-76.6227",
@@ -3912,7 +3902,7 @@
       "expertFamilies": [],
       "sourceCoverage": {
         "required": 8,
-        "current": 8,
+        "current": 1,
         "selectedWeekRecords": 7
       },
       "scheme": {
@@ -3938,8 +3928,8 @@
           "source": "ESPN Draft Kings"
         },
         {
-          "observedAt": "2026-10-24T00:53:00.577Z",
-          "capturedAt": "2026-10-24T00:53:17.230126+00:00",
+          "observedAt": "2026-10-24T06:02:03.882Z",
+          "capturedAt": "2026-10-24T06:02:13.135844+00:00",
           "spread": "Cincinnati Bengals -1.5",
           "homeMargin": -1.5,
           "source": "ESPN DraftKings"
@@ -3957,7 +3947,7 @@
       "awayAbbr": "NYG",
       "homeAbbr": "HOU",
       "kickoff": "2026-10-25T17:00Z",
-      "generatedAt": "2026-10-24T06:02:13.135844+00:00",
+      "generatedAt": "2026-10-25T13:24:02.920261+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "HOU",
       "assessmentSide": "HOU",
@@ -4151,11 +4141,11 @@
         "home_margin": 10.5,
         "home_team_sportsbook_spread": -10.5,
         "moneyline": {
-          "away": 380,
-          "home": -500
+          "away": 400,
+          "home": -535
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-24T06:02:03.882Z",
+        "timestamp": "2026-10-25T13:23:53.615Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": 10.026,
@@ -4170,13 +4160,13 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-10-24T06:02:04.265858+00:00",
-        "reviewComplete": false,
+        "observedAt": "2026-10-25T13:23:53.870380+00:00",
+        "reviewComplete": true,
         "flags": [
           "NYG QUESTIONABLE: CB Paulson Adebo (Knee).",
           "NYG OUT: LB Tremaine Edmunds (Shoulder).",
           "NYG QUESTIONABLE: T Jermaine Eluemunor (Calf).",
-          "NYG QUESTIONABLE: S Jevon Holland (Concussion).",
+          "NYG OUT: S Jevon Holland (Concussion).",
           "NYG DOUBTFUL: TE Theo Johnson (Neck).",
           "NYG QUESTIONABLE: T Marcus Mbow (Knee).",
           "NYG OUT: CB Greg Newsome II (Concussion).",
@@ -4216,7 +4206,7 @@
             "team": "NYG",
             "player": "Jevon Holland",
             "position": "S",
-            "status": "Questionable Limited Participation in Practice",
+            "status": "Out Limited Participation in Practice",
             "unit": "Secondary",
             "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
           },
@@ -4381,7 +4371,7 @@
         "status": "Official indoor venue verified",
         "summary": "Reliant Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-10-24T06:02:05.542343+00:00",
+        "observed_at": "2026-10-25T13:23:54.957930+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
@@ -4403,7 +4393,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-10-24T06:02:05.542343+00:00"
+          "retrieved_at": "2026-10-25T13:23:54.957930+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
@@ -4427,7 +4417,7 @@
       "expertFamilies": [],
       "sourceCoverage": {
         "required": 8,
-        "current": 8,
+        "current": 1,
         "selectedWeekRecords": 7
       },
       "scheme": {
@@ -4453,8 +4443,8 @@
           "source": "ESPN Draft Kings"
         },
         {
-          "observedAt": "2026-10-24T00:53:00.577Z",
-          "capturedAt": "2026-10-24T00:53:17.230126+00:00",
+          "observedAt": "2026-10-24T06:02:03.882Z",
+          "capturedAt": "2026-10-24T06:02:13.135844+00:00",
           "spread": "Houston Texans -10.5",
           "homeMargin": 10.5,
           "source": "ESPN DraftKings"
@@ -4472,7 +4462,7 @@
       "awayAbbr": "DEN",
       "homeAbbr": "ARI",
       "kickoff": "2026-10-25T20:05Z",
-      "generatedAt": "2026-10-24T06:02:13.135844+00:00",
+      "generatedAt": "2026-10-25T13:24:02.920261+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "DEN",
       "assessmentSide": "DEN",
@@ -4663,15 +4653,15 @@
       "market": {
         "spread_display": "Denver Broncos -4.5",
         "spread": "DEN -4.5",
-        "total": 43.5,
+        "total": 42.5,
         "home_margin": -4.5,
         "home_team_sportsbook_spread": 4.5,
         "moneyline": {
-          "away": -230,
-          "home": 190
+          "away": -238,
+          "home": 195
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-24T06:02:03.882Z",
+        "timestamp": "2026-10-25T13:23:53.615Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": -3.959,
@@ -4686,8 +4676,8 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-10-24T06:02:04.265858+00:00",
-        "reviewComplete": false,
+        "observedAt": "2026-10-25T13:23:53.870380+00:00",
+        "reviewComplete": true,
         "flags": [
           "DEN OUT: RB Tyler Badie (Thumb).",
           "DEN QUESTIONABLE: RB Jonah Coleman (Ankle).",
@@ -4870,7 +4860,7 @@
         "status": "Official indoor venue verified",
         "summary": "State Farm Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-10-24T06:02:05.542349+00:00",
+        "observed_at": "2026-10-25T13:23:54.957935+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
@@ -4892,7 +4882,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-10-24T06:02:05.542349+00:00"
+          "retrieved_at": "2026-10-25T13:23:54.957935+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
@@ -4916,7 +4906,7 @@
       "expertFamilies": [],
       "sourceCoverage": {
         "required": 8,
-        "current": 8,
+        "current": 1,
         "selectedWeekRecords": 7
       },
       "scheme": {
@@ -4942,8 +4932,8 @@
           "source": "ESPN Draft Kings"
         },
         {
-          "observedAt": "2026-10-24T00:53:00.577Z",
-          "capturedAt": "2026-10-24T00:53:17.230126+00:00",
+          "observedAt": "2026-10-24T06:02:03.882Z",
+          "capturedAt": "2026-10-24T06:02:13.135844+00:00",
           "spread": "Denver Broncos -4.5",
           "homeMargin": -4.5,
           "source": "ESPN DraftKings"
@@ -4961,7 +4951,7 @@
       "awayAbbr": "GB",
       "homeAbbr": "DET",
       "kickoff": "2026-10-25T20:25Z",
-      "generatedAt": "2026-10-24T06:02:13.135844+00:00",
+      "generatedAt": "2026-10-25T13:24:02.920261+00:00",
       "status": "PRICE WATCH",
       "footballLean": "GB",
       "assessmentSide": "GB",
@@ -5150,33 +5140,33 @@
         "structuralHomeMargin": -0.823
       },
       "market": {
-        "spread_display": "Detroit Lions -3",
+        "spread_display": "Detroit Lions -3.5",
         "spread": "DET -3",
-        "total": 53.5,
-        "home_margin": 3,
-        "home_team_sportsbook_spread": -3,
+        "total": 55.5,
+        "home_margin": 3.5,
+        "home_team_sportsbook_spread": -3.5,
         "moneyline": {
           "away": 150,
           "home": -180
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-24T06:02:03.882Z",
+        "timestamp": "2026-10-25T13:23:53.615Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
-      "productionFair": 2.235,
+      "productionFair": 2.635,
       "structuralFair": -0.823,
-      "structuralDifference": -3.823,
+      "structuralDifference": -4.323,
       "price": {
         "side": "GB",
-        "minimumSpreadAtSnapshot": 4.0,
+        "minimumSpreadAtSnapshot": 4.5,
         "assumedJuice": -110,
         "minimumModelPoints": 1.5,
         "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-10-24T06:02:04.265858+00:00",
-        "reviewComplete": false,
+        "observedAt": "2026-10-25T13:23:53.870380+00:00",
+        "reviewComplete": true,
         "flags": [
           "GB QUESTIONABLE: G Aaron Banks (Knee, Toe).",
           "GB OUT: LB Zaire Franklin (Shin).",
@@ -5335,7 +5325,7 @@
         "status": "Official indoor venue verified",
         "summary": "Ford Field is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-10-24T06:02:05.542356+00:00",
+        "observed_at": "2026-10-25T13:23:54.957940+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
@@ -5357,7 +5347,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-10-24T06:02:05.542356+00:00"
+          "retrieved_at": "2026-10-25T13:23:54.957940+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
@@ -5381,7 +5371,7 @@
       "expertFamilies": [],
       "sourceCoverage": {
         "required": 8,
-        "current": 8,
+        "current": 1,
         "selectedWeekRecords": 7
       },
       "scheme": {
@@ -5407,8 +5397,8 @@
           "source": "ESPN Draft Kings"
         },
         {
-          "observedAt": "2026-10-24T00:53:00.577Z",
-          "capturedAt": "2026-10-24T00:53:17.230126+00:00",
+          "observedAt": "2026-10-24T06:02:03.882Z",
+          "capturedAt": "2026-10-24T06:02:13.135844+00:00",
           "spread": "Detroit Lions -3",
           "homeMargin": 3,
           "source": "ESPN DraftKings"
@@ -5426,7 +5416,7 @@
       "awayAbbr": "LAR",
       "homeAbbr": "LV",
       "kickoff": "2026-10-25T20:25Z",
-      "generatedAt": "2026-10-24T06:02:13.135844+00:00",
+      "generatedAt": "2026-10-25T13:24:02.920261+00:00",
       "status": "PRICE WATCH",
       "footballLean": "LAR",
       "assessmentSide": "LAR",
@@ -5615,22 +5605,22 @@
         "structuralHomeMargin": -5.578
       },
       "market": {
-        "spread_display": "Los Angeles Rams -3",
+        "spread_display": "Los Angeles Rams -3.5",
         "spread": "LAR -4.5",
         "total": 48.5,
-        "home_margin": -3,
-        "home_team_sportsbook_spread": 3,
+        "home_margin": -3.5,
+        "home_team_sportsbook_spread": 3.5,
         "moneyline": {
-          "away": -175,
-          "home": 145
+          "away": -180,
+          "home": 150
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-24T06:02:03.882Z",
+        "timestamp": "2026-10-25T13:23:53.615Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
-      "productionFair": -3.516,
+      "productionFair": -3.916,
       "structuralFair": -5.578,
-      "structuralDifference": -2.578,
+      "structuralDifference": -2.078,
       "price": {
         "side": "LAR",
         "minimumSpreadAtSnapshot": -2.0,
@@ -5640,14 +5630,15 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-10-24T06:02:04.265858+00:00",
-        "reviewComplete": false,
+        "observedAt": "2026-10-25T13:23:53.870380+00:00",
+        "reviewComplete": true,
         "flags": [
           "LAR OUT: LB Nate Landman (Concussion).",
           "LAR QUESTIONABLE: CB Trent McDuffie (Groin).",
           "LAR QUESTIONABLE: WR Puka Nacua (Calf).",
           "LV OUT: TE Carter Runyon (Foot).",
           "LV OUT: WR Dont'e Thornton Jr. (Hamstring).",
+          "LV QUESTIONABLE: LB Quay Walker (Chest).",
           "LV QUESTIONABLE: RB Mike Washington Jr. (Foot, Back)."
         ],
         "watch": [
@@ -5717,6 +5708,14 @@
           },
           {
             "team": "LV",
+            "player": "Quay Walker",
+            "position": "LB",
+            "status": "Questionable Full Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "LV",
             "player": "Mike Washington Jr.",
             "position": "RB",
             "status": "Questionable Did Not Participate In Practice",
@@ -5756,7 +5755,7 @@
         "status": "Official indoor venue verified",
         "summary": "Allegiant Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-10-24T06:02:05.542362+00:00",
+        "observed_at": "2026-10-25T13:23:54.957945+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
@@ -5778,7 +5777,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-10-24T06:02:05.542362+00:00"
+          "retrieved_at": "2026-10-25T13:23:54.957945+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
@@ -5802,7 +5801,7 @@
       "expertFamilies": [],
       "sourceCoverage": {
         "required": 8,
-        "current": 8,
+        "current": 1,
         "selectedWeekRecords": 7
       },
       "scheme": {
@@ -5828,8 +5827,8 @@
           "source": "ESPN Draft Kings"
         },
         {
-          "observedAt": "2026-10-24T00:53:00.577Z",
-          "capturedAt": "2026-10-24T00:53:17.230126+00:00",
+          "observedAt": "2026-10-24T06:02:03.882Z",
+          "capturedAt": "2026-10-24T06:02:13.135844+00:00",
           "spread": "Los Angeles Rams -3",
           "homeMargin": -3,
           "source": "ESPN DraftKings"
@@ -5847,7 +5846,7 @@
       "awayAbbr": "KC",
       "homeAbbr": "SEA",
       "kickoff": "2026-10-26T00:20Z",
-      "generatedAt": "2026-10-24T06:02:13.135844+00:00",
+      "generatedAt": "2026-10-25T13:24:02.920261+00:00",
       "status": "PRICE WATCH",
       "footballLean": "KC",
       "assessmentSide": "KC",
@@ -6045,7 +6044,7 @@
           "home": -148
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-24T06:02:03.882Z",
+        "timestamp": "2026-10-25T13:23:53.615Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": 1.764,
@@ -6060,8 +6059,8 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-10-24T06:02:04.265858+00:00",
-        "reviewComplete": false,
+        "observedAt": "2026-10-25T13:23:53.870380+00:00",
+        "reviewComplete": true,
         "flags": [
           "KC QUESTIONABLE: LB Cooper McDonald (Knee).",
           "KC OUT: T Jaylon Moore (Concussion).",
@@ -6248,13 +6247,13 @@
         "venue": "Lumen Field",
         "environment": "outdoor",
         "status": "Official kickoff-hour forecast verified",
-        "summary": "Chance Light Rain at kickoff: 55\u00b0F; wind NNW 3.0 mph, gust 4.6 mph; precipitation chance 44%.",
+        "summary": "Chance Light Rain at kickoff: 55\u00b0F; wind SE 3.0 mph, gust 4.6 mph; precipitation chance 51%.",
         "risk": "weather review required",
-        "observed_at": "2026-10-24T06:02:05.542365+00:00",
+        "observed_at": "2026-10-25T13:23:54.957948+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/47.5952,-122.3316",
-        "forecast_timestamp": "2026-10-23T18:26:40+00:00",
+        "forecast_timestamp": "2026-10-25T06:27:02+00:00",
         "forecast_verified": true,
         "forecast": {
           "game_id": "2026-W7-KC-SEA",
@@ -6262,21 +6261,21 @@
           "temp_f": 55,
           "wind_mph": 3.0,
           "gust_mph": 4.6,
-          "precip_chance_pct": 44,
-          "forecast_timestamp": "2026-10-23T18:26:40+00:00",
+          "precip_chance_pct": 51,
+          "forecast_timestamp": "2026-10-25T06:27:02+00:00",
           "sources": [
             "https://api.weather.gov/points/47.5952,-122.3316",
             "https://api.weather.gov/gridpoints/SEW/125,67/forecast/hourly",
             "https://api.weather.gov/gridpoints/SEW/125,67"
           ],
           "wind_speed_raw": "3 mph",
-          "wind_direction": "NNW",
+          "wind_direction": "SE",
           "forecast_hour_start": "2026-10-25T17:00:00-07:00",
           "forecast_hour_end": "2026-10-25T18:00:00-07:00",
           "conditions": "Chance Light Rain",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-10-24T06:02:05.542365+00:00"
+          "retrieved_at": "2026-10-25T13:23:54.957948+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/47.5952,-122.3316",
@@ -6302,7 +6301,7 @@
       "expertFamilies": [],
       "sourceCoverage": {
         "required": 8,
-        "current": 8,
+        "current": 1,
         "selectedWeekRecords": 7
       },
       "scheme": {
@@ -6328,8 +6327,8 @@
           "source": "ESPN Draft Kings"
         },
         {
-          "observedAt": "2026-10-24T00:53:00.577Z",
-          "capturedAt": "2026-10-24T00:53:17.230126+00:00",
+          "observedAt": "2026-10-24T06:02:03.882Z",
+          "capturedAt": "2026-10-24T06:02:13.135844+00:00",
           "spread": "Seattle Seahawks -3",
           "homeMargin": 3,
           "source": "ESPN DraftKings"
@@ -6347,7 +6346,7 @@
       "awayAbbr": "DAL",
       "homeAbbr": "PHI",
       "kickoff": "2026-10-27T00:15Z",
-      "generatedAt": "2026-10-24T06:02:13.135844+00:00",
+      "generatedAt": "2026-10-25T13:24:02.920261+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "DAL",
       "assessmentSide": "DAL",
@@ -6538,15 +6537,15 @@
       "market": {
         "spread_display": "Dallas Cowboys -4.5",
         "spread": "DAL -4.5",
-        "total": 44.5,
+        "total": 43.5,
         "home_margin": -4.5,
         "home_team_sportsbook_spread": 4.5,
         "moneyline": {
-          "away": -218,
-          "home": 180
+          "away": -205,
+          "home": 170
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-10-24T06:02:03.882Z",
+        "timestamp": "2026-10-25T13:23:53.615Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": -3.136,
@@ -6561,23 +6560,40 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-10-24T06:02:04.265858+00:00",
+        "observedAt": "2026-10-25T13:23:53.870380+00:00",
         "reviewComplete": false,
-        "flags": [],
+        "flags": [
+          "DAL QUESTIONABLE: LB Marist Liufau (Forearm).",
+          "DAL QUESTIONABLE: S P.J. Locke (Foot).",
+          "DAL OUT: T Drew Shelton (Hamstring).",
+          "DAL OUT: WR KaVontae Turpin (Ribs).",
+          "DAL OUT: LB Dee Winters (Calf).",
+          "PHI QUESTIONABLE: RB Saquon Barkley (Hamstring).",
+          "PHI QUESTIONABLE: CB Jakorian Bennett (Knee).",
+          "PHI QUESTIONABLE: TE Grant Calcaterra (Back).",
+          "PHI OUT: CB Michael Carter II (Abdomen).",
+          "PHI QUESTIONABLE: G Landon Dickerson (Knee, Pectoral).",
+          "PHI QUESTIONABLE: LB Jonathan Greenard (Ankle).",
+          "PHI QUESTIONABLE: LB Jalyx Hunt (Knee, Ankle).",
+          "PHI OUT: WR DeVonta Smith (Hamstring).",
+          "PHI OUT: LB Nolan Smith (Concussion).",
+          "PHI QUESTIONABLE: TE Eli Stowers (Quadricep).",
+          "PHI OUT: WR Dontayvion Wicks (Ankle)."
+        ],
         "watch": [
           {
             "team": "DAL",
-            "player": "Broderick Jones",
-            "position": "T",
-            "status": "Limited Participation in Practice",
-            "unit": "OL",
-            "scenario": "If unavailable, reassess protection and the passing matchup."
+            "player": "Marist Liufau",
+            "position": "LB",
+            "status": "Questionable Full Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
           },
           {
             "team": "DAL",
             "player": "P.J. Locke",
             "position": "S",
-            "status": "Limited Participation in Practice",
+            "status": "Questionable Limited Participation in Practice",
             "unit": "Secondary",
             "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
           },
@@ -6593,7 +6609,7 @@
             "team": "DAL",
             "player": "Drew Shelton",
             "position": "T",
-            "status": "Did Not Participate In Practice",
+            "status": "Out Did Not Participate In Practice",
             "unit": "OL",
             "scenario": "If unavailable, reassess protection and the passing matchup."
           },
@@ -6601,7 +6617,7 @@
             "team": "DAL",
             "player": "KaVontae Turpin",
             "position": "WR",
-            "status": "Did Not Participate In Practice",
+            "status": "Out Did Not Participate In Practice",
             "unit": "Other",
             "scenario": "Verify role and replacement before execution."
           },
@@ -6609,7 +6625,7 @@
             "team": "DAL",
             "player": "Dee Winters",
             "position": "LB",
-            "status": "Did Not Participate In Practice",
+            "status": "Out Did Not Participate In Practice",
             "unit": "Other",
             "scenario": "Verify role and replacement before execution."
           },
@@ -6617,7 +6633,23 @@
             "team": "PHI",
             "player": "Saquon Barkley",
             "position": "RB",
-            "status": "Limited Participation in Practice",
+            "status": "Questionable Full Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "PHI",
+            "player": "Jakorian Bennett",
+            "position": "CB",
+            "status": "Questionable Full Participation in Practice",
+            "unit": "Secondary",
+            "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+          },
+          {
+            "team": "PHI",
+            "player": "Grant Calcaterra",
+            "position": "TE",
+            "status": "Questionable Full Participation in Practice",
             "unit": "Other",
             "scenario": "Verify role and replacement before execution."
           },
@@ -6625,7 +6657,7 @@
             "team": "PHI",
             "player": "Michael Carter II",
             "position": "CB",
-            "status": "Did Not Participate In Practice",
+            "status": "Out Did Not Participate In Practice",
             "unit": "Secondary",
             "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
           },
@@ -6633,31 +6665,15 @@
             "team": "PHI",
             "player": "Landon Dickerson",
             "position": "G",
-            "status": "Limited Participation in Practice",
+            "status": "Questionable Full Participation in Practice",
             "unit": "OL",
             "scenario": "If unavailable, reassess protection and the passing matchup."
           },
           {
             "team": "PHI",
-            "player": "A.J. Epenesa",
-            "position": "DE",
-            "status": "Limited Participation in Practice",
-            "unit": "Other",
-            "scenario": "Verify role and replacement before execution."
-          },
-          {
-            "team": "PHI",
-            "player": "Dallas Goedert",
-            "position": "TE",
-            "status": "Did Not Participate In Practice",
-            "unit": "Other",
-            "scenario": "Verify role and replacement before execution."
-          },
-          {
-            "team": "PHI",
             "player": "Jonathan Greenard",
             "position": "LB",
-            "status": "Did Not Participate In Practice",
+            "status": "Questionable Did Not Participate In Practice",
             "unit": "Other",
             "scenario": "Verify role and replacement before execution."
           },
@@ -6665,31 +6681,7 @@
             "team": "PHI",
             "player": "Jalyx Hunt",
             "position": "LB",
-            "status": "Limited Participation in Practice",
-            "unit": "Other",
-            "scenario": "Verify role and replacement before execution."
-          },
-          {
-            "team": "PHI",
-            "player": "Fred Johnson",
-            "position": "T",
-            "status": "Limited Participation in Practice",
-            "unit": "OL",
-            "scenario": "If unavailable, reassess protection and the passing matchup."
-          },
-          {
-            "team": "PHI",
-            "player": "Willie Lampkin",
-            "position": "C",
-            "status": "Limited Participation in Practice",
-            "unit": "OL",
-            "scenario": "If unavailable, reassess protection and the passing matchup."
-          },
-          {
-            "team": "PHI",
-            "player": "Moro Ojomo",
-            "position": "DT",
-            "status": "Limited Participation in Practice",
+            "status": "Questionable Limited Participation in Practice",
             "unit": "Other",
             "scenario": "Verify role and replacement before execution."
           },
@@ -6697,7 +6689,7 @@
             "team": "PHI",
             "player": "DeVonta Smith",
             "position": "WR",
-            "status": "Did Not Participate In Practice",
+            "status": "Out Did Not Participate In Practice",
             "unit": "Other",
             "scenario": "Verify role and replacement before execution."
           },
@@ -6705,23 +6697,23 @@
             "team": "PHI",
             "player": "Nolan Smith",
             "position": "LB",
-            "status": "Did Not Participate In Practice",
+            "status": "Out Did Not Participate In Practice",
             "unit": "Other",
             "scenario": "Verify role and replacement before execution."
           },
           {
             "team": "PHI",
-            "player": "Tyler Steen",
-            "position": "G",
-            "status": "Limited Participation in Practice",
-            "unit": "OL",
-            "scenario": "If unavailable, reassess protection and the passing matchup."
+            "player": "Eli Stowers",
+            "position": "TE",
+            "status": "Questionable Full Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
           },
           {
             "team": "PHI",
             "player": "Dontayvion Wicks",
             "position": "WR",
-            "status": "Did Not Participate In Practice",
+            "status": "Out Did Not Participate In Practice",
             "unit": "Other",
             "scenario": "Verify role and replacement before execution."
           }
@@ -6730,9 +6722,8 @@
           {
             "team": "DAL",
             "unit": "OL",
-            "count": 2,
+            "count": 1,
             "players": [
-              "Broderick Jones",
               "Drew Shelton"
             ],
             "note": "Practice/designation watch; starter status and replacement quality not certified."
@@ -6749,20 +6740,18 @@
           {
             "team": "PHI",
             "unit": "OL",
-            "count": 4,
+            "count": 1,
             "players": [
-              "Landon Dickerson",
-              "Fred Johnson",
-              "Willie Lampkin",
-              "Tyler Steen"
+              "Landon Dickerson"
             ],
             "note": "Practice/designation watch; starter status and replacement quality not certified."
           },
           {
             "team": "PHI",
             "unit": "Secondary",
-            "count": 1,
+            "count": 2,
             "players": [
+              "Jakorian Bennett",
               "Michael Carter II"
             ],
             "note": "Practice/designation watch; starter status and replacement quality not certified."
@@ -6778,22 +6767,22 @@
         "venue": "Lincoln Financial Field",
         "environment": "outdoor",
         "status": "Official kickoff-hour forecast verified",
-        "summary": "Clear at kickoff: 60\u00b0F; wind W 5.0 mph, gust 5.8 mph; precipitation chance 0%.",
+        "summary": "Clear at kickoff: 58\u00b0F; wind W 5.0 mph, gust 5.8 mph; precipitation chance 0%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-10-24T06:02:05.542370+00:00",
+        "observed_at": "2026-10-25T13:23:54.957951+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/39.9008,-75.1675",
-        "forecast_timestamp": "2026-10-23T22:05:38+00:00",
+        "forecast_timestamp": "2026-10-25T08:08:34+00:00",
         "forecast_verified": true,
         "forecast": {
           "game_id": "2026-W7-DAL-PHI",
           "kickoff": "2026-10-27T00:15Z",
-          "temp_f": 60,
+          "temp_f": 58,
           "wind_mph": 5.0,
           "gust_mph": 5.8,
           "precip_chance_pct": 0,
-          "forecast_timestamp": "2026-10-23T22:05:38+00:00",
+          "forecast_timestamp": "2026-10-25T08:08:34+00:00",
           "sources": [
             "https://api.weather.gov/points/39.9008,-75.1675",
             "https://api.weather.gov/gridpoints/PHI/50,76/forecast/hourly",
@@ -6806,7 +6795,7 @@
           "conditions": "Clear",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-10-24T06:02:05.542370+00:00"
+          "retrieved_at": "2026-10-25T13:23:54.957951+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/39.9008,-75.1675",
@@ -6832,7 +6821,7 @@
       "expertFamilies": [],
       "sourceCoverage": {
         "required": 8,
-        "current": 8,
+        "current": 1,
         "selectedWeekRecords": 7
       },
       "scheme": {
@@ -6858,8 +6847,8 @@
           "source": "ESPN Draft Kings"
         },
         {
-          "observedAt": "2026-10-24T00:53:00.577Z",
-          "capturedAt": "2026-10-24T00:53:17.230126+00:00",
+          "observedAt": "2026-10-24T06:02:03.882Z",
+          "capturedAt": "2026-10-24T06:02:13.135844+00:00",
           "spread": "Dallas Cowboys -4.5",
           "homeMargin": -4.5,
           "source": "ESPN DraftKings"

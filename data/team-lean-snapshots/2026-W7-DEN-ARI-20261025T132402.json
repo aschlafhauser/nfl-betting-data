@@ -1,0 +1,489 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W7-DEN-ARI",
+  "portalGameId": "401873019",
+  "week": 7,
+  "away": "Denver Broncos",
+  "home": "Arizona Cardinals",
+  "awayAbbr": "DEN",
+  "homeAbbr": "ARI",
+  "kickoff": "2026-10-25T20:05Z",
+  "generatedAt": "2026-10-25T13:24:02.920261+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "DEN",
+  "assessmentSide": "DEN",
+  "structuralValueSide": "ARI",
+  "alignment": "CONFLICT",
+  "thesis": "DEN has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "DEN",
+      "gap": 0.092,
+      "unit": "EPA/play",
+      "awayOffense": -0.10120409571812095,
+      "homeDefenseAllowed": 0.24879464620237668,
+      "homeOffense": 0.01643776719751483,
+      "awayDefenseAllowed": -0.05335104789194255,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "DEN",
+      "gap": 1.239,
+      "unit": "percentage points",
+      "awayOffense": 0.05847953216374269,
+      "homeDefenseAllowed": 0.10795454545454546,
+      "homeOffense": 0.045112781954887216,
+      "awayDefenseAllowed": 0.09653465346534654,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "DEN",
+      "gap": 4.925,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.11274509803921569,
+      "homeDefenseAllowed": 0.15463917525773196,
+      "homeOffense": 0.156,
+      "awayDefenseAllowed": 0.20987654320987653,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Early-down efficiency",
+      "side": "ARI",
+      "gap": 0.03,
+      "unit": "EPA/play",
+      "awayOffense": -0.020184104460180586,
+      "homeDefenseAllowed": -0.0005568524100607435,
+      "homeOffense": 0.03936816946617528,
+      "awayDefenseAllowed": -0.0006069962838238881,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "ARI",
+      "gap": 0.092,
+      "unit": "EPA/play",
+      "awayOffense": -0.08492407151230862,
+      "homeDefenseAllowed": -0.1177768046017892,
+      "homeOffense": -0.05714383130527397,
+      "awayDefenseAllowed": 0.039266295287857925,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "DEN",
+      "gap": 0.092,
+      "unit": "EPA/play",
+      "awayOffense": -0.10120409571812095,
+      "homeDefenseAllowed": 0.24879464620237668,
+      "homeOffense": 0.01643776719751483,
+      "awayDefenseAllowed": -0.05335104789194255,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "ARI",
+      "gap": 0.03,
+      "unit": "EPA/play",
+      "awayOffense": -0.020184104460180586,
+      "homeDefenseAllowed": -0.0005568524100607435,
+      "homeOffense": 0.03936816946617528,
+      "awayDefenseAllowed": -0.0006069962838238881,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "ARI",
+      "gap": 0.092,
+      "unit": "EPA/play",
+      "awayOffense": -0.08492407151230862,
+      "homeDefenseAllowed": -0.1177768046017892,
+      "homeOffense": -0.05714383130527397,
+      "awayDefenseAllowed": 0.039266295287857925,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "DEN",
+      "gap": 1.239,
+      "unit": "percentage points",
+      "awayOffense": 0.05847953216374269,
+      "homeDefenseAllowed": 0.10795454545454546,
+      "homeOffense": 0.045112781954887216,
+      "awayDefenseAllowed": 0.09653465346534654,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "DEN",
+      "gap": 4.925,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.11274509803921569,
+      "homeDefenseAllowed": 0.15463917525773196,
+      "homeOffense": 0.156,
+      "awayDefenseAllowed": 0.20987654320987653,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": -0.1298,
+  "profiles": {
+    "DEN": {
+      "season": {
+        "games": 6,
+        "offPlays": 342,
+        "defPlays": 404,
+        "offEpa": -0.0791,
+        "defEpa": -0.0376,
+        "netEpa": -0.0415,
+        "adjustedNetEpa": 0.0431,
+        "earlyOffEpa": -0.0327,
+        "earlyDefEpa": -0.0041,
+        "passOffEpa": -0.1012,
+        "passDefEpa": -0.0534
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 178,
+        "defPlays": 205,
+        "offEpa": -0.0998,
+        "defEpa": -0.1182,
+        "netEpa": 0.0183,
+        "adjustedNetEpa": 0.0578,
+        "earlyOffEpa": -0.122,
+        "earlyDefEpa": -0.0436,
+        "passOffEpa": -0.13,
+        "passDefEpa": -0.0883
+      }
+    },
+    "ARI": {
+      "season": {
+        "games": 6,
+        "offPlays": 399,
+        "defPlays": 352,
+        "offEpa": -0.0187,
+        "defEpa": 0.0788,
+        "netEpa": -0.0975,
+        "adjustedNetEpa": -0.0867,
+        "earlyOffEpa": 0.0394,
+        "earlyDefEpa": 0.0026,
+        "passOffEpa": 0.0164,
+        "passDefEpa": 0.2488
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 203,
+        "defPlays": 185,
+        "offEpa": -0.0771,
+        "defEpa": 0.039,
+        "netEpa": -0.1161,
+        "adjustedNetEpa": -0.1204,
+        "earlyOffEpa": 0.0336,
+        "earlyDefEpa": -0.043,
+        "passOffEpa": -0.0747,
+        "passDefEpa": 0.131
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": -1.796,
+    "structuralHomeMargin": -1.796
+  },
+  "market": {
+    "spread_display": "Denver Broncos -4.5",
+    "spread": "DEN -4.5",
+    "total": 42.5,
+    "home_margin": -4.5,
+    "home_team_sportsbook_spread": 4.5,
+    "moneyline": {
+      "away": -238,
+      "home": 195
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-10-25T13:23:53.615Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": -3.959,
+  "structuralFair": -1.796,
+  "structuralDifference": 2.704,
+  "price": {
+    "side": "DEN",
+    "minimumSpreadAtSnapshot": -2.0,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-10-25T13:23:53.870380+00:00",
+    "reviewComplete": true,
+    "flags": [
+      "DEN OUT: RB Tyler Badie (Thumb).",
+      "DEN QUESTIONABLE: RB Jonah Coleman (Ankle).",
+      "DEN OUT: LB Jonah Elliss (Ankle).",
+      "DEN OUT: S Talanoa Hufanga (Ankle).",
+      "DEN QUESTIONABLE: CB Pat Surtain II (Ankle).",
+      "ARI QUESTIONABLE: S Budda Baker (Groin, Illness).",
+      "ARI QUESTIONABLE: QB Carson Beck (Back).",
+      "ARI OUT: G Jon Gaines II (Knee, Ankle).",
+      "ARI OUT: RB Jeremiyah Love (Ankle).",
+      "ARI QUESTIONABLE: CB Max Melton (Knee).",
+      "ARI OUT: DT Walter Nolen (Ankle).",
+      "ARI QUESTIONABLE: DT Darius Robinson (Back).",
+      "ARI OUT: S Andrew Wingard (Knee)."
+    ],
+    "watch": [
+      {
+        "team": "DEN",
+        "player": "Tyler Badie",
+        "position": "RB",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "DEN",
+        "player": "Jonah Coleman",
+        "position": "RB",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "DEN",
+        "player": "Jonah Elliss",
+        "position": "LB",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "DEN",
+        "player": "Talanoa Hufanga",
+        "position": "S",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "DEN",
+        "player": "Pat Surtain II",
+        "position": "CB",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "ARI",
+        "player": "Budda Baker",
+        "position": "S",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "ARI",
+        "player": "Carson Beck",
+        "position": "QB",
+        "status": "Questionable Did Not Participate In Practice",
+        "unit": "QB",
+        "scenario": "If unavailable, reassess starter/replacement performance and the game script."
+      },
+      {
+        "team": "ARI",
+        "player": "Devin Duvernay",
+        "position": "WR",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "ARI",
+        "player": "Jon Gaines II",
+        "position": "G",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "ARI",
+        "player": "Jeremiyah Love",
+        "position": "RB",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "ARI",
+        "player": "Max Melton",
+        "position": "CB",
+        "status": "Questionable Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "ARI",
+        "player": "Walter Nolen",
+        "position": "DT",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "ARI",
+        "player": "Darius Robinson",
+        "position": "DT",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "ARI",
+        "player": "Andrew Wingard",
+        "position": "S",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "DEN",
+        "unit": "Secondary",
+        "count": 2,
+        "players": [
+          "Talanoa Hufanga",
+          "Pat Surtain II"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "ARI",
+        "unit": "QB",
+        "count": 1,
+        "players": [
+          "Carson Beck"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "ARI",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Jon Gaines II"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "ARI",
+        "unit": "Secondary",
+        "count": 3,
+        "players": [
+          "Budda Baker",
+          "Max Melton",
+          "Andrew Wingard"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W7-DEN-ARI",
+    "canonical_game_id": "2026-W7-DEN-ARI",
+    "matchup": "Denver Broncos at Arizona Cardinals",
+    "venue": "State Farm Stadium",
+    "environment": "indoor",
+    "status": "Official indoor venue verified",
+    "summary": "State Farm Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
+    "risk": "indoor / roof controlled",
+    "observed_at": "2026-10-25T13:23:54.957935+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+    "forecast_timestamp": null,
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W7-DEN-ARI",
+      "kickoff": "2026-10-25T20:05Z",
+      "temp_f": null,
+      "wind_mph": null,
+      "gust_mph": null,
+      "precip_chance_pct": null,
+      "forecast_timestamp": null,
+      "verification_status": "indoor venue; outdoor weather forecast not applicable",
+      "venue": "State Farm Stadium",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+      ],
+      "limitations": [
+        "Roof status is governed by venue/event information; outside air values are not on-field conditions."
+      ],
+      "retrieved_at": "2026-10-25T13:23:54.957935+00:00"
+    },
+    "sources": [
+      "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+    ]
+  },
+  "sustainability": {
+    "DEN": {
+      "turnoverRate": 0.014619883040935672,
+      "takeawayRate": 0.024752475247524754,
+      "thirdDownConversion": 0.32051282051282054,
+      "redZoneTdRate": 0.6111111111111112
+    },
+    "ARI": {
+      "turnoverRate": 0.015037593984962405,
+      "takeawayRate": 0.019886363636363636,
+      "thirdDownConversion": 0.3977272727272727,
+      "redZoneTdRate": 0.4782608695652174
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 1,
+    "selectedWeekRecords": 7
+  },
+  "scheme": {
+    "offenseThroughWeek": 6,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-10-23T13:45:42.910Z",
+      "capturedAt": "2026-10-23T17:52:35.979514+00:00",
+      "spread": "Denver Broncos -4.5",
+      "homeMargin": -4.5,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-10-24T06:02:03.882Z",
+      "capturedAt": "2026-10-24T06:02:13.135844+00:00",
+      "spread": "Denver Broncos -4.5",
+      "homeMargin": -4.5,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
