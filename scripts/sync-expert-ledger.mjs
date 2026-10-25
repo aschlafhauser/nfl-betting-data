@@ -86,7 +86,7 @@ const familyIndexUrls=new Map([
 // a transcript review, attributable selection, or prior-week carry-forward.
 for(const row of sourceAudit.sources||[]){
  const key=norm(row.sourceFamily);
- if(/you better you bet/i.test(String(row.sourceFamily||''))||selectedWeekChecks.has(key))continue;
+ if(/you better you bet/i.test(String(row.sourceFamily||'')))continue;
  const sourceUrl=familyIndexUrls.get(key)||row.sourceUrl||null;
  let httpStatus=null,error=null;
  if(sourceUrl){
@@ -168,7 +168,7 @@ coverage.summary={required:requiredCount,current:currentCount,selectedWeekRecord
 await fs.writeFile(coveragePath,JSON.stringify(coverage,null,2)+'\n');
 const podcastPath='data/expert-podcast-process-current.json';
 const priorPodcast=await read(podcastPath).catch(()=>null);
-if(Number(priorPodcast?.season)!==Number(board?.season||2026)||Number(priorPodcast?.week)!==selectedWeek){
+if(Number(priorPodcast?.season)!==Number(board?.season||2026)||Number(priorPodcast?.week)!==selectedWeek||priorPodcast?.status==='CURRENT-SOURCE-LIMITED'&&(!Array.isArray(priorPodcast?.episodes)||priorPodcast.episodes.length===0)){
  const sourceLimitedPodcast={
   season:Number(board?.season||2026),
   week:selectedWeek,
