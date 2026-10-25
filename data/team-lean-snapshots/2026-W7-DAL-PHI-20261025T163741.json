@@ -1,0 +1,520 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W7-DAL-PHI",
+  "portalGameId": "401873009",
+  "week": 7,
+  "away": "Dallas Cowboys",
+  "home": "Philadelphia Eagles",
+  "awayAbbr": "DAL",
+  "homeAbbr": "PHI",
+  "kickoff": "2026-10-27T00:15Z",
+  "generatedAt": "2026-10-25T16:37:41.924641+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "DAL",
+  "assessmentSide": "DAL",
+  "structuralValueSide": "PHI",
+  "alignment": "CONFLICT",
+  "thesis": "DAL has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "DAL",
+      "gap": 0.002,
+      "unit": "EPA/play",
+      "awayOffense": 0.11799392669415767,
+      "homeDefenseAllowed": 0.12527709998219205,
+      "homeOffense": -0.10312200289213787,
+      "awayDefenseAllowed": 0.3419809988542353,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "DAL",
+      "gap": 0.038,
+      "unit": "EPA/play",
+      "awayOffense": 0.10781341757463934,
+      "homeDefenseAllowed": 0.025985401042660207,
+      "homeOffense": -0.09468507218943875,
+      "awayDefenseAllowed": 0.1527312089434257,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "DAL",
+      "gap": 0.082,
+      "unit": "EPA/play",
+      "awayOffense": -0.02002081056111146,
+      "homeDefenseAllowed": 0.02975649577862739,
+      "homeOffense": -0.1472396964933212,
+      "awayDefenseAllowed": -0.006693598263233788,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "DAL",
+      "gap": 2.751,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.13805970149253732,
+      "homeDefenseAllowed": 0.100418410041841,
+      "homeOffense": 0.16666666666666666,
+      "awayDefenseAllowed": 0.12682926829268293,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Explosive plays",
+      "side": "PHI",
+      "gap": 0.864,
+      "unit": "percentage points",
+      "awayOffense": 0.06349206349206349,
+      "homeDefenseAllowed": 0.08684863523573201,
+      "homeOffense": 0.05172413793103448,
+      "awayDefenseAllowed": 0.11590296495956873,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "DAL",
+      "gap": 0.002,
+      "unit": "EPA/play",
+      "awayOffense": 0.11799392669415767,
+      "homeDefenseAllowed": 0.12527709998219205,
+      "homeOffense": -0.10312200289213787,
+      "awayDefenseAllowed": 0.3419809988542353,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "DAL",
+      "gap": 0.038,
+      "unit": "EPA/play",
+      "awayOffense": 0.10781341757463934,
+      "homeDefenseAllowed": 0.025985401042660207,
+      "homeOffense": -0.09468507218943875,
+      "awayDefenseAllowed": 0.1527312089434257,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "DAL",
+      "gap": 0.082,
+      "unit": "EPA/play",
+      "awayOffense": -0.02002081056111146,
+      "homeDefenseAllowed": 0.02975649577862739,
+      "homeOffense": -0.1472396964933212,
+      "awayDefenseAllowed": -0.006693598263233788,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "PHI",
+      "gap": 0.864,
+      "unit": "percentage points",
+      "awayOffense": 0.06349206349206349,
+      "homeDefenseAllowed": 0.08684863523573201,
+      "homeOffense": 0.05172413793103448,
+      "awayDefenseAllowed": 0.11590296495956873,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "DAL",
+      "gap": 2.751,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.13805970149253732,
+      "homeDefenseAllowed": 0.100418410041841,
+      "homeOffense": 0.16666666666666666,
+      "awayDefenseAllowed": 0.12682926829268293,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": -0.1221,
+  "profiles": {
+    "DAL": {
+      "season": {
+        "games": 6,
+        "offPlays": 378,
+        "defPlays": 371,
+        "offEpa": 0.0784,
+        "defEpa": 0.1637,
+        "netEpa": -0.0853,
+        "adjustedNetEpa": -0.0887,
+        "earlyOffEpa": 0.1118,
+        "earlyDefEpa": 0.1527,
+        "passOffEpa": 0.118,
+        "passDefEpa": 0.342
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 200,
+        "defPlays": 181,
+        "offEpa": -0.0077,
+        "defEpa": 0.1347,
+        "netEpa": -0.1424,
+        "adjustedNetEpa": -0.1547,
+        "earlyOffEpa": 0.0822,
+        "earlyDefEpa": 0.0893,
+        "passOffEpa": -0.0266,
+        "passDefEpa": 0.2666
+      }
+    },
+    "PHI": {
+      "season": {
+        "games": 6,
+        "offPlays": 348,
+        "defPlays": 403,
+        "offEpa": -0.1348,
+        "defEpa": 0.0783,
+        "netEpa": -0.2131,
+        "adjustedNetEpa": -0.2108,
+        "earlyOffEpa": -0.0947,
+        "earlyDefEpa": 0.0325,
+        "passOffEpa": -0.1031,
+        "passDefEpa": 0.1253
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 178,
+        "defPlays": 217,
+        "offEpa": -0.2194,
+        "defEpa": 0.0803,
+        "netEpa": -0.2998,
+        "adjustedNetEpa": -0.2295,
+        "earlyOffEpa": -0.1095,
+        "earlyDefEpa": 0.0616,
+        "passOffEpa": -0.1393,
+        "passDefEpa": 0.1187
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 2.319,
+    "structuralHomeMargin": 2.318
+  },
+  "market": {
+    "spread_display": "Dallas Cowboys -4.5",
+    "spread": "DAL -4.5",
+    "total": 43.5,
+    "home_margin": -4.5,
+    "home_team_sportsbook_spread": 4.5,
+    "moneyline": {
+      "away": -218,
+      "home": 180
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-10-25T16:37:29.866Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": -3.136,
+  "structuralFair": 2.318,
+  "structuralDifference": 6.818,
+  "price": {
+    "side": "DAL",
+    "minimumSpreadAtSnapshot": -1.5,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-10-25T16:37:30.200748+00:00",
+    "reviewComplete": false,
+    "flags": [
+      "DAL QUESTIONABLE: LB Marist Liufau (Forearm).",
+      "DAL QUESTIONABLE: S P.J. Locke (Foot).",
+      "DAL OUT: T Drew Shelton (Hamstring).",
+      "DAL OUT: WR KaVontae Turpin (Ribs).",
+      "DAL OUT: LB Dee Winters (Calf).",
+      "PHI QUESTIONABLE: RB Saquon Barkley (Hamstring).",
+      "PHI QUESTIONABLE: CB Jakorian Bennett (Knee).",
+      "PHI QUESTIONABLE: TE Grant Calcaterra (Back).",
+      "PHI OUT: CB Michael Carter II (Abdomen).",
+      "PHI QUESTIONABLE: G Landon Dickerson (Knee, Pectoral).",
+      "PHI QUESTIONABLE: LB Jonathan Greenard (Ankle).",
+      "PHI QUESTIONABLE: LB Jalyx Hunt (Knee, Ankle).",
+      "PHI OUT: WR DeVonta Smith (Hamstring).",
+      "PHI OUT: LB Nolan Smith (Concussion).",
+      "PHI QUESTIONABLE: TE Eli Stowers (Quadricep).",
+      "PHI OUT: WR Dontayvion Wicks (Ankle)."
+    ],
+    "watch": [
+      {
+        "team": "DAL",
+        "player": "Marist Liufau",
+        "position": "LB",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "DAL",
+        "player": "P.J. Locke",
+        "position": "S",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "DAL",
+        "player": "Von Miller",
+        "position": "LB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "DAL",
+        "player": "Drew Shelton",
+        "position": "T",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "DAL",
+        "player": "KaVontae Turpin",
+        "position": "WR",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "DAL",
+        "player": "Dee Winters",
+        "position": "LB",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Saquon Barkley",
+        "position": "RB",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Jakorian Bennett",
+        "position": "CB",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "PHI",
+        "player": "Grant Calcaterra",
+        "position": "TE",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Michael Carter II",
+        "position": "CB",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "PHI",
+        "player": "Landon Dickerson",
+        "position": "G",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "PHI",
+        "player": "Jonathan Greenard",
+        "position": "LB",
+        "status": "Questionable Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Jalyx Hunt",
+        "position": "LB",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "DeVonta Smith",
+        "position": "WR",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Nolan Smith",
+        "position": "LB",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Eli Stowers",
+        "position": "TE",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Dontayvion Wicks",
+        "position": "WR",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "DAL",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Drew Shelton"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "DAL",
+        "unit": "Secondary",
+        "count": 1,
+        "players": [
+          "P.J. Locke"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "PHI",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Landon Dickerson"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "PHI",
+        "unit": "Secondary",
+        "count": 2,
+        "players": [
+          "Jakorian Bennett",
+          "Michael Carter II"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W7-DAL-PHI",
+    "canonical_game_id": "2026-W7-DAL-PHI",
+    "matchup": "Dallas Cowboys at Philadelphia Eagles",
+    "venue": "Lincoln Financial Field",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Clear at kickoff: 58\u00b0F; wind W 5.0 mph, gust 5.8 mph; precipitation chance 0%.",
+    "risk": "no major hourly weather flag",
+    "observed_at": "2026-10-25T16:37:32.327399+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/39.9008,-75.1675",
+    "forecast_timestamp": "2026-10-25T08:08:34+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W7-DAL-PHI",
+      "kickoff": "2026-10-27T00:15Z",
+      "temp_f": 58,
+      "wind_mph": 5.0,
+      "gust_mph": 5.8,
+      "precip_chance_pct": 0,
+      "forecast_timestamp": "2026-10-25T08:08:34+00:00",
+      "sources": [
+        "https://api.weather.gov/points/39.9008,-75.1675",
+        "https://api.weather.gov/gridpoints/PHI/50,76/forecast/hourly",
+        "https://api.weather.gov/gridpoints/PHI/50,76"
+      ],
+      "wind_speed_raw": "5 mph",
+      "wind_direction": "W",
+      "forecast_hour_start": "2026-10-26T20:00:00-04:00",
+      "forecast_hour_end": "2026-10-26T21:00:00-04:00",
+      "conditions": "Clear",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-10-25T16:37:32.327399+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/39.9008,-75.1675",
+      "https://api.weather.gov/gridpoints/PHI/50,76/forecast/hourly",
+      "https://api.weather.gov/gridpoints/PHI/50,76"
+    ]
+  },
+  "sustainability": {
+    "DAL": {
+      "turnoverRate": 0.015873015873015872,
+      "takeawayRate": 0.008086253369272238,
+      "thirdDownConversion": 0.4722222222222222,
+      "redZoneTdRate": 0.7727272727272727
+    },
+    "PHI": {
+      "turnoverRate": 0.014367816091954023,
+      "takeawayRate": 0.007444168734491315,
+      "thirdDownConversion": 0.37349397590361444,
+      "redZoneTdRate": 0.6875
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 7
+  },
+  "scheme": {
+    "offenseThroughWeek": 6,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-10-23T13:45:42.910Z",
+      "capturedAt": "2026-10-23T17:52:35.979514+00:00",
+      "spread": "Dallas Cowboys -4.5",
+      "homeMargin": -4.5,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-10-25T13:33:01.894Z",
+      "capturedAt": "2026-10-25T13:33:14.120079+00:00",
+      "spread": "Dallas Cowboys -4.5",
+      "homeMargin": -4.5,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}

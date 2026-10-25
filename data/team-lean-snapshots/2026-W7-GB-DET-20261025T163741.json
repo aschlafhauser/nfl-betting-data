@@ -1,0 +1,465 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W7-GB-DET",
+  "portalGameId": "401873020",
+  "week": 7,
+  "away": "Green Bay Packers",
+  "home": "Detroit Lions",
+  "awayAbbr": "GB",
+  "homeAbbr": "DET",
+  "kickoff": "2026-10-25T20:25Z",
+  "generatedAt": "2026-10-25T16:37:41.924641+00:00",
+  "status": "PRICE WATCH",
+  "footballLean": "GB",
+  "assessmentSide": "GB",
+  "structuralValueSide": "GB",
+  "alignment": "ALIGNED",
+  "thesis": "GB has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "GB",
+      "gap": 0.073,
+      "unit": "EPA/play",
+      "awayOffense": 0.11572159673977059,
+      "homeDefenseAllowed": 0.23747931208633075,
+      "homeOffense": 0.28280677932709947,
+      "awayDefenseAllowed": -0.07570648377238884,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "GB",
+      "gap": 0.008,
+      "unit": "EPA/play",
+      "awayOffense": -0.03728195747715488,
+      "homeDefenseAllowed": 0.10380487411951672,
+      "homeOffense": 0.16986475397911943,
+      "awayDefenseAllowed": -0.11938836798173613,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "GB",
+      "gap": 2.028,
+      "unit": "percentage points",
+      "awayOffense": 0.09217877094972067,
+      "homeDefenseAllowed": 0.11267605633802817,
+      "homeOffense": 0.10606060606060606,
+      "awayDefenseAllowed": 0.05822784810126582,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Rushing efficiency",
+      "side": "DET",
+      "gap": 0.113,
+      "unit": "EPA/play",
+      "awayOffense": -0.26479526750755233,
+      "homeDefenseAllowed": 0.024422602406423903,
+      "homeOffense": -0.005300132495497939,
+      "awayDefenseAllowed": -0.008246150251351161,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "DET",
+      "gap": 3.688,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.1908713692946058,
+      "homeDefenseAllowed": 0.1836734693877551,
+      "homeOffense": 0.1497584541062802,
+      "awayDefenseAllowed": 0.1510204081632653,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "GB",
+      "gap": 0.073,
+      "unit": "EPA/play",
+      "awayOffense": 0.11572159673977059,
+      "homeDefenseAllowed": 0.23747931208633075,
+      "homeOffense": 0.28280677932709947,
+      "awayDefenseAllowed": -0.07570648377238884,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "GB",
+      "gap": 0.008,
+      "unit": "EPA/play",
+      "awayOffense": -0.03728195747715488,
+      "homeDefenseAllowed": 0.10380487411951672,
+      "homeOffense": 0.16986475397911943,
+      "awayDefenseAllowed": -0.11938836798173613,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "DET",
+      "gap": 0.113,
+      "unit": "EPA/play",
+      "awayOffense": -0.26479526750755233,
+      "homeDefenseAllowed": 0.024422602406423903,
+      "homeOffense": -0.005300132495497939,
+      "awayDefenseAllowed": -0.008246150251351161,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "GB",
+      "gap": 2.028,
+      "unit": "percentage points",
+      "awayOffense": 0.09217877094972067,
+      "homeDefenseAllowed": 0.11267605633802817,
+      "homeOffense": 0.10606060606060606,
+      "awayDefenseAllowed": 0.05822784810126582,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "DET",
+      "gap": 3.688,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.1908713692946058,
+      "homeDefenseAllowed": 0.1836734693877551,
+      "homeOffense": 0.1497584541062802,
+      "awayDefenseAllowed": 0.1510204081632653,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": -0.0299,
+  "profiles": {
+    "GB": {
+      "season": {
+        "games": 6,
+        "offPlays": 358,
+        "defPlays": 395,
+        "offEpa": -0.0103,
+        "defEpa": -0.0556,
+        "netEpa": 0.0454,
+        "adjustedNetEpa": 0.057,
+        "earlyOffEpa": -0.0413,
+        "earlyDefEpa": -0.1245,
+        "passOffEpa": 0.1157,
+        "passDefEpa": -0.0757
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 178,
+        "defPlays": 200,
+        "offEpa": 0.1028,
+        "defEpa": -0.1742,
+        "netEpa": 0.277,
+        "adjustedNetEpa": 0.2927,
+        "earlyOffEpa": -0.0458,
+        "earlyDefEpa": -0.1447,
+        "passOffEpa": 0.277,
+        "passDefEpa": -0.2465
+      }
+    },
+    "DET": {
+      "season": {
+        "games": 5,
+        "offPlays": 330,
+        "defPlays": 355,
+        "offEpa": 0.1802,
+        "defEpa": 0.1516,
+        "netEpa": 0.0286,
+        "adjustedNetEpa": 0.0271,
+        "earlyOffEpa": 0.1699,
+        "earlyDefEpa": 0.108,
+        "passOffEpa": 0.2828,
+        "passDefEpa": 0.2375
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 133,
+        "defPlays": 140,
+        "offEpa": 0.2494,
+        "defEpa": 0.1557,
+        "netEpa": 0.0938,
+        "adjustedNetEpa": 0.1219,
+        "earlyOffEpa": 0.1923,
+        "earlyDefEpa": 0.1247,
+        "passOffEpa": 0.3335,
+        "passDefEpa": 0.281
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": -0.823,
+    "structuralHomeMargin": -0.823
+  },
+  "market": {
+    "spread_display": "Detroit Lions -3.5",
+    "spread": "DET -3",
+    "total": 55.5,
+    "home_margin": 3.5,
+    "home_team_sportsbook_spread": -3.5,
+    "moneyline": {
+      "away": 150,
+      "home": -180
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-10-25T16:37:29.866Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": 2.635,
+  "structuralFair": -0.823,
+  "structuralDifference": -4.323,
+  "price": {
+    "side": "GB",
+    "minimumSpreadAtSnapshot": 4.5,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-10-25T16:37:30.200748+00:00",
+    "reviewComplete": true,
+    "flags": [
+      "GB QUESTIONABLE: G Aaron Banks (Knee, Toe).",
+      "GB OUT: LB Zaire Franklin (Shin).",
+      "GB QUESTIONABLE: WR Bo Melton (Back).",
+      "GB QUESTIONABLE: DT Jordon Riley (Achilles).",
+      "GB QUESTIONABLE: CB Benjamin St-Juste (Hamstring).",
+      "DET QUESTIONABLE: S Brian Branch (Achilles).",
+      "DET QUESTIONABLE: C Cade Mays (Wrist)."
+    ],
+    "watch": [
+      {
+        "team": "GB",
+        "player": "Aaron Banks",
+        "position": "G",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "GB",
+        "player": "Anthony Campbell",
+        "position": "DT",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "GB",
+        "player": "Brandon Cisse",
+        "position": "CB",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "GB",
+        "player": "Zaire Franklin",
+        "position": "LB",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "GB",
+        "player": "Matthew Golden",
+        "position": "WR",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "GB",
+        "player": "Bo Melton",
+        "position": "WR",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "GB",
+        "player": "Jordon Riley",
+        "position": "DT",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "GB",
+        "player": "Benjamin St-Juste",
+        "position": "CB",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "GB",
+        "player": "Christian Watson",
+        "position": "WR",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "GB",
+        "player": "Savion Williams",
+        "position": "WR",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "DET",
+        "player": "Brian Branch",
+        "position": "S",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "DET",
+        "player": "Cade Mays",
+        "position": "C",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "GB",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Aaron Banks"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "GB",
+        "unit": "Secondary",
+        "count": 2,
+        "players": [
+          "Brandon Cisse",
+          "Benjamin St-Juste"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "DET",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Cade Mays"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "DET",
+        "unit": "Secondary",
+        "count": 1,
+        "players": [
+          "Brian Branch"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W7-GB-DET",
+    "canonical_game_id": "2026-W7-GB-DET",
+    "matchup": "Green Bay Packers at Detroit Lions",
+    "venue": "Ford Field",
+    "environment": "indoor",
+    "status": "Official indoor venue verified",
+    "summary": "Ford Field is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
+    "risk": "indoor / roof controlled",
+    "observed_at": "2026-10-25T16:37:32.327385+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100",
+    "forecast_timestamp": null,
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W7-GB-DET",
+      "kickoff": "2026-10-25T20:25Z",
+      "temp_f": null,
+      "wind_mph": null,
+      "gust_mph": null,
+      "precip_chance_pct": null,
+      "forecast_timestamp": null,
+      "verification_status": "indoor venue; outdoor weather forecast not applicable",
+      "venue": "Ford Field",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+      ],
+      "limitations": [
+        "Roof status is governed by venue/event information; outside air values are not on-field conditions."
+      ],
+      "retrieved_at": "2026-10-25T16:37:32.327385+00:00"
+    },
+    "sources": [
+      "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=7&limit=100"
+    ]
+  },
+  "sustainability": {
+    "GB": {
+      "turnoverRate": 0.019553072625698324,
+      "takeawayRate": 0.027848101265822784,
+      "thirdDownConversion": 0.36,
+      "redZoneTdRate": 0.5
+    },
+    "DET": {
+      "turnoverRate": 0.0030303030303030303,
+      "takeawayRate": 0.014084507042253521,
+      "thirdDownConversion": 0.3728813559322034,
+      "redZoneTdRate": 0.7727272727272727
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 7
+  },
+  "scheme": {
+    "offenseThroughWeek": 6,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-10-23T13:45:42.910Z",
+      "capturedAt": "2026-10-23T17:52:35.979514+00:00",
+      "spread": "Detroit Lions -3",
+      "homeMargin": 3,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-10-25T13:33:01.894Z",
+      "capturedAt": "2026-10-25T13:33:14.120079+00:00",
+      "spread": "Detroit Lions -3.5",
+      "homeMargin": 3.5,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
