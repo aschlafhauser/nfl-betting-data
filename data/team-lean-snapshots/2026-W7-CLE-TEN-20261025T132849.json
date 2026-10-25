@@ -1,0 +1,484 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W7-CLE-TEN",
+  "portalGameId": "401873013",
+  "week": 7,
+  "away": "Cleveland Browns",
+  "home": "Tennessee Titans",
+  "awayAbbr": "CLE",
+  "homeAbbr": "TEN",
+  "kickoff": "2026-10-25T17:00Z",
+  "generatedAt": "2026-10-25T13:28:49.110831+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "CLE",
+  "assessmentSide": "CLE",
+  "structuralValueSide": "TEN",
+  "alignment": "CONFLICT",
+  "thesis": "CLE has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "CLE",
+      "gap": 0.168,
+      "unit": "EPA/play",
+      "awayOffense": 0.011383257254314025,
+      "homeDefenseAllowed": 0.14425553485434114,
+      "homeOffense": -0.17565442534891765,
+      "awayDefenseAllowed": -0.004784456540692597,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "CLE",
+      "gap": 0.063,
+      "unit": "EPA/play",
+      "awayOffense": -0.05581701745085576,
+      "homeDefenseAllowed": 0.03137549523243907,
+      "homeOffense": -0.1527795283715625,
+      "awayDefenseAllowed": 0.001794985793440202,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Rushing efficiency",
+      "side": "TEN",
+      "gap": 0.061,
+      "unit": "EPA/play",
+      "awayOffense": -0.15278180639455713,
+      "homeDefenseAllowed": -0.08084610215854604,
+      "homeOffense": -0.07793882887996965,
+      "awayDefenseAllowed": -0.03450843322006912,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "TEN",
+      "gap": 0.618,
+      "unit": "percentage points",
+      "awayOffense": 0.07163323782234957,
+      "homeDefenseAllowed": 0.09326424870466321,
+      "homeOffense": 0.06289308176100629,
+      "awayDefenseAllowed": 0.11436170212765957,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "TEN",
+      "gap": 2.16,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.2072072072072072,
+      "homeDefenseAllowed": 0.14553990610328638,
+      "homeOffense": 0.125,
+      "awayDefenseAllowed": 0.18454935622317598,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "CLE",
+      "gap": 0.168,
+      "unit": "EPA/play",
+      "awayOffense": 0.011383257254314025,
+      "homeDefenseAllowed": 0.14425553485434114,
+      "homeOffense": -0.17565442534891765,
+      "awayDefenseAllowed": -0.004784456540692597,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "CLE",
+      "gap": 0.063,
+      "unit": "EPA/play",
+      "awayOffense": -0.05581701745085576,
+      "homeDefenseAllowed": 0.03137549523243907,
+      "homeOffense": -0.1527795283715625,
+      "awayDefenseAllowed": 0.001794985793440202,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "TEN",
+      "gap": 0.061,
+      "unit": "EPA/play",
+      "awayOffense": -0.15278180639455713,
+      "homeDefenseAllowed": -0.08084610215854604,
+      "homeOffense": -0.07793882887996965,
+      "awayDefenseAllowed": -0.03450843322006912,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "TEN",
+      "gap": 0.618,
+      "unit": "percentage points",
+      "awayOffense": 0.07163323782234957,
+      "homeDefenseAllowed": 0.09326424870466321,
+      "homeOffense": 0.06289308176100629,
+      "awayDefenseAllowed": 0.11436170212765957,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "TEN",
+      "gap": 2.16,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.2072072072072072,
+      "homeDefenseAllowed": 0.14553990610328638,
+      "homeOffense": 0.125,
+      "awayDefenseAllowed": 0.18454935622317598,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": -0.2493,
+  "profiles": {
+    "CLE": {
+      "season": {
+        "games": 6,
+        "offPlays": 349,
+        "defPlays": 376,
+        "offEpa": -0.0867,
+        "defEpa": -0.0332,
+        "netEpa": -0.0535,
+        "adjustedNetEpa": 0.0015,
+        "earlyOffEpa": -0.0601,
+        "earlyDefEpa": 0.0048,
+        "passOffEpa": 0.0114,
+        "passDefEpa": -0.0048
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 185,
+        "defPlays": 187,
+        "offEpa": -0.11,
+        "defEpa": -0.0639,
+        "netEpa": -0.0461,
+        "adjustedNetEpa": -0.0123,
+        "earlyOffEpa": -0.0719,
+        "earlyDefEpa": -0.0935,
+        "passOffEpa": -0.058,
+        "passDefEpa": -0.0413
+      }
+    },
+    "TEN": {
+      "season": {
+        "games": 6,
+        "offPlays": 318,
+        "defPlays": 386,
+        "offEpa": -0.1491,
+        "defEpa": 0.0418,
+        "netEpa": -0.1909,
+        "adjustedNetEpa": -0.2478,
+        "earlyOffEpa": -0.1578,
+        "earlyDefEpa": 0.0314,
+        "passOffEpa": -0.1757,
+        "passDefEpa": 0.1443
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 161,
+        "defPlays": 197,
+        "offEpa": -0.2302,
+        "defEpa": 0.0499,
+        "netEpa": -0.2801,
+        "adjustedNetEpa": -0.3016,
+        "earlyOffEpa": -0.2018,
+        "earlyDefEpa": 0.0518,
+        "passOffEpa": -0.2485,
+        "passDefEpa": 0.1565
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 2.774,
+    "structuralHomeMargin": 2.774
+  },
+  "market": {
+    "spread_display": "Cleveland Browns -1.5",
+    "spread": "CLE -1.5",
+    "total": 36.5,
+    "home_margin": -1.5,
+    "home_team_sportsbook_spread": 1.5,
+    "moneyline": {
+      "away": -130,
+      "home": 110
+    },
+    "source": "ESPN Draft Kings",
+    "timestamp": "2026-10-25T13:28:39.305Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": -0.645,
+  "structuralFair": 2.774,
+  "structuralDifference": 4.274,
+  "price": {
+    "side": "CLE",
+    "minimumSpreadAtSnapshot": 1.0,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-10-25T13:28:39.672333+00:00",
+    "reviewComplete": true,
+    "flags": [
+      "CLE OUT: DT Kalia Davis (Quadricep).",
+      "CLE OUT: QB Dillon Gabriel (Back).",
+      "CLE OUT: DT Mike Hall Jr. (Ankle).",
+      "CLE OUT: G Teven Jenkins (Back).",
+      "CLE QUESTIONABLE: CB Denzel Ward (Hand).",
+      "CLE QUESTIONABLE: LB Quincy Williams (Neck).",
+      "TEN QUESTIONABLE: S Tony Adams (Ankle).",
+      "TEN QUESTIONABLE: LB Dorian Mausi (Foot).",
+      "TEN QUESTIONABLE: WR Calvin Ridley (Hip).",
+      "TEN QUESTIONABLE: RB Tyjae Spears (Not injury related - resting player, Knee).",
+      "TEN QUESTIONABLE: S Kevin Winston Jr. (Quadricep)."
+    ],
+    "watch": [
+      {
+        "team": "CLE",
+        "player": "Kalia Davis",
+        "position": "DT",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "CLE",
+        "player": "Grant Delpit",
+        "position": "S",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "CLE",
+        "player": "Dillon Gabriel",
+        "position": "QB",
+        "status": "Out Full Participation in Practice",
+        "unit": "QB",
+        "scenario": "If unavailable, reassess starter/replacement performance and the game script."
+      },
+      {
+        "team": "CLE",
+        "player": "Mike Hall Jr.",
+        "position": "DT",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "CLE",
+        "player": "Teven Jenkins",
+        "position": "G",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "CLE",
+        "player": "Carson Schwesinger",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "CLE",
+        "player": "Denzel Ward",
+        "position": "CB",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "CLE",
+        "player": "Quincy Williams",
+        "position": "LB",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "TEN",
+        "player": "Tony Adams",
+        "position": "S",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "TEN",
+        "player": "Dorian Mausi",
+        "position": "LB",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "TEN",
+        "player": "Calvin Ridley",
+        "position": "WR",
+        "status": "Questionable Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "TEN",
+        "player": "Tyjae Spears",
+        "position": "RB",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "TEN",
+        "player": "Kevin Winston Jr.",
+        "position": "S",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "CLE",
+        "unit": "QB",
+        "count": 1,
+        "players": [
+          "Dillon Gabriel"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "CLE",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Teven Jenkins"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "CLE",
+        "unit": "Secondary",
+        "count": 2,
+        "players": [
+          "Grant Delpit",
+          "Denzel Ward"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "TEN",
+        "unit": "Secondary",
+        "count": 2,
+        "players": [
+          "Tony Adams",
+          "Kevin Winston Jr."
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W7-CLE-TEN",
+    "canonical_game_id": "2026-W7-CLE-TEN",
+    "matchup": "Cleveland Browns at Tennessee Titans",
+    "venue": "Nissan Stadium",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Sunny at kickoff: 72\u00b0F; wind  0.0 mph, gust 4.6 mph; precipitation chance 0%.",
+    "risk": "no major hourly weather flag",
+    "observed_at": "2026-10-25T13:28:41.049742+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/36.1665,-86.7713",
+    "forecast_timestamp": "2026-10-25T10:16:27+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W7-CLE-TEN",
+      "kickoff": "2026-10-25T17:00Z",
+      "temp_f": 72,
+      "wind_mph": 0.0,
+      "gust_mph": 4.6,
+      "precip_chance_pct": 0,
+      "forecast_timestamp": "2026-10-25T10:16:27+00:00",
+      "sources": [
+        "https://api.weather.gov/points/36.1665,-86.7713",
+        "https://api.weather.gov/gridpoints/OHX/50,57/forecast/hourly",
+        "https://api.weather.gov/gridpoints/OHX/50,57"
+      ],
+      "wind_speed_raw": "0 mph",
+      "wind_direction": "",
+      "forecast_hour_start": "2026-10-25T12:00:00-05:00",
+      "forecast_hour_end": "2026-10-25T13:00:00-05:00",
+      "conditions": "Sunny",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-10-25T13:28:41.049742+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/36.1665,-86.7713",
+      "https://api.weather.gov/gridpoints/OHX/50,57/forecast/hourly",
+      "https://api.weather.gov/gridpoints/OHX/50,57"
+    ]
+  },
+  "sustainability": {
+    "CLE": {
+      "turnoverRate": 0.017191977077363897,
+      "takeawayRate": 0.018617021276595744,
+      "thirdDownConversion": 0.3076923076923077,
+      "redZoneTdRate": 0.46153846153846156
+    },
+    "TEN": {
+      "turnoverRate": 0.018867924528301886,
+      "takeawayRate": 0.012953367875647668,
+      "thirdDownConversion": 0.34782608695652173,
+      "redZoneTdRate": 0.4666666666666667
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 7
+  },
+  "scheme": {
+    "offenseThroughWeek": 6,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-10-23T13:45:42.910Z",
+      "capturedAt": "2026-10-23T17:52:35.979514+00:00",
+      "spread": "Cleveland Browns -1.5",
+      "homeMargin": -1.5,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-10-25T13:23:53.615Z",
+      "capturedAt": "2026-10-25T13:24:02.920261+00:00",
+      "spread": "Cleveland Browns -1.5",
+      "homeMargin": -1.5,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
