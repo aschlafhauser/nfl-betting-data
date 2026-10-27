@@ -76,7 +76,13 @@ try{
   report.matchups.push({game:option.label,missing});
  }
  await page.getByRole('button',{name:'Weekly Board',exact:true}).click();
- await page.locator('#gameSearch').fill('Houston');if(await page.locator('#scheduleRows tr[data-id]').count()!==1)fail('Board search failed');
+ const searchTeam=canonical.games[0]?.away;
+ const expectedSearchMatches=canonical.games.filter(g=>[g.away,g.home].some(team=>String(team||'').toLowerCase().includes(String(searchTeam||'').toLowerCase()))).length;
+ if(!searchTeam||expectedSearchMatches<1)fail('Board search fixture unavailable');
+ else{
+  await page.locator('#gameSearch').fill(searchTeam);
+  if(await page.locator('#scheduleRows tr[data-id]').count()!==expectedSearchMatches)fail('Board search failed');
+ }
  await page.locator('#gameSearch').fill('');
  await page.getByRole('button',{name:'Player Props',exact:true}).click();
  const propCount=await page.locator('#propContent tbody tr').count();report.propCount=propCount;
