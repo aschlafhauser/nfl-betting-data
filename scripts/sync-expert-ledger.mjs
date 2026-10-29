@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import crypto from 'node:crypto';
+import { reconcileSourceCheck } from './source-check-policy.mjs';
 
 const LEDGER='data/nfl-expert-weekly.json';
 const AUDIT_DIR='data/expert-episode-audit';
@@ -96,7 +97,7 @@ for(const row of sourceAudit.sources||[]){
    if(response.body)await response.body.cancel().catch(()=>{});
   }catch(e){error=e?.message||String(e)}
  }
- selectedWeekChecks.set(key,{
+ selectedWeekChecks.set(key,reconcileSourceCheck(selectedWeekChecks.get(key),{
   sourceFamily:row.sourceFamily,
   status:'active-current-source-limited',
   sourceUrl,
@@ -104,7 +105,7 @@ for(const row of sourceAudit.sources||[]){
   checkedAt:auditIso,
   httpStatus,
   noTitleInference:true
- });
+ },auditNow.getTime()));
 }
 const finding=audacyReachable
   ?`Audacy You Better You Bet episode index checked ${auditDay} for selected Week ${selectedWeek}. HTTP availability checked only; episode contents/transcripts were not reviewed by this reconciliation job. No Week ${selectedWeek} pick was inferred.`

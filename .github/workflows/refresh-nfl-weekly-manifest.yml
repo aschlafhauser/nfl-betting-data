@@ -39,6 +39,8 @@ jobs:
           node - <<'NODE' >> "$GITHUB_ENV"
           const fs=require('fs');const b=JSON.parse(fs.readFileSync('data/weekly-board.json','utf8'));const week=Number(b.week),games=Number(b.games?.length||0);if(!Number.isFinite(week)||games<=0)throw new Error('NFL weekly board missing valid week/slate');console.log(`NFL_WEEK=${week}`);console.log(`NFL_EXPECTED_GAMES=${games}`);
           NODE
+      - name: Verify substantive source review preservation
+        run: node scripts/test-source-check-policy.mjs
       - name: Losslessly reconcile Expert Intelligence primary ledger
         run: node scripts/sync-expert-ledger.mjs
       - name: Install browser runtime
