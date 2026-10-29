@@ -1,0 +1,473 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W8-NE-MIA",
+  "portalGameId": "401873034",
+  "week": 8,
+  "away": "New England Patriots",
+  "home": "Miami Dolphins",
+  "awayAbbr": "NE",
+  "homeAbbr": "MIA",
+  "kickoff": "2026-11-01T21:25Z",
+  "generatedAt": "2026-10-29T13:30:31.276769+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "NE",
+  "assessmentSide": "NE",
+  "structuralValueSide": "MIA",
+  "alignment": "CONFLICT",
+  "thesis": "NE has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "NE",
+      "gap": 0.232,
+      "unit": "EPA/play",
+      "awayOffense": 0.2105571362570251,
+      "homeDefenseAllowed": 0.31536512898084157,
+      "homeOffense": -0.0063912505004831525,
+      "awayDefenseAllowed": 0.06749572974878236,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "NE",
+      "gap": 0.055,
+      "unit": "EPA/play",
+      "awayOffense": 0.037586349086215436,
+      "homeDefenseAllowed": 0.019164657223306247,
+      "homeOffense": -0.08491206845147567,
+      "awayDefenseAllowed": 0.031731385500956,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "NE",
+      "gap": 0.07,
+      "unit": "percentage points",
+      "awayOffense": 0.1048951048951049,
+      "homeDefenseAllowed": 0.10495626822157435,
+      "homeOffense": 0.1130952380952381,
+      "awayDefenseAllowed": 0.09535452322738386,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "NE",
+      "gap": 0.945,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.14396887159533073,
+      "homeDefenseAllowed": 0.14136125654450263,
+      "homeOffense": 0.13756613756613756,
+      "awayDefenseAllowed": 0.16666666666666666,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Rushing efficiency",
+      "side": "MIA",
+      "gap": 0.054,
+      "unit": "EPA/play",
+      "awayOffense": -0.05577175168537919,
+      "homeDefenseAllowed": -0.06915158462902446,
+      "homeOffense": 0.040501125172088495,
+      "awayDefenseAllowed": -0.056623604847640945,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "NE",
+      "gap": 0.232,
+      "unit": "EPA/play",
+      "awayOffense": 0.2105571362570251,
+      "homeDefenseAllowed": 0.31536512898084157,
+      "homeOffense": -0.0063912505004831525,
+      "awayDefenseAllowed": 0.06749572974878236,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "NE",
+      "gap": 0.055,
+      "unit": "EPA/play",
+      "awayOffense": 0.037586349086215436,
+      "homeDefenseAllowed": 0.019164657223306247,
+      "homeOffense": -0.08491206845147567,
+      "awayDefenseAllowed": 0.031731385500956,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "MIA",
+      "gap": 0.054,
+      "unit": "EPA/play",
+      "awayOffense": -0.05577175168537919,
+      "homeDefenseAllowed": -0.06915158462902446,
+      "homeOffense": 0.040501125172088495,
+      "awayDefenseAllowed": -0.056623604847640945,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "NE",
+      "gap": 0.07,
+      "unit": "percentage points",
+      "awayOffense": 0.1048951048951049,
+      "homeDefenseAllowed": 0.10495626822157435,
+      "homeOffense": 0.1130952380952381,
+      "awayDefenseAllowed": 0.09535452322738386,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "NE",
+      "gap": 0.945,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.14396887159533073,
+      "homeDefenseAllowed": 0.14136125654450263,
+      "homeOffense": 0.13756613756613756,
+      "awayDefenseAllowed": 0.16666666666666666,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": -0.2082,
+  "profiles": {
+    "NE": {
+      "season": {
+        "games": 7,
+        "offPlays": 429,
+        "defPlays": 409,
+        "offEpa": 0.0565,
+        "defEpa": 0.0195,
+        "netEpa": 0.037,
+        "adjustedNetEpa": 0.0843,
+        "earlyOffEpa": 0.0345,
+        "earlyDefEpa": 0.0348,
+        "passOffEpa": 0.2106,
+        "passDefEpa": 0.0675
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 179,
+        "defPlays": 181,
+        "offEpa": 0.2041,
+        "defEpa": 0.0525,
+        "netEpa": 0.1516,
+        "adjustedNetEpa": 0.1729,
+        "earlyOffEpa": 0.1711,
+        "earlyDefEpa": 0.1471,
+        "passOffEpa": 0.4735,
+        "passDefEpa": 0.2095
+      }
+    },
+    "MIA": {
+      "season": {
+        "games": 6,
+        "offPlays": 336,
+        "defPlays": 343,
+        "offEpa": -0.0419,
+        "defEpa": 0.1333,
+        "netEpa": -0.1752,
+        "adjustedNetEpa": -0.1239,
+        "earlyOffEpa": -0.0895,
+        "earlyDefEpa": 0.0153,
+        "passOffEpa": -0.0064,
+        "passDefEpa": 0.3154
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 126,
+        "defPlays": 114,
+        "offEpa": 0.1224,
+        "defEpa": 0.2022,
+        "netEpa": -0.0798,
+        "adjustedNetEpa": -0.0131,
+        "earlyOffEpa": -0.0009,
+        "earlyDefEpa": -0.015,
+        "passOffEpa": 0.2126,
+        "passDefEpa": 0.3283
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": -1.159,
+    "structuralHomeMargin": -1.159
+  },
+  "market": {
+    "spread_display": "New England Patriots -7",
+    "spread": "NE -7.5",
+    "total": 43.5,
+    "home_margin": -7,
+    "home_team_sportsbook_spread": 7,
+    "moneyline": {
+      "away": -310,
+      "home": 250
+    },
+    "source": "ESPN Draft Kings",
+    "timestamp": "2026-10-29T13:30:02.221Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": -5.832,
+  "structuralFair": -1.159,
+  "structuralDifference": 5.841,
+  "price": {
+    "side": "NE",
+    "minimumSpreadAtSnapshot": -4.0,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-10-29T13:30:02.882282+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [
+      {
+        "team": "NE",
+        "player": "Ben Brown",
+        "position": "C",
+        "status": "Limited Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "NE",
+        "player": "A.J. Brown",
+        "position": "WR",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NE",
+        "player": "DaQuan Jones",
+        "position": "DT",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NE",
+        "player": "Morgan Moses",
+        "position": "T",
+        "status": "Limited Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "MIA",
+        "player": "Tucker Addington",
+        "position": "LS",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "MIA",
+        "player": "Julius Brents",
+        "position": "CB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "MIA",
+        "player": "Greg Dulcich",
+        "position": "TE",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "MIA",
+        "player": "Will Kacmarek",
+        "position": "TE",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "MIA",
+        "player": "Kadyn Proctor",
+        "position": "T",
+        "status": "Did Not Participate In Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "MIA",
+        "player": "Michael Taaffe",
+        "position": "S",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "MIA",
+        "player": "Reese Taylor",
+        "position": "CB",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "MIA",
+        "player": "Dante Trader Jr.",
+        "position": "S",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "MIA",
+        "player": "Malik Washington",
+        "position": "WR",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "MIA",
+        "player": "Jared Wayne",
+        "position": "WR",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "NE",
+        "unit": "OL",
+        "count": 2,
+        "players": [
+          "Ben Brown",
+          "Morgan Moses"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "MIA",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Kadyn Proctor"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "MIA",
+        "unit": "Secondary",
+        "count": 4,
+        "players": [
+          "Julius Brents",
+          "Michael Taaffe",
+          "Reese Taylor",
+          "Dante Trader Jr."
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W8-NE-MIA",
+    "canonical_game_id": "2026-W8-NE-MIA",
+    "matchup": "New England Patriots at Miami Dolphins",
+    "venue": "Hard Rock Stadium",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Showers And Thunderstorms at kickoff: 82\u00b0F; wind E 13.0 mph, gust 20.7 mph; precipitation chance 78%.",
+    "risk": "weather review required",
+    "observed_at": "2026-10-29T13:30:07.677649+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/25.958,-80.2389",
+    "forecast_timestamp": "2026-10-29T08:02:12+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W8-NE-MIA",
+      "kickoff": "2026-11-01T21:25Z",
+      "temp_f": 82,
+      "wind_mph": 13.0,
+      "gust_mph": 20.7,
+      "precip_chance_pct": 78,
+      "forecast_timestamp": "2026-10-29T08:02:12+00:00",
+      "sources": [
+        "https://api.weather.gov/points/25.958,-80.2389",
+        "https://api.weather.gov/gridpoints/MFL/107,58/forecast/hourly",
+        "https://api.weather.gov/gridpoints/MFL/107,58"
+      ],
+      "wind_speed_raw": "13 mph",
+      "wind_direction": "E",
+      "forecast_hour_start": "2026-11-01T16:00:00-05:00",
+      "forecast_hour_end": "2026-11-01T17:00:00-05:00",
+      "conditions": "Showers And Thunderstorms",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-10-29T13:30:07.677649+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/25.958,-80.2389",
+      "https://api.weather.gov/gridpoints/MFL/107,58/forecast/hourly",
+      "https://api.weather.gov/gridpoints/MFL/107,58"
+    ]
+  },
+  "sustainability": {
+    "NE": {
+      "turnoverRate": 0.03263403263403263,
+      "takeawayRate": 0.017114914425427872,
+      "thirdDownConversion": 0.40476190476190477,
+      "redZoneTdRate": 0.55
+    },
+    "MIA": {
+      "turnoverRate": 0.023809523809523808,
+      "takeawayRate": 0.014577259475218658,
+      "thirdDownConversion": 0.41333333333333333,
+      "redZoneTdRate": 0.5625
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 7,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-10-27T05:18:33.515Z",
+      "capturedAt": "2026-10-27T05:18:46.853344+00:00",
+      "spread": "New England Patriots -7.5",
+      "homeMargin": -7.5,
+      "source": "ESPN DraftKings"
+    },
+    {
+      "observedAt": "2026-10-29T13:23:07.278Z",
+      "capturedAt": "2026-10-29T13:23:18.755306+00:00",
+      "spread": "New England Patriots -7",
+      "homeMargin": -7,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
