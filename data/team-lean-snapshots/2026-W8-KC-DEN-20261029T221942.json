@@ -1,0 +1,447 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W8-KC-DEN",
+  "portalGameId": "401873033",
+  "week": 8,
+  "away": "Kansas City Chiefs",
+  "home": "Denver Broncos",
+  "awayAbbr": "KC",
+  "homeAbbr": "DEN",
+  "kickoff": "2026-11-01T21:25Z",
+  "generatedAt": "2026-10-29T22:19:42.003475+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "KC",
+  "assessmentSide": "KC",
+  "structuralValueSide": "DEN",
+  "alignment": "CONFLICT",
+  "thesis": "KC has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "KC",
+      "gap": 0.055,
+      "unit": "EPA/play",
+      "awayOffense": 0.12978999443716904,
+      "homeDefenseAllowed": -0.06433622271686157,
+      "homeOffense": -0.0400730533095649,
+      "awayDefenseAllowed": -0.005257808648696066,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "KC",
+      "gap": 0.061,
+      "unit": "EPA/play",
+      "awayOffense": 0.07956540698731036,
+      "homeDefenseAllowed": -0.008024314417893216,
+      "homeOffense": 0.029668470517521636,
+      "awayDefenseAllowed": -0.0809679606047622,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "KC",
+      "gap": 0.138,
+      "unit": "EPA/play",
+      "awayOffense": 0.12523557839812668,
+      "homeDefenseAllowed": 0.03112568043598827,
+      "homeOffense": -0.034506113468690154,
+      "awayDefenseAllowed": -0.08472881255794615,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "KC",
+      "gap": 2.89,
+      "unit": "percentage points",
+      "awayOffense": 0.11016949152542373,
+      "homeDefenseAllowed": 0.09394572025052192,
+      "homeOffense": 0.06818181818181818,
+      "awayDefenseAllowed": 0.078125,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "DEN",
+      "gap": 6.175,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.14691943127962084,
+      "homeDefenseAllowed": 0.21621621621621623,
+      "homeOffense": 0.1016949152542373,
+      "awayDefenseAllowed": 0.13793103448275862,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "KC",
+      "gap": 0.055,
+      "unit": "EPA/play",
+      "awayOffense": 0.12978999443716904,
+      "homeDefenseAllowed": -0.06433622271686157,
+      "homeOffense": -0.0400730533095649,
+      "awayDefenseAllowed": -0.005257808648696066,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "KC",
+      "gap": 0.061,
+      "unit": "EPA/play",
+      "awayOffense": 0.07956540698731036,
+      "homeDefenseAllowed": -0.008024314417893216,
+      "homeOffense": 0.029668470517521636,
+      "awayDefenseAllowed": -0.0809679606047622,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "KC",
+      "gap": 0.138,
+      "unit": "EPA/play",
+      "awayOffense": 0.12523557839812668,
+      "homeDefenseAllowed": 0.03112568043598827,
+      "homeOffense": -0.034506113468690154,
+      "awayDefenseAllowed": -0.08472881255794615,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "KC",
+      "gap": 2.89,
+      "unit": "percentage points",
+      "awayOffense": 0.11016949152542373,
+      "homeDefenseAllowed": 0.09394572025052192,
+      "homeOffense": 0.06818181818181818,
+      "awayDefenseAllowed": 0.078125,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "DEN",
+      "gap": 6.175,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.14691943127962084,
+      "homeDefenseAllowed": 0.21621621621621623,
+      "homeOffense": 0.1016949152542373,
+      "awayDefenseAllowed": 0.13793103448275862,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": -0.0641,
+  "profiles": {
+    "KC": {
+      "season": {
+        "games": 6,
+        "offPlays": 354,
+        "defPlays": 384,
+        "offEpa": 0.1184,
+        "defEpa": -0.0557,
+        "netEpa": 0.1741,
+        "adjustedNetEpa": 0.1329,
+        "earlyOffEpa": 0.0833,
+        "earlyDefEpa": -0.085,
+        "passOffEpa": 0.1298,
+        "passDefEpa": -0.0053
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 105,
+        "defPlays": 132,
+        "offEpa": -0.0074,
+        "defEpa": -0.0666,
+        "netEpa": 0.0592,
+        "adjustedNetEpa": 0.0259,
+        "earlyOffEpa": 0.0738,
+        "earlyDefEpa": -0.2449,
+        "passOffEpa": -0.0288,
+        "passDefEpa": 0.0011
+      }
+    },
+    "DEN": {
+      "season": {
+        "games": 7,
+        "offPlays": 396,
+        "defPlays": 479,
+        "offEpa": -0.0408,
+        "defEpa": -0.0494,
+        "netEpa": 0.0086,
+        "adjustedNetEpa": 0.0688,
+        "earlyOffEpa": 0.0194,
+        "earlyDefEpa": -0.011,
+        "passOffEpa": -0.0401,
+        "passDefEpa": -0.0643
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 167,
+        "defPlays": 218,
+        "offEpa": -0.0756,
+        "defEpa": -0.1841,
+        "netEpa": 0.1085,
+        "adjustedNetEpa": 0.0655,
+        "earlyOffEpa": 0.0015,
+        "earlyDefEpa": -0.1378,
+        "passOffEpa": -0.0798,
+        "passDefEpa": -0.1891
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 10.367,
+    "structuralHomeMargin": 10.367
+  },
+  "market": {
+    "spread_display": "Kansas City Chiefs -1.5",
+    "spread": "KC -1.5",
+    "total": 40.5,
+    "home_margin": -1.5,
+    "home_team_sportsbook_spread": 1.5,
+    "moneyline": {
+      "away": -118,
+      "home": -102
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-10-29T22:19:26.772Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": 0.873,
+  "structuralFair": 10.367,
+  "structuralDifference": 11.867,
+  "price": {
+    "side": "KC",
+    "minimumSpreadAtSnapshot": 2.5,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-10-29T22:19:27.272370+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [
+      {
+        "team": "KC",
+        "player": "Mansoor Delane",
+        "position": "CB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "KC",
+        "player": "Travis Kelce",
+        "position": "TE",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "KC",
+        "player": "Omarr Norman-Lott",
+        "position": "DT",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "KC",
+        "player": "Rashee Rice",
+        "position": "WR",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "KC",
+        "player": "L'Jarius Sneed",
+        "position": "CB",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "DEN",
+        "player": "Zach Allen",
+        "position": "DE",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "DEN",
+        "player": "Garett Bolles",
+        "position": "T",
+        "status": "Limited Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "DEN",
+        "player": "RJ Harvey",
+        "position": "RB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "DEN",
+        "player": "Talanoa Hufanga",
+        "position": "S",
+        "status": "Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "DEN",
+        "player": "Brandon Jones",
+        "position": "S",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "DEN",
+        "player": "Jaylen Waddle",
+        "position": "WR",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "KC",
+        "unit": "Secondary",
+        "count": 2,
+        "players": [
+          "Mansoor Delane",
+          "L'Jarius Sneed"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "DEN",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Garett Bolles"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "DEN",
+        "unit": "Secondary",
+        "count": 2,
+        "players": [
+          "Talanoa Hufanga",
+          "Brandon Jones"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W8-KC-DEN",
+    "canonical_game_id": "2026-W8-KC-DEN",
+    "matchup": "Kansas City Chiefs at Denver Broncos",
+    "venue": "Empower Field at Mile High",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Partly Sunny at kickoff: 61\u00b0F; wind ENE 6.0 mph, gust 9.2 mph; precipitation chance 8%.",
+    "risk": "no major hourly weather flag",
+    "observed_at": "2026-10-29T22:19:29.252786+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/39.7439,-105.0201",
+    "forecast_timestamp": "2026-10-29T18:46:56+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W8-KC-DEN",
+      "kickoff": "2026-11-01T21:25Z",
+      "temp_f": 61,
+      "wind_mph": 6.0,
+      "gust_mph": 9.2,
+      "precip_chance_pct": 8,
+      "forecast_timestamp": "2026-10-29T18:46:56+00:00",
+      "sources": [
+        "https://api.weather.gov/points/39.7439,-105.0201",
+        "https://api.weather.gov/gridpoints/BOU/62,62/forecast/hourly",
+        "https://api.weather.gov/gridpoints/BOU/62,62"
+      ],
+      "wind_speed_raw": "6 mph",
+      "wind_direction": "ENE",
+      "forecast_hour_start": "2026-11-01T14:00:00-07:00",
+      "forecast_hour_end": "2026-11-01T15:00:00-07:00",
+      "conditions": "Partly Sunny",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-10-29T22:19:29.252786+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/39.7439,-105.0201",
+      "https://api.weather.gov/gridpoints/BOU/62,62/forecast/hourly",
+      "https://api.weather.gov/gridpoints/BOU/62,62"
+    ]
+  },
+  "sustainability": {
+    "KC": {
+      "turnoverRate": 0.011299435028248588,
+      "takeawayRate": 0.0234375,
+      "thirdDownConversion": 0.4,
+      "redZoneTdRate": 0.5652173913043478
+    },
+    "DEN": {
+      "turnoverRate": 0.012626262626262626,
+      "takeawayRate": 0.020876826722338204,
+      "thirdDownConversion": 0.3146067415730337,
+      "redZoneTdRate": 0.6
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 7
+  },
+  "scheme": {
+    "offenseThroughWeek": 7,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-10-27T05:18:33.515Z",
+      "capturedAt": "2026-10-27T05:18:46.853344+00:00",
+      "spread": "Kansas City Chiefs -1.5",
+      "homeMargin": -1.5,
+      "source": "ESPN DraftKings"
+    },
+    {
+      "observedAt": "2026-10-29T21:30:02.413Z",
+      "capturedAt": "2026-10-29T21:30:14.038100+00:00",
+      "spread": "Kansas City Chiefs -1.5",
+      "homeMargin": -1.5,
+      "source": "ESPN Draft Kings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
