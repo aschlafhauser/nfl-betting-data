@@ -4,6 +4,10 @@ on:
     branches: [main]
     paths:
       - 'scripts/**'
+      - 'data/expert-weekly.json'
+      - 'data/injuries.json'
+      - 'data/expert-episode-audit/**'
+      - 'data/player-props-expert.json'
       - '.github/workflows/refresh-nfl-weekly-manifest.yml'
   schedule:
     - cron: '27 * * * *'

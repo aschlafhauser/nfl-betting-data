@@ -1,23 +1,129 @@
 {
   "season": 2026,
   "week": 8,
-  "updatedAt": "2026-10-29T21:30:02.413Z",
-  "status": "CURRENT-WEEK-NO-UPCOMING-VERIFIED-RECOMMENDATIONS",
-  "slate": null,
+  "updatedAt": "2026-10-29T22:17:09.925120+00:00",
+  "status": "CURRENT-WEEK-VERIFIED-RECOMMENDATIONS",
+  "slate": "Thursday Panthers at Packers",
   "governance": {
     "description": "Expert-driven only. No quantitative player-prop model impact. Recommendations require a current-week direction and an explicit quoted threshold; sportsbook availability and final inactives must be rechecked before execution.",
     "staleDataPolicy": "Completed-game recommendations are archived automatically and cannot remain actionable.",
-    "injuryGate": "Monday final inactives remain pending. Every recommendation is conditional on the cited player being active and the listed price threshold remaining available."
+    "injuryGate": "Thursday official inactives pending; recommendations remain conditional on player availability and quoted market/price."
   },
-  "recommendations": [],
+  "recommendations": [
+    {
+      "id": "w8-tnf-prop-0",
+      "season": 2026,
+      "week": 8,
+      "gameId": "2026-W8-CAR-GB",
+      "game": "Carolina Panthers at Green Bay Packers",
+      "player": "Bryce Young",
+      "market": "passing touchdowns",
+      "category": "Passing",
+      "direction": "under",
+      "line": 1.5,
+      "playTo": "1.5",
+      "citedPrice": "-120",
+      "confidence": "Expert opinion",
+      "sourceFamily": "Action Network",
+      "source": "Action Network · Brit Devine",
+      "sourceUrl": "https://www.actionnetwork.com/nfl/panthers-vs-packers-picks-props-odds-predictions-thursday-night-football-oct-29",
+      "sourceDate": "2026-10-29",
+      "sources": [
+        "Action Network · Brit Devine"
+      ],
+      "independentSourceCount": 1,
+      "thesis": "Road game and opponent passing-TD suppression.",
+      "status": "Explicit expert recommendation; live line/price not independently verified",
+      "risk": "Final inactives and current sportsbook threshold/price remain required. Single source family."
+    },
+    {
+      "id": "w8-tnf-prop-1",
+      "season": 2026,
+      "week": 8,
+      "gameId": "2026-W8-CAR-GB",
+      "game": "Carolina Panthers at Green Bay Packers",
+      "player": "MarShawn Lloyd",
+      "market": "rushing attempts",
+      "category": "Rushing",
+      "direction": "under",
+      "line": 5.5,
+      "playTo": "5.5",
+      "citedPrice": "-103; source price limit -146",
+      "confidence": "Expert opinion",
+      "sourceFamily": "Action Network",
+      "source": "Action Network · Derek Carty",
+      "sourceUrl": "https://www.actionnetwork.com/nfl/panthers-vs-packers-picks-props-odds-predictions-thursday-night-football-oct-29",
+      "sourceDate": "2026-10-29",
+      "sources": [
+        "Action Network · Derek Carty"
+      ],
+      "independentSourceCount": 1,
+      "thesis": "Projected workload below cited threshold.",
+      "status": "Explicit expert recommendation; live line/price not independently verified",
+      "risk": "Final inactives and current sportsbook threshold/price remain required. Single source family."
+    },
+    {
+      "id": "w8-tnf-prop-2",
+      "season": 2026,
+      "week": 8,
+      "gameId": "2026-W8-CAR-GB",
+      "game": "Carolina Panthers at Green Bay Packers",
+      "player": "Jalen Coker",
+      "market": "anytime td",
+      "category": "Touchdown",
+      "direction": "yes",
+      "line": null,
+      "playTo": "Anytime TD at quoted price",
+      "citedPrice": "+215",
+      "confidence": "Expert opinion",
+      "sourceFamily": "Action Network",
+      "source": "Action Network · Grant Neiffer",
+      "sourceUrl": "https://www.actionnetwork.com/nfl/panthers-vs-packers-picks-props-odds-predictions-thursday-night-football-oct-29",
+      "sourceDate": "2026-10-29",
+      "sources": [
+        "Action Network · Grant Neiffer"
+      ],
+      "independentSourceCount": 1,
+      "thesis": "Target share and touchdown opportunity.",
+      "status": "Explicit expert recommendation; live line/price not independently verified",
+      "risk": "Final inactives and current sportsbook threshold/price remain required. Single source family."
+    },
+    {
+      "id": "w8-tnf-prop-3",
+      "season": 2026,
+      "week": 8,
+      "gameId": "2026-W8-CAR-GB",
+      "game": "Carolina Panthers at Green Bay Packers",
+      "player": "Chuba Hubbard",
+      "market": "rushing yards",
+      "category": "Rushing",
+      "direction": "over",
+      "line": 65.5,
+      "playTo": "65.5",
+      "citedPrice": "-115 DraftKings",
+      "confidence": "Expert opinion",
+      "sourceFamily": "Action Network",
+      "source": "Action Network · Sean Koerner",
+      "sourceUrl": "https://www.actionnetwork.com/nfl/carolina-panthers-vs-green-bay-packers-prediction-pick-odds-nfl-thursday-night-football-october-29",
+      "sourceDate": "2026-10-29",
+      "sources": [
+        "Action Network · Sean Koerner"
+      ],
+      "independentSourceCount": 1,
+      "thesis": "Yards after contact and zone-run matchup versus depleted linebackers.",
+      "status": "Explicit expert recommendation; live line/price not independently verified",
+      "risk": "Final inactives and current sportsbook threshold/price remain required. Single source family."
+    }
+  ],
   "watch": [],
   "watchlist": [],
   "sourceAudit": {
-    "checkedAt": "2026-10-29T21:30:02.413Z",
+    "checkedAt": "2026-10-29T22:17:09.925120+00:00",
     "sourceWeek": 8,
-    "note": "Completed-game rows are archived automatically and cannot remain actionable. Current recommendations contain only not-yet-started selected-week games."
+    "currentWeekSourcesChecked": 3,
+    "note": "Four explicit sportsbook player-prop opinions reviewed. Covers prediction-market thresholds remain qualitative expert context; no sportsbook odds inferred."
   },
   "closedRecommendations": [],
   "closedWatchlist": [],
-  "evidenceCheckedAt": "2026-10-27T05:18:33.515Z"
+  "evidenceCheckedAt": "2026-10-29T22:17:09.925120+00:00"
 }
