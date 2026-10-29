@@ -1,0 +1,466 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W8-LAC-LAR",
+  "portalGameId": "401873032",
+  "week": 8,
+  "away": "Los Angeles Chargers",
+  "home": "Los Angeles Rams",
+  "awayAbbr": "LAC",
+  "homeAbbr": "LAR",
+  "kickoff": "2026-11-01T21:05Z",
+  "generatedAt": "2026-10-29T18:33:12.972335+00:00",
+  "status": "PRICE WATCH",
+  "footballLean": "LAR",
+  "assessmentSide": "LAR",
+  "structuralValueSide": "LAR",
+  "alignment": "ALIGNED",
+  "thesis": "LAR has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "LAR",
+      "gap": 0.168,
+      "unit": "EPA/play",
+      "awayOffense": -0.24121561365090174,
+      "homeDefenseAllowed": -0.006202189289092562,
+      "homeOffense": 0.09166207929885428,
+      "awayDefenseAllowed": -0.0025109619585292967,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "LAR",
+      "gap": 0.119,
+      "unit": "EPA/play",
+      "awayOffense": -0.20996201037185674,
+      "homeDefenseAllowed": 0.06541499596420232,
+      "homeOffense": 0.08002512207616465,
+      "awayDefenseAllowed": 0.014236624526668094,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "LAR",
+      "gap": 0.08,
+      "unit": "EPA/play",
+      "awayOffense": -0.173780351568974,
+      "homeDefenseAllowed": -0.04625445420056675,
+      "homeOffense": 0.018091270017932752,
+      "awayDefenseAllowed": -0.07758375614980305,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "LAR",
+      "gap": 1.582,
+      "unit": "percentage points",
+      "awayOffense": 0.07837837837837838,
+      "homeDefenseAllowed": 0.07852193995381063,
+      "homeOffense": 0.08742004264392324,
+      "awayDefenseAllowed": 0.10112359550561797,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "LAC",
+      "gap": 0.688,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.20454545454545456,
+      "homeDefenseAllowed": 0.11023622047244094,
+      "homeOffense": 0.14864864864864866,
+      "awayDefenseAllowed": 0.17989417989417988,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "LAR",
+      "gap": 0.168,
+      "unit": "EPA/play",
+      "awayOffense": -0.24121561365090174,
+      "homeDefenseAllowed": -0.006202189289092562,
+      "homeOffense": 0.09166207929885428,
+      "awayDefenseAllowed": -0.0025109619585292967,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "LAR",
+      "gap": 0.119,
+      "unit": "EPA/play",
+      "awayOffense": -0.20996201037185674,
+      "homeDefenseAllowed": 0.06541499596420232,
+      "homeOffense": 0.08002512207616465,
+      "awayDefenseAllowed": 0.014236624526668094,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "LAR",
+      "gap": 0.08,
+      "unit": "EPA/play",
+      "awayOffense": -0.173780351568974,
+      "homeDefenseAllowed": -0.04625445420056675,
+      "homeOffense": 0.018091270017932752,
+      "awayDefenseAllowed": -0.07758375614980305,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "LAR",
+      "gap": 1.582,
+      "unit": "percentage points",
+      "awayOffense": 0.07837837837837838,
+      "homeDefenseAllowed": 0.07852193995381063,
+      "homeOffense": 0.08742004264392324,
+      "awayDefenseAllowed": 0.10112359550561797,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "LAC",
+      "gap": 0.688,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.20454545454545456,
+      "homeDefenseAllowed": 0.11023622047244094,
+      "homeOffense": 0.14864864864864866,
+      "awayDefenseAllowed": 0.17989417989417988,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": 0.2989,
+  "profiles": {
+    "LAC": {
+      "season": {
+        "games": 6,
+        "offPlays": 370,
+        "defPlays": 356,
+        "offEpa": -0.2248,
+        "defEpa": -0.036,
+        "netEpa": -0.1888,
+        "adjustedNetEpa": -0.1867,
+        "earlyOffEpa": -0.21,
+        "earlyDefEpa": 0.0142,
+        "passOffEpa": -0.2412,
+        "passDefEpa": -0.0025
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 125,
+        "defPlays": 112,
+        "offEpa": -0.3534,
+        "defEpa": -0.0983,
+        "netEpa": -0.2551,
+        "adjustedNetEpa": -0.2083,
+        "earlyOffEpa": -0.3614,
+        "earlyDefEpa": 0.0285,
+        "passOffEpa": -0.4147,
+        "passDefEpa": -0.1639
+      }
+    },
+    "LAR": {
+      "season": {
+        "games": 7,
+        "offPlays": 469,
+        "defPlays": 433,
+        "offEpa": 0.0591,
+        "defEpa": -0.0566,
+        "netEpa": 0.1157,
+        "adjustedNetEpa": 0.1122,
+        "earlyOffEpa": 0.0855,
+        "earlyDefEpa": 0.0626,
+        "passOffEpa": 0.0917,
+        "passDefEpa": -0.0062
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 201,
+        "defPlays": 194,
+        "offEpa": 0.1029,
+        "defEpa": 0.0244,
+        "netEpa": 0.0786,
+        "adjustedNetEpa": 0.0452,
+        "earlyOffEpa": 0.1164,
+        "earlyDefEpa": 0.1136,
+        "passOffEpa": 0.139,
+        "passDefEpa": 0.1421
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 9.055,
+    "structuralHomeMargin": 9.055
+  },
+  "market": {
+    "spread_display": "Los Angeles Rams -6.5",
+    "spread": "LAR -6.5",
+    "total": 45.5,
+    "home_margin": 6.5,
+    "home_team_sportsbook_spread": -6.5,
+    "moneyline": {
+      "away": 220,
+      "home": -270
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-10-29T18:33:01.858Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": 7.011,
+  "structuralFair": 9.055,
+  "structuralDifference": 2.555,
+  "price": {
+    "side": "LAR",
+    "minimumSpreadAtSnapshot": -5.5,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-10-29T18:33:02.291400+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [
+      {
+        "team": "LAC",
+        "player": "Kayode Awosika",
+        "position": "G",
+        "status": "Did Not Participate In Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "LAC",
+        "player": "Tre Harris",
+        "position": "WR",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "LAC",
+        "player": "Donte Jackson",
+        "position": "CB",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "LAC",
+        "player": "Derwin James",
+        "position": "S",
+        "status": "Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "LAC",
+        "player": "Deane Leonard",
+        "position": "CB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "LAC",
+        "player": "Khalil Mack",
+        "position": "DE",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "LAC",
+        "player": "Rodney Shelley",
+        "position": "CB",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "LAC",
+        "player": "Brenen Thompson",
+        "position": "WR",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "LAR",
+        "player": "Joe Cardona",
+        "position": "LS",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "LAR",
+        "player": "Trent McDuffie",
+        "position": "CB",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "LAR",
+        "player": "Colby Parkinson",
+        "position": "TE",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "LAR",
+        "player": "Coleman Shelton",
+        "position": "C",
+        "status": "Did Not Participate In Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "LAC",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Kayode Awosika"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "LAC",
+        "unit": "Secondary",
+        "count": 4,
+        "players": [
+          "Donte Jackson",
+          "Derwin James",
+          "Deane Leonard",
+          "Rodney Shelley"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "LAR",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Coleman Shelton"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "LAR",
+        "unit": "Secondary",
+        "count": 1,
+        "players": [
+          "Trent McDuffie"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W8-LAC-LAR",
+    "canonical_game_id": "2026-W8-LAC-LAR",
+    "matchup": "Los Angeles Chargers at Los Angeles Rams",
+    "venue": "SoFi Stadium",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Slight Chance Rain Showers at kickoff: 70\u00b0F; wind WSW 5.0 mph, gust 8.1 mph; precipitation chance 15%. SoFi is covered/open-sided; surrounding point forecast is not on-field wind or rain exposure. No automatic weather model adjustment.",
+    "risk": "no major hourly weather flag",
+    "observed_at": "2026-10-29T18:33:03.776258+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/33.9535,-118.3392",
+    "forecast_timestamp": "2026-10-29T18:26:55+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W8-LAC-LAR",
+      "kickoff": "2026-11-01T21:05Z",
+      "temp_f": 70,
+      "wind_mph": 5.0,
+      "gust_mph": 8.1,
+      "precip_chance_pct": 15,
+      "forecast_timestamp": "2026-10-29T18:26:55+00:00",
+      "sources": [
+        "https://api.weather.gov/points/33.9535,-118.3392",
+        "https://api.weather.gov/gridpoints/LOX/151,41/forecast/hourly",
+        "https://api.weather.gov/gridpoints/LOX/151,41"
+      ],
+      "wind_speed_raw": "5 mph",
+      "wind_direction": "WSW",
+      "forecast_hour_start": "2026-11-01T13:00:00-08:00",
+      "forecast_hour_end": "2026-11-01T14:00:00-08:00",
+      "conditions": "Slight Chance Rain Showers",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "venue_limitation": "SoFi is covered/open-sided; surrounding point forecast is not on-field wind or rain exposure. No automatic weather model adjustment.",
+      "retrieved_at": "2026-10-29T18:33:03.776258+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/33.9535,-118.3392",
+      "https://api.weather.gov/gridpoints/LOX/151,41/forecast/hourly",
+      "https://api.weather.gov/gridpoints/LOX/151,41"
+    ]
+  },
+  "sustainability": {
+    "LAC": {
+      "turnoverRate": 0.03783783783783784,
+      "takeawayRate": 0.025280898876404494,
+      "thirdDownConversion": 0.34146341463414637,
+      "redZoneTdRate": 0.5
+    },
+    "LAR": {
+      "turnoverRate": 0.023454157782515993,
+      "takeawayRate": 0.013856812933025405,
+      "thirdDownConversion": 0.4578313253012048,
+      "redZoneTdRate": 0.6896551724137931
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 7,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-10-27T05:18:33.515Z",
+      "capturedAt": "2026-10-27T05:18:46.853344+00:00",
+      "spread": "Los Angeles Rams -6.5",
+      "homeMargin": 6.5,
+      "source": "ESPN DraftKings"
+    },
+    {
+      "observedAt": "2026-10-29T17:29:28.659Z",
+      "capturedAt": "2026-10-29T17:29:39.112120+00:00",
+      "spread": "Los Angeles Rams -6.5",
+      "homeMargin": 6.5,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
