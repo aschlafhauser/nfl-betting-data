@@ -1,0 +1,477 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W8-LV-NYJ",
+  "portalGameId": "401873029",
+  "week": 8,
+  "away": "Las Vegas Raiders",
+  "home": "New York Jets",
+  "awayAbbr": "LV",
+  "homeAbbr": "NYJ",
+  "kickoff": "2026-11-01T18:00Z",
+  "generatedAt": "2026-10-29T14:31:26.172739+00:00",
+  "status": "PRICE WATCH",
+  "footballLean": "NYJ",
+  "assessmentSide": "NYJ",
+  "structuralValueSide": "NYJ",
+  "alignment": "ALIGNED",
+  "thesis": "NYJ has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "NYJ",
+      "gap": 0.008,
+      "unit": "EPA/play",
+      "awayOffense": 0.11554741158835471,
+      "homeDefenseAllowed": 0.10638022735337785,
+      "homeOffense": 0.10361408295778486,
+      "awayDefenseAllowed": 0.1341859818469038,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "NYJ",
+      "gap": 0.052,
+      "unit": "EPA/play",
+      "awayOffense": -0.030222070469439505,
+      "homeDefenseAllowed": 0.008875493199463291,
+      "homeOffense": 0.0034879868339889003,
+      "awayDefenseAllowed": 0.07821654530068978,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "NYJ",
+      "gap": 0.09,
+      "unit": "EPA/play",
+      "awayOffense": -0.24931300801631115,
+      "homeDefenseAllowed": -0.07691446023084753,
+      "homeOffense": -0.1111529299600269,
+      "awayDefenseAllowed": -0.035936976445259186,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "NYJ",
+      "gap": 1.948,
+      "unit": "percentage points",
+      "awayOffense": 0.07882882882882883,
+      "homeDefenseAllowed": 0.08843537414965986,
+      "homeOffense": 0.09950248756218906,
+      "awayDefenseAllowed": 0.10672853828306264,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "LV",
+      "gap": 3.374,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.15492957746478872,
+      "homeDefenseAllowed": 0.144,
+      "homeOffense": 0.17916666666666667,
+      "awayDefenseAllowed": 0.18725099601593626,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "NYJ",
+      "gap": 0.008,
+      "unit": "EPA/play",
+      "awayOffense": 0.11554741158835471,
+      "homeDefenseAllowed": 0.10638022735337785,
+      "homeOffense": 0.10361408295778486,
+      "awayDefenseAllowed": 0.1341859818469038,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "NYJ",
+      "gap": 0.052,
+      "unit": "EPA/play",
+      "awayOffense": -0.030222070469439505,
+      "homeDefenseAllowed": 0.008875493199463291,
+      "homeOffense": 0.0034879868339889003,
+      "awayDefenseAllowed": 0.07821654530068978,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "NYJ",
+      "gap": 0.09,
+      "unit": "EPA/play",
+      "awayOffense": -0.24931300801631115,
+      "homeDefenseAllowed": -0.07691446023084753,
+      "homeOffense": -0.1111529299600269,
+      "awayDefenseAllowed": -0.035936976445259186,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "NYJ",
+      "gap": 1.948,
+      "unit": "percentage points",
+      "awayOffense": 0.07882882882882883,
+      "homeDefenseAllowed": 0.08843537414965986,
+      "homeOffense": 0.09950248756218906,
+      "awayDefenseAllowed": 0.10672853828306264,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "LV",
+      "gap": 3.374,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.15492957746478872,
+      "homeDefenseAllowed": 0.144,
+      "homeOffense": 0.17916666666666667,
+      "awayDefenseAllowed": 0.18725099601593626,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": 0.0725,
+  "profiles": {
+    "LV": {
+      "season": {
+        "games": 7,
+        "offPlays": 444,
+        "defPlays": 431,
+        "offEpa": -0.0083,
+        "defEpa": 0.0541,
+        "netEpa": -0.0624,
+        "adjustedNetEpa": -0.0786,
+        "earlyOffEpa": -0.0225,
+        "earlyDefEpa": 0.0812,
+        "passOffEpa": 0.1155,
+        "passDefEpa": 0.1342
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 184,
+        "defPlays": 189,
+        "offEpa": -0.0323,
+        "defEpa": 0.2561,
+        "netEpa": -0.2884,
+        "adjustedNetEpa": -0.2583,
+        "earlyOffEpa": -0.0153,
+        "earlyDefEpa": 0.1822,
+        "passOffEpa": 0.06,
+        "passDefEpa": 0.4321
+      }
+    },
+    "NYJ": {
+      "season": {
+        "games": 7,
+        "offPlays": 402,
+        "defPlays": 441,
+        "offEpa": 0.0127,
+        "defEpa": -0.0022,
+        "netEpa": 0.0149,
+        "adjustedNetEpa": -0.0061,
+        "earlyOffEpa": -0.0003,
+        "earlyDefEpa": 0.0089,
+        "passOffEpa": 0.1036,
+        "passDefEpa": 0.1064
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 176,
+        "defPlays": 194,
+        "offEpa": 0.0054,
+        "defEpa": -0.0046,
+        "netEpa": 0.01,
+        "adjustedNetEpa": -0.0284,
+        "earlyOffEpa": -0.0198,
+        "earlyDefEpa": -0.0127,
+        "passOffEpa": 0.0564,
+        "passDefEpa": 0.1467
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 3.806,
+    "structuralHomeMargin": 3.806
+  },
+  "market": {
+    "spread_display": "New York Jets -1.5",
+    "spread": "NYJ -1.5",
+    "total": 45.5,
+    "home_margin": 1.5,
+    "home_team_sportsbook_spread": -1.5,
+    "moneyline": {
+      "away": 105,
+      "home": -125
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-10-29T14:31:15.821Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": 1.961,
+  "structuralFair": 3.806,
+  "structuralDifference": 2.306,
+  "price": {
+    "side": "NYJ",
+    "minimumSpreadAtSnapshot": 0.0,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-10-29T14:31:16.068969+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [
+      {
+        "team": "LV",
+        "player": "Brock Bowers",
+        "position": "TE",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "LV",
+        "player": "Foley Fatukasi",
+        "position": "DT",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "LV",
+        "player": "DJ Glaze",
+        "position": "T",
+        "status": "Limited Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "LV",
+        "player": "Patrick Johnson",
+        "position": "DE",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "LV",
+        "player": "Kwity Paye",
+        "position": "DE",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "LV",
+        "player": "Ian Thomas",
+        "position": "TE",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "LV",
+        "player": "Quay Walker",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYJ",
+        "player": "Braelon Allen",
+        "position": "RB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYJ",
+        "player": "David Bailey",
+        "position": "DE",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYJ",
+        "player": "Demario Davis",
+        "position": "LB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYJ",
+        "player": "Breece Hall",
+        "position": "RB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYJ",
+        "player": "Max Mitchell",
+        "position": "T",
+        "status": "Did Not Participate In Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "NYJ",
+        "player": "Joseph Ossai",
+        "position": "DE",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYJ",
+        "player": "Dylan Parham",
+        "position": "G",
+        "status": "Limited Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "NYJ",
+        "player": "Harrison Phillips",
+        "position": "DT",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYJ",
+        "player": "T'Vondre Sweat",
+        "position": "DT",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "LV",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "DJ Glaze"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "NYJ",
+        "unit": "OL",
+        "count": 2,
+        "players": [
+          "Max Mitchell",
+          "Dylan Parham"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W8-LV-NYJ",
+    "canonical_game_id": "2026-W8-LV-NYJ",
+    "matchup": "Las Vegas Raiders at New York Jets",
+    "venue": "MetLife Stadium",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Mostly Sunny at kickoff: 63\u00b0F; wind SW 5.0 mph, gust 9.2 mph; precipitation chance 0%.",
+    "risk": "no major hourly weather flag",
+    "observed_at": "2026-10-29T14:31:17.620610+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/40.8135,-74.0745",
+    "forecast_timestamp": "2026-10-29T06:30:05+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W8-LV-NYJ",
+      "kickoff": "2026-11-01T18:00Z",
+      "temp_f": 63,
+      "wind_mph": 5.0,
+      "gust_mph": 9.2,
+      "precip_chance_pct": 0,
+      "forecast_timestamp": "2026-10-29T06:30:05+00:00",
+      "sources": [
+        "https://api.weather.gov/points/40.8135,-74.0745",
+        "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
+        "https://api.weather.gov/gridpoints/OKX/30,46"
+      ],
+      "wind_speed_raw": "5 mph",
+      "wind_direction": "SW",
+      "forecast_hour_start": "2026-11-01T13:00:00-05:00",
+      "forecast_hour_end": "2026-11-01T14:00:00-05:00",
+      "conditions": "Mostly Sunny",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-10-29T14:31:17.620610+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/40.8135,-74.0745",
+      "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
+      "https://api.weather.gov/gridpoints/OKX/30,46"
+    ]
+  },
+  "sustainability": {
+    "LV": {
+      "turnoverRate": 0.013513513513513514,
+      "takeawayRate": 0.027842227378190254,
+      "thirdDownConversion": 0.4,
+      "redZoneTdRate": 0.4642857142857143
+    },
+    "NYJ": {
+      "turnoverRate": 0.012437810945273632,
+      "takeawayRate": 0.015873015873015872,
+      "thirdDownConversion": 0.38202247191011235,
+      "redZoneTdRate": 0.45
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 7,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-10-27T05:18:33.515Z",
+      "capturedAt": "2026-10-27T05:18:46.853344+00:00",
+      "spread": "New York Jets -1.5",
+      "homeMargin": 1.5,
+      "source": "ESPN DraftKings"
+    },
+    {
+      "observedAt": "2026-10-29T13:30:02.221Z",
+      "capturedAt": "2026-10-29T13:30:31.276769+00:00",
+      "spread": "New York Jets -1.5",
+      "homeMargin": 1.5,
+      "source": "ESPN Draft Kings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
