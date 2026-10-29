@@ -1,0 +1,478 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W8-ATL-TB",
+  "portalGameId": "401873025",
+  "week": 8,
+  "away": "Atlanta Falcons",
+  "home": "Tampa Bay Buccaneers",
+  "awayAbbr": "ATL",
+  "homeAbbr": "TB",
+  "kickoff": "2026-11-01T18:00Z",
+  "generatedAt": "2026-10-29T20:30:07.538366+00:00",
+  "status": "PRICE WATCH",
+  "footballLean": "TB",
+  "assessmentSide": "TB",
+  "structuralValueSide": "TB",
+  "alignment": "ALIGNED",
+  "thesis": "TB has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "TB",
+      "gap": 0.024,
+      "unit": "EPA/play",
+      "awayOffense": -0.0862159723691809,
+      "homeDefenseAllowed": -0.09874294954858766,
+      "homeOffense": -0.15233369019204654,
+      "awayDefenseAllowed": 0.014903099569564964,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "TB",
+      "gap": 0.033,
+      "unit": "EPA/play",
+      "awayOffense": -0.01175645256323151,
+      "homeDefenseAllowed": -0.08613115026355149,
+      "homeOffense": 0.055956587190285456,
+      "awayDefenseAllowed": -0.08711022633017707,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Early-down efficiency",
+      "side": "ATL",
+      "gap": 0.033,
+      "unit": "EPA/play",
+      "awayOffense": -0.007420273804793762,
+      "homeDefenseAllowed": -0.04347076749695067,
+      "homeOffense": -0.05650946656041985,
+      "awayDefenseAllowed": -0.05968567885755465,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "ATL",
+      "gap": 0.069,
+      "unit": "percentage points",
+      "awayOffense": 0.09569377990430622,
+      "homeDefenseAllowed": 0.07407407407407407,
+      "homeOffense": 0.08796296296296297,
+      "awayDefenseAllowed": 0.08043478260869565,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "ATL",
+      "gap": 3.761,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.1145374449339207,
+      "homeDefenseAllowed": 0.13382899628252787,
+      "homeOffense": 0.15476190476190477,
+      "awayDefenseAllowed": 0.16883116883116883,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "TB",
+      "gap": 0.024,
+      "unit": "EPA/play",
+      "awayOffense": -0.0862159723691809,
+      "homeDefenseAllowed": -0.09874294954858766,
+      "homeOffense": -0.15233369019204654,
+      "awayDefenseAllowed": 0.014903099569564964,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "ATL",
+      "gap": 0.033,
+      "unit": "EPA/play",
+      "awayOffense": -0.007420273804793762,
+      "homeDefenseAllowed": -0.04347076749695067,
+      "homeOffense": -0.05650946656041985,
+      "awayDefenseAllowed": -0.05968567885755465,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "TB",
+      "gap": 0.033,
+      "unit": "EPA/play",
+      "awayOffense": -0.01175645256323151,
+      "homeDefenseAllowed": -0.08613115026355149,
+      "homeOffense": 0.055956587190285456,
+      "awayDefenseAllowed": -0.08711022633017707,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "ATL",
+      "gap": 0.069,
+      "unit": "percentage points",
+      "awayOffense": 0.09569377990430622,
+      "homeDefenseAllowed": 0.07407407407407407,
+      "homeOffense": 0.08796296296296297,
+      "awayDefenseAllowed": 0.08043478260869565,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "ATL",
+      "gap": 3.761,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.1145374449339207,
+      "homeDefenseAllowed": 0.13382899628252787,
+      "homeOffense": 0.15476190476190477,
+      "awayDefenseAllowed": 0.16883116883116883,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": 0.0551,
+  "profiles": {
+    "ATL": {
+      "season": {
+        "games": 7,
+        "offPlays": 418,
+        "defPlays": 460,
+        "offEpa": -0.0418,
+        "defEpa": -0.0177,
+        "netEpa": -0.0241,
+        "adjustedNetEpa": 0.0125,
+        "earlyOffEpa": -0.0172,
+        "earlyDefEpa": -0.0603,
+        "passOffEpa": -0.0862,
+        "passDefEpa": 0.0149
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 175,
+        "defPlays": 208,
+        "offEpa": -0.0671,
+        "defEpa": 0.0295,
+        "netEpa": -0.0966,
+        "adjustedNetEpa": -0.008,
+        "earlyOffEpa": -0.0749,
+        "earlyDefEpa": -0.0184,
+        "passOffEpa": 0.0225,
+        "passDefEpa": 0.0214
+      }
+    },
+    "TB": {
+      "season": {
+        "games": 7,
+        "offPlays": 432,
+        "defPlays": 405,
+        "offEpa": -0.084,
+        "defEpa": -0.1108,
+        "netEpa": 0.0269,
+        "adjustedNetEpa": 0.0676,
+        "earlyOffEpa": -0.0565,
+        "earlyDefEpa": -0.0405,
+        "passOffEpa": -0.1523,
+        "passDefEpa": -0.0987
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 194,
+        "defPlays": 183,
+        "offEpa": 0.0014,
+        "defEpa": -0.1734,
+        "netEpa": 0.1748,
+        "adjustedNetEpa": 0.1939,
+        "earlyOffEpa": 0.0434,
+        "earlyDefEpa": -0.0422,
+        "passOffEpa": -0.0536,
+        "passDefEpa": -0.2448
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 8.817,
+    "structuralHomeMargin": 8.817
+  },
+  "market": {
+    "spread_display": "Tampa Bay Buccaneers -2.5",
+    "spread": "TB -2.5",
+    "total": 44.5,
+    "home_margin": 2.5,
+    "home_team_sportsbook_spread": -2.5,
+    "moneyline": {
+      "away": 120,
+      "home": null
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-10-29T20:29:56.734Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": 3.763,
+  "structuralFair": 8.817,
+  "structuralDifference": 6.317,
+  "price": {
+    "side": "TB",
+    "minimumSpreadAtSnapshot": -2.0,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-10-29T20:29:57.006417+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [
+      {
+        "team": "ATL",
+        "player": "Billy Bowman Jr.",
+        "position": "CB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "ATL",
+        "player": "Divine Deablo",
+        "position": "LB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "ATL",
+        "player": "Samson Ebukam",
+        "position": "DE",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "ATL",
+        "player": "LaCale London",
+        "position": "DT",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "ATL",
+        "player": "Brian Robinson",
+        "position": "RB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "ATL",
+        "player": "Za'Darius Smith",
+        "position": "DE",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "ATL",
+        "player": "Charles Snowden",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "ATL",
+        "player": "Jawaan Taylor",
+        "position": "T",
+        "status": "Limited Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "ATL",
+        "player": "Avieon Terrell",
+        "position": "CB",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "ATL",
+        "player": "Olamide Zaccheaus",
+        "position": "WR",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "TB",
+        "player": "Yaya Diaby",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "TB",
+        "player": "Emeka Egbuka",
+        "position": "WR",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "TB",
+        "player": "Kenny Gainwell",
+        "position": "RB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "TB",
+        "player": "Luke Goedeke",
+        "position": "T",
+        "status": "Did Not Participate In Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "TB",
+        "player": "Josiah Trotter",
+        "position": "LB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "ATL",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Jawaan Taylor"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "ATL",
+        "unit": "Secondary",
+        "count": 2,
+        "players": [
+          "Billy Bowman Jr.",
+          "Avieon Terrell"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "TB",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Luke Goedeke"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W8-ATL-TB",
+    "canonical_game_id": "2026-W8-ATL-TB",
+    "matchup": "Atlanta Falcons at Tampa Bay Buccaneers",
+    "venue": "Raymond James Stadium",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Chance Showers And Thunderstorms at kickoff: 80\u00b0F; wind E 13.0 mph, gust 21.9 mph; precipitation chance 69%.",
+    "risk": "weather review required",
+    "observed_at": "2026-10-29T20:29:57.926840+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/27.9759,-82.5033",
+    "forecast_timestamp": "2026-10-29T19:01:24+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W8-ATL-TB",
+      "kickoff": "2026-11-01T18:00Z",
+      "temp_f": 80,
+      "wind_mph": 13.0,
+      "gust_mph": 21.9,
+      "precip_chance_pct": 69,
+      "forecast_timestamp": "2026-10-29T19:01:24+00:00",
+      "sources": [
+        "https://api.weather.gov/points/27.9759,-82.5033",
+        "https://api.weather.gov/gridpoints/TBW/69,99/forecast/hourly",
+        "https://api.weather.gov/gridpoints/TBW/69,99"
+      ],
+      "wind_speed_raw": "13 mph",
+      "wind_direction": "E",
+      "forecast_hour_start": "2026-11-01T13:00:00-05:00",
+      "forecast_hour_end": "2026-11-01T14:00:00-05:00",
+      "conditions": "Chance Showers And Thunderstorms",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-10-29T20:29:57.926840+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/27.9759,-82.5033",
+      "https://api.weather.gov/gridpoints/TBW/69,99/forecast/hourly",
+      "https://api.weather.gov/gridpoints/TBW/69,99"
+    ]
+  },
+  "sustainability": {
+    "ATL": {
+      "turnoverRate": 0.023923444976076555,
+      "takeawayRate": 0.01956521739130435,
+      "thirdDownConversion": 0.3855421686746988,
+      "redZoneTdRate": 0.6666666666666666
+    },
+    "TB": {
+      "turnoverRate": 0.02546296296296296,
+      "takeawayRate": 0.024691358024691357,
+      "thirdDownConversion": 0.3939393939393939,
+      "redZoneTdRate": 0.5217391304347826
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 7,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-10-27T05:18:33.515Z",
+      "capturedAt": "2026-10-27T05:18:46.853344+00:00",
+      "spread": "Tampa Bay Buccaneers -2.5",
+      "homeMargin": 2.5,
+      "source": "ESPN DraftKings"
+    },
+    {
+      "observedAt": "2026-10-29T19:29:36.921Z",
+      "capturedAt": "2026-10-29T19:29:52.736002+00:00",
+      "spread": "Tampa Bay Buccaneers -2.5",
+      "homeMargin": 2.5,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
