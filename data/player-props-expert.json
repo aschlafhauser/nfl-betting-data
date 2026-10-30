@@ -1,15 +1,24 @@
 {
   "season": 2026,
   "week": 8,
-  "updatedAt": "2026-10-30T02:32:43.101Z",
-  "status": "CURRENT-WEEK-VERIFIED-RECOMMENDATIONS",
+  "updatedAt": "2026-10-30T03:32:29.411Z",
+  "status": "CURRENT-WEEK-NO-UPCOMING-VERIFIED-RECOMMENDATIONS",
   "slate": "Thursday Panthers at Packers",
   "governance": {
     "description": "Expert-driven only. No quantitative player-prop model impact. Recommendations require a current-week direction and an explicit quoted threshold; sportsbook availability and final inactives must be rechecked before execution.",
     "staleDataPolicy": "Completed-game recommendations are archived automatically and cannot remain actionable.",
     "injuryGate": "Thursday official inactives pending; recommendations remain conditional on player availability and quoted market/price."
   },
-  "recommendations": [
+  "recommendations": [],
+  "watch": [],
+  "watchlist": [],
+  "sourceAudit": {
+    "checkedAt": "2026-10-30T03:32:29.411Z",
+    "sourceWeek": 8,
+    "currentWeekSourcesChecked": 3,
+    "note": "Completed-game rows are archived automatically and cannot remain actionable. Current recommendations contain only not-yet-started selected-week games."
+  },
+  "closedRecommendations": [
     {
       "id": "w8-tnf-prop-0",
       "season": 2026,
@@ -33,8 +42,9 @@
       ],
       "independentSourceCount": 1,
       "thesis": "Road game and opponent passing-TD suppression.",
-      "status": "Explicit expert recommendation; live line/price not independently verified",
-      "risk": "Final inactives and current sportsbook threshold/price remain required. Single source family."
+      "status": "Closed — game final",
+      "risk": "Final inactives and current sportsbook threshold/price remain required. Single source family.",
+      "closedAt": "2026-10-30T03:32:29.411Z"
     },
     {
       "id": "w8-tnf-prop-1",
@@ -59,8 +69,9 @@
       ],
       "independentSourceCount": 1,
       "thesis": "Projected workload below cited threshold.",
-      "status": "Explicit expert recommendation; live line/price not independently verified",
-      "risk": "Final inactives and current sportsbook threshold/price remain required. Single source family."
+      "status": "Closed — game final",
+      "risk": "Final inactives and current sportsbook threshold/price remain required. Single source family.",
+      "closedAt": "2026-10-30T03:32:29.411Z"
     },
     {
       "id": "w8-tnf-prop-2",
@@ -85,8 +96,9 @@
       ],
       "independentSourceCount": 1,
       "thesis": "Target share and touchdown opportunity.",
-      "status": "Explicit expert recommendation; live line/price not independently verified",
-      "risk": "Final inactives and current sportsbook threshold/price remain required. Single source family."
+      "status": "Closed — game final",
+      "risk": "Final inactives and current sportsbook threshold/price remain required. Single source family.",
+      "closedAt": "2026-10-30T03:32:29.411Z"
     },
     {
       "id": "w8-tnf-prop-3",
@@ -111,8 +123,9 @@
       ],
       "independentSourceCount": 1,
       "thesis": "Yards after contact and zone-run matchup versus depleted linebackers.",
-      "status": "Explicit expert recommendation; live line/price not independently verified",
-      "risk": "Final inactives and current sportsbook threshold/price remain required. Single source family."
+      "status": "Closed — game final",
+      "risk": "Final inactives and current sportsbook threshold/price remain required. Single source family.",
+      "closedAt": "2026-10-30T03:32:29.411Z"
     },
     {
       "id": "w8-pff-prop-0",
@@ -137,8 +150,9 @@
       ],
       "independentSourceCount": 1,
       "thesis": "Workload against weak run defense.",
-      "status": "Explicit expert SGP leg; live standalone availability/price not verified",
-      "risk": "Quoted milestone and source price only. Final inactives and live sportsbook availability must be checked."
+      "status": "Closed — game final",
+      "risk": "Quoted milestone and source price only. Final inactives and live sportsbook availability must be checked.",
+      "closedAt": "2026-10-30T03:32:29.411Z"
     },
     {
       "id": "w8-pff-prop-1",
@@ -163,8 +177,9 @@
       ],
       "independentSourceCount": 1,
       "thesis": "Concentrated red-zone usage.",
-      "status": "Explicit expert SGP leg; live standalone availability/price not verified",
-      "risk": "Quoted milestone and source price only. Final inactives and live sportsbook availability must be checked."
+      "status": "Closed — game final",
+      "risk": "Quoted milestone and source price only. Final inactives and live sportsbook availability must be checked.",
+      "closedAt": "2026-10-30T03:32:29.411Z"
     },
     {
       "id": "w8-pff-prop-2",
@@ -189,8 +204,9 @@
       ],
       "independentSourceCount": 1,
       "thesis": "Clean-pocket efficiency and passing volume.",
-      "status": "Explicit expert SGP leg; live standalone availability/price not verified",
-      "risk": "Quoted milestone and source price only. Final inactives and live sportsbook availability must be checked."
+      "status": "Closed — game final",
+      "risk": "Quoted milestone and source price only. Final inactives and live sportsbook availability must be checked.",
+      "closedAt": "2026-10-30T03:32:29.411Z"
     },
     {
       "id": "w8-pff-prop-3",
@@ -215,12 +231,12 @@
       ],
       "independentSourceCount": 1,
       "thesis": "Explosive receiving profile against depleted corners.",
-      "status": "Explicit expert SGP leg; live standalone availability/price not verified",
-      "risk": "Quoted milestone and source price only. Final inactives and live sportsbook availability must be checked."
+      "status": "Closed — game final",
+      "risk": "Quoted milestone and source price only. Final inactives and live sportsbook availability must be checked.",
+      "closedAt": "2026-10-30T03:32:29.411Z"
     }
   ],
-  "watch": [],
-  "watchlist": [
+  "closedWatchlist": [
     {
       "id": "w8-ringer-coker-watch",
       "season": 2026,
@@ -240,17 +256,10 @@
       "sourceUrl": "https://www.theringer.com/2026/10/29/nfl/nfl-best-bets-week-8",
       "sourceDate": "2026-10-29",
       "thesis": "Green Bay slot coverage challenges Coker; source says consider, not a firm wager.",
-      "status": "Conditional watch; price unavailable",
-      "risk": "No exact juice quoted; not an executable recommendation."
+      "status": "Closed — game final",
+      "risk": "No exact juice quoted; not an executable recommendation.",
+      "closedAt": "2026-10-30T03:32:29.411Z"
     }
   ],
-  "sourceAudit": {
-    "checkedAt": "2026-10-30T02:32:43.101Z",
-    "sourceWeek": 8,
-    "currentWeekSourcesChecked": 3,
-    "note": "Completed-game rows are archived automatically and cannot remain actionable. Current recommendations contain only not-yet-started selected-week games."
-  },
-  "closedRecommendations": [],
-  "closedWatchlist": [],
   "evidenceCheckedAt": "2026-10-29T22:17:09.925120+00:00"
 }
