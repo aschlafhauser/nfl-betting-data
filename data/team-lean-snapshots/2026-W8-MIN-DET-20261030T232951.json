@@ -1,0 +1,408 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W8-MIN-DET",
+  "portalGameId": "401873030",
+  "week": 8,
+  "away": "Minnesota Vikings",
+  "home": "Detroit Lions",
+  "awayAbbr": "MIN",
+  "homeAbbr": "DET",
+  "kickoff": "2026-11-01T18:00Z",
+  "generatedAt": "2026-10-30T23:29:51.644431+00:00",
+  "status": "PRICE WATCH",
+  "footballLean": "MIN",
+  "assessmentSide": "MIN",
+  "structuralValueSide": "MIN",
+  "alignment": "ALIGNED",
+  "thesis": "MIN has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "MIN",
+      "gap": 0.07,
+      "unit": "EPA/play",
+      "awayOffense": -0.016423244019070374,
+      "homeDefenseAllowed": 0.22373673618972584,
+      "homeOffense": 0.2822643531641623,
+      "awayDefenseAllowed": -0.21574626232607994,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "MIN",
+      "gap": 0.032,
+      "unit": "EPA/play",
+      "awayOffense": -0.12126063411581972,
+      "homeDefenseAllowed": -0.01120149459186775,
+      "homeOffense": -0.08728117698741943,
+      "awayDefenseAllowed": -0.10993840744137487,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "MIN",
+      "gap": 0.847,
+      "unit": "percentage points",
+      "awayOffense": 0.08806818181818182,
+      "homeDefenseAllowed": 0.11190476190476191,
+      "homeOffense": 0.10632911392405063,
+      "awayDefenseAllowed": 0.07669616519174041,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "MIN",
+      "gap": 3.204,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.1457286432160804,
+      "homeDefenseAllowed": 0.17525773195876287,
+      "homeOffense": 0.1375,
+      "awayDefenseAllowed": 0.24757281553398058,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Early-down efficiency",
+      "side": "DET",
+      "gap": 0.018,
+      "unit": "EPA/play",
+      "awayOffense": -0.09631292485861476,
+      "homeDefenseAllowed": 0.06179025513546423,
+      "homeOffense": 0.14720496487633034,
+      "awayDefenseAllowed": -0.14494588128788705,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "MIN",
+      "gap": 0.07,
+      "unit": "EPA/play",
+      "awayOffense": -0.016423244019070374,
+      "homeDefenseAllowed": 0.22373673618972584,
+      "homeOffense": 0.2822643531641623,
+      "awayDefenseAllowed": -0.21574626232607994,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "DET",
+      "gap": 0.018,
+      "unit": "EPA/play",
+      "awayOffense": -0.09631292485861476,
+      "homeDefenseAllowed": 0.06179025513546423,
+      "homeOffense": 0.14720496487633034,
+      "awayDefenseAllowed": -0.14494588128788705,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "MIN",
+      "gap": 0.032,
+      "unit": "EPA/play",
+      "awayOffense": -0.12126063411581972,
+      "homeDefenseAllowed": -0.01120149459186775,
+      "homeOffense": -0.08728117698741943,
+      "awayDefenseAllowed": -0.10993840744137487,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "MIN",
+      "gap": 0.847,
+      "unit": "percentage points",
+      "awayOffense": 0.08806818181818182,
+      "homeDefenseAllowed": 0.11190476190476191,
+      "homeOffense": 0.10632911392405063,
+      "awayDefenseAllowed": 0.07669616519174041,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "MIN",
+      "gap": 3.204,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.1457286432160804,
+      "homeDefenseAllowed": 0.17525773195876287,
+      "homeOffense": 0.1375,
+      "awayDefenseAllowed": 0.24757281553398058,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": -0.0711,
+  "profiles": {
+    "MIN": {
+      "season": {
+        "games": 6,
+        "offPlays": 352,
+        "defPlays": 339,
+        "offEpa": -0.0963,
+        "defEpa": -0.1927,
+        "netEpa": 0.0965,
+        "adjustedNetEpa": 0.063,
+        "earlyOffEpa": -0.1008,
+        "earlyDefEpa": -0.1449,
+        "passOffEpa": -0.0164,
+        "passDefEpa": -0.2157
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 118,
+        "defPlays": 102,
+        "offEpa": -0.0933,
+        "defEpa": -0.2127,
+        "netEpa": 0.1193,
+        "adjustedNetEpa": 0.0202,
+        "earlyOffEpa": -0.026,
+        "earlyDefEpa": -0.3086,
+        "passOffEpa": 0.0804,
+        "passDefEpa": -0.3668
+      }
+    },
+    "DET": {
+      "season": {
+        "games": 6,
+        "offPlays": 395,
+        "defPlays": 420,
+        "offEpa": 0.1402,
+        "defEpa": 0.1339,
+        "netEpa": 0.0063,
+        "adjustedNetEpa": -0.0081,
+        "earlyOffEpa": 0.1472,
+        "earlyDefEpa": 0.065,
+        "passOffEpa": 0.2823,
+        "passDefEpa": 0.2237
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 130,
+        "defPlays": 135,
+        "offEpa": 0.1317,
+        "defEpa": 0.0292,
+        "netEpa": 0.1025,
+        "adjustedNetEpa": 0.083,
+        "earlyOffEpa": 0.0711,
+        "earlyDefEpa": -0.1171,
+        "passOffEpa": 0.3873,
+        "passDefEpa": 0.136
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 0.134,
+    "structuralHomeMargin": 0.134
+  },
+  "market": {
+    "spread_display": "Detroit Lions -3",
+    "spread": "DET -3",
+    "total": 46.5,
+    "home_margin": 3,
+    "home_team_sportsbook_spread": -3,
+    "moneyline": {
+      "away": 142,
+      "home": -170
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-10-30T23:29:41.169Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": 2.427,
+  "structuralFair": 0.134,
+  "structuralDifference": -2.866,
+  "price": {
+    "side": "MIN",
+    "minimumSpreadAtSnapshot": 4.0,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-10-30T23:29:41.426106+00:00",
+    "reviewComplete": false,
+    "flags": [
+      "MIN QUESTIONABLE: S Jay Ward (Knee).",
+      "DET OUT: S Kerby Joseph (Knee).",
+      "DET QUESTIONABLE: CB Roger McCreary (Foot)."
+    ],
+    "watch": [
+      {
+        "team": "MIN",
+        "player": "Christian Darrisaw",
+        "position": "T",
+        "status": "Did Not Participate In Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "MIN",
+        "player": "Harrison Smith",
+        "position": "S",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "MIN",
+        "player": "Jay Ward",
+        "position": "S",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "DET",
+        "player": "Kerby Joseph",
+        "position": "S",
+        "status": "Out Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "DET",
+        "player": "Roger McCreary",
+        "position": "CB",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "MIN",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Christian Darrisaw"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "MIN",
+        "unit": "Secondary",
+        "count": 2,
+        "players": [
+          "Harrison Smith",
+          "Jay Ward"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "DET",
+        "unit": "Secondary",
+        "count": 2,
+        "players": [
+          "Kerby Joseph",
+          "Roger McCreary"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W8-MIN-DET",
+    "canonical_game_id": "2026-W8-MIN-DET",
+    "matchup": "Minnesota Vikings at Detroit Lions",
+    "venue": "Ford Field",
+    "environment": "indoor",
+    "status": "Official indoor venue verified",
+    "summary": "Ford Field is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
+    "risk": "indoor / roof controlled",
+    "observed_at": "2026-10-30T23:29:42.537459+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100",
+    "forecast_timestamp": null,
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W8-MIN-DET",
+      "kickoff": "2026-11-01T18:00Z",
+      "temp_f": null,
+      "wind_mph": null,
+      "gust_mph": null,
+      "precip_chance_pct": null,
+      "forecast_timestamp": null,
+      "verification_status": "indoor venue; outdoor weather forecast not applicable",
+      "venue": "Ford Field",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100"
+      ],
+      "limitations": [
+        "Roof status is governed by venue/event information; outside air values are not on-field conditions."
+      ],
+      "retrieved_at": "2026-10-30T23:29:42.537459+00:00"
+    },
+    "sources": [
+      "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8&limit=100"
+    ]
+  },
+  "sustainability": {
+    "MIN": {
+      "turnoverRate": 0.011363636363636364,
+      "takeawayRate": 0.029498525073746312,
+      "thirdDownConversion": 0.3793103448275862,
+      "redZoneTdRate": 0.5
+    },
+    "DET": {
+      "turnoverRate": 0.007594936708860759,
+      "takeawayRate": 0.014285714285714285,
+      "thirdDownConversion": 0.391304347826087,
+      "redZoneTdRate": 0.7037037037037037
+    }
+  },
+  "experts": [
+    {
+      "family": "The Ringer NFL family",
+      "analyst": "Anthony Dabbundo",
+      "summary": "Flores\u2019s pressure creates tactical uncertainty; tight-end matchups offer alternative paths.",
+      "sourceUrl": "https://www.theringer.com/2026/10/29/nfl/nfl-best-bets-week-8",
+      "publishedAt": "2026-10-29",
+      "direction": "No side bet; tight ends worth investigating",
+      "priceLimit": null
+    }
+  ],
+  "expertFamilies": [
+    "The Ringer NFL family"
+  ],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 24
+  },
+  "scheme": {
+    "offenseThroughWeek": 7,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-10-27T05:18:33.515Z",
+      "capturedAt": "2026-10-27T05:18:46.853344+00:00",
+      "spread": "Detroit Lions -3",
+      "homeMargin": 3,
+      "source": "ESPN DraftKings"
+    },
+    {
+      "observedAt": "2026-10-30T22:29:50.589Z",
+      "capturedAt": "2026-10-30T22:30:07.183342+00:00",
+      "spread": "Detroit Lions -3",
+      "homeMargin": 3,
+      "source": "ESPN Draft Kings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
