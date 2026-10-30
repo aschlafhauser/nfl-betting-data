@@ -1,0 +1,438 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W8-IND-JAX",
+  "portalGameId": "401873028",
+  "week": 8,
+  "away": "Indianapolis Colts",
+  "home": "Jacksonville Jaguars",
+  "awayAbbr": "IND",
+  "homeAbbr": "JAX",
+  "kickoff": "2026-11-01T18:00Z",
+  "generatedAt": "2026-10-30T08:32:47.357747+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "JAX",
+  "assessmentSide": "JAX",
+  "structuralValueSide": "IND",
+  "alignment": "CONFLICT",
+  "thesis": "JAX has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "JAX",
+      "gap": 0.237,
+      "unit": "EPA/play",
+      "awayOffense": -0.15772748296160108,
+      "homeDefenseAllowed": 0.03526388965157745,
+      "homeOffense": 0.26845685599459373,
+      "awayDefenseAllowed": 0.08240925835630478,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "JAX",
+      "gap": 0.183,
+      "unit": "EPA/play",
+      "awayOffense": -0.11904748513042705,
+      "homeDefenseAllowed": -0.0049131346161714155,
+      "homeOffense": 0.14999875134606439,
+      "awayDefenseAllowed": 0.09154610278800679,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "JAX",
+      "gap": 0.07,
+      "unit": "EPA/play",
+      "awayOffense": 0.052825663949888545,
+      "homeDefenseAllowed": -0.13741753993987596,
+      "homeOffense": 0.010706411447642252,
+      "awayDefenseAllowed": 0.04412707810278316,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "JAX",
+      "gap": 1.761,
+      "unit": "percentage points",
+      "awayOffense": 0.08771929824561403,
+      "homeDefenseAllowed": 0.07909604519774012,
+      "homeOffense": 0.10704225352112676,
+      "awayDefenseAllowed": 0.095,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "JAX",
+      "gap": 1.845,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.17669172932330826,
+      "homeDefenseAllowed": 0.15021459227467812,
+      "homeOffense": 0.15920398009950248,
+      "awayDefenseAllowed": 0.1308016877637131,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "counterarguments": [],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "JAX",
+      "gap": 0.237,
+      "unit": "EPA/play",
+      "awayOffense": -0.15772748296160108,
+      "homeDefenseAllowed": 0.03526388965157745,
+      "homeOffense": 0.26845685599459373,
+      "awayDefenseAllowed": 0.08240925835630478,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "JAX",
+      "gap": 0.183,
+      "unit": "EPA/play",
+      "awayOffense": -0.11904748513042705,
+      "homeDefenseAllowed": -0.0049131346161714155,
+      "homeOffense": 0.14999875134606439,
+      "awayDefenseAllowed": 0.09154610278800679,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "JAX",
+      "gap": 0.07,
+      "unit": "EPA/play",
+      "awayOffense": 0.052825663949888545,
+      "homeDefenseAllowed": -0.13741753993987596,
+      "homeOffense": 0.010706411447642252,
+      "awayDefenseAllowed": 0.04412707810278316,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "JAX",
+      "gap": 1.761,
+      "unit": "percentage points",
+      "awayOffense": 0.08771929824561403,
+      "homeDefenseAllowed": 0.07909604519774012,
+      "homeOffense": 0.10704225352112676,
+      "awayDefenseAllowed": 0.095,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "JAX",
+      "gap": 1.845,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.17669172932330826,
+      "homeDefenseAllowed": 0.15021459227467812,
+      "homeOffense": 0.15920398009950248,
+      "awayDefenseAllowed": 0.1308016877637131,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": 0.3249,
+  "profiles": {
+    "IND": {
+      "season": {
+        "games": 7,
+        "offPlays": 456,
+        "defPlays": 400,
+        "offEpa": -0.0681,
+        "defEpa": 0.0475,
+        "netEpa": -0.1156,
+        "adjustedNetEpa": -0.1179,
+        "earlyOffEpa": -0.119,
+        "earlyDefEpa": 0.0915,
+        "passOffEpa": -0.1577,
+        "passDefEpa": 0.0824
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 205,
+        "defPlays": 150,
+        "offEpa": -0.0704,
+        "defEpa": 0.012,
+        "netEpa": -0.0824,
+        "adjustedNetEpa": -0.1314,
+        "earlyOffEpa": -0.1084,
+        "earlyDefEpa": 0.0256,
+        "passOffEpa": -0.1017,
+        "passDefEpa": 0.041
+      }
+    },
+    "JAX": {
+      "season": {
+        "games": 6,
+        "offPlays": 355,
+        "defPlays": 354,
+        "offEpa": 0.1553,
+        "defEpa": -0.0358,
+        "netEpa": 0.1911,
+        "adjustedNetEpa": 0.207,
+        "earlyOffEpa": 0.154,
+        "earlyDefEpa": -0.0049,
+        "passOffEpa": 0.2685,
+        "passDefEpa": 0.0353
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 135,
+        "defPlays": 118,
+        "offEpa": 0.118,
+        "defEpa": 0.0108,
+        "netEpa": 0.1072,
+        "adjustedNetEpa": 0.0149,
+        "earlyOffEpa": 0.16,
+        "earlyDefEpa": -0.0587,
+        "passOffEpa": 0.2611,
+        "passDefEpa": 0.1482
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 7.002,
+    "structuralHomeMargin": 7.002
+  },
+  "market": {
+    "spread_display": "Jacksonville Jaguars -10",
+    "spread": "JAX -7.5",
+    "total": 46.5,
+    "home_margin": 10,
+    "home_team_sportsbook_spread": -10,
+    "moneyline": {
+      "away": 380,
+      "home": -500
+    },
+    "source": "ESPN Draft Kings",
+    "timestamp": "2026-10-30T08:32:38.337Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": 9.4,
+  "structuralFair": 7.002,
+  "structuralDifference": -2.998,
+  "price": {
+    "side": "JAX",
+    "minimumSpreadAtSnapshot": -7.5,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-10-30T08:32:38.643360+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [
+      {
+        "team": "IND",
+        "player": "Bryce Boettcher",
+        "position": "LB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "IND",
+        "player": "Andrew Ogletree",
+        "position": "TE",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "IND",
+        "player": "Justin Walley",
+        "position": "CB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "IND",
+        "player": "Tyler Warren",
+        "position": "TE",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "JAX",
+        "player": "LeQuint Allen Jr.",
+        "position": "RB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "JAX",
+        "player": "Antonio Johnson",
+        "position": "S",
+        "status": "Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "JAX",
+        "player": "Ross Matiscik",
+        "position": "LS",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "JAX",
+        "player": "Jakobi Meyers",
+        "position": "WR",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "JAX",
+        "player": "Ruke Orhorhoro",
+        "position": "DT",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "JAX",
+        "player": "Jahlani Tavai",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "IND",
+        "unit": "Secondary",
+        "count": 1,
+        "players": [
+          "Justin Walley"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "JAX",
+        "unit": "Secondary",
+        "count": 1,
+        "players": [
+          "Antonio Johnson"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W8-IND-JAX",
+    "canonical_game_id": "2026-W8-IND-JAX",
+    "matchup": "Indianapolis Colts at Jacksonville Jaguars",
+    "venue": "EverBank Stadium",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Chance Rain Showers at kickoff: 75\u00b0F; wind E 16.0 mph, gust 25.3 mph; precipitation chance 54%.",
+    "risk": "weather review required",
+    "observed_at": "2026-10-30T08:32:39.803820+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/30.3239,-81.6373",
+    "forecast_timestamp": "2026-10-30T06:21:03+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W8-IND-JAX",
+      "kickoff": "2026-11-01T18:00Z",
+      "temp_f": 75,
+      "wind_mph": 16.0,
+      "gust_mph": 25.3,
+      "precip_chance_pct": 54,
+      "forecast_timestamp": "2026-10-30T06:21:03+00:00",
+      "sources": [
+        "https://api.weather.gov/points/30.3239,-81.6373",
+        "https://api.weather.gov/gridpoints/JAX/66,64/forecast/hourly",
+        "https://api.weather.gov/gridpoints/JAX/66,64"
+      ],
+      "wind_speed_raw": "16 mph",
+      "wind_direction": "E",
+      "forecast_hour_start": "2026-11-01T13:00:00-05:00",
+      "forecast_hour_end": "2026-11-01T14:00:00-05:00",
+      "conditions": "Chance Rain Showers",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-10-30T08:32:39.803820+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/30.3239,-81.6373",
+      "https://api.weather.gov/gridpoints/JAX/66,64/forecast/hourly",
+      "https://api.weather.gov/gridpoints/JAX/66,64"
+    ]
+  },
+  "sustainability": {
+    "IND": {
+      "turnoverRate": 0.02631578947368421,
+      "takeawayRate": 0.0075,
+      "thirdDownConversion": 0.4020618556701031,
+      "redZoneTdRate": 0.6
+    },
+    "JAX": {
+      "turnoverRate": 0.011267605633802818,
+      "takeawayRate": 0.025423728813559324,
+      "thirdDownConversion": 0.4861111111111111,
+      "redZoneTdRate": 0.6666666666666666
+    }
+  },
+  "experts": [
+    {
+      "family": "The Ringer NFL family",
+      "analyst": "Anthony Dabbundo",
+      "summary": "Trade uncertainty and potential Warren return govern Indianapolis\u2019s buying threshold.",
+      "sourceUrl": "https://www.theringer.com/2026/10/29/nfl/nfl-best-bets-week-8",
+      "publishedAt": "2026-10-29",
+      "direction": "Consider Colts +10; no further trades",
+      "priceLimit": null
+    }
+  ],
+  "expertFamilies": [
+    "The Ringer NFL family"
+  ],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 24
+  },
+  "scheme": {
+    "offenseThroughWeek": 7,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-10-27T05:18:33.515Z",
+      "capturedAt": "2026-10-27T05:18:46.853344+00:00",
+      "spread": "Jacksonville Jaguars -7.5",
+      "homeMargin": 7.5,
+      "source": "ESPN DraftKings"
+    },
+    {
+      "observedAt": "2026-10-30T07:30:23.182Z",
+      "capturedAt": "2026-10-30T07:30:35.839653+00:00",
+      "spread": "Jacksonville Jaguars -10",
+      "homeMargin": 10,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
