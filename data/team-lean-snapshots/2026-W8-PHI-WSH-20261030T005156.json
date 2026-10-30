@@ -1,0 +1,470 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W8-PHI-WSH",
+  "portalGameId": "401873035",
+  "week": 8,
+  "away": "Philadelphia Eagles",
+  "home": "Washington Commanders",
+  "awayAbbr": "PHI",
+  "homeAbbr": "WSH",
+  "kickoff": "2026-11-02T01:20Z",
+  "generatedAt": "2026-10-30T00:51:56.646055+00:00",
+  "status": "PASS",
+  "footballLean": null,
+  "assessmentSide": null,
+  "structuralValueSide": "PHI",
+  "alignment": "UNRESOLVED",
+  "thesis": "No clear separation in the current opponent-adjusted performance sample.",
+  "mechanisms": [],
+  "counterarguments": [
+    {
+      "name": "Passing efficiency",
+      "side": "WSH",
+      "gap": 0.092,
+      "unit": "EPA/play",
+      "awayOffense": -0.10291021357503399,
+      "homeDefenseAllowed": 0.13741196911211606,
+      "homeOffense": 0.059927449023686824,
+      "awayDefenseAllowed": 0.1591018801032518,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "WSH",
+      "gap": 0.108,
+      "unit": "EPA/play",
+      "awayOffense": -0.10892565179803546,
+      "homeDefenseAllowed": -0.02375716630244979,
+      "homeOffense": 0.043503309380047345,
+      "awayDefenseAllowed": 0.03974099404771628,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "WSH",
+      "gap": 0.042,
+      "unit": "EPA/play",
+      "awayOffense": -0.10759608550583737,
+      "homeDefenseAllowed": 0.05631138971269951,
+      "homeOffense": -0.03290002261753558,
+      "awayDefenseAllowed": 0.0658965607864866,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "WSH",
+      "gap": 2.129,
+      "unit": "percentage points",
+      "awayOffense": 0.05365853658536585,
+      "homeDefenseAllowed": 0.0851063829787234,
+      "homeOffense": 0.08753315649867374,
+      "awayDefenseAllowed": 0.09381663113006397,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "WSH",
+      "gap": 0.961,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.15413533834586465,
+      "homeDefenseAllowed": 0.13414634146341464,
+      "homeOffense": 0.17916666666666667,
+      "awayDefenseAllowed": 0.0898876404494382,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "WSH",
+      "gap": 0.092,
+      "unit": "EPA/play",
+      "awayOffense": -0.10291021357503399,
+      "homeDefenseAllowed": 0.13741196911211606,
+      "homeOffense": 0.059927449023686824,
+      "awayDefenseAllowed": 0.1591018801032518,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "WSH",
+      "gap": 0.108,
+      "unit": "EPA/play",
+      "awayOffense": -0.10892565179803546,
+      "homeDefenseAllowed": -0.02375716630244979,
+      "homeOffense": 0.043503309380047345,
+      "awayDefenseAllowed": 0.03974099404771628,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "WSH",
+      "gap": 0.042,
+      "unit": "EPA/play",
+      "awayOffense": -0.10759608550583737,
+      "homeDefenseAllowed": 0.05631138971269951,
+      "homeOffense": -0.03290002261753558,
+      "awayDefenseAllowed": 0.0658965607864866,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "WSH",
+      "gap": 2.129,
+      "unit": "percentage points",
+      "awayOffense": 0.05365853658536585,
+      "homeDefenseAllowed": 0.0851063829787234,
+      "homeOffense": 0.08753315649867374,
+      "awayDefenseAllowed": 0.09381663113006397,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "WSH",
+      "gap": 0.961,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.15413533834586465,
+      "homeDefenseAllowed": 0.13414634146341464,
+      "homeOffense": 0.17916666666666667,
+      "awayDefenseAllowed": 0.0898876404494382,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": null,
+  "profiles": {
+    "PHI": {
+      "season": {
+        "games": 7,
+        "offPlays": 410,
+        "defPlays": 469,
+        "offEpa": -0.1164,
+        "defEpa": 0.112,
+        "netEpa": -0.2284,
+        "adjustedNetEpa": -0.2421,
+        "earlyOffEpa": -0.1089,
+        "earlyDefEpa": 0.0425,
+        "passOffEpa": -0.1029,
+        "passDefEpa": 0.1591
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 182,
+        "defPlays": 207,
+        "offEpa": -0.1276,
+        "defEpa": 0.1639,
+        "netEpa": -0.2915,
+        "adjustedNetEpa": -0.274,
+        "earlyOffEpa": -0.2119,
+        "earlyDefEpa": 0.1032,
+        "passOffEpa": -0.1104,
+        "passDefEpa": 0.2423
+      }
+    },
+    "WSH": {}
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 2.421,
+    "structuralHomeMargin": 2.421
+  },
+  "market": {
+    "spread_display": "Washington Commanders -6",
+    "spread": "WSH -4.5",
+    "total": 40.5,
+    "home_margin": 6,
+    "home_team_sportsbook_spread": -6,
+    "moneyline": {
+      "away": 205,
+      "home": -250
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-10-30T00:51:41.220Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": 5.284,
+  "structuralFair": 2.421,
+  "structuralDifference": -3.579,
+  "price": {
+    "side": null,
+    "minimumSpreadAtSnapshot": null,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-10-30T00:51:41.562401+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [
+      {
+        "team": "PHI",
+        "player": "Saquon Barkley",
+        "position": "RB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Jihaad Campbell",
+        "position": "LB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Michael Carter II",
+        "position": "CB",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "PHI",
+        "player": "Britain Covey",
+        "position": "WR",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Marcus Epps",
+        "position": "S",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "PHI",
+        "player": "Jonathan Greenard",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Jalyx Hunt",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Jonathan Jones",
+        "position": "CB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "PHI",
+        "player": "Moro Ojomo",
+        "position": "DT",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "DeVonta Smith",
+        "position": "WR",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Nolan Smith",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Dontayvion Wicks",
+        "position": "WR",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "WAS",
+        "player": "Nick Allegretti",
+        "position": "G",
+        "status": "Did Not Participate In Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "WAS",
+        "player": "John Bates",
+        "position": "TE",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "WAS",
+        "player": "Treylon Burks",
+        "position": "WR",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "WAS",
+        "player": "Javon Kinlaw",
+        "position": "DT",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "WAS",
+        "player": "Jer'Zhan Newton",
+        "position": "DT",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "WAS",
+        "player": "Charles Omenihu",
+        "position": "DE",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "PHI",
+        "unit": "Secondary",
+        "count": 3,
+        "players": [
+          "Michael Carter II",
+          "Marcus Epps",
+          "Jonathan Jones"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W8-PHI-WSH",
+    "canonical_game_id": "2026-W8-PHI-WSH",
+    "matchup": "Philadelphia Eagles at Washington Commanders",
+    "venue": "Northwest Stadium",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Partly Cloudy at kickoff: 55\u00b0F; wind SE 2.0 mph, gust 5.8 mph; precipitation chance 0%.",
+    "risk": "no major hourly weather flag",
+    "observed_at": "2026-10-30T00:51:43.393286+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/38.9076,-76.8645",
+    "forecast_timestamp": "2026-10-29T23:52:45+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W8-PHI-WSH",
+      "kickoff": "2026-11-02T01:20Z",
+      "temp_f": 55,
+      "wind_mph": 2.0,
+      "gust_mph": 5.8,
+      "precip_chance_pct": 0,
+      "forecast_timestamp": "2026-10-29T23:52:45+00:00",
+      "sources": [
+        "https://api.weather.gov/points/38.9076,-76.8645",
+        "https://api.weather.gov/gridpoints/LWX/102,73/forecast/hourly",
+        "https://api.weather.gov/gridpoints/LWX/102,73"
+      ],
+      "wind_speed_raw": "2 mph",
+      "wind_direction": "SE",
+      "forecast_hour_start": "2026-11-01T20:00:00-05:00",
+      "forecast_hour_end": "2026-11-01T21:00:00-05:00",
+      "conditions": "Partly Cloudy",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-10-30T00:51:43.393286+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/38.9076,-76.8645",
+      "https://api.weather.gov/gridpoints/LWX/102,73/forecast/hourly",
+      "https://api.weather.gov/gridpoints/LWX/102,73"
+    ]
+  },
+  "sustainability": {
+    "PHI": {
+      "turnoverRate": 0.014634146341463415,
+      "takeawayRate": 0.006396588486140725,
+      "thirdDownConversion": 0.37894736842105264,
+      "redZoneTdRate": 0.7368421052631579
+    },
+    "WSH": {
+      "turnoverRate": 0.005305039787798408,
+      "takeawayRate": 0.02127659574468085,
+      "thirdDownConversion": 0.30864197530864196,
+      "redZoneTdRate": 0.5
+    }
+  },
+  "experts": [
+    {
+      "family": "The Ringer NFL family",
+      "analyst": "Anthony Dabbundo",
+      "summary": "Philadelphia\u2019s offensive injuries and defensive decline meet Washington\u2019s rest advantage.",
+      "sourceUrl": "https://www.theringer.com/2026/10/29/nfl/nfl-best-bets-week-8",
+      "publishedAt": "2026-10-29",
+      "direction": "Commanders -5.5 (-110)",
+      "priceLimit": null
+    }
+  ],
+  "expertFamilies": [
+    "The Ringer NFL family"
+  ],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 24
+  },
+  "scheme": {
+    "offenseThroughWeek": 7,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No clear opponent-adjusted football separation or current sample unavailable.",
+    "Defense versus motion is Week 1; excluded from lean direction.",
+    "Opponent-adjusted and recent-form sample unavailable; no substitute inferred."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-10-27T05:18:33.515Z",
+      "capturedAt": "2026-10-27T05:18:46.853344+00:00",
+      "spread": "Washington Commanders -4.5",
+      "homeMargin": 4.5,
+      "source": "ESPN DraftKings"
+    },
+    {
+      "observedAt": "2026-10-29T23:30:19.675Z",
+      "capturedAt": "2026-10-29T23:30:28.929598+00:00",
+      "spread": "Washington Commanders -6",
+      "homeMargin": 6,
+      "source": "ESPN Draft Kings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
