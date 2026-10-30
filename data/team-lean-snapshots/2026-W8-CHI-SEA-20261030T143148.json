@@ -1,0 +1,513 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W8-CHI-SEA",
+  "portalGameId": "401873036",
+  "week": 8,
+  "away": "Chicago Bears",
+  "home": "Seattle Seahawks",
+  "awayAbbr": "CHI",
+  "homeAbbr": "SEA",
+  "kickoff": "2026-11-03T01:15Z",
+  "generatedAt": "2026-10-30T14:31:48.659422+00:00",
+  "status": "PRICE WATCH",
+  "footballLean": "SEA",
+  "assessmentSide": "SEA",
+  "structuralValueSide": "SEA",
+  "alignment": "ALIGNED",
+  "thesis": "SEA has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "SEA",
+      "gap": 0.055,
+      "unit": "EPA/play",
+      "awayOffense": 0.13267136925832437,
+      "homeDefenseAllowed": -0.10236104141777026,
+      "homeOffense": 0.09903754053109086,
+      "awayDefenseAllowed": 0.04126328465637421,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "SEA",
+      "gap": 0.107,
+      "unit": "EPA/play",
+      "awayOffense": 0.008948595692804892,
+      "homeDefenseAllowed": -0.13011465102187125,
+      "homeOffense": -0.06349749784221755,
+      "awayDefenseAllowed": 0.1555725502149508,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "SEA",
+      "gap": 2.07,
+      "unit": "percentage points",
+      "awayOffense": 0.10462776659959759,
+      "homeDefenseAllowed": 0.05172413793103448,
+      "homeOffense": 0.09234234234234234,
+      "awayDefenseAllowed": 0.10541310541310542,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Rushing efficiency",
+      "side": "CHI",
+      "gap": 0.026,
+      "unit": "EPA/play",
+      "awayOffense": -0.016126161514860207,
+      "homeDefenseAllowed": -0.12369435063788091,
+      "homeOffense": -0.15477841941905432,
+      "awayDefenseAllowed": -0.03741548512377515,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "CHI",
+      "gap": 0.188,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.1444043321299639,
+      "homeDefenseAllowed": 0.212,
+      "homeOffense": 0.1927710843373494,
+      "awayDefenseAllowed": 0.16740088105726872,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "SEA",
+      "gap": 0.055,
+      "unit": "EPA/play",
+      "awayOffense": 0.13267136925832437,
+      "homeDefenseAllowed": -0.10236104141777026,
+      "homeOffense": 0.09903754053109086,
+      "awayDefenseAllowed": 0.04126328465637421,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "SEA",
+      "gap": 0.107,
+      "unit": "EPA/play",
+      "awayOffense": 0.008948595692804892,
+      "homeDefenseAllowed": -0.13011465102187125,
+      "homeOffense": -0.06349749784221755,
+      "awayDefenseAllowed": 0.1555725502149508,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "CHI",
+      "gap": 0.026,
+      "unit": "EPA/play",
+      "awayOffense": -0.016126161514860207,
+      "homeDefenseAllowed": -0.12369435063788091,
+      "homeOffense": -0.15477841941905432,
+      "awayDefenseAllowed": -0.03741548512377515,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "SEA",
+      "gap": 2.07,
+      "unit": "percentage points",
+      "awayOffense": 0.10462776659959759,
+      "homeDefenseAllowed": 0.05172413793103448,
+      "homeOffense": 0.09234234234234234,
+      "awayDefenseAllowed": 0.10541310541310542,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "CHI",
+      "gap": 0.188,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.1444043321299639,
+      "homeDefenseAllowed": 0.212,
+      "homeOffense": 0.1927710843373494,
+      "awayDefenseAllowed": 0.16740088105726872,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": 0.0468,
+  "profiles": {
+    "CHI": {
+      "season": {
+        "games": 7,
+        "offPlays": 497,
+        "defPlays": 351,
+        "offEpa": 0.0473,
+        "defEpa": -0.0017,
+        "netEpa": 0.049,
+        "adjustedNetEpa": 0.0562,
+        "earlyOffEpa": 0.0089,
+        "earlyDefEpa": 0.1456,
+        "passOffEpa": 0.1327,
+        "passDefEpa": 0.0413
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 205,
+        "defPlays": 159,
+        "offEpa": -0.0378,
+        "defEpa": 0.0678,
+        "netEpa": -0.1055,
+        "adjustedNetEpa": -0.0983,
+        "earlyOffEpa": -0.0802,
+        "earlyDefEpa": 0.1867,
+        "passOffEpa": 0.0248,
+        "passDefEpa": 0.1836
+      }
+    },
+    "SEA": {
+      "season": {
+        "games": 7,
+        "offPlays": 444,
+        "defPlays": 406,
+        "offEpa": -0.0398,
+        "defEpa": -0.1311,
+        "netEpa": 0.0913,
+        "adjustedNetEpa": 0.103,
+        "earlyOffEpa": -0.0667,
+        "earlyDefEpa": -0.134,
+        "passOffEpa": 0.099,
+        "passDefEpa": -0.1024
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 210,
+        "defPlays": 161,
+        "offEpa": -0.1038,
+        "defEpa": -0.1229,
+        "netEpa": 0.0191,
+        "adjustedNetEpa": 0.1426,
+        "earlyOffEpa": -0.1896,
+        "earlyDefEpa": -0.0818,
+        "passOffEpa": 0.0009,
+        "passDefEpa": -0.1385
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 7.949,
+    "structuralHomeMargin": 7.949
+  },
+  "market": {
+    "spread_display": "Seattle Seahawks -3",
+    "spread": "SEA -3",
+    "total": 46.5,
+    "home_margin": 3,
+    "home_team_sportsbook_spread": -3,
+    "moneyline": {
+      "away": 142,
+      "home": -170
+    },
+    "source": "ESPN Draft Kings",
+    "timestamp": "2026-10-30T14:31:34.431Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": 3.99,
+  "structuralFair": 7.949,
+  "structuralDifference": 4.949,
+  "price": {
+    "side": "SEA",
+    "minimumSpreadAtSnapshot": -2.0,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-10-30T14:31:34.769743+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [
+      {
+        "team": "CHI",
+        "player": "D'Marco Jackson",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "CHI",
+        "player": "Kyle Monangai",
+        "position": "RB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "CHI",
+        "player": "Malik Muhammad",
+        "position": "CB",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "SEA",
+        "player": "Anthony Bradford",
+        "position": "G",
+        "status": "Limited Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "SEA",
+        "player": "Charles Cross",
+        "position": "T",
+        "status": "Did Not Participate In Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "SEA",
+        "player": "Velus Jones Jr.",
+        "position": "RB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "SEA",
+        "player": "Tyrice Knight",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "SEA",
+        "player": "DeMarcus Lawrence",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "SEA",
+        "player": "Drew Lock",
+        "position": "QB",
+        "status": "Limited Participation in Practice",
+        "unit": "QB",
+        "scenario": "If unavailable, reassess starter/replacement performance and the game script."
+      },
+      {
+        "team": "SEA",
+        "player": "Uchenna Nwosu",
+        "position": "LB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "SEA",
+        "player": "Patrick O'Connell",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "SEA",
+        "player": "Connor O'Toole",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "SEA",
+        "player": "Jadarian Price",
+        "position": "RB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "SEA",
+        "player": "Rashid Shaheed",
+        "position": "WR",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "SEA",
+        "player": "Jaxon Smith-Njigba",
+        "position": "WR",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "SEA",
+        "player": "Chazz Surratt",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "SEA",
+        "player": "Drake Thomas",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "SEA",
+        "player": "Leonard Williams",
+        "position": "DT",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "CHI",
+        "unit": "Secondary",
+        "count": 1,
+        "players": [
+          "Malik Muhammad"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "SEA",
+        "unit": "QB",
+        "count": 1,
+        "players": [
+          "Drew Lock"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "SEA",
+        "unit": "OL",
+        "count": 2,
+        "players": [
+          "Anthony Bradford",
+          "Charles Cross"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W8-CHI-SEA",
+    "canonical_game_id": "2026-W8-CHI-SEA",
+    "matchup": "Chicago Bears at Seattle Seahawks",
+    "venue": "Lumen Field",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Mostly Cloudy at kickoff: 52\u00b0F; wind N 2.0 mph, gust 3.5 mph; precipitation chance 4%.",
+    "risk": "no major hourly weather flag",
+    "observed_at": "2026-10-30T14:31:40.593179+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/47.5952,-122.3316",
+    "forecast_timestamp": "2026-10-30T06:26:48+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W8-CHI-SEA",
+      "kickoff": "2026-11-03T01:15Z",
+      "temp_f": 52,
+      "wind_mph": 2.0,
+      "gust_mph": 3.5,
+      "precip_chance_pct": 4,
+      "forecast_timestamp": "2026-10-30T06:26:48+00:00",
+      "sources": [
+        "https://api.weather.gov/points/47.5952,-122.3316",
+        "https://api.weather.gov/gridpoints/SEW/125,67/forecast/hourly",
+        "https://api.weather.gov/gridpoints/SEW/125,67"
+      ],
+      "wind_speed_raw": "2 mph",
+      "wind_direction": "N",
+      "forecast_hour_start": "2026-11-02T17:00:00-08:00",
+      "forecast_hour_end": "2026-11-02T18:00:00-08:00",
+      "conditions": "Mostly Cloudy",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-10-30T14:31:40.593179+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/47.5952,-122.3316",
+      "https://api.weather.gov/gridpoints/SEW/125,67/forecast/hourly",
+      "https://api.weather.gov/gridpoints/SEW/125,67"
+    ]
+  },
+  "sustainability": {
+    "CHI": {
+      "turnoverRate": 0.022132796780684104,
+      "takeawayRate": 0.019943019943019943,
+      "thirdDownConversion": 0.44,
+      "redZoneTdRate": 0.5333333333333333
+    },
+    "SEA": {
+      "turnoverRate": 0.02927927927927928,
+      "takeawayRate": 0.024630541871921183,
+      "thirdDownConversion": 0.3888888888888889,
+      "redZoneTdRate": 0.5
+    }
+  },
+  "experts": [
+    {
+      "family": "The Ringer NFL family",
+      "analyst": "Anthony Dabbundo",
+      "summary": "Seattle\u2019s run defense counters Chicago; Darnold\u2019s pressure turnovers remain pivotal.",
+      "sourceUrl": "https://www.theringer.com/2026/10/29/nfl/nfl-best-bets-week-8",
+      "publishedAt": "2026-10-29",
+      "direction": "No explicit wager",
+      "priceLimit": null
+    }
+  ],
+  "expertFamilies": [
+    "The Ringer NFL family"
+  ],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 24
+  },
+  "scheme": {
+    "offenseThroughWeek": 7,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-10-27T05:18:33.515Z",
+      "capturedAt": "2026-10-27T05:18:46.853344+00:00",
+      "spread": "Seattle Seahawks -3",
+      "homeMargin": 3,
+      "source": "ESPN DraftKings"
+    },
+    {
+      "observedAt": "2026-10-30T13:30:05.369Z",
+      "capturedAt": "2026-10-30T13:30:20.596650+00:00",
+      "spread": "Seattle Seahawks -3",
+      "homeMargin": 3,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
