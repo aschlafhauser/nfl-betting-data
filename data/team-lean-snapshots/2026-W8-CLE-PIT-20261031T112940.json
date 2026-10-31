@@ -1,0 +1,433 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W8-CLE-PIT",
+  "portalGameId": "401873027",
+  "week": 8,
+  "away": "Cleveland Browns",
+  "home": "Pittsburgh Steelers",
+  "awayAbbr": "CLE",
+  "homeAbbr": "PIT",
+  "kickoff": "2026-11-01T18:00Z",
+  "generatedAt": "2026-10-31T11:29:40.500991+00:00",
+  "status": "PASS",
+  "footballLean": null,
+  "assessmentSide": null,
+  "structuralValueSide": "PIT",
+  "alignment": "UNRESOLVED",
+  "thesis": "No clear separation in the current opponent-adjusted performance sample.",
+  "mechanisms": [],
+  "counterarguments": [
+    {
+      "name": "Passing efficiency",
+      "side": "CLE",
+      "gap": 0.068,
+      "unit": "EPA/play",
+      "awayOffense": 0.020572354916841746,
+      "homeDefenseAllowed": 0.006050558676568338,
+      "homeOffense": -0.10679298763854693,
+      "awayDefenseAllowed": -0.003095587422471694,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "PIT",
+      "gap": 0.031,
+      "unit": "EPA/play",
+      "awayOffense": -0.009150677880652693,
+      "homeDefenseAllowed": -0.07404674587960472,
+      "homeOffense": -0.015120417876519944,
+      "awayDefenseAllowed": -0.006881147703140535,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "PIT",
+      "gap": 0.085,
+      "unit": "EPA/play",
+      "awayOffense": -0.08626049749237383,
+      "homeDefenseAllowed": -0.06077799754973558,
+      "homeOffense": 0.07474786035109973,
+      "awayDefenseAllowed": -0.05151658225701788,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "PIT",
+      "gap": 0.772,
+      "unit": "percentage points",
+      "awayOffense": 0.08674698795180723,
+      "homeDefenseAllowed": 0.09456264775413711,
+      "homeOffense": 0.0871559633027523,
+      "awayDefenseAllowed": 0.1095890410958904,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "PIT",
+      "gap": 0.53,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.20384615384615384,
+      "homeDefenseAllowed": 0.1455223880597015,
+      "homeOffense": 0.16206896551724137,
+      "awayDefenseAllowed": 0.17669172932330826,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "CLE",
+      "gap": 0.068,
+      "unit": "EPA/play",
+      "awayOffense": 0.020572354916841746,
+      "homeDefenseAllowed": 0.006050558676568338,
+      "homeOffense": -0.10679298763854693,
+      "awayDefenseAllowed": -0.003095587422471694,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "PIT",
+      "gap": 0.031,
+      "unit": "EPA/play",
+      "awayOffense": -0.009150677880652693,
+      "homeDefenseAllowed": -0.07404674587960472,
+      "homeOffense": -0.015120417876519944,
+      "awayDefenseAllowed": -0.006881147703140535,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "PIT",
+      "gap": 0.085,
+      "unit": "EPA/play",
+      "awayOffense": -0.08626049749237383,
+      "homeDefenseAllowed": -0.06077799754973558,
+      "homeOffense": 0.07474786035109973,
+      "awayDefenseAllowed": -0.05151658225701788,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "PIT",
+      "gap": 0.772,
+      "unit": "percentage points",
+      "awayOffense": 0.08674698795180723,
+      "homeDefenseAllowed": 0.09456264775413711,
+      "homeOffense": 0.0871559633027523,
+      "awayDefenseAllowed": 0.1095890410958904,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "PIT",
+      "gap": 0.53,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.20384615384615384,
+      "homeDefenseAllowed": 0.1455223880597015,
+      "homeOffense": 0.16206896551724137,
+      "awayDefenseAllowed": 0.17669172932330826,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": -0.0142,
+  "profiles": {
+    "CLE": {
+      "season": {
+        "games": 7,
+        "offPlays": 415,
+        "defPlays": 438,
+        "offEpa": -0.0496,
+        "defEpa": -0.0369,
+        "netEpa": -0.0127,
+        "adjustedNetEpa": -0.0007,
+        "earlyOffEpa": -0.0125,
+        "earlyDefEpa": -0.0044,
+        "passOffEpa": 0.0206,
+        "passDefEpa": -0.0031
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 191,
+        "defPlays": 183,
+        "offEpa": -0.0871,
+        "defEpa": -0.111,
+        "netEpa": 0.0239,
+        "adjustedNetEpa": -0.0072,
+        "earlyOffEpa": -0.01,
+        "earlyDefEpa": -0.1809,
+        "passOffEpa": -0.1279,
+        "passDefEpa": -0.0664
+      }
+    },
+    "PIT": {
+      "season": {
+        "games": 7,
+        "offPlays": 436,
+        "defPlays": 423,
+        "offEpa": -0.0479,
+        "defEpa": -0.0441,
+        "netEpa": -0.0038,
+        "adjustedNetEpa": -0.0149,
+        "earlyOffEpa": -0.0155,
+        "earlyDefEpa": -0.074,
+        "passOffEpa": -0.1068,
+        "passDefEpa": 0.0061
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 186,
+        "defPlays": 199,
+        "offEpa": 0.0296,
+        "defEpa": -0.0929,
+        "netEpa": 0.1224,
+        "adjustedNetEpa": 0.0833,
+        "earlyOffEpa": 0.0056,
+        "earlyDefEpa": -0.1461,
+        "passOffEpa": -0.0482,
+        "passDefEpa": -0.0394
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 5.053,
+    "structuralHomeMargin": 5.053
+  },
+  "market": {
+    "spread_display": "Pittsburgh Steelers -3.5",
+    "spread": "PIT -3.5",
+    "total": 39.5,
+    "home_margin": 3.5,
+    "home_team_sportsbook_spread": -3.5,
+    "moneyline": {
+      "away": 160,
+      "home": -192
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-10-31T11:29:30.595Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": 3.811,
+  "structuralFair": 5.053,
+  "structuralDifference": 1.553,
+  "price": {
+    "side": null,
+    "minimumSpreadAtSnapshot": null,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-10-31T11:29:30.969378+00:00",
+    "reviewComplete": false,
+    "flags": [
+      "CLE QUESTIONABLE: CB Myles Harden (Hamstring).",
+      "CLE QUESTIONABLE: T Tytus Howard (Concussion).",
+      "CLE QUESTIONABLE: S Daniel Thomas (Ankle).",
+      "PIT OUT: CB Brandin Echols (Hamstring).",
+      "PIT QUESTIONABLE: WR Ben Skowronek (Calf).",
+      "PIT OUT: CB Doneiko Slaughter (Hamstring)."
+    ],
+    "watch": [
+      {
+        "team": "CLE",
+        "player": "Mason Graham",
+        "position": "DT",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "CLE",
+        "player": "Myles Harden",
+        "position": "CB",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "CLE",
+        "player": "Tytus Howard",
+        "position": "T",
+        "status": "Questionable Did Not Participate In Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "CLE",
+        "player": "Daniel Thomas",
+        "position": "S",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "PIT",
+        "player": "Brandin Echols",
+        "position": "CB",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "PIT",
+        "player": "Ben Skowronek",
+        "position": "WR",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PIT",
+        "player": "Doneiko Slaughter",
+        "position": "CB",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "CLE",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Tytus Howard"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "CLE",
+        "unit": "Secondary",
+        "count": 2,
+        "players": [
+          "Myles Harden",
+          "Daniel Thomas"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "PIT",
+        "unit": "Secondary",
+        "count": 2,
+        "players": [
+          "Brandin Echols",
+          "Doneiko Slaughter"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W8-CLE-PIT",
+    "canonical_game_id": "2026-W8-CLE-PIT",
+    "matchup": "Cleveland Browns at Pittsburgh Steelers",
+    "venue": "Acrisure Stadium",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Mostly Cloudy at kickoff: 66\u00b0F; wind SE 3.0 mph, gust 8.1 mph; precipitation chance 0%.",
+    "risk": "no major hourly weather flag",
+    "observed_at": "2026-10-31T11:29:32.221705+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/40.4468,-80.0158",
+    "forecast_timestamp": "2026-10-31T10:21:44+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W8-CLE-PIT",
+      "kickoff": "2026-11-01T18:00Z",
+      "temp_f": 66,
+      "wind_mph": 3.0,
+      "gust_mph": 8.1,
+      "precip_chance_pct": 0,
+      "forecast_timestamp": "2026-10-31T10:21:44+00:00",
+      "sources": [
+        "https://api.weather.gov/points/40.4468,-80.0158",
+        "https://api.weather.gov/gridpoints/PBZ/77,66/forecast/hourly",
+        "https://api.weather.gov/gridpoints/PBZ/77,66"
+      ],
+      "wind_speed_raw": "3 mph",
+      "wind_direction": "SE",
+      "forecast_hour_start": "2026-11-01T13:00:00-05:00",
+      "forecast_hour_end": "2026-11-01T14:00:00-05:00",
+      "conditions": "Mostly Cloudy",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-10-31T11:29:32.221705+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/40.4468,-80.0158",
+      "https://api.weather.gov/gridpoints/PBZ/77,66/forecast/hourly",
+      "https://api.weather.gov/gridpoints/PBZ/77,66"
+    ]
+  },
+  "sustainability": {
+    "CLE": {
+      "turnoverRate": 0.01927710843373494,
+      "takeawayRate": 0.02054794520547945,
+      "thirdDownConversion": 0.3258426966292135,
+      "redZoneTdRate": 0.5
+    },
+    "PIT": {
+      "turnoverRate": 0.016055045871559634,
+      "takeawayRate": 0.02364066193853428,
+      "thirdDownConversion": 0.38461538461538464,
+      "redZoneTdRate": 0.47368421052631576
+    }
+  },
+  "experts": [
+    {
+      "family": "The Ringer NFL family",
+      "analyst": "Anthony Dabbundo",
+      "summary": "Healthier Pittsburgh secondary improves the rematch; the field-goal threshold matters.",
+      "sourceUrl": "https://www.theringer.com/2026/10/29/nfl/nfl-best-bets-week-8",
+      "publishedAt": "2026-10-29",
+      "direction": "Consider Steelers -3",
+      "priceLimit": null
+    }
+  ],
+  "expertFamilies": [
+    "The Ringer NFL family"
+  ],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 24
+  },
+  "scheme": {
+    "offenseThroughWeek": 7,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No clear opponent-adjusted football separation or current sample unavailable.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-10-27T05:18:33.515Z",
+      "capturedAt": "2026-10-27T05:18:46.853344+00:00",
+      "spread": "Pittsburgh Steelers -3.5",
+      "homeMargin": 3.5,
+      "source": "ESPN DraftKings"
+    },
+    {
+      "observedAt": "2026-10-31T10:29:51.618Z",
+      "capturedAt": "2026-10-31T10:30:02.117321+00:00",
+      "spread": "Pittsburgh Steelers -3.5",
+      "homeMargin": 3.5,
+      "source": "ESPN Draft Kings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
