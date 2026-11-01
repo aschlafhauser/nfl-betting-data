@@ -2,8 +2,8 @@
   "version": "NFL-WEEKLY-MANIFEST-v3",
   "season": 2026,
   "week": 8,
-  "updatedAt": "2026-11-01T17:29:58.009Z",
-  "status": "PASS",
+  "updatedAt": "2026-11-01T18:30:07.643Z",
+  "status": "PASS-WITH-WARNINGS",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-11-01.json",
   "gates": {
@@ -36,31 +36,33 @@
     "statisticalDisplay": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-11-01T17:29:53.675292+00:00",
+      "verifiedAt": "2026-11-01T18:30:04.152777+00:00",
       "artifact": "data/statistical-display-integrity-2026-w8.json",
       "note": "32 observed season-to-date profiles through Week 7; defensive yardage independently aggregated from each opponent box score. Advanced inputs use the same pregame cutoff."
     },
     "marketDerivedIntegrity": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-11-01T17:29:46.693Z",
+      "verifiedAt": "2026-11-01T18:29:53.935Z",
       "artifact": "data/market-derived-integrity-2026-w8.json",
       "note": "All 14 current spread-derived production fairs independently reconciled as 80% market + 20% frozen structural line with calculation timestamps at/after market dependency."
     },
     "currentWeekCompleteness": {
-      "status": "PASS",
+      "status": "PASS-WITH-WARNINGS",
       "blocking": true,
       "unplayedGames": 13,
       "freshMarketGames": 13,
       "calculationFreshGames": 13,
-      "moneylineAvailableGames": 13,
+      "moneylineAvailableGames": 5,
       "availabilityCheckpointDue": 12,
       "availabilityCheckpointComplete": 12,
       "weatherCheckpointDue": 12,
       "weatherCheckpointComplete": 12,
       "upsetLabVerified": true,
       "issues": [],
-      "warnings": [],
+      "warnings": [
+        "exact moneyline available for 5/13; missing prices remain PRICE_PENDING and are never inferred"
+      ],
       "note": "Wednesday certification requires fresh spread/total, selected-week model calculations, universal Deep Dives and upset research. Exact ML, final injury designations and weather become blocking only when their execution checkpoints are due; missing values are never inferred."
     },
     "homeMarginConvention": {
@@ -134,10 +136,14 @@
       "note": "Historical snapshot debt from prior weeks is retained separately and never rewritten; completed games are exempt from live freshness."
     },
     "timeLimitedOverlays": {
-      "status": "PASS",
-      "items": []
+      "status": "IN_PROGRESS",
+      "items": [
+        "exact moneyline available for 5/13; missing prices remain PRICE_PENDING and are never inferred"
+      ]
     }
   },
   "failures": [],
-  "historicalWarnings": []
+  "historicalWarnings": [
+    "exact moneyline available for 5/13; missing prices remain PRICE_PENDING and are never inferred"
+  ]
 }
