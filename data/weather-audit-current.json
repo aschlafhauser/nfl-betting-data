@@ -1,29 +1,26 @@
 {
   "season": 2026,
   "week": 8,
-  "checkedAt": "2026-11-02T02:29:58.829461+00:00",
+  "checkedAt": "2026-11-02T03:30:43.305246+00:00",
   "games": [
     {
       "game_id": "2026-W8-PHI-WSH",
       "kickoff": "2026-11-02T01:20Z",
-      "temp_f": 52,
-      "wind_mph": 1.0,
-      "gust_mph": 4.6,
-      "precip_chance_pct": 0,
-      "forecast_timestamp": "2026-11-01T23:53:19+00:00",
+      "temp_f": null,
+      "wind_mph": null,
+      "gust_mph": null,
+      "precip_chance_pct": null,
+      "forecast_timestamp": "2026-11-02T02:52:47+00:00",
       "sources": [
         "https://api.weather.gov/points/38.9076,-76.8645",
-        "https://api.weather.gov/gridpoints/LWX/102,73/forecast/hourly",
-        "https://api.weather.gov/gridpoints/LWX/102,73"
+        "https://api.weather.gov/gridpoints/LWX/102,73/forecast/hourly"
       ],
-      "wind_speed_raw": "1 mph",
-      "wind_direction": "SE",
-      "forecast_hour_start": "2026-11-01T20:00:00-05:00",
-      "forecast_hour_end": "2026-11-01T21:00:00-05:00",
-      "conditions": "Mostly Clear",
-      "verification_status": "verified official NWS kickoff-containing hourly forecast",
-      "gust_unit_original": "wmoUnit:km_h-1",
-      "retrieved_at": "2026-11-02T02:29:58.829448+00:00"
+      "verification_status": "unavailable: official hourly feed does not cover target kickoff",
+      "feed_valid_range": [
+        "2026-11-01T22:00:00-05:00",
+        "2026-11-08T10:00:00-05:00"
+      ],
+      "retrieved_at": "2026-11-02T03:30:43.305226+00:00"
     },
     {
       "game_id": "2026-W8-CHI-SEA",
@@ -45,7 +42,7 @@
       "conditions": "Cloudy",
       "verification_status": "verified official NWS kickoff-containing hourly forecast",
       "gust_unit_original": "wmoUnit:km_h-1",
-      "retrieved_at": "2026-11-02T02:29:58.829459+00:00"
+      "retrieved_at": "2026-11-02T03:30:43.305242+00:00"
     }
   ]
 }
