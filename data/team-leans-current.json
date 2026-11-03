@@ -2,8 +2,8 @@
   "schemaVersion": "1.0-team-leans-research",
   "season": 2026,
   "week": 9,
-  "generatedAt": "2026-11-03T05:29:49.252325+00:00",
-  "inputBoardAt": "2026-11-03T05:29:48.642Z",
+  "generatedAt": "2026-11-03T06:34:32.578208+00:00",
+  "inputBoardAt": "2026-11-03T06:34:31.758Z",
   "throughWeek": 8,
   "researchOnly": true,
   "productionPointImpact": 0,
@@ -26,7 +26,7 @@
       "awayAbbr": "JAX",
       "homeAbbr": "BAL",
       "kickoff": "2026-11-06T01:15Z",
-      "generatedAt": "2026-11-03T05:29:49.252325+00:00",
+      "generatedAt": "2026-11-03T06:34:32.578208+00:00",
       "status": "PRICE WATCH",
       "footballLean": "JAX",
       "assessmentSide": "JAX",
@@ -210,8 +210,8 @@
       "structuralAudit": {
         "verified": true,
         "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
-        "reconstructedHomeMargin": -20.478,
-        "structuralHomeMargin": -20.479
+        "reconstructedHomeMargin": -20.474,
+        "structuralHomeMargin": -20.475
       },
       "market": {
         "spread_display": "Jacksonville Jaguars -8.5",
@@ -223,13 +223,13 @@
           "away": -470,
           "home": 360
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-03T05:29:36.748Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-03T06:34:23.473Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
-      "productionFair": -10.896,
-      "structuralFair": -20.479,
-      "structuralDifference": -11.979,
+      "productionFair": -10.895,
+      "structuralFair": -20.475,
+      "structuralDifference": -11.975,
       "price": {
         "side": "JAX",
         "minimumSpreadAtSnapshot": -9.0,
@@ -239,7 +239,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-03T05:29:37.273929+00:00",
+        "observedAt": "2026-11-03T06:34:23.815032+00:00",
         "reviewComplete": false,
         "flags": [],
         "watch": [],
@@ -256,7 +256,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Light Rain Likely at kickoff: 67\u00b0F; wind S 3.0 mph, gust 9.2 mph; precipitation chance 56%.",
         "risk": "weather review required",
-        "observed_at": "2026-11-03T05:29:39.005850+00:00",
+        "observed_at": "2026-11-03T06:34:24.628628+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/39.278,-76.6227",
@@ -282,7 +282,7 @@
           "conditions": "Light Rain Likely",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-03T05:29:39.005850+00:00"
+          "retrieved_at": "2026-11-03T06:34:24.628628+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/39.278,-76.6227",
@@ -325,7 +325,15 @@
       "officialWager": null,
       "researchOnly": true,
       "productionPointImpact": 0,
-      "marketHistory": [],
+      "marketHistory": [
+        {
+          "observedAt": "2026-11-03T05:29:36.748Z",
+          "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+          "spread": "Jacksonville Jaguars -8.5",
+          "homeMargin": -8.5,
+          "source": "ESPN Draft Kings"
+        }
+      ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
     },
     {
@@ -338,7 +346,7 @@
       "awayAbbr": "CIN",
       "homeAbbr": "ATL",
       "kickoff": "2026-11-08T14:30Z",
-      "generatedAt": "2026-11-03T05:29:49.252325+00:00",
+      "generatedAt": "2026-11-03T06:34:32.578208+00:00",
       "status": "PRICE WATCH",
       "footballLean": "CIN",
       "assessmentSide": "CIN",
@@ -461,7 +469,7 @@
           "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
         }
       ],
-      "footballGapHome": -0.1718,
+      "footballGapHome": -0.1669,
       "profiles": {
         "CIN": {
           "season": {
@@ -499,7 +507,7 @@
             "offEpa": -0.0949,
             "defEpa": -0.0347,
             "netEpa": -0.0601,
-            "adjustedNetEpa": -0.028,
+            "adjustedNetEpa": -0.0231,
             "earlyOffEpa": -0.0393,
             "earlyDefEpa": -0.0502,
             "passOffEpa": -0.1603,
@@ -512,7 +520,7 @@
             "offEpa": -0.2299,
             "defEpa": -0.0334,
             "netEpa": -0.1965,
-            "adjustedNetEpa": -0.115,
+            "adjustedNetEpa": -0.1014,
             "earlyOffEpa": -0.0676,
             "earlyDefEpa": -0.0099,
             "passOffEpa": -0.2268,
@@ -523,8 +531,8 @@
       "structuralAudit": {
         "verified": true,
         "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
-        "reconstructedHomeMargin": -7.171,
-        "structuralHomeMargin": -7.171
+        "reconstructedHomeMargin": -7.168,
+        "structuralHomeMargin": -7.168
       },
       "market": {
         "spread_display": "Cincinnati Bengals -3",
@@ -536,13 +544,13 @@
           "away": -162,
           "home": 136
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-03T05:29:36.748Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-03T06:34:23.473Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": -3.834,
-      "structuralFair": -7.171,
-      "structuralDifference": -4.171,
+      "structuralFair": -7.168,
+      "structuralDifference": -4.168,
       "price": {
         "side": "CIN",
         "minimumSpreadAtSnapshot": -2.0,
@@ -552,7 +560,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-03T05:29:37.273929+00:00",
+        "observedAt": "2026-11-03T06:34:23.815032+00:00",
         "reviewComplete": false,
         "flags": [],
         "watch": [],
@@ -569,7 +577,7 @@
         "status": "Official indoor venue verified",
         "summary": "Santiago Bernab\u00e9u is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-03T05:29:39.005875+00:00",
+        "observed_at": "2026-11-03T06:34:24.628649+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
@@ -591,7 +599,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-03T05:29:39.005875+00:00"
+          "retrieved_at": "2026-11-03T06:34:24.628649+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100"
@@ -632,7 +640,15 @@
       "officialWager": null,
       "researchOnly": true,
       "productionPointImpact": 0,
-      "marketHistory": [],
+      "marketHistory": [
+        {
+          "observedAt": "2026-11-03T05:29:36.748Z",
+          "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+          "spread": "Cincinnati Bengals -3",
+          "homeMargin": -3,
+          "source": "ESPN Draft Kings"
+        }
+      ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
     },
     {
@@ -645,7 +661,7 @@
       "awayAbbr": "DAL",
       "homeAbbr": "IND",
       "kickoff": "2026-11-08T18:00Z",
-      "generatedAt": "2026-11-03T05:29:49.252325+00:00",
+      "generatedAt": "2026-11-03T06:34:32.578208+00:00",
       "status": "PRICE WATCH",
       "footballLean": "DAL",
       "assessmentSide": "DAL",
@@ -830,8 +846,8 @@
       "structuralAudit": {
         "verified": true,
         "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
-        "reconstructedHomeMargin": -7.271,
-        "structuralHomeMargin": -7.271
+        "reconstructedHomeMargin": -7.279,
+        "structuralHomeMargin": -7.278
       },
       "market": {
         "spread_display": "Dallas Cowboys -6",
@@ -843,13 +859,13 @@
           "away": -270,
           "home": 220
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-03T05:29:36.748Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-03T06:34:23.473Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
-      "productionFair": -6.254,
-      "structuralFair": -7.271,
-      "structuralDifference": -1.271,
+      "productionFair": -6.256,
+      "structuralFair": -7.278,
+      "structuralDifference": -1.278,
       "price": {
         "side": "DAL",
         "minimumSpreadAtSnapshot": -4.5,
@@ -859,7 +875,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-03T05:29:37.273929+00:00",
+        "observedAt": "2026-11-03T06:34:23.815032+00:00",
         "reviewComplete": false,
         "flags": [],
         "watch": [],
@@ -876,7 +892,7 @@
         "status": "Official indoor venue verified",
         "summary": "Lucas Oil Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-03T05:29:39.005883+00:00",
+        "observed_at": "2026-11-03T06:34:24.628656+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
@@ -898,7 +914,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-03T05:29:39.005883+00:00"
+          "retrieved_at": "2026-11-03T06:34:24.628656+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100"
@@ -939,7 +955,15 @@
       "officialWager": null,
       "researchOnly": true,
       "productionPointImpact": 0,
-      "marketHistory": [],
+      "marketHistory": [
+        {
+          "observedAt": "2026-11-03T05:29:36.748Z",
+          "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+          "spread": "Dallas Cowboys -6",
+          "homeMargin": -6,
+          "source": "ESPN Draft Kings"
+        }
+      ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
     },
     {
@@ -952,7 +976,7 @@
       "awayAbbr": "NYJ",
       "homeAbbr": "KC",
       "kickoff": "2026-11-08T18:00Z",
-      "generatedAt": "2026-11-03T05:29:49.252325+00:00",
+      "generatedAt": "2026-11-03T06:34:32.578208+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "KC",
       "assessmentSide": "KC",
@@ -1075,7 +1099,7 @@
           "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
         }
       ],
-      "footballGapHome": 0.111,
+      "footballGapHome": 0.1005,
       "profiles": {
         "NYJ": {
           "season": {
@@ -1085,7 +1109,7 @@
             "offEpa": 0.0439,
             "defEpa": 0.0227,
             "netEpa": 0.0212,
-            "adjustedNetEpa": -0.0033,
+            "adjustedNetEpa": 0.001,
             "earlyOffEpa": 0.037,
             "earlyDefEpa": 0.0283,
             "passOffEpa": 0.1334,
@@ -1113,7 +1137,7 @@
             "offEpa": 0.1255,
             "defEpa": -0.0344,
             "netEpa": 0.1599,
-            "adjustedNetEpa": 0.1077,
+            "adjustedNetEpa": 0.1015,
             "earlyOffEpa": 0.0947,
             "earlyDefEpa": -0.0493,
             "passOffEpa": 0.15,
@@ -1126,7 +1150,7 @@
             "offEpa": 0.059,
             "defEpa": -0.0134,
             "netEpa": 0.0724,
-            "adjustedNetEpa": 0.0373,
+            "adjustedNetEpa": 0.0225,
             "earlyOffEpa": 0.1054,
             "earlyDefEpa": -0.1119,
             "passOffEpa": 0.0796,
@@ -1137,8 +1161,8 @@
       "structuralAudit": {
         "verified": true,
         "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
-        "reconstructedHomeMargin": 6.138,
-        "structuralHomeMargin": 6.138
+        "reconstructedHomeMargin": 6.136,
+        "structuralHomeMargin": 6.137
       },
       "market": {
         "spread_display": "Kansas City Chiefs -9.5",
@@ -1150,13 +1174,13 @@
           "away": 370,
           "home": -485
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-03T05:29:36.748Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-03T06:34:23.473Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
-      "productionFair": 8.828,
-      "structuralFair": 6.138,
-      "structuralDifference": -3.362,
+      "productionFair": 8.827,
+      "structuralFair": 6.137,
+      "structuralDifference": -3.363,
       "price": {
         "side": "KC",
         "minimumSpreadAtSnapshot": -7.0,
@@ -1166,7 +1190,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-03T05:29:37.273929+00:00",
+        "observedAt": "2026-11-03T06:34:23.815032+00:00",
         "reviewComplete": false,
         "flags": [],
         "watch": [],
@@ -1183,7 +1207,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Sunny at kickoff: 59\u00b0F; wind W 9.0 mph, gust 12.7 mph; precipitation chance 4%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-03T05:29:39.005885+00:00",
+        "observed_at": "2026-11-03T06:34:24.628659+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/39.0489,-94.4839",
@@ -1209,7 +1233,7 @@
           "conditions": "Sunny",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-03T05:29:39.005885+00:00"
+          "retrieved_at": "2026-11-03T06:34:24.628659+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/39.0489,-94.4839",
@@ -1252,7 +1276,15 @@
       "officialWager": null,
       "researchOnly": true,
       "productionPointImpact": 0,
-      "marketHistory": [],
+      "marketHistory": [
+        {
+          "observedAt": "2026-11-03T05:29:36.748Z",
+          "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+          "spread": "Kansas City Chiefs -9.5",
+          "homeMargin": 9.5,
+          "source": "ESPN Draft Kings"
+        }
+      ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
     },
     {
@@ -1265,7 +1297,7 @@
       "awayAbbr": "DET",
       "homeAbbr": "MIA",
       "kickoff": "2026-11-08T18:00Z",
-      "generatedAt": "2026-11-03T05:29:49.252325+00:00",
+      "generatedAt": "2026-11-03T06:34:32.578208+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "DET",
       "assessmentSide": "DET",
@@ -1450,8 +1482,8 @@
       "structuralAudit": {
         "verified": true,
         "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
-        "reconstructedHomeMargin": -5.488,
-        "structuralHomeMargin": -5.488
+        "reconstructedHomeMargin": -5.49,
+        "structuralHomeMargin": -5.49
       },
       "market": {
         "spread_display": "Detroit Lions -7",
@@ -1463,13 +1495,13 @@
           "away": -360,
           "home": 285
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-03T05:29:36.748Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-03T06:34:23.473Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": -6.698,
-      "structuralFair": -5.488,
-      "structuralDifference": 1.512,
+      "structuralFair": -5.49,
+      "structuralDifference": 1.51,
       "price": {
         "side": "DET",
         "minimumSpreadAtSnapshot": -5.0,
@@ -1479,7 +1511,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-03T05:29:37.273929+00:00",
+        "observedAt": "2026-11-03T06:34:23.815032+00:00",
         "reviewComplete": false,
         "flags": [],
         "watch": [],
@@ -1496,7 +1528,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Slight Chance Rain Showers at kickoff: 82\u00b0F; wind S 6.0 mph, gust 11.5 mph; precipitation chance 15%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-03T05:29:39.005890+00:00",
+        "observed_at": "2026-11-03T06:34:24.628663+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/25.958,-80.2389",
@@ -1522,7 +1554,7 @@
           "conditions": "Slight Chance Rain Showers",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-03T05:29:39.005890+00:00"
+          "retrieved_at": "2026-11-03T06:34:24.628663+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/25.958,-80.2389",
@@ -1565,7 +1597,15 @@
       "officialWager": null,
       "researchOnly": true,
       "productionPointImpact": 0,
-      "marketHistory": [],
+      "marketHistory": [
+        {
+          "observedAt": "2026-11-03T05:29:36.748Z",
+          "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+          "spread": "Detroit Lions -7",
+          "homeMargin": -7,
+          "source": "ESPN Draft Kings"
+        }
+      ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
     },
     {
@@ -1578,7 +1618,7 @@
       "awayAbbr": "CLE",
       "homeAbbr": "NO",
       "kickoff": "2026-11-08T18:00Z",
-      "generatedAt": "2026-11-03T05:29:49.252325+00:00",
+      "generatedAt": "2026-11-03T06:34:32.578208+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "CLE",
       "assessmentSide": "CLE",
@@ -1763,8 +1803,8 @@
       "structuralAudit": {
         "verified": true,
         "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
-        "reconstructedHomeMargin": 8.446,
-        "structuralHomeMargin": 8.446
+        "reconstructedHomeMargin": 8.443,
+        "structuralHomeMargin": 8.443
       },
       "market": {
         "spread_display": "New Orleans Saints -2.5",
@@ -1776,13 +1816,13 @@
           "away": 120,
           "home": -142
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-03T05:29:36.748Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-03T06:34:23.473Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": 3.689,
-      "structuralFair": 8.446,
-      "structuralDifference": 5.946,
+      "structuralFair": 8.443,
+      "structuralDifference": 5.943,
       "price": {
         "side": "CLE",
         "minimumSpreadAtSnapshot": 5.5,
@@ -1792,7 +1832,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-03T05:29:37.273929+00:00",
+        "observedAt": "2026-11-03T06:34:23.815032+00:00",
         "reviewComplete": false,
         "flags": [],
         "watch": [],
@@ -1809,7 +1849,7 @@
         "status": "Official indoor venue verified",
         "summary": "Caesars Superdome is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-03T05:29:39.005897+00:00",
+        "observed_at": "2026-11-03T06:34:24.628670+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
@@ -1831,7 +1871,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-03T05:29:39.005897+00:00"
+          "retrieved_at": "2026-11-03T06:34:24.628670+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100"
@@ -1872,7 +1912,15 @@
       "officialWager": null,
       "researchOnly": true,
       "productionPointImpact": 0,
-      "marketHistory": [],
+      "marketHistory": [
+        {
+          "observedAt": "2026-11-03T05:29:36.748Z",
+          "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+          "spread": "New Orleans Saints -2.5",
+          "homeMargin": 2.5,
+          "source": "ESPN Draft Kings"
+        }
+      ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
     },
     {
@@ -1885,7 +1933,7 @@
       "awayAbbr": "NYG",
       "homeAbbr": "PHI",
       "kickoff": "2026-11-08T18:00Z",
-      "generatedAt": "2026-11-03T05:29:49.252325+00:00",
+      "generatedAt": "2026-11-03T06:34:32.578208+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "NYG",
       "assessmentSide": "NYG",
@@ -2007,7 +2055,7 @@
           "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
         }
       ],
-      "footballGapHome": -0.1955,
+      "footballGapHome": -0.191,
       "profiles": {
         "NYG": {
           "season": {
@@ -2045,7 +2093,7 @@
             "offEpa": -0.1269,
             "defEpa": 0.1022,
             "netEpa": -0.2292,
-            "adjustedNetEpa": -0.234,
+            "adjustedNetEpa": -0.2295,
             "earlyOffEpa": -0.101,
             "earlyDefEpa": 0.0504,
             "passOffEpa": -0.1183,
@@ -2082,8 +2130,8 @@
           "away": -175,
           "home": 145
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-03T05:29:36.748Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-03T06:34:23.473Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": -3.332,
@@ -2098,7 +2146,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-03T05:29:37.273929+00:00",
+        "observedAt": "2026-11-03T06:34:23.815032+00:00",
         "reviewComplete": false,
         "flags": [],
         "watch": [],
@@ -2115,7 +2163,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Mostly Sunny at kickoff: 60\u00b0F; wind W 5.0 mph, gust 13.8 mph; precipitation chance 5%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-03T05:29:39.005900+00:00",
+        "observed_at": "2026-11-03T06:34:24.628674+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/39.9008,-75.1675",
@@ -2141,7 +2189,7 @@
           "conditions": "Mostly Sunny",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-03T05:29:39.005900+00:00"
+          "retrieved_at": "2026-11-03T06:34:24.628674+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/39.9008,-75.1675",
@@ -2184,7 +2232,15 @@
       "officialWager": null,
       "researchOnly": true,
       "productionPointImpact": 0,
-      "marketHistory": [],
+      "marketHistory": [
+        {
+          "observedAt": "2026-11-03T05:29:36.748Z",
+          "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+          "spread": "New York Giants -3.5",
+          "homeMargin": -3.5,
+          "source": "ESPN Draft Kings"
+        }
+      ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
     },
     {
@@ -2197,7 +2253,7 @@
       "awayAbbr": "LAR",
       "homeAbbr": "WSH",
       "kickoff": "2026-11-08T18:00Z",
-      "generatedAt": "2026-11-03T05:29:49.252325+00:00",
+      "generatedAt": "2026-11-03T06:34:32.578208+00:00",
       "status": "PASS",
       "footballLean": null,
       "assessmentSide": null,
@@ -2354,8 +2410,8 @@
       "structuralAudit": {
         "verified": true,
         "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
-        "reconstructedHomeMargin": -4.875,
-        "structuralHomeMargin": -4.876
+        "reconstructedHomeMargin": -4.867,
+        "structuralHomeMargin": -4.868
       },
       "market": {
         "spread_display": "Los Angeles Rams -5.5",
@@ -2367,13 +2423,13 @@
           "away": -238,
           "home": 195
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-03T05:29:36.748Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-03T06:34:23.473Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
-      "productionFair": -5.375,
-      "structuralFair": -4.876,
-      "structuralDifference": 0.624,
+      "productionFair": -5.374,
+      "structuralFair": -4.868,
+      "structuralDifference": 0.632,
       "price": {
         "side": null,
         "minimumSpreadAtSnapshot": null,
@@ -2383,7 +2439,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-03T05:29:37.273929+00:00",
+        "observedAt": "2026-11-03T06:34:23.815032+00:00",
         "reviewComplete": false,
         "flags": [],
         "watch": [],
@@ -2400,7 +2456,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Mostly Sunny at kickoff: 61\u00b0F; wind W 8.0 mph, gust 13.8 mph; precipitation chance 5%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-03T05:29:39.005904+00:00",
+        "observed_at": "2026-11-03T06:34:24.628678+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/38.9076,-76.8645",
@@ -2426,7 +2482,7 @@
           "conditions": "Mostly Sunny",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-03T05:29:39.005904+00:00"
+          "retrieved_at": "2026-11-03T06:34:24.628678+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/38.9076,-76.8645",
@@ -2471,7 +2527,15 @@
       "officialWager": null,
       "researchOnly": true,
       "productionPointImpact": 0,
-      "marketHistory": [],
+      "marketHistory": [
+        {
+          "observedAt": "2026-11-03T05:29:36.748Z",
+          "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+          "spread": "Los Angeles Rams -5.5",
+          "homeMargin": -5.5,
+          "source": "ESPN Draft Kings"
+        }
+      ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
     },
     {
@@ -2484,7 +2548,7 @@
       "awayAbbr": "DEN",
       "homeAbbr": "CAR",
       "kickoff": "2026-11-08T18:00Z",
-      "generatedAt": "2026-11-03T05:29:49.252325+00:00",
+      "generatedAt": "2026-11-03T06:34:32.578208+00:00",
       "status": "PRICE WATCH",
       "footballLean": "DEN",
       "assessmentSide": "DEN",
@@ -2607,7 +2671,7 @@
           "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
         }
       ],
-      "footballGapHome": -0.1026,
+      "footballGapHome": -0.0902,
       "profiles": {
         "DEN": {
           "season": {
@@ -2617,7 +2681,7 @@
             "offEpa": -0.0218,
             "defEpa": -0.0233,
             "netEpa": 0.0015,
-            "adjustedNetEpa": 0.0827,
+            "adjustedNetEpa": 0.0759,
             "earlyOffEpa": 0.0406,
             "earlyDefEpa": 0.0098,
             "passOffEpa": -0.0034,
@@ -2630,7 +2694,7 @@
             "offEpa": 0.0549,
             "defEpa": -0.0206,
             "netEpa": 0.0756,
-            "adjustedNetEpa": 0.1268,
+            "adjustedNetEpa": 0.1089,
             "earlyOffEpa": 0.1327,
             "earlyDefEpa": 0.0074,
             "passOffEpa": 0.139,
@@ -2645,7 +2709,7 @@
             "offEpa": 0.031,
             "defEpa": 0.0285,
             "netEpa": 0.0025,
-            "adjustedNetEpa": -0.0199,
+            "adjustedNetEpa": -0.0143,
             "earlyOffEpa": 0.1006,
             "earlyDefEpa": 0.0528,
             "passOffEpa": 0.0713,
@@ -2669,8 +2733,8 @@
       "structuralAudit": {
         "verified": true,
         "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
-        "reconstructedHomeMargin": -5.83,
-        "structuralHomeMargin": -5.829
+        "reconstructedHomeMargin": -5.828,
+        "structuralHomeMargin": -5.827
       },
       "market": {
         "spread_display": "Denver Broncos -3",
@@ -2682,13 +2746,13 @@
           "away": -148,
           "home": 124
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-03T05:29:36.748Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-03T06:34:23.473Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
-      "productionFair": -3.566,
-      "structuralFair": -5.829,
-      "structuralDifference": -2.829,
+      "productionFair": -3.565,
+      "structuralFair": -5.827,
+      "structuralDifference": -2.827,
       "price": {
         "side": "DEN",
         "minimumSpreadAtSnapshot": -2.0,
@@ -2698,7 +2762,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-03T05:29:37.273929+00:00",
+        "observedAt": "2026-11-03T06:34:23.815032+00:00",
         "reviewComplete": false,
         "flags": [],
         "watch": [],
@@ -2715,7 +2779,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Mostly Sunny at kickoff: 65\u00b0F; wind SW 5.0 mph, gust 9.2 mph; precipitation chance 10%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-03T05:29:39.005908+00:00",
+        "observed_at": "2026-11-03T06:34:24.628682+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/35.2258,-80.8528",
@@ -2741,7 +2805,7 @@
           "conditions": "Mostly Sunny",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-03T05:29:39.005908+00:00"
+          "retrieved_at": "2026-11-03T06:34:24.628682+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/35.2258,-80.8528",
@@ -2784,7 +2848,15 @@
       "officialWager": null,
       "researchOnly": true,
       "productionPointImpact": 0,
-      "marketHistory": [],
+      "marketHistory": [
+        {
+          "observedAt": "2026-11-03T05:29:36.748Z",
+          "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+          "spread": "Denver Broncos -3",
+          "homeMargin": -3,
+          "source": "ESPN Draft Kings"
+        }
+      ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
     },
     {
@@ -2797,7 +2869,7 @@
       "awayAbbr": "HOU",
       "homeAbbr": "LAC",
       "kickoff": "2026-11-08T21:05Z",
-      "generatedAt": "2026-11-03T05:29:49.252325+00:00",
+      "generatedAt": "2026-11-03T06:34:32.578208+00:00",
       "status": "PRICE WATCH",
       "footballLean": "HOU",
       "assessmentSide": "HOU",
@@ -2813,7 +2885,7 @@
           "awayOffense": 0.12965489863807744,
           "homeDefenseAllowed": -0.024721334973652934,
           "homeOffense": -0.2708952827927921,
-          "awayDefenseAllowed": 0.06954500466555938,
+          "awayDefenseAllowed": 0.06954500466555939,
           "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
         },
         {
@@ -2871,7 +2943,7 @@
           "awayOffense": 0.12965489863807744,
           "homeDefenseAllowed": -0.024721334973652934,
           "homeOffense": -0.2708952827927921,
-          "awayDefenseAllowed": 0.06954500466555938,
+          "awayDefenseAllowed": 0.06954500466555939,
           "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
         },
         {
@@ -2919,7 +2991,7 @@
           "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
         }
       ],
-      "footballGapHome": -0.1988,
+      "footballGapHome": -0.2069,
       "profiles": {
         "HOU": {
           "season": {
@@ -2957,7 +3029,7 @@
             "offEpa": -0.2556,
             "defEpa": -0.0404,
             "netEpa": -0.2153,
-            "adjustedNetEpa": -0.1919,
+            "adjustedNetEpa": -0.2,
             "earlyOffEpa": -0.2336,
             "earlyDefEpa": 0.0358,
             "passOffEpa": -0.2709,
@@ -2981,8 +3053,8 @@
       "structuralAudit": {
         "verified": true,
         "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
-        "reconstructedHomeMargin": -8.244,
-        "structuralHomeMargin": -8.244
+        "reconstructedHomeMargin": -8.249,
+        "structuralHomeMargin": -8.249
       },
       "market": {
         "spread_display": "Houston Texans -4.5",
@@ -2994,13 +3066,13 @@
           "away": -198,
           "home": 164
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-03T05:29:36.748Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-03T06:34:23.473Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
-      "productionFair": -5.249,
-      "structuralFair": -8.244,
-      "structuralDifference": -3.744,
+      "productionFair": -5.25,
+      "structuralFair": -8.249,
+      "structuralDifference": -3.749,
       "price": {
         "side": "HOU",
         "minimumSpreadAtSnapshot": -3.5,
@@ -3010,7 +3082,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-03T05:29:37.273929+00:00",
+        "observedAt": "2026-11-03T06:34:23.815032+00:00",
         "reviewComplete": false,
         "flags": [],
         "watch": [],
@@ -3027,7 +3099,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Sunny at kickoff: 84\u00b0F; wind  0.0 mph, gust 5.8 mph; precipitation chance 0%. SoFi is covered/open-sided; surrounding point forecast is not on-field wind or rain exposure. No automatic weather model adjustment.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-03T05:29:39.005912+00:00",
+        "observed_at": "2026-11-03T06:34:24.628686+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/33.9535,-118.3392",
@@ -3054,7 +3126,7 @@
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
           "venue_limitation": "SoFi is covered/open-sided; surrounding point forecast is not on-field wind or rain exposure. No automatic weather model adjustment.",
-          "retrieved_at": "2026-11-03T05:29:39.005912+00:00"
+          "retrieved_at": "2026-11-03T06:34:24.628686+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/33.9535,-118.3392",
@@ -3097,7 +3169,15 @@
       "officialWager": null,
       "researchOnly": true,
       "productionPointImpact": 0,
-      "marketHistory": [],
+      "marketHistory": [
+        {
+          "observedAt": "2026-11-03T05:29:36.748Z",
+          "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+          "spread": "Houston Texans -4.5",
+          "homeMargin": -4.5,
+          "source": "ESPN Draft Kings"
+        }
+      ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
     },
     {
@@ -3110,7 +3190,7 @@
       "awayAbbr": "GB",
       "homeAbbr": "NE",
       "kickoff": "2026-11-08T21:25Z",
-      "generatedAt": "2026-11-03T05:29:49.252325+00:00",
+      "generatedAt": "2026-11-03T06:34:32.578208+00:00",
       "status": "PASS",
       "footballLean": null,
       "assessmentSide": null,
@@ -3232,7 +3312,7 @@
           "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
         }
       ],
-      "footballGapHome": 0.0013,
+      "footballGapHome": -0.0042,
       "profiles": {
         "GB": {
           "season": {
@@ -3242,7 +3322,7 @@
             "offEpa": 0.0046,
             "defEpa": -0.0688,
             "netEpa": 0.0734,
-            "adjustedNetEpa": 0.0982,
+            "adjustedNetEpa": 0.1014,
             "earlyOffEpa": -0.0539,
             "earlyDefEpa": -0.1033,
             "passOffEpa": 0.1272,
@@ -3270,7 +3350,7 @@
             "offEpa": 0.0635,
             "defEpa": 0.0086,
             "netEpa": 0.0549,
-            "adjustedNetEpa": 0.0995,
+            "adjustedNetEpa": 0.0972,
             "earlyOffEpa": 0.0465,
             "earlyDefEpa": 0.0112,
             "passOffEpa": 0.2103,
@@ -3283,7 +3363,7 @@
             "offEpa": 0.0956,
             "defEpa": 0.0356,
             "netEpa": 0.06,
-            "adjustedNetEpa": 0.0363,
+            "adjustedNetEpa": 0.0474,
             "earlyOffEpa": 0.1286,
             "earlyDefEpa": 0.0657,
             "passOffEpa": 0.2811,
@@ -3294,8 +3374,8 @@
       "structuralAudit": {
         "verified": true,
         "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
-        "reconstructedHomeMargin": 2.284,
-        "structuralHomeMargin": 2.284
+        "reconstructedHomeMargin": 2.28,
+        "structuralHomeMargin": 2.28
       },
       "market": {
         "spread_display": "New England Patriots -3",
@@ -3307,13 +3387,13 @@
           "away": 130,
           "home": -155
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-03T05:29:36.748Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-03T06:34:23.473Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
-      "productionFair": 2.857,
-      "structuralFair": 2.284,
-      "structuralDifference": -0.716,
+      "productionFair": 2.856,
+      "structuralFair": 2.28,
+      "structuralDifference": -0.72,
       "price": {
         "side": null,
         "minimumSpreadAtSnapshot": null,
@@ -3323,7 +3403,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-03T05:29:37.273929+00:00",
+        "observedAt": "2026-11-03T06:34:23.815032+00:00",
         "reviewComplete": false,
         "flags": [],
         "watch": [],
@@ -3340,7 +3420,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Mostly Sunny at kickoff: 58\u00b0F; wind W 5.0 mph, gust 11.5 mph; precipitation chance 10%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-03T05:29:39.005916+00:00",
+        "observed_at": "2026-11-03T06:34:24.628690+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/42.0909,-71.2643",
@@ -3366,7 +3446,7 @@
           "conditions": "Mostly Sunny",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-03T05:29:39.005916+00:00"
+          "retrieved_at": "2026-11-03T06:34:24.628690+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/42.0909,-71.2643",
@@ -3410,7 +3490,15 @@
       "officialWager": null,
       "researchOnly": true,
       "productionPointImpact": 0,
-      "marketHistory": [],
+      "marketHistory": [
+        {
+          "observedAt": "2026-11-03T05:29:36.748Z",
+          "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+          "spread": "New England Patriots -3",
+          "homeMargin": 3,
+          "source": "ESPN Draft Kings"
+        }
+      ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
     },
     {
@@ -3423,7 +3511,7 @@
       "awayAbbr": "LV",
       "homeAbbr": "SF",
       "kickoff": "2026-11-08T21:25Z",
-      "generatedAt": "2026-11-03T05:29:49.252325+00:00",
+      "generatedAt": "2026-11-03T06:34:32.578208+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "SF",
       "assessmentSide": "SF",
@@ -3545,7 +3633,7 @@
           "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
         }
       ],
-      "footballGapHome": 0.301,
+      "footballGapHome": 0.2933,
       "profiles": {
         "LV": {
           "season": {
@@ -3583,7 +3671,7 @@
             "offEpa": 0.1774,
             "defEpa": -0.0426,
             "netEpa": 0.2201,
-            "adjustedNetEpa": 0.2326,
+            "adjustedNetEpa": 0.2249,
             "earlyOffEpa": 0.1749,
             "earlyDefEpa": -0.0609,
             "passOffEpa": 0.2901,
@@ -3607,8 +3695,8 @@
       "structuralAudit": {
         "verified": true,
         "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
-        "reconstructedHomeMargin": 5.662,
-        "structuralHomeMargin": 5.663
+        "reconstructedHomeMargin": 5.659,
+        "structuralHomeMargin": 5.66
       },
       "market": {
         "spread_display": "San Francisco 49ers -10",
@@ -3620,13 +3708,13 @@
           "away": 410,
           "home": -550
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-03T05:29:36.748Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-03T06:34:23.473Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
-      "productionFair": 9.133,
-      "structuralFair": 5.663,
-      "structuralDifference": -4.337,
+      "productionFair": 9.132,
+      "structuralFair": 5.66,
+      "structuralDifference": -4.34,
       "price": {
         "side": "SF",
         "minimumSpreadAtSnapshot": -7.5,
@@ -3636,7 +3724,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-03T05:29:37.273929+00:00",
+        "observedAt": "2026-11-03T06:34:23.815032+00:00",
         "reviewComplete": false,
         "flags": [],
         "watch": [],
@@ -3653,7 +3741,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Mostly Sunny at kickoff: 74\u00b0F; wind  0.0 mph, gust 5.8 mph; precipitation chance 0%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-03T05:29:39.005920+00:00",
+        "observed_at": "2026-11-03T06:34:24.628694+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/37.403,-121.97",
@@ -3679,7 +3767,7 @@
           "conditions": "Mostly Sunny",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-03T05:29:39.005920+00:00"
+          "retrieved_at": "2026-11-03T06:34:24.628694+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/37.403,-121.97",
@@ -3722,7 +3810,15 @@
       "officialWager": null,
       "researchOnly": true,
       "productionPointImpact": 0,
-      "marketHistory": [],
+      "marketHistory": [
+        {
+          "observedAt": "2026-11-03T05:29:36.748Z",
+          "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+          "spread": "San Francisco 49ers -10",
+          "homeMargin": 10,
+          "source": "ESPN Draft Kings"
+        }
+      ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
     },
     {
@@ -3735,7 +3831,7 @@
       "awayAbbr": "ARI",
       "homeAbbr": "SEA",
       "kickoff": "2026-11-08T21:25Z",
-      "generatedAt": "2026-11-03T05:29:49.252325+00:00",
+      "generatedAt": "2026-11-03T06:34:32.578208+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "SEA",
       "assessmentSide": "SEA",
@@ -3746,44 +3842,44 @@
         {
           "name": "Passing efficiency",
           "side": "SEA",
-          "gap": 0.226,
+          "gap": 0.193,
           "unit": "EPA/play",
           "awayOffense": -0.005634739505301709,
-          "homeDefenseAllowed": -0.10236104141777026,
-          "homeOffense": 0.09903754053109086,
+          "homeDefenseAllowed": -0.07171482786234498,
+          "homeOffense": 0.0633938623312501,
           "awayDefenseAllowed": 0.24595200641897874,
           "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
         },
         {
           "name": "Early-down efficiency",
           "side": "SEA",
-          "gap": 0.03,
+          "gap": 0.008,
           "unit": "EPA/play",
           "awayOffense": 0.03849278820425474,
-          "homeDefenseAllowed": -0.13011465102187125,
-          "homeOffense": -0.06349749784221755,
+          "homeDefenseAllowed": -0.08356549660637633,
+          "homeOffense": -0.06081654371820628,
           "awayDefenseAllowed": 0.031687957194314935,
           "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
         },
         {
           "name": "Explosive plays",
           "side": "SEA",
-          "gap": 4.043,
+          "gap": 3.766,
           "unit": "percentage points",
           "awayOffense": 0.058287795992714025,
-          "homeDefenseAllowed": 0.05172413793103448,
-          "homeOffense": 0.09234234234234234,
+          "homeDefenseAllowed": 0.05473684210526316,
+          "homeOffense": 0.08982035928143713,
           "awayDefenseAllowed": 0.09853249475890985,
           "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
         },
         {
           "name": "Protection versus hit/sack production",
           "side": "SEA",
-          "gap": 2.851,
+          "gap": 2.337,
           "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
           "awayOffense": 0.17847025495750707,
-          "homeDefenseAllowed": 0.212,
-          "homeOffense": 0.1927710843373494,
+          "homeDefenseAllowed": 0.1958041958041958,
+          "homeOffense": 0.18685121107266436,
           "awayDefenseAllowed": 0.14068441064638784,
           "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
         }
@@ -3792,11 +3888,11 @@
         {
           "name": "Rushing efficiency",
           "side": "ARI",
-          "gap": 0.05,
+          "gap": 0.076,
           "unit": "EPA/play",
           "awayOffense": -0.018889263072840397,
-          "homeDefenseAllowed": -0.12369435063788091,
-          "homeOffense": -0.15477841941905432,
+          "homeDefenseAllowed": -0.07144590572894037,
+          "homeOffense": -0.15397846227108625,
           "awayDefenseAllowed": -0.08809536472685396,
           "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
         }
@@ -3805,60 +3901,60 @@
         {
           "name": "Passing efficiency",
           "side": "SEA",
-          "gap": 0.226,
+          "gap": 0.193,
           "unit": "EPA/play",
           "awayOffense": -0.005634739505301709,
-          "homeDefenseAllowed": -0.10236104141777026,
-          "homeOffense": 0.09903754053109086,
+          "homeDefenseAllowed": -0.07171482786234498,
+          "homeOffense": 0.0633938623312501,
           "awayDefenseAllowed": 0.24595200641897874,
           "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
         },
         {
           "name": "Early-down efficiency",
           "side": "SEA",
-          "gap": 0.03,
+          "gap": 0.008,
           "unit": "EPA/play",
           "awayOffense": 0.03849278820425474,
-          "homeDefenseAllowed": -0.13011465102187125,
-          "homeOffense": -0.06349749784221755,
+          "homeDefenseAllowed": -0.08356549660637633,
+          "homeOffense": -0.06081654371820628,
           "awayDefenseAllowed": 0.031687957194314935,
           "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
         },
         {
           "name": "Rushing efficiency",
           "side": "ARI",
-          "gap": 0.05,
+          "gap": 0.076,
           "unit": "EPA/play",
           "awayOffense": -0.018889263072840397,
-          "homeDefenseAllowed": -0.12369435063788091,
-          "homeOffense": -0.15477841941905432,
+          "homeDefenseAllowed": -0.07144590572894037,
+          "homeOffense": -0.15397846227108625,
           "awayDefenseAllowed": -0.08809536472685396,
           "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
         },
         {
           "name": "Explosive plays",
           "side": "SEA",
-          "gap": 4.043,
+          "gap": 3.766,
           "unit": "percentage points",
           "awayOffense": 0.058287795992714025,
-          "homeDefenseAllowed": 0.05172413793103448,
-          "homeOffense": 0.09234234234234234,
+          "homeDefenseAllowed": 0.05473684210526316,
+          "homeOffense": 0.08982035928143713,
           "awayDefenseAllowed": 0.09853249475890985,
           "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
         },
         {
           "name": "Protection versus hit/sack production",
           "side": "SEA",
-          "gap": 2.851,
+          "gap": 2.337,
           "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
           "awayOffense": 0.17847025495750707,
-          "homeDefenseAllowed": 0.212,
-          "homeOffense": 0.1927710843373494,
+          "homeDefenseAllowed": 0.1958041958041958,
+          "homeOffense": 0.18685121107266436,
           "awayDefenseAllowed": 0.14068441064638784,
           "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
         }
       ],
-      "footballGapHome": 0.1856,
+      "footballGapHome": 0.1355,
       "profiles": {
         "ARI": {
           "season": {
@@ -3868,7 +3964,7 @@
             "offEpa": -0.0216,
             "defEpa": 0.0732,
             "netEpa": -0.0948,
-            "adjustedNetEpa": -0.0814,
+            "adjustedNetEpa": -0.0859,
             "earlyOffEpa": 0.0385,
             "earlyDefEpa": 0.0342,
             "passOffEpa": -0.0056,
@@ -3890,37 +3986,37 @@
         },
         "SEA": {
           "season": {
-            "games": 7,
-            "offPlays": 444,
-            "defPlays": 406,
-            "offEpa": -0.0398,
-            "defEpa": -0.1311,
-            "netEpa": 0.0913,
-            "adjustedNetEpa": 0.1042,
-            "earlyOffEpa": -0.0667,
-            "earlyDefEpa": -0.134,
-            "passOffEpa": 0.099,
-            "passDefEpa": -0.1024
+            "games": 8,
+            "offPlays": 501,
+            "defPlays": 475,
+            "offEpa": -0.0538,
+            "defEpa": -0.0866,
+            "netEpa": 0.0328,
+            "adjustedNetEpa": 0.0496,
+            "earlyOffEpa": -0.0666,
+            "earlyDefEpa": -0.0868,
+            "passOffEpa": 0.0634,
+            "passDefEpa": -0.0717
           },
           "recent": {
-            "games": 2,
-            "offPlays": 150,
-            "defPlays": 106,
-            "offEpa": 0.0248,
-            "defEpa": -0.1254,
-            "netEpa": 0.1502,
-            "adjustedNetEpa": 0.2372,
-            "earlyOffEpa": -0.093,
-            "earlyDefEpa": -0.1383,
-            "passOffEpa": 0.1218,
-            "passDefEpa": -0.1578
+            "games": 3,
+            "offPlays": 207,
+            "defPlays": 175,
+            "offEpa": -0.0268,
+            "defEpa": -0.0068,
+            "netEpa": -0.02,
+            "adjustedNetEpa": 0.0522,
+            "earlyOffEpa": -0.0854,
+            "earlyDefEpa": -0.0075,
+            "passOffEpa": 0.0335,
+            "passDefEpa": -0.0523
           }
         }
       },
       "structuralAudit": {
         "verified": false,
         "reason": "Structural component arithmetic failed; disagreement withheld.",
-        "reconstructedHomeMargin": 0.026,
+        "reconstructedHomeMargin": -0.236,
         "structuralHomeMargin": null
       },
       "market": {
@@ -3933,11 +4029,11 @@
           "away": 490,
           "home": -675
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-03T05:29:36.748Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-03T06:34:23.473Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
-      "productionFair": 10.99,
+      "productionFair": 10.938,
       "structuralFair": null,
       "structuralDifference": null,
       "price": {
@@ -3949,7 +4045,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-03T05:29:37.273929+00:00",
+        "observedAt": "2026-11-03T06:34:23.815032+00:00",
         "reviewComplete": false,
         "flags": [],
         "watch": [],
@@ -3966,7 +4062,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Chance Light Rain at kickoff: 56\u00b0F; wind SSW 7.0 mph, gust 10.4 mph; precipitation chance 40%.",
         "risk": "weather review required",
-        "observed_at": "2026-11-03T05:29:39.005924+00:00",
+        "observed_at": "2026-11-03T06:34:24.628699+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/47.5952,-122.3316",
@@ -3992,7 +4088,7 @@
           "conditions": "Chance Light Rain",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-03T05:29:39.005924+00:00"
+          "retrieved_at": "2026-11-03T06:34:24.628699+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/47.5952,-122.3316",
@@ -4008,9 +4104,9 @@
           "redZoneTdRate": 0.45454545454545453
         },
         "SEA": {
-          "turnoverRate": 0.02927927927927928,
-          "takeawayRate": 0.024630541871921183,
-          "thirdDownConversion": 0.3888888888888889,
+          "turnoverRate": 0.027944111776447105,
+          "takeawayRate": 0.023157894736842106,
+          "thirdDownConversion": 0.3564356435643564,
           "redZoneTdRate": 0.4642857142857143
         }
       },
@@ -4036,7 +4132,15 @@
       "officialWager": null,
       "researchOnly": true,
       "productionPointImpact": 0,
-      "marketHistory": [],
+      "marketHistory": [
+        {
+          "observedAt": "2026-11-03T05:29:36.748Z",
+          "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+          "spread": "Seattle Seahawks -11.5",
+          "homeMargin": 11.5,
+          "source": "ESPN Draft Kings"
+        }
+      ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
     },
     {
@@ -4049,68 +4153,67 @@
       "awayAbbr": "TB",
       "homeAbbr": "CHI",
       "kickoff": "2026-11-09T01:20Z",
-      "generatedAt": "2026-11-03T05:29:49.252325+00:00",
-      "status": "FOOTBALL LEAN",
-      "footballLean": "TB",
-      "assessmentSide": "TB",
+      "generatedAt": "2026-11-03T06:34:32.578208+00:00",
+      "status": "PASS",
+      "footballLean": null,
+      "assessmentSide": null,
       "structuralValueSide": null,
       "alignment": "UNRESOLVED",
-      "thesis": "TB has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
-      "mechanisms": [
+      "thesis": "No clear separation in the current opponent-adjusted performance sample.",
+      "mechanisms": [],
+      "counterarguments": [
+        {
+          "name": "Passing efficiency",
+          "side": "CHI",
+          "gap": 0.068,
+          "unit": "EPA/play",
+          "awayOffense": -0.17465502711983416,
+          "homeDefenseAllowed": 0.011337993402571547,
+          "homeOffense": 0.13364149798839536,
+          "awayDefenseAllowed": -0.16120702225188138,
+          "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+        },
         {
           "name": "Early-down efficiency",
           "side": "TB",
-          "gap": 0.082,
+          "gap": 0.058,
           "unit": "EPA/play",
           "awayOffense": -0.046253191296854866,
-          "homeDefenseAllowed": 0.1555725502149508,
-          "homeOffense": 0.008948595692804892,
+          "homeDefenseAllowed": 0.12846368584223467,
+          "homeOffense": 0.030198357577420044,
           "awayDefenseAllowed": -0.06412141059056806,
           "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
         },
         {
           "name": "Rushing efficiency",
           "side": "TB",
-          "gap": 0.049,
+          "gap": 0.029,
           "unit": "EPA/play",
           "awayOffense": 0.03010648944612416,
-          "homeDefenseAllowed": -0.03741548512377515,
-          "homeOffense": -0.016126161514860207,
+          "homeDefenseAllowed": -0.05065616425126799,
+          "homeOffense": 0.010476792901937844,
           "awayDefenseAllowed": -0.08991552021041659,
           "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
         },
         {
           "name": "Explosive plays",
           "side": "TB",
-          "gap": 1.317,
+          "gap": 1.267,
           "unit": "percentage points",
           "awayOffense": 0.09775967413441955,
-          "homeDefenseAllowed": 0.10541310541310542,
-          "homeOffense": 0.10462776659959759,
+          "homeDefenseAllowed": 0.10049019607843138,
+          "homeOffense": 0.10070671378091872,
           "awayDefenseAllowed": 0.07221006564551423,
-          "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
-        }
-      ],
-      "counterarguments": [
-        {
-          "name": "Passing efficiency",
-          "side": "CHI",
-          "gap": 0.052,
-          "unit": "EPA/play",
-          "awayOffense": -0.17465502711983416,
-          "homeDefenseAllowed": 0.04126328465637421,
-          "homeOffense": 0.13267136925832437,
-          "awayDefenseAllowed": -0.16120702225188138,
           "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
         },
         {
           "name": "Protection versus hit/sack production",
           "side": "CHI",
-          "gap": 2.809,
+          "gap": 3.03,
           "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
           "awayOffense": 0.1556420233463035,
-          "homeDefenseAllowed": 0.16740088105726872,
-          "homeOffense": 0.1444043321299639,
+          "homeDefenseAllowed": 0.1647940074906367,
+          "homeOffense": 0.13738019169329074,
           "awayDefenseAllowed": 0.12244897959183673,
           "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
         }
@@ -4119,60 +4222,60 @@
         {
           "name": "Passing efficiency",
           "side": "CHI",
-          "gap": 0.052,
+          "gap": 0.068,
           "unit": "EPA/play",
           "awayOffense": -0.17465502711983416,
-          "homeDefenseAllowed": 0.04126328465637421,
-          "homeOffense": 0.13267136925832437,
+          "homeDefenseAllowed": 0.011337993402571547,
+          "homeOffense": 0.13364149798839536,
           "awayDefenseAllowed": -0.16120702225188138,
           "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
         },
         {
           "name": "Early-down efficiency",
           "side": "TB",
-          "gap": 0.082,
+          "gap": 0.058,
           "unit": "EPA/play",
           "awayOffense": -0.046253191296854866,
-          "homeDefenseAllowed": 0.1555725502149508,
-          "homeOffense": 0.008948595692804892,
+          "homeDefenseAllowed": 0.12846368584223467,
+          "homeOffense": 0.030198357577420044,
           "awayDefenseAllowed": -0.06412141059056806,
           "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
         },
         {
           "name": "Rushing efficiency",
           "side": "TB",
-          "gap": 0.049,
+          "gap": 0.029,
           "unit": "EPA/play",
           "awayOffense": 0.03010648944612416,
-          "homeDefenseAllowed": -0.03741548512377515,
-          "homeOffense": -0.016126161514860207,
+          "homeDefenseAllowed": -0.05065616425126799,
+          "homeOffense": 0.010476792901937844,
           "awayDefenseAllowed": -0.08991552021041659,
           "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
         },
         {
           "name": "Explosive plays",
           "side": "TB",
-          "gap": 1.317,
+          "gap": 1.267,
           "unit": "percentage points",
           "awayOffense": 0.09775967413441955,
-          "homeDefenseAllowed": 0.10541310541310542,
-          "homeOffense": 0.10462776659959759,
+          "homeDefenseAllowed": 0.10049019607843138,
+          "homeOffense": 0.10070671378091872,
           "awayDefenseAllowed": 0.07221006564551423,
           "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
         },
         {
           "name": "Protection versus hit/sack production",
           "side": "CHI",
-          "gap": 2.809,
+          "gap": 3.03,
           "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
           "awayOffense": 0.1556420233463035,
-          "homeDefenseAllowed": 0.16740088105726872,
-          "homeOffense": 0.1444043321299639,
+          "homeDefenseAllowed": 0.1647940074906367,
+          "homeOffense": 0.13738019169329074,
           "awayDefenseAllowed": 0.12244897959183673,
           "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
         }
       ],
-      "footballGapHome": -0.0467,
+      "footballGapHome": 0.0006,
       "profiles": {
         "TB": {
           "season": {
@@ -4204,37 +4307,37 @@
         },
         "CHI": {
           "season": {
-            "games": 7,
-            "offPlays": 497,
-            "defPlays": 351,
-            "offEpa": 0.0473,
-            "defEpa": -0.0017,
-            "netEpa": 0.049,
-            "adjustedNetEpa": 0.0453,
-            "earlyOffEpa": 0.0089,
-            "earlyDefEpa": 0.1456,
-            "passOffEpa": 0.1327,
-            "passDefEpa": 0.0413
+            "games": 8,
+            "offPlays": 566,
+            "defPlays": 408,
+            "offEpa": 0.0629,
+            "defEpa": -0.0242,
+            "netEpa": 0.0871,
+            "adjustedNetEpa": 0.0926,
+            "earlyOffEpa": 0.0302,
+            "earlyDefEpa": 0.1166,
+            "passOffEpa": 0.1336,
+            "passDefEpa": 0.0113
           },
           "recent": {
-            "games": 2,
-            "offPlays": 137,
-            "defPlays": 101,
-            "offEpa": 0.1123,
-            "defEpa": -0.0423,
-            "netEpa": 0.1546,
-            "adjustedNetEpa": 0.1712,
-            "earlyOffEpa": 0.0176,
-            "earlyDefEpa": 0.1683,
-            "passOffEpa": 0.3198,
-            "passDefEpa": 0.0418
+            "games": 3,
+            "offPlays": 206,
+            "defPlays": 158,
+            "offEpa": 0.1334,
+            "defEpa": -0.0857,
+            "netEpa": 0.2192,
+            "adjustedNetEpa": 0.254,
+            "earlyOffEpa": 0.0729,
+            "earlyDefEpa": 0.084,
+            "passOffEpa": 0.2643,
+            "passDefEpa": -0.0273
           }
         }
       },
       "structuralAudit": {
         "verified": false,
         "reason": "Structural component arithmetic failed; disagreement withheld.",
-        "reconstructedHomeMargin": 1.759,
+        "reconstructedHomeMargin": 1.931,
         "structuralHomeMargin": null
       },
       "market": {
@@ -4247,23 +4350,23 @@
           "away": 210,
           "home": -258
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-03T05:29:36.748Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-03T06:34:23.473Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
-      "productionFair": 3.367,
+      "productionFair": 3.401,
       "structuralFair": null,
       "structuralDifference": null,
       "price": {
-        "side": "TB",
-        "minimumSpreadAtSnapshot": 5.0,
+        "side": null,
+        "minimumSpreadAtSnapshot": null,
         "assumedJuice": -110,
         "minimumModelPoints": 1.5,
         "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-03T05:29:37.273929+00:00",
+        "observedAt": "2026-11-03T06:34:23.815032+00:00",
         "reviewComplete": false,
         "flags": [],
         "watch": [],
@@ -4280,7 +4383,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Mostly Cloudy at kickoff: 49\u00b0F; wind NW 5.0 mph, gust 10.4 mph; precipitation chance 13%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-03T05:29:39.005928+00:00",
+        "observed_at": "2026-11-03T06:34:24.628703+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/41.8623,-87.6167",
@@ -4306,7 +4409,7 @@
           "conditions": "Mostly Cloudy",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-03T05:29:39.005928+00:00"
+          "retrieved_at": "2026-11-03T06:34:24.628703+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/41.8623,-87.6167",
@@ -4322,9 +4425,9 @@
           "redZoneTdRate": 0.5
         },
         "CHI": {
-          "turnoverRate": 0.022132796780684104,
-          "takeawayRate": 0.019943019943019943,
-          "thirdDownConversion": 0.44,
+          "turnoverRate": 0.02120141342756184,
+          "takeawayRate": 0.0196078431372549,
+          "thirdDownConversion": 0.4434782608695652,
           "redZoneTdRate": 0.5882352941176471
         }
       },
@@ -4344,13 +4447,22 @@
         "Official game-day inactives pending.",
         "No attributable current game-specific expert analysis reviewed.",
         "Structural component arithmetic failed; disagreement withheld.",
+        "No clear opponent-adjusted football separation or current sample unavailable.",
         "Defense versus motion is Week 1; excluded from lean direction."
       ],
       "started": false,
       "officialWager": null,
       "researchOnly": true,
       "productionPointImpact": 0,
-      "marketHistory": [],
+      "marketHistory": [
+        {
+          "observedAt": "2026-11-03T05:29:36.748Z",
+          "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+          "spread": "Chicago Bears -6",
+          "homeMargin": 6,
+          "source": "ESPN Draft Kings"
+        }
+      ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
     },
     {
@@ -4363,7 +4475,7 @@
       "awayAbbr": "BUF",
       "homeAbbr": "MIN",
       "kickoff": "2026-11-10T01:15Z",
-      "generatedAt": "2026-11-03T05:29:49.252325+00:00",
+      "generatedAt": "2026-11-03T06:34:32.578208+00:00",
       "status": "PRICE WATCH",
       "footballLean": "BUF",
       "assessmentSide": "BUF",
@@ -4486,7 +4598,7 @@
           "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
         }
       ],
-      "footballGapHome": -0.0652,
+      "footballGapHome": -0.0602,
       "profiles": {
         "BUF": {
           "season": {
@@ -4524,7 +4636,7 @@
             "offEpa": -0.0958,
             "defEpa": -0.1686,
             "netEpa": 0.0729,
-            "adjustedNetEpa": 0.0464,
+            "adjustedNetEpa": 0.0514,
             "earlyOffEpa": -0.0892,
             "earlyDefEpa": -0.1096,
             "passOffEpa": -0.0158,
@@ -4548,26 +4660,26 @@
       "structuralAudit": {
         "verified": true,
         "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
-        "reconstructedHomeMargin": -9.652,
-        "structuralHomeMargin": -9.652
+        "reconstructedHomeMargin": -9.655,
+        "structuralHomeMargin": -9.655
       },
       "market": {
         "spread_display": "Buffalo Bills -3.5",
         "spread": "BUF -3.5",
-        "total": 46.5,
+        "total": 45.5,
         "home_margin": -3.5,
         "home_team_sportsbook_spread": 3.5,
         "moneyline": {
-          "away": -185,
-          "home": 154
+          "away": -192,
+          "home": 160
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-03T05:29:36.748Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-03T06:34:23.473Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
-      "productionFair": -4.73,
-      "structuralFair": -9.652,
-      "structuralDifference": -6.152,
+      "productionFair": -4.731,
+      "structuralFair": -9.655,
+      "structuralDifference": -6.155,
       "price": {
         "side": "BUF",
         "minimumSpreadAtSnapshot": -3.0,
@@ -4577,7 +4689,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-03T05:29:37.273929+00:00",
+        "observedAt": "2026-11-03T06:34:23.815032+00:00",
         "reviewComplete": false,
         "flags": [],
         "watch": [],
@@ -4594,7 +4706,7 @@
         "status": "Official indoor venue verified",
         "summary": "U.S. Bank Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-03T05:29:39.005936+00:00",
+        "observed_at": "2026-11-03T06:34:24.628710+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
@@ -4616,7 +4728,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-03T05:29:39.005936+00:00"
+          "retrieved_at": "2026-11-03T06:34:24.628710+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100"
@@ -4657,7 +4769,15 @@
       "officialWager": null,
       "researchOnly": true,
       "productionPointImpact": 0,
-      "marketHistory": [],
+      "marketHistory": [
+        {
+          "observedAt": "2026-11-03T05:29:36.748Z",
+          "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+          "spread": "Buffalo Bills -3.5",
+          "homeMargin": -3.5,
+          "source": "ESPN Draft Kings"
+        }
+      ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
     }
   ],
