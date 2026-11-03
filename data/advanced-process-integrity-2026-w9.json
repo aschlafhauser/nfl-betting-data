@@ -1,0 +1,26 @@
+{
+  "season": 2026,
+  "week": 9,
+  "verifiedAt": "2026-11-03T01:30:23.716885+00:00",
+  "status": "PASS",
+  "teamCoverage": 32,
+  "throughWeek": 8,
+  "requiredMetricFamilies": [
+    "netEpa",
+    "netSuccess",
+    "netEarlyDownEpa",
+    "netDropbackEpa",
+    "netRushEpa",
+    "netExplosiveRate",
+    "netPressureRate",
+    "netSituationalRate"
+  ],
+  "motionCoverage": 32,
+  "modelIntegration": {
+    "processShareOfLiveLayer": 0.4,
+    "motionPointCap": 0.0,
+    "motionGovernance": "research/confidence only until validated",
+    "productionStructuralWeight": 0.2
+  },
+  "leakageRule": "Target Week 9 uses only completed plays through Week 8."
+}
