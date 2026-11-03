@@ -1,0 +1,322 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W9-BUF-MIN",
+  "portalGameId": "401873051",
+  "week": 9,
+  "away": "Buffalo Bills",
+  "home": "Minnesota Vikings",
+  "awayAbbr": "BUF",
+  "homeAbbr": "MIN",
+  "kickoff": "2026-11-10T01:15Z",
+  "generatedAt": "2026-11-03T15:30:08.369256+00:00",
+  "status": "PRICE WATCH",
+  "footballLean": "BUF",
+  "assessmentSide": "BUF",
+  "structuralValueSide": "BUF",
+  "alignment": "ALIGNED",
+  "thesis": "BUF has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Early-down efficiency",
+      "side": "BUF",
+      "gap": 0.014,
+      "unit": "EPA/play",
+      "awayOffense": 0.1273595957722575,
+      "homeDefenseAllowed": -0.11239361686589798,
+      "homeOffense": -0.08158411547978822,
+      "awayDefenseAllowed": 0.06864211916667436,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "BUF",
+      "gap": 0.103,
+      "unit": "EPA/play",
+      "awayOffense": 0.12695086773631942,
+      "homeDefenseAllowed": -0.08065216575040865,
+      "homeOffense": -0.1260851742075252,
+      "awayDefenseAllowed": -0.03269965054345899,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "BUF",
+      "gap": 2.286,
+      "unit": "percentage points",
+      "awayOffense": 0.14685314685314685,
+      "homeDefenseAllowed": 0.09113300492610837,
+      "homeOffense": 0.09203980099502487,
+      "awayDefenseAllowed": 0.10021786492374728,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Passing efficiency",
+      "side": "MIN",
+      "gap": 0.02,
+      "unit": "EPA/play",
+      "awayOffense": 0.29082405033152103,
+      "homeDefenseAllowed": -0.20691836672806027,
+      "homeOffense": -0.015808917669916146,
+      "awayDefenseAllowed": 0.1404843332026783,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "MIN",
+      "gap": 2.359,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.13278008298755187,
+      "homeDefenseAllowed": 0.251063829787234,
+      "homeOffense": 0.15021459227467812,
+      "awayDefenseAllowed": 0.1864406779661017,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "MIN",
+      "gap": 0.02,
+      "unit": "EPA/play",
+      "awayOffense": 0.29082405033152103,
+      "homeDefenseAllowed": -0.20691836672806027,
+      "homeOffense": -0.015808917669916146,
+      "awayDefenseAllowed": 0.1404843332026783,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "BUF",
+      "gap": 0.014,
+      "unit": "EPA/play",
+      "awayOffense": 0.1273595957722575,
+      "homeDefenseAllowed": -0.11239361686589798,
+      "homeOffense": -0.08158411547978822,
+      "awayDefenseAllowed": 0.06864211916667436,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "BUF",
+      "gap": 0.103,
+      "unit": "EPA/play",
+      "awayOffense": 0.12695086773631942,
+      "homeDefenseAllowed": -0.08065216575040865,
+      "homeOffense": -0.1260851742075252,
+      "awayDefenseAllowed": -0.03269965054345899,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "BUF",
+      "gap": 2.286,
+      "unit": "percentage points",
+      "awayOffense": 0.14685314685314685,
+      "homeDefenseAllowed": 0.09113300492610837,
+      "homeOffense": 0.09203980099502487,
+      "awayDefenseAllowed": 0.10021786492374728,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "MIN",
+      "gap": 2.359,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.13278008298755187,
+      "homeDefenseAllowed": 0.251063829787234,
+      "homeOffense": 0.15021459227467812,
+      "awayDefenseAllowed": 0.1864406779661017,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": -0.0602,
+  "profiles": {
+    "BUF": {
+      "season": {
+        "games": 7,
+        "offPlays": 429,
+        "defPlays": 459,
+        "offEpa": 0.1728,
+        "defEpa": 0.0628,
+        "netEpa": 0.1101,
+        "adjustedNetEpa": 0.1116,
+        "earlyOffEpa": 0.1341,
+        "earlyDefEpa": 0.0687,
+        "passOffEpa": 0.2908,
+        "passDefEpa": 0.1405
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 136,
+        "defPlays": 109,
+        "offEpa": 0.0917,
+        "defEpa": -0.1655,
+        "netEpa": 0.2572,
+        "adjustedNetEpa": 0.2605,
+        "earlyOffEpa": 0.0794,
+        "earlyDefEpa": -0.1538,
+        "passOffEpa": 0.1766,
+        "passDefEpa": -0.1241
+      }
+    },
+    "MIN": {
+      "season": {
+        "games": 7,
+        "offPlays": 402,
+        "defPlays": 406,
+        "offEpa": -0.0958,
+        "defEpa": -0.1686,
+        "netEpa": 0.0729,
+        "adjustedNetEpa": 0.0514,
+        "earlyOffEpa": -0.0892,
+        "earlyDefEpa": -0.1096,
+        "passOffEpa": -0.0158,
+        "passDefEpa": -0.2069
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 104,
+        "defPlays": 126,
+        "offEpa": -0.0862,
+        "defEpa": -0.0772,
+        "netEpa": -0.009,
+        "adjustedNetEpa": -0.0812,
+        "earlyOffEpa": -0.0143,
+        "earlyDefEpa": -0.0823,
+        "passOffEpa": 0.0334,
+        "passDefEpa": -0.2089
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": -9.655,
+    "structuralHomeMargin": -9.655
+  },
+  "market": {
+    "spread_display": "Buffalo Bills -3.5",
+    "spread": "BUF -3.5",
+    "total": 45.5,
+    "home_margin": -3.5,
+    "home_team_sportsbook_spread": 3.5,
+    "moneyline": {
+      "away": -185,
+      "home": 154
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-11-03T15:29:55.951Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": -4.731,
+  "structuralFair": -9.655,
+  "structuralDifference": -6.155,
+  "price": {
+    "side": "BUF",
+    "minimumSpreadAtSnapshot": -3.0,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-03T15:29:56.467459+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [],
+    "clusters": [],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W9-BUF-MIN",
+    "canonical_game_id": "2026-W9-BUF-MIN",
+    "matchup": "Buffalo Bills at Minnesota Vikings",
+    "venue": "U.S. Bank Stadium",
+    "environment": "indoor",
+    "status": "Official indoor venue verified",
+    "summary": "U.S. Bank Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
+    "risk": "indoor / roof controlled",
+    "observed_at": "2026-11-03T15:29:58.175271+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+    "forecast_timestamp": null,
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W9-BUF-MIN",
+      "kickoff": "2026-11-10T01:15Z",
+      "temp_f": null,
+      "wind_mph": null,
+      "gust_mph": null,
+      "precip_chance_pct": null,
+      "forecast_timestamp": null,
+      "verification_status": "indoor venue; outdoor weather forecast not applicable",
+      "venue": "U.S. Bank Stadium",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100"
+      ],
+      "limitations": [
+        "Roof status is governed by venue/event information; outside air values are not on-field conditions."
+      ],
+      "retrieved_at": "2026-11-03T15:29:58.175271+00:00"
+    },
+    "sources": [
+      "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100"
+    ]
+  },
+  "sustainability": {
+    "BUF": {
+      "turnoverRate": 0.02564102564102564,
+      "takeawayRate": 0.0196078431372549,
+      "thirdDownConversion": 0.4533333333333333,
+      "redZoneTdRate": 0.7
+    },
+    "MIN": {
+      "turnoverRate": 0.012437810945273632,
+      "takeawayRate": 0.027093596059113302,
+      "thirdDownConversion": 0.3711340206185567,
+      "redZoneTdRate": 0.5625
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 8,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-11-03T05:29:36.748Z",
+      "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+      "spread": "Buffalo Bills -3.5",
+      "homeMargin": -3.5,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-11-03T14:30:07.611Z",
+      "capturedAt": "2026-11-03T14:30:29.044280+00:00",
+      "spread": "Buffalo Bills -3.5",
+      "homeMargin": -3.5,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
