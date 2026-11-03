@@ -1,0 +1,328 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W9-NYJ-KC",
+  "portalGameId": "401873045",
+  "week": 9,
+  "away": "New York Jets",
+  "home": "Kansas City Chiefs",
+  "awayAbbr": "NYJ",
+  "homeAbbr": "KC",
+  "kickoff": "2026-11-08T18:00Z",
+  "generatedAt": "2026-11-03T16:30:04.119489+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "KC",
+  "assessmentSide": "KC",
+  "structuralValueSide": "NYJ",
+  "alignment": "CONFLICT",
+  "thesis": "KC has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "KC",
+      "gap": 0.072,
+      "unit": "EPA/play",
+      "awayOffense": 0.13344583513089062,
+      "homeDefenseAllowed": 0.027423465534427927,
+      "homeOffense": 0.15004801446029997,
+      "awayDefenseAllowed": 0.15521352851275064,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "KC",
+      "gap": 0.061,
+      "unit": "EPA/play",
+      "awayOffense": 0.039928594260257244,
+      "homeDefenseAllowed": -0.042555301753652845,
+      "homeOffense": 0.09147447684825315,
+      "awayDefenseAllowed": 0.028285521332524505,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "KC",
+      "gap": 0.092,
+      "unit": "EPA/play",
+      "awayOffense": -0.0785466140935326,
+      "homeDefenseAllowed": -0.08061632382659749,
+      "homeOffense": 0.10931743426672168,
+      "awayDefenseAllowed": -0.08416585069030987,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "KC",
+      "gap": 0.044,
+      "unit": "percentage points",
+      "awayOffense": 0.1079913606911447,
+      "homeDefenseAllowed": 0.08181818181818182,
+      "homeOffense": 0.10451306413301663,
+      "awayDefenseAllowed": 0.08617234468937876,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "NYJ",
+      "gap": 0.89,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.16727272727272727,
+      "homeDefenseAllowed": 0.12734082397003746,
+      "homeOffense": 0.1607843137254902,
+      "awayDefenseAllowed": 0.15162454873646208,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "KC",
+      "gap": 0.072,
+      "unit": "EPA/play",
+      "awayOffense": 0.13344583513089062,
+      "homeDefenseAllowed": 0.027423465534427927,
+      "homeOffense": 0.15004801446029997,
+      "awayDefenseAllowed": 0.15521352851275064,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "KC",
+      "gap": 0.061,
+      "unit": "EPA/play",
+      "awayOffense": 0.039928594260257244,
+      "homeDefenseAllowed": -0.042555301753652845,
+      "homeOffense": 0.09147447684825315,
+      "awayDefenseAllowed": 0.028285521332524505,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "KC",
+      "gap": 0.092,
+      "unit": "EPA/play",
+      "awayOffense": -0.0785466140935326,
+      "homeDefenseAllowed": -0.08061632382659749,
+      "homeOffense": 0.10931743426672168,
+      "awayDefenseAllowed": -0.08416585069030987,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "KC",
+      "gap": 0.044,
+      "unit": "percentage points",
+      "awayOffense": 0.1079913606911447,
+      "homeDefenseAllowed": 0.08181818181818182,
+      "homeOffense": 0.10451306413301663,
+      "awayDefenseAllowed": 0.08617234468937876,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "NYJ",
+      "gap": 0.89,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.16727272727272727,
+      "homeDefenseAllowed": 0.12734082397003746,
+      "homeOffense": 0.1607843137254902,
+      "awayDefenseAllowed": 0.15162454873646208,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": 0.1005,
+  "profiles": {
+    "NYJ": {
+      "season": {
+        "games": 8,
+        "offPlays": 463,
+        "defPlays": 499,
+        "offEpa": 0.0439,
+        "defEpa": 0.0227,
+        "netEpa": 0.0212,
+        "adjustedNetEpa": 0.001,
+        "earlyOffEpa": 0.037,
+        "earlyDefEpa": 0.0283,
+        "passOffEpa": 0.1334,
+        "passDefEpa": 0.1552
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 173,
+        "defPlays": 187,
+        "offEpa": 0.1586,
+        "defEpa": 0.1639,
+        "netEpa": -0.0053,
+        "adjustedNetEpa": -0.0594,
+        "earlyOffEpa": 0.1469,
+        "earlyDefEpa": 0.1025,
+        "passOffEpa": 0.2969,
+        "passDefEpa": 0.4727
+      }
+    },
+    "KC": {
+      "season": {
+        "games": 7,
+        "offPlays": 421,
+        "defPlays": 440,
+        "offEpa": 0.1255,
+        "defEpa": -0.0344,
+        "netEpa": 0.1599,
+        "adjustedNetEpa": 0.1015,
+        "earlyOffEpa": 0.0947,
+        "earlyDefEpa": -0.0493,
+        "passOffEpa": 0.15,
+        "passDefEpa": 0.0274
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 172,
+        "defPlays": 188,
+        "offEpa": 0.059,
+        "defEpa": -0.0134,
+        "netEpa": 0.0724,
+        "adjustedNetEpa": 0.0225,
+        "earlyOffEpa": 0.1054,
+        "earlyDefEpa": -0.1119,
+        "passOffEpa": 0.0796,
+        "passDefEpa": 0.0791
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 6.136,
+    "structuralHomeMargin": 6.137
+  },
+  "market": {
+    "spread_display": "Kansas City Chiefs -9.5",
+    "spread": "KC -9.5",
+    "total": 46.5,
+    "home_margin": 9.5,
+    "home_team_sportsbook_spread": -9.5,
+    "moneyline": {
+      "away": 380,
+      "home": -500
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-11-03T16:29:51.613Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": 8.827,
+  "structuralFair": 6.137,
+  "structuralDifference": -3.363,
+  "price": {
+    "side": "KC",
+    "minimumSpreadAtSnapshot": -7.0,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-03T16:29:51.901942+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [],
+    "clusters": [],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W9-NYJ-KC",
+    "canonical_game_id": "2026-W9-NYJ-KC",
+    "matchup": "New York Jets at Kansas City Chiefs",
+    "venue": "Arrowhead Stadium",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Sunny at kickoff: 58\u00b0F; wind W 8.0 mph, gust 12.7 mph; precipitation chance 4%.",
+    "risk": "no major hourly weather flag",
+    "observed_at": "2026-11-03T16:29:54.379530+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/39.0489,-94.4839",
+    "forecast_timestamp": "2026-11-03T10:42:00+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W9-NYJ-KC",
+      "kickoff": "2026-11-08T18:00Z",
+      "temp_f": 58,
+      "wind_mph": 8.0,
+      "gust_mph": 12.7,
+      "precip_chance_pct": 4,
+      "forecast_timestamp": "2026-11-03T10:42:00+00:00",
+      "sources": [
+        "https://api.weather.gov/points/39.0489,-94.4839",
+        "https://api.weather.gov/gridpoints/EAX/47,48/forecast/hourly",
+        "https://api.weather.gov/gridpoints/EAX/47,48"
+      ],
+      "wind_speed_raw": "8 mph",
+      "wind_direction": "W",
+      "forecast_hour_start": "2026-11-08T12:00:00-06:00",
+      "forecast_hour_end": "2026-11-08T13:00:00-06:00",
+      "conditions": "Sunny",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-11-03T16:29:54.379530+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/39.0489,-94.4839",
+      "https://api.weather.gov/gridpoints/EAX/47,48/forecast/hourly",
+      "https://api.weather.gov/gridpoints/EAX/47,48"
+    ]
+  },
+  "sustainability": {
+    "NYJ": {
+      "turnoverRate": 0.012958963282937365,
+      "takeawayRate": 0.014028056112224449,
+      "thirdDownConversion": 0.38,
+      "redZoneTdRate": 0.4230769230769231
+    },
+    "KC": {
+      "turnoverRate": 0.009501187648456057,
+      "takeawayRate": 0.020454545454545454,
+      "thirdDownConversion": 0.40476190476190477,
+      "redZoneTdRate": 0.5769230769230769
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 8,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-11-03T05:29:36.748Z",
+      "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+      "spread": "Kansas City Chiefs -9.5",
+      "homeMargin": 9.5,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-11-03T15:29:55.951Z",
+      "capturedAt": "2026-11-03T15:30:08.369256+00:00",
+      "spread": "Kansas City Chiefs -9.5",
+      "homeMargin": 9.5,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
