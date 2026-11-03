@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 9,
-  "generatedAt": "2026-11-03T04:29:31.004Z",
+  "generatedAt": "2026-11-03T05:29:39.063Z",
   "mode": "Wednesday full reprice / universal research",
   "scheduleCoverage": {
     "canonicalGameCount": 15,
@@ -178,28 +178,28 @@
     {
       "gameId": "2026-W9-ARI-SEA",
       "matchup": "Arizona Cardinals at Seattle Seahawks",
-      "stage": "market-pending",
-      "priority": "Medium",
-      "currentSpread": null,
-      "productionSpread": null,
+      "stage": "high-priority-audit",
+      "priority": "High",
+      "currentSpread": "Seattle Seahawks -11.5",
+      "productionSpread": "Seattle Seahawks -8.2",
       "structuralSpread": "Arizona Cardinals -4.8",
-      "structuralEdge": null,
-      "lean": null,
+      "structuralEdge": 16.336,
+      "lean": "ARI",
       "deepDiveStatus": "COMPLETE",
-      "upsetResearch": "SCREENED-NOT-QUALIFIED"
+      "upsetResearch": "COMPLETE-PRICE-QUALIFIED"
     },
     {
       "gameId": "2026-W9-TB-CHI",
       "matchup": "Tampa Bay Buccaneers at Chicago Bears",
-      "stage": "market-pending",
-      "priority": "Medium",
-      "currentSpread": null,
-      "productionSpread": null,
+      "stage": "high-priority-audit",
+      "priority": "High",
+      "currentSpread": "Chicago Bears -6",
+      "productionSpread": "Chicago Bears -5.2",
       "structuralSpread": "Chicago Bears -2",
-      "structuralEdge": null,
-      "lean": null,
+      "structuralEdge": 4.019,
+      "lean": "TB",
       "deepDiveStatus": "COMPLETE",
-      "upsetResearch": "SCREENED-NOT-QUALIFIED"
+      "upsetResearch": "COMPLETE-NEAR-THRESHOLD"
     },
     {
       "gameId": "2026-W9-BUF-MIN",
@@ -217,7 +217,7 @@
   ],
   "modelReview": {
     "status": "COMPLETE",
-    "reviewedAt": "2026-11-03T04:29:31.004Z",
+    "reviewedAt": "2026-11-03T05:29:39.063Z",
     "methodologyVersion": "1.1-validated-structural-market-aware+expert-intelligence-v1",
     "phase": {
       "preseasonWeight": 0.475,
@@ -231,7 +231,7 @@
     "throughWeek": 8
   },
   "upsetResearch": {
-    "candidates": 5,
+    "candidates": 7,
     "pricePending": 0
   }
 }

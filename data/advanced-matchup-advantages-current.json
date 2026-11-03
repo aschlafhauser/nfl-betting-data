@@ -1,8 +1,8 @@
 {
   "season": 2026,
-  "week": 8,
-  "generatedAt": "2026-11-03T00:43:49.243Z",
-  "throughWeek": 7,
+  "week": 9,
+  "generatedAt": "2026-11-03T05:29:48.689Z",
+  "throughWeek": 8,
   "methodologyVersion": "1.0-advanced-matchup-diagnostic",
   "productionApproved": false,
   "productionPointImpact": 0,
@@ -22,189 +22,189 @@
   },
   "games": [
     {
-      "gameId": "2026-W8-IND-JAX",
-      "portalGameId": "401873028",
-      "away": "Indianapolis Colts",
-      "awayAbbr": "IND",
-      "home": "Jacksonville Jaguars",
-      "homeAbbr": "JAX",
-      "marketSpread": "Jacksonville Jaguars -10",
-      "structuralFair": "Jacksonville Jaguars -7",
-      "productionFair": "Jacksonville Jaguars -9.4",
-      "structuralLean": "IND",
-      "matchupFavoredSide": "JAX",
-      "advantageGap": 32.2,
+      "gameId": "2026-W9-LV-SF",
+      "portalGameId": "401873047",
+      "away": "Las Vegas Raiders",
+      "awayAbbr": "LV",
+      "home": "San Francisco 49ers",
+      "homeAbbr": "SF",
+      "marketSpread": "San Francisco 49ers -10",
+      "structuralFair": "San Francisco 49ers -5.7",
+      "productionFair": "San Francisco 49ers -9.1",
+      "structuralLean": "LV",
+      "matchupFavoredSide": "SF",
+      "advantageGap": 43.6,
       "alignment": "CONFLICT",
-      "awayScore": 36.3,
-      "homeScore": 68.5,
-      "awayRaw": -1.142,
-      "homeRaw": 1.542,
+      "awayScore": 38.6,
+      "homeScore": 82.2,
+      "awayRaw": -0.951,
+      "homeRaw": 2.68,
       "awayDrivers": [
         {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
-          "weight": 0.18,
-          "z": -1.819
-        },
-        {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": -1.552
-        },
-        {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": -1.354
+          "key": "rushEpa",
+          "label": "Rush EPA",
+          "weight": 0.12,
+          "z": -3.994
         },
         {
           "key": "explosiveRate",
           "label": "Explosive rate",
           "weight": 0.1,
-          "z": -0.911
-        }
-      ],
-      "homeDrivers": [
+          "z": -3.54
+        },
         {
           "key": "earlyDownEpa",
           "label": "Early-down EPA",
           "weight": 0.14,
-          "z": 2.616
-        },
-        {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": 2.042
-        },
-        {
-          "key": "rushEpa",
-          "label": "Rush EPA",
-          "weight": 0.12,
-          "z": 1.966
+          "z": -1.153
         },
         {
           "key": "dropbackEpa",
           "label": "Dropback EPA",
           "weight": 0.18,
-          "z": 1.588
+          "z": 0.561
+        }
+      ],
+      "homeDrivers": [
+        {
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": 3.865
+        },
+        {
+          "key": "earlyDownEpa",
+          "label": "Early-down EPA",
+          "weight": 0.14,
+          "z": 3.125
+        },
+        {
+          "key": "explosiveRate",
+          "label": "Explosive rate",
+          "weight": 0.1,
+          "z": 3.064
+        },
+        {
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": 2.802
         }
       ]
     },
     {
-      "gameId": "2026-W8-LAC-LAR",
-      "portalGameId": "401873032",
-      "away": "Los Angeles Chargers",
-      "awayAbbr": "LAC",
-      "home": "Los Angeles Rams",
-      "homeAbbr": "LAR",
-      "marketSpread": "Los Angeles Rams -6.5",
-      "structuralFair": "Los Angeles Rams -9.1",
-      "productionFair": "Los Angeles Rams -7",
-      "structuralLean": "LAR",
-      "matchupFavoredSide": "LAR",
-      "advantageGap": 27.1,
-      "alignment": "CONFIRMED",
-      "awayScore": 25.4,
-      "homeScore": 52.5,
-      "awayRaw": -2.047,
-      "homeRaw": 0.206,
+      "gameId": "2026-W9-ARI-SEA",
+      "portalGameId": "401873048",
+      "away": "Arizona Cardinals",
+      "awayAbbr": "ARI",
+      "home": "Seattle Seahawks",
+      "homeAbbr": "SEA",
+      "marketSpread": "Seattle Seahawks -11.5",
+      "structuralFair": "Seattle Seahawks -8.9",
+      "productionFair": "Seattle Seahawks -11",
+      "structuralLean": "ARI",
+      "matchupFavoredSide": "SEA",
+      "advantageGap": 25.5,
+      "alignment": "CONFLICT",
+      "awayScore": 24.1,
+      "homeScore": 49.6,
+      "awayRaw": -2.157,
+      "homeRaw": -0.033,
       "awayDrivers": [
         {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": -3.261
-        },
-        {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
-          "weight": 0.18,
-          "z": -2.768
-        },
-        {
-          "key": "successRate",
-          "label": "Success rate",
-          "weight": 0.16,
-          "z": -2.209
-        },
-        {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": -1.523
-        }
-      ],
-      "homeDrivers": [
-        {
-          "key": "successRate",
-          "label": "Success rate",
-          "weight": 0.16,
-          "z": 1.273
-        },
-        {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": 0.803
+          "key": "explosiveRate",
+          "label": "Explosive rate",
+          "weight": 0.1,
+          "z": -4.108
         },
         {
           "key": "passProtection",
           "label": "Pass protection vs QB hits/sacks",
           "weight": 0.12,
-          "z": -0.581
-        },
-        {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
-          "weight": 0.18,
-          "z": -0.397
-        }
-      ]
-    },
-    {
-      "gameId": "2026-W8-TEN-CIN",
-      "portalGameId": "401873031",
-      "away": "Tennessee Titans",
-      "awayAbbr": "TEN",
-      "home": "Cincinnati Bengals",
-      "homeAbbr": "CIN",
-      "marketSpread": "Cincinnati Bengals -13.5",
-      "structuralFair": "Cincinnati Bengals -10.7",
-      "productionFair": "Cincinnati Bengals -12.9",
-      "structuralLean": "TEN",
-      "matchupFavoredSide": "CIN",
-      "advantageGap": 27,
-      "alignment": "CONFLICT",
-      "awayScore": 34.7,
-      "homeScore": 61.7,
-      "awayRaw": -1.274,
-      "homeRaw": 0.976,
-      "awayDrivers": [
-        {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": -2.4
-        },
-        {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": -2.117
-        },
-        {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
-          "weight": 0.18,
-          "z": -2.106
+          "z": -2.685
         },
         {
           "key": "successRate",
           "label": "Success rate",
           "weight": 0.16,
-          "z": -1.026
+          "z": -2.335
+        },
+        {
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": -1.949
+        }
+      ],
+      "homeDrivers": [
+        {
+          "key": "rushEpa",
+          "label": "Rush EPA",
+          "weight": 0.12,
+          "z": -2.005
+        },
+        {
+          "key": "dropbackEpa",
+          "label": "Dropback EPA",
+          "weight": 0.18,
+          "z": 1.986
+        },
+        {
+          "key": "passProtection",
+          "label": "Pass protection vs QB hits/sacks",
+          "weight": 0.12,
+          "z": -1.041
+        },
+        {
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": -0.54
+        }
+      ]
+    },
+    {
+      "gameId": "2026-W9-HOU-LAC",
+      "portalGameId": "401873046",
+      "away": "Houston Texans",
+      "awayAbbr": "HOU",
+      "home": "Los Angeles Chargers",
+      "homeAbbr": "LAC",
+      "marketSpread": "Houston Texans -4.5",
+      "structuralFair": "Houston Texans -8.2",
+      "productionFair": "Houston Texans -5.2",
+      "structuralLean": "HOU",
+      "matchupFavoredSide": "HOU",
+      "advantageGap": 24.5,
+      "alignment": "CONFIRMED",
+      "awayScore": 50.6,
+      "homeScore": 26.1,
+      "awayRaw": 0.053,
+      "homeRaw": -1.989,
+      "awayDrivers": [
+        {
+          "key": "earlyDownEpa",
+          "label": "Early-down EPA",
+          "weight": 0.14,
+          "z": 1.19
+        },
+        {
+          "key": "rushEpa",
+          "label": "Rush EPA",
+          "weight": 0.12,
+          "z": -1.002
+        },
+        {
+          "key": "passProtection",
+          "label": "Pass protection vs QB hits/sacks",
+          "weight": 0.12,
+          "z": 0.595
+        },
+        {
+          "key": "explosiveRate",
+          "label": "Explosive rate",
+          "weight": 0.1,
+          "z": 0.48
         }
       ],
       "homeDrivers": [
@@ -212,70 +212,141 @@
           "key": "successRate",
           "label": "Success rate",
           "weight": 0.16,
-          "z": 1.694
-        },
-        {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": 1.677
-        },
-        {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
-          "weight": 0.18,
-          "z": 1.606
+          "z": -2.909
         },
         {
           "key": "earlyDownEpa",
           "label": "Early-down EPA",
           "weight": 0.14,
-          "z": 1.315
+          "z": -2.356
+        },
+        {
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": -2.33
+        },
+        {
+          "key": "dropbackEpa",
+          "label": "Dropback EPA",
+          "weight": 0.18,
+          "z": -2.121
         }
       ]
     },
     {
-      "gameId": "2026-W8-NE-MIA",
-      "portalGameId": "401873034",
-      "away": "New England Patriots",
-      "awayAbbr": "NE",
+      "gameId": "2026-W9-JAX-BAL",
+      "portalGameId": "401873037",
+      "away": "Jacksonville Jaguars",
+      "awayAbbr": "JAX",
+      "home": "Baltimore Ravens",
+      "homeAbbr": "BAL",
+      "marketSpread": "Jacksonville Jaguars -8.5",
+      "structuralFair": "Jacksonville Jaguars -20.5",
+      "productionFair": "Jacksonville Jaguars -10.9",
+      "structuralLean": "JAX",
+      "matchupFavoredSide": "JAX",
+      "advantageGap": 20.3,
+      "alignment": "CONFIRMED",
+      "awayScore": 61.3,
+      "homeScore": 41,
+      "awayRaw": 0.939,
+      "homeRaw": -0.753,
+      "awayDrivers": [
+        {
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": 1.802
+        },
+        {
+          "key": "dropbackEpa",
+          "label": "Dropback EPA",
+          "weight": 0.18,
+          "z": 1.467
+        },
+        {
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": 1.276
+        },
+        {
+          "key": "earlyDownEpa",
+          "label": "Early-down EPA",
+          "weight": 0.14,
+          "z": 0.85
+        }
+      ],
+      "homeDrivers": [
+        {
+          "key": "rushEpa",
+          "label": "Rush EPA",
+          "weight": 0.12,
+          "z": -1.946
+        },
+        {
+          "key": "passProtection",
+          "label": "Pass protection vs QB hits/sacks",
+          "weight": 0.12,
+          "z": -1.135
+        },
+        {
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": -1.075
+        },
+        {
+          "key": "dropbackEpa",
+          "label": "Dropback EPA",
+          "weight": 0.18,
+          "z": -0.665
+        }
+      ]
+    },
+    {
+      "gameId": "2026-W9-DET-MIA",
+      "portalGameId": "401873042",
+      "away": "Detroit Lions",
+      "awayAbbr": "DET",
       "home": "Miami Dolphins",
       "homeAbbr": "MIA",
-      "marketSpread": "New England Patriots -7",
-      "structuralFair": "New England Patriots -1.2",
-      "productionFair": "New England Patriots -5.8",
+      "marketSpread": "Detroit Lions -7",
+      "structuralFair": "Detroit Lions -5.5",
+      "productionFair": "Detroit Lions -6.7",
       "structuralLean": "MIA",
-      "matchupFavoredSide": "NE",
-      "advantageGap": 20.2,
+      "matchupFavoredSide": "DET",
+      "advantageGap": 19.6,
       "alignment": "CONFLICT",
-      "awayScore": 68.4,
-      "homeScore": 48.2,
-      "awayRaw": 1.535,
-      "homeRaw": -0.148,
+      "awayScore": 75.6,
+      "homeScore": 56,
+      "awayRaw": 2.136,
+      "homeRaw": 0.499,
       "awayDrivers": [
         {
           "key": "dropbackEpa",
           "label": "Dropback EPA",
           "weight": 0.18,
-          "z": 3.217
+          "z": 3.431
         },
         {
           "key": "successRate",
           "label": "Success rate",
           "weight": 0.16,
-          "z": 2.234
+          "z": 3.426
         },
         {
           "key": "overallEpa",
           "label": "Overall EPA",
           "weight": 0.18,
-          "z": 2.09
+          "z": 2.802
         },
         {
           "key": "explosiveRate",
           "label": "Explosive rate",
           "weight": 0.1,
-          "z": 1.44
+          "z": 2.032
         }
       ],
       "homeDrivers": [
@@ -283,70 +354,283 @@
           "key": "explosiveRate",
           "label": "Explosive rate",
           "weight": 0.1,
-          "z": 1.272
+          "z": 1.996
         },
         {
-          "key": "successRate",
-          "label": "Success rate",
-          "weight": 0.16,
-          "z": -0.792
+          "key": "dropbackEpa",
+          "label": "Dropback EPA",
+          "weight": 0.18,
+          "z": 0.946
         },
         {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": -0.683
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": 0.873
         },
         {
           "key": "rushEpa",
           "label": "Rush EPA",
           "weight": 0.12,
-          "z": 0.572
+          "z": 0.642
         }
       ]
     },
     {
-      "gameId": "2026-W8-PHI-WSH",
-      "portalGameId": "401873035",
-      "away": "Philadelphia Eagles",
-      "awayAbbr": "PHI",
-      "home": "Washington Commanders",
-      "homeAbbr": "WSH",
-      "marketSpread": "Washington Commanders -6",
-      "structuralFair": "Washington Commanders -2.4",
-      "productionFair": "Washington Commanders -5.3",
+      "gameId": "2026-W9-NYG-PHI",
+      "portalGameId": "401873044",
+      "away": "New York Giants",
+      "awayAbbr": "NYG",
+      "home": "Philadelphia Eagles",
+      "homeAbbr": "PHI",
+      "marketSpread": "New York Giants -3.5",
+      "structuralFair": "New York Giants -2.7",
+      "productionFair": "New York Giants -3.3",
       "structuralLean": "PHI",
-      "matchupFavoredSide": "WSH",
-      "advantageGap": 15.9,
+      "matchupFavoredSide": "NYG",
+      "advantageGap": 19.5,
       "alignment": "CONFLICT",
-      "awayScore": 43.8,
-      "homeScore": 59.7,
-      "awayRaw": -0.519,
-      "homeRaw": 0.812,
+      "awayScore": 60.4,
+      "homeScore": 40.9,
+      "awayRaw": 0.868,
+      "homeRaw": -0.756,
       "awayDrivers": [
-        {
-          "key": "explosiveRate",
-          "label": "Explosive rate",
-          "weight": 0.1,
-          "z": -2.205
-        },
-        {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": -1.709
-        },
         {
           "key": "rushEpa",
           "label": "Rush EPA",
           "weight": 0.12,
-          "z": 0.939
+          "z": 1.905
+        },
+        {
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": 1.387
         },
         {
           "key": "passProtection",
           "label": "Pass protection vs QB hits/sacks",
           "weight": 0.12,
-          "z": 0.618
+          "z": 1.151
+        },
+        {
+          "key": "dropbackEpa",
+          "label": "Dropback EPA",
+          "weight": 0.18,
+          "z": 0.887
+        }
+      ],
+      "homeDrivers": [
+        {
+          "key": "explosiveRate",
+          "label": "Explosive rate",
+          "weight": 0.1,
+          "z": -1.775
+        },
+        {
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": -1.676
+        },
+        {
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": -1.239
+        },
+        {
+          "key": "passProtection",
+          "label": "Pass protection vs QB hits/sacks",
+          "weight": 0.12,
+          "z": 1.231
+        }
+      ]
+    },
+    {
+      "gameId": "2026-W9-LAR-WSH",
+      "portalGameId": "401873043",
+      "away": "Los Angeles Rams",
+      "awayAbbr": "LAR",
+      "home": "Washington Commanders",
+      "homeAbbr": "WSH",
+      "marketSpread": "Los Angeles Rams -5.5",
+      "structuralFair": "Los Angeles Rams -4.9",
+      "productionFair": "Los Angeles Rams -5.4",
+      "structuralLean": "WSH",
+      "matchupFavoredSide": "LAR",
+      "advantageGap": 17.9,
+      "alignment": "CONFLICT",
+      "awayScore": 59.8,
+      "homeScore": 41.9,
+      "awayRaw": 0.818,
+      "homeRaw": -0.672,
+      "awayDrivers": [
+        {
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": 2.192
+        },
+        {
+          "key": "rushEpa",
+          "label": "Rush EPA",
+          "weight": 0.12,
+          "z": 1.891
+        },
+        {
+          "key": "explosiveRate",
+          "label": "Explosive rate",
+          "weight": 0.1,
+          "z": -1.005
+        },
+        {
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": 0.782
+        }
+      ],
+      "homeDrivers": [
+        {
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": -1.615
+        },
+        {
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": -1.464
+        },
+        {
+          "key": "dropbackEpa",
+          "label": "Dropback EPA",
+          "weight": 0.18,
+          "z": -1.059
+        },
+        {
+          "key": "explosiveRate",
+          "label": "Explosive rate",
+          "weight": 0.1,
+          "z": -0.571
+        }
+      ]
+    },
+    {
+      "gameId": "2026-W9-NYJ-KC",
+      "portalGameId": "401873045",
+      "away": "New York Jets",
+      "awayAbbr": "NYJ",
+      "home": "Kansas City Chiefs",
+      "homeAbbr": "KC",
+      "marketSpread": "Kansas City Chiefs -9.5",
+      "structuralFair": "Kansas City Chiefs -6.1",
+      "productionFair": "Kansas City Chiefs -8.8",
+      "structuralLean": "NYJ",
+      "matchupFavoredSide": "KC",
+      "advantageGap": 15.2,
+      "alignment": "CONFLICT",
+      "awayScore": 48.3,
+      "homeScore": 63.5,
+      "awayRaw": -0.146,
+      "homeRaw": 1.124,
+      "awayDrivers": [
+        {
+          "key": "rushEpa",
+          "label": "Rush EPA",
+          "weight": 0.12,
+          "z": -1.049
+        },
+        {
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": -0.498
+        },
+        {
+          "key": "earlyDownEpa",
+          "label": "Early-down EPA",
+          "weight": 0.14,
+          "z": -0.441
+        },
+        {
+          "key": "passProtection",
+          "label": "Pass protection vs QB hits/sacks",
+          "weight": 0.12,
+          "z": 0.374
+        }
+      ],
+      "homeDrivers": [
+        {
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": 1.704
+        },
+        {
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": 1.55
+        },
+        {
+          "key": "dropbackEpa",
+          "label": "Dropback EPA",
+          "weight": 0.18,
+          "z": 1.534
+        },
+        {
+          "key": "earlyDownEpa",
+          "label": "Early-down EPA",
+          "weight": 0.14,
+          "z": 1.137
+        }
+      ]
+    },
+    {
+      "gameId": "2026-W9-DAL-IND",
+      "portalGameId": "401873040",
+      "away": "Dallas Cowboys",
+      "awayAbbr": "DAL",
+      "home": "Indianapolis Colts",
+      "homeAbbr": "IND",
+      "marketSpread": "Dallas Cowboys -6",
+      "structuralFair": "Dallas Cowboys -7.3",
+      "productionFair": "Dallas Cowboys -6.3",
+      "structuralLean": "DAL",
+      "matchupFavoredSide": "DAL",
+      "advantageGap": 12.3,
+      "alignment": "CONFIRMED",
+      "awayScore": 65.1,
+      "homeScore": 52.8,
+      "awayRaw": 1.259,
+      "homeRaw": 0.23,
+      "awayDrivers": [
+        {
+          "key": "rushEpa",
+          "label": "Rush EPA",
+          "weight": 0.12,
+          "z": 2.164
+        },
+        {
+          "key": "earlyDownEpa",
+          "label": "Early-down EPA",
+          "weight": 0.14,
+          "z": 2.13
+        },
+        {
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": 1.732
+        },
+        {
+          "key": "passProtection",
+          "label": "Pass protection vs QB hits/sacks",
+          "weight": 0.12,
+          "z": 1.632
         }
       ],
       "homeDrivers": [
@@ -354,664 +638,451 @@
           "key": "rushEpa",
           "label": "Rush EPA",
           "weight": 0.12,
-          "z": 1.879
-        },
-        {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": 1.082
+          "z": 1.768
         },
         {
           "key": "passProtection",
           "label": "Pass protection vs QB hits/sacks",
+          "weight": 0.12,
+          "z": -0.835
+        },
+        {
+          "key": "explosiveRate",
+          "label": "Explosive rate",
+          "weight": 0.1,
+          "z": 0.657
+        },
+        {
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": 0.625
+        }
+      ]
+    },
+    {
+      "gameId": "2026-W9-CLE-NO",
+      "portalGameId": "401873039",
+      "away": "Cleveland Browns",
+      "awayAbbr": "CLE",
+      "home": "New Orleans Saints",
+      "homeAbbr": "NO",
+      "marketSpread": "New Orleans Saints -2.5",
+      "structuralFair": "New Orleans Saints -8.4",
+      "productionFair": "New Orleans Saints -3.7",
+      "structuralLean": "NO",
+      "matchupFavoredSide": "CLE",
+      "advantageGap": 10.6,
+      "alignment": "CONFLICT",
+      "awayScore": 54.3,
+      "homeScore": 43.7,
+      "awayRaw": 0.357,
+      "homeRaw": -0.527,
+      "awayDrivers": [
+        {
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": 1.517
+        },
+        {
+          "key": "passProtection",
+          "label": "Pass protection vs QB hits/sacks",
+          "weight": 0.12,
+          "z": -1.383
+        },
+        {
+          "key": "rushEpa",
+          "label": "Rush EPA",
           "weight": 0.12,
           "z": 0.995
         },
         {
+          "key": "earlyDownEpa",
+          "label": "Early-down EPA",
+          "weight": 0.14,
+          "z": 0.73
+        }
+      ],
+      "homeDrivers": [
+        {
+          "key": "earlyDownEpa",
+          "label": "Early-down EPA",
+          "weight": 0.14,
+          "z": -0.951
+        },
+        {
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": -0.929
+        },
+        {
           "key": "dropbackEpa",
           "label": "Dropback EPA",
           "weight": 0.18,
-          "z": 0.793
+          "z": -0.826
+        },
+        {
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": -0.654
         }
       ]
     },
     {
-      "gameId": "2026-W8-KC-DEN",
-      "portalGameId": "401873033",
-      "away": "Kansas City Chiefs",
-      "awayAbbr": "KC",
-      "home": "Denver Broncos",
-      "homeAbbr": "DEN",
-      "marketSpread": "Kansas City Chiefs -1.5",
-      "structuralFair": "Denver Broncos -10.4",
-      "productionFair": "Denver Broncos -0.9",
+      "gameId": "2026-W9-DEN-CAR",
+      "portalGameId": "401873041",
+      "away": "Denver Broncos",
+      "awayAbbr": "DEN",
+      "home": "Carolina Panthers",
+      "homeAbbr": "CAR",
+      "marketSpread": "Denver Broncos -3",
+      "structuralFair": "Denver Broncos -5.8",
+      "productionFair": "Denver Broncos -3.6",
       "structuralLean": "DEN",
-      "matchupFavoredSide": "KC",
-      "advantageGap": 14.4,
+      "matchupFavoredSide": "DEN",
+      "advantageGap": 8,
+      "alignment": "CONFIRMED",
+      "awayScore": 54.5,
+      "homeScore": 46.5,
+      "awayRaw": 0.374,
+      "homeRaw": -0.292,
+      "awayDrivers": [
+        {
+          "key": "passProtection",
+          "label": "Pass protection vs QB hits/sacks",
+          "weight": 0.12,
+          "z": 3.782
+        },
+        {
+          "key": "explosiveRate",
+          "label": "Explosive rate",
+          "weight": 0.1,
+          "z": -1.829
+        },
+        {
+          "key": "rushEpa",
+          "label": "Rush EPA",
+          "weight": 0.12,
+          "z": 1.204
+        },
+        {
+          "key": "earlyDownEpa",
+          "label": "Early-down EPA",
+          "weight": 0.14,
+          "z": 1.114
+        }
+      ],
+      "homeDrivers": [
+        {
+          "key": "passProtection",
+          "label": "Pass protection vs QB hits/sacks",
+          "weight": 0.12,
+          "z": -2.288
+        },
+        {
+          "key": "rushEpa",
+          "label": "Rush EPA",
+          "weight": 0.12,
+          "z": 1.585
+        },
+        {
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": -1.372
+        },
+        {
+          "key": "earlyDownEpa",
+          "label": "Early-down EPA",
+          "weight": 0.14,
+          "z": 0.909
+        }
+      ]
+    },
+    {
+      "gameId": "2026-W9-TB-CHI",
+      "portalGameId": "401873050",
+      "away": "Tampa Bay Buccaneers",
+      "awayAbbr": "TB",
+      "home": "Chicago Bears",
+      "homeAbbr": "CHI",
+      "marketSpread": "Chicago Bears -6",
+      "structuralFair": "Tampa Bay Buccaneers -7.2",
+      "productionFair": "Chicago Bears -3.4",
+      "structuralLean": "TB",
+      "matchupFavoredSide": "TB",
+      "advantageGap": 4.7,
+      "alignment": "CONFIRMED",
+      "awayScore": 46,
+      "homeScore": 41.3,
+      "awayRaw": -0.331,
+      "homeRaw": -0.721,
+      "awayDrivers": [
+        {
+          "key": "dropbackEpa",
+          "label": "Dropback EPA",
+          "weight": 0.18,
+          "z": -1.709
+        },
+        {
+          "key": "earlyDownEpa",
+          "label": "Early-down EPA",
+          "weight": 0.14,
+          "z": 1.5
+        },
+        {
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": -1.303
+        },
+        {
+          "key": "explosiveRate",
+          "label": "Explosive rate",
+          "weight": 0.1,
+          "z": 1.137
+        }
+      ],
+      "homeDrivers": [
+        {
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": -1.565
+        },
+        {
+          "key": "passProtection",
+          "label": "Pass protection vs QB hits/sacks",
+          "weight": 0.12,
+          "z": 1.424
+        },
+        {
+          "key": "dropbackEpa",
+          "label": "Dropback EPA",
+          "weight": 0.18,
+          "z": -1.386
+        },
+        {
+          "key": "earlyDownEpa",
+          "label": "Early-down EPA",
+          "weight": 0.14,
+          "z": -1.086
+        }
+      ]
+    },
+    {
+      "gameId": "2026-W9-CIN-ATL",
+      "portalGameId": "401873038",
+      "away": "Cincinnati Bengals",
+      "awayAbbr": "CIN",
+      "home": "Atlanta Falcons",
+      "homeAbbr": "ATL",
+      "marketSpread": "Cincinnati Bengals -3",
+      "structuralFair": "Cincinnati Bengals -7.2",
+      "productionFair": "Cincinnati Bengals -3.8",
+      "structuralLean": "CIN",
+      "matchupFavoredSide": "CIN",
+      "advantageGap": 4.5,
+      "alignment": "CONFIRMED",
+      "awayScore": 51.7,
+      "homeScore": 47.2,
+      "awayRaw": 0.146,
+      "homeRaw": -0.235,
+      "awayDrivers": [
+        {
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": 1.661
+        },
+        {
+          "key": "passProtection",
+          "label": "Pass protection vs QB hits/sacks",
+          "weight": 0.12,
+          "z": -1.262
+        },
+        {
+          "key": "rushEpa",
+          "label": "Rush EPA",
+          "weight": 0.12,
+          "z": -1.169
+        },
+        {
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": 0.713
+        }
+      ],
+      "homeDrivers": [
+        {
+          "key": "passProtection",
+          "label": "Pass protection vs QB hits/sacks",
+          "weight": 0.12,
+          "z": 1.787
+        },
+        {
+          "key": "dropbackEpa",
+          "label": "Dropback EPA",
+          "weight": 0.18,
+          "z": -1.753
+        },
+        {
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": -1.152
+        },
+        {
+          "key": "explosiveRate",
+          "label": "Explosive rate",
+          "weight": 0.1,
+          "z": 1.062
+        }
+      ]
+    },
+    {
+      "gameId": "2026-W9-GB-NE",
+      "portalGameId": "401873049",
+      "away": "Green Bay Packers",
+      "awayAbbr": "GB",
+      "home": "New England Patriots",
+      "homeAbbr": "NE",
+      "marketSpread": "New England Patriots -3",
+      "structuralFair": "New England Patriots -2.3",
+      "productionFair": "New England Patriots -2.9",
+      "structuralLean": "GB",
+      "matchupFavoredSide": "NE",
+      "advantageGap": 4.1,
       "alignment": "CONFLICT",
-      "awayScore": 52.6,
-      "homeScore": 38.2,
-      "awayRaw": 0.219,
-      "homeRaw": -0.98,
+      "awayScore": 43.6,
+      "homeScore": 47.7,
+      "awayRaw": -0.531,
+      "homeRaw": -0.195,
       "awayDrivers": [
         {
           "key": "rushEpa",
           "label": "Rush EPA",
           "weight": 0.12,
-          "z": 2.939
+          "z": -2.916
         },
         {
-          "key": "passProtection",
-          "label": "Pass protection vs QB hits/sacks",
-          "weight": 0.12,
-          "z": -1.638
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": -0.815
+        },
+        {
+          "key": "earlyDownEpa",
+          "label": "Early-down EPA",
+          "weight": 0.14,
+          "z": -0.715
+        },
+        {
+          "key": "dropbackEpa",
+          "label": "Dropback EPA",
+          "weight": 0.18,
+          "z": 0.616
+        }
+      ],
+      "homeDrivers": [
+        {
+          "key": "earlyDownEpa",
+          "label": "Early-down EPA",
+          "weight": 0.14,
+          "z": -1.198
         },
         {
           "key": "explosiveRate",
           "label": "Explosive rate",
           "weight": 0.1,
-          "z": 1.048
-        },
-        {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
-          "weight": 0.18,
-          "z": -0.669
-        }
-      ],
-      "homeDrivers": [
-        {
-          "key": "passProtection",
-          "label": "Pass protection vs QB hits/sacks",
-          "weight": 0.12,
-          "z": 2.585
-        },
-        {
-          "key": "successRate",
-          "label": "Success rate",
-          "weight": 0.16,
-          "z": -2.434
-        },
-        {
-          "key": "explosiveRate",
-          "label": "Explosive rate",
-          "weight": 0.1,
-          "z": -1.913
-        },
-        {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
-          "weight": 0.18,
-          "z": -1.347
-        }
-      ]
-    },
-    {
-      "gameId": "2026-W8-MIN-DET",
-      "portalGameId": "401873030",
-      "away": "Minnesota Vikings",
-      "awayAbbr": "MIN",
-      "home": "Detroit Lions",
-      "homeAbbr": "DET",
-      "marketSpread": "Detroit Lions -3",
-      "structuralFair": "Detroit Lions -0.1",
-      "productionFair": "Detroit Lions -2.4",
-      "structuralLean": "MIN",
-      "matchupFavoredSide": "MIN",
-      "advantageGap": 14.1,
-      "alignment": "CONFIRMED",
-      "awayScore": 50.3,
-      "homeScore": 36.2,
-      "awayRaw": 0.022,
-      "homeRaw": -1.151,
-      "awayDrivers": [
-        {
-          "key": "successRate",
-          "label": "Success rate",
-          "weight": 0.16,
-          "z": -1.156
-        },
-        {
-          "key": "explosiveRate",
-          "label": "Explosive rate",
-          "weight": 0.1,
-          "z": 1.034
-        },
-        {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
-          "weight": 0.18,
-          "z": 0.821
-        },
-        {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": 0.495
-        }
-      ],
-      "homeDrivers": [
-        {
-          "key": "passProtection",
-          "label": "Pass protection vs QB hits/sacks",
-          "weight": 0.12,
-          "z": -2.235
-        },
-        {
-          "key": "rushEpa",
-          "label": "Rush EPA",
-          "weight": 0.12,
-          "z": -1.661
-        },
-        {
-          "key": "successRate",
-          "label": "Success rate",
-          "weight": 0.16,
-          "z": -1.219
-        },
-        {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": -1.153
-        }
-      ]
-    },
-    {
-      "gameId": "2026-W8-CHI-SEA",
-      "portalGameId": "401873036",
-      "away": "Chicago Bears",
-      "awayAbbr": "CHI",
-      "home": "Seattle Seahawks",
-      "homeAbbr": "SEA",
-      "marketSpread": "Seattle Seahawks -3",
-      "structuralFair": "Seattle Seahawks -7.9",
-      "productionFair": "Seattle Seahawks -4",
-      "structuralLean": "SEA",
-      "matchupFavoredSide": "SEA",
-      "advantageGap": 12.4,
-      "alignment": "CONFIRMED",
-      "awayScore": 33.2,
-      "homeScore": 45.6,
-      "awayRaw": -1.397,
-      "homeRaw": -0.364,
-      "awayDrivers": [
-        {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": -1.959
-        },
-        {
-          "key": "explosiveRate",
-          "label": "Explosive rate",
-          "weight": 0.1,
-          "z": -1.701
-        },
-        {
-          "key": "successRate",
-          "label": "Success rate",
-          "weight": 0.16,
-          "z": -1.414
-        },
-        {
-          "key": "passProtection",
-          "label": "Pass protection vs QB hits/sacks",
-          "weight": 0.12,
-          "z": -1.407
-        }
-      ],
-      "homeDrivers": [
-        {
-          "key": "passProtection",
-          "label": "Pass protection vs QB hits/sacks",
-          "weight": 0.12,
-          "z": -1.948
-        },
-        {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": 1.271
-        },
-        {
-          "key": "rushEpa",
-          "label": "Rush EPA",
-          "weight": 0.12,
-          "z": -1.138
-        },
-        {
-          "key": "successRate",
-          "label": "Success rate",
-          "weight": 0.16,
-          "z": -0.947
-        }
-      ]
-    },
-    {
-      "gameId": "2026-W8-LV-NYJ",
-      "portalGameId": "401873029",
-      "away": "Las Vegas Raiders",
-      "awayAbbr": "LV",
-      "home": "New York Jets",
-      "homeAbbr": "NYJ",
-      "marketSpread": "New York Jets -1.5",
-      "structuralFair": "New York Jets -3.8",
-      "productionFair": "New York Jets -2",
-      "structuralLean": "NYJ",
-      "matchupFavoredSide": "NYJ",
-      "advantageGap": 10,
-      "alignment": "CONFIRMED",
-      "awayScore": 45.5,
-      "homeScore": 55.5,
-      "awayRaw": -0.374,
-      "homeRaw": 0.455,
-      "awayDrivers": [
-        {
-          "key": "rushEpa",
-          "label": "Rush EPA",
-          "weight": 0.12,
-          "z": -2.79
-        },
-        {
-          "key": "explosiveRate",
-          "label": "Explosive rate",
-          "weight": 0.1,
-          "z": -0.792
-        },
-        {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
-          "weight": 0.18,
-          "z": 0.723
-        },
-        {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": -0.428
-        }
-      ],
-      "homeDrivers": [
-        {
-          "key": "passProtection",
-          "label": "Pass protection vs QB hits/sacks",
-          "weight": 0.12,
-          "z": -2.022
-        },
-        {
-          "key": "successRate",
-          "label": "Success rate",
-          "weight": 0.16,
-          "z": 1.57
-        },
-        {
-          "key": "explosiveRate",
-          "label": "Explosive rate",
-          "weight": 0.1,
-          "z": 1.283
-        },
-        {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": 0.893
-        }
-      ]
-    },
-    {
-      "gameId": "2026-W8-ARI-DAL",
-      "portalGameId": "401873024",
-      "away": "Arizona Cardinals",
-      "awayAbbr": "ARI",
-      "home": "Dallas Cowboys",
-      "homeAbbr": "DAL",
-      "marketSpread": "Dallas Cowboys -7",
-      "structuralFair": "Dallas Cowboys -11.1",
-      "productionFair": "Dallas Cowboys -7.8",
-      "structuralLean": "DAL",
-      "matchupFavoredSide": "DAL",
-      "advantageGap": 6.6,
-      "alignment": "CONFIRMED",
-      "awayScore": 61.1,
-      "homeScore": 67.7,
-      "awayRaw": 0.927,
-      "homeRaw": 1.474,
-      "awayDrivers": [
-        {
-          "key": "successRate",
-          "label": "Success rate",
-          "weight": 0.16,
-          "z": 1.549
-        },
-        {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": 1.516
-        },
-        {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
-          "weight": 0.18,
-          "z": 1.318
-        },
-        {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": 1.209
-        }
-      ],
-      "homeDrivers": [
-        {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
-          "weight": 0.18,
-          "z": 2.329
-        },
-        {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": 2.211
-        },
-        {
-          "key": "passProtection",
-          "label": "Pass protection vs QB hits/sacks",
-          "weight": 0.12,
-          "z": 1.683
-        },
-        {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": 1.535
-        }
-      ]
-    },
-    {
-      "gameId": "2026-W8-CLE-PIT",
-      "portalGameId": "401873027",
-      "away": "Cleveland Browns",
-      "awayAbbr": "CLE",
-      "home": "Pittsburgh Steelers",
-      "homeAbbr": "PIT",
-      "marketSpread": "Pittsburgh Steelers -3.5",
-      "structuralFair": "Pittsburgh Steelers -5.1",
-      "productionFair": "Pittsburgh Steelers -3.8",
-      "structuralLean": "PIT",
-      "matchupFavoredSide": "PIT",
-      "advantageGap": 3.9,
-      "alignment": "CONFIRMED",
-      "awayScore": 37.8,
-      "homeScore": 41.7,
-      "awayRaw": -1.015,
-      "homeRaw": -0.692,
-      "awayDrivers": [
-        {
-          "key": "passProtection",
-          "label": "Pass protection vs QB hits/sacks",
-          "weight": 0.12,
-          "z": -1.71
-        },
-        {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": -1.365
-        },
-        {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": -1.265
-        },
-        {
-          "key": "successRate",
-          "label": "Success rate",
-          "weight": 0.16,
-          "z": -0.874
-        }
-      ],
-      "homeDrivers": [
-        {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
-          "weight": 0.18,
-          "z": -1.796
-        },
-        {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": -1.157
-        },
-        {
-          "key": "successRate",
-          "label": "Success rate",
-          "weight": 0.16,
           "z": -1.105
         },
         {
+          "key": "passProtection",
+          "label": "Pass protection vs QB hits/sacks",
+          "weight": 0.12,
+          "z": 0.764
+        },
+        {
           "key": "rushEpa",
           "label": "Rush EPA",
           "weight": 0.12,
-          "z": 1.015
+          "z": -0.598
         }
       ]
     },
     {
-      "gameId": "2026-W8-BAL-BUF",
-      "portalGameId": "401873026",
-      "away": "Baltimore Ravens",
-      "awayAbbr": "BAL",
-      "home": "Buffalo Bills",
-      "homeAbbr": "BUF",
-      "marketSpread": "Buffalo Bills -3",
-      "structuralFair": "Buffalo Bills -9.3",
-      "productionFair": "Buffalo Bills -4.3",
+      "gameId": "2026-W9-BUF-MIN",
+      "portalGameId": "401873051",
+      "away": "Buffalo Bills",
+      "awayAbbr": "BUF",
+      "home": "Minnesota Vikings",
+      "homeAbbr": "MIN",
+      "marketSpread": "Buffalo Bills -3.5",
+      "structuralFair": "Buffalo Bills -9.7",
+      "productionFair": "Buffalo Bills -4.7",
       "structuralLean": "BUF",
-      "matchupFavoredSide": "BAL",
-      "advantageGap": 3.8,
-      "alignment": "CONFLICT",
-      "awayScore": 71,
-      "homeScore": 67.2,
-      "awayRaw": 1.75,
-      "homeRaw": 1.43,
-      "awayDrivers": [
-        {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
-          "weight": 0.18,
-          "z": 2.386
-        },
-        {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": 2.287
-        },
-        {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": 2.236
-        },
-        {
-          "key": "successRate",
-          "label": "Success rate",
-          "weight": 0.16,
-          "z": 2.066
-        }
-      ],
-      "homeDrivers": [
-        {
-          "key": "explosiveRate",
-          "label": "Explosive rate",
-          "weight": 0.1,
-          "z": 2.574
-        },
-        {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": 2.088
-        },
-        {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
-          "weight": 0.18,
-          "z": 1.783
-        },
-        {
-          "key": "rushEpa",
-          "label": "Rush EPA",
-          "weight": 0.12,
-          "z": 1.389
-        }
-      ]
-    },
-    {
-      "gameId": "2026-W8-CAR-GB",
-      "portalGameId": "401873023",
-      "away": "Carolina Panthers",
-      "awayAbbr": "CAR",
-      "home": "Green Bay Packers",
-      "homeAbbr": "GB",
-      "marketSpread": "Green Bay Packers -3.5",
-      "structuralFair": "Green Bay Packers -10.9",
-      "productionFair": "Green Bay Packers -5",
-      "structuralLean": "GB",
       "matchupFavoredSide": "NEUTRAL",
-      "advantageGap": 1.4,
+      "advantageGap": 0.6,
       "alignment": "NEUTRAL",
-      "awayScore": 48.2,
+      "awayScore": 47.4,
       "homeScore": 46.8,
-      "awayRaw": -0.154,
-      "homeRaw": -0.268,
+      "awayRaw": -0.218,
+      "homeRaw": -0.266,
       "awayDrivers": [
         {
           "key": "explosiveRate",
           "label": "Explosive rate",
           "weight": 0.1,
-          "z": -1.034
+          "z": 2.916
         },
         {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
-          "weight": 0.18,
-          "z": -0.514
-        },
-        {
-          "key": "successRate",
-          "label": "Success rate",
-          "weight": 0.16,
-          "z": 0.494
-        },
-        {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": -0.241
-        }
-      ],
-      "homeDrivers": [
-        {
-          "key": "successRate",
-          "label": "Success rate",
-          "weight": 0.16,
-          "z": -0.856
+          "key": "passProtection",
+          "label": "Pass protection vs QB hits/sacks",
+          "weight": 0.12,
+          "z": -2.097
         },
         {
           "key": "rushEpa",
           "label": "Rush EPA",
           "weight": 0.12,
-          "z": -0.7
+          "z": 1.203
         },
         {
-          "key": "explosiveRate",
-          "label": "Explosive rate",
-          "weight": 0.1,
-          "z": -0.508
-        },
-        {
-          "key": "passProtection",
-          "label": "Pass protection vs QB hits/sacks",
-          "weight": 0.12,
-          "z": -0.38
-        }
-      ]
-    },
-    {
-      "gameId": "2026-W8-ATL-TB",
-      "portalGameId": "401873025",
-      "away": "Atlanta Falcons",
-      "awayAbbr": "ATL",
-      "home": "Tampa Bay Buccaneers",
-      "homeAbbr": "TB",
-      "marketSpread": "Tampa Bay Buccaneers -1.5",
-      "structuralFair": "Tampa Bay Buccaneers -8.8",
-      "productionFair": "Tampa Bay Buccaneers -3",
-      "structuralLean": "TB",
-      "matchupFavoredSide": "NEUTRAL",
-      "advantageGap": 1.3,
-      "alignment": "NEUTRAL",
-      "awayScore": 39.1,
-      "homeScore": 37.8,
-      "awayRaw": -0.91,
-      "homeRaw": -1.017,
-      "awayDrivers": [
-        {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
-          "weight": 0.18,
-          "z": -2.488
-        },
-        {
-          "key": "passProtection",
-          "label": "Pass protection vs QB hits/sacks",
-          "weight": 0.12,
-          "z": 2.202
-        },
-        {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": -2.026
-        },
-        {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": -0.92
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": -0.833
         }
       ],
       "homeDrivers": [
         {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
-          "weight": 0.18,
-          "z": -1.959
+          "key": "rushEpa",
+          "label": "Rush EPA",
+          "weight": 0.12,
+          "z": -0.794
         },
         {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": -1.661
+          "key": "passProtection",
+          "label": "Pass protection vs QB hits/sacks",
+          "weight": 0.12,
+          "z": -0.783
         },
         {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": -1.291
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": -0.702
         },
         {
           "key": "explosiveRate",
           "label": "Explosive rate",
           "weight": 0.1,
-          "z": -0.82
+          "z": 0.528
         }
       ]
     }
