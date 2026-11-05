@@ -1,0 +1,407 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W9-CIN-ATL",
+  "portalGameId": "401873038",
+  "week": 9,
+  "away": "Cincinnati Bengals",
+  "home": "Atlanta Falcons",
+  "awayAbbr": "CIN",
+  "homeAbbr": "ATL",
+  "kickoff": "2026-11-08T14:30Z",
+  "generatedAt": "2026-11-05T16:29:51.121645+00:00",
+  "status": "PRICE WATCH",
+  "footballLean": "CIN",
+  "assessmentSide": "CIN",
+  "structuralValueSide": "CIN",
+  "alignment": "ALIGNED",
+  "thesis": "CIN has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "CIN",
+      "gap": 0.181,
+      "unit": "EPA/play",
+      "awayOffense": 0.2324704005251088,
+      "homeDefenseAllowed": -0.0060961577443311155,
+      "homeOffense": -0.1603334795289171,
+      "awayDefenseAllowed": 0.02516880662585805,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "CIN",
+      "gap": 0.03,
+      "unit": "EPA/play",
+      "awayOffense": 0.06257116607482165,
+      "homeDefenseAllowed": -0.04970935566485495,
+      "homeOffense": -0.030252881858651846,
+      "awayDefenseAllowed": -0.016781256311431323,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Rushing efficiency",
+      "side": "ATL",
+      "gap": 0.068,
+      "unit": "EPA/play",
+      "awayOffense": -0.08794653949641448,
+      "homeDefenseAllowed": -0.08169678609365111,
+      "homeOffense": -0.023797876204067446,
+      "awayDefenseAllowed": -0.010635972838836542,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "ATL",
+      "gap": 1.236,
+      "unit": "percentage points",
+      "awayOffense": 0.08604651162790698,
+      "homeDefenseAllowed": 0.0905587668593449,
+      "homeOffense": 0.09148936170212765,
+      "awayDefenseAllowed": 0.10983981693363844,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "ATL",
+      "gap": 3.945,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.17586206896551723,
+      "homeDefenseAllowed": 0.16932907348242812,
+      "homeOffense": 0.10317460317460317,
+      "awayDefenseAllowed": 0.16312056737588654,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "CIN",
+      "gap": 0.181,
+      "unit": "EPA/play",
+      "awayOffense": 0.2324704005251088,
+      "homeDefenseAllowed": -0.0060961577443311155,
+      "homeOffense": -0.1603334795289171,
+      "awayDefenseAllowed": 0.02516880662585805,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "CIN",
+      "gap": 0.03,
+      "unit": "EPA/play",
+      "awayOffense": 0.06257116607482165,
+      "homeDefenseAllowed": -0.04970935566485495,
+      "homeOffense": -0.030252881858651846,
+      "awayDefenseAllowed": -0.016781256311431323,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "ATL",
+      "gap": 0.068,
+      "unit": "EPA/play",
+      "awayOffense": -0.08794653949641448,
+      "homeDefenseAllowed": -0.08169678609365111,
+      "homeOffense": -0.023797876204067446,
+      "awayDefenseAllowed": -0.010635972838836542,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "ATL",
+      "gap": 1.236,
+      "unit": "percentage points",
+      "awayOffense": 0.08604651162790698,
+      "homeDefenseAllowed": 0.0905587668593449,
+      "homeOffense": 0.09148936170212765,
+      "awayDefenseAllowed": 0.10983981693363844,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "ATL",
+      "gap": 3.945,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.17586206896551723,
+      "homeDefenseAllowed": 0.16932907348242812,
+      "homeOffense": 0.10317460317460317,
+      "awayDefenseAllowed": 0.16312056737588654,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": -0.1669,
+  "profiles": {
+    "CIN": {
+      "season": {
+        "games": 7,
+        "offPlays": 430,
+        "defPlays": 437,
+        "offEpa": 0.1154,
+        "defEpa": -0.0085,
+        "netEpa": 0.1239,
+        "adjustedNetEpa": 0.1438,
+        "earlyOffEpa": 0.0656,
+        "earlyDefEpa": -0.0236,
+        "passOffEpa": 0.2325,
+        "passDefEpa": 0.0252
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 122,
+        "defPlays": 137,
+        "offEpa": 0.2247,
+        "defEpa": 0.0387,
+        "netEpa": 0.186,
+        "adjustedNetEpa": 0.1264,
+        "earlyOffEpa": 0.176,
+        "earlyDefEpa": -0.03,
+        "passOffEpa": 0.435,
+        "passDefEpa": 0.1352
+      }
+    },
+    "ATL": {
+      "season": {
+        "games": 8,
+        "offPlays": 470,
+        "defPlays": 519,
+        "offEpa": -0.0949,
+        "defEpa": -0.0347,
+        "netEpa": -0.0601,
+        "adjustedNetEpa": -0.0231,
+        "earlyOffEpa": -0.0393,
+        "earlyDefEpa": -0.0502,
+        "passOffEpa": -0.1603,
+        "passDefEpa": -0.0061
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 163,
+        "defPlays": 195,
+        "offEpa": -0.2299,
+        "defEpa": -0.0334,
+        "netEpa": -0.1965,
+        "adjustedNetEpa": -0.1014,
+        "earlyOffEpa": -0.0676,
+        "earlyDefEpa": -0.0099,
+        "passOffEpa": -0.2268,
+        "passDefEpa": 0.0195
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": -7.168,
+    "structuralHomeMargin": -7.168
+  },
+  "market": {
+    "spread_display": "Cincinnati Bengals -3",
+    "spread": "CIN -3",
+    "total": 52.5,
+    "home_margin": -3,
+    "home_team_sportsbook_spread": 3,
+    "moneyline": {
+      "away": -170,
+      "home": 142
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-11-05T16:29:40.341Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": -3.834,
+  "structuralFair": -7.168,
+  "structuralDifference": -4.168,
+  "price": {
+    "side": "CIN",
+    "minimumSpreadAtSnapshot": -2.0,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-05T16:29:40.693385+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [
+      {
+        "team": "CIN",
+        "player": "Jonathan Allen",
+        "position": "DT",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "CIN",
+        "player": "Jordan Battle",
+        "position": "S",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "CIN",
+        "player": "Kyle Dugger",
+        "position": "S",
+        "status": "Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "CIN",
+        "player": "Cedric Johnson",
+        "position": "DE",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "CIN",
+        "player": "DJ Turner II",
+        "position": "CB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "ATL",
+        "player": "Yasir Abdullah",
+        "position": "DE",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "ATL",
+        "player": "Zachariah Branch",
+        "position": "WR",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "ATL",
+        "player": "Divine Deablo",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "ATL",
+        "player": "Brian Robinson",
+        "position": "RB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "CIN",
+        "unit": "Secondary",
+        "count": 3,
+        "players": [
+          "Jordan Battle",
+          "Kyle Dugger",
+          "DJ Turner II"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W9-CIN-ATL",
+    "canonical_game_id": "2026-W9-CIN-ATL",
+    "matchup": "Cincinnati Bengals at Atlanta Falcons",
+    "venue": "Santiago Bernab\u00e9u",
+    "environment": "indoor",
+    "status": "Official indoor venue verified",
+    "summary": "Santiago Bernab\u00e9u is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
+    "risk": "indoor / roof controlled",
+    "observed_at": "2026-11-05T16:29:41.598919+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100",
+    "forecast_timestamp": null,
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W9-CIN-ATL",
+      "kickoff": "2026-11-08T14:30Z",
+      "temp_f": null,
+      "wind_mph": null,
+      "gust_mph": null,
+      "precip_chance_pct": null,
+      "forecast_timestamp": null,
+      "verification_status": "indoor venue; outdoor weather forecast not applicable",
+      "venue": "Santiago Bernab\u00e9u",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100"
+      ],
+      "limitations": [
+        "Roof status is governed by venue/event information; outside air values are not on-field conditions."
+      ],
+      "retrieved_at": "2026-11-05T16:29:41.598919+00:00"
+    },
+    "sources": [
+      "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=9&limit=100"
+    ]
+  },
+  "sustainability": {
+    "CIN": {
+      "turnoverRate": 0.020930232558139535,
+      "takeawayRate": 0.02517162471395881,
+      "thirdDownConversion": 0.5287356321839081,
+      "redZoneTdRate": 0.6785714285714286
+    },
+    "ATL": {
+      "turnoverRate": 0.029787234042553193,
+      "takeawayRate": 0.019267822736030827,
+      "thirdDownConversion": 0.3368421052631579,
+      "redZoneTdRate": 0.6363636363636364
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 8,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-11-03T05:29:36.748Z",
+      "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+      "spread": "Cincinnati Bengals -3",
+      "homeMargin": -3,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-11-05T15:30:05.744Z",
+      "capturedAt": "2026-11-05T15:30:23.316317+00:00",
+      "spread": "Cincinnati Bengals -3",
+      "homeMargin": -3,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
