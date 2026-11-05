@@ -1,0 +1,494 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W9-NYG-PHI",
+  "portalGameId": "401873044",
+  "week": 9,
+  "away": "New York Giants",
+  "home": "Philadelphia Eagles",
+  "awayAbbr": "NYG",
+  "homeAbbr": "PHI",
+  "kickoff": "2026-11-08T18:00Z",
+  "generatedAt": "2026-11-05T22:30:11.527100+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "NYG",
+  "assessmentSide": "NYG",
+  "structuralValueSide": "PHI",
+  "alignment": "CONFLICT",
+  "thesis": "NYG has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "NYG",
+      "gap": 0.135,
+      "unit": "EPA/play",
+      "awayOffense": 0.07426031282196074,
+      "homeDefenseAllowed": 0.14097577746452164,
+      "homeOffense": -0.11825119623694026,
+      "awayDefenseAllowed": 0.06342443470494051,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "NYG",
+      "gap": 0.038,
+      "unit": "EPA/play",
+      "awayOffense": -0.017602664908623653,
+      "homeDefenseAllowed": 0.050454271575538154,
+      "homeOffense": -0.10098698953647757,
+      "awayDefenseAllowed": 0.05827895864889799,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "NYG",
+      "gap": 0.06,
+      "unit": "EPA/play",
+      "awayOffense": -0.035522620495865534,
+      "homeDefenseAllowed": 0.07280814129482804,
+      "homeOffense": -0.10351307290811494,
+      "awayDefenseAllowed": 0.020050799401337686,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "NYG",
+      "gap": 1.734,
+      "unit": "percentage points",
+      "awayOffense": 0.08552631578947369,
+      "homeDefenseAllowed": 0.09867172675521822,
+      "homeOffense": 0.05439330543933055,
+      "awayDefenseAllowed": 0.0951219512195122,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "NYG",
+      "gap": 0.003,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.17164179104477612,
+      "homeDefenseAllowed": 0.09666666666666666,
+      "homeOffense": 0.16181229773462782,
+      "awayDefenseAllowed": 0.10655737704918032,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "counterarguments": [],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "NYG",
+      "gap": 0.135,
+      "unit": "EPA/play",
+      "awayOffense": 0.07426031282196074,
+      "homeDefenseAllowed": 0.14097577746452164,
+      "homeOffense": -0.11825119623694026,
+      "awayDefenseAllowed": 0.06342443470494051,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "NYG",
+      "gap": 0.038,
+      "unit": "EPA/play",
+      "awayOffense": -0.017602664908623653,
+      "homeDefenseAllowed": 0.050454271575538154,
+      "homeOffense": -0.10098698953647757,
+      "awayDefenseAllowed": 0.05827895864889799,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "NYG",
+      "gap": 0.06,
+      "unit": "EPA/play",
+      "awayOffense": -0.035522620495865534,
+      "homeDefenseAllowed": 0.07280814129482804,
+      "homeOffense": -0.10351307290811494,
+      "awayDefenseAllowed": 0.020050799401337686,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "NYG",
+      "gap": 1.734,
+      "unit": "percentage points",
+      "awayOffense": 0.08552631578947369,
+      "homeDefenseAllowed": 0.09867172675521822,
+      "homeOffense": 0.05439330543933055,
+      "awayDefenseAllowed": 0.0951219512195122,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "NYG",
+      "gap": 0.003,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.17164179104477612,
+      "homeDefenseAllowed": 0.09666666666666666,
+      "homeOffense": 0.16181229773462782,
+      "awayDefenseAllowed": 0.10655737704918032,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": -0.191,
+  "profiles": {
+    "NYG": {
+      "season": {
+        "games": 7,
+        "offPlays": 456,
+        "defPlays": 410,
+        "offEpa": 0.013,
+        "defEpa": 0.011,
+        "netEpa": 0.002,
+        "adjustedNetEpa": -0.0385,
+        "earlyOffEpa": -0.0184,
+        "earlyDefEpa": 0.0521,
+        "passOffEpa": 0.0743,
+        "passDefEpa": 0.0634
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 133,
+        "defPlays": 122,
+        "offEpa": 0.0896,
+        "defEpa": -0.047,
+        "netEpa": 0.1367,
+        "adjustedNetEpa": 0.0961,
+        "earlyOffEpa": 0.124,
+        "earlyDefEpa": -0.0126,
+        "passOffEpa": 0.0203,
+        "passDefEpa": 0.0476
+      }
+    },
+    "PHI": {
+      "season": {
+        "games": 8,
+        "offPlays": 478,
+        "defPlays": 527,
+        "offEpa": -0.1269,
+        "defEpa": 0.1022,
+        "netEpa": -0.2292,
+        "adjustedNetEpa": -0.2295,
+        "earlyOffEpa": -0.101,
+        "earlyDefEpa": 0.0504,
+        "passOffEpa": -0.1183,
+        "passDefEpa": 0.141
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 191,
+        "defPlays": 197,
+        "offEpa": -0.1268,
+        "defEpa": 0.1573,
+        "netEpa": -0.2841,
+        "adjustedNetEpa": -0.3398,
+        "earlyOffEpa": -0.1291,
+        "earlyDefEpa": 0.1294,
+        "passOffEpa": -0.1679,
+        "passDefEpa": 0.1587
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": -2.659,
+    "structuralHomeMargin": -2.66
+  },
+  "market": {
+    "spread_display": "New York Giants -3.5",
+    "spread": "NYG -3.5",
+    "total": 38.5,
+    "home_margin": -3.5,
+    "home_team_sportsbook_spread": 3.5,
+    "moneyline": {
+      "away": -162,
+      "home": 136
+    },
+    "source": "ESPN Draft Kings",
+    "timestamp": "2026-11-05T22:29:59.574Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": -3.332,
+  "structuralFair": -2.66,
+  "structuralDifference": 0.84,
+  "price": {
+    "side": "NYG",
+    "minimumSpreadAtSnapshot": -1.5,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-05T22:29:59.895119+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [
+      {
+        "team": "NYG",
+        "player": "Abdul Carter",
+        "position": "LB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYG",
+        "player": "Jermaine Eluemunor",
+        "position": "T",
+        "status": "Limited Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "NYG",
+        "player": "Malik Harrison",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYG",
+        "player": "Colton Hood",
+        "position": "CB",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "NYG",
+        "player": "Charlie Jones",
+        "position": "WR",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYG",
+        "player": "Cam Skattebo",
+        "position": "RB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYG",
+        "player": "Andrew Thomas",
+        "position": "T",
+        "status": "Limited Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "PHI",
+        "player": "Saquon Barkley",
+        "position": "RB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Jihaad Campbell",
+        "position": "LB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Michael Carter II",
+        "position": "CB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "PHI",
+        "player": "Britain Covey",
+        "position": "WR",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Jake Elliott",
+        "position": "K",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Jonathan Greenard",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Jalyx Hunt",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Jonathan Jones",
+        "position": "CB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "PHI",
+        "player": "DeVonta Smith",
+        "position": "WR",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PHI",
+        "player": "Dontayvion Wicks",
+        "position": "WR",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "NYG",
+        "unit": "OL",
+        "count": 2,
+        "players": [
+          "Jermaine Eluemunor",
+          "Andrew Thomas"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "NYG",
+        "unit": "Secondary",
+        "count": 1,
+        "players": [
+          "Colton Hood"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "PHI",
+        "unit": "Secondary",
+        "count": 2,
+        "players": [
+          "Michael Carter II",
+          "Jonathan Jones"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W9-NYG-PHI",
+    "canonical_game_id": "2026-W9-NYG-PHI",
+    "matchup": "New York Giants at Philadelphia Eagles",
+    "venue": "Lincoln Financial Field",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Sunny at kickoff: 61\u00b0F; wind W 10.0 mph, gust 18.4 mph; precipitation chance 0%.",
+    "risk": "no major hourly weather flag",
+    "observed_at": "2026-11-05T22:30:02.026259+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/39.9008,-75.1675",
+    "forecast_timestamp": "2026-11-05T21:07:39+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W9-NYG-PHI",
+      "kickoff": "2026-11-08T18:00Z",
+      "temp_f": 61,
+      "wind_mph": 10.0,
+      "gust_mph": 18.4,
+      "precip_chance_pct": 0,
+      "forecast_timestamp": "2026-11-05T21:07:39+00:00",
+      "sources": [
+        "https://api.weather.gov/points/39.9008,-75.1675",
+        "https://api.weather.gov/gridpoints/PHI/50,76/forecast/hourly",
+        "https://api.weather.gov/gridpoints/PHI/50,76"
+      ],
+      "wind_speed_raw": "10 mph",
+      "wind_direction": "W",
+      "forecast_hour_start": "2026-11-08T13:00:00-05:00",
+      "forecast_hour_end": "2026-11-08T14:00:00-05:00",
+      "conditions": "Sunny",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-11-05T22:30:02.026259+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/39.9008,-75.1675",
+      "https://api.weather.gov/gridpoints/PHI/50,76/forecast/hourly",
+      "https://api.weather.gov/gridpoints/PHI/50,76"
+    ]
+  },
+  "sustainability": {
+    "NYG": {
+      "turnoverRate": 0.021929824561403508,
+      "takeawayRate": 0.01951219512195122,
+      "thirdDownConversion": 0.43010752688172044,
+      "redZoneTdRate": 0.6666666666666666
+    },
+    "PHI": {
+      "turnoverRate": 0.016736401673640166,
+      "takeawayRate": 0.007590132827324478,
+      "thirdDownConversion": 0.37272727272727274,
+      "redZoneTdRate": 0.7142857142857143
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 8,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-11-03T05:29:36.748Z",
+      "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+      "spread": "New York Giants -3.5",
+      "homeMargin": -3.5,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-11-05T21:29:27.405Z",
+      "capturedAt": "2026-11-05T21:29:37.704669+00:00",
+      "spread": "New York Giants -3.5",
+      "homeMargin": -3.5,
+      "source": "ESPN Draft Kings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
