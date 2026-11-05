@@ -1,27 +1,27 @@
 {
   "season": 2026,
   "week": 9,
-  "generated_at": "2026-11-05T13:32:32.283Z",
+  "generated_at": "2026-11-05T14:39:46.243Z",
   "method": "Wednesday spread-based upset screen plus exact-price governance",
   "coverage": {
     "all_current_threshold_candidates_represented": true,
     "selected_week_games": 15,
     "spread_screen_candidates": 0,
-    "near_threshold_watch": 2,
+    "near_threshold_watch": 1,
     "price_policy": "Exact moneylines never inferred from spreads."
   },
   "candidates": [
     {
       "game_id": "2026-W9-JAX-BAL",
       "team": "BAL",
-      "moneyline": 400,
+      "moneyline": 410,
       "eligible": true,
       "nearThreshold": false,
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-05T13:32:30.242Z",
-      "market_implied_probability": 0.2,
+      "priceObservedAt": "2026-11-05T14:39:43.771Z",
+      "market_implied_probability": 0.1961,
       "reason": null,
       "spread": "Jacksonville Jaguars -10",
       "structuralFair": "Jacksonville Jaguars -20.5",
@@ -57,7 +57,7 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 400 via ESPN Draft Kings; threshold qualification is separate from recommendation."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 410 via ESPN Draft Kings; threshold qualification is separate from recommendation."
     },
     {
       "game_id": "2026-W9-NYJ-KC",
@@ -68,7 +68,7 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-05T13:32:30.242Z",
+      "priceObservedAt": "2026-11-05T14:39:43.771Z",
       "market_implied_probability": 0.1852,
       "reason": null,
       "spread": "Kansas City Chiefs -10",
@@ -116,7 +116,7 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-05T13:32:30.242Z",
+      "priceObservedAt": "2026-11-05T14:39:43.771Z",
       "market_implied_probability": 0.2632,
       "reason": null,
       "spread": "Detroit Lions -7",
@@ -164,7 +164,7 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-05T13:32:30.242Z",
+      "priceObservedAt": "2026-11-05T14:39:43.771Z",
       "market_implied_probability": 0.2,
       "reason": null,
       "spread": "San Francisco 49ers -10",
@@ -212,7 +212,7 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-05T13:32:30.242Z",
+      "priceObservedAt": "2026-11-05T14:39:43.771Z",
       "market_implied_probability": 0.2222,
       "reason": null,
       "spread": "Seattle Seahawks -8.5",
@@ -254,54 +254,6 @@
   ],
   "near_threshold_watch": [
     {
-      "game_id": "2026-W9-DAL-IND",
-      "team": "IND",
-      "moneyline": 200,
-      "eligible": false,
-      "nearThreshold": true,
-      "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
-      "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-05T13:32:30.242Z",
-      "market_implied_probability": 0.3333,
-      "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
-      "spread": "Dallas Cowboys -5.5",
-      "structuralFair": "Dallas Cowboys -7.3",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Indianapolis Colts is 5.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Current structural lean DAL; structural fair Dallas Cowboys -7.3."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Preseason prior 2.50 vs opponent -1.96."
-        },
-        {
-          "name": "recent-form",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Prior-week scoring margin -35."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 200 via ESPN Draft Kings; threshold qualification is separate from recommendation."
-    },
-    {
       "game_id": "2026-W9-TB-CHI",
       "team": "TB",
       "moneyline": 245,
@@ -310,7 +262,7 @@
       "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-05T13:32:30.242Z",
+      "priceObservedAt": "2026-11-05T14:39:43.771Z",
       "market_implied_probability": 0.2899,
       "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
       "spread": "Chicago Bears -6",
@@ -351,5 +303,5 @@
     }
   ],
   "price_pending": [],
-  "narrativeReconciledAt": "2026-11-05T13:32:44.343Z"
+  "narrativeReconciledAt": "2026-11-05T14:39:59.210Z"
 }
