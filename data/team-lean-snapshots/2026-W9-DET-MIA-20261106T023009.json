@@ -1,0 +1,487 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W9-DET-MIA",
+  "portalGameId": "401873042",
+  "week": 9,
+  "away": "Detroit Lions",
+  "home": "Miami Dolphins",
+  "awayAbbr": "DET",
+  "homeAbbr": "MIA",
+  "kickoff": "2026-11-08T18:00Z",
+  "generatedAt": "2026-11-06T02:30:09.101351+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "DET",
+  "assessmentSide": "DET",
+  "structuralValueSide": "MIA",
+  "alignment": "CONFLICT",
+  "thesis": "DET has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "DET",
+      "gap": 0.166,
+      "unit": "EPA/play",
+      "awayOffense": 0.2362875785036329,
+      "homeDefenseAllowed": 0.30246959351813707,
+      "homeOffense": 0.008125172154083588,
+      "awayDefenseAllowed": 0.19905273222743,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "DET",
+      "gap": 0.104,
+      "unit": "EPA/play",
+      "awayOffense": 0.13118246539790235,
+      "homeDefenseAllowed": 0.035666182963769,
+      "homeOffense": -0.09804688645167138,
+      "awayDefenseAllowed": 0.05692254791032626,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "DET",
+      "gap": 0.071,
+      "unit": "percentage points",
+      "awayOffense": 0.11471861471861472,
+      "homeDefenseAllowed": 0.10526315789473684,
+      "homeOffense": 0.10579345088161209,
+      "awayDefenseAllowed": 0.1127659574468085,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "DET",
+      "gap": 1.284,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.1524163568773234,
+      "homeDefenseAllowed": 0.1382488479262673,
+      "homeOffense": 0.14096916299559473,
+      "awayDefenseAllowed": 0.1753846153846154,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Rushing efficiency",
+      "side": "MIA",
+      "gap": 0.042,
+      "unit": "EPA/play",
+      "awayOffense": -0.06515358857614344,
+      "homeDefenseAllowed": -0.04833706611772305,
+      "homeOffense": -0.0007087177950129913,
+      "awayDefenseAllowed": -0.028865152993499045,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "DET",
+      "gap": 0.166,
+      "unit": "EPA/play",
+      "awayOffense": 0.2362875785036329,
+      "homeDefenseAllowed": 0.30246959351813707,
+      "homeOffense": 0.008125172154083588,
+      "awayDefenseAllowed": 0.19905273222743,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "DET",
+      "gap": 0.104,
+      "unit": "EPA/play",
+      "awayOffense": 0.13118246539790235,
+      "homeDefenseAllowed": 0.035666182963769,
+      "homeOffense": -0.09804688645167138,
+      "awayDefenseAllowed": 0.05692254791032626,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "MIA",
+      "gap": 0.042,
+      "unit": "EPA/play",
+      "awayOffense": -0.06515358857614344,
+      "homeDefenseAllowed": -0.04833706611772305,
+      "homeOffense": -0.0007087177950129913,
+      "awayDefenseAllowed": -0.028865152993499045,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "DET",
+      "gap": 0.071,
+      "unit": "percentage points",
+      "awayOffense": 0.11471861471861472,
+      "homeDefenseAllowed": 0.10526315789473684,
+      "homeOffense": 0.10579345088161209,
+      "awayDefenseAllowed": 0.1127659574468085,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "DET",
+      "gap": 1.284,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.1524163568773234,
+      "homeDefenseAllowed": 0.1382488479262673,
+      "homeOffense": 0.14096916299559473,
+      "awayDefenseAllowed": 0.1753846153846154,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": -0.1464,
+  "profiles": {
+    "DET": {
+      "season": {
+        "games": 7,
+        "offPlays": 462,
+        "defPlays": 470,
+        "offEpa": 0.1131,
+        "defEpa": 0.1098,
+        "netEpa": 0.0033,
+        "adjustedNetEpa": 0.0129,
+        "earlyOffEpa": 0.1341,
+        "earlyDefEpa": 0.057,
+        "passOffEpa": 0.2363,
+        "passDefEpa": 0.1991
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 132,
+        "defPlays": 115,
+        "offEpa": -0.0546,
+        "defEpa": -0.0192,
+        "netEpa": -0.0353,
+        "adjustedNetEpa": 0.0357,
+        "earlyOffEpa": 0.0465,
+        "earlyDefEpa": -0.1095,
+        "passOffEpa": 0.081,
+        "passDefEpa": 0.0814
+      }
+    },
+    "MIA": {
+      "season": {
+        "games": 7,
+        "offPlays": 397,
+        "defPlays": 399,
+        "offEpa": -0.0454,
+        "defEpa": 0.1311,
+        "netEpa": -0.1764,
+        "adjustedNetEpa": -0.1335,
+        "earlyOffEpa": -0.0991,
+        "earlyDefEpa": 0.0324,
+        "passOffEpa": 0.0081,
+        "passDefEpa": 0.3025
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 123,
+        "defPlays": 109,
+        "offEpa": 0.1108,
+        "defEpa": 0.1924,
+        "netEpa": -0.0816,
+        "adjustedNetEpa": -0.0543,
+        "earlyOffEpa": 0.0284,
+        "earlyDefEpa": 0.0558,
+        "passOffEpa": 0.3235,
+        "passDefEpa": 0.2995
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": -5.49,
+    "structuralHomeMargin": -5.49
+  },
+  "market": {
+    "spread_display": "Detroit Lions -7",
+    "spread": "DET -7",
+    "total": 50.5,
+    "home_margin": -7,
+    "home_team_sportsbook_spread": 7,
+    "moneyline": {
+      "away": -340,
+      "home": 270
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-11-06T02:29:57.454Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": -6.698,
+  "structuralFair": -5.49,
+  "structuralDifference": 1.51,
+  "price": {
+    "side": "DET",
+    "minimumSpreadAtSnapshot": -5.0,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-06T02:29:57.802427+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [
+      {
+        "team": "DET",
+        "player": "Jack Campbell",
+        "position": "LB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "DET",
+        "player": "Kerby Joseph",
+        "position": "S",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "DET",
+        "player": "Cade Mays",
+        "position": "C",
+        "status": "Did Not Participate In Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "DET",
+        "player": "D.J. Reed",
+        "position": "CB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "DET",
+        "player": "Jacob Saylors",
+        "position": "RB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "DET",
+        "player": "Amon-Ra St. Brown",
+        "position": "WR",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "DET",
+        "player": "DJ Wonnum",
+        "position": "DE",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "MIA",
+        "player": "Tucker Addington",
+        "position": "LS",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "MIA",
+        "player": "Kaytron Allen",
+        "position": "RB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "MIA",
+        "player": "Malik Herring",
+        "position": "DE",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "MIA",
+        "player": "Will Kacmarek",
+        "position": "TE",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "MIA",
+        "player": "Chop Robinson",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "MIA",
+        "player": "Zach Sieler",
+        "position": "DT",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "MIA",
+        "player": "Michael Taaffe",
+        "position": "S",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "MIA",
+        "player": "Dante Trader Jr.",
+        "position": "S",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "MIA",
+        "player": "Jaylen Wright",
+        "position": "RB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "DET",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Cade Mays"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "DET",
+        "unit": "Secondary",
+        "count": 2,
+        "players": [
+          "Kerby Joseph",
+          "D.J. Reed"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "MIA",
+        "unit": "Secondary",
+        "count": 2,
+        "players": [
+          "Michael Taaffe",
+          "Dante Trader Jr."
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W9-DET-MIA",
+    "canonical_game_id": "2026-W9-DET-MIA",
+    "matchup": "Detroit Lions at Miami Dolphins",
+    "venue": "Hard Rock Stadium",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Mostly Sunny at kickoff: 82\u00b0F; wind NE 7.0 mph, gust 11.5 mph; precipitation chance 10%.",
+    "risk": "no major hourly weather flag",
+    "observed_at": "2026-11-06T02:29:59.351298+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/25.958,-80.2389",
+    "forecast_timestamp": "2026-11-05T20:02:14+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W9-DET-MIA",
+      "kickoff": "2026-11-08T18:00Z",
+      "temp_f": 82,
+      "wind_mph": 7.0,
+      "gust_mph": 11.5,
+      "precip_chance_pct": 10,
+      "forecast_timestamp": "2026-11-05T20:02:14+00:00",
+      "sources": [
+        "https://api.weather.gov/points/25.958,-80.2389",
+        "https://api.weather.gov/gridpoints/MFL/107,58/forecast/hourly",
+        "https://api.weather.gov/gridpoints/MFL/107,58"
+      ],
+      "wind_speed_raw": "7 mph",
+      "wind_direction": "NE",
+      "forecast_hour_start": "2026-11-08T13:00:00-05:00",
+      "forecast_hour_end": "2026-11-08T14:00:00-05:00",
+      "conditions": "Mostly Sunny",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-11-06T02:29:59.351298+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/25.958,-80.2389",
+      "https://api.weather.gov/gridpoints/MFL/107,58/forecast/hourly",
+      "https://api.weather.gov/gridpoints/MFL/107,58"
+    ]
+  },
+  "sustainability": {
+    "DET": {
+      "turnoverRate": 0.008658008658008658,
+      "takeawayRate": 0.014893617021276596,
+      "thirdDownConversion": 0.3902439024390244,
+      "redZoneTdRate": 0.6666666666666666
+    },
+    "MIA": {
+      "turnoverRate": 0.022670025188916875,
+      "takeawayRate": 0.015037593984962405,
+      "thirdDownConversion": 0.42696629213483145,
+      "redZoneTdRate": 0.5555555555555556
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 8,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-11-03T05:29:36.748Z",
+      "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+      "spread": "Detroit Lions -7",
+      "homeMargin": -7,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-11-06T01:29:37.326Z",
+      "capturedAt": "2026-11-06T01:29:54.603573+00:00",
+      "spread": "Detroit Lions -7",
+      "homeMargin": -7,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
