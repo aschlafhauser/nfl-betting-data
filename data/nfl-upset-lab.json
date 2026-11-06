@@ -1,13 +1,13 @@
 {
   "season": 2026,
   "week": 9,
-  "generated_at": "2026-11-06T20:29:46.060Z",
+  "generated_at": "2026-11-06T21:30:17.311Z",
   "method": "Wednesday spread-based upset screen plus exact-price governance",
   "coverage": {
     "all_current_threshold_candidates_represented": true,
     "selected_week_games": 15,
     "spread_screen_candidates": 0,
-    "near_threshold_watch": 1,
+    "near_threshold_watch": 2,
     "price_policy": "Exact moneylines never inferred from spreads."
   },
   "candidates": [
@@ -19,8 +19,8 @@
       "nearThreshold": false,
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-06T20:29:44.183Z",
+      "priceSource": "ESPN Draft Kings",
+      "priceObservedAt": "2026-11-06T21:29:50.793Z",
       "market_implied_probability": 0.1961,
       "reason": null,
       "spread": "Kansas City Chiefs -9.5",
@@ -57,67 +57,19 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 410 via ESPN DraftKings; threshold qualification is separate from recommendation."
-    },
-    {
-      "game_id": "2026-W9-DET-MIA",
-      "team": "MIA",
-      "moneyline": 260,
-      "eligible": true,
-      "nearThreshold": false,
-      "status": "PRICE_QUALIFIED-RESEARCH",
-      "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-06T20:29:44.183Z",
-      "market_implied_probability": 0.2778,
-      "reason": null,
-      "spread": "Detroit Lions -6.5",
-      "structuralFair": "Detroit Lions -5.5",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Miami Dolphins is 6.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Current structural lean MIA; structural fair Detroit Lions -5.5."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Preseason prior -4.78 vs opponent 1.54."
-        },
-        {
-          "name": "recent-form",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Prior-week scoring margin -5."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 260 via ESPN DraftKings; threshold qualification is separate from recommendation."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 410 via ESPN Draft Kings; threshold qualification is separate from recommendation."
     },
     {
       "game_id": "2026-W9-LV-SF",
       "team": "LV",
-      "moneyline": 370,
+      "moneyline": 380,
       "eligible": true,
       "nearThreshold": false,
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-06T20:29:44.183Z",
-      "market_implied_probability": 0.2128,
+      "priceSource": "ESPN Draft Kings",
+      "priceObservedAt": "2026-11-06T21:29:50.793Z",
+      "market_implied_probability": 0.2083,
       "reason": null,
       "spread": "San Francisco 49ers -10",
       "structuralFair": "San Francisco 49ers -5.7",
@@ -153,7 +105,7 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 370 via ESPN DraftKings; threshold qualification is separate from recommendation."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 380 via ESPN Draft Kings; threshold qualification is separate from recommendation."
     },
     {
       "game_id": "2026-W9-ARI-SEA",
@@ -163,8 +115,8 @@
       "nearThreshold": false,
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-06T20:29:44.183Z",
+      "priceSource": "ESPN Draft Kings",
+      "priceObservedAt": "2026-11-06T21:29:50.793Z",
       "market_implied_probability": 0.2174,
       "reason": null,
       "spread": "Seattle Seahawks -8.5",
@@ -201,10 +153,58 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 360 via ESPN DraftKings; threshold qualification is separate from recommendation."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 360 via ESPN Draft Kings; threshold qualification is separate from recommendation."
     }
   ],
   "near_threshold_watch": [
+    {
+      "game_id": "2026-W9-DET-MIA",
+      "team": "MIA",
+      "moneyline": 240,
+      "eligible": false,
+      "nearThreshold": true,
+      "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
+      "minimum_playable_ml": "NOT_VALIDATED",
+      "priceSource": "ESPN Draft Kings",
+      "priceObservedAt": "2026-11-06T21:29:50.793Z",
+      "market_implied_probability": 0.2941,
+      "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
+      "spread": "Detroit Lions -6.5",
+      "structuralFair": "Detroit Lions -5.5",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Miami Dolphins is 6.5 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Current structural lean MIA; structural fair Detroit Lions -5.5."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Preseason prior -4.78 vs opponent 1.54."
+        },
+        {
+          "name": "recent-form",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Prior-week scoring margin -5."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 240 via ESPN Draft Kings; threshold qualification is separate from recommendation."
+    },
     {
       "game_id": "2026-W9-TB-CHI",
       "team": "TB",
@@ -213,8 +213,8 @@
       "nearThreshold": true,
       "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
       "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-06T20:29:44.183Z",
+      "priceSource": "ESPN Draft Kings",
+      "priceObservedAt": "2026-11-06T21:29:50.793Z",
       "market_implied_probability": 0.3077,
       "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
       "spread": "Chicago Bears -6",
@@ -251,9 +251,9 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 225 via ESPN DraftKings; threshold qualification is separate from recommendation."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 225 via ESPN Draft Kings; threshold qualification is separate from recommendation."
     }
   ],
   "price_pending": [],
-  "narrativeReconciledAt": "2026-11-06T20:29:58.501Z"
+  "narrativeReconciledAt": "2026-11-06T21:30:30.317Z"
 }
