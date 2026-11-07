@@ -1,0 +1,412 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W9-TB-CHI",
+  "portalGameId": "401873050",
+  "week": 9,
+  "away": "Tampa Bay Buccaneers",
+  "home": "Chicago Bears",
+  "awayAbbr": "TB",
+  "homeAbbr": "CHI",
+  "kickoff": "2026-11-09T01:20Z",
+  "generatedAt": "2026-11-07T08:29:50.177112+00:00",
+  "status": "PASS",
+  "footballLean": null,
+  "assessmentSide": null,
+  "structuralValueSide": null,
+  "alignment": "UNRESOLVED",
+  "thesis": "No clear separation in the current opponent-adjusted performance sample.",
+  "mechanisms": [],
+  "counterarguments": [
+    {
+      "name": "Passing efficiency",
+      "side": "CHI",
+      "gap": 0.068,
+      "unit": "EPA/play",
+      "awayOffense": -0.17465502711983416,
+      "homeDefenseAllowed": 0.011337993402571547,
+      "homeOffense": 0.13364149798839536,
+      "awayDefenseAllowed": -0.16120702225188138,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "TB",
+      "gap": 0.058,
+      "unit": "EPA/play",
+      "awayOffense": -0.046253191296854866,
+      "homeDefenseAllowed": 0.12846368584223467,
+      "homeOffense": 0.030198357577420044,
+      "awayDefenseAllowed": -0.06412141059056806,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "TB",
+      "gap": 0.029,
+      "unit": "EPA/play",
+      "awayOffense": 0.03010648944612416,
+      "homeDefenseAllowed": -0.05065616425126799,
+      "homeOffense": 0.010476792901937844,
+      "awayDefenseAllowed": -0.08991552021041659,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "TB",
+      "gap": 1.267,
+      "unit": "percentage points",
+      "awayOffense": 0.09775967413441955,
+      "homeDefenseAllowed": 0.10049019607843138,
+      "homeOffense": 0.10070671378091872,
+      "awayDefenseAllowed": 0.07221006564551423,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "CHI",
+      "gap": 3.03,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.1556420233463035,
+      "homeDefenseAllowed": 0.1647940074906367,
+      "homeOffense": 0.13738019169329074,
+      "awayDefenseAllowed": 0.12244897959183673,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "CHI",
+      "gap": 0.068,
+      "unit": "EPA/play",
+      "awayOffense": -0.17465502711983416,
+      "homeDefenseAllowed": 0.011337993402571547,
+      "homeOffense": 0.13364149798839536,
+      "awayDefenseAllowed": -0.16120702225188138,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "TB",
+      "gap": 0.058,
+      "unit": "EPA/play",
+      "awayOffense": -0.046253191296854866,
+      "homeDefenseAllowed": 0.12846368584223467,
+      "homeOffense": 0.030198357577420044,
+      "awayDefenseAllowed": -0.06412141059056806,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "TB",
+      "gap": 0.029,
+      "unit": "EPA/play",
+      "awayOffense": 0.03010648944612416,
+      "homeDefenseAllowed": -0.05065616425126799,
+      "homeOffense": 0.010476792901937844,
+      "awayDefenseAllowed": -0.08991552021041659,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "TB",
+      "gap": 1.267,
+      "unit": "percentage points",
+      "awayOffense": 0.09775967413441955,
+      "homeDefenseAllowed": 0.10049019607843138,
+      "homeOffense": 0.10070671378091872,
+      "awayDefenseAllowed": 0.07221006564551423,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "CHI",
+      "gap": 3.03,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.1556420233463035,
+      "homeDefenseAllowed": 0.1647940074906367,
+      "homeOffense": 0.13738019169329074,
+      "awayDefenseAllowed": 0.12244897959183673,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": 0.0006,
+  "profiles": {
+    "TB": {
+      "season": {
+        "games": 8,
+        "offPlays": 491,
+        "defPlays": 457,
+        "offEpa": -0.094,
+        "defEpa": -0.1576,
+        "netEpa": 0.0636,
+        "adjustedNetEpa": 0.092,
+        "earlyOffEpa": -0.0463,
+        "earlyDefEpa": -0.0615,
+        "passOffEpa": -0.1747,
+        "passDefEpa": -0.1612
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 190,
+        "defPlays": 179,
+        "offEpa": -0.1041,
+        "defEpa": -0.3141,
+        "netEpa": 0.21,
+        "adjustedNetEpa": 0.2328,
+        "earlyOffEpa": -0.0246,
+        "earlyDefEpa": -0.1705,
+        "passOffEpa": -0.2704,
+        "passDefEpa": -0.4357
+      }
+    },
+    "CHI": {
+      "season": {
+        "games": 8,
+        "offPlays": 566,
+        "defPlays": 408,
+        "offEpa": 0.0629,
+        "defEpa": -0.0242,
+        "netEpa": 0.0871,
+        "adjustedNetEpa": 0.0926,
+        "earlyOffEpa": 0.0302,
+        "earlyDefEpa": 0.1166,
+        "passOffEpa": 0.1336,
+        "passDefEpa": 0.0113
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 206,
+        "defPlays": 158,
+        "offEpa": 0.1334,
+        "defEpa": -0.0857,
+        "netEpa": 0.2192,
+        "adjustedNetEpa": 0.254,
+        "earlyOffEpa": 0.0729,
+        "earlyDefEpa": 0.084,
+        "passOffEpa": 0.2643,
+        "passDefEpa": -0.0273
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": false,
+    "reason": "Structural component arithmetic failed; disagreement withheld.",
+    "reconstructedHomeMargin": 1.931,
+    "structuralHomeMargin": null
+  },
+  "market": {
+    "spread_display": "Chicago Bears -6",
+    "spread": null,
+    "total": 47.5,
+    "home_margin": 6,
+    "home_team_sportsbook_spread": -6,
+    "moneyline": {
+      "away": 230,
+      "home": -285
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-11-07T08:29:36.292Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": 3.401,
+  "structuralFair": null,
+  "structuralDifference": null,
+  "price": {
+    "side": null,
+    "minimumSpreadAtSnapshot": null,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-07T08:29:36.797755+00:00",
+    "reviewComplete": false,
+    "flags": [
+      "TB OUT: LB Yaya Diaby (Knee).",
+      "TB QUESTIONABLE: WR Emeka Egbuka (Foot).",
+      "CHI QUESTIONABLE: RB Kyle Monangai (Thumb, Toe).",
+      "CHI QUESTIONABLE: CB Malik Muhammad (Toe).",
+      "CHI QUESTIONABLE: CB Tyrique Stevenson (Thumb)."
+    ],
+    "watch": [
+      {
+        "team": "TB",
+        "player": "Yaya Diaby",
+        "position": "LB",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "TB",
+        "player": "Emeka Egbuka",
+        "position": "WR",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "TB",
+        "player": "Tristan Wirfs",
+        "position": "T",
+        "status": "Limited Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "CHI",
+        "player": "Kyle Monangai",
+        "position": "RB",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "CHI",
+        "player": "Malik Muhammad",
+        "position": "CB",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "CHI",
+        "player": "Zavier Scott",
+        "position": "RB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "CHI",
+        "player": "Tyrique Stevenson",
+        "position": "CB",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "TB",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Tristan Wirfs"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "CHI",
+        "unit": "Secondary",
+        "count": 2,
+        "players": [
+          "Malik Muhammad",
+          "Tyrique Stevenson"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W9-TB-CHI",
+    "canonical_game_id": "2026-W9-TB-CHI",
+    "matchup": "Tampa Bay Buccaneers at Chicago Bears",
+    "venue": "Soldier Field",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Mostly Clear at kickoff: 53\u00b0F; wind WNW 10.0 mph, gust 19.6 mph; precipitation chance 0%.",
+    "risk": "no major hourly weather flag",
+    "observed_at": "2026-11-07T08:29:39.034972+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/41.8623,-87.6167",
+    "forecast_timestamp": "2026-11-07T06:21:00+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W9-TB-CHI",
+      "kickoff": "2026-11-09T01:20Z",
+      "temp_f": 53,
+      "wind_mph": 10.0,
+      "gust_mph": 19.6,
+      "precip_chance_pct": 0,
+      "forecast_timestamp": "2026-11-07T06:21:00+00:00",
+      "sources": [
+        "https://api.weather.gov/points/41.8623,-87.6167",
+        "https://api.weather.gov/gridpoints/LOT/76,72/forecast/hourly",
+        "https://api.weather.gov/gridpoints/LOT/76,72"
+      ],
+      "wind_speed_raw": "10 mph",
+      "wind_direction": "WNW",
+      "forecast_hour_start": "2026-11-08T19:00:00-06:00",
+      "forecast_hour_end": "2026-11-08T20:00:00-06:00",
+      "conditions": "Mostly Clear",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-11-07T08:29:39.034972+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/41.8623,-87.6167",
+      "https://api.weather.gov/gridpoints/LOT/76,72/forecast/hourly",
+      "https://api.weather.gov/gridpoints/LOT/76,72"
+    ]
+  },
+  "sustainability": {
+    "TB": {
+      "turnoverRate": 0.024439918533604887,
+      "takeawayRate": 0.030634573304157548,
+      "thirdDownConversion": 0.38392857142857145,
+      "redZoneTdRate": 0.5
+    },
+    "CHI": {
+      "turnoverRate": 0.02120141342756184,
+      "takeawayRate": 0.0196078431372549,
+      "thirdDownConversion": 0.4434782608695652,
+      "redZoneTdRate": 0.5882352941176471
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 8,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Structural component arithmetic failed; disagreement withheld.",
+    "No clear opponent-adjusted football separation or current sample unavailable.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-11-03T05:29:36.748Z",
+      "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+      "spread": "Chicago Bears -6",
+      "homeMargin": 6,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-11-07T07:29:38.154Z",
+      "capturedAt": "2026-11-07T07:29:57.176606+00:00",
+      "spread": "Chicago Bears -6",
+      "homeMargin": 6,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
