@@ -1,13 +1,13 @@
 {
   "season": 2026,
   "week": 9,
-  "generated_at": "2026-11-08T12:29:43.139Z",
+  "generated_at": "2026-11-08T13:29:31.727Z",
   "method": "Wednesday spread-based upset screen plus exact-price governance",
   "coverage": {
     "all_current_threshold_candidates_represented": true,
     "selected_week_games": 15,
     "spread_screen_candidates": 0,
-    "near_threshold_watch": 3,
+    "near_threshold_watch": 2,
     "price_policy": "Exact moneylines never inferred from spreads."
   },
   "candidates": [
@@ -20,7 +20,7 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-08T12:29:41.561Z",
+      "priceObservedAt": "2026-11-08T13:29:29.879Z",
       "market_implied_probability": 0.2,
       "reason": null,
       "spread": "Kansas City Chiefs -9.5",
@@ -68,7 +68,7 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-08T12:29:41.561Z",
+      "priceObservedAt": "2026-11-08T13:29:29.879Z",
       "market_implied_probability": 0.2174,
       "reason": null,
       "spread": "San Francisco 49ers -9.5",
@@ -116,7 +116,7 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-08T12:29:41.561Z",
+      "priceObservedAt": "2026-11-08T13:29:29.879Z",
       "market_implied_probability": 0.2273,
       "reason": null,
       "spread": "Seattle Seahawks -8.5",
@@ -160,14 +160,14 @@
     {
       "game_id": "2026-W9-DET-MIA",
       "team": "MIA",
-      "moneyline": 240,
+      "moneyline": 245,
       "eligible": false,
       "nearThreshold": true,
       "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-08T12:29:41.561Z",
-      "market_implied_probability": 0.2941,
+      "priceObservedAt": "2026-11-08T13:29:29.879Z",
+      "market_implied_probability": 0.2899,
       "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
       "spread": "Detroit Lions -6.5",
       "structuralFair": "Detroit Lions -5.5",
@@ -203,55 +203,7 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 240 via ESPN DraftKings; threshold qualification is separate from recommendation."
-    },
-    {
-      "game_id": "2026-W9-HOU-LAC",
-      "team": "LAC",
-      "moneyline": 200,
-      "eligible": false,
-      "nearThreshold": true,
-      "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
-      "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-08T12:29:41.561Z",
-      "market_implied_probability": 0.3333,
-      "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
-      "spread": "Houston Texans -6",
-      "structuralFair": "Houston Texans -8.2",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Los Angeles Chargers is 6 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Current structural lean HOU; structural fair Houston Texans -8.2."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Preseason prior 1.48 vs opponent 5.66."
-        },
-        {
-          "name": "recent-form",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Prior-week scoring margin -15."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 200 via ESPN DraftKings; threshold qualification is separate from recommendation."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 245 via ESPN DraftKings; threshold qualification is separate from recommendation."
     },
     {
       "game_id": "2026-W9-TB-CHI",
@@ -262,7 +214,7 @@
       "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-08T12:29:41.561Z",
+      "priceObservedAt": "2026-11-08T13:29:29.879Z",
       "market_implied_probability": 0.3175,
       "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
       "spread": "Chicago Bears -6",
@@ -303,5 +255,5 @@
     }
   ],
   "price_pending": [],
-  "narrativeReconciledAt": "2026-11-08T12:29:53.506Z"
+  "narrativeReconciledAt": "2026-11-08T13:29:45.929Z"
 }
