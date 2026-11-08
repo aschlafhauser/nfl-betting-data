@@ -1,0 +1,550 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W9-GB-NE",
+  "portalGameId": "401873049",
+  "week": 9,
+  "away": "Green Bay Packers",
+  "home": "New England Patriots",
+  "awayAbbr": "GB",
+  "homeAbbr": "NE",
+  "kickoff": "2026-11-08T21:25Z",
+  "generatedAt": "2026-11-08T20:29:38.256677+00:00",
+  "status": "PASS",
+  "footballLean": null,
+  "assessmentSide": null,
+  "structuralValueSide": "GB",
+  "alignment": "UNRESOLVED",
+  "thesis": "No clear separation in the current opponent-adjusted performance sample.",
+  "mechanisms": [],
+  "counterarguments": [
+    {
+      "name": "Passing efficiency",
+      "side": "GB",
+      "gap": 0.019,
+      "unit": "EPA/play",
+      "awayOffense": 0.12724441918076843,
+      "homeDefenseAllowed": 0.06917684248366016,
+      "homeOffense": 0.2102980430252666,
+      "awayDefenseAllowed": -0.05209697412681024,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "GB",
+      "gap": 0.004,
+      "unit": "EPA/play",
+      "awayOffense": -0.05092038854721659,
+      "homeDefenseAllowed": 0.005917050061882893,
+      "homeOffense": 0.04921350538798657,
+      "awayDefenseAllowed": -0.10172073961027321,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "NE",
+      "gap": 0.104,
+      "unit": "EPA/play",
+      "awayOffense": -0.24030355371940496,
+      "homeDefenseAllowed": -0.08651003147516573,
+      "homeOffense": -0.04006658965895047,
+      "awayDefenseAllowed": -0.07881839315447363,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "GB",
+      "gap": 0.788,
+      "unit": "percentage points",
+      "awayOffense": 0.08979591836734693,
+      "homeDefenseAllowed": 0.09148936170212765,
+      "homeOffense": 0.10515463917525773,
+      "awayDefenseAllowed": 0.06037735849056604,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "NE",
+      "gap": 1.903,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.16158536585365854,
+      "homeDefenseAllowed": 0.16551724137931034,
+      "homeOffense": 0.1413427561837456,
+      "awayDefenseAllowed": 0.1476923076923077,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "GB",
+      "gap": 0.019,
+      "unit": "EPA/play",
+      "awayOffense": 0.12724441918076843,
+      "homeDefenseAllowed": 0.06917684248366016,
+      "homeOffense": 0.2102980430252666,
+      "awayDefenseAllowed": -0.05209697412681024,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "GB",
+      "gap": 0.004,
+      "unit": "EPA/play",
+      "awayOffense": -0.05092038854721659,
+      "homeDefenseAllowed": 0.005917050061882893,
+      "homeOffense": 0.04921350538798657,
+      "awayDefenseAllowed": -0.10172073961027321,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "NE",
+      "gap": 0.104,
+      "unit": "EPA/play",
+      "awayOffense": -0.24030355371940496,
+      "homeDefenseAllowed": -0.08651003147516573,
+      "homeOffense": -0.04006658965895047,
+      "awayDefenseAllowed": -0.07881839315447363,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "GB",
+      "gap": 0.788,
+      "unit": "percentage points",
+      "awayOffense": 0.08979591836734693,
+      "homeDefenseAllowed": 0.09148936170212765,
+      "homeOffense": 0.10515463917525773,
+      "awayDefenseAllowed": 0.06037735849056604,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "NE",
+      "gap": 1.903,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.16158536585365854,
+      "homeDefenseAllowed": 0.16551724137931034,
+      "homeOffense": 0.1413427561837456,
+      "awayDefenseAllowed": 0.1476923076923077,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": -0.0042,
+  "profiles": {
+    "GB": {
+      "season": {
+        "games": 8,
+        "offPlays": 490,
+        "defPlays": 530,
+        "offEpa": 0.0046,
+        "defEpa": -0.0688,
+        "netEpa": 0.0734,
+        "adjustedNetEpa": 0.1014,
+        "earlyOffEpa": -0.0539,
+        "earlyDefEpa": -0.1033,
+        "passOffEpa": 0.1272,
+        "passDefEpa": -0.0521
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 200,
+        "defPlays": 206,
+        "offEpa": 0.0411,
+        "defEpa": -0.1161,
+        "netEpa": 0.1572,
+        "adjustedNetEpa": 0.1687,
+        "earlyOffEpa": -0.1464,
+        "earlyDefEpa": -0.0369,
+        "passOffEpa": 0.1521,
+        "passDefEpa": -0.0558
+      }
+    },
+    "NE": {
+      "season": {
+        "games": 8,
+        "offPlays": 485,
+        "defPlays": 470,
+        "offEpa": 0.0635,
+        "defEpa": 0.0086,
+        "netEpa": 0.0549,
+        "adjustedNetEpa": 0.0972,
+        "earlyOffEpa": 0.0465,
+        "earlyDefEpa": 0.0112,
+        "passOffEpa": 0.2103,
+        "passDefEpa": 0.0692
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 172,
+        "defPlays": 185,
+        "offEpa": 0.0956,
+        "defEpa": 0.0356,
+        "netEpa": 0.06,
+        "adjustedNetEpa": 0.0474,
+        "earlyOffEpa": 0.1286,
+        "earlyDefEpa": 0.0657,
+        "passOffEpa": 0.2811,
+        "passDefEpa": 0.2216
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 2.28,
+    "structuralHomeMargin": 2.28
+  },
+  "market": {
+    "spread_display": "New England Patriots -3",
+    "spread": "NE -3",
+    "total": 44.5,
+    "home_margin": 3,
+    "home_team_sportsbook_spread": -3,
+    "moneyline": {
+      "away": 154,
+      "home": -185
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-11-08T20:29:26.584Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": 2.856,
+  "structuralFair": 2.28,
+  "structuralDifference": -0.72,
+  "price": {
+    "side": null,
+    "minimumSpreadAtSnapshot": null,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-08T20:29:26.934842+00:00",
+    "reviewComplete": true,
+    "flags": [
+      "GB QUESTIONABLE: RB Chris Brooks (Ankle).",
+      "GB OUT: LB Zaire Franklin (Shin).",
+      "GB OUT: G Travis Glover (Knee).",
+      "GB QUESTIONABLE: RB MarShawn Lloyd (Knee).",
+      "GB QUESTIONABLE: CB Keisean Nixon (Groin).",
+      "GB OUT: LB Micah Parsons (Knee).",
+      "GB OUT: C Sean Rhyan (Ankle).",
+      "GB OUT: TE Josh Whyle (Concussion).",
+      "NE OUT: WR A.J. Brown (Ankle, Knee).",
+      "NE QUESTIONABLE: S Kevin Byard (Chest).",
+      "NE QUESTIONABLE: CB Carlton Davis III (Neck).",
+      "NE OUT: RB TreVeyon Henderson (Illness).",
+      "NE QUESTIONABLE: TE Hunter Henry (Foot).",
+      "NE QUESTIONABLE: WR Mack Hollins (Calf).",
+      "NE QUESTIONABLE: T Morgan Moses (Foot).",
+      "NE QUESTIONABLE: S Brenden Schooler (Hamstring).",
+      "NE OUT: G Greg Van Roten (Hamstring)."
+    ],
+    "watch": [
+      {
+        "team": "GB",
+        "player": "Aaron Banks",
+        "position": "G",
+        "status": "Limited Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "GB",
+        "player": "Chris Brooks",
+        "position": "RB",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "GB",
+        "player": "Javon Bullard",
+        "position": "S",
+        "status": "Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "GB",
+        "player": "Zaire Franklin",
+        "position": "LB",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "GB",
+        "player": "Travis Glover",
+        "position": "G",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "GB",
+        "player": "MarShawn Lloyd",
+        "position": "RB",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "GB",
+        "player": "Keisean Nixon",
+        "position": "CB",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "GB",
+        "player": "Micah Parsons",
+        "position": "LB",
+        "status": "Out Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "GB",
+        "player": "Sean Rhyan",
+        "position": "C",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "GB",
+        "player": "Christian Watson",
+        "position": "WR",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "GB",
+        "player": "Josh Whyle",
+        "position": "TE",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NE",
+        "player": "A.J. Brown",
+        "position": "WR",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NE",
+        "player": "Kevin Byard",
+        "position": "S",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "NE",
+        "player": "Carlton Davis III",
+        "position": "CB",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "NE",
+        "player": "TreVeyon Henderson",
+        "position": "RB",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NE",
+        "player": "Hunter Henry",
+        "position": "TE",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NE",
+        "player": "Mack Hollins",
+        "position": "WR",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NE",
+        "player": "Morgan Moses",
+        "position": "T",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "NE",
+        "player": "Brenden Schooler",
+        "position": "S",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "NE",
+        "player": "Greg Van Roten",
+        "position": "G",
+        "status": "Out Limited Participation in Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "GB",
+        "unit": "OL",
+        "count": 3,
+        "players": [
+          "Aaron Banks",
+          "Travis Glover",
+          "Sean Rhyan"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "GB",
+        "unit": "Secondary",
+        "count": 2,
+        "players": [
+          "Javon Bullard",
+          "Keisean Nixon"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "NE",
+        "unit": "OL",
+        "count": 2,
+        "players": [
+          "Morgan Moses",
+          "Greg Van Roten"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "NE",
+        "unit": "Secondary",
+        "count": 3,
+        "players": [
+          "Kevin Byard",
+          "Carlton Davis III",
+          "Brenden Schooler"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W9-GB-NE",
+    "canonical_game_id": "2026-W9-GB-NE",
+    "matchup": "Green Bay Packers at New England Patriots",
+    "venue": "Gillette Stadium",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Sunny at kickoff: 56\u00b0F; wind W 13.0 mph, gust 26.5 mph; precipitation chance 0%.",
+    "risk": "weather review required",
+    "observed_at": "2026-11-08T20:29:28.238709+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/42.0909,-71.2643",
+    "forecast_timestamp": "2026-11-08T18:21:07+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W9-GB-NE",
+      "kickoff": "2026-11-08T21:25Z",
+      "temp_f": 56,
+      "wind_mph": 13.0,
+      "gust_mph": 26.5,
+      "precip_chance_pct": 0,
+      "forecast_timestamp": "2026-11-08T18:21:07+00:00",
+      "sources": [
+        "https://api.weather.gov/points/42.0909,-71.2643",
+        "https://api.weather.gov/gridpoints/BOX/67,88/forecast/hourly",
+        "https://api.weather.gov/gridpoints/BOX/67,88"
+      ],
+      "wind_speed_raw": "13 mph",
+      "wind_direction": "W",
+      "forecast_hour_start": "2026-11-08T16:00:00-05:00",
+      "forecast_hour_end": "2026-11-08T17:00:00-05:00",
+      "conditions": "Sunny",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-11-08T20:29:28.238709+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/42.0909,-71.2643",
+      "https://api.weather.gov/gridpoints/BOX/67,88/forecast/hourly",
+      "https://api.weather.gov/gridpoints/BOX/67,88"
+    ]
+  },
+  "sustainability": {
+    "GB": {
+      "turnoverRate": 0.02040816326530612,
+      "takeawayRate": 0.02830188679245283,
+      "thirdDownConversion": 0.3867924528301887,
+      "redZoneTdRate": 0.5172413793103449
+    },
+    "NE": {
+      "turnoverRate": 0.030927835051546393,
+      "takeawayRate": 0.01702127659574468,
+      "thirdDownConversion": 0.41237113402061853,
+      "redZoneTdRate": 0.5454545454545454
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 8,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "No clear opponent-adjusted football separation or current sample unavailable.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-11-03T05:29:36.748Z",
+      "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+      "spread": "New England Patriots -3",
+      "homeMargin": 3,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-11-08T19:29:46.640Z",
+      "capturedAt": "2026-11-08T19:29:58.893900+00:00",
+      "spread": "New England Patriots -3",
+      "homeMargin": 3,
+      "source": "ESPN Draft Kings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
