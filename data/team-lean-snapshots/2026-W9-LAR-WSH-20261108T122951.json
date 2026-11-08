@@ -1,0 +1,504 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W9-LAR-WSH",
+  "portalGameId": "401873043",
+  "week": 9,
+  "away": "Los Angeles Rams",
+  "home": "Washington Commanders",
+  "awayAbbr": "LAR",
+  "homeAbbr": "WSH",
+  "kickoff": "2026-11-08T18:00Z",
+  "generatedAt": "2026-11-08T12:29:51.344807+00:00",
+  "status": "PASS",
+  "footballLean": null,
+  "assessmentSide": null,
+  "structuralValueSide": "LAR",
+  "alignment": "UNRESOLVED",
+  "thesis": "No clear separation in the current opponent-adjusted performance sample.",
+  "mechanisms": [],
+  "counterarguments": [
+    {
+      "name": "Passing efficiency",
+      "side": "LAR",
+      "gap": 0.082,
+      "unit": "EPA/play",
+      "awayOffense": 0.06922813746362586,
+      "homeDefenseAllowed": 0.0852520469734431,
+      "homeOffense": 0.051996772957776945,
+      "awayDefenseAllowed": -0.061576253348916934,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "WSH",
+      "gap": 0.004,
+      "unit": "EPA/play",
+      "awayOffense": 0.09002260772965918,
+      "homeDefenseAllowed": -0.028276946308153417,
+      "homeOffense": 0.055841276112948805,
+      "awayDefenseAllowed": 0.014735735392062103,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "LAR",
+      "gap": 0.076,
+      "unit": "EPA/play",
+      "awayOffense": 0.02122707456268843,
+      "homeDefenseAllowed": 0.033489238637492647,
+      "homeOffense": -0.009814329878560957,
+      "awayDefenseAllowed": -0.0873703247327654,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "WSH",
+      "gap": 0.416,
+      "unit": "percentage points",
+      "awayOffense": 0.0842911877394636,
+      "homeDefenseAllowed": 0.08108108108108109,
+      "homeOffense": 0.09425287356321839,
+      "awayDefenseAllowed": 0.07942973523421588,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "WSH",
+      "gap": 0.101,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.14285714285714285,
+      "homeDefenseAllowed": 0.1453287197231834,
+      "homeOffense": 0.17582417582417584,
+      "awayDefenseAllowed": 0.1103448275862069,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "LAR",
+      "gap": 0.082,
+      "unit": "EPA/play",
+      "awayOffense": 0.06922813746362586,
+      "homeDefenseAllowed": 0.0852520469734431,
+      "homeOffense": 0.051996772957776945,
+      "awayDefenseAllowed": -0.061576253348916934,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "WSH",
+      "gap": 0.004,
+      "unit": "EPA/play",
+      "awayOffense": 0.09002260772965918,
+      "homeDefenseAllowed": -0.028276946308153417,
+      "homeOffense": 0.055841276112948805,
+      "awayDefenseAllowed": 0.014735735392062103,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "LAR",
+      "gap": 0.076,
+      "unit": "EPA/play",
+      "awayOffense": 0.02122707456268843,
+      "homeDefenseAllowed": 0.033489238637492647,
+      "homeOffense": -0.009814329878560957,
+      "awayDefenseAllowed": -0.0873703247327654,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "WSH",
+      "gap": 0.416,
+      "unit": "percentage points",
+      "awayOffense": 0.0842911877394636,
+      "homeDefenseAllowed": 0.08108108108108109,
+      "homeOffense": 0.09425287356321839,
+      "awayDefenseAllowed": 0.07942973523421588,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "WSH",
+      "gap": 0.101,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.14285714285714285,
+      "homeDefenseAllowed": 0.1453287197231834,
+      "homeOffense": 0.17582417582417584,
+      "awayDefenseAllowed": 0.1103448275862069,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": null,
+  "profiles": {
+    "LAR": {
+      "season": {
+        "games": 8,
+        "offPlays": 522,
+        "defPlays": 491,
+        "offEpa": 0.046,
+        "defEpa": -0.1034,
+        "netEpa": 0.1494,
+        "adjustedNetEpa": 0.1353,
+        "earlyOffEpa": 0.095,
+        "earlyDefEpa": 0.0115,
+        "passOffEpa": 0.0692,
+        "passDefEpa": -0.0616
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 175,
+        "defPlays": 194,
+        "offEpa": -0.0071,
+        "defEpa": -0.198,
+        "netEpa": 0.1909,
+        "adjustedNetEpa": 0.1057,
+        "earlyOffEpa": 0.1082,
+        "earlyDefEpa": -0.0932,
+        "passOffEpa": -0.067,
+        "passDefEpa": -0.1641
+      }
+    },
+    "WSH": {}
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": -4.867,
+    "structuralHomeMargin": -4.868
+  },
+  "market": {
+    "spread_display": "Los Angeles Rams -4.5",
+    "spread": "LAR -5.5",
+    "total": 47.5,
+    "home_margin": -4.5,
+    "home_team_sportsbook_spread": 4.5,
+    "moneyline": {
+      "away": -238,
+      "home": 195
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-11-08T12:29:41.561Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": -4.574,
+  "structuralFair": -4.868,
+  "structuralDifference": -0.368,
+  "price": {
+    "side": null,
+    "minimumSpreadAtSnapshot": null,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-08T12:29:41.844340+00:00",
+    "reviewComplete": true,
+    "flags": [
+      "LAR DOUBTFUL: LS Joe Cardona (Ankle).",
+      "LAR QUESTIONABLE: S Kam Curl (Foot).",
+      "LAR OUT: TE Terrance Ferguson (Ankle, Hamstring).",
+      "LAR QUESTIONABLE: CB Trent McDuffie (Back).",
+      "LAR QUESTIONABLE: TE Colby Parkinson (Ribs).",
+      "LAR QUESTIONABLE: LB Grant Stuard (Hamstring).",
+      "LAR OUT: CB Jaylen Watson (Shoulder).",
+      "LAR QUESTIONABLE: WR Jordan Whittington (Back).",
+      "WAS OUT: WR Dyami Brown (Calf).",
+      "WAS OUT: WR Treylon Burks (Foot).",
+      "WAS QUESTIONABLE: DT Jer'Zhan Newton (Pectoral)."
+    ],
+    "watch": [
+      {
+        "team": "LAR",
+        "player": "Joe Cardona",
+        "position": "LS",
+        "status": "Doubtful Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "LAR",
+        "player": "Kam Curl",
+        "position": "S",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "LAR",
+        "player": "Aaron Donald",
+        "position": "DT",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "LAR",
+        "player": "Terrance Ferguson",
+        "position": "TE",
+        "status": "Out Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "LAR",
+        "player": "Myles Garrett",
+        "position": "LB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "LAR",
+        "player": "Tyler Higbee",
+        "position": "TE",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "LAR",
+        "player": "Alaric Jackson",
+        "position": "T",
+        "status": "Did Not Participate In Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "LAR",
+        "player": "Trent McDuffie",
+        "position": "CB",
+        "status": "Questionable Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "LAR",
+        "player": "Puka Nacua",
+        "position": "WR",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "LAR",
+        "player": "Colby Parkinson",
+        "position": "TE",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "LAR",
+        "player": "Grant Stuard",
+        "position": "LB",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "LAR",
+        "player": "Jaylen Watson",
+        "position": "CB",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "LAR",
+        "player": "Jordan Whittington",
+        "position": "WR",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "LAR",
+        "player": "Byron Young",
+        "position": "LB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "WAS",
+        "player": "John Bates",
+        "position": "TE",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "WAS",
+        "player": "Dyami Brown",
+        "position": "WR",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "WAS",
+        "player": "Treylon Burks",
+        "position": "WR",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "WAS",
+        "player": "Stefon Diggs",
+        "position": "WR",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "WAS",
+        "player": "Jer'Zhan Newton",
+        "position": "DT",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "WAS",
+        "player": "Shy Tuttle",
+        "position": "DT",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "WAS",
+        "player": "Deatrich Wise",
+        "position": "DE",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "LAR",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Alaric Jackson"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "LAR",
+        "unit": "Secondary",
+        "count": 3,
+        "players": [
+          "Kam Curl",
+          "Trent McDuffie",
+          "Jaylen Watson"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W9-LAR-WSH",
+    "canonical_game_id": "2026-W9-LAR-WSH",
+    "matchup": "Los Angeles Rams at Washington Commanders",
+    "venue": "Northwest Stadium",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Sunny at kickoff: 61\u00b0F; wind W 10.0 mph, gust 11.5 mph; precipitation chance 0%.",
+    "risk": "no major hourly weather flag",
+    "observed_at": "2026-11-08T12:29:43.084448+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/38.9076,-76.8645",
+    "forecast_timestamp": "2026-11-08T11:52:33+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W9-LAR-WSH",
+      "kickoff": "2026-11-08T18:00Z",
+      "temp_f": 61,
+      "wind_mph": 10.0,
+      "gust_mph": 11.5,
+      "precip_chance_pct": 0,
+      "forecast_timestamp": "2026-11-08T11:52:33+00:00",
+      "sources": [
+        "https://api.weather.gov/points/38.9076,-76.8645",
+        "https://api.weather.gov/gridpoints/LWX/102,73/forecast/hourly",
+        "https://api.weather.gov/gridpoints/LWX/102,73"
+      ],
+      "wind_speed_raw": "10 mph",
+      "wind_direction": "W",
+      "forecast_hour_start": "2026-11-08T13:00:00-05:00",
+      "forecast_hour_end": "2026-11-08T14:00:00-05:00",
+      "conditions": "Sunny",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-11-08T12:29:43.084448+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/38.9076,-76.8645",
+      "https://api.weather.gov/gridpoints/LWX/102,73/forecast/hourly",
+      "https://api.weather.gov/gridpoints/LWX/102,73"
+    ]
+  },
+  "sustainability": {
+    "LAR": {
+      "turnoverRate": 0.022988505747126436,
+      "takeawayRate": 0.016293279022403257,
+      "thirdDownConversion": 0.43617021276595747,
+      "redZoneTdRate": 0.6875
+    },
+    "WSH": {
+      "turnoverRate": 0.006896551724137931,
+      "takeawayRate": 0.02252252252252252,
+      "thirdDownConversion": 0.3191489361702128,
+      "redZoneTdRate": 0.5263157894736842
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 8,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "No clear opponent-adjusted football separation or current sample unavailable.",
+    "Defense versus motion is Week 1; excluded from lean direction.",
+    "Opponent-adjusted and recent-form sample unavailable; no substitute inferred."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-11-03T05:29:36.748Z",
+      "capturedAt": "2026-11-03T05:29:49.252325+00:00",
+      "spread": "Los Angeles Rams -5.5",
+      "homeMargin": -5.5,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-11-08T11:29:21.888Z",
+      "capturedAt": "2026-11-08T11:29:30.545646+00:00",
+      "spread": "Los Angeles Rams -4.5",
+      "homeMargin": -4.5,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
