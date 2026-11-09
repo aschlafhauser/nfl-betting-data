@@ -1,125 +1,28 @@
 {
   "season": 2026,
   "week": 9,
-  "generated_at": "2026-11-08T23:29:29.096Z",
+  "generated_at": "2026-11-09T00:47:03.461Z",
   "method": "Wednesday spread-based upset screen plus exact-price governance",
   "coverage": {
     "all_current_threshold_candidates_represented": true,
     "selected_week_games": 15,
-    "spread_screen_candidates": 2,
+    "spread_screen_candidates": 0,
     "near_threshold_watch": 1,
     "price_policy": "Exact moneylines never inferred from spreads."
   },
-  "candidates": [
-    {
-      "game_id": "2026-W9-LV-SF",
-      "team": "LV",
-      "moneyline": null,
-      "eligible": false,
-      "nearThreshold": false,
-      "status": "PRICE_PENDING",
-      "minimum_playable_ml": "PRICE_PENDING",
-      "priceSource": null,
-      "priceObservedAt": null,
-      "market_implied_probability": null,
-      "reason": null,
-      "spread": "San Francisco 49ers -8.5",
-      "structuralFair": "San Francisco 49ers -5.7",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Las Vegas Raiders is 8.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Current structural lean LV; structural fair San Francisco 49ers -5.7."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Preseason prior -4.30 vs opponent 3.60."
-        },
-        {
-          "name": "recent-form",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Prior-week scoring margin 5."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
-    },
-    {
-      "game_id": "2026-W9-ARI-SEA",
-      "team": "ARI",
-      "moneyline": null,
-      "eligible": false,
-      "nearThreshold": false,
-      "status": "PRICE_PENDING",
-      "minimum_playable_ml": "PRICE_PENDING",
-      "priceSource": null,
-      "priceObservedAt": null,
-      "market_implied_probability": null,
-      "reason": null,
-      "spread": "Seattle Seahawks -8.5",
-      "structuralFair": "Seattle Seahawks -8.7",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Arizona Cardinals is 8.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Current structural lean SEA; structural fair Seattle Seahawks -8.7."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Preseason prior -2.14 vs opponent 7.68."
-        },
-        {
-          "name": "recent-form",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Prior-week scoring margin 3."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
-    }
-  ],
+  "candidates": [],
   "near_threshold_watch": [
     {
       "game_id": "2026-W9-TB-CHI",
       "team": "TB",
-      "moneyline": 225,
+      "moneyline": 220,
       "eligible": false,
       "nearThreshold": true,
       "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-08T23:29:27.876Z",
-      "market_implied_probability": 0.3077,
+      "priceObservedAt": "2026-11-09T00:47:02.395Z",
+      "market_implied_probability": 0.3125,
       "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
       "spread": "Chicago Bears -6",
       "structuralFair": "Tampa Bay Buccaneers -7",
@@ -155,106 +58,9 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 225 via ESPN DraftKings; threshold qualification is separate from recommendation."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 220 via ESPN DraftKings; threshold qualification is separate from recommendation."
     }
   ],
-  "price_pending": [
-    {
-      "game_id": "2026-W9-LV-SF",
-      "team": "LV",
-      "moneyline": null,
-      "eligible": false,
-      "nearThreshold": false,
-      "status": "PRICE_PENDING",
-      "minimum_playable_ml": "PRICE_PENDING",
-      "priceSource": null,
-      "priceObservedAt": null,
-      "market_implied_probability": null,
-      "reason": null,
-      "spread": "San Francisco 49ers -8.5",
-      "structuralFair": "San Francisco 49ers -5.7",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Las Vegas Raiders is 8.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Current structural lean LV; structural fair San Francisco 49ers -5.7."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Preseason prior -4.30 vs opponent 3.60."
-        },
-        {
-          "name": "recent-form",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Prior-week scoring margin 5."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
-    },
-    {
-      "game_id": "2026-W9-ARI-SEA",
-      "team": "ARI",
-      "moneyline": null,
-      "eligible": false,
-      "nearThreshold": false,
-      "status": "PRICE_PENDING",
-      "minimum_playable_ml": "PRICE_PENDING",
-      "priceSource": null,
-      "priceObservedAt": null,
-      "market_implied_probability": null,
-      "reason": null,
-      "spread": "Seattle Seahawks -8.5",
-      "structuralFair": "Seattle Seahawks -8.7",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Arizona Cardinals is 8.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Current structural lean SEA; structural fair Seattle Seahawks -8.7."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Preseason prior -2.14 vs opponent 7.68."
-        },
-        {
-          "name": "recent-form",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Prior-week scoring margin 3."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
-    }
-  ],
-  "narrativeReconciledAt": "2026-11-08T23:29:42.581Z"
+  "price_pending": [],
+  "narrativeReconciledAt": "2026-11-09T00:47:18.725Z"
 }
