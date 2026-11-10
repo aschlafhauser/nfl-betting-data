@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 10,
-  "generated_at": "2026-11-10T04:31:11.304Z",
+  "generated_at": "2026-11-10T05:34:22.080Z",
   "method": "Wednesday spread-based upset screen plus exact-price governance",
   "coverage": {
     "all_current_threshold_candidates_represented": true,
@@ -14,29 +14,29 @@
     {
       "game_id": "2026-W10-JAX-TEN",
       "team": "TEN",
-      "moneyline": 400,
+      "moneyline": 440,
       "eligible": true,
       "nearThreshold": false,
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-10T04:31:09.513Z",
-      "market_implied_probability": 0.2,
+      "priceObservedAt": "2026-11-10T05:34:18.439Z",
+      "market_implied_probability": 0.1852,
       "reason": null,
-      "spread": "Jacksonville Jaguars -10",
-      "structuralFair": "Jacksonville Jaguars -16.9",
+      "spread": "Jacksonville Jaguars -10.5",
+      "structuralFair": "Jacksonville Jaguars -12.7",
       "criteria": [
         {
           "name": "market-underdog-profile",
           "status": "PASS",
           "passed": true,
-          "evidence": "Tennessee Titans is 10 points from the current spread favorite."
+          "evidence": "Tennessee Titans is 10.5 points from the current spread favorite."
         },
         {
           "name": "structural-resistance",
           "status": "FAIL",
           "passed": false,
-          "evidence": "Frozen structural lean JAX; structural fair Jacksonville Jaguars -16.9."
+          "evidence": "Current structural lean JAX; structural fair Jacksonville Jaguars -12.7."
         },
         {
           "name": "prior-quality-gap",
@@ -57,6 +57,54 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 440 via ESPN DraftKings; threshold qualification is separate from recommendation."
+    },
+    {
+      "game_id": "2026-W10-BUF-NYJ",
+      "team": "NYJ",
+      "moneyline": 400,
+      "eligible": true,
+      "nearThreshold": false,
+      "status": "PRICE_QUALIFIED-RESEARCH",
+      "minimum_playable_ml": "NOT_VALIDATED",
+      "priceSource": "ESPN DraftKings",
+      "priceObservedAt": "2026-11-10T05:34:18.439Z",
+      "market_implied_probability": 0.2,
+      "reason": null,
+      "spread": "Buffalo Bills -8.5",
+      "structuralFair": "Buffalo Bills -7.9",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "New York Jets is 8.5 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Current structural lean NYJ; structural fair Buffalo Bills -7.9."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Preseason prior -6.50 vs opponent 3.00."
+        },
+        {
+          "name": "recent-form",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Prior-week scoring margin -23."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
       "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 400 via ESPN DraftKings; threshold qualification is separate from recommendation."
     },
     {
@@ -68,11 +116,11 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-10T04:31:09.513Z",
+      "priceObservedAt": "2026-11-10T05:34:18.439Z",
       "market_implied_probability": 0.2222,
       "reason": null,
       "spread": "Los Angeles Rams -9.5",
-      "structuralFair": "Los Angeles Rams -14.8",
+      "structuralFair": "Los Angeles Rams -11.2",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -84,7 +132,7 @@
           "name": "structural-resistance",
           "status": "FAIL",
           "passed": false,
-          "evidence": "Frozen structural lean LAR; structural fair Los Angeles Rams -14.8."
+          "evidence": "Current structural lean LAR; structural fair Los Angeles Rams -11.2."
         },
         {
           "name": "prior-quality-gap",
@@ -109,5 +157,6 @@
     }
   ],
   "near_threshold_watch": [],
-  "price_pending": []
+  "price_pending": [],
+  "narrativeReconciledAt": "2026-11-10T05:34:33.747Z"
 }

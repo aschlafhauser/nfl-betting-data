@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 10,
-  "generatedAt": "2026-11-10T04:31:11.304Z",
+  "generatedAt": "2026-11-10T05:34:22.080Z",
   "mode": "Wednesday full reprice / universal research",
   "scheduleCoverage": {
     "canonicalGameCount": 14,
@@ -74,13 +74,13 @@
     {
       "gameId": "2026-W10-MIN-GB",
       "matchup": "Minnesota Vikings at Green Bay Packers",
-      "stage": "market-pending",
-      "priority": "Medium",
-      "currentSpread": "GB -3.5",
-      "productionSpread": null,
+      "stage": "high-priority-audit",
+      "priority": "High",
+      "currentSpread": "Green Bay Packers -4.5",
+      "productionSpread": "Green Bay Packers -7.4",
       "structuralSpread": "Green Bay Packers -19.1",
-      "structuralEdge": null,
-      "lean": null,
+      "structuralEdge": 14.581,
+      "lean": "GB",
       "deepDiveStatus": "COMPLETE",
       "upsetResearch": "SCREENED-NOT-QUALIFIED"
     },
@@ -89,10 +89,10 @@
       "matchup": "Jacksonville Jaguars at Tennessee Titans",
       "stage": "high-priority-audit",
       "priority": "High",
-      "currentSpread": "Jacksonville Jaguars -10",
-      "productionSpread": "Jacksonville Jaguars -11.4",
+      "currentSpread": "Jacksonville Jaguars -10.5",
+      "productionSpread": "Jacksonville Jaguars -11.8",
       "structuralSpread": "Jacksonville Jaguars -16.9",
-      "structuralEdge": 6.95,
+      "structuralEdge": 6.45,
       "lean": "JAX",
       "deepDiveStatus": "COMPLETE",
       "upsetResearch": "COMPLETE-PRICE-QUALIFIED"
@@ -126,15 +126,15 @@
     {
       "gameId": "2026-W10-BUF-NYJ",
       "matchup": "Buffalo Bills at New York Jets",
-      "stage": "market-pending",
-      "priority": "Medium",
-      "currentSpread": null,
-      "productionSpread": null,
+      "stage": "high-priority-audit",
+      "priority": "High",
+      "currentSpread": "Buffalo Bills -8.5",
+      "productionSpread": "Buffalo Bills -11.7",
       "structuralSpread": "Buffalo Bills -24.5",
-      "structuralEdge": null,
-      "lean": null,
+      "structuralEdge": 16.013,
+      "lean": "BUF",
       "deepDiveStatus": "COMPLETE",
-      "upsetResearch": "SCREENED-NOT-QUALIFIED"
+      "upsetResearch": "COMPLETE-PRICE-QUALIFIED"
     },
     {
       "gameId": "2026-W10-SEA-LV",
@@ -204,7 +204,7 @@
   ],
   "modelReview": {
     "status": "COMPLETE",
-    "reviewedAt": "2026-11-10T04:31:11.304Z",
+    "reviewedAt": "2026-11-10T05:34:22.080Z",
     "methodologyVersion": "1.1-validated-structural-market-aware+expert-intelligence-v1",
     "phase": {
       "preseasonWeight": 0.475,
@@ -218,7 +218,7 @@
     "throughWeek": 9
   },
   "upsetResearch": {
-    "candidates": 2,
+    "candidates": 3,
     "pricePending": 0
   }
 }
