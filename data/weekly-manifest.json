@@ -1,29 +1,29 @@
 {
   "version": "NFL-WEEKLY-MANIFEST-v3",
   "season": 2026,
-  "week": 9,
-  "updatedAt": "2026-11-10T00:43:04.954Z",
-  "status": "PASS",
+  "week": 10,
+  "updatedAt": "2026-11-10T01:29:49.828Z",
+  "status": "FAIL",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-11-10.json",
   "gates": {
     "canonicalSchedule": {
       "status": "PASS",
-      "expectedGames": 15,
-      "actualGames": 15,
-      "uniqueCanonicalIds": 15
+      "expectedGames": 14,
+      "actualGames": 14,
+      "uniqueCanonicalIds": 14
     },
     "deepDiveCoverage": {
       "status": "PASS",
-      "completed": 15,
-      "expected": 15,
+      "completed": 14,
+      "expected": 14,
       "sourceFailures": 0,
       "note": "Schedule coverage is never Deep Dive coverage."
     },
     "structuredPerGameReview": {
       "status": "PASS",
-      "classifiedGames": 15,
-      "expected": 15,
+      "classifiedGames": 14,
+      "expected": 14,
       "source": "data/weekday-intel-2026-11-10.json"
     },
     "matchupMatrix": {
@@ -36,35 +36,42 @@
     "statisticalDisplay": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-11-10T00:42:59.344620+00:00",
-      "artifact": "data/statistical-display-integrity-2026-w9.json",
-      "note": "32 observed season-to-date profiles through Week 8; defensive yardage independently aggregated from each opponent box score. Advanced inputs use the same pregame cutoff."
+      "verifiedAt": "2026-11-10T01:29:47.399963+00:00",
+      "artifact": "data/statistical-display-integrity-2026-w10.json",
+      "note": "32 observed season-to-date profiles through Week 9; defensive yardage independently aggregated from each opponent box score. Advanced inputs use the same pregame cutoff."
     },
     "marketDerivedIntegrity": {
-      "status": "PASS",
+      "status": "FAIL",
       "blocking": true,
-      "verifiedAt": "2026-11-10T00:42:49.288Z",
-      "artifact": "data/market-derived-integrity-2026-w9.json",
-      "note": "All 15 current spread-derived production fairs independently reconciled as 80% market + 20% frozen structural line with calculation timestamps at/after market dependency."
+      "verifiedAt": "2026-11-10T01:29:36.429Z",
+      "artifact": "data/market-derived-integrity-2026-w10.json",
+      "note": "2026-W10-MIN-GB: missing market/model home margin | 2026-W10-BUF-NYJ: missing market/model home margin"
     },
     "currentWeekCompleteness": {
-      "status": "PASS",
+      "status": "FAIL",
       "blocking": true,
-      "unplayedGames": 1,
-      "freshMarketGames": 1,
-      "calculationFreshGames": 1,
-      "moneylineAvailableGames": 1,
-      "availabilityCheckpointDue": 1,
-      "availabilityCheckpointComplete": 1,
-      "weatherCheckpointDue": 1,
-      "weatherCheckpointComplete": 1,
+      "unplayedGames": 14,
+      "freshMarketGames": 12,
+      "calculationFreshGames": 12,
+      "moneylineAvailableGames": 12,
+      "availabilityCheckpointDue": 0,
+      "availabilityCheckpointComplete": 0,
+      "weatherCheckpointDue": 0,
+      "weatherCheckpointComplete": 0,
       "upsetLabVerified": true,
-      "issues": [],
-      "warnings": [],
+      "issues": [
+        "fresh spread/total market coverage 12/14",
+        "fresh calculated model coverage 12/14"
+      ],
+      "warnings": [
+        "exact moneyline available for 12/14; missing prices remain PRICE_PENDING and are never inferred",
+        "final injury designations are not yet due under the 30-hour pre-kickoff gate",
+        "game-specific weather verification is not yet due under the 30-hour pre-kickoff gate"
+      ],
       "note": "Wednesday certification requires fresh spread/total, selected-week model calculations, universal Deep Dives and upset research. Exact ML, final injury designations and weather become blocking only when their execution checkpoints are due; missing values are never inferred."
     },
     "homeMarginConvention": {
-      "status": "PASS",
+      "status": "FAIL",
       "note": "Canonical home-margin convention required before all edge calculations; NFL key numbers 3 and 7 remain protected."
     },
     "expertIntelligence": {
@@ -78,7 +85,7 @@
       "youBetterYouBetStatus": "active-current-source-limited",
       "youBetterYouBetChecked": "2026-11-10",
       "pointImpact": 0,
-      "note": "Expert Intelligence remains a qualitative residual with zero automatic model impact. Primary ledger is losslessly synchronized (450 ledger records; 0 missing). Selected-week source inventory is complete; 8/8 families currently have selected-week checks and 0 attributable Week 9 records. You Better You Bet/Audacy has a current substantive source check with zero title-inferred picks."
+      "note": "Expert Intelligence remains a qualitative residual with zero automatic model impact. Primary ledger is losslessly synchronized (450 ledger records; 0 missing). Selected-week source inventory is complete; 8/8 families currently have selected-week checks and 0 attributable Week 10 records. You Better You Bet/Audacy has a current substantive source check with zero title-inferred picks."
     },
     "podcastTranscripts": {
       "status": "PASS-SOURCE-LIMITED",
@@ -90,7 +97,7 @@
       "minutesReviewed": 0,
       "sourceFamilies": 0,
       "pointImpact": 0,
-      "note": "Selected Week 9 source entry points were checked in this run; no complete selected-week episode inventory was available. The layer is current-source-limited, carries zero inferred selections and zero production impact."
+      "note": "Selected Week 10 source entry points were checked in this run; no complete selected-week episode inventory was available. The layer is current-source-limited, carries zero inferred selections and zero production impact."
     },
     "upsetResearchIsolation": {
       "status": "PASS",
@@ -104,8 +111,8 @@
       "status": "PASS",
       "blocking": true,
       "artifact": "data/player-props-expert.json",
-      "artifactWeek": 9,
-      "selectedWeek": 9,
+      "artifactWeek": 10,
+      "selectedWeek": 10,
       "verifiedRecommendations": 0,
       "watchlistRows": 0,
       "verification": {
@@ -134,10 +141,22 @@
       "note": "Historical snapshot debt from prior weeks is retained separately and never rewritten; completed games are exempt from live freshness."
     },
     "timeLimitedOverlays": {
-      "status": "PASS",
-      "items": []
+      "status": "IN_PROGRESS",
+      "items": [
+        "exact moneyline available for 12/14; missing prices remain PRICE_PENDING and are never inferred",
+        "final injury designations are not yet due under the 30-hour pre-kickoff gate",
+        "game-specific weather verification is not yet due under the 30-hour pre-kickoff gate"
+      ]
     }
   },
-  "failures": [],
-  "historicalWarnings": []
+  "failures": [
+    "MARKETDERIVEDINTEGRITY_INCOMPLETE",
+    "CURRENTWEEKCOMPLETENESS_INCOMPLETE",
+    "HOMEMARGINCONVENTION_INCOMPLETE"
+  ],
+  "historicalWarnings": [
+    "exact moneyline available for 12/14; missing prices remain PRICE_PENDING and are never inferred",
+    "final injury designations are not yet due under the 30-hour pre-kickoff gate",
+    "game-specific weather verification is not yet due under the 30-hour pre-kickoff gate"
+  ]
 }
