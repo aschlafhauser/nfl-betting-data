@@ -2,8 +2,8 @@
   "schemaVersion": "1.0-team-leans-research",
   "season": 2026,
   "week": 10,
-  "generatedAt": "2026-11-11T21:30:00.346476+00:00",
-  "inputBoardAt": "2026-11-11T21:29:59.814Z",
+  "generatedAt": "2026-11-11T22:29:49.070245+00:00",
+  "inputBoardAt": "2026-11-11T22:29:48.522Z",
   "throughWeek": 9,
   "researchOnly": true,
   "productionPointImpact": 0,
@@ -26,7 +26,7 @@
       "awayAbbr": "WSH",
       "homeAbbr": "NYG",
       "kickoff": "2026-11-13T01:15Z",
-      "generatedAt": "2026-11-11T21:30:00.346476+00:00",
+      "generatedAt": "2026-11-11T22:29:49.070245+00:00",
       "status": "PASS",
       "footballLean": null,
       "assessmentSide": null,
@@ -196,8 +196,8 @@
           "away": 120,
           "home": -142
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-11T21:29:46.359Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-11T22:29:37.377Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": 3.421,
@@ -212,15 +212,19 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-11T21:29:46.774293+00:00",
+        "observedAt": "2026-11-11T22:29:37.628334+00:00",
         "reviewComplete": true,
-        "flags": [],
+        "flags": [
+          "WAS OUT: C Lucas Patrick (Concussion).",
+          "WAS OUT: TE Colson Yankoff (Knee).",
+          "NYG QUESTIONABLE: LB Malik Harrison (Groin)."
+        ],
         "watch": [
           {
             "team": "WAS",
             "player": "Treylon Burks",
             "position": "WR",
-            "status": "Limited Participation in Practice",
+            "status": "Did Not Participate In Practice",
             "unit": "Other",
             "scenario": "Verify role and replacement before execution."
           },
@@ -228,23 +232,23 @@
             "team": "WAS",
             "player": "Lucas Patrick",
             "position": "C",
-            "status": "Did Not Participate In Practice",
+            "status": "Out Did Not Participate In Practice",
             "unit": "OL",
             "scenario": "If unavailable, reassess protection and the passing matchup."
           },
           {
             "team": "WAS",
-            "player": "Colson Yankoff",
-            "position": "TE",
-            "status": "Did Not Participate In Practice",
-            "unit": "Other",
-            "scenario": "Verify role and replacement before execution."
+            "player": "Amik Robertson",
+            "position": "CB",
+            "status": "Limited Participation in Practice",
+            "unit": "Secondary",
+            "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
           },
           {
-            "team": "NYG",
-            "player": "Abdul Carter",
-            "position": "LB",
-            "status": "Limited Participation in Practice",
+            "team": "WAS",
+            "player": "Colson Yankoff",
+            "position": "TE",
+            "status": "Out Did Not Participate In Practice",
             "unit": "Other",
             "scenario": "Verify role and replacement before execution."
           },
@@ -252,30 +256,12 @@
             "team": "NYG",
             "player": "Malik Harrison",
             "position": "LB",
-            "status": "Limited Participation in Practice",
+            "status": "Questionable Limited Participation in Practice",
             "unit": "Other",
             "scenario": "Verify role and replacement before execution."
-          },
-          {
-            "team": "NYG",
-            "player": "Colton Hood",
-            "position": "CB",
-            "status": "Limited Participation in Practice",
-            "unit": "Secondary",
-            "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
           }
         ],
-        "clusters": [
-          {
-            "team": "NYG",
-            "unit": "Secondary",
-            "count": 1,
-            "players": [
-              "Colton Hood"
-            ],
-            "note": "Practice/designation watch; starter status and replacement quality not certified."
-          }
-        ],
+        "clusters": [],
         "officialInactives": {},
         "pointAdjustment": 0
       },
@@ -288,7 +274,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Light Rain Likely at kickoff: 51\u00b0F; wind NE 10.0 mph, gust 19.6 mph; precipitation chance 74%.",
         "risk": "weather review required",
-        "observed_at": "2026-11-11T21:29:48.170207+00:00",
+        "observed_at": "2026-11-11T22:29:39.481393+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/40.8135,-74.0745",
@@ -314,7 +300,7 @@
           "conditions": "Light Rain Likely",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-11T21:29:48.170207+00:00"
+          "retrieved_at": "2026-11-11T22:29:39.481393+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/40.8135,-74.0745",
@@ -368,11 +354,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-11T21:00:31.376Z",
-          "capturedAt": "2026-11-11T21:00:48.033247+00:00",
+          "observedAt": "2026-11-11T21:29:46.359Z",
+          "capturedAt": "2026-11-11T21:30:00.346476+00:00",
           "spread": "New York Giants -2.5",
           "homeMargin": 2.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -387,7 +373,7 @@
       "awayAbbr": "NE",
       "homeAbbr": "DET",
       "kickoff": "2026-11-15T14:30Z",
-      "generatedAt": "2026-11-11T21:30:00.346476+00:00",
+      "generatedAt": "2026-11-11T22:29:49.070245+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "NE",
       "assessmentSide": "NE",
@@ -585,8 +571,8 @@
           "away": 124,
           "home": -148
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-11T21:29:46.359Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-11T22:29:37.377Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": 3.707,
@@ -618,7 +604,7 @@
         "status": "Current game-window weather feed reviewed",
         "summary": "Current ESPN event weather feed reviewed; no structured game-window condition was published. Weather remains source-limited with 0.0 automatic model points.",
         "risk": "source-limited",
-        "observed_at": "2026-11-11T21:29:46.359Z",
+        "observed_at": "2026-11-11T22:29:37.377Z",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -667,11 +653,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-11T21:00:31.376Z",
-          "capturedAt": "2026-11-11T21:00:48.033247+00:00",
+          "observedAt": "2026-11-11T21:29:46.359Z",
+          "capturedAt": "2026-11-11T21:30:00.346476+00:00",
           "spread": "Detroit Lions -2.5",
           "homeMargin": 2.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -686,7 +672,7 @@
       "awayAbbr": "KC",
       "homeAbbr": "ATL",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-11T21:30:00.346476+00:00",
+      "generatedAt": "2026-11-11T22:29:49.070245+00:00",
       "status": "PRICE WATCH",
       "footballLean": "KC",
       "assessmentSide": "KC",
@@ -877,15 +863,15 @@
       "market": {
         "spread_display": "Kansas City Chiefs -3.5",
         "spread": "KC -3.5",
-        "total": 45.5,
+        "total": 46.5,
         "home_margin": -3.5,
         "home_team_sportsbook_spread": 3.5,
         "moneyline": {
           "away": -185,
           "home": 154
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-11T21:29:46.359Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-11T22:29:37.377Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": -5.756,
@@ -917,7 +903,7 @@
         "status": "Official indoor venue verified",
         "summary": "Mercedes-Benz Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-11T21:29:48.170232+00:00",
+        "observed_at": "2026-11-11T22:29:39.481416+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -939,7 +925,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-11T21:29:48.170232+00:00"
+          "retrieved_at": "2026-11-11T22:29:39.481416+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -989,11 +975,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-11T21:00:31.376Z",
-          "capturedAt": "2026-11-11T21:00:48.033247+00:00",
+          "observedAt": "2026-11-11T21:29:46.359Z",
+          "capturedAt": "2026-11-11T21:30:00.346476+00:00",
           "spread": "Kansas City Chiefs -3.5",
           "homeMargin": -3.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -1008,7 +994,7 @@
       "awayAbbr": "HOU",
       "homeAbbr": "CLE",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-11T21:30:00.346476+00:00",
+      "generatedAt": "2026-11-11T22:29:49.070245+00:00",
       "status": "PRICE WATCH",
       "footballLean": "HOU",
       "assessmentSide": "HOU",
@@ -1198,15 +1184,15 @@
       "market": {
         "spread_display": "Houston Texans -4.5",
         "spread": "HOU -4.5",
-        "total": 40.5,
+        "total": 41.5,
         "home_margin": -4.5,
         "home_team_sportsbook_spread": 4.5,
         "moneyline": {
           "away": -230,
           "home": 190
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-11T21:29:46.359Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-11T22:29:37.377Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": -6.011,
@@ -1238,7 +1224,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Chance Light Rain at kickoff: 46\u00b0F; wind NW 10.0 mph, gust 16.1 mph; precipitation chance 26%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-11T21:29:48.170236+00:00",
+        "observed_at": "2026-11-11T22:29:39.481419+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/41.5061,-81.6995",
@@ -1264,7 +1250,7 @@
           "conditions": "Chance Light Rain",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-11T21:29:48.170236+00:00"
+          "retrieved_at": "2026-11-11T22:29:39.481419+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/41.5061,-81.6995",
@@ -1316,11 +1302,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-11T21:00:31.376Z",
-          "capturedAt": "2026-11-11T21:00:48.033247+00:00",
+          "observedAt": "2026-11-11T21:29:46.359Z",
+          "capturedAt": "2026-11-11T21:30:00.346476+00:00",
           "spread": "Houston Texans -4.5",
           "homeMargin": -4.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -1335,7 +1321,7 @@
       "awayAbbr": "MIN",
       "homeAbbr": "GB",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-11T21:30:00.346476+00:00",
+      "generatedAt": "2026-11-11T22:29:49.070245+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "GB",
       "assessmentSide": "GB",
@@ -1533,8 +1519,8 @@
           "away": 136,
           "home": -162
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-11T21:29:46.359Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-11T22:29:37.377Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": 2.967,
@@ -1549,11 +1535,237 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-11T04:30:08.845378+00:00",
+        "observedAt": "2026-11-11T22:29:37.628334+00:00",
         "reviewComplete": false,
         "flags": [],
-        "watch": [],
-        "clusters": [],
+        "watch": [
+          {
+            "team": "MIN",
+            "player": "Blake Cashman",
+            "position": "LB",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "MIN",
+            "player": "T.J. Hockenson",
+            "position": "TE",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "MIN",
+            "player": "Tyrion Ingram-Dawkins",
+            "position": "DT",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "MIN",
+            "player": "Jauan Jennings",
+            "position": "WR",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "MIN",
+            "player": "Kyler Murray",
+            "position": "QB",
+            "status": "Did Not Participate In Practice",
+            "unit": "QB",
+            "scenario": "If unavailable, reassess starter/replacement performance and the game script."
+          },
+          {
+            "team": "MIN",
+            "player": "Kyle Van Noy",
+            "position": "LB",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "MIN",
+            "player": "Jay Ward",
+            "position": "S",
+            "status": "Limited Participation in Practice",
+            "unit": "Secondary",
+            "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+          },
+          {
+            "team": "MIN",
+            "player": "Carson Wentz",
+            "position": "QB",
+            "status": "Limited Participation in Practice",
+            "unit": "QB",
+            "scenario": "If unavailable, reassess starter/replacement performance and the game script."
+          },
+          {
+            "team": "GB",
+            "player": "Aaron Banks",
+            "position": "G",
+            "status": "Limited Participation in Practice",
+            "unit": "OL",
+            "scenario": "If unavailable, reassess protection and the passing matchup."
+          },
+          {
+            "team": "GB",
+            "player": "Chris Brooks",
+            "position": "RB",
+            "status": "Limited Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "GB",
+            "player": "Javon Bullard",
+            "position": "S",
+            "status": "Did Not Participate In Practice",
+            "unit": "Secondary",
+            "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+          },
+          {
+            "team": "GB",
+            "player": "Zaire Franklin",
+            "position": "LB",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "GB",
+            "player": "Travis Glover",
+            "position": "G",
+            "status": "Limited Participation in Practice",
+            "unit": "OL",
+            "scenario": "If unavailable, reassess protection and the passing matchup."
+          },
+          {
+            "team": "GB",
+            "player": "Ty'Ron Hopper",
+            "position": "LB",
+            "status": "Limited Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "GB",
+            "player": "Josh Jacobs",
+            "position": "RB",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "GB",
+            "player": "Skyy Moore",
+            "position": "WR",
+            "status": "Limited Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "GB",
+            "player": "Micah Parsons",
+            "position": "LB",
+            "status": "Limited Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "GB",
+            "player": "Sean Rhyan",
+            "position": "C",
+            "status": "Did Not Participate In Practice",
+            "unit": "OL",
+            "scenario": "If unavailable, reassess protection and the passing matchup."
+          },
+          {
+            "team": "GB",
+            "player": "Trey Smack",
+            "position": "K",
+            "status": "Limited Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "GB",
+            "player": "Lukas Van Ness",
+            "position": "LB",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "GB",
+            "player": "Josh Whyle",
+            "position": "TE",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "GB",
+            "player": "Savion Williams",
+            "position": "WR",
+            "status": "Limited Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "GB",
+            "player": "Kevin Zeitler",
+            "position": "G",
+            "status": "Limited Participation in Practice",
+            "unit": "OL",
+            "scenario": "If unavailable, reassess protection and the passing matchup."
+          }
+        ],
+        "clusters": [
+          {
+            "team": "MIN",
+            "unit": "QB",
+            "count": 2,
+            "players": [
+              "Kyler Murray",
+              "Carson Wentz"
+            ],
+            "note": "Practice/designation watch; starter status and replacement quality not certified."
+          },
+          {
+            "team": "MIN",
+            "unit": "Secondary",
+            "count": 1,
+            "players": [
+              "Jay Ward"
+            ],
+            "note": "Practice/designation watch; starter status and replacement quality not certified."
+          },
+          {
+            "team": "GB",
+            "unit": "OL",
+            "count": 4,
+            "players": [
+              "Aaron Banks",
+              "Travis Glover",
+              "Sean Rhyan",
+              "Kevin Zeitler"
+            ],
+            "note": "Practice/designation watch; starter status and replacement quality not certified."
+          },
+          {
+            "team": "GB",
+            "unit": "Secondary",
+            "count": 1,
+            "players": [
+              "Javon Bullard"
+            ],
+            "note": "Practice/designation watch; starter status and replacement quality not certified."
+          }
+        ],
         "officialInactives": {},
         "pointAdjustment": 0
       },
@@ -1566,7 +1778,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Mostly Sunny at kickoff: 44\u00b0F; wind N 2.0 mph, gust 5.8 mph; precipitation chance 0%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-11T21:29:48.170239+00:00",
+        "observed_at": "2026-11-11T22:29:39.481423+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/44.5013,-88.0622",
@@ -1592,7 +1804,7 @@
           "conditions": "Mostly Sunny",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-11T21:29:48.170239+00:00"
+          "retrieved_at": "2026-11-11T22:29:39.481423+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/44.5013,-88.0622",
@@ -1645,11 +1857,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-11T21:00:31.376Z",
-          "capturedAt": "2026-11-11T21:00:48.033247+00:00",
+          "observedAt": "2026-11-11T21:29:46.359Z",
+          "capturedAt": "2026-11-11T21:30:00.346476+00:00",
           "spread": "Green Bay Packers -3",
           "homeMargin": 3,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -1664,7 +1876,7 @@
       "awayAbbr": "JAX",
       "homeAbbr": "TEN",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-11T21:30:00.346476+00:00",
+      "generatedAt": "2026-11-11T22:29:49.070245+00:00",
       "status": "PRICE WATCH",
       "footballLean": "JAX",
       "assessmentSide": "JAX",
@@ -1859,11 +2071,11 @@
         "home_margin": -10.5,
         "home_team_sportsbook_spread": 10.5,
         "moneyline": {
-          "away": -535,
-          "home": 400
+          "away": -550,
+          "home": 410
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-11T21:29:46.359Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-11T22:29:37.377Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": -10.948,
@@ -1878,11 +2090,162 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-11T04:30:08.845378+00:00",
+        "observedAt": "2026-11-11T22:29:37.628334+00:00",
         "reviewComplete": false,
         "flags": [],
-        "watch": [],
-        "clusters": [],
+        "watch": [
+          {
+            "team": "JAX",
+            "player": "Jessie Bates",
+            "position": "S",
+            "status": "Did Not Participate In Practice",
+            "unit": "Secondary",
+            "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+          },
+          {
+            "team": "JAX",
+            "player": "Ezra Cleveland",
+            "position": "G",
+            "status": "Limited Participation in Practice",
+            "unit": "OL",
+            "scenario": "If unavailable, reassess protection and the passing matchup."
+          },
+          {
+            "team": "JAX",
+            "player": "Branson Combs",
+            "position": "LB",
+            "status": "Limited Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "JAX",
+            "player": "Jordan Davis",
+            "position": "DT",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "JAX",
+            "player": "Robert Hainsey",
+            "position": "C",
+            "status": "Limited Participation in Practice",
+            "unit": "OL",
+            "scenario": "If unavailable, reassess protection and the passing matchup."
+          },
+          {
+            "team": "JAX",
+            "player": "Antonio Johnson",
+            "position": "S",
+            "status": "Limited Participation in Practice",
+            "unit": "Secondary",
+            "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+          },
+          {
+            "team": "JAX",
+            "player": "Jakobi Meyers",
+            "position": "WR",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "JAX",
+            "player": "Chris Rodriguez Jr.",
+            "position": "RB",
+            "status": "Limited Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "JAX",
+            "player": "Bhayshul Tuten",
+            "position": "RB",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "JAX",
+            "player": "Travon Walker",
+            "position": "DE",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "TEN",
+            "player": "Cody Barton",
+            "position": "LB",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "TEN",
+            "player": "Anthony Hill Jr.",
+            "position": "LB",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "TEN",
+            "player": "Peter Skoronski",
+            "position": "G",
+            "status": "Did Not Participate In Practice",
+            "unit": "OL",
+            "scenario": "If unavailable, reassess protection and the passing matchup."
+          },
+          {
+            "team": "TEN",
+            "player": "Tyjae Spears",
+            "position": "RB",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "TEN",
+            "player": "Carnell Tate",
+            "position": "WR",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          }
+        ],
+        "clusters": [
+          {
+            "team": "JAX",
+            "unit": "OL",
+            "count": 2,
+            "players": [
+              "Ezra Cleveland",
+              "Robert Hainsey"
+            ],
+            "note": "Practice/designation watch; starter status and replacement quality not certified."
+          },
+          {
+            "team": "JAX",
+            "unit": "Secondary",
+            "count": 2,
+            "players": [
+              "Jessie Bates",
+              "Antonio Johnson"
+            ],
+            "note": "Practice/designation watch; starter status and replacement quality not certified."
+          },
+          {
+            "team": "TEN",
+            "unit": "OL",
+            "count": 1,
+            "players": [
+              "Peter Skoronski"
+            ],
+            "note": "Practice/designation watch; starter status and replacement quality not certified."
+          }
+        ],
         "officialInactives": {},
         "pointAdjustment": 0
       },
@@ -1895,11 +2258,11 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Mostly Sunny at kickoff: 51\u00b0F; wind ENE 5.0 mph, gust 9.2 mph; precipitation chance 1%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-11T21:29:48.170243+00:00",
+        "observed_at": "2026-11-11T22:29:39.481427+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/36.1665,-86.7713",
-        "forecast_timestamp": "2026-11-11T18:31:28+00:00",
+        "forecast_timestamp": "2026-11-11T20:46:41+00:00",
         "forecast_verified": true,
         "forecast": {
           "game_id": "2026-W10-JAX-TEN",
@@ -1908,7 +2271,7 @@
           "wind_mph": 5.0,
           "gust_mph": 9.2,
           "precip_chance_pct": 1,
-          "forecast_timestamp": "2026-11-11T18:31:28+00:00",
+          "forecast_timestamp": "2026-11-11T20:46:41+00:00",
           "sources": [
             "https://api.weather.gov/points/36.1665,-86.7713",
             "https://api.weather.gov/gridpoints/OHX/50,57/forecast/hourly",
@@ -1921,7 +2284,7 @@
           "conditions": "Mostly Sunny",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-11T21:29:48.170243+00:00"
+          "retrieved_at": "2026-11-11T22:29:39.481427+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/36.1665,-86.7713",
@@ -1973,11 +2336,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-11T21:00:31.376Z",
-          "capturedAt": "2026-11-11T21:00:48.033247+00:00",
+          "observedAt": "2026-11-11T21:29:46.359Z",
+          "capturedAt": "2026-11-11T21:30:00.346476+00:00",
           "spread": "Jacksonville Jaguars -10.5",
           "homeMargin": -10.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -1992,7 +2355,7 @@
       "awayAbbr": "MIA",
       "homeAbbr": "IND",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-11T21:30:00.346476+00:00",
+      "generatedAt": "2026-11-11T22:29:49.070245+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "MIA",
       "assessmentSide": "MIA",
@@ -2189,8 +2552,8 @@
           "away": 160,
           "home": -192
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-11T21:29:46.359Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-11T22:29:37.377Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": 4.062,
@@ -2205,11 +2568,170 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-11T04:30:08.845378+00:00",
+        "observedAt": "2026-11-11T22:29:37.628334+00:00",
         "reviewComplete": false,
         "flags": [],
-        "watch": [],
-        "clusters": [],
+        "watch": [
+          {
+            "team": "MIA",
+            "player": "Tucker Addington",
+            "position": "LS",
+            "status": "Limited Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "MIA",
+            "player": "Darrell Baker Jr.",
+            "position": "CB",
+            "status": "Limited Participation in Practice",
+            "unit": "Secondary",
+            "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+          },
+          {
+            "team": "MIA",
+            "player": "Chris Bell",
+            "position": "WR",
+            "status": "Limited Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "MIA",
+            "player": "Aaron Brewer",
+            "position": "C",
+            "status": "Did Not Participate In Practice",
+            "unit": "OL",
+            "scenario": "If unavailable, reassess protection and the passing matchup."
+          },
+          {
+            "team": "MIA",
+            "player": "Malik Herring",
+            "position": "DE",
+            "status": "Limited Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "MIA",
+            "player": "Will Kacmarek",
+            "position": "TE",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "IND",
+            "player": "Mo Alie-Cox",
+            "position": "TE",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "IND",
+            "player": "Jaylon Carlies",
+            "position": "LB",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "IND",
+            "player": "Akeem Davis-Gaither",
+            "position": "LB",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "IND",
+            "player": "A.J. Haulcy",
+            "position": "S",
+            "status": "Did Not Participate In Practice",
+            "unit": "Secondary",
+            "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+          },
+          {
+            "team": "IND",
+            "player": "Luke Rhodes",
+            "position": "LS",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "IND",
+            "player": "Jonathan Taylor",
+            "position": "RB",
+            "status": "Limited Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "IND",
+            "player": "Jerry Tillery",
+            "position": "DT",
+            "status": "Limited Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "IND",
+            "player": "Jalen Travis",
+            "position": "T",
+            "status": "Did Not Participate In Practice",
+            "unit": "OL",
+            "scenario": "If unavailable, reassess protection and the passing matchup."
+          },
+          {
+            "team": "IND",
+            "player": "Charvarius Ward",
+            "position": "CB",
+            "status": "Did Not Participate In Practice",
+            "unit": "Secondary",
+            "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+          }
+        ],
+        "clusters": [
+          {
+            "team": "MIA",
+            "unit": "OL",
+            "count": 1,
+            "players": [
+              "Aaron Brewer"
+            ],
+            "note": "Practice/designation watch; starter status and replacement quality not certified."
+          },
+          {
+            "team": "MIA",
+            "unit": "Secondary",
+            "count": 1,
+            "players": [
+              "Darrell Baker Jr."
+            ],
+            "note": "Practice/designation watch; starter status and replacement quality not certified."
+          },
+          {
+            "team": "IND",
+            "unit": "OL",
+            "count": 1,
+            "players": [
+              "Jalen Travis"
+            ],
+            "note": "Practice/designation watch; starter status and replacement quality not certified."
+          },
+          {
+            "team": "IND",
+            "unit": "Secondary",
+            "count": 2,
+            "players": [
+              "A.J. Haulcy",
+              "Charvarius Ward"
+            ],
+            "note": "Practice/designation watch; starter status and replacement quality not certified."
+          }
+        ],
         "officialInactives": {},
         "pointAdjustment": 0
       },
@@ -2222,7 +2744,7 @@
         "status": "Official indoor venue verified",
         "summary": "Lucas Oil Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-11T21:29:48.170250+00:00",
+        "observed_at": "2026-11-11T22:29:39.481434+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -2244,7 +2766,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-11T21:29:48.170250+00:00"
+          "retrieved_at": "2026-11-11T22:29:39.481434+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -2294,11 +2816,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-11T21:00:31.376Z",
-          "capturedAt": "2026-11-11T21:00:48.033247+00:00",
+          "observedAt": "2026-11-11T21:29:46.359Z",
+          "capturedAt": "2026-11-11T21:30:00.346476+00:00",
           "spread": "Indianapolis Colts -3.5",
           "homeMargin": 3.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -2313,7 +2835,7 @@
       "awayAbbr": "CAR",
       "homeAbbr": "NO",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-11T21:30:00.346476+00:00",
+      "generatedAt": "2026-11-11T22:29:49.070245+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "CAR",
       "assessmentSide": "CAR",
@@ -2511,8 +3033,8 @@
           "away": 114,
           "home": -135
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-11T21:29:46.359Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-11T22:29:37.377Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": 2.64,
@@ -2527,11 +3049,121 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-11T04:30:08.845378+00:00",
+        "observedAt": "2026-11-11T22:29:37.628334+00:00",
         "reviewComplete": false,
         "flags": [],
-        "watch": [],
-        "clusters": [],
+        "watch": [
+          {
+            "team": "CAR",
+            "player": "Chuba Hubbard",
+            "position": "RB",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "CAR",
+            "player": "Bobby Okereke",
+            "position": "LB",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "NO",
+            "player": "Kelvin Banks Jr.",
+            "position": "T",
+            "status": "Limited Participation in Practice",
+            "unit": "OL",
+            "scenario": "If unavailable, reassess protection and the passing matchup."
+          },
+          {
+            "team": "NO",
+            "player": "CJ Donaldson",
+            "position": "RB",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "NO",
+            "player": "David Edwards",
+            "position": "G",
+            "status": "Limited Participation in Practice",
+            "unit": "OL",
+            "scenario": "If unavailable, reassess protection and the passing matchup."
+          },
+          {
+            "team": "NO",
+            "player": "Martin Emerson",
+            "position": "CB",
+            "status": "Limited Participation in Practice",
+            "unit": "Secondary",
+            "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+          },
+          {
+            "team": "NO",
+            "player": "Travis Etienne",
+            "position": "RB",
+            "status": "Limited Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "NO",
+            "player": "Noah Fant",
+            "position": "TE",
+            "status": "Limited Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "NO",
+            "player": "Alvin Kamara",
+            "position": "RB",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "NO",
+            "player": "Erik McCoy",
+            "position": "C",
+            "status": "Did Not Participate In Practice",
+            "unit": "OL",
+            "scenario": "If unavailable, reassess protection and the passing matchup."
+          },
+          {
+            "team": "NO",
+            "player": "Christen Miller",
+            "position": "DT",
+            "status": "Limited Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          }
+        ],
+        "clusters": [
+          {
+            "team": "NO",
+            "unit": "OL",
+            "count": 3,
+            "players": [
+              "Kelvin Banks Jr.",
+              "David Edwards",
+              "Erik McCoy"
+            ],
+            "note": "Practice/designation watch; starter status and replacement quality not certified."
+          },
+          {
+            "team": "NO",
+            "unit": "Secondary",
+            "count": 1,
+            "players": [
+              "Martin Emerson"
+            ],
+            "note": "Practice/designation watch; starter status and replacement quality not certified."
+          }
+        ],
         "officialInactives": {},
         "pointAdjustment": 0
       },
@@ -2544,7 +3176,7 @@
         "status": "Official indoor venue verified",
         "summary": "Caesars Superdome is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-11T21:29:48.170257+00:00",
+        "observed_at": "2026-11-11T22:29:39.481440+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -2566,7 +3198,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-11T21:29:48.170257+00:00"
+          "retrieved_at": "2026-11-11T22:29:39.481440+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -2616,11 +3248,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-11T21:00:31.376Z",
-          "capturedAt": "2026-11-11T21:00:48.033247+00:00",
+          "observedAt": "2026-11-11T21:29:46.359Z",
+          "capturedAt": "2026-11-11T21:30:00.346476+00:00",
           "spread": "New Orleans Saints -2.5",
           "homeMargin": 2.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -2635,7 +3267,7 @@
       "awayAbbr": "BUF",
       "homeAbbr": "NYJ",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-11T21:30:00.346476+00:00",
+      "generatedAt": "2026-11-11T22:29:49.070245+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "BUF",
       "assessmentSide": "BUF",
@@ -2832,8 +3464,8 @@
           "away": -440,
           "home": 340
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-11T21:29:46.359Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-11T22:29:37.377Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": -8.378,
@@ -2848,11 +3480,139 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-11T04:30:08.845378+00:00",
+        "observedAt": "2026-11-11T22:29:37.628334+00:00",
         "reviewComplete": false,
         "flags": [],
-        "watch": [],
-        "clusters": [],
+        "watch": [
+          {
+            "team": "BUF",
+            "player": "Alec Anderson",
+            "position": "G",
+            "status": "Limited Participation in Practice",
+            "unit": "OL",
+            "scenario": "If unavailable, reassess protection and the passing matchup."
+          },
+          {
+            "team": "BUF",
+            "player": "Christian Benford",
+            "position": "CB",
+            "status": "Limited Participation in Practice",
+            "unit": "Secondary",
+            "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+          },
+          {
+            "team": "BUF",
+            "player": "Spencer Brown",
+            "position": "T",
+            "status": "Limited Participation in Practice",
+            "unit": "OL",
+            "scenario": "If unavailable, reassess protection and the passing matchup."
+          },
+          {
+            "team": "BUF",
+            "player": "Dion Dawkins",
+            "position": "T",
+            "status": "Limited Participation in Practice",
+            "unit": "OL",
+            "scenario": "If unavailable, reassess protection and the passing matchup."
+          },
+          {
+            "team": "BUF",
+            "player": "Dalton Kincaid",
+            "position": "TE",
+            "status": "Limited Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "BUF",
+            "player": "Connor McGovern",
+            "position": "C",
+            "status": "Limited Participation in Practice",
+            "unit": "OL",
+            "scenario": "If unavailable, reassess protection and the passing matchup."
+          },
+          {
+            "team": "NYJ",
+            "player": "Omar Cooper Jr.",
+            "position": "WR",
+            "status": "Limited Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "NYJ",
+            "player": "Joseph Ossai",
+            "position": "DE",
+            "status": "Limited Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "NYJ",
+            "player": "Harrison Phillips",
+            "position": "DT",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "NYJ",
+            "player": "Trevin Wallace",
+            "position": "LB",
+            "status": "Did Not Participate In Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "NYJ",
+            "player": "Garrett Wilson",
+            "position": "WR",
+            "status": "Limited Participation in Practice",
+            "unit": "Other",
+            "scenario": "Verify role and replacement before execution."
+          },
+          {
+            "team": "NYJ",
+            "player": "Nahshon Wright",
+            "position": "CB",
+            "status": "Limited Participation in Practice",
+            "unit": "Secondary",
+            "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+          }
+        ],
+        "clusters": [
+          {
+            "team": "BUF",
+            "unit": "OL",
+            "count": 4,
+            "players": [
+              "Alec Anderson",
+              "Spencer Brown",
+              "Dion Dawkins",
+              "Connor McGovern"
+            ],
+            "note": "Practice/designation watch; starter status and replacement quality not certified."
+          },
+          {
+            "team": "BUF",
+            "unit": "Secondary",
+            "count": 1,
+            "players": [
+              "Christian Benford"
+            ],
+            "note": "Practice/designation watch; starter status and replacement quality not certified."
+          },
+          {
+            "team": "NYJ",
+            "unit": "Secondary",
+            "count": 1,
+            "players": [
+              "Nahshon Wright"
+            ],
+            "note": "Practice/designation watch; starter status and replacement quality not certified."
+          }
+        ],
         "officialInactives": {},
         "pointAdjustment": 0
       },
@@ -2865,7 +3625,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Mostly Sunny at kickoff: 50\u00b0F; wind NW 12.0 mph, gust 20.7 mph; precipitation chance 0%.",
         "risk": "weather review required",
-        "observed_at": "2026-11-11T21:29:48.170260+00:00",
+        "observed_at": "2026-11-11T22:29:39.481443+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/40.8135,-74.0745",
@@ -2891,7 +3651,7 @@
           "conditions": "Mostly Sunny",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-11T21:29:48.170260+00:00"
+          "retrieved_at": "2026-11-11T22:29:39.481443+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/40.8135,-74.0745",
@@ -2944,11 +3704,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-11T21:00:31.376Z",
-          "capturedAt": "2026-11-11T21:00:48.033247+00:00",
+          "observedAt": "2026-11-11T21:29:46.359Z",
+          "capturedAt": "2026-11-11T21:30:00.346476+00:00",
           "spread": "Buffalo Bills -8.5",
           "homeMargin": -8.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -2963,7 +3723,7 @@
       "awayAbbr": "SEA",
       "homeAbbr": "LV",
       "kickoff": "2026-11-15T21:05Z",
-      "generatedAt": "2026-11-11T21:30:00.346476+00:00",
+      "generatedAt": "2026-11-11T22:29:49.070245+00:00",
       "status": "PRICE WATCH",
       "footballLean": "SEA",
       "assessmentSide": "SEA",
@@ -3157,11 +3917,11 @@
         "home_margin": -6.5,
         "home_team_sportsbook_spread": 6.5,
         "moneyline": {
-          "away": -285,
-          "home": 230
+          "away": -290,
+          "home": 235
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-11T21:29:46.359Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-11T22:29:37.377Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": -8.484,
@@ -3193,7 +3953,7 @@
         "status": "Official indoor venue verified",
         "summary": "Allegiant Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-11T21:29:48.170267+00:00",
+        "observed_at": "2026-11-11T22:29:39.481449+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -3215,7 +3975,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-11T21:29:48.170267+00:00"
+          "retrieved_at": "2026-11-11T22:29:39.481449+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -3265,11 +4025,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-11T21:00:31.376Z",
-          "capturedAt": "2026-11-11T21:00:48.033247+00:00",
+          "observedAt": "2026-11-11T21:29:46.359Z",
+          "capturedAt": "2026-11-11T21:30:00.346476+00:00",
           "spread": "Seattle Seahawks -6.5",
           "homeMargin": -6.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -3284,7 +4044,7 @@
       "awayAbbr": "LAR",
       "homeAbbr": "ARI",
       "kickoff": "2026-11-15T21:05Z",
-      "generatedAt": "2026-11-11T21:30:00.346476+00:00",
+      "generatedAt": "2026-11-11T22:29:49.070245+00:00",
       "status": "PRICE WATCH",
       "footballLean": "LAR",
       "assessmentSide": "LAR",
@@ -3481,8 +4241,8 @@
           "away": -440,
           "home": 340
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-11T21:29:46.359Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-11T22:29:37.377Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": -9.837,
@@ -3514,7 +4274,7 @@
         "status": "Official indoor venue verified",
         "summary": "State Farm Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-11T21:29:48.170273+00:00",
+        "observed_at": "2026-11-11T22:29:39.481455+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -3536,7 +4296,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-11T21:29:48.170273+00:00"
+          "retrieved_at": "2026-11-11T22:29:39.481455+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -3586,11 +4346,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-11T21:00:31.376Z",
-          "capturedAt": "2026-11-11T21:00:48.033247+00:00",
+          "observedAt": "2026-11-11T21:29:46.359Z",
+          "capturedAt": "2026-11-11T21:30:00.346476+00:00",
           "spread": "Los Angeles Rams -9.5",
           "homeMargin": -9.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -3605,7 +4365,7 @@
       "awayAbbr": "SF",
       "homeAbbr": "DAL",
       "kickoff": "2026-11-15T21:25Z",
-      "generatedAt": "2026-11-11T21:30:00.346476+00:00",
+      "generatedAt": "2026-11-11T22:29:49.070245+00:00",
       "status": "PRICE WATCH",
       "footballLean": "SF",
       "assessmentSide": "SF",
@@ -3802,8 +4562,8 @@
           "away": -205,
           "home": 170
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-11T21:29:46.359Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-11T22:29:37.377Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": -5.215,
@@ -3835,7 +4595,7 @@
         "status": "Official indoor venue verified",
         "summary": "AT&T Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-11T21:29:48.170280+00:00",
+        "observed_at": "2026-11-11T22:29:39.481461+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -3857,7 +4617,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-11T21:29:48.170280+00:00"
+          "retrieved_at": "2026-11-11T22:29:39.481461+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -3907,11 +4667,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-11T21:00:31.376Z",
-          "capturedAt": "2026-11-11T21:00:48.033247+00:00",
+          "observedAt": "2026-11-11T21:29:46.359Z",
+          "capturedAt": "2026-11-11T21:30:00.346476+00:00",
           "spread": "San Francisco 49ers -4.5",
           "homeMargin": -4.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -3926,7 +4686,7 @@
       "awayAbbr": "PIT",
       "homeAbbr": "CIN",
       "kickoff": "2026-11-16T01:20Z",
-      "generatedAt": "2026-11-11T21:30:00.346476+00:00",
+      "generatedAt": "2026-11-11T22:29:49.070245+00:00",
       "status": "PRICE WATCH",
       "footballLean": "CIN",
       "assessmentSide": "CIN",
@@ -4121,11 +4881,11 @@
         "home_margin": 3.5,
         "home_team_sportsbook_spread": -3.5,
         "moneyline": {
-          "away": 145,
-          "home": -175
+          "away": 150,
+          "home": -180
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-11T21:29:46.359Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-11T22:29:37.377Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": 3.811,
@@ -4157,7 +4917,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Partly Cloudy at kickoff: 41\u00b0F; wind NE 1.0 mph, gust 2.3 mph; precipitation chance 0%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-11T21:29:48.170283+00:00",
+        "observed_at": "2026-11-11T22:29:39.481464+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/39.0954,-84.516",
@@ -4183,7 +4943,7 @@
           "conditions": "Partly Cloudy",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-11T21:29:48.170283+00:00"
+          "retrieved_at": "2026-11-11T22:29:39.481464+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/39.0954,-84.516",
@@ -4235,11 +4995,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-11T21:00:31.376Z",
-          "capturedAt": "2026-11-11T21:00:48.033247+00:00",
+          "observedAt": "2026-11-11T21:29:46.359Z",
+          "capturedAt": "2026-11-11T21:30:00.346476+00:00",
           "spread": "Cincinnati Bengals -3.5",
           "homeMargin": 3.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -4254,7 +5014,7 @@
       "awayAbbr": "LAC",
       "homeAbbr": "BAL",
       "kickoff": "2026-11-17T01:15Z",
-      "generatedAt": "2026-11-11T21:30:00.346476+00:00",
+      "generatedAt": "2026-11-11T22:29:49.070245+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "BAL",
       "assessmentSide": "BAL",
@@ -4448,11 +5208,11 @@
         "home_margin": 4.5,
         "home_team_sportsbook_spread": -4.5,
         "moneyline": {
-          "away": 170,
-          "home": -205
+          "away": 185,
+          "home": -225
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-11T21:29:46.359Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-11T22:29:37.377Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
       },
       "productionFair": 3.954,
@@ -4484,7 +5244,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Partly Cloudy at kickoff: 42\u00b0F; wind N 2.0 mph, gust 6.9 mph; precipitation chance 0%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-11T21:29:48.170287+00:00",
+        "observed_at": "2026-11-11T22:29:39.481468+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/39.278,-76.6227",
@@ -4510,7 +5270,7 @@
           "conditions": "Partly Cloudy",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-11T21:29:48.170287+00:00"
+          "retrieved_at": "2026-11-11T22:29:39.481468+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/39.278,-76.6227",
@@ -4562,11 +5322,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-11T21:00:31.376Z",
-          "capturedAt": "2026-11-11T21:00:48.033247+00:00",
+          "observedAt": "2026-11-11T21:29:46.359Z",
+          "capturedAt": "2026-11-11T21:30:00.346476+00:00",
           "spread": "Baltimore Ravens -4.5",
           "homeMargin": 4.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
