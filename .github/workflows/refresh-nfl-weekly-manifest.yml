@@ -48,7 +48,7 @@ jobs:
         run: |
           npm init -y >/dev/null 2>&1
           npm install playwright@1.55.0
-          npx playwright install --with-deps chromium
+          npx playwright install --with-deps chromium || npx playwright install chromium
       - name: Refresh canonical and live-portal NFL market runtime
         run: node scripts/refresh-live-portal-runtime.mjs
       - name: Refresh official selected-week injury designations
