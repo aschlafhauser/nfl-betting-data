@@ -48,7 +48,14 @@ jobs:
         run: |
           npm init -y >/dev/null 2>&1
           npm install playwright@1.55.0
-          npx playwright install --with-deps chromium || npx playwright install chromium
+          if ! timeout 180 npx playwright install --with-deps chromium && ! timeout 180 npx playwright install chromium; then
+            echo 'Playwright downloads unavailable; binding the hosted runner browser to the pinned executable path.'
+            target="$(node --input-type=module -e "import { chromium } from 'playwright'; console.log(chromium.executablePath())")"
+            chrome="$(command -v google-chrome || command -v chromium || true)"
+            test -n "$chrome"
+            mkdir -p "$(dirname "$target")"
+            ln -sf "$chrome" "$target"
+          fi
       - name: Refresh canonical and live-portal NFL market runtime
         run: node scripts/refresh-live-portal-runtime.mjs
       - name: Refresh official selected-week injury designations
