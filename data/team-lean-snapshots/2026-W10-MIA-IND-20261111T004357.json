@@ -1,0 +1,321 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W10-MIA-IND",
+  "portalGameId": "401873059",
+  "week": 10,
+  "away": "Miami Dolphins",
+  "home": "Indianapolis Colts",
+  "awayAbbr": "MIA",
+  "homeAbbr": "IND",
+  "kickoff": "2026-11-15T18:00Z",
+  "generatedAt": "2026-11-11T00:43:57.317598+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "MIA",
+  "assessmentSide": "MIA",
+  "structuralValueSide": "IND",
+  "alignment": "CONFLICT",
+  "thesis": "MIA has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "MIA",
+      "gap": 0.023,
+      "unit": "EPA/play",
+      "awayOffense": -0.016834617068511158,
+      "homeDefenseAllowed": 0.11150690727714298,
+      "homeOffense": -0.21570447452909752,
+      "awayDefenseAllowed": 0.26416318443834386,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "MIA",
+      "gap": 0.066,
+      "unit": "EPA/play",
+      "awayOffense": -0.10999567218040061,
+      "homeDefenseAllowed": 0.11612894948922885,
+      "homeOffense": -0.145876868761157,
+      "awayDefenseAllowed": 0.01981379274354096,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "MIA",
+      "gap": 0.044,
+      "unit": "EPA/play",
+      "awayOffense": -0.023985522926187716,
+      "homeDefenseAllowed": 0.07294669794646784,
+      "homeOffense": -0.0002687059991527429,
+      "awayDefenseAllowed": -0.03939053635223958,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "MIA",
+      "gap": 1.732,
+      "unit": "percentage points",
+      "awayOffense": 0.1031390134529148,
+      "homeDefenseAllowed": 0.11089866156787763,
+      "homeOffense": 0.08027923211169284,
+      "awayDefenseAllowed": 0.09911894273127753,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "MIA",
+      "gap": 1.978,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.1517509727626459,
+      "homeDefenseAllowed": 0.1414141414141414,
+      "homeOffense": 0.17888563049853373,
+      "awayDefenseAllowed": 0.15384615384615385,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "counterarguments": [],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "MIA",
+      "gap": 0.023,
+      "unit": "EPA/play",
+      "awayOffense": -0.016834617068511158,
+      "homeDefenseAllowed": 0.11150690727714298,
+      "homeOffense": -0.21570447452909752,
+      "awayDefenseAllowed": 0.26416318443834386,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "MIA",
+      "gap": 0.066,
+      "unit": "EPA/play",
+      "awayOffense": -0.10999567218040061,
+      "homeDefenseAllowed": 0.11612894948922885,
+      "homeOffense": -0.145876868761157,
+      "awayDefenseAllowed": 0.01981379274354096,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "MIA",
+      "gap": 0.044,
+      "unit": "EPA/play",
+      "awayOffense": -0.023985522926187716,
+      "homeDefenseAllowed": 0.07294669794646784,
+      "homeOffense": -0.0002687059991527429,
+      "awayDefenseAllowed": -0.03939053635223958,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "MIA",
+      "gap": 1.732,
+      "unit": "percentage points",
+      "awayOffense": 0.1031390134529148,
+      "homeDefenseAllowed": 0.11089866156787763,
+      "homeOffense": 0.08027923211169284,
+      "awayDefenseAllowed": 0.09911894273127753,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "MIA",
+      "gap": 1.978,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.1517509727626459,
+      "homeDefenseAllowed": 0.1414141414141414,
+      "homeOffense": 0.17888563049853373,
+      "awayDefenseAllowed": 0.15384615384615385,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": -0.0256,
+  "profiles": {
+    "MIA": {
+      "season": {
+        "games": 8,
+        "offPlays": 446,
+        "defPlays": 454,
+        "offEpa": -0.0636,
+        "defEpa": 0.1162,
+        "netEpa": -0.1798,
+        "adjustedNetEpa": -0.1573,
+        "earlyOffEpa": -0.111,
+        "earlyDefEpa": 0.0168,
+        "passOffEpa": -0.0168,
+        "passDefEpa": 0.2642
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 172,
+        "defPlays": 164,
+        "offEpa": 0.0191,
+        "defEpa": 0.1308,
+        "netEpa": -0.1117,
+        "adjustedNetEpa": -0.1236,
+        "earlyOffEpa": -0.0373,
+        "earlyDefEpa": 0.0018,
+        "passOffEpa": 0.1581,
+        "passDefEpa": 0.1954
+      }
+    },
+    "IND": {
+      "season": {
+        "games": 9,
+        "offPlays": 573,
+        "defPlays": 523,
+        "offEpa": -0.1247,
+        "defEpa": 0.0752,
+        "netEpa": -0.1999,
+        "adjustedNetEpa": -0.1829,
+        "earlyOffEpa": -0.1459,
+        "earlyDefEpa": 0.1161,
+        "passOffEpa": -0.2157,
+        "passDefEpa": 0.1115
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 176,
+        "defPlays": 177,
+        "offEpa": -0.2673,
+        "defEpa": 0.0902,
+        "netEpa": -0.3575,
+        "adjustedNetEpa": -0.3085,
+        "earlyOffEpa": -0.2494,
+        "earlyDefEpa": 0.1318,
+        "passOffEpa": -0.3835,
+        "passDefEpa": 0.1809
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 6.311,
+    "structuralHomeMargin": 6.311
+  },
+  "market": {
+    "spread_display": "Indianapolis Colts -3.5",
+    "spread": "IND -2.5",
+    "total": 38.5,
+    "home_margin": 3.5,
+    "home_team_sportsbook_spread": -3.5,
+    "moneyline": {
+      "away": 160,
+      "home": -192
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-11-11T00:43:41.067Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": 4.062,
+  "structuralFair": 6.311,
+  "structuralDifference": 2.811,
+  "price": {
+    "side": "MIA",
+    "minimumSpreadAtSnapshot": 6.0,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-11T00:43:41.500737+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [],
+    "clusters": [],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W10-MIA-IND",
+    "canonical_game_id": "2026-W10-MIA-IND",
+    "matchup": "Miami Dolphins at Indianapolis Colts",
+    "venue": "Lucas Oil Stadium",
+    "environment": "indoor",
+    "status": "Official indoor venue verified",
+    "summary": "Lucas Oil Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
+    "risk": "indoor / roof controlled",
+    "observed_at": "2026-11-11T00:43:43.124762+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+    "forecast_timestamp": null,
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W10-MIA-IND",
+      "kickoff": "2026-11-15T18:00Z",
+      "temp_f": null,
+      "wind_mph": null,
+      "gust_mph": null,
+      "precip_chance_pct": null,
+      "forecast_timestamp": null,
+      "verification_status": "indoor venue; outdoor weather forecast not applicable",
+      "venue": "Lucas Oil Stadium",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
+      ],
+      "limitations": [
+        "Roof status is governed by venue/event information; outside air values are not on-field conditions."
+      ],
+      "retrieved_at": "2026-11-11T00:43:43.124762+00:00"
+    },
+    "sources": [
+      "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
+    ]
+  },
+  "sustainability": {
+    "MIA": {
+      "turnoverRate": 0.02242152466367713,
+      "takeawayRate": 0.015418502202643172,
+      "thirdDownConversion": 0.4158415841584158,
+      "redZoneTdRate": 0.47619047619047616
+    },
+    "IND": {
+      "turnoverRate": 0.029668411867364748,
+      "takeawayRate": 0.011472275334608031,
+      "thirdDownConversion": 0.371900826446281,
+      "redZoneTdRate": 0.5833333333333334
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 9,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-11-10T05:34:18.439Z",
+      "capturedAt": "2026-11-10T05:34:30.972953+00:00",
+      "spread": "Indianapolis Colts -2.5",
+      "homeMargin": 2.5,
+      "source": "ESPN DraftKings"
+    },
+    {
+      "observedAt": "2026-11-10T23:29:35.045Z",
+      "capturedAt": "2026-11-10T23:29:50.734272+00:00",
+      "spread": "Indianapolis Colts -3.5",
+      "homeMargin": 3.5,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
