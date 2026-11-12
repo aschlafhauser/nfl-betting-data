@@ -1,22 +1,22 @@
 {
   "season": 2026,
   "week": 10,
-  "updatedAt": "2026-11-12T18:29:48.441Z",
-  "status": "PARTIAL-MOTION-RATE",
+  "updatedAt": "2026-11-12T19:29:59.710Z",
+  "status": "CURRENT-MOTION-RATE",
   "governance": "Research/display and Deep Dive confidence only. 0.0 automatic production fair-line points until incremental holdout validation demonstrates value beyond existing priors/current team stats/QB/market inputs.",
   "sources": {
     "offenseTendencies": {
       "primary": {
         "provider": "Sharp Football Analysis",
         "url": "https://www.sharpfootballanalysis.com/stats-nfl/nfl-offensive-tendencies-stats/amp/",
-        "retrievedAt": "2026-11-12T18:29:48.441Z",
-        "parsedTeams": 0,
+        "retrievedAt": "2026-11-12T19:29:59.710Z",
+        "parsedTeams": 32,
         "error": null
       },
       "fallback": {
         "provider": "StatRankings",
         "url": "https://statrankings.com/nfl/advanced/teams/pace-playcalling/motion-rate",
-        "retrievedAt": "2026-11-12T18:29:48.441Z",
+        "retrievedAt": "2026-11-12T19:29:59.710Z",
         "parsedTeams": 0,
         "error": null
       }
@@ -30,21 +30,21 @@
   },
   "coverage": {
     "selectedWeekTeams": 32,
-    "motionRateTeams": 0,
-    "playActionTeams": 0
+    "motionRateTeams": 32,
+    "playActionTeams": 32
   },
   "teams": [
     {
       "team": "Arizona Cardinals",
       "abbr": "ARI",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.563,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.125,
+        "airYardsPerAttempt": 6.9,
+        "shotgunRate": 0.595,
+        "noHuddleRate": 0.102,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "weak",
@@ -60,13 +60,13 @@
       "team": "Atlanta Falcons",
       "abbr": "ATL",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.5720000000000001,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.134,
+        "airYardsPerAttempt": 6.3,
+        "shotgunRate": 0.526,
+        "noHuddleRate": 0.045,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "strong",
@@ -82,13 +82,13 @@
       "team": "Baltimore Ravens",
       "abbr": "BAL",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.613,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.14800000000000002,
+        "airYardsPerAttempt": 7.1,
+        "shotgunRate": 0.594,
+        "noHuddleRate": 0.034,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "strong",
@@ -104,13 +104,13 @@
       "team": "Buffalo Bills",
       "abbr": "BUF",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.578,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.204,
+        "airYardsPerAttempt": 8.6,
+        "shotgunRate": 0.436,
+        "noHuddleRate": 0.040999999999999995,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "weak",
@@ -126,13 +126,13 @@
       "team": "Carolina Panthers",
       "abbr": "CAR",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.496,
+        "motionUsage": "LOW",
+        "playActionRate": 0.212,
+        "airYardsPerAttempt": 7.5,
+        "shotgunRate": 0.648,
+        "noHuddleRate": 0.07400000000000001,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "very-weak",
@@ -148,13 +148,13 @@
       "team": "Chicago Bears",
       "abbr": "CHI",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.504,
+        "motionUsage": "LOW",
+        "playActionRate": 0.20199999999999999,
+        "airYardsPerAttempt": 6.7,
+        "shotgunRate": 0.534,
+        "noHuddleRate": 0.052000000000000005,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "weak",
@@ -170,13 +170,13 @@
       "team": "Cincinnati Bengals",
       "abbr": "CIN",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.568,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.11699999999999999,
+        "airYardsPerAttempt": 7.8,
+        "shotgunRate": 0.754,
+        "noHuddleRate": 0.043,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "strong",
@@ -192,13 +192,13 @@
       "team": "Cleveland Browns",
       "abbr": "CLE",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.578,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.125,
+        "airYardsPerAttempt": 6.9,
+        "shotgunRate": 0.767,
+        "noHuddleRate": 0.043,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "very-weak",
@@ -214,13 +214,13 @@
       "team": "Dallas Cowboys",
       "abbr": "DAL",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.45299999999999996,
+        "motionUsage": "LOW",
+        "playActionRate": 0.151,
+        "airYardsPerAttempt": 8.1,
+        "shotgunRate": 0.642,
+        "noHuddleRate": 0.079,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "weak",
@@ -236,13 +236,13 @@
       "team": "Denver Broncos",
       "abbr": "DEN",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.518,
+        "motionUsage": "LOW",
+        "playActionRate": 0.157,
+        "airYardsPerAttempt": 5.8,
+        "shotgunRate": 0.647,
+        "noHuddleRate": 0.069,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "weak",
@@ -258,13 +258,13 @@
       "team": "Detroit Lions",
       "abbr": "DET",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.512,
+        "motionUsage": "LOW",
+        "playActionRate": 0.19699999999999998,
+        "airYardsPerAttempt": 7.8,
+        "shotgunRate": 0.46299999999999997,
+        "noHuddleRate": 0.05,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "neutral",
@@ -280,13 +280,13 @@
       "team": "Green Bay Packers",
       "abbr": "GB",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.52,
+        "motionUsage": "LOW",
+        "playActionRate": 0.139,
+        "airYardsPerAttempt": 9.5,
+        "shotgunRate": 0.67,
+        "noHuddleRate": 0.077,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "strong",
@@ -302,13 +302,13 @@
       "team": "Houston Texans",
       "abbr": "HOU",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.536,
+        "motionUsage": "LOW",
+        "playActionRate": 0.153,
+        "airYardsPerAttempt": 9.3,
+        "shotgunRate": 0.679,
+        "noHuddleRate": 0.05,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "weak",
@@ -324,13 +324,13 @@
       "team": "Indianapolis Colts",
       "abbr": "IND",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.619,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.17600000000000002,
+        "airYardsPerAttempt": 7,
+        "shotgunRate": 0.623,
+        "noHuddleRate": 0.043,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "strong",
@@ -346,13 +346,13 @@
       "team": "Jacksonville Jaguars",
       "abbr": "JAX",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.604,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.14300000000000002,
+        "airYardsPerAttempt": 8.5,
+        "shotgunRate": 0.536,
+        "noHuddleRate": 0.034,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "weak",
@@ -368,13 +368,13 @@
       "team": "Kansas City Chiefs",
       "abbr": "KC",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.544,
+        "motionUsage": "LOW",
+        "playActionRate": 0.187,
+        "airYardsPerAttempt": 5.3,
+        "shotgunRate": 0.593,
+        "noHuddleRate": 0.008,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "strong",
@@ -390,13 +390,13 @@
       "team": "Las Vegas Raiders",
       "abbr": "LV",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.605,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.163,
+        "airYardsPerAttempt": 7.9,
+        "shotgunRate": 0.5489999999999999,
+        "noHuddleRate": 0.086,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "strong",
@@ -412,13 +412,13 @@
       "team": "Los Angeles Chargers",
       "abbr": "LAC",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.639,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.183,
+        "airYardsPerAttempt": 7.6,
+        "shotgunRate": 0.679,
+        "noHuddleRate": 0.052000000000000005,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "weak",
@@ -434,13 +434,13 @@
       "team": "Los Angeles Rams",
       "abbr": "LAR",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.675,
+        "motionUsage": "HIGH",
+        "playActionRate": 0.161,
+        "airYardsPerAttempt": 7.3,
+        "shotgunRate": 0.507,
+        "noHuddleRate": 0.106,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "weak",
@@ -456,13 +456,13 @@
       "team": "Miami Dolphins",
       "abbr": "MIA",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.652,
+        "motionUsage": "HIGH",
+        "playActionRate": 0.145,
+        "airYardsPerAttempt": 8.5,
+        "shotgunRate": 0.578,
+        "noHuddleRate": 0.036000000000000004,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "weak",
@@ -478,13 +478,13 @@
       "team": "Minnesota Vikings",
       "abbr": "MIN",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.514,
+        "motionUsage": "LOW",
+        "playActionRate": 0.17600000000000002,
+        "airYardsPerAttempt": 7.7,
+        "shotgunRate": 0.601,
+        "noHuddleRate": 0.068,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "weak",
@@ -500,13 +500,13 @@
       "team": "New England Patriots",
       "abbr": "NE",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.504,
+        "motionUsage": "LOW",
+        "playActionRate": 0.129,
+        "airYardsPerAttempt": 9.2,
+        "shotgunRate": 0.585,
+        "noHuddleRate": 0.009000000000000001,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "neutral",
@@ -522,13 +522,13 @@
       "team": "New Orleans Saints",
       "abbr": "NO",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.618,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.11699999999999999,
+        "airYardsPerAttempt": 7.4,
+        "shotgunRate": 0.695,
+        "noHuddleRate": 0.14300000000000002,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "neutral",
@@ -544,13 +544,13 @@
       "team": "New York Giants",
       "abbr": "NYG",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.38299999999999995,
+        "motionUsage": "LOW",
+        "playActionRate": 0.129,
+        "airYardsPerAttempt": 9.2,
+        "shotgunRate": 0.611,
+        "noHuddleRate": 0.08199999999999999,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "weak",
@@ -566,13 +566,13 @@
       "team": "New York Jets",
       "abbr": "NYJ",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.494,
+        "motionUsage": "LOW",
+        "playActionRate": 0.147,
+        "airYardsPerAttempt": 7.6,
+        "shotgunRate": 0.568,
+        "noHuddleRate": 0.04,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "strong",
@@ -588,13 +588,13 @@
       "team": "Philadelphia Eagles",
       "abbr": "PHI",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.535,
+        "motionUsage": "LOW",
+        "playActionRate": 0.11199999999999999,
+        "airYardsPerAttempt": 7.1,
+        "shotgunRate": 0.723,
+        "noHuddleRate": 0.165,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "strong",
@@ -610,13 +610,13 @@
       "team": "Pittsburgh Steelers",
       "abbr": "PIT",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.45799999999999996,
+        "motionUsage": "LOW",
+        "playActionRate": 0.125,
+        "airYardsPerAttempt": 6.6,
+        "shotgunRate": 0.642,
+        "noHuddleRate": 0.075,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "very-strong",
@@ -632,13 +632,13 @@
       "team": "San Francisco 49ers",
       "abbr": "SF",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.669,
+        "motionUsage": "HIGH",
+        "playActionRate": 0.14400000000000002,
+        "airYardsPerAttempt": 7.9,
+        "shotgunRate": 0.475,
+        "noHuddleRate": 0.033,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "strong",
@@ -654,13 +654,13 @@
       "team": "Seattle Seahawks",
       "abbr": "SEA",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.503,
+        "motionUsage": "LOW",
+        "playActionRate": 0.15,
+        "airYardsPerAttempt": 6.7,
+        "shotgunRate": 0.508,
+        "noHuddleRate": 0.044000000000000004,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "neutral",
@@ -676,13 +676,13 @@
       "team": "Tampa Bay Buccaneers",
       "abbr": "TB",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.674,
+        "motionUsage": "HIGH",
+        "playActionRate": 0.132,
+        "airYardsPerAttempt": 7.5,
+        "shotgunRate": 0.636,
+        "noHuddleRate": 0.068,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "weak",
@@ -698,13 +698,13 @@
       "team": "Tennessee Titans",
       "abbr": "TEN",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.47600000000000003,
+        "motionUsage": "LOW",
+        "playActionRate": 0.151,
+        "airYardsPerAttempt": 6.4,
+        "shotgunRate": 0.718,
+        "noHuddleRate": 0.2,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "weak",
@@ -720,13 +720,13 @@
       "team": "Washington Commanders",
       "abbr": "WAS",
       "offense": {
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "airYardsPerAttempt": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
-        "source": null
+        "motionRate": 0.462,
+        "motionUsage": "LOW",
+        "playActionRate": 0.153,
+        "airYardsPerAttempt": 8.3,
+        "shotgunRate": 0.7240000000000001,
+        "noHuddleRate": 0.08900000000000001,
+        "source": "Sharp Football Analysis"
       },
       "defenseVsMotion": {
         "passProfile": "weak",
@@ -746,15 +746,15 @@
       "awayOffenseVsHomeDefense": {
         "offense": "WAS",
         "defense": "NYG",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.462,
+        "motionUsage": "LOW",
+        "playActionRate": 0.153,
+        "shotgunRate": 0.7240000000000001,
+        "noHuddleRate": 0.08900000000000001,
         "defensePassVsMotion": "weak",
         "defenseRunVsMotion": "weak",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -762,15 +762,15 @@
       "homeOffenseVsAwayDefense": {
         "offense": "NYG",
         "defense": "WAS",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.38299999999999995,
+        "motionUsage": "LOW",
+        "playActionRate": 0.129,
+        "shotgunRate": 0.611,
+        "noHuddleRate": 0.08199999999999999,
         "defensePassVsMotion": "weak",
         "defenseRunVsMotion": "very-strong",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -782,15 +782,15 @@
       "awayOffenseVsHomeDefense": {
         "offense": "NE",
         "defense": "DET",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.504,
+        "motionUsage": "LOW",
+        "playActionRate": 0.129,
+        "shotgunRate": 0.585,
+        "noHuddleRate": 0.009000000000000001,
         "defensePassVsMotion": "neutral",
         "defenseRunVsMotion": "strong",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -798,15 +798,15 @@
       "homeOffenseVsAwayDefense": {
         "offense": "DET",
         "defense": "NE",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.512,
+        "motionUsage": "LOW",
+        "playActionRate": 0.19699999999999998,
+        "shotgunRate": 0.46299999999999997,
+        "noHuddleRate": 0.05,
         "defensePassVsMotion": "neutral",
         "defenseRunVsMotion": "strong",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -818,15 +818,15 @@
       "awayOffenseVsHomeDefense": {
         "offense": "KC",
         "defense": "ATL",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.544,
+        "motionUsage": "LOW",
+        "playActionRate": 0.187,
+        "shotgunRate": 0.593,
+        "noHuddleRate": 0.008,
         "defensePassVsMotion": "strong",
         "defenseRunVsMotion": "strong",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -834,15 +834,15 @@
       "homeOffenseVsAwayDefense": {
         "offense": "ATL",
         "defense": "KC",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.5720000000000001,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.134,
+        "shotgunRate": 0.526,
+        "noHuddleRate": 0.045,
         "defensePassVsMotion": "strong",
         "defenseRunVsMotion": "strong",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -854,15 +854,15 @@
       "awayOffenseVsHomeDefense": {
         "offense": "HOU",
         "defense": "CLE",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.536,
+        "motionUsage": "LOW",
+        "playActionRate": 0.153,
+        "shotgunRate": 0.679,
+        "noHuddleRate": 0.05,
         "defensePassVsMotion": "very-weak",
         "defenseRunVsMotion": "strong",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -870,15 +870,15 @@
       "homeOffenseVsAwayDefense": {
         "offense": "CLE",
         "defense": "HOU",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.578,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.125,
+        "shotgunRate": 0.767,
+        "noHuddleRate": 0.043,
         "defensePassVsMotion": "weak",
         "defenseRunVsMotion": "very-strong",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -890,15 +890,15 @@
       "awayOffenseVsHomeDefense": {
         "offense": "MIN",
         "defense": "GB",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.514,
+        "motionUsage": "LOW",
+        "playActionRate": 0.17600000000000002,
+        "shotgunRate": 0.601,
+        "noHuddleRate": 0.068,
         "defensePassVsMotion": "strong",
         "defenseRunVsMotion": "strong",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -906,15 +906,15 @@
       "homeOffenseVsAwayDefense": {
         "offense": "GB",
         "defense": "MIN",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.52,
+        "motionUsage": "LOW",
+        "playActionRate": 0.139,
+        "shotgunRate": 0.67,
+        "noHuddleRate": 0.077,
         "defensePassVsMotion": "weak",
         "defenseRunVsMotion": "weak",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -926,15 +926,15 @@
       "awayOffenseVsHomeDefense": {
         "offense": "JAX",
         "defense": "TEN",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.604,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.14300000000000002,
+        "shotgunRate": 0.536,
+        "noHuddleRate": 0.034,
         "defensePassVsMotion": "weak",
         "defenseRunVsMotion": "weak",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -942,15 +942,15 @@
       "homeOffenseVsAwayDefense": {
         "offense": "TEN",
         "defense": "JAX",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.47600000000000003,
+        "motionUsage": "LOW",
+        "playActionRate": 0.151,
+        "shotgunRate": 0.718,
+        "noHuddleRate": 0.2,
         "defensePassVsMotion": "weak",
         "defenseRunVsMotion": "strong",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -962,15 +962,16 @@
       "awayOffenseVsHomeDefense": {
         "offense": "MIA",
         "defense": "IND",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.652,
+        "motionUsage": "HIGH",
+        "playActionRate": 0.145,
+        "shotgunRate": 0.578,
+        "noHuddleRate": 0.036000000000000004,
         "defensePassVsMotion": "strong",
         "defenseRunVsMotion": "weak",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "RUN-MOTION ADVANTAGE",
+          "HIGH-MOTION OFFENSE vs MOTION-VULNERABLE DEFENSE",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -978,15 +979,15 @@
       "homeOffenseVsAwayDefense": {
         "offense": "IND",
         "defense": "MIA",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.619,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.17600000000000002,
+        "shotgunRate": 0.623,
+        "noHuddleRate": 0.043,
         "defensePassVsMotion": "weak",
         "defenseRunVsMotion": "strong",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -998,15 +999,15 @@
       "awayOffenseVsHomeDefense": {
         "offense": "CAR",
         "defense": "NO",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.496,
+        "motionUsage": "LOW",
+        "playActionRate": 0.212,
+        "shotgunRate": 0.648,
+        "noHuddleRate": 0.07400000000000001,
         "defensePassVsMotion": "neutral",
         "defenseRunVsMotion": "weak",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -1014,15 +1015,15 @@
       "homeOffenseVsAwayDefense": {
         "offense": "NO",
         "defense": "CAR",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.618,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.11699999999999999,
+        "shotgunRate": 0.695,
+        "noHuddleRate": 0.14300000000000002,
         "defensePassVsMotion": "very-weak",
         "defenseRunVsMotion": "very-weak",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -1034,15 +1035,15 @@
       "awayOffenseVsHomeDefense": {
         "offense": "BUF",
         "defense": "NYJ",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.578,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.204,
+        "shotgunRate": 0.436,
+        "noHuddleRate": 0.040999999999999995,
         "defensePassVsMotion": "strong",
         "defenseRunVsMotion": "weak",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -1050,15 +1051,15 @@
       "homeOffenseVsAwayDefense": {
         "offense": "NYJ",
         "defense": "BUF",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.494,
+        "motionUsage": "LOW",
+        "playActionRate": 0.147,
+        "shotgunRate": 0.568,
+        "noHuddleRate": 0.04,
         "defensePassVsMotion": "weak",
         "defenseRunVsMotion": "weak",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -1070,15 +1071,15 @@
       "awayOffenseVsHomeDefense": {
         "offense": "SEA",
         "defense": "LV",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.503,
+        "motionUsage": "LOW",
+        "playActionRate": 0.15,
+        "shotgunRate": 0.508,
+        "noHuddleRate": 0.044000000000000004,
         "defensePassVsMotion": "strong",
         "defenseRunVsMotion": "weak",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -1086,15 +1087,15 @@
       "homeOffenseVsAwayDefense": {
         "offense": "LV",
         "defense": "SEA",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.605,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.163,
+        "shotgunRate": 0.5489999999999999,
+        "noHuddleRate": 0.086,
         "defensePassVsMotion": "neutral",
         "defenseRunVsMotion": "very-strong",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -1106,15 +1107,16 @@
       "awayOffenseVsHomeDefense": {
         "offense": "LAR",
         "defense": "ARI",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.675,
+        "motionUsage": "HIGH",
+        "playActionRate": 0.161,
+        "shotgunRate": 0.507,
+        "noHuddleRate": 0.106,
         "defensePassVsMotion": "weak",
         "defenseRunVsMotion": "strong",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "PASS-MOTION ADVANTAGE",
+          "HIGH-MOTION OFFENSE vs MOTION-VULNERABLE DEFENSE",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -1122,15 +1124,15 @@
       "homeOffenseVsAwayDefense": {
         "offense": "ARI",
         "defense": "LAR",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.563,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.125,
+        "shotgunRate": 0.595,
+        "noHuddleRate": 0.102,
         "defensePassVsMotion": "weak",
         "defenseRunVsMotion": "weak",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -1142,15 +1144,17 @@
       "awayOffenseVsHomeDefense": {
         "offense": "SF",
         "defense": "DAL",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.669,
+        "motionUsage": "HIGH",
+        "playActionRate": 0.14400000000000002,
+        "shotgunRate": 0.475,
+        "noHuddleRate": 0.033,
         "defensePassVsMotion": "weak",
         "defenseRunVsMotion": "weak",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "PASS-MOTION ADVANTAGE",
+          "RUN-MOTION ADVANTAGE",
+          "HIGH-MOTION OFFENSE vs MOTION-VULNERABLE DEFENSE",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -1158,15 +1162,15 @@
       "homeOffenseVsAwayDefense": {
         "offense": "DAL",
         "defense": "SF",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.45299999999999996,
+        "motionUsage": "LOW",
+        "playActionRate": 0.151,
+        "shotgunRate": 0.642,
+        "noHuddleRate": 0.079,
         "defensePassVsMotion": "strong",
         "defenseRunVsMotion": "strong",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -1178,15 +1182,15 @@
       "awayOffenseVsHomeDefense": {
         "offense": "PIT",
         "defense": "CIN",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.45799999999999996,
+        "motionUsage": "LOW",
+        "playActionRate": 0.125,
+        "shotgunRate": 0.642,
+        "noHuddleRate": 0.075,
         "defensePassVsMotion": "strong",
         "defenseRunVsMotion": "weak",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -1194,15 +1198,15 @@
       "homeOffenseVsAwayDefense": {
         "offense": "CIN",
         "defense": "PIT",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.568,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.11699999999999999,
+        "shotgunRate": 0.754,
+        "noHuddleRate": 0.043,
         "defensePassVsMotion": "very-strong",
         "defenseRunVsMotion": "strong",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -1214,15 +1218,15 @@
       "awayOffenseVsHomeDefense": {
         "offense": "LAC",
         "defense": "BAL",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.639,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.183,
+        "shotgunRate": 0.679,
+        "noHuddleRate": 0.052000000000000005,
         "defensePassVsMotion": "strong",
         "defenseRunVsMotion": "weak",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
@@ -1230,15 +1234,15 @@
       "homeOffenseVsAwayDefense": {
         "offense": "BAL",
         "defense": "LAC",
-        "motionRate": null,
-        "motionUsage": "SOURCE_PENDING",
-        "playActionRate": null,
-        "shotgunRate": null,
-        "noHuddleRate": null,
+        "motionRate": 0.613,
+        "motionUsage": "AVERAGE",
+        "playActionRate": 0.14800000000000002,
+        "shotgunRate": 0.594,
+        "noHuddleRate": 0.034,
         "defensePassVsMotion": "weak",
         "defenseRunVsMotion": "neutral",
         "flags": [
-          "MOTION-RATE SOURCE PENDING",
+          "STYLE NEUTRAL / MIXED",
           "SMALL-SAMPLE WARNING"
         ],
         "modelPointImpact": 0
