@@ -1,0 +1,504 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W10-BUF-NYJ",
+  "portalGameId": "401873054",
+  "week": 10,
+  "away": "Buffalo Bills",
+  "home": "New York Jets",
+  "awayAbbr": "BUF",
+  "homeAbbr": "NYJ",
+  "kickoff": "2026-11-15T18:00Z",
+  "generatedAt": "2026-11-14T00:43:16.221513+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "BUF",
+  "assessmentSide": "BUF",
+  "structuralValueSide": null,
+  "alignment": "UNRESOLVED",
+  "thesis": "BUF has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "BUF",
+      "gap": 0.142,
+      "unit": "EPA/play",
+      "awayOffense": 0.25303800896317497,
+      "homeDefenseAllowed": 0.16082944060975837,
+      "homeOffense": 0.08399489753630512,
+      "awayDefenseAllowed": 0.04639821990688171,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "BUF",
+      "gap": 0.051,
+      "unit": "EPA/play",
+      "awayOffense": 0.10020451071615433,
+      "homeDefenseAllowed": 0.04518460299569451,
+      "homeOffense": 0.025277352518819393,
+      "awayDefenseAllowed": 0.017636472717948323,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "BUF",
+      "gap": 0.103,
+      "unit": "EPA/play",
+      "awayOffense": 0.09332620344278617,
+      "homeDefenseAllowed": -0.06310058922119906,
+      "homeOffense": -0.10516386609785157,
+      "awayDefenseAllowed": -0.07142894588724123,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "BUF",
+      "gap": 1.65,
+      "unit": "percentage points",
+      "awayOffense": 0.1349206349206349,
+      "homeDefenseAllowed": 0.09236234458259325,
+      "homeOffense": 0.09904761904761905,
+      "awayDefenseAllowed": 0.09523809523809523,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "BUF",
+      "gap": 2.629,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.15162454873646208,
+      "homeDefenseAllowed": 0.16025641025641027,
+      "homeOffense": 0.16932907348242812,
+      "awayDefenseAllowed": 0.1951219512195122,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "counterarguments": [],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "BUF",
+      "gap": 0.142,
+      "unit": "EPA/play",
+      "awayOffense": 0.25303800896317497,
+      "homeDefenseAllowed": 0.16082944060975837,
+      "homeOffense": 0.08399489753630512,
+      "awayDefenseAllowed": 0.04639821990688171,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "BUF",
+      "gap": 0.051,
+      "unit": "EPA/play",
+      "awayOffense": 0.10020451071615433,
+      "homeDefenseAllowed": 0.04518460299569451,
+      "homeOffense": 0.025277352518819393,
+      "awayDefenseAllowed": 0.017636472717948323,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "BUF",
+      "gap": 0.103,
+      "unit": "EPA/play",
+      "awayOffense": 0.09332620344278617,
+      "homeDefenseAllowed": -0.06310058922119906,
+      "homeOffense": -0.10516386609785157,
+      "awayDefenseAllowed": -0.07142894588724123,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "BUF",
+      "gap": 1.65,
+      "unit": "percentage points",
+      "awayOffense": 0.1349206349206349,
+      "homeDefenseAllowed": 0.09236234458259325,
+      "homeOffense": 0.09904761904761905,
+      "awayDefenseAllowed": 0.09523809523809523,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "BUF",
+      "gap": 2.629,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.15162454873646208,
+      "homeDefenseAllowed": 0.16025641025641027,
+      "homeOffense": 0.16932907348242812,
+      "awayDefenseAllowed": 0.1951219512195122,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": -0.2015,
+  "profiles": {
+    "BUF": {
+      "season": {
+        "games": 8,
+        "offPlays": 504,
+        "defPlays": 504,
+        "offEpa": 0.1405,
+        "defEpa": -0.0099,
+        "netEpa": 0.1504,
+        "adjustedNetEpa": 0.1545,
+        "earlyOffEpa": 0.1057,
+        "earlyDefEpa": 0.0175,
+        "passOffEpa": 0.253,
+        "passDefEpa": 0.0464
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 150,
+        "defPlays": 93,
+        "offEpa": -0.0087,
+        "defEpa": -0.62,
+        "netEpa": 0.6113,
+        "adjustedNetEpa": 0.6497,
+        "earlyOffEpa": -0.0288,
+        "earlyDefEpa": -0.3814,
+        "passOffEpa": 0.0394,
+        "passDefEpa": -0.7289
+      }
+    },
+    "NYJ": {
+      "season": {
+        "games": 9,
+        "offPlays": 525,
+        "defPlays": 563,
+        "offEpa": 0.0031,
+        "defEpa": 0.039,
+        "netEpa": -0.0359,
+        "adjustedNetEpa": -0.047,
+        "earlyOffEpa": 0.0226,
+        "earlyDefEpa": 0.0452,
+        "passOffEpa": 0.084,
+        "passDefEpa": 0.1608
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 176,
+        "defPlays": 184,
+        "offEpa": 0.062,
+        "defEpa": 0.2199,
+        "netEpa": -0.158,
+        "adjustedNetEpa": -0.1997,
+        "earlyOffEpa": 0.0563,
+        "earlyDefEpa": 0.1819,
+        "passOffEpa": 0.1308,
+        "passDefEpa": 0.4654
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": false,
+    "reason": "Structural component arithmetic failed; disagreement withheld.",
+    "reconstructedHomeMargin": -16.813,
+    "structuralHomeMargin": null
+  },
+  "market": {
+    "spread_display": "Buffalo Bills -8.5",
+    "spread": null,
+    "total": 50.5,
+    "home_margin": -8.5,
+    "home_team_sportsbook_spread": 8.5,
+    "moneyline": {
+      "away": -425,
+      "home": 330
+    },
+    "source": "ESPN Draft Kings",
+    "timestamp": "2026-11-14T00:42:36.862Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+  },
+  "productionFair": -8.378,
+  "structuralFair": null,
+  "structuralDifference": null,
+  "price": {
+    "side": "BUF",
+    "minimumSpreadAtSnapshot": -6.5,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-14T00:42:37.124200+00:00",
+    "reviewComplete": false,
+    "flags": [
+      "BUF QUESTIONABLE: CB Christian Benford (Wrist).",
+      "BUF DOUBTFUL: T Spencer Brown (Ankle).",
+      "BUF QUESTIONABLE: S Sam Franklin Jr. (Shoulder).",
+      "BUF QUESTIONABLE: CB Jordan Hancock (Hamstring).",
+      "BUF QUESTIONABLE: WR Tyrell Shavers (Knee).",
+      "NYJ QUESTIONABLE: CB Jarvis Brownlee Jr. (Illness).",
+      "NYJ QUESTIONABLE: WR Omar Cooper Jr. (Ankle).",
+      "NYJ QUESTIONABLE: WR Adonai Mitchell (Knee).",
+      "NYJ QUESTIONABLE: DE Joseph Ossai (Ankle).",
+      "NYJ QUESTIONABLE: S VJ Payne (Knee).",
+      "NYJ QUESTIONABLE: DT Harrison Phillips (Ankle).",
+      "NYJ OUT: LB Trevin Wallace (Groin).",
+      "NYJ QUESTIONABLE: WR Garrett Wilson (Concussion).",
+      "NYJ QUESTIONABLE: CB Nahshon Wright (Back)."
+    ],
+    "watch": [
+      {
+        "team": "BUF",
+        "player": "Christian Benford",
+        "position": "CB",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "BUF",
+        "player": "Terrel Bernard",
+        "position": "LB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "BUF",
+        "player": "Spencer Brown",
+        "position": "T",
+        "status": "Doubtful Did Not Participate In Practice",
+        "unit": "OL",
+        "scenario": "If unavailable, reassess protection and the passing matchup."
+      },
+      {
+        "team": "BUF",
+        "player": "Sam Franklin Jr.",
+        "position": "S",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "BUF",
+        "player": "Jordan Hancock",
+        "position": "CB",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "BUF",
+        "player": "Ed Oliver",
+        "position": "DE",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "BUF",
+        "player": "Tyrell Shavers",
+        "position": "WR",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYJ",
+        "player": "Jarvis Brownlee Jr.",
+        "position": "CB",
+        "status": "Questionable Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "NYJ",
+        "player": "Omar Cooper Jr.",
+        "position": "WR",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYJ",
+        "player": "Adonai Mitchell",
+        "position": "WR",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYJ",
+        "player": "Joseph Ossai",
+        "position": "DE",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYJ",
+        "player": "VJ Payne",
+        "position": "S",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "NYJ",
+        "player": "Harrison Phillips",
+        "position": "DT",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYJ",
+        "player": "Trevin Wallace",
+        "position": "LB",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYJ",
+        "player": "Garrett Wilson",
+        "position": "WR",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "NYJ",
+        "player": "Nahshon Wright",
+        "position": "CB",
+        "status": "Questionable Full Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "BUF",
+        "unit": "OL",
+        "count": 1,
+        "players": [
+          "Spencer Brown"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "BUF",
+        "unit": "Secondary",
+        "count": 3,
+        "players": [
+          "Christian Benford",
+          "Sam Franklin Jr.",
+          "Jordan Hancock"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "NYJ",
+        "unit": "Secondary",
+        "count": 3,
+        "players": [
+          "Jarvis Brownlee Jr.",
+          "VJ Payne",
+          "Nahshon Wright"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W10-BUF-NYJ",
+    "canonical_game_id": "2026-W10-BUF-NYJ",
+    "matchup": "Buffalo Bills at New York Jets",
+    "venue": "MetLife Stadium",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Mostly Sunny at kickoff: 50\u00b0F; wind NW 13.0 mph, gust 23.0 mph; precipitation chance 0%.",
+    "risk": "weather review required",
+    "observed_at": "2026-11-14T00:43:02.482648+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/40.8135,-74.0745",
+    "forecast_timestamp": "2026-11-13T23:46:23+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W10-BUF-NYJ",
+      "kickoff": "2026-11-15T18:00Z",
+      "temp_f": 50,
+      "wind_mph": 13.0,
+      "gust_mph": 23.0,
+      "precip_chance_pct": 0,
+      "forecast_timestamp": "2026-11-13T23:46:23+00:00",
+      "sources": [
+        "https://api.weather.gov/points/40.8135,-74.0745",
+        "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
+        "https://api.weather.gov/gridpoints/OKX/30,46"
+      ],
+      "wind_speed_raw": "13 mph",
+      "wind_direction": "NW",
+      "forecast_hour_start": "2026-11-15T13:00:00-05:00",
+      "forecast_hour_end": "2026-11-15T14:00:00-05:00",
+      "conditions": "Mostly Sunny",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-11-14T00:43:02.482648+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/40.8135,-74.0745",
+      "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
+      "https://api.weather.gov/gridpoints/OKX/30,46"
+    ]
+  },
+  "sustainability": {
+    "BUF": {
+      "turnoverRate": 0.023809523809523808,
+      "takeawayRate": 0.023809523809523808,
+      "thirdDownConversion": 0.44565217391304346,
+      "redZoneTdRate": 0.6666666666666666
+    },
+    "NYJ": {
+      "turnoverRate": 0.013333333333333334,
+      "takeawayRate": 0.015985790408525755,
+      "thirdDownConversion": 0.35714285714285715,
+      "redZoneTdRate": 0.4074074074074074
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 9,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Structural component arithmetic failed; disagreement withheld.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-11-10T05:34:18.439Z",
+      "capturedAt": "2026-11-10T05:34:30.972953+00:00",
+      "spread": "Buffalo Bills -8.5",
+      "homeMargin": -8.5,
+      "source": "ESPN DraftKings"
+    },
+    {
+      "observedAt": "2026-11-13T23:29:55.247Z",
+      "capturedAt": "2026-11-13T23:30:08.310660+00:00",
+      "spread": "Buffalo Bills -8.5",
+      "homeMargin": -8.5,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
