@@ -2,7 +2,7 @@
   "version": "NFL-WEEKLY-MANIFEST-v3",
   "season": 2026,
   "week": 10,
-  "updatedAt": "2026-11-14T11:29:52.459Z",
+  "updatedAt": "2026-11-14T12:30:09.333Z",
   "status": "FAIL",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-11-14.json",
@@ -36,14 +36,14 @@
     "statisticalDisplay": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-11-14T11:29:47.080251+00:00",
+      "verifiedAt": "2026-11-14T12:30:04.876613+00:00",
       "artifact": "data/statistical-display-integrity-2026-w10.json",
       "note": "32 observed season-to-date profiles through Week 9; defensive yardage independently aggregated from each opponent box score. Advanced inputs use the same pregame cutoff."
     },
     "marketDerivedIntegrity": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-11-14T11:29:39.051Z",
+      "verifiedAt": "2026-11-14T12:29:55.169Z",
       "artifact": "data/market-derived-integrity-2026-w10.json",
       "note": "All 14 current spread-derived production fairs independently reconciled as 80% market + 20% frozen structural line with calculation timestamps at/after market dependency."
     },
@@ -54,13 +54,13 @@
       "freshMarketGames": 13,
       "calculationFreshGames": 13,
       "moneylineAvailableGames": 13,
-      "availabilityCheckpointDue": 1,
-      "availabilityCheckpointComplete": 1,
-      "weatherCheckpointDue": 1,
-      "weatherCheckpointComplete": 0,
+      "availabilityCheckpointDue": 8,
+      "availabilityCheckpointComplete": 8,
+      "weatherCheckpointDue": 8,
+      "weatherCheckpointComplete": 7,
       "upsetLabVerified": true,
       "issues": [
-        "weather review due 0/1"
+        "weather review due 7/8"
       ],
       "warnings": [],
       "note": "Wednesday certification requires fresh spread/total, selected-week model calculations, universal Deep Dives and upset research. Exact ML, final injury designations and weather become blocking only when their execution checkpoints are due; missing values are never inferred."
