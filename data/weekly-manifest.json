@@ -2,8 +2,8 @@
   "version": "NFL-WEEKLY-MANIFEST-v3",
   "season": 2026,
   "week": 10,
-  "updatedAt": "2026-11-15T12:30:51.831Z",
-  "status": "FAIL",
+  "updatedAt": "2026-11-15T12:41:28.019Z",
+  "status": "PASS",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-11-15.json",
   "gates": {
@@ -48,7 +48,7 @@
       "note": "All 14 current spread-derived production fairs independently reconciled as 80% market + 20% frozen structural line with calculation timestamps at/after market dependency."
     },
     "currentWeekCompleteness": {
-      "status": "FAIL",
+      "status": "PASS",
       "blocking": true,
       "unplayedGames": 13,
       "freshMarketGames": 13,
@@ -57,11 +57,9 @@
       "availabilityCheckpointDue": 12,
       "availabilityCheckpointComplete": 12,
       "weatherCheckpointDue": 12,
-      "weatherCheckpointComplete": 11,
+      "weatherCheckpointComplete": 12,
       "upsetLabVerified": true,
-      "issues": [
-        "weather review due 11/12"
-      ],
+      "issues": [],
       "warnings": [],
       "note": "Wednesday certification requires fresh spread/total, selected-week model calculations, universal Deep Dives and upset research. Exact ML, final injury designations and weather become blocking only when their execution checkpoints are due; missing values are never inferred."
     },
@@ -140,8 +138,6 @@
       "items": []
     }
   },
-  "failures": [
-    "CURRENTWEEKCOMPLETENESS_INCOMPLETE"
-  ],
+  "failures": [],
   "historicalWarnings": []
 }

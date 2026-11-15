@@ -1,4 +1,4 @@
-import json, urllib.request, datetime, concurrent.futures, re, argparse
+import json, urllib.request, urllib.parse, datetime, concurrent.futures, re, argparse, math
 from pathlib import Path
 from zoneinfo import ZoneInfo
 parser=argparse.ArgumentParser(description='Refresh official kickoff-hour forecasts for domestic and supported international venues.')
@@ -37,17 +37,53 @@ def fetch(g):
         if g['homeAbbr'] in ('LAC','LAR'):rec['venue_limitation']='SoFi is covered/open-sided; surrounding point forecast is not on-field wind or rain exposure. No automatic weather model adjustment.'
     except Exception as e:rec['verification_status']='unavailable: '+str(e)
     return rec
-with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:rows=list(pool.map(fetch,[g for g in board['games'] if g.get('homeAbbr') in coords and g.get('eventState')!='final' and not any(k in str(venue_by_id.get(g['gameId'],{}).get('venue','')).lower() for k in ('wembley','tottenham','berlin','munich','madrid','melbourne','mexico','sao paulo','dublin','paris'))]))
+def munich_forecast(game):
+    local=dt(game['dateTime']).astimezone(ZoneInfo('Europe/Berlin'))
+    start=local.replace(minute=0,second=0,microsecond=0)
+    u='https://api.open-meteo.com/v1/forecast?'+urllib.parse.urlencode({
+        'latitude':48.2188,'longitude':11.6247,'models':'icon_seamless','timezone':'Europe/Berlin',
+        'start_date':local.date().isoformat(),'end_date':local.date().isoformat(),
+        'hourly':'temperature_2m,precipitation_probability,weather_code,wind_speed_10m,wind_direction_10m,wind_gusts_10m'})
+    r={'game_id':game['gameId'],'kickoff':game['dateTime'],'sources':[u],
+       'forecast_provider':'DWD ICON via Open-Meteo','manual_international':True}
+    try:
+        doc=get(u)
+        hourly=doc['hourly']
+        index=hourly['time'].index(start.strftime('%Y-%m-%dT%H:%M'))
+        def value(k):
+            v=hourly[k][index]
+            if not isinstance(v,(int,float)) or not math.isfinite(v):raise ValueError('missing '+k+' at kickoff')
+            return v
+        wx=value('weather_code')
+        condition={0:'Clear',1:'Mainly clear',2:'Partly cloudy',3:'Overcast',45:'Fog',48:'Freezing fog'}.get(wx,f'WMO forecast code {wx:g}')
+        r.update(temp_f=round(value('temperature_2m')*9/5+32,1),wind_mph=round(value('wind_speed_10m')/1.609344,1),
+                 gust_mph=round(value('wind_gusts_10m')/1.609344,1),wind_direction=['N','NE','E','SE','S','SW','W','NW'][round(value('wind_direction_10m')/45)%8],
+                 precip_chance_pct=value('precipitation_probability'),conditions=condition,forecast_timestamp=None,
+                 retrieved_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),forecast_hour_start=start.isoformat(),
+                 forecast_hour_end=(start+datetime.timedelta(hours=1)).isoformat(),
+                 verification_status='verified DWD ICON kickoff-hour forecast via Open-Meteo',
+                 limitations=['Provider supplies an hourly stadium-area forecast and retrieval time. No model issuance time or on-field measurement is claimed.'])
+    except (OSError,ValueError,KeyError,IndexError,TypeError) as e:
+        r.update(verification_status='unavailable: Munich forecast '+str(e))
+    return r
+
+with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:rows=list(pool.map(fetch,[g for g in board['games'] if g.get('homeAbbr') in coords and g.get('eventState')!='final' and venue_by_id.get(g['gameId'],{}).get('environment')!='indoor' and not any(k in str(venue_by_id.get(g['gameId'],{}).get('venue','')).lower() for k in ('wembley','tottenham','berlin','munich','allianz arena','madrid','melbourne','mexico','sao paulo','dublin','paris'))]))
 try:previous=json.load(open(args.output))
 except (OSError,ValueError):previous={}
 # Preserve only fresh selected-week international forecasts reviewed separately.
 for prior in previous.get('games',[]):
-    if prior.get('game_id') in {g['gameId'] for g in board['games']} and prior.get('manual_international') and (datetime.datetime.now(datetime.timezone.utc)-dt(prior.get('retrieved_at','2000-01-01T00:00:00Z'))).total_seconds()<12*3600:rows.append(prior)
+    if prior.get('game_id') in {g['gameId'] for g in board['games']} and prior.get('manual_international') and prior.get('verification_status','').startswith('verified') and (datetime.datetime.now(datetime.timezone.utc)-dt(prior.get('retrieved_at','2000-01-01T00:00:00Z'))).total_seconds()<12*3600:rows.append(prior)
 # International venue mapping is explicit; never use the nominal home city's weather.
 for game in board['games']:
     if game.get('eventState')=='final':continue
     venue=next((v for v in json.load(open(args.repo+'/data/nfl-weather-current.json'))['games'] if v['game_id']==game['gameId']),{})
-    if 'wembley' not in str(venue.get('venue','')).lower():continue
+    name=str(venue.get('venue','')).lower()
+    if 'munich' in name or 'allianz arena' in name:
+        fresh=munich_forecast(game)
+        if fresh['verification_status'].startswith('verified') or not any(r['game_id']==game['gameId'] for r in rows):
+            rows=[r for r in rows if r['game_id']!=game['gameId']]+[fresh]
+        continue
+    if 'wembley' not in name:continue
     u='https://weather.metoffice.gov.uk/forecast/gcpv39krt'
     try:
         with urllib.request.urlopen(u,timeout=25) as response:page=response.read().decode()
@@ -79,13 +115,13 @@ for w in venue_data['games']:
     if not r or not r['verification_status'].startswith(('verified','indoor')):continue
     indoor=r['verification_status'].startswith('indoor')
     precipitation=r.get('precip_chance_display',str(r.get('precip_chance_pct'))+'%')
-    w.update(status='Official indoor venue verified' if indoor else 'Official kickoff-hour forecast verified',observed_at=r['retrieved_at'],forecast_timestamp=r.get('forecast_timestamp'),forecast_verified=True,forecast=r,sources=r['sources'],source=r['sources'][0])
+    w.update(status='Official indoor venue verified' if indoor else (r.get('forecast_provider')+' kickoff-hour forecast verified' if r.get('forecast_provider') else 'Official kickoff-hour forecast verified'),observed_at=r['retrieved_at'],forecast_timestamp=r.get('forecast_timestamp'),forecast_verified=True,forecast=r,sources=r['sources'],source=r['sources'][0])
     if not indoor:
         w['summary']=f"{r.get('conditions','')} at kickoff: {r.get('temp_f')}°F; wind {r.get('wind_direction','')} {r.get('wind_mph')} mph, gust {r.get('gust_mph')} mph; precipitation chance {precipitation}."
         if r.get('venue_limitation'):w['summary']+=' '+r['venue_limitation']
         w['risk']='weather review required' if (r.get('gust_mph') or 0)>=20 or (r.get('precip_chance_pct') or 0)>=40 else 'no major hourly weather flag'
     else:w['risk']='indoor / roof controlled'
-venue_data['updated_at']=datetime.datetime.now(datetime.timezone.utc).isoformat();venue_data['source_status']='Official NWS kickoff-hour forecasts and verified Met Office London snapshot'
+venue_data['updated_at']=datetime.datetime.now(datetime.timezone.utc).isoformat();venue_data['source_status']='NWS domestic, Met Office Wembley, DWD ICON via Open-Meteo for Munich; indoor designation verified separately'
 json.dump(venue_data,open(args.repo+'/data/nfl-weather-current.json','w'),indent=2)
 print('Official weather coverage',len(rows),'games')
 
