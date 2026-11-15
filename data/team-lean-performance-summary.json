@@ -1,15 +1,44 @@
 {
-  "generatedAt": "2026-11-15T17:29:39.082776+00:00",
+  "generatedAt": "2026-11-15T18:29:46.304434+00:00",
   "summary": {
-    "gradedGames": 0,
+    "gradedGames": 1,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "pushes": 0,
     "roi": null,
     "clv": null
   },
-  "byMechanism": {},
-  "games": [],
+  "byMechanism": {
+    "Explosive plays": {
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "pushes": 0
+    },
+    "Rushing efficiency": {
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "pushes": 0
+    }
+  },
+  "games": [
+    {
+      "gameId": "2026-W10-NE-DET",
+      "snapshotAt": "2026-11-15T14:29:53.320700+00:00",
+      "side": "NE",
+      "alignment": "CONFLICT",
+      "winnerResult": "LOSS",
+      "atsResult": "LOSS",
+      "mechanisms": [
+        "Rushing efficiency",
+        "Explosive plays"
+      ],
+      "closingLineValue": null,
+      "units": null,
+      "note": "Research ATS at saved market line. ROI requires exact issued price/stake; closing line unavailable unless separately captured."
+    }
+  ],
   "rule": "Last authentic pregame observation, including passes in history. Directional leans graded at saved market; never retrospective bets. Overlapping mechanisms are not independent strategies.",
   "ungradedPasses": 6,
   "historicalBackfill": false
