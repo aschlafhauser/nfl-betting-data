@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 10,
-  "updated_at": "2026-11-15T16:30:01.498707+00:00",
+  "updated_at": "2026-11-15T17:29:29.847661+00:00",
   "source_status": "NWS domestic, Met Office Wembley, DWD ICON via Open-Meteo for Munich; indoor designation verified separately",
   "games": [
     {
@@ -54,9 +54,9 @@
       "venue": "FC Bayern Munich Stadium",
       "environment": "outdoor",
       "status": "DWD ICON via Open-Meteo kickoff-hour forecast verified",
-      "summary": "Overcast at kickoff: 50.2\u00b0F; wind SE 4.3 mph, gust 7.4 mph; precipitation chance 20%.",
-      "risk": "no major hourly weather flag",
-      "observed_at": "2026-11-15T16:30:01.494804+00:00",
+      "summary": "Overcast at kickoff: 50.2\u00b0F; wind SE 4.3 mph, gust 7.4 mph; precipitation chance 43%.",
+      "risk": "weather review required",
+      "observed_at": "2026-11-15T17:29:29.845206+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
       "source": "https://api.open-meteo.com/v1/forecast?latitude=48.2188&longitude=11.6247&models=icon_seamless&timezone=Europe%2FBerlin&start_date=2026-11-15&end_date=2026-11-15&hourly=temperature_2m%2Cprecipitation_probability%2Cweather_code%2Cwind_speed_10m%2Cwind_direction_10m%2Cwind_gusts_10m",
@@ -74,10 +74,10 @@
         "wind_mph": 4.3,
         "gust_mph": 7.4,
         "wind_direction": "SE",
-        "precip_chance_pct": 20,
+        "precip_chance_pct": 43,
         "conditions": "Overcast",
         "forecast_timestamp": null,
-        "retrieved_at": "2026-11-15T16:30:01.494804+00:00",
+        "retrieved_at": "2026-11-15T17:29:29.845206+00:00",
         "forecast_hour_start": "2026-11-15T15:00:00+01:00",
         "forecast_hour_end": "2026-11-15T16:00:00+01:00",
         "verification_status": "verified DWD ICON kickoff-hour forecast via Open-Meteo",
@@ -98,7 +98,7 @@
       "status": "Official indoor venue verified",
       "summary": "Mercedes-Benz Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
       "risk": "indoor / roof controlled",
-      "observed_at": "2026-11-15T16:30:01.497933+00:00",
+      "observed_at": "2026-11-15T17:29:29.847175+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -120,7 +120,7 @@
         "limitations": [
           "Roof status is governed by venue/event information; outside air values are not on-field conditions."
         ],
-        "retrieved_at": "2026-11-15T16:30:01.497933+00:00"
+        "retrieved_at": "2026-11-15T17:29:29.847175+00:00"
       },
       "sources": [
         "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -135,7 +135,7 @@
       "status": "Official kickoff-hour forecast verified",
       "summary": "Chance Light Rain at kickoff: 46\u00b0F; wind NW 12.0 mph, gust 17.3 mph; precipitation chance 33%.",
       "risk": "no major hourly weather flag",
-      "observed_at": "2026-11-15T16:30:01.497939+00:00",
+      "observed_at": "2026-11-15T17:29:29.847180+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
       "source": "https://api.weather.gov/points/41.5061,-81.6995",
@@ -161,7 +161,7 @@
         "conditions": "Chance Light Rain",
         "verification_status": "verified official NWS kickoff-containing hourly forecast",
         "gust_unit_original": "wmoUnit:km_h-1",
-        "retrieved_at": "2026-11-15T16:30:01.497939+00:00"
+        "retrieved_at": "2026-11-15T17:29:29.847180+00:00"
       },
       "sources": [
         "https://api.weather.gov/points/41.5061,-81.6995",
@@ -176,35 +176,35 @@
       "venue": "Lambeau Field",
       "environment": "outdoor",
       "status": "Official kickoff-hour forecast verified",
-      "summary": "Sunny at kickoff: 44\u00b0F; wind NW 1.0 mph, gust 4.6 mph; precipitation chance 0%.",
+      "summary": "Sunny at kickoff: 44\u00b0F; wind WSW 2.0 mph, gust 4.6 mph; precipitation chance 0%.",
       "risk": "no major hourly weather flag",
-      "observed_at": "2026-11-15T16:30:01.497946+00:00",
+      "observed_at": "2026-11-15T17:29:29.847183+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
       "source": "https://api.weather.gov/points/44.5013,-88.0622",
-      "forecast_timestamp": "2026-11-15T13:36:28+00:00",
+      "forecast_timestamp": "2026-11-15T16:56:08+00:00",
       "forecast_verified": true,
       "forecast": {
         "game_id": "2026-W10-MIN-GB",
         "kickoff": "2026-11-15T18:00Z",
         "temp_f": 44,
-        "wind_mph": 1.0,
+        "wind_mph": 2.0,
         "gust_mph": 4.6,
         "precip_chance_pct": 0,
-        "forecast_timestamp": "2026-11-15T13:36:28+00:00",
+        "forecast_timestamp": "2026-11-15T16:56:08+00:00",
         "sources": [
           "https://api.weather.gov/points/44.5013,-88.0622",
           "https://api.weather.gov/gridpoints/GRB/78,31/forecast/hourly",
           "https://api.weather.gov/gridpoints/GRB/78,31"
         ],
-        "wind_speed_raw": "1 mph",
-        "wind_direction": "NW",
+        "wind_speed_raw": "2 mph",
+        "wind_direction": "WSW",
         "forecast_hour_start": "2026-11-15T12:00:00-06:00",
         "forecast_hour_end": "2026-11-15T13:00:00-06:00",
         "conditions": "Sunny",
         "verification_status": "verified official NWS kickoff-containing hourly forecast",
         "gust_unit_original": "wmoUnit:km_h-1",
-        "retrieved_at": "2026-11-15T16:30:01.497946+00:00"
+        "retrieved_at": "2026-11-15T17:29:29.847183+00:00"
       },
       "sources": [
         "https://api.weather.gov/points/44.5013,-88.0622",
@@ -219,9 +219,9 @@
       "venue": "Nissan Stadium",
       "environment": "outdoor",
       "status": "Official kickoff-hour forecast verified",
-      "summary": "Sunny at kickoff: 51\u00b0F; wind NNE 5.0 mph, gust 6.9 mph; precipitation chance 0%.",
+      "summary": "Sunny at kickoff: 51\u00b0F; wind NNE 5.0 mph, gust 8.1 mph; precipitation chance 0%.",
       "risk": "no major hourly weather flag",
-      "observed_at": "2026-11-15T16:30:01.497952+00:00",
+      "observed_at": "2026-11-15T17:29:29.847187+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
       "source": "https://api.weather.gov/points/36.1665,-86.7713",
@@ -232,7 +232,7 @@
         "kickoff": "2026-11-15T18:00Z",
         "temp_f": 51,
         "wind_mph": 5.0,
-        "gust_mph": 6.9,
+        "gust_mph": 8.1,
         "precip_chance_pct": 0,
         "forecast_timestamp": "2026-11-15T16:16:46+00:00",
         "sources": [
@@ -247,7 +247,7 @@
         "conditions": "Sunny",
         "verification_status": "verified official NWS kickoff-containing hourly forecast",
         "gust_unit_original": "wmoUnit:km_h-1",
-        "retrieved_at": "2026-11-15T16:30:01.497952+00:00"
+        "retrieved_at": "2026-11-15T17:29:29.847187+00:00"
       },
       "sources": [
         "https://api.weather.gov/points/36.1665,-86.7713",
@@ -264,7 +264,7 @@
       "status": "Official indoor venue verified",
       "summary": "Lucas Oil Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
       "risk": "indoor / roof controlled",
-      "observed_at": "2026-11-15T16:30:01.497961+00:00",
+      "observed_at": "2026-11-15T17:29:29.847192+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -286,7 +286,7 @@
         "limitations": [
           "Roof status is governed by venue/event information; outside air values are not on-field conditions."
         ],
-        "retrieved_at": "2026-11-15T16:30:01.497961+00:00"
+        "retrieved_at": "2026-11-15T17:29:29.847192+00:00"
       },
       "sources": [
         "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -301,7 +301,7 @@
       "status": "Official indoor venue verified",
       "summary": "Caesars Superdome is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
       "risk": "indoor / roof controlled",
-      "observed_at": "2026-11-15T16:30:01.497968+00:00",
+      "observed_at": "2026-11-15T17:29:29.847196+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -323,7 +323,7 @@
         "limitations": [
           "Roof status is governed by venue/event information; outside air values are not on-field conditions."
         ],
-        "retrieved_at": "2026-11-15T16:30:01.497968+00:00"
+        "retrieved_at": "2026-11-15T17:29:29.847196+00:00"
       },
       "sources": [
         "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -338,7 +338,7 @@
       "status": "Official kickoff-hour forecast verified",
       "summary": "Sunny at kickoff: 52\u00b0F; wind NW 12.0 mph, gust 21.9 mph; precipitation chance 1%.",
       "risk": "weather review required",
-      "observed_at": "2026-11-15T16:30:01.497974+00:00",
+      "observed_at": "2026-11-15T17:29:29.847199+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
       "source": "https://api.weather.gov/points/40.8135,-74.0745",
@@ -364,7 +364,7 @@
         "conditions": "Sunny",
         "verification_status": "verified official NWS kickoff-containing hourly forecast",
         "gust_unit_original": "wmoUnit:km_h-1",
-        "retrieved_at": "2026-11-15T16:30:01.497974+00:00"
+        "retrieved_at": "2026-11-15T17:29:29.847199+00:00"
       },
       "sources": [
         "https://api.weather.gov/points/40.8135,-74.0745",
@@ -381,7 +381,7 @@
       "status": "Official indoor venue verified",
       "summary": "Allegiant Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
       "risk": "indoor / roof controlled",
-      "observed_at": "2026-11-15T16:30:01.497983+00:00",
+      "observed_at": "2026-11-15T17:29:29.847203+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -403,7 +403,7 @@
         "limitations": [
           "Roof status is governed by venue/event information; outside air values are not on-field conditions."
         ],
-        "retrieved_at": "2026-11-15T16:30:01.497983+00:00"
+        "retrieved_at": "2026-11-15T17:29:29.847203+00:00"
       },
       "sources": [
         "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -418,7 +418,7 @@
       "status": "Official indoor venue verified",
       "summary": "State Farm Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
       "risk": "indoor / roof controlled",
-      "observed_at": "2026-11-15T16:30:01.497991+00:00",
+      "observed_at": "2026-11-15T17:29:29.847207+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -440,7 +440,7 @@
         "limitations": [
           "Roof status is governed by venue/event information; outside air values are not on-field conditions."
         ],
-        "retrieved_at": "2026-11-15T16:30:01.497991+00:00"
+        "retrieved_at": "2026-11-15T17:29:29.847207+00:00"
       },
       "sources": [
         "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -455,7 +455,7 @@
       "status": "Official indoor venue verified",
       "summary": "AT&T Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
       "risk": "indoor / roof controlled",
-      "observed_at": "2026-11-15T16:30:01.497999+00:00",
+      "observed_at": "2026-11-15T17:29:29.847212+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -477,7 +477,7 @@
         "limitations": [
           "Roof status is governed by venue/event information; outside air values are not on-field conditions."
         ],
-        "retrieved_at": "2026-11-15T16:30:01.497999+00:00"
+        "retrieved_at": "2026-11-15T17:29:29.847212+00:00"
       },
       "sources": [
         "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -490,22 +490,22 @@
       "venue": "Paycor Stadium",
       "environment": "outdoor",
       "status": "Official kickoff-hour forecast verified",
-      "summary": "Mostly Cloudy at kickoff: 42\u00b0F; wind  0.0 mph, gust 2.3 mph; precipitation chance 0%.",
+      "summary": "Mostly Cloudy at kickoff: 43\u00b0F; wind  0.0 mph, gust 2.3 mph; precipitation chance 0%.",
       "risk": "no major hourly weather flag",
-      "observed_at": "2026-11-15T16:30:01.498005+00:00",
+      "observed_at": "2026-11-15T17:29:29.847215+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
       "source": "https://api.weather.gov/points/39.0954,-84.516",
-      "forecast_timestamp": "2026-11-15T11:06:24+00:00",
+      "forecast_timestamp": "2026-11-15T17:08:04+00:00",
       "forecast_verified": true,
       "forecast": {
         "game_id": "2026-W10-PIT-CIN",
         "kickoff": "2026-11-16T01:20Z",
-        "temp_f": 42,
+        "temp_f": 43,
         "wind_mph": 0.0,
         "gust_mph": 2.3,
         "precip_chance_pct": 0,
-        "forecast_timestamp": "2026-11-15T11:06:24+00:00",
+        "forecast_timestamp": "2026-11-15T17:08:04+00:00",
         "sources": [
           "https://api.weather.gov/points/39.0954,-84.516",
           "https://api.weather.gov/gridpoints/ILN/35,38/forecast/hourly",
@@ -518,7 +518,7 @@
         "conditions": "Mostly Cloudy",
         "verification_status": "verified official NWS kickoff-containing hourly forecast",
         "gust_unit_original": "wmoUnit:km_h-1",
-        "retrieved_at": "2026-11-15T16:30:01.498005+00:00"
+        "retrieved_at": "2026-11-15T17:29:29.847215+00:00"
       },
       "sources": [
         "https://api.weather.gov/points/39.0954,-84.516",
@@ -533,35 +533,35 @@
       "venue": "M&T Bank Stadium",
       "environment": "outdoor",
       "status": "Official kickoff-hour forecast verified",
-      "summary": "Mostly Clear at kickoff: 43\u00b0F; wind NW 3.0 mph, gust 8.1 mph; precipitation chance 0%.",
+      "summary": "Mostly Clear at kickoff: 46\u00b0F; wind NW 5.0 mph, gust 8.1 mph; precipitation chance 0%.",
       "risk": "no major hourly weather flag",
-      "observed_at": "2026-11-15T16:30:01.498013+00:00",
+      "observed_at": "2026-11-15T17:29:29.847219+00:00",
       "total_adjustment_points": 0,
       "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
       "source": "https://api.weather.gov/points/39.278,-76.6227",
-      "forecast_timestamp": "2026-11-15T14:54:35+00:00",
+      "forecast_timestamp": "2026-11-15T16:34:36+00:00",
       "forecast_verified": true,
       "forecast": {
         "game_id": "2026-W10-LAC-BAL",
         "kickoff": "2026-11-17T01:15Z",
-        "temp_f": 43,
-        "wind_mph": 3.0,
+        "temp_f": 46,
+        "wind_mph": 5.0,
         "gust_mph": 8.1,
         "precip_chance_pct": 0,
-        "forecast_timestamp": "2026-11-15T14:54:35+00:00",
+        "forecast_timestamp": "2026-11-15T16:34:36+00:00",
         "sources": [
           "https://api.weather.gov/points/39.278,-76.6227",
           "https://api.weather.gov/gridpoints/LWX/109,90/forecast/hourly",
           "https://api.weather.gov/gridpoints/LWX/109,90"
         ],
-        "wind_speed_raw": "3 mph",
+        "wind_speed_raw": "5 mph",
         "wind_direction": "NW",
         "forecast_hour_start": "2026-11-16T20:00:00-05:00",
         "forecast_hour_end": "2026-11-16T21:00:00-05:00",
         "conditions": "Mostly Clear",
         "verification_status": "verified official NWS kickoff-containing hourly forecast",
         "gust_unit_original": "wmoUnit:km_h-1",
-        "retrieved_at": "2026-11-15T16:30:01.498013+00:00"
+        "retrieved_at": "2026-11-15T17:29:29.847219+00:00"
       },
       "sources": [
         "https://api.weather.gov/points/39.278,-76.6227",

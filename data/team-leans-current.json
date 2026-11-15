@@ -2,8 +2,8 @@
   "schemaVersion": "1.0-team-leans-research",
   "season": 2026,
   "week": 10,
-  "generatedAt": "2026-11-15T16:30:17.663787+00:00",
-  "inputBoardAt": "2026-11-15T16:30:17.188Z",
+  "generatedAt": "2026-11-15T17:29:39.082776+00:00",
+  "inputBoardAt": "2026-11-15T17:29:38.633Z",
   "throughWeek": 9,
   "researchOnly": true,
   "productionPointImpact": 0,
@@ -26,7 +26,7 @@
       "awayAbbr": "WSH",
       "homeAbbr": "NYG",
       "kickoff": "2026-11-13T01:15Z",
-      "generatedAt": "2026-11-15T16:30:17.663787+00:00",
+      "generatedAt": "2026-11-15T17:29:39.082776+00:00",
       "status": "STARTED \u2014 NOT ISSUED",
       "footballLean": null,
       "assessmentSide": null,
@@ -375,7 +375,7 @@
       "awayAbbr": "NE",
       "homeAbbr": "DET",
       "kickoff": "2026-11-15T14:30Z",
-      "generatedAt": "2026-11-15T16:30:17.663787+00:00",
+      "generatedAt": "2026-11-15T17:29:39.082776+00:00",
       "status": "STARTED \u2014 NOT ISSUED",
       "footballLean": null,
       "assessmentSide": "NE",
@@ -824,9 +824,9 @@
         "venue": "FC Bayern Munich Stadium",
         "environment": "outdoor",
         "status": "DWD ICON via Open-Meteo kickoff-hour forecast verified",
-        "summary": "Overcast at kickoff: 50.2\u00b0F; wind SE 4.3 mph, gust 7.4 mph; precipitation chance 20%.",
-        "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-15T16:30:01.494804+00:00",
+        "summary": "Overcast at kickoff: 50.2\u00b0F; wind SE 4.3 mph, gust 7.4 mph; precipitation chance 43%.",
+        "risk": "weather review required",
+        "observed_at": "2026-11-15T17:29:29.845206+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.open-meteo.com/v1/forecast?latitude=48.2188&longitude=11.6247&models=icon_seamless&timezone=Europe%2FBerlin&start_date=2026-11-15&end_date=2026-11-15&hourly=temperature_2m%2Cprecipitation_probability%2Cweather_code%2Cwind_speed_10m%2Cwind_direction_10m%2Cwind_gusts_10m",
@@ -844,10 +844,10 @@
           "wind_mph": 4.3,
           "gust_mph": 7.4,
           "wind_direction": "SE",
-          "precip_chance_pct": 20,
+          "precip_chance_pct": 43,
           "conditions": "Overcast",
           "forecast_timestamp": null,
-          "retrieved_at": "2026-11-15T16:30:01.494804+00:00",
+          "retrieved_at": "2026-11-15T17:29:29.845206+00:00",
           "forecast_hour_start": "2026-11-15T15:00:00+01:00",
           "forecast_hour_end": "2026-11-15T16:00:00+01:00",
           "verification_status": "verified DWD ICON kickoff-hour forecast via Open-Meteo",
@@ -933,7 +933,7 @@
       "awayAbbr": "KC",
       "homeAbbr": "ATL",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-15T16:30:17.663787+00:00",
+      "generatedAt": "2026-11-15T17:29:39.082776+00:00",
       "status": "PRICE WATCH",
       "footballLean": "KC",
       "assessmentSide": "KC",
@@ -1132,7 +1132,7 @@
           "home": 145
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-15T16:29:59.263Z",
+        "timestamp": "2026-11-15T17:29:29.163Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Kansas City Chiefs -4.5",
         "opening_reference": {
@@ -1144,7 +1144,7 @@
             "home": "+185"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-15T16:29:59.263Z",
+          "observedAt": "2026-11-15T17:29:29.163Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -1161,7 +1161,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T16:29:59.722057+00:00",
+        "observedAt": "2026-11-15T17:29:29.458552+00:00",
         "reviewComplete": true,
         "flags": [
           "KC QUESTIONABLE: CB Mansoor Delane (Shoulder).",
@@ -1332,7 +1332,7 @@
         "status": "Official indoor venue verified",
         "summary": "Mercedes-Benz Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-15T16:30:01.497933+00:00",
+        "observed_at": "2026-11-15T17:29:29.847175+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -1354,7 +1354,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-15T16:30:01.497933+00:00"
+          "retrieved_at": "2026-11-15T17:29:29.847175+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -1415,11 +1415,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T15:30:03.950Z",
-          "capturedAt": "2026-11-15T15:30:15.815578+00:00",
+          "observedAt": "2026-11-15T16:29:59.263Z",
+          "capturedAt": "2026-11-15T16:30:17.663787+00:00",
           "spread": "Kansas City Chiefs -3",
           "homeMargin": -3,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -1434,7 +1434,7 @@
       "awayAbbr": "HOU",
       "homeAbbr": "CLE",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-15T16:30:17.663787+00:00",
+      "generatedAt": "2026-11-15T17:29:39.082776+00:00",
       "status": "PRICE WATCH",
       "footballLean": "HOU",
       "assessmentSide": "HOU",
@@ -1624,7 +1624,7 @@
       "market": {
         "spread_display": "Houston Texans -4.5",
         "spread": "HOU -4.5",
-        "total": 41.5,
+        "total": 40.5,
         "home_margin": -4.5,
         "home_team_sportsbook_spread": 4.5,
         "moneyline": {
@@ -1632,7 +1632,7 @@
           "home": 164
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-15T16:29:59.263Z",
+        "timestamp": "2026-11-15T17:29:29.163Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Houston Texans -4.5",
         "opening_reference": {
@@ -1644,7 +1644,7 @@
             "home": "+180"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-15T16:29:59.263Z",
+          "observedAt": "2026-11-15T17:29:29.163Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -1661,7 +1661,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T16:29:59.722057+00:00",
+        "observedAt": "2026-11-15T17:29:29.458552+00:00",
         "reviewComplete": true,
         "flags": [
           "HOU OUT: LB Azeez Al-Shaair (Groin, Not injury related - personal matter).",
@@ -1854,7 +1854,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Chance Light Rain at kickoff: 46\u00b0F; wind NW 12.0 mph, gust 17.3 mph; precipitation chance 33%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-15T16:30:01.497939+00:00",
+        "observed_at": "2026-11-15T17:29:29.847180+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/41.5061,-81.6995",
@@ -1880,7 +1880,7 @@
           "conditions": "Chance Light Rain",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-15T16:30:01.497939+00:00"
+          "retrieved_at": "2026-11-15T17:29:29.847180+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/41.5061,-81.6995",
@@ -1943,11 +1943,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T15:30:03.950Z",
-          "capturedAt": "2026-11-15T15:30:15.815578+00:00",
+          "observedAt": "2026-11-15T16:29:59.263Z",
+          "capturedAt": "2026-11-15T16:30:17.663787+00:00",
           "spread": "Houston Texans -4.5",
           "homeMargin": -4.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -1962,7 +1962,7 @@
       "awayAbbr": "MIN",
       "homeAbbr": "GB",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-15T16:30:17.663787+00:00",
+      "generatedAt": "2026-11-15T17:29:39.082776+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "GB",
       "assessmentSide": "GB",
@@ -2157,11 +2157,11 @@
         "home_margin": 2.5,
         "home_team_sportsbook_spread": -2.5,
         "moneyline": {
-          "away": 120,
-          "home": -142
+          "away": 124,
+          "home": -148
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-15T16:29:59.263Z",
+        "timestamp": "2026-11-15T17:29:29.163Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Green Bay Packers -4.5",
         "opening_reference": {
@@ -2173,7 +2173,7 @@
             "home": "-225"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-15T16:29:59.263Z",
+          "observedAt": "2026-11-15T17:29:29.163Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -2190,7 +2190,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T16:29:59.722057+00:00",
+        "observedAt": "2026-11-15T17:29:29.458552+00:00",
         "reviewComplete": true,
         "flags": [
           "MIN QUESTIONABLE: WR Jordan Addison (Thumb).",
@@ -2470,35 +2470,35 @@
         "venue": "Lambeau Field",
         "environment": "outdoor",
         "status": "Official kickoff-hour forecast verified",
-        "summary": "Sunny at kickoff: 44\u00b0F; wind NW 1.0 mph, gust 4.6 mph; precipitation chance 0%.",
+        "summary": "Sunny at kickoff: 44\u00b0F; wind WSW 2.0 mph, gust 4.6 mph; precipitation chance 0%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-15T16:30:01.497946+00:00",
+        "observed_at": "2026-11-15T17:29:29.847183+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/44.5013,-88.0622",
-        "forecast_timestamp": "2026-11-15T13:36:28+00:00",
+        "forecast_timestamp": "2026-11-15T16:56:08+00:00",
         "forecast_verified": true,
         "forecast": {
           "game_id": "2026-W10-MIN-GB",
           "kickoff": "2026-11-15T18:00Z",
           "temp_f": 44,
-          "wind_mph": 1.0,
+          "wind_mph": 2.0,
           "gust_mph": 4.6,
           "precip_chance_pct": 0,
-          "forecast_timestamp": "2026-11-15T13:36:28+00:00",
+          "forecast_timestamp": "2026-11-15T16:56:08+00:00",
           "sources": [
             "https://api.weather.gov/points/44.5013,-88.0622",
             "https://api.weather.gov/gridpoints/GRB/78,31/forecast/hourly",
             "https://api.weather.gov/gridpoints/GRB/78,31"
           ],
-          "wind_speed_raw": "1 mph",
-          "wind_direction": "NW",
+          "wind_speed_raw": "2 mph",
+          "wind_direction": "WSW",
           "forecast_hour_start": "2026-11-15T12:00:00-06:00",
           "forecast_hour_end": "2026-11-15T13:00:00-06:00",
           "conditions": "Sunny",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-15T16:30:01.497946+00:00"
+          "retrieved_at": "2026-11-15T17:29:29.847183+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/44.5013,-88.0622",
@@ -2562,11 +2562,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T15:30:03.950Z",
-          "capturedAt": "2026-11-15T15:30:15.815578+00:00",
+          "observedAt": "2026-11-15T16:29:59.263Z",
+          "capturedAt": "2026-11-15T16:30:17.663787+00:00",
           "spread": "Green Bay Packers -2.5",
           "homeMargin": 2.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -2581,7 +2581,7 @@
       "awayAbbr": "JAX",
       "homeAbbr": "TEN",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-15T16:30:17.663787+00:00",
+      "generatedAt": "2026-11-15T17:29:39.082776+00:00",
       "status": "PRICE WATCH",
       "footballLean": "JAX",
       "assessmentSide": "JAX",
@@ -2776,11 +2776,11 @@
         "home_margin": -10.5,
         "home_team_sportsbook_spread": 10.5,
         "moneyline": {
-          "away": -700,
-          "home": 500
+          "away": -650,
+          "home": 470
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-15T16:29:59.263Z",
+        "timestamp": "2026-11-15T17:29:29.163Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Jacksonville Jaguars -2.5",
         "opening_reference": {
@@ -2792,7 +2792,7 @@
             "home": "+114"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-15T16:29:59.263Z",
+          "observedAt": "2026-11-15T17:29:29.163Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -2809,7 +2809,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T16:29:59.722057+00:00",
+        "observedAt": "2026-11-15T17:29:29.458552+00:00",
         "reviewComplete": true,
         "flags": [
           "JAX OUT: S Jessie Bates (Not injury related - resting player).",
@@ -2985,9 +2985,9 @@
         "venue": "Nissan Stadium",
         "environment": "outdoor",
         "status": "Official kickoff-hour forecast verified",
-        "summary": "Sunny at kickoff: 51\u00b0F; wind NNE 5.0 mph, gust 6.9 mph; precipitation chance 0%.",
+        "summary": "Sunny at kickoff: 51\u00b0F; wind NNE 5.0 mph, gust 8.1 mph; precipitation chance 0%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-15T16:30:01.497952+00:00",
+        "observed_at": "2026-11-15T17:29:29.847187+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/36.1665,-86.7713",
@@ -2998,7 +2998,7 @@
           "kickoff": "2026-11-15T18:00Z",
           "temp_f": 51,
           "wind_mph": 5.0,
-          "gust_mph": 6.9,
+          "gust_mph": 8.1,
           "precip_chance_pct": 0,
           "forecast_timestamp": "2026-11-15T16:16:46+00:00",
           "sources": [
@@ -3013,7 +3013,7 @@
           "conditions": "Sunny",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-15T16:30:01.497952+00:00"
+          "retrieved_at": "2026-11-15T17:29:29.847187+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/36.1665,-86.7713",
@@ -3076,11 +3076,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T15:30:03.950Z",
-          "capturedAt": "2026-11-15T15:30:15.815578+00:00",
+          "observedAt": "2026-11-15T16:29:59.263Z",
+          "capturedAt": "2026-11-15T16:30:17.663787+00:00",
           "spread": "Jacksonville Jaguars -10.5",
           "homeMargin": -10.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -3095,7 +3095,7 @@
       "awayAbbr": "MIA",
       "homeAbbr": "IND",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-15T16:30:17.663787+00:00",
+      "generatedAt": "2026-11-15T17:29:39.082776+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "MIA",
       "assessmentSide": "MIA",
@@ -3289,11 +3289,11 @@
         "home_margin": 4.5,
         "home_team_sportsbook_spread": -4.5,
         "moneyline": {
-          "away": 185,
-          "home": -225
+          "away": 180,
+          "home": -218
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-15T16:29:59.263Z",
+        "timestamp": "2026-11-15T17:29:29.163Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Indianapolis Colts -6.5",
         "opening_reference": {
@@ -3305,7 +3305,7 @@
             "home": "-290"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-15T16:29:59.263Z",
+          "observedAt": "2026-11-15T17:29:29.163Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -3322,7 +3322,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T16:29:59.722057+00:00",
+        "observedAt": "2026-11-15T17:29:29.458552+00:00",
         "reviewComplete": true,
         "flags": [
           "MIA QUESTIONABLE: CB Darrell Baker Jr. (Knee).",
@@ -3476,7 +3476,7 @@
         "status": "Official indoor venue verified",
         "summary": "Lucas Oil Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-15T16:30:01.497961+00:00",
+        "observed_at": "2026-11-15T17:29:29.847192+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -3498,7 +3498,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-15T16:30:01.497961+00:00"
+          "retrieved_at": "2026-11-15T17:29:29.847192+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -3559,11 +3559,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T15:30:03.950Z",
-          "capturedAt": "2026-11-15T15:30:15.815578+00:00",
+          "observedAt": "2026-11-15T16:29:59.263Z",
+          "capturedAt": "2026-11-15T16:30:17.663787+00:00",
           "spread": "Indianapolis Colts -4.5",
           "homeMargin": 4.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -3578,7 +3578,7 @@
       "awayAbbr": "CAR",
       "homeAbbr": "NO",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-15T16:30:17.663787+00:00",
+      "generatedAt": "2026-11-15T17:29:39.082776+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "CAR",
       "assessmentSide": "CAR",
@@ -3773,11 +3773,11 @@
         "home_margin": 1.5,
         "home_team_sportsbook_spread": -1.5,
         "moneyline": {
-          "away": -105,
-          "home": -115
+          "away": -110,
+          "home": -110
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-15T16:29:59.263Z",
+        "timestamp": "2026-11-15T17:29:29.163Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "New Orleans Saints -1.5",
         "opening_reference": {
@@ -3789,7 +3789,7 @@
             "home": "-125"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-15T16:29:59.263Z",
+          "observedAt": "2026-11-15T17:29:29.163Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -3806,7 +3806,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T16:29:59.722057+00:00",
+        "observedAt": "2026-11-15T17:29:29.458552+00:00",
         "reviewComplete": true,
         "flags": [
           "CAR DOUBTFUL: RB Jonathon Brooks (Groin).",
@@ -3981,7 +3981,7 @@
         "status": "Official indoor venue verified",
         "summary": "Caesars Superdome is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-15T16:30:01.497968+00:00",
+        "observed_at": "2026-11-15T17:29:29.847196+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -4003,7 +4003,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-15T16:30:01.497968+00:00"
+          "retrieved_at": "2026-11-15T17:29:29.847196+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -4064,11 +4064,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T15:30:03.950Z",
-          "capturedAt": "2026-11-15T15:30:15.815578+00:00",
+          "observedAt": "2026-11-15T16:29:59.263Z",
+          "capturedAt": "2026-11-15T16:30:17.663787+00:00",
           "spread": "New Orleans Saints -1.5",
           "homeMargin": 1.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -4083,7 +4083,7 @@
       "awayAbbr": "BUF",
       "homeAbbr": "NYJ",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-15T16:30:17.663787+00:00",
+      "generatedAt": "2026-11-15T17:29:39.082776+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "BUF",
       "assessmentSide": "BUF",
@@ -4281,7 +4281,7 @@
           "home": 370
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-15T16:29:59.263Z",
+        "timestamp": "2026-11-15T17:29:29.163Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Buffalo Bills -7",
         "opening_reference": {
@@ -4293,7 +4293,7 @@
             "home": "+270"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-15T16:29:59.263Z",
+          "observedAt": "2026-11-15T17:29:29.163Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -4310,7 +4310,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T16:29:59.722057+00:00",
+        "observedAt": "2026-11-15T17:29:29.458552+00:00",
         "reviewComplete": true,
         "flags": [
           "BUF QUESTIONABLE: CB Christian Benford (Wrist).",
@@ -4503,7 +4503,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Sunny at kickoff: 52\u00b0F; wind NW 12.0 mph, gust 21.9 mph; precipitation chance 1%.",
         "risk": "weather review required",
-        "observed_at": "2026-11-15T16:30:01.497974+00:00",
+        "observed_at": "2026-11-15T17:29:29.847199+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/40.8135,-74.0745",
@@ -4529,7 +4529,7 @@
           "conditions": "Sunny",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-15T16:30:01.497974+00:00"
+          "retrieved_at": "2026-11-15T17:29:29.847199+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/40.8135,-74.0745",
@@ -4593,11 +4593,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T15:30:03.950Z",
-          "capturedAt": "2026-11-15T15:30:15.815578+00:00",
+          "observedAt": "2026-11-15T16:29:59.263Z",
+          "capturedAt": "2026-11-15T16:30:17.663787+00:00",
           "spread": "Buffalo Bills -8.5",
           "homeMargin": -8.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -4612,7 +4612,7 @@
       "awayAbbr": "SEA",
       "homeAbbr": "LV",
       "kickoff": "2026-11-15T21:05Z",
-      "generatedAt": "2026-11-15T16:30:17.663787+00:00",
+      "generatedAt": "2026-11-15T17:29:39.082776+00:00",
       "status": "PRICE WATCH",
       "footballLean": "SEA",
       "assessmentSide": "SEA",
@@ -4806,11 +4806,11 @@
         "home_margin": -6.5,
         "home_team_sportsbook_spread": 6.5,
         "moneyline": {
-          "away": -290,
-          "home": 235
+          "away": -298,
+          "home": 240
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-15T16:29:59.263Z",
+        "timestamp": "2026-11-15T17:29:29.163Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Seattle Seahawks -7",
         "opening_reference": {
@@ -4822,7 +4822,7 @@
             "home": "+270"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-15T16:29:59.263Z",
+          "observedAt": "2026-11-15T17:29:29.163Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -4839,7 +4839,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T16:29:59.722057+00:00",
+        "observedAt": "2026-11-15T17:29:29.458552+00:00",
         "reviewComplete": true,
         "flags": [
           "SEA OUT: T Charles Cross (Ankle).",
@@ -4949,7 +4949,7 @@
         "status": "Official indoor venue verified",
         "summary": "Allegiant Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-15T16:30:01.497983+00:00",
+        "observed_at": "2026-11-15T17:29:29.847203+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -4971,7 +4971,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-15T16:30:01.497983+00:00"
+          "retrieved_at": "2026-11-15T17:29:29.847203+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -5032,11 +5032,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T15:30:03.950Z",
-          "capturedAt": "2026-11-15T15:30:15.815578+00:00",
+          "observedAt": "2026-11-15T16:29:59.263Z",
+          "capturedAt": "2026-11-15T16:30:17.663787+00:00",
           "spread": "Seattle Seahawks -6.5",
           "homeMargin": -6.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -5051,7 +5051,7 @@
       "awayAbbr": "LAR",
       "homeAbbr": "ARI",
       "kickoff": "2026-11-15T21:05Z",
-      "generatedAt": "2026-11-15T16:30:17.663787+00:00",
+      "generatedAt": "2026-11-15T17:29:39.082776+00:00",
       "status": "PRICE WATCH",
       "footballLean": "LAR",
       "assessmentSide": "LAR",
@@ -5245,11 +5245,11 @@
         "home_margin": -9.5,
         "home_team_sportsbook_spread": 9.5,
         "moneyline": {
-          "away": -485,
-          "home": 370
+          "away": -500,
+          "home": 380
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-15T16:29:59.263Z",
+        "timestamp": "2026-11-15T17:29:29.163Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Los Angeles Rams -10.5",
         "opening_reference": {
@@ -5261,7 +5261,7 @@
             "home": "+400"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-15T16:29:59.263Z",
+          "observedAt": "2026-11-15T17:29:29.163Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -5278,7 +5278,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T16:29:59.722057+00:00",
+        "observedAt": "2026-11-15T17:29:29.458552+00:00",
         "reviewComplete": true,
         "flags": [
           "LAR QUESTIONABLE: TE Davis Allen (Oblique).",
@@ -5522,7 +5522,7 @@
         "status": "Official indoor venue verified",
         "summary": "State Farm Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-15T16:30:01.497991+00:00",
+        "observed_at": "2026-11-15T17:29:29.847207+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -5544,7 +5544,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-15T16:30:01.497991+00:00"
+          "retrieved_at": "2026-11-15T17:29:29.847207+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -5605,11 +5605,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T15:30:03.950Z",
-          "capturedAt": "2026-11-15T15:30:15.815578+00:00",
+          "observedAt": "2026-11-15T16:29:59.263Z",
+          "capturedAt": "2026-11-15T16:30:17.663787+00:00",
           "spread": "Los Angeles Rams -9.5",
           "homeMargin": -9.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -5624,7 +5624,7 @@
       "awayAbbr": "SF",
       "homeAbbr": "DAL",
       "kickoff": "2026-11-15T21:25Z",
-      "generatedAt": "2026-11-15T16:30:17.663787+00:00",
+      "generatedAt": "2026-11-15T17:29:39.082776+00:00",
       "status": "PRICE WATCH",
       "footballLean": "SF",
       "assessmentSide": "SF",
@@ -5822,7 +5822,7 @@
           "home": 180
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-15T16:29:59.263Z",
+        "timestamp": "2026-11-15T17:29:29.163Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Dallas Cowboys -1.5",
         "opening_reference": {
@@ -5834,7 +5834,7 @@
             "home": "-120"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-15T16:29:59.263Z",
+          "observedAt": "2026-11-15T17:29:29.163Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -5851,7 +5851,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T16:29:59.722057+00:00",
+        "observedAt": "2026-11-15T17:29:29.458552+00:00",
         "reviewComplete": true,
         "flags": [
           "SF OUT: WR Mike Evans (Achilles).",
@@ -6094,7 +6094,7 @@
         "status": "Official indoor venue verified",
         "summary": "AT&T Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-15T16:30:01.497999+00:00",
+        "observed_at": "2026-11-15T17:29:29.847212+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -6116,7 +6116,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-15T16:30:01.497999+00:00"
+          "retrieved_at": "2026-11-15T17:29:29.847212+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -6177,11 +6177,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T15:30:03.950Z",
-          "capturedAt": "2026-11-15T15:30:15.815578+00:00",
+          "observedAt": "2026-11-15T16:29:59.263Z",
+          "capturedAt": "2026-11-15T16:30:17.663787+00:00",
           "spread": "San Francisco 49ers -4.5",
           "homeMargin": -4.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -6196,7 +6196,7 @@
       "awayAbbr": "PIT",
       "homeAbbr": "CIN",
       "kickoff": "2026-11-16T01:20Z",
-      "generatedAt": "2026-11-15T16:30:17.663787+00:00",
+      "generatedAt": "2026-11-15T17:29:39.082776+00:00",
       "status": "PRICE WATCH",
       "footballLean": "CIN",
       "assessmentSide": "CIN",
@@ -6395,7 +6395,7 @@
           "home": -192
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-15T16:29:59.263Z",
+        "timestamp": "2026-11-15T17:29:29.163Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Cincinnati Bengals -3.5",
         "opening_reference": {
@@ -6407,7 +6407,7 @@
             "home": "-192"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-15T16:29:59.263Z",
+          "observedAt": "2026-11-15T17:29:29.163Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -6424,7 +6424,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T16:29:59.722057+00:00",
+        "observedAt": "2026-11-15T17:29:29.458552+00:00",
         "reviewComplete": true,
         "flags": [
           "PIT QUESTIONABLE: DT Derrick Harmon (Foot).",
@@ -6530,22 +6530,22 @@
         "venue": "Paycor Stadium",
         "environment": "outdoor",
         "status": "Official kickoff-hour forecast verified",
-        "summary": "Mostly Cloudy at kickoff: 42\u00b0F; wind  0.0 mph, gust 2.3 mph; precipitation chance 0%.",
+        "summary": "Mostly Cloudy at kickoff: 43\u00b0F; wind  0.0 mph, gust 2.3 mph; precipitation chance 0%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-15T16:30:01.498005+00:00",
+        "observed_at": "2026-11-15T17:29:29.847215+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/39.0954,-84.516",
-        "forecast_timestamp": "2026-11-15T11:06:24+00:00",
+        "forecast_timestamp": "2026-11-15T17:08:04+00:00",
         "forecast_verified": true,
         "forecast": {
           "game_id": "2026-W10-PIT-CIN",
           "kickoff": "2026-11-16T01:20Z",
-          "temp_f": 42,
+          "temp_f": 43,
           "wind_mph": 0.0,
           "gust_mph": 2.3,
           "precip_chance_pct": 0,
-          "forecast_timestamp": "2026-11-15T11:06:24+00:00",
+          "forecast_timestamp": "2026-11-15T17:08:04+00:00",
           "sources": [
             "https://api.weather.gov/points/39.0954,-84.516",
             "https://api.weather.gov/gridpoints/ILN/35,38/forecast/hourly",
@@ -6558,7 +6558,7 @@
           "conditions": "Mostly Cloudy",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-15T16:30:01.498005+00:00"
+          "retrieved_at": "2026-11-15T17:29:29.847215+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/39.0954,-84.516",
@@ -6621,11 +6621,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T15:30:03.950Z",
-          "capturedAt": "2026-11-15T15:30:15.815578+00:00",
+          "observedAt": "2026-11-15T16:29:59.263Z",
+          "capturedAt": "2026-11-15T16:30:17.663787+00:00",
           "spread": "Cincinnati Bengals -3.5",
           "homeMargin": 3.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
@@ -6640,7 +6640,7 @@
       "awayAbbr": "LAC",
       "homeAbbr": "BAL",
       "kickoff": "2026-11-17T01:15Z",
-      "generatedAt": "2026-11-15T16:30:17.663787+00:00",
+      "generatedAt": "2026-11-15T17:29:39.082776+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "BAL",
       "assessmentSide": "BAL",
@@ -6838,7 +6838,7 @@
           "home": -225
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-15T16:29:59.263Z",
+        "timestamp": "2026-11-15T17:29:29.163Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Baltimore Ravens -2.5",
         "opening_reference": {
@@ -6850,7 +6850,7 @@
             "home": "-142"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-15T16:29:59.263Z",
+          "observedAt": "2026-11-15T17:29:29.163Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -6867,7 +6867,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T16:29:59.722057+00:00",
+        "observedAt": "2026-11-15T17:29:29.458552+00:00",
         "reviewComplete": false,
         "flags": [
           "LAC QUESTIONABLE: G Kayode Awosika (Fibula).",
@@ -7048,35 +7048,35 @@
         "venue": "M&T Bank Stadium",
         "environment": "outdoor",
         "status": "Official kickoff-hour forecast verified",
-        "summary": "Mostly Clear at kickoff: 43\u00b0F; wind NW 3.0 mph, gust 8.1 mph; precipitation chance 0%.",
+        "summary": "Mostly Clear at kickoff: 46\u00b0F; wind NW 5.0 mph, gust 8.1 mph; precipitation chance 0%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-15T16:30:01.498013+00:00",
+        "observed_at": "2026-11-15T17:29:29.847219+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/39.278,-76.6227",
-        "forecast_timestamp": "2026-11-15T14:54:35+00:00",
+        "forecast_timestamp": "2026-11-15T16:34:36+00:00",
         "forecast_verified": true,
         "forecast": {
           "game_id": "2026-W10-LAC-BAL",
           "kickoff": "2026-11-17T01:15Z",
-          "temp_f": 43,
-          "wind_mph": 3.0,
+          "temp_f": 46,
+          "wind_mph": 5.0,
           "gust_mph": 8.1,
           "precip_chance_pct": 0,
-          "forecast_timestamp": "2026-11-15T14:54:35+00:00",
+          "forecast_timestamp": "2026-11-15T16:34:36+00:00",
           "sources": [
             "https://api.weather.gov/points/39.278,-76.6227",
             "https://api.weather.gov/gridpoints/LWX/109,90/forecast/hourly",
             "https://api.weather.gov/gridpoints/LWX/109,90"
           ],
-          "wind_speed_raw": "3 mph",
+          "wind_speed_raw": "5 mph",
           "wind_direction": "NW",
           "forecast_hour_start": "2026-11-16T20:00:00-05:00",
           "forecast_hour_end": "2026-11-16T21:00:00-05:00",
           "conditions": "Mostly Clear",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-15T16:30:01.498013+00:00"
+          "retrieved_at": "2026-11-15T17:29:29.847219+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/39.278,-76.6227",
@@ -7139,11 +7139,11 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T15:30:03.950Z",
-          "capturedAt": "2026-11-15T15:30:15.815578+00:00",
+          "observedAt": "2026-11-15T16:29:59.263Z",
+          "capturedAt": "2026-11-15T16:30:17.663787+00:00",
           "spread": "Baltimore Ravens -4.5",
           "homeMargin": 4.5,
-          "source": "ESPN DraftKings"
+          "source": "ESPN Draft Kings"
         }
       ],
       "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
