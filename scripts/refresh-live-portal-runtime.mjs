@@ -37,9 +37,19 @@ function oddsRow(ev){
     else if(favoriteAbbr===awayAbbr){spreadDisplay=`${awayName} -${pts}`;homeBookSpread=pts;homeMargin=-pts;}
   }
   const total=num(o?.overUnder),awayML=ml(o?.moneyline?.away?.close?.odds??o?.awayTeamOdds?.moneyLine),homeML=ml(o?.moneyline?.home?.close?.odds??o?.homeTeamOdds?.moneyLine);
+  const openLine=x=>/^[+-]?\d+(?:\.\d+)?$/.test(clean(x))?Number(x):null;
+  const openHome=openLine(o?.pointSpread?.home?.open?.line),openAway=openLine(o?.pointSpread?.away?.open?.line);
+  const openTotalOver=openLine(clean(o?.total?.over?.open?.line).replace(/^o/i,'')),openTotalUnder=openLine(clean(o?.total?.under?.open?.line).replace(/^u/i,''));
+  const opener=openHome!==null&&openAway===-openHome?{
+    spread:openHome===0?'Pick':openHome<0?`${homeName} ${openHome}`:`${awayName} ${openAway}`,
+    homeBookSpread:openHome,total:openTotalOver>0&&openTotalOver===openTotalUnder?openTotalOver:null,
+    moneyline:{away:ml(o?.moneyline?.away?.open?.odds),home:ml(o?.moneyline?.home?.open?.odds)},
+    source:o?.provider?.name?`ESPN ${o.provider.name}`:'ESPN odds feed',observedAt:now,sourceUrl:url,
+    note:'Provider opening reference; source does not publish the original quote timestamp.'
+  }:null;
   const completed=String(ev?.status?.type?.state||'').toLowerCase()==='post'||Boolean(ev?.status?.type?.completed);
   const venue=c.venue||{},weather=c.weather||{},temperature=num(weather.temperature),condition=clean(weather.displayValue||weather.condition||weather.shortDisplayName),weatherSummary=[temperature!=null?`${Math.round(temperature)}°F`:null,condition||null].filter(Boolean).join(' · ');
-  return {eventId:String(ev.id),awayAbbr,homeAbbr,awayName,homeName,kickoff:ev.date||c.date||null,completed,spreadDisplay,total:total&&total>0?total:null,awayML,homeML,homeBookSpread,homeMargin,source:o?.provider?.name?`ESPN ${o.provider.name}`:(o?'ESPN odds feed':null),hasOdds:!!o,venueName:venue.fullName||venue.shortName||null,environment:venue.indoor===true?'indoor':'outdoor',weatherSummary:weatherSummary||null};
+  return {eventId:String(ev.id),awayAbbr,homeAbbr,awayName,homeName,kickoff:ev.date||c.date||null,completed,spreadDisplay,total:total&&total>0?total:null,awayML,homeML,homeBookSpread,homeMargin,opener,source:o?.provider?.name?`ESPN ${o.provider.name}`:(o?'ESPN odds feed':null),hasOdds:!!o,venueName:venue.fullName||venue.shortName||null,environment:venue.indoor===true?'indoor':'outdoor',weatherSummary:weatherSummary||null};
 }
 
 const r=await fetch(url,{headers:{accept:'application/json','user-agent':'nfl-governed-runtime-refresh/1.0'}});
@@ -87,7 +97,7 @@ const updatedCanonical=canonicalGames.map(g=>{
     structuralEdge=Number(Math.abs(structuralHM-marketHM).toFixed(1));
     structuralLean=structuralHM>marketHM?g.homeAbbr:structuralHM<marketHM?g.awayAbbr:'NONE';
   }
-  return {...g,dateTime:row.kickoff||g.dateTime,currentSpread,currentTotal,currentMoneyline,moneyline,marketSource:hasCurrent?(row.source||'ESPN odds feed'):g.marketSource,marketObservedAt:hasCurrent?now:(g.marketObservedAt||null),eventState:row.completed?'final':'scheduled',productionSpread,structuralEdge,structuralLean};
+  return {...g,dateTime:row.kickoff||g.dateTime,currentSpread,currentTotal,currentMoneyline,moneyline,openingReference:row.opener||g.openingReference||null,marketSource:hasCurrent?(row.source||'ESPN odds feed'):g.marketSource,marketObservedAt:hasCurrent?now:(g.marketObservedAt||null),eventState:row.completed?'final':'scheduled',productionSpread,structuralEdge,structuralLean};
 });
 
 const canonByTeams=new Map(updatedCanonical.map(g=>[`${String(g.away).toLowerCase()}__${String(g.home).toLowerCase()}`,g]));
@@ -100,6 +110,8 @@ const updatedLegacy=(legacy.games||[]).map(g=>{
     ...(g.market||{}),spread_display:row.spreadDisplay,home_team_sportsbook_spread:row.homeBookSpread,home_margin:row.homeMargin,total:row.total,
     moneyline:{away:row.awayML?Number(row.awayML):null,home:row.homeML?Number(row.homeML):null},source:row.source||'ESPN odds feed',timestamp:now,status:'current governed ESPN snapshot; exact sportsbook/juice required before execution'
   }:{...(g.market||{}),status:row?.completed?'historical closing snapshot; completed game exempt from live-market freshness':'PRICE-RECHECK-REQUIRED'};
+
+  if(row?.opener){market.opener_display=row.opener.spread;market.opening_reference=row.opener;}
 
   const fairHM=num(g.model?.fair_spread_home_margin);
   const marketHM=num(market?.home_margin);

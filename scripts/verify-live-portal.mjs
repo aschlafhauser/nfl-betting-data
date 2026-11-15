@@ -43,6 +43,13 @@ try{
  const status=await page.locator('#boardStatus').innerText();report.status=status;
  if(/FAIL|not production-complete|loading/i.test(status))fail('Portal status: '+status);
  if(await page.locator('#scheduleRows tr[data-id]').count()!==expected)fail('Board selected-week game count mismatch');
+ const publishedOpeners=portal.games.filter(g=>g.market?.opening_reference?.spread);
+ for(const game of publishedOpeners){
+  const name=game.game||game.away+' at '+game.home;
+  const displayed=await page.locator('#scheduleRows tr[data-id]').filter({hasText:name}).allTextContents();
+  if(!displayed.some(text=>text.includes('Open '+game.market.opening_reference.spread)))fail('Board opening reference not rendered for '+name);
+ }
+ report.openingReferences=publishedOpeners.length;
  if(await page.locator('#advantageContent tbody tr').count()!==expected)fail('Matchup Advantages coverage mismatch');
  const coverage=await page.locator('#coverageContent').innerText();
  const manifestFailures=Array.isArray(manifest.failures)?manifest.failures:[];
