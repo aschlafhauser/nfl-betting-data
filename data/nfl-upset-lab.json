@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 10,
-  "generated_at": "2026-11-15T08:29:49.783Z",
+  "generated_at": "2026-11-15T09:29:27.540Z",
   "method": "Wednesday spread-based upset screen plus exact-price governance",
   "coverage": {
     "all_current_threshold_candidates_represented": true,
@@ -20,7 +20,7 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-15T08:29:48.754Z",
+      "priceObservedAt": "2026-11-15T09:29:25.919Z",
       "market_implied_probability": 0.1667,
       "reason": null,
       "spread": "Jacksonville Jaguars -10.5",
@@ -62,29 +62,29 @@
     {
       "game_id": "2026-W10-BUF-NYJ",
       "team": "NYJ",
-      "moneyline": 300,
+      "moneyline": 350,
       "eligible": true,
       "nearThreshold": false,
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-15T08:29:48.754Z",
-      "market_implied_probability": 0.25,
+      "priceObservedAt": "2026-11-15T09:29:25.919Z",
+      "market_implied_probability": 0.2222,
       "reason": null,
-      "spread": "Buffalo Bills -7.5",
+      "spread": "Buffalo Bills -8.5",
       "structuralFair": "Buffalo Bills -7.9",
       "criteria": [
         {
           "name": "market-underdog-profile",
           "status": "PASS",
           "passed": true,
-          "evidence": "New York Jets is 7.5 points from the current spread favorite."
+          "evidence": "New York Jets is 8.5 points from the current spread favorite."
         },
         {
           "name": "structural-resistance",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Current structural lean BUF; structural fair Buffalo Bills -7.9."
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Current structural lean NYJ; structural fair Buffalo Bills -7.9."
         },
         {
           "name": "prior-quality-gap",
@@ -105,7 +105,7 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 300 via ESPN DraftKings; threshold qualification is separate from recommendation."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 350 via ESPN DraftKings; threshold qualification is separate from recommendation."
     },
     {
       "game_id": "2026-W10-LAR-ARI",
@@ -116,7 +116,7 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-15T08:29:48.754Z",
+      "priceObservedAt": "2026-11-15T09:29:25.919Z",
       "market_implied_probability": 0.1905,
       "reason": null,
       "spread": "Los Angeles Rams -9.5",
@@ -166,7 +166,7 @@
       "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-15T08:29:48.754Z",
+      "priceObservedAt": "2026-11-15T09:29:25.919Z",
       "market_implied_probability": 0.2899,
       "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
       "spread": "Seattle Seahawks -6.5",
@@ -207,5 +207,5 @@
     }
   ],
   "price_pending": [],
-  "narrativeReconciledAt": "2026-11-15T08:29:59.891Z"
+  "narrativeReconciledAt": "2026-11-15T09:29:41.294Z"
 }
