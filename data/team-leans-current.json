@@ -2,8 +2,8 @@
   "schemaVersion": "1.0-team-leans-research",
   "season": 2026,
   "week": 10,
-  "generatedAt": "2026-11-15T12:43:25.183329+00:00",
-  "inputBoardAt": "2026-11-15T12:43:24.801Z",
+  "generatedAt": "2026-11-15T12:46:10.301159+00:00",
+  "inputBoardAt": "2026-11-15T12:46:09.872Z",
   "throughWeek": 9,
   "researchOnly": true,
   "productionPointImpact": 0,
@@ -26,7 +26,7 @@
       "awayAbbr": "WSH",
       "homeAbbr": "NYG",
       "kickoff": "2026-11-13T01:15Z",
-      "generatedAt": "2026-11-15T12:43:25.183329+00:00",
+      "generatedAt": "2026-11-15T12:46:10.301159+00:00",
       "status": "STARTED \u2014 NOT ISSUED",
       "footballLean": null,
       "assessmentSide": null,
@@ -375,7 +375,7 @@
       "awayAbbr": "NE",
       "homeAbbr": "DET",
       "kickoff": "2026-11-15T14:30Z",
-      "generatedAt": "2026-11-15T12:43:25.183329+00:00",
+      "generatedAt": "2026-11-15T12:46:10.301159+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "NE",
       "assessmentSide": "NE",
@@ -574,8 +574,22 @@
           "home": -135
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-11-15T12:43:08.468Z",
-        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+        "timestamp": "2026-11-15T12:46:00.023Z",
+        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+        "opener_display": "Detroit Lions -1.5",
+        "opening_reference": {
+          "spread": "Detroit Lions -1.5",
+          "homeBookSpread": -1.5,
+          "total": 48.5,
+          "moneyline": {
+            "away": "+105",
+            "home": "-125"
+          },
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-15T12:46:00.023Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "note": "Provider opening reference; source does not publish the original quote timestamp."
+        }
       },
       "productionFair": 3.707,
       "structuralFair": 8.537,
@@ -589,7 +603,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T12:43:08.659932+00:00",
+        "observedAt": "2026-11-15T12:46:00.195613+00:00",
         "reviewComplete": true,
         "flags": [
           "NE OUT: C Ben Brown (Knee).",
@@ -812,7 +826,7 @@
         "status": "DWD ICON via Open-Meteo kickoff-hour forecast verified",
         "summary": "Overcast at kickoff: 48.4\u00b0F; wind SE 3.7 mph, gust 6.3 mph; precipitation chance 20%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-15T12:43:08.990029+00:00",
+        "observed_at": "2026-11-15T12:46:00.748077+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.open-meteo.com/v1/forecast?latitude=48.2188&longitude=11.6247&models=icon_seamless&timezone=Europe%2FBerlin&start_date=2026-11-15&end_date=2026-11-15&hourly=temperature_2m%2Cprecipitation_probability%2Cweather_code%2Cwind_speed_10m%2Cwind_direction_10m%2Cwind_gusts_10m",
@@ -833,7 +847,7 @@
           "precip_chance_pct": 20,
           "conditions": "Overcast",
           "forecast_timestamp": null,
-          "retrieved_at": "2026-11-15T12:43:08.990029+00:00",
+          "retrieved_at": "2026-11-15T12:46:00.748077+00:00",
           "forecast_hour_start": "2026-11-15T15:00:00+01:00",
           "forecast_hour_end": "2026-11-15T16:00:00+01:00",
           "verification_status": "verified DWD ICON kickoff-hour forecast via Open-Meteo",
@@ -859,8 +873,20 @@
           "redZoneTdRate": 0.6176470588235294
         }
       },
-      "experts": [],
-      "expertFamilies": [],
+      "experts": [
+        {
+          "family": "Covers",
+          "analyst": "Jason Logan",
+          "summary": "Detroit\u2019s pass rush has a favorable assignment against a New England line missing contributors.",
+          "sourceUrl": "https://www.covers.com/nfl/week-10-top-picks-sunday-nov-15-2026",
+          "publishedAt": "2026-11-15",
+          "direction": "Detroit moneyline",
+          "priceLimit": null
+        }
+      ],
+      "expertFamilies": [
+        "Covers"
+      ],
       "sourceCoverage": {
         "required": 8,
         "current": 8,
@@ -873,7 +899,6 @@
       },
       "limitations": [
         "Official game-day inactives pending.",
-        "No attributable current game-specific expert analysis reviewed.",
         "Defense versus motion is Week 1; excluded from lean direction."
       ],
       "started": false,
@@ -889,8 +914,8 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T12:30:42.493Z",
-          "capturedAt": "2026-11-15T12:30:49.569073+00:00",
+          "observedAt": "2026-11-15T12:43:08.468Z",
+          "capturedAt": "2026-11-15T12:43:25.183329+00:00",
           "spread": "Detroit Lions -2.5",
           "homeMargin": 2.5,
           "source": "ESPN DraftKings"
@@ -908,7 +933,7 @@
       "awayAbbr": "KC",
       "homeAbbr": "ATL",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-15T12:43:25.183329+00:00",
+      "generatedAt": "2026-11-15T12:46:10.301159+00:00",
       "status": "PRICE WATCH",
       "footballLean": "KC",
       "assessmentSide": "KC",
@@ -1107,8 +1132,22 @@
           "home": 150
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-11-15T12:43:08.468Z",
-        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+        "timestamp": "2026-11-15T12:46:00.023Z",
+        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+        "opener_display": "Kansas City Chiefs -4.5",
+        "opening_reference": {
+          "spread": "Kansas City Chiefs -4.5",
+          "homeBookSpread": 4.5,
+          "total": 45.5,
+          "moneyline": {
+            "away": "-225",
+            "home": "+185"
+          },
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-15T12:46:00.023Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "note": "Provider opening reference; source does not publish the original quote timestamp."
+        }
       },
       "productionFair": -5.356,
       "structuralFair": -14.779,
@@ -1122,7 +1161,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T12:43:08.659932+00:00",
+        "observedAt": "2026-11-15T12:46:00.195613+00:00",
         "reviewComplete": true,
         "flags": [
           "KC QUESTIONABLE: CB Mansoor Delane (Shoulder).",
@@ -1293,7 +1332,7 @@
         "status": "Official indoor venue verified",
         "summary": "Mercedes-Benz Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-15T12:43:08.991265+00:00",
+        "observed_at": "2026-11-15T12:46:00.749302+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -1315,7 +1354,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-15T12:43:08.991265+00:00"
+          "retrieved_at": "2026-11-15T12:46:00.749302+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -1335,8 +1374,20 @@
           "redZoneTdRate": 0.6153846153846154
         }
       },
-      "experts": [],
-      "expertFamilies": [],
+      "experts": [
+        {
+          "family": "Covers",
+          "analyst": "Neil Parker",
+          "summary": "Kansas City\u2019s third-down and red-zone defense tests Atlanta\u2019s ability to finish drives.",
+          "sourceUrl": "https://www.covers.com/nfl/week-10-top-picks-sunday-nov-15-2026",
+          "publishedAt": "2026-11-15",
+          "direction": "Kansas City -3.5",
+          "priceLimit": null
+        }
+      ],
+      "expertFamilies": [
+        "Covers"
+      ],
       "sourceCoverage": {
         "required": 8,
         "current": 8,
@@ -1349,7 +1400,6 @@
       },
       "limitations": [
         "Official game-day inactives pending.",
-        "No attributable current game-specific expert analysis reviewed.",
         "Defense versus motion is Week 1; excluded from lean direction."
       ],
       "started": false,
@@ -1365,8 +1415,8 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T12:30:42.493Z",
-          "capturedAt": "2026-11-15T12:30:49.569073+00:00",
+          "observedAt": "2026-11-15T12:43:08.468Z",
+          "capturedAt": "2026-11-15T12:43:25.183329+00:00",
           "spread": "Kansas City Chiefs -3",
           "homeMargin": -3,
           "source": "ESPN DraftKings"
@@ -1384,7 +1434,7 @@
       "awayAbbr": "HOU",
       "homeAbbr": "CLE",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-15T12:43:25.183329+00:00",
+      "generatedAt": "2026-11-15T12:46:10.301159+00:00",
       "status": "PRICE WATCH",
       "footballLean": "HOU",
       "assessmentSide": "HOU",
@@ -1582,8 +1632,22 @@
           "home": 185
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-11-15T12:43:08.468Z",
-        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+        "timestamp": "2026-11-15T12:46:00.023Z",
+        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+        "opener_display": "Houston Texans -4.5",
+        "opening_reference": {
+          "spread": "Houston Texans -4.5",
+          "homeBookSpread": 4.5,
+          "total": 38.5,
+          "moneyline": {
+            "away": "-218",
+            "home": "+180"
+          },
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-15T12:46:00.023Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "note": "Provider opening reference; source does not publish the original quote timestamp."
+        }
       },
       "productionFair": -6.011,
       "structuralFair": -12.057,
@@ -1597,7 +1661,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T12:43:08.659932+00:00",
+        "observedAt": "2026-11-15T12:46:00.195613+00:00",
         "reviewComplete": true,
         "flags": [
           "HOU OUT: LB Azeez Al-Shaair (Groin, Not injury related - personal matter).",
@@ -1790,7 +1854,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Chance Light Rain at kickoff: 46\u00b0F; wind NW 12.0 mph, gust 17.3 mph; precipitation chance 33%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-15T12:43:08.991268+00:00",
+        "observed_at": "2026-11-15T12:46:00.749304+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/41.5061,-81.6995",
@@ -1816,7 +1880,7 @@
           "conditions": "Chance Light Rain",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-15T12:43:08.991268+00:00"
+          "retrieved_at": "2026-11-15T12:46:00.749304+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/41.5061,-81.6995",
@@ -1838,8 +1902,20 @@
           "redZoneTdRate": 0.391304347826087
         }
       },
-      "experts": [],
-      "expertFamilies": [],
+      "experts": [
+        {
+          "family": "Covers",
+          "analyst": "Dustin Saracini",
+          "summary": "Cleveland has allowed frequent sacks, and the analyst sees an advantage for Houston\u2019s passing offense.",
+          "sourceUrl": "https://www.covers.com/nfl/week-10-top-picks-sunday-nov-15-2026",
+          "publishedAt": "2026-11-15",
+          "direction": "Houston -4.5",
+          "priceLimit": null
+        }
+      ],
+      "expertFamilies": [
+        "Covers"
+      ],
       "sourceCoverage": {
         "required": 8,
         "current": 8,
@@ -1852,7 +1928,6 @@
       },
       "limitations": [
         "Official game-day inactives pending.",
-        "No attributable current game-specific expert analysis reviewed.",
         "Defense versus motion is Week 1; excluded from lean direction."
       ],
       "started": false,
@@ -1868,8 +1943,8 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T12:30:42.493Z",
-          "capturedAt": "2026-11-15T12:30:49.569073+00:00",
+          "observedAt": "2026-11-15T12:43:08.468Z",
+          "capturedAt": "2026-11-15T12:43:25.183329+00:00",
           "spread": "Houston Texans -4.5",
           "homeMargin": -4.5,
           "source": "ESPN DraftKings"
@@ -1887,7 +1962,7 @@
       "awayAbbr": "MIN",
       "homeAbbr": "GB",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-15T12:43:25.183329+00:00",
+      "generatedAt": "2026-11-15T12:46:10.301159+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "GB",
       "assessmentSide": "GB",
@@ -2086,8 +2161,22 @@
           "home": -148
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-11-15T12:43:08.468Z",
-        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+        "timestamp": "2026-11-15T12:46:00.023Z",
+        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+        "opener_display": "Green Bay Packers -4.5",
+        "opening_reference": {
+          "spread": "Green Bay Packers -4.5",
+          "homeBookSpread": -4.5,
+          "total": 45.5,
+          "moneyline": {
+            "away": "+185",
+            "home": "-225"
+          },
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-15T12:46:00.023Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "note": "Provider opening reference; source does not publish the original quote timestamp."
+        }
       },
       "productionFair": 2.567,
       "structuralFair": null,
@@ -2101,7 +2190,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T12:43:08.659932+00:00",
+        "observedAt": "2026-11-15T12:46:00.195613+00:00",
         "reviewComplete": true,
         "flags": [
           "MIN QUESTIONABLE: WR Jordan Addison (Thumb).",
@@ -2383,7 +2472,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Sunny at kickoff: 44\u00b0F; wind NW 1.0 mph, gust 4.6 mph; precipitation chance 0%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-15T12:43:08.991271+00:00",
+        "observed_at": "2026-11-15T12:46:00.749307+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/44.5013,-88.0622",
@@ -2409,7 +2498,7 @@
           "conditions": "Sunny",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-15T12:43:08.991271+00:00"
+          "retrieved_at": "2026-11-15T12:46:00.749307+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/44.5013,-88.0622",
@@ -2431,8 +2520,20 @@
           "redZoneTdRate": 0.5588235294117647
         }
       },
-      "experts": [],
-      "expertFamilies": [],
+      "experts": [
+        {
+          "family": "Covers",
+          "analyst": "Jason Logan",
+          "summary": "Green Bay\u2019s recent two-way efficiency faces a Minnesota defense on a short week.",
+          "sourceUrl": "https://www.covers.com/nfl/week-10-top-picks-sunday-nov-15-2026",
+          "publishedAt": "2026-11-15",
+          "direction": "Green Bay moneyline",
+          "priceLimit": null
+        }
+      ],
+      "expertFamilies": [
+        "Covers"
+      ],
       "sourceCoverage": {
         "required": 8,
         "current": 8,
@@ -2445,7 +2546,6 @@
       },
       "limitations": [
         "Official game-day inactives pending.",
-        "No attributable current game-specific expert analysis reviewed.",
         "Structural component arithmetic failed; disagreement withheld.",
         "Defense versus motion is Week 1; excluded from lean direction."
       ],
@@ -2462,8 +2562,8 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T12:30:42.493Z",
-          "capturedAt": "2026-11-15T12:30:49.569073+00:00",
+          "observedAt": "2026-11-15T12:43:08.468Z",
+          "capturedAt": "2026-11-15T12:43:25.183329+00:00",
           "spread": "Green Bay Packers -2.5",
           "homeMargin": 2.5,
           "source": "ESPN DraftKings"
@@ -2481,7 +2581,7 @@
       "awayAbbr": "JAX",
       "homeAbbr": "TEN",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-15T12:43:25.183329+00:00",
+      "generatedAt": "2026-11-15T12:46:10.301159+00:00",
       "status": "PRICE WATCH",
       "footballLean": "JAX",
       "assessmentSide": "JAX",
@@ -2680,8 +2780,22 @@
           "home": 525
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-11-15T12:43:08.468Z",
-        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+        "timestamp": "2026-11-15T12:46:00.023Z",
+        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+        "opener_display": "Jacksonville Jaguars -2.5",
+        "opening_reference": {
+          "spread": "Jacksonville Jaguars -2.5",
+          "homeBookSpread": 2.5,
+          "total": 45.5,
+          "moneyline": {
+            "away": "-135",
+            "home": "+114"
+          },
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-15T12:46:00.023Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "note": "Provider opening reference; source does not publish the original quote timestamp."
+        }
       },
       "productionFair": -10.948,
       "structuralFair": -12.738,
@@ -2695,7 +2809,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T12:43:08.659932+00:00",
+        "observedAt": "2026-11-15T12:46:00.195613+00:00",
         "reviewComplete": true,
         "flags": [
           "JAX OUT: S Jessie Bates (Not injury related - resting player).",
@@ -2873,7 +2987,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Sunny at kickoff: 54\u00b0F; wind NE 5.0 mph, gust 6.9 mph; precipitation chance 0%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-15T12:43:08.991273+00:00",
+        "observed_at": "2026-11-15T12:46:00.749310+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/36.1665,-86.7713",
@@ -2899,7 +3013,7 @@
           "conditions": "Sunny",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-15T12:43:08.991273+00:00"
+          "retrieved_at": "2026-11-15T12:46:00.749310+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/36.1665,-86.7713",
@@ -2921,8 +3035,20 @@
           "redZoneTdRate": 0.5217391304347826
         }
       },
-      "experts": [],
-      "expertFamilies": [],
+      "experts": [
+        {
+          "family": "Covers",
+          "analyst": "Neil Parker",
+          "summary": "Jacksonville\u2019s scoring defense faces a Tennessee offense with low play volume and modest production.",
+          "sourceUrl": "https://www.covers.com/nfl/week-10-top-picks-sunday-nov-15-2026",
+          "publishedAt": "2026-11-15",
+          "direction": "Under 46.5",
+          "priceLimit": null
+        }
+      ],
+      "expertFamilies": [
+        "Covers"
+      ],
       "sourceCoverage": {
         "required": 8,
         "current": 8,
@@ -2935,7 +3061,6 @@
       },
       "limitations": [
         "Official game-day inactives pending.",
-        "No attributable current game-specific expert analysis reviewed.",
         "Defense versus motion is Week 1; excluded from lean direction."
       ],
       "started": false,
@@ -2951,8 +3076,8 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T12:30:42.493Z",
-          "capturedAt": "2026-11-15T12:30:49.569073+00:00",
+          "observedAt": "2026-11-15T12:43:08.468Z",
+          "capturedAt": "2026-11-15T12:43:25.183329+00:00",
           "spread": "Jacksonville Jaguars -10.5",
           "homeMargin": -10.5,
           "source": "ESPN DraftKings"
@@ -2970,7 +3095,7 @@
       "awayAbbr": "MIA",
       "homeAbbr": "IND",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-15T12:43:25.183329+00:00",
+      "generatedAt": "2026-11-15T12:46:10.301159+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "MIA",
       "assessmentSide": "MIA",
@@ -3168,8 +3293,22 @@
           "home": -225
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-11-15T12:43:08.468Z",
-        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+        "timestamp": "2026-11-15T12:46:00.023Z",
+        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+        "opener_display": "Indianapolis Colts -6.5",
+        "opening_reference": {
+          "spread": "Indianapolis Colts -6.5",
+          "homeBookSpread": -6.5,
+          "total": 47.5,
+          "moneyline": {
+            "away": "+235",
+            "home": "-290"
+          },
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-15T12:46:00.023Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "note": "Provider opening reference; source does not publish the original quote timestamp."
+        }
       },
       "productionFair": 4.862,
       "structuralFair": 6.311,
@@ -3183,7 +3322,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T12:43:08.659932+00:00",
+        "observedAt": "2026-11-15T12:46:00.195613+00:00",
         "reviewComplete": true,
         "flags": [
           "MIA QUESTIONABLE: CB Darrell Baker Jr. (Knee).",
@@ -3337,7 +3476,7 @@
         "status": "Official indoor venue verified",
         "summary": "Lucas Oil Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-15T12:43:08.991277+00:00",
+        "observed_at": "2026-11-15T12:46:00.749313+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -3359,7 +3498,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-15T12:43:08.991277+00:00"
+          "retrieved_at": "2026-11-15T12:46:00.749313+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -3379,8 +3518,20 @@
           "redZoneTdRate": 0.5833333333333334
         }
       },
-      "experts": [],
-      "expertFamilies": [],
+      "experts": [
+        {
+          "family": "Covers",
+          "analyst": "Dustin Saracini",
+          "summary": "Neither offense has been efficient; Miami\u2019s red-zone conversion is a particular concern.",
+          "sourceUrl": "https://www.covers.com/nfl/week-10-top-picks-sunday-nov-15-2026",
+          "publishedAt": "2026-11-15",
+          "direction": "Under 38.5",
+          "priceLimit": null
+        }
+      ],
+      "expertFamilies": [
+        "Covers"
+      ],
       "sourceCoverage": {
         "required": 8,
         "current": 8,
@@ -3393,7 +3544,6 @@
       },
       "limitations": [
         "Official game-day inactives pending.",
-        "No attributable current game-specific expert analysis reviewed.",
         "Defense versus motion is Week 1; excluded from lean direction."
       ],
       "started": false,
@@ -3409,8 +3559,8 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T12:30:42.493Z",
-          "capturedAt": "2026-11-15T12:30:49.569073+00:00",
+          "observedAt": "2026-11-15T12:43:08.468Z",
+          "capturedAt": "2026-11-15T12:43:25.183329+00:00",
           "spread": "Indianapolis Colts -4.5",
           "homeMargin": 4.5,
           "source": "ESPN DraftKings"
@@ -3428,7 +3578,7 @@
       "awayAbbr": "CAR",
       "homeAbbr": "NO",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-15T12:43:25.183329+00:00",
+      "generatedAt": "2026-11-15T12:46:10.301159+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "CAR",
       "assessmentSide": "CAR",
@@ -3627,8 +3777,22 @@
           "home": -125
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-11-15T12:43:08.468Z",
-        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+        "timestamp": "2026-11-15T12:46:00.023Z",
+        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+        "opener_display": "New Orleans Saints -1.5",
+        "opening_reference": {
+          "spread": "New Orleans Saints -1.5",
+          "homeBookSpread": -1.5,
+          "total": 43.5,
+          "moneyline": {
+            "away": "+105",
+            "home": "-125"
+          },
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-15T12:46:00.023Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "note": "Provider opening reference; source does not publish the original quote timestamp."
+        }
       },
       "productionFair": 1.84,
       "structuralFair": 3.198,
@@ -3642,7 +3806,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T12:43:08.659932+00:00",
+        "observedAt": "2026-11-15T12:46:00.195613+00:00",
         "reviewComplete": true,
         "flags": [
           "CAR DOUBTFUL: RB Jonathon Brooks (Groin).",
@@ -3817,7 +3981,7 @@
         "status": "Official indoor venue verified",
         "summary": "Caesars Superdome is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-15T12:43:08.991280+00:00",
+        "observed_at": "2026-11-15T12:46:00.749316+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -3839,7 +4003,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-15T12:43:08.991280+00:00"
+          "retrieved_at": "2026-11-15T12:46:00.749316+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -3859,8 +4023,20 @@
           "redZoneTdRate": 0.7037037037037037
         }
       },
-      "experts": [],
-      "expertFamilies": [],
+      "experts": [
+        {
+          "family": "Covers",
+          "analyst": "Shawn Krest",
+          "summary": "Returning Carolina contributors could help against a defense that has struggled this season.",
+          "sourceUrl": "https://www.covers.com/nfl/week-10-top-picks-sunday-nov-15-2026",
+          "publishedAt": "2026-11-15",
+          "direction": "Carolina +2.5",
+          "priceLimit": null
+        }
+      ],
+      "expertFamilies": [
+        "Covers"
+      ],
       "sourceCoverage": {
         "required": 8,
         "current": 8,
@@ -3873,7 +4049,6 @@
       },
       "limitations": [
         "Official game-day inactives pending.",
-        "No attributable current game-specific expert analysis reviewed.",
         "Defense versus motion is Week 1; excluded from lean direction."
       ],
       "started": false,
@@ -3889,8 +4064,8 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T12:30:42.493Z",
-          "capturedAt": "2026-11-15T12:30:49.569073+00:00",
+          "observedAt": "2026-11-15T12:43:08.468Z",
+          "capturedAt": "2026-11-15T12:43:25.183329+00:00",
           "spread": "New Orleans Saints -1.5",
           "homeMargin": 1.5,
           "source": "ESPN DraftKings"
@@ -3908,7 +4083,7 @@
       "awayAbbr": "BUF",
       "homeAbbr": "NYJ",
       "kickoff": "2026-11-15T18:00Z",
-      "generatedAt": "2026-11-15T12:43:25.183329+00:00",
+      "generatedAt": "2026-11-15T12:46:10.301159+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "BUF",
       "assessmentSide": "BUF",
@@ -4106,8 +4281,22 @@
           "home": 360
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-11-15T12:43:08.468Z",
-        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+        "timestamp": "2026-11-15T12:46:00.023Z",
+        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+        "opener_display": "Buffalo Bills -7",
+        "opening_reference": {
+          "spread": "Buffalo Bills -7",
+          "homeBookSpread": 7,
+          "total": 46.5,
+          "moneyline": {
+            "away": "-340",
+            "home": "+270"
+          },
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-15T12:46:00.023Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "note": "Provider opening reference; source does not publish the original quote timestamp."
+        }
       },
       "productionFair": -8.378,
       "structuralFair": null,
@@ -4121,7 +4310,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T12:43:08.659932+00:00",
+        "observedAt": "2026-11-15T12:46:00.195613+00:00",
         "reviewComplete": true,
         "flags": [
           "BUF QUESTIONABLE: CB Christian Benford (Wrist).",
@@ -4314,7 +4503,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Sunny at kickoff: 52\u00b0F; wind NW 12.0 mph, gust 21.9 mph; precipitation chance 1%.",
         "risk": "weather review required",
-        "observed_at": "2026-11-15T12:43:08.991282+00:00",
+        "observed_at": "2026-11-15T12:46:00.749318+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/40.8135,-74.0745",
@@ -4340,7 +4529,7 @@
           "conditions": "Sunny",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-15T12:43:08.991282+00:00"
+          "retrieved_at": "2026-11-15T12:46:00.749318+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/40.8135,-74.0745",
@@ -4362,8 +4551,20 @@
           "redZoneTdRate": 0.4074074074074074
         }
       },
-      "experts": [],
-      "expertFamilies": [],
+      "experts": [
+        {
+          "family": "Covers",
+          "analyst": "Tom Oldfield",
+          "summary": "Buffalo\u2019s scoring form and the return of Garrett Wilson support a higher total.",
+          "sourceUrl": "https://www.covers.com/nfl/week-10-top-picks-sunday-nov-15-2026",
+          "publishedAt": "2026-11-15",
+          "direction": "Over 50.5",
+          "priceLimit": null
+        }
+      ],
+      "expertFamilies": [
+        "Covers"
+      ],
       "sourceCoverage": {
         "required": 8,
         "current": 8,
@@ -4376,7 +4577,6 @@
       },
       "limitations": [
         "Official game-day inactives pending.",
-        "No attributable current game-specific expert analysis reviewed.",
         "Structural component arithmetic failed; disagreement withheld.",
         "Defense versus motion is Week 1; excluded from lean direction."
       ],
@@ -4393,8 +4593,8 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T12:30:42.493Z",
-          "capturedAt": "2026-11-15T12:30:49.569073+00:00",
+          "observedAt": "2026-11-15T12:43:08.468Z",
+          "capturedAt": "2026-11-15T12:43:25.183329+00:00",
           "spread": "Buffalo Bills -8.5",
           "homeMargin": -8.5,
           "source": "ESPN DraftKings"
@@ -4412,7 +4612,7 @@
       "awayAbbr": "SEA",
       "homeAbbr": "LV",
       "kickoff": "2026-11-15T21:05Z",
-      "generatedAt": "2026-11-15T12:43:25.183329+00:00",
+      "generatedAt": "2026-11-15T12:46:10.301159+00:00",
       "status": "PRICE WATCH",
       "footballLean": "SEA",
       "assessmentSide": "SEA",
@@ -4610,8 +4810,22 @@
           "home": 235
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-11-15T12:43:08.468Z",
-        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+        "timestamp": "2026-11-15T12:46:00.023Z",
+        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+        "opener_display": "Seattle Seahawks -7",
+        "opening_reference": {
+          "spread": "Seattle Seahawks -7",
+          "homeBookSpread": 7,
+          "total": 43.5,
+          "moneyline": {
+            "away": "-340",
+            "home": "+270"
+          },
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-15T12:46:00.023Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "note": "Provider opening reference; source does not publish the original quote timestamp."
+        }
       },
       "productionFair": -8.484,
       "structuralFair": -16.422,
@@ -4625,7 +4839,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T12:43:08.659932+00:00",
+        "observedAt": "2026-11-15T12:46:00.195613+00:00",
         "reviewComplete": true,
         "flags": [
           "SEA OUT: T Charles Cross (Ankle).",
@@ -4735,7 +4949,7 @@
         "status": "Official indoor venue verified",
         "summary": "Allegiant Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-15T12:43:08.991285+00:00",
+        "observed_at": "2026-11-15T12:46:00.749321+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -4757,7 +4971,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-15T12:43:08.991285+00:00"
+          "retrieved_at": "2026-11-15T12:46:00.749321+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -4777,8 +4991,20 @@
           "redZoneTdRate": 0.5294117647058824
         }
       },
-      "experts": [],
-      "expertFamilies": [],
+      "experts": [
+        {
+          "family": "Covers",
+          "analyst": "Neil Parker",
+          "summary": "Seattle\u2019s pressure is a difficult first-start matchup for Fernando Mendoza.",
+          "sourceUrl": "https://www.covers.com/nfl/week-10-top-picks-sunday-nov-15-2026",
+          "publishedAt": "2026-11-15",
+          "direction": "Seattle -6.5",
+          "priceLimit": null
+        }
+      ],
+      "expertFamilies": [
+        "Covers"
+      ],
       "sourceCoverage": {
         "required": 8,
         "current": 8,
@@ -4791,7 +5017,6 @@
       },
       "limitations": [
         "Official game-day inactives pending.",
-        "No attributable current game-specific expert analysis reviewed.",
         "Defense versus motion is Week 1; excluded from lean direction."
       ],
       "started": false,
@@ -4807,8 +5032,8 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T12:30:42.493Z",
-          "capturedAt": "2026-11-15T12:30:49.569073+00:00",
+          "observedAt": "2026-11-15T12:43:08.468Z",
+          "capturedAt": "2026-11-15T12:43:25.183329+00:00",
           "spread": "Seattle Seahawks -6.5",
           "homeMargin": -6.5,
           "source": "ESPN DraftKings"
@@ -4826,7 +5051,7 @@
       "awayAbbr": "LAR",
       "homeAbbr": "ARI",
       "kickoff": "2026-11-15T21:05Z",
-      "generatedAt": "2026-11-15T12:43:25.183329+00:00",
+      "generatedAt": "2026-11-15T12:46:10.301159+00:00",
       "status": "PRICE WATCH",
       "footballLean": "LAR",
       "assessmentSide": "LAR",
@@ -5024,8 +5249,22 @@
           "home": 370
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-11-15T12:43:08.468Z",
-        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+        "timestamp": "2026-11-15T12:46:00.023Z",
+        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+        "opener_display": "Los Angeles Rams -10.5",
+        "opening_reference": {
+          "spread": "Los Angeles Rams -10.5",
+          "homeBookSpread": 10.5,
+          "total": 47.5,
+          "moneyline": {
+            "away": "-535",
+            "home": "+400"
+          },
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-15T12:46:00.023Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "note": "Provider opening reference; source does not publish the original quote timestamp."
+        }
       },
       "productionFair": -9.837,
       "structuralFair": -11.187,
@@ -5039,7 +5278,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T12:43:08.659932+00:00",
+        "observedAt": "2026-11-15T12:46:00.195613+00:00",
         "reviewComplete": true,
         "flags": [
           "LAR QUESTIONABLE: TE Davis Allen (Oblique).",
@@ -5283,7 +5522,7 @@
         "status": "Official indoor venue verified",
         "summary": "State Farm Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-15T12:43:08.991288+00:00",
+        "observed_at": "2026-11-15T12:46:00.749324+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -5305,7 +5544,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-15T12:43:08.991288+00:00"
+          "retrieved_at": "2026-11-15T12:46:00.749324+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -5325,8 +5564,20 @@
           "redZoneTdRate": 0.42857142857142855
         }
       },
-      "experts": [],
-      "expertFamilies": [],
+      "experts": [
+        {
+          "family": "Covers",
+          "analyst": "Jason Logan",
+          "summary": "Receiver injuries and a more run-heavy Rams offense could reduce scoring opportunities.",
+          "sourceUrl": "https://www.covers.com/nfl/week-10-top-picks-sunday-nov-15-2026",
+          "publishedAt": "2026-11-15",
+          "direction": "Under 39.5",
+          "priceLimit": null
+        }
+      ],
+      "expertFamilies": [
+        "Covers"
+      ],
       "sourceCoverage": {
         "required": 8,
         "current": 8,
@@ -5339,7 +5590,6 @@
       },
       "limitations": [
         "Official game-day inactives pending.",
-        "No attributable current game-specific expert analysis reviewed.",
         "Defense versus motion is Week 1; excluded from lean direction."
       ],
       "started": false,
@@ -5355,8 +5605,8 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T12:30:42.493Z",
-          "capturedAt": "2026-11-15T12:30:49.569073+00:00",
+          "observedAt": "2026-11-15T12:43:08.468Z",
+          "capturedAt": "2026-11-15T12:43:25.183329+00:00",
           "spread": "Los Angeles Rams -9.5",
           "homeMargin": -9.5,
           "source": "ESPN DraftKings"
@@ -5374,7 +5624,7 @@
       "awayAbbr": "SF",
       "homeAbbr": "DAL",
       "kickoff": "2026-11-15T21:25Z",
-      "generatedAt": "2026-11-15T12:43:25.183329+00:00",
+      "generatedAt": "2026-11-15T12:46:10.301159+00:00",
       "status": "PRICE WATCH",
       "footballLean": "SF",
       "assessmentSide": "SF",
@@ -5572,8 +5822,22 @@
           "home": 180
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-11-15T12:43:08.468Z",
-        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+        "timestamp": "2026-11-15T12:46:00.023Z",
+        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+        "opener_display": "Dallas Cowboys -1.5",
+        "opening_reference": {
+          "spread": "Dallas Cowboys -1.5",
+          "homeBookSpread": -1.5,
+          "total": 52.5,
+          "moneyline": {
+            "away": "+100",
+            "home": "-120"
+          },
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-15T12:46:00.023Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "note": "Provider opening reference; source does not publish the original quote timestamp."
+        }
       },
       "productionFair": -5.215,
       "structuralFair": -8.073,
@@ -5587,7 +5851,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T12:43:08.659932+00:00",
+        "observedAt": "2026-11-15T12:46:00.195613+00:00",
         "reviewComplete": true,
         "flags": [
           "SF OUT: WR Mike Evans (Achilles).",
@@ -5830,7 +6094,7 @@
         "status": "Official indoor venue verified",
         "summary": "AT&T Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
         "risk": "indoor / roof controlled",
-        "observed_at": "2026-11-15T12:43:08.991291+00:00",
+        "observed_at": "2026-11-15T12:46:00.749327+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
@@ -5852,7 +6116,7 @@
           "limitations": [
             "Roof status is governed by venue/event information; outside air values are not on-field conditions."
           ],
-          "retrieved_at": "2026-11-15T12:43:08.991291+00:00"
+          "retrieved_at": "2026-11-15T12:46:00.749327+00:00"
         },
         "sources": [
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100"
@@ -5872,8 +6136,20 @@
           "redZoneTdRate": 0.7142857142857143
         }
       },
-      "experts": [],
-      "expertFamilies": [],
+      "experts": [
+        {
+          "family": "Covers",
+          "analyst": "Neil Parker",
+          "summary": "Improved Dallas defense and efficient offense support keeping the margin close.",
+          "sourceUrl": "https://www.covers.com/nfl/week-10-top-picks-sunday-nov-15-2026",
+          "publishedAt": "2026-11-15",
+          "direction": "Dallas +4.5",
+          "priceLimit": null
+        }
+      ],
+      "expertFamilies": [
+        "Covers"
+      ],
       "sourceCoverage": {
         "required": 8,
         "current": 8,
@@ -5886,7 +6162,6 @@
       },
       "limitations": [
         "Official game-day inactives pending.",
-        "No attributable current game-specific expert analysis reviewed.",
         "Defense versus motion is Week 1; excluded from lean direction."
       ],
       "started": false,
@@ -5902,8 +6177,8 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T12:30:42.493Z",
-          "capturedAt": "2026-11-15T12:30:49.569073+00:00",
+          "observedAt": "2026-11-15T12:43:08.468Z",
+          "capturedAt": "2026-11-15T12:43:25.183329+00:00",
           "spread": "San Francisco 49ers -4.5",
           "homeMargin": -4.5,
           "source": "ESPN DraftKings"
@@ -5921,7 +6196,7 @@
       "awayAbbr": "PIT",
       "homeAbbr": "CIN",
       "kickoff": "2026-11-16T01:20Z",
-      "generatedAt": "2026-11-15T12:43:25.183329+00:00",
+      "generatedAt": "2026-11-15T12:46:10.301159+00:00",
       "status": "PRICE WATCH",
       "footballLean": "CIN",
       "assessmentSide": "CIN",
@@ -6120,8 +6395,22 @@
           "home": -185
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-11-15T12:43:08.468Z",
-        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+        "timestamp": "2026-11-15T12:46:00.023Z",
+        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+        "opener_display": "Cincinnati Bengals -3.5",
+        "opening_reference": {
+          "spread": "Cincinnati Bengals -3.5",
+          "homeBookSpread": -3.5,
+          "total": 47.5,
+          "moneyline": {
+            "away": "+160",
+            "home": "-192"
+          },
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-15T12:46:00.023Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "note": "Provider opening reference; source does not publish the original quote timestamp."
+        }
       },
       "productionFair": 3.811,
       "structuralFair": 5.056,
@@ -6135,7 +6424,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T12:43:08.659932+00:00",
+        "observedAt": "2026-11-15T12:46:00.195613+00:00",
         "reviewComplete": true,
         "flags": [
           "PIT QUESTIONABLE: DT Derrick Harmon (Foot).",
@@ -6243,7 +6532,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Mostly Cloudy at kickoff: 42\u00b0F; wind  0.0 mph, gust 2.3 mph; precipitation chance 0%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-15T12:43:08.991293+00:00",
+        "observed_at": "2026-11-15T12:46:00.749329+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/39.0954,-84.516",
@@ -6269,7 +6558,7 @@
           "conditions": "Mostly Cloudy",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-15T12:43:08.991293+00:00"
+          "retrieved_at": "2026-11-15T12:46:00.749329+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/39.0954,-84.516",
@@ -6291,8 +6580,20 @@
           "redZoneTdRate": 0.6875
         }
       },
-      "experts": [],
-      "expertFamilies": [],
+      "experts": [
+        {
+          "family": "Covers",
+          "analyst": "Jason Logan",
+          "summary": "Pittsburgh\u2019s post-bye rest and rushing attack could limit Cincinnati\u2019s possessions.",
+          "sourceUrl": "https://www.covers.com/nfl/week-10-top-picks-sunday-nov-15-2026",
+          "publishedAt": "2026-11-15",
+          "direction": "Pittsburgh +3.5",
+          "priceLimit": null
+        }
+      ],
+      "expertFamilies": [
+        "Covers"
+      ],
       "sourceCoverage": {
         "required": 8,
         "current": 8,
@@ -6305,7 +6606,6 @@
       },
       "limitations": [
         "Official game-day inactives pending.",
-        "No attributable current game-specific expert analysis reviewed.",
         "Defense versus motion is Week 1; excluded from lean direction."
       ],
       "started": false,
@@ -6321,8 +6621,8 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T12:30:42.493Z",
-          "capturedAt": "2026-11-15T12:30:49.569073+00:00",
+          "observedAt": "2026-11-15T12:43:08.468Z",
+          "capturedAt": "2026-11-15T12:43:25.183329+00:00",
           "spread": "Cincinnati Bengals -3.5",
           "homeMargin": 3.5,
           "source": "ESPN DraftKings"
@@ -6340,7 +6640,7 @@
       "awayAbbr": "LAC",
       "homeAbbr": "BAL",
       "kickoff": "2026-11-17T01:15Z",
-      "generatedAt": "2026-11-15T12:43:25.183329+00:00",
+      "generatedAt": "2026-11-15T12:46:10.301159+00:00",
       "status": "FOOTBALL LEAN",
       "footballLean": "BAL",
       "assessmentSide": "BAL",
@@ -6538,8 +6838,22 @@
           "home": -225
         },
         "source": "ESPN DraftKings",
-        "timestamp": "2026-11-15T12:43:08.468Z",
-        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution"
+        "timestamp": "2026-11-15T12:46:00.023Z",
+        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+        "opener_display": "Baltimore Ravens -2.5",
+        "opening_reference": {
+          "spread": "Baltimore Ravens -2.5",
+          "homeBookSpread": -2.5,
+          "total": 48.5,
+          "moneyline": {
+            "away": "+120",
+            "home": "-142"
+          },
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-15T12:46:00.023Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=10&limit=100",
+          "note": "Provider opening reference; source does not publish the original quote timestamp."
+        }
       },
       "productionFair": 3.954,
       "structuralFair": 1.772,
@@ -6553,7 +6867,7 @@
         "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
       },
       "availability": {
-        "observedAt": "2026-11-15T12:43:08.659932+00:00",
+        "observedAt": "2026-11-15T12:46:00.195613+00:00",
         "reviewComplete": false,
         "flags": [
           "LAC QUESTIONABLE: G Kayode Awosika (Fibula).",
@@ -6736,7 +7050,7 @@
         "status": "Official kickoff-hour forecast verified",
         "summary": "Mostly Clear at kickoff: 44\u00b0F; wind NW 2.0 mph, gust 6.9 mph; precipitation chance 0%.",
         "risk": "no major hourly weather flag",
-        "observed_at": "2026-11-15T12:43:08.991296+00:00",
+        "observed_at": "2026-11-15T12:46:00.749332+00:00",
         "total_adjustment_points": 0,
         "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
         "source": "https://api.weather.gov/points/39.278,-76.6227",
@@ -6762,7 +7076,7 @@
           "conditions": "Mostly Clear",
           "verification_status": "verified official NWS kickoff-containing hourly forecast",
           "gust_unit_original": "wmoUnit:km_h-1",
-          "retrieved_at": "2026-11-15T12:43:08.991296+00:00"
+          "retrieved_at": "2026-11-15T12:46:00.749332+00:00"
         },
         "sources": [
           "https://api.weather.gov/points/39.278,-76.6227",
@@ -6784,8 +7098,20 @@
           "redZoneTdRate": 0.5925925925925926
         }
       },
-      "experts": [],
-      "expertFamilies": [],
+      "experts": [
+        {
+          "family": "Covers",
+          "analyst": "Josh Inglis",
+          "summary": "Baltimore\u2019s quarterback change favors a run-first approach against a struggling Chargers offense.",
+          "sourceUrl": "https://www.covers.com/nfl/chargers-vs-ravens-prediction-picks-nov-16-2026",
+          "publishedAt": "2026-11-14",
+          "direction": "Lower-scoring game script",
+          "priceLimit": null
+        }
+      ],
+      "expertFamilies": [
+        "Covers"
+      ],
       "sourceCoverage": {
         "required": 8,
         "current": 8,
@@ -6798,7 +7124,6 @@
       },
       "limitations": [
         "Official game-day inactives pending.",
-        "No attributable current game-specific expert analysis reviewed.",
         "Defense versus motion is Week 1; excluded from lean direction."
       ],
       "started": false,
@@ -6814,8 +7139,8 @@
           "source": "ESPN DraftKings"
         },
         {
-          "observedAt": "2026-11-15T12:30:42.493Z",
-          "capturedAt": "2026-11-15T12:30:49.569073+00:00",
+          "observedAt": "2026-11-15T12:43:08.468Z",
+          "capturedAt": "2026-11-15T12:43:25.183329+00:00",
           "spread": "Baltimore Ravens -4.5",
           "homeMargin": 4.5,
           "source": "ESPN DraftKings"
