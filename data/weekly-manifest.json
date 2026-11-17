@@ -1,29 +1,29 @@
 {
   "version": "NFL-WEEKLY-MANIFEST-v3",
   "season": 2026,
-  "week": 11,
-  "updatedAt": "2026-11-17T20:30:12.891Z",
-  "status": "FAIL",
+  "week": 12,
+  "updatedAt": "2026-11-17T21:30:48.286Z",
+  "status": "PASS-WITH-WARNINGS",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-11-17.json",
   "gates": {
     "canonicalSchedule": {
       "status": "PASS",
-      "expectedGames": 13,
-      "actualGames": 13,
-      "uniqueCanonicalIds": 13
+      "expectedGames": 16,
+      "actualGames": 16,
+      "uniqueCanonicalIds": 16
     },
     "deepDiveCoverage": {
       "status": "PASS",
-      "completed": 13,
-      "expected": 13,
+      "completed": 16,
+      "expected": 16,
       "sourceFailures": 0,
       "note": "Schedule coverage is never Deep Dive coverage."
     },
     "structuredPerGameReview": {
       "status": "PASS",
-      "classifiedGames": 13,
-      "expected": 13,
+      "classifiedGames": 16,
+      "expected": 16,
       "source": "data/weekday-intel-2026-11-17.json"
     },
     "matchupMatrix": {
@@ -36,34 +36,34 @@
     "statisticalDisplay": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-11-17T19:30:04.469693+00:00",
-      "artifact": "data/statistical-display-integrity-2026-w11.json",
-      "note": "32 observed season-to-date profiles through Week 10; defensive yardage independently aggregated from each opponent box score. Advanced inputs use the same pregame cutoff."
+      "verifiedAt": "2026-11-17T21:30:41.335229+00:00",
+      "artifact": "data/statistical-display-integrity-2026-w12.json",
+      "note": "32 observed season-to-date profiles through Week 11; defensive yardage independently aggregated from each opponent box score. Advanced inputs use the same pregame cutoff."
     },
     "marketDerivedIntegrity": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-11-17T19:29:51.802Z",
-      "artifact": "data/market-derived-integrity-2026-w11.json",
-      "note": "All 13 current spread-derived production fairs independently reconciled as 80% market + 20% frozen structural line with calculation timestamps at/after market dependency."
+      "verifiedAt": "2026-11-17T21:30:34.263Z",
+      "artifact": "data/market-derived-integrity-2026-w12.json",
+      "note": "All 16 current spread-derived production fairs independently reconciled as 80% market + 20% frozen structural line with calculation timestamps at/after market dependency."
     },
     "currentWeekCompleteness": {
-      "status": "FAIL",
+      "status": "PASS-WITH-WARNINGS",
       "blocking": true,
-      "unplayedGames": 13,
-      "freshMarketGames": 13,
-      "calculationFreshGames": 0,
-      "moneylineAvailableGames": 13,
-      "availabilityCheckpointDue": 13,
+      "unplayedGames": 16,
+      "freshMarketGames": 16,
+      "calculationFreshGames": 16,
+      "moneylineAvailableGames": 16,
+      "availabilityCheckpointDue": 0,
       "availabilityCheckpointComplete": 0,
-      "weatherCheckpointDue": 13,
-      "weatherCheckpointComplete": 13,
+      "weatherCheckpointDue": 0,
+      "weatherCheckpointComplete": 0,
       "upsetLabVerified": true,
-      "issues": [
-        "fresh calculated model coverage 0/13",
-        "availability review due 0/13"
+      "issues": [],
+      "warnings": [
+        "final injury designations are not yet due under the 30-hour pre-kickoff gate",
+        "game-specific weather verification is not yet due under the 30-hour pre-kickoff gate"
       ],
-      "warnings": [],
       "note": "Wednesday certification requires fresh spread/total, selected-week model calculations, universal Deep Dives and upset research. Exact ML, final injury designations and weather become blocking only when their execution checkpoints are due; missing values are never inferred."
     },
     "homeMarginConvention": {
@@ -82,7 +82,7 @@
       "youBetterYouBetStatus": "active-current-source-limited",
       "youBetterYouBetChecked": "2026-11-17",
       "pointImpact": 0,
-      "note": "Expert Intelligence remains a qualitative residual with zero automatic model impact. Primary ledger is losslessly synchronized (463 ledger records; 0 missing). Selected-week source inventory is complete; 8/8 required families have current checks; the primary ledger has 0 attributable Week 11 records across all sources, including 0 from required families. You Better You Bet/Audacy has a current index check; transcript evidence is source-limited."
+      "note": "Expert Intelligence remains a qualitative residual with zero automatic model impact. Primary ledger is losslessly synchronized (463 ledger records; 0 missing). Selected-week source inventory is complete; 8/8 required families have current checks; the primary ledger has 0 attributable Week 12 records across all sources, including 0 from required families. You Better You Bet/Audacy has a current index check; transcript evidence is source-limited."
     },
     "podcastTranscripts": {
       "status": "PASS-SOURCE-LIMITED",
@@ -94,7 +94,7 @@
       "minutesReviewed": 0,
       "sourceFamilies": 0,
       "pointImpact": 0,
-      "note": "Selected Week 11 source entry points were checked in this run; no complete selected-week episode inventory was available. The layer is current-source-limited, carries zero inferred selections and zero production impact."
+      "note": "Selected Week 12 source entry points were checked in this run; no complete selected-week episode inventory was available. The layer is current-source-limited, carries zero inferred selections and zero production impact."
     },
     "upsetResearchIsolation": {
       "status": "PASS",
@@ -108,8 +108,8 @@
       "status": "PASS",
       "blocking": true,
       "artifact": "data/player-props-expert.json",
-      "artifactWeek": 11,
-      "selectedWeek": 11,
+      "artifactWeek": 12,
+      "selectedWeek": 12,
       "verifiedRecommendations": 0,
       "watchlistRows": 0,
       "verification": {
@@ -138,12 +138,16 @@
       "note": "Historical snapshot debt from prior weeks is retained separately and never rewritten; completed games are exempt from live freshness."
     },
     "timeLimitedOverlays": {
-      "status": "PASS",
-      "items": []
+      "status": "IN_PROGRESS",
+      "items": [
+        "final injury designations are not yet due under the 30-hour pre-kickoff gate",
+        "game-specific weather verification is not yet due under the 30-hour pre-kickoff gate"
+      ]
     }
   },
-  "failures": [
-    "CURRENTWEEKCOMPLETENESS_INCOMPLETE"
-  ],
-  "historicalWarnings": []
+  "failures": [],
+  "historicalWarnings": [
+    "final injury designations are not yet due under the 30-hour pre-kickoff gate",
+    "game-specific weather verification is not yet due under the 30-hour pre-kickoff gate"
+  ]
 }
