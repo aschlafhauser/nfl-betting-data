@@ -1,0 +1,326 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W11-NO-CHI",
+  "portalGameId": "401873071",
+  "week": 11,
+  "away": "New Orleans Saints",
+  "home": "Chicago Bears",
+  "awayAbbr": "NO",
+  "homeAbbr": "CHI",
+  "kickoff": "2026-11-22T18:00Z",
+  "generatedAt": "2026-11-17T05:29:47.134118+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "CHI",
+  "assessmentSide": "CHI",
+  "structuralValueSide": "NO",
+  "alignment": "CONFLICT",
+  "thesis": "CHI has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "CHI",
+      "gap": 0.094,
+      "unit": "EPA/play",
+      "awayOffense": 0.0010175500344791534,
+      "homeDefenseAllowed": -0.03154781734745524,
+      "homeOffense": 0.0934902135062669,
+      "awayDefenseAllowed": 0.06374203883003128,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "CHI",
+      "gap": 0.03,
+      "unit": "EPA/play",
+      "awayOffense": -0.09450050334365519,
+      "homeDefenseAllowed": 0.09177281767501776,
+      "homeOffense": -0.007856953990264383,
+      "awayDefenseAllowed": 0.06437181268921802,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "CHI",
+      "gap": 0.097,
+      "unit": "EPA/play",
+      "awayOffense": -0.13211055031399802,
+      "homeDefenseAllowed": -0.04677423998802328,
+      "homeOffense": 0.004932334291539807,
+      "awayDefenseAllowed": 0.01012920066659866,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "CHI",
+      "gap": 1.853,
+      "unit": "percentage points",
+      "awayOffense": 0.06779661016949153,
+      "homeDefenseAllowed": 0.09936575052854123,
+      "homeOffense": 0.09775641025641026,
+      "awayDefenseAllowed": 0.10645724258289703,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "CHI",
+      "gap": 1.619,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.14805194805194805,
+      "homeDefenseAllowed": 0.16501650165016502,
+      "homeOffense": 0.1327683615819209,
+      "awayDefenseAllowed": 0.14792899408284024,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "counterarguments": [],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "CHI",
+      "gap": 0.094,
+      "unit": "EPA/play",
+      "awayOffense": 0.0010175500344791534,
+      "homeDefenseAllowed": -0.03154781734745524,
+      "homeOffense": 0.0934902135062669,
+      "awayDefenseAllowed": 0.06374203883003128,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "CHI",
+      "gap": 0.03,
+      "unit": "EPA/play",
+      "awayOffense": -0.09450050334365519,
+      "homeDefenseAllowed": 0.09177281767501776,
+      "homeOffense": -0.007856953990264383,
+      "awayDefenseAllowed": 0.06437181268921802,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "CHI",
+      "gap": 0.097,
+      "unit": "EPA/play",
+      "awayOffense": -0.13211055031399802,
+      "homeDefenseAllowed": -0.04677423998802328,
+      "homeOffense": 0.004932334291539807,
+      "awayDefenseAllowed": 0.01012920066659866,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "CHI",
+      "gap": 1.853,
+      "unit": "percentage points",
+      "awayOffense": 0.06779661016949153,
+      "homeDefenseAllowed": 0.09936575052854123,
+      "homeOffense": 0.09775641025641026,
+      "awayDefenseAllowed": 0.10645724258289703,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "CHI",
+      "gap": 1.619,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.14805194805194805,
+      "homeDefenseAllowed": 0.16501650165016502,
+      "homeOffense": 0.1327683615819209,
+      "awayDefenseAllowed": 0.14792899408284024,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": 0.1999,
+  "profiles": {
+    "NO": {
+      "season": {
+        "games": 9,
+        "offPlays": 590,
+        "defPlays": 573,
+        "offEpa": -0.0677,
+        "defEpa": 0.0321,
+        "netEpa": -0.0998,
+        "adjustedNetEpa": -0.1307,
+        "earlyOffEpa": -0.0952,
+        "earlyDefEpa": 0.0713,
+        "passOffEpa": 0.001,
+        "passDefEpa": 0.0637
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 132,
+        "defPlays": 134,
+        "offEpa": -0.1757,
+        "defEpa": -0.1088,
+        "netEpa": -0.0669,
+        "adjustedNetEpa": -0.082,
+        "earlyOffEpa": -0.098,
+        "earlyDefEpa": -0.0194,
+        "passOffEpa": -0.085,
+        "passDefEpa": -0.0641
+      }
+    },
+    "CHI": {
+      "season": {
+        "games": 9,
+        "offPlays": 624,
+        "defPlays": 473,
+        "offEpa": 0.0368,
+        "defEpa": -0.0491,
+        "netEpa": 0.0859,
+        "adjustedNetEpa": 0.0692,
+        "earlyOffEpa": -0.0079,
+        "earlyDefEpa": 0.0785,
+        "passOffEpa": 0.0935,
+        "passDefEpa": -0.0315
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 127,
+        "defPlays": 122,
+        "offEpa": -0.0042,
+        "defEpa": -0.1854,
+        "netEpa": 0.1812,
+        "adjustedNetEpa": 0.2618,
+        "earlyOffEpa": -0.073,
+        "earlyDefEpa": -0.1162,
+        "passOffEpa": -0.0475,
+        "passDefEpa": -0.249
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 4.31,
+    "structuralHomeMargin": 4.31
+  },
+  "market": {
+    "spread_display": "Chicago Bears -11.5",
+    "spread": "CHI -11.5",
+    "total": 48.5,
+    "home_margin": 11.5,
+    "home_team_sportsbook_spread": -11.5,
+    "moneyline": {
+      "away": 470,
+      "home": -650
+    },
+    "source": "ESPN Draft Kings",
+    "timestamp": "2026-11-17T05:29:33.008Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+    "opener_display": "Chicago Bears -6.5",
+    "opening_reference": {
+      "spread": "Chicago Bears -6.5",
+      "homeBookSpread": -6.5,
+      "total": 46.5,
+      "moneyline": {
+        "away": "+225",
+        "home": "-278"
+      },
+      "source": "ESPN Draft Kings",
+      "observedAt": "2026-11-17T05:29:33.008Z",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
+      "note": "Provider opening reference; source does not publish the original quote timestamp."
+    }
+  },
+  "productionFair": 10.062,
+  "structuralFair": 4.31,
+  "structuralDifference": -7.19,
+  "price": {
+    "side": "CHI",
+    "minimumSpreadAtSnapshot": -8.5,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-17T05:29:33.396461+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [],
+    "clusters": [],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W11-NO-CHI",
+    "canonical_game_id": "2026-W11-NO-CHI",
+    "matchup": "New Orleans Saints at Chicago Bears",
+    "venue": "Soldier Field",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Sunny at kickoff: 47\u00b0F; wind W 10.0 mph, gust 17.3 mph; precipitation chance 7%.",
+    "risk": "no major hourly weather flag",
+    "observed_at": "2026-11-17T05:29:34.820412+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/41.8623,-87.6167",
+    "forecast_timestamp": "2026-11-17T02:16:44+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W11-NO-CHI",
+      "kickoff": "2026-11-22T18:00Z",
+      "temp_f": 47,
+      "wind_mph": 10.0,
+      "gust_mph": 17.3,
+      "precip_chance_pct": 7,
+      "forecast_timestamp": "2026-11-17T02:16:44+00:00",
+      "sources": [
+        "https://api.weather.gov/points/41.8623,-87.6167",
+        "https://api.weather.gov/gridpoints/LOT/76,72/forecast/hourly",
+        "https://api.weather.gov/gridpoints/LOT/76,72"
+      ],
+      "wind_speed_raw": "10 mph",
+      "wind_direction": "W",
+      "forecast_hour_start": "2026-11-22T12:00:00-06:00",
+      "forecast_hour_end": "2026-11-22T13:00:00-06:00",
+      "conditions": "Sunny",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-11-17T05:29:34.820412+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/41.8623,-87.6167",
+      "https://api.weather.gov/gridpoints/LOT/76,72/forecast/hourly",
+      "https://api.weather.gov/gridpoints/LOT/76,72"
+    ]
+  },
+  "sustainability": {
+    "NO": {
+      "turnoverRate": 0.025423728813559324,
+      "takeawayRate": 0.012216404886561954,
+      "thirdDownConversion": 0.4296875,
+      "redZoneTdRate": 0.7241379310344828
+    },
+    "CHI": {
+      "turnoverRate": 0.027243589743589744,
+      "takeawayRate": 0.021141649048625793,
+      "thirdDownConversion": 0.453125,
+      "redZoneTdRate": 0.5526315789473685
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 10,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}

@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 11,
-  "generated_at": "2026-11-17T04:29:46.055648+00:00",
+  "generated_at": "2026-11-17T05:29:46.706Z",
   "schedule_source": "Canonical selected-week NFL board + ESPN scoreboard reconciliation",
   "market_source": "ESPN selected-week odds feed; exact sportsbook/juice required before execution",
   "games": [
@@ -28,7 +28,7 @@
           "home": -650
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-17T04:29:40.442Z",
+        "timestamp": "2026-11-17T05:29:33.008Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Houston Texans -5.5",
         "opening_reference": {
@@ -40,7 +40,7 @@
             "home": "-238"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-17T04:29:40.442Z",
+          "observedAt": "2026-11-17T05:29:33.008Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -50,15 +50,15 @@
         "fair_spread_home_margin": 9.304,
         "executable_edge": -2.196,
         "edge_side": "IND",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-11-17T04:29:46.055648+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-11-17T05:29:46.706Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Houston Texans -9.3",
         "structural_home_margin": 0.521,
         "structural_edge": 10.979,
         "base_structural_home_margin": -1.756,
         "advanced_process_adjustment": 2.277,
-        "motion_matchup_adjustment": 0.0,
+        "motion_matchup_adjustment": 0,
         "structural_fair": "Houston Texans -0.5",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
@@ -81,8 +81,8 @@
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": 0.238,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -92,7 +92,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 11 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-11-17T05:29:46.706Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -119,11 +119,11 @@
         "home_margin": 16.5,
         "home_team_sportsbook_spread": -16.5,
         "moneyline": {
-          "away": 850,
-          "home": -1450
+          "away": 800,
+          "home": -1350
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-17T04:29:40.442Z",
+        "timestamp": "2026-11-17T05:29:33.008Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Buffalo Bills -11.5",
         "opening_reference": {
@@ -135,7 +135,7 @@
             "home": "-600"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-17T04:29:40.442Z",
+          "observedAt": "2026-11-17T05:29:33.008Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -145,15 +145,15 @@
         "fair_spread_home_margin": 15.939,
         "executable_edge": -0.561,
         "edge_side": "MIA",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-11-17T04:29:46.055648+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "confidence": "medium",
+        "edge_reconciled_at": "2026-11-17T05:29:46.706Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Buffalo Bills -15.9",
         "structural_home_margin": 13.697,
         "structural_edge": 2.803,
         "base_structural_home_margin": 18.364,
         "advanced_process_adjustment": -4.667,
-        "motion_matchup_adjustment": 0.0,
+        "motion_matchup_adjustment": 0,
         "structural_fair": "Buffalo Bills -13.7",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
@@ -176,8 +176,8 @@
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": -0.608,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -187,7 +187,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 11 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-11-17T05:29:46.706Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "research",
@@ -214,11 +214,11 @@
         "home_margin": 11.5,
         "home_team_sportsbook_spread": -11.5,
         "moneyline": {
-          "away": 500,
-          "home": -700
+          "away": 470,
+          "home": -650
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-17T04:29:40.442Z",
+        "timestamp": "2026-11-17T05:29:33.008Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Chicago Bears -6.5",
         "opening_reference": {
@@ -230,7 +230,7 @@
             "home": "-278"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-17T04:29:40.442Z",
+          "observedAt": "2026-11-17T05:29:33.008Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -240,15 +240,15 @@
         "fair_spread_home_margin": 10.062,
         "executable_edge": -1.438,
         "edge_side": "NO",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-11-17T04:29:46.055648+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-11-17T05:29:46.706Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Chicago Bears -10.1",
         "structural_home_margin": 4.31,
         "structural_edge": 7.19,
         "base_structural_home_margin": 4.508,
         "advanced_process_adjustment": -0.198,
-        "motion_matchup_adjustment": 0.0,
+        "motion_matchup_adjustment": 0,
         "structural_fair": "Chicago Bears -4.3",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
@@ -271,8 +271,8 @@
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": -0.464,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -282,7 +282,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 11 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-11-17T05:29:46.706Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -313,7 +313,7 @@
           "home": -425
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-17T04:29:40.442Z",
+        "timestamp": "2026-11-17T05:29:33.008Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Dallas Cowboys -6.5",
         "opening_reference": {
@@ -325,7 +325,7 @@
             "home": "-290"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-17T04:29:40.442Z",
+          "observedAt": "2026-11-17T05:29:33.008Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -335,15 +335,15 @@
         "fair_spread_home_margin": 8.113,
         "executable_edge": -0.387,
         "edge_side": "TEN",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-11-17T04:29:46.055648+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "confidence": "low",
+        "edge_reconciled_at": "2026-11-17T05:29:46.706Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Dallas Cowboys -8.1",
         "structural_home_margin": 6.564,
         "structural_edge": 1.936,
         "base_structural_home_margin": 9.344,
         "advanced_process_adjustment": -2.78,
-        "motion_matchup_adjustment": 0.0,
+        "motion_matchup_adjustment": 0,
         "structural_fair": "Dallas Cowboys -6.6",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
@@ -366,9 +366,9 @@
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
-          "researchSignal": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": 0,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
@@ -377,7 +377,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 11 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-11-17T05:29:46.706Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "no-signal",
@@ -408,7 +408,7 @@
           "home": -278
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-17T04:29:40.442Z",
+        "timestamp": "2026-11-17T05:29:33.008Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Detroit Lions -4.5",
         "opening_reference": {
@@ -420,7 +420,7 @@
             "home": "-230"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-17T04:29:40.442Z",
+          "observedAt": "2026-11-17T05:29:33.008Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -430,15 +430,15 @@
         "fair_spread_home_margin": 7.727,
         "executable_edge": 1.227,
         "edge_side": "DET",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-11-17T04:29:46.055648+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-11-17T05:29:46.706Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Detroit Lions -7.7",
         "structural_home_margin": 12.636,
         "structural_edge": 6.136,
         "base_structural_home_margin": 19.709,
         "advanced_process_adjustment": -7.073,
-        "motion_matchup_adjustment": 0.0,
+        "motion_matchup_adjustment": 0,
         "structural_fair": "Detroit Lions -12.6",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
@@ -461,8 +461,8 @@
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": 0.396,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -472,7 +472,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 11 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-11-17T05:29:46.706Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -503,7 +503,7 @@
           "home": -1800
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-17T04:29:40.442Z",
+        "timestamp": "2026-11-17T05:29:33.008Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Kansas City Chiefs -11.5",
         "opening_reference": {
@@ -515,7 +515,7 @@
             "home": "-600"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-17T04:29:40.442Z",
+          "observedAt": "2026-11-17T05:29:33.008Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -525,15 +525,15 @@
         "fair_spread_home_margin": 18.314,
         "executable_edge": 1.814,
         "edge_side": "KC",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-11-17T04:29:46.055648+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-11-17T05:29:46.706Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Kansas City Chiefs -18.3",
         "structural_home_margin": 25.572,
         "structural_edge": 9.072,
         "base_structural_home_margin": 38.564,
         "advanced_process_adjustment": -12.992,
-        "motion_matchup_adjustment": 0.0,
+        "motion_matchup_adjustment": 0,
         "structural_fair": "Kansas City Chiefs -25.6",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
@@ -556,8 +556,8 @@
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": 0.252,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -567,7 +567,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 11 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-11-17T05:29:46.706Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -598,7 +598,7 @@
           "home": 180
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-17T04:29:40.442Z",
+        "timestamp": "2026-11-17T05:29:33.008Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Philadelphia Eagles -5.5",
         "opening_reference": {
@@ -610,7 +610,7 @@
             "home": "-250"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-17T04:29:40.442Z",
+          "observedAt": "2026-11-17T05:29:33.008Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -620,15 +620,15 @@
         "fair_spread_home_margin": -1.599,
         "executable_edge": 2.901,
         "edge_side": "PHI",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-11-17T04:29:46.055648+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-11-17T05:29:46.706Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Pittsburgh Steelers -1.6",
         "structural_home_margin": 10.005,
         "structural_edge": 14.505,
         "base_structural_home_margin": 17.444,
         "advanced_process_adjustment": -7.439,
-        "motion_matchup_adjustment": 0.0,
+        "motion_matchup_adjustment": 0,
         "structural_fair": "Philadelphia Eagles -10",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
@@ -651,8 +651,8 @@
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": -0.21,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -662,7 +662,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 11 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-11-17T05:29:46.706Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -680,33 +680,50 @@
       "kickoff": "2026-11-22T18:00Z",
       "kickoff_local": "2026-11-22T18:00Z",
       "tv": "Fox",
-      "priority": "Medium",
-      "stage": "market-pending",
+      "priority": "Low",
+      "stage": "monitor",
       "market": {
-        "spread_display": null,
+        "spread_display": "Carolina Panthers -2.5",
         "spread": null,
-        "total": null,
-        "home_margin": null,
-        "home_team_sportsbook_spread": null,
-        "moneyline": null,
-        "source": "Schedule only",
-        "timestamp": "2026-11-17T01:29:00.290Z",
-        "status": "PRICE-RECHECK-REQUIRED"
+        "total": 44.5,
+        "home_margin": 2.5,
+        "home_team_sportsbook_spread": -2.5,
+        "moneyline": {
+          "away": 120,
+          "home": -142
+        },
+        "source": "ESPN Draft Kings",
+        "timestamp": "2026-11-17T05:29:33.008Z",
+        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+        "opener_display": "Baltimore Ravens -4.5",
+        "opening_reference": {
+          "spread": "Baltimore Ravens -4.5",
+          "homeBookSpread": 4.5,
+          "total": 46.5,
+          "moneyline": {
+            "away": "-218",
+            "home": "+180"
+          },
+          "source": "ESPN Draft Kings",
+          "observedAt": "2026-11-17T05:29:33.008Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
+          "note": "Provider opening reference; source does not publish the original quote timestamp."
+        }
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": null,
-        "edge_side": "NONE",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-11-17T04:29:46.055648+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
-        "fair_spread": null,
+        "fair_spread_display": "Carolina Panthers -3",
+        "fair_spread_home_margin": 3.013,
+        "executable_edge": 0.513,
+        "edge_side": "CAR",
+        "confidence": "low",
+        "edge_reconciled_at": "2026-11-17T05:29:46.706Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Carolina Panthers -3",
         "structural_home_margin": 5.067,
-        "structural_edge": null,
+        "structural_edge": 2.567,
         "base_structural_home_margin": 6.787,
         "advanced_process_adjustment": -1.72,
-        "motion_matchup_adjustment": 0.0,
+        "motion_matchup_adjustment": 0,
         "structural_fair": "Carolina Panthers -5.1",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
@@ -729,8 +746,8 @@
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": -0.904,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -740,11 +757,11 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 11 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-11-17T05:29:46.706Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
-        "stage": "market-pending",
-        "priority": "Medium",
+        "stage": "monitor",
+        "priority": "Low",
         "model_review": "frozen v1.1 Wednesday rebuild"
       }
     },
@@ -758,33 +775,50 @@
       "kickoff": "2026-11-22T21:05Z",
       "kickoff_local": "2026-11-22T21:05Z",
       "tv": "Fox",
-      "priority": "Medium",
-      "stage": "market-pending",
+      "priority": "High",
+      "stage": "high-priority-audit",
       "market": {
-        "spread_display": null,
+        "spread_display": "Los Angeles Chargers -3",
         "spread": null,
-        "total": null,
-        "home_margin": null,
-        "home_team_sportsbook_spread": null,
-        "moneyline": null,
-        "source": "Schedule only",
-        "timestamp": "2026-11-17T01:29:00.290Z",
-        "status": "PRICE-RECHECK-REQUIRED"
+        "total": 40.5,
+        "home_margin": 3,
+        "home_team_sportsbook_spread": -3,
+        "moneyline": {
+          "away": 140,
+          "home": -166
+        },
+        "source": "ESPN Draft Kings",
+        "timestamp": "2026-11-17T05:29:33.008Z",
+        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+        "opener_display": "Los Angeles Chargers -9.5",
+        "opening_reference": {
+          "spread": "Los Angeles Chargers -9.5",
+          "homeBookSpread": -9.5,
+          "total": 41.5,
+          "moneyline": {
+            "away": "+340",
+            "home": "-440"
+          },
+          "source": "ESPN Draft Kings",
+          "observedAt": "2026-11-17T05:29:33.008Z",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
+          "note": "Provider opening reference; source does not publish the original quote timestamp."
+        }
       },
       "model": {
-        "fair_spread_display": null,
-        "fair_spread_home_margin": null,
-        "executable_edge": null,
-        "edge_side": "NONE",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-11-17T04:29:46.055648+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
-        "fair_spread": null,
+        "fair_spread_display": "Los Angeles Chargers -5.4",
+        "fair_spread_home_margin": 5.404,
+        "executable_edge": 2.404,
+        "edge_side": "LAC",
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-11-17T05:29:46.706Z",
+        "edge_convention": "production fair home margin - current market home margin",
+        "fair_spread": "Los Angeles Chargers -5.4",
         "structural_home_margin": 15.021,
-        "structural_edge": null,
+        "structural_edge": 12.021,
         "base_structural_home_margin": 22.044,
         "advanced_process_adjustment": -7.023,
-        "motion_matchup_adjustment": 0.0,
+        "motion_matchup_adjustment": 0,
         "structural_fair": "Los Angeles Chargers -15",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
@@ -807,9 +841,9 @@
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
-          "researchSignal": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
+          "researchSignal": 0,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
@@ -818,11 +852,11 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 11 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-11-17T05:29:46.706Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
-        "stage": "market-pending",
-        "priority": "Medium",
+        "stage": "high-priority-audit",
+        "priority": "High",
         "model_review": "frozen v1.1 Wednesday rebuild"
       }
     },
@@ -849,7 +883,7 @@
           "home": -550
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-17T04:29:40.442Z",
+        "timestamp": "2026-11-17T05:29:33.008Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Denver Broncos -8.5",
         "opening_reference": {
@@ -861,7 +895,7 @@
             "home": "-425"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-17T04:29:40.442Z",
+          "observedAt": "2026-11-17T05:29:33.008Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -871,15 +905,15 @@
         "fair_spread_home_margin": 9.715,
         "executable_edge": -0.285,
         "edge_side": "LV",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-11-17T04:29:46.055648+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "confidence": "low",
+        "edge_reconciled_at": "2026-11-17T05:29:46.706Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Denver Broncos -9.7",
         "structural_home_margin": 8.577,
         "structural_edge": 1.423,
         "base_structural_home_margin": 10.883,
         "advanced_process_adjustment": -2.306,
-        "motion_matchup_adjustment": 0.0,
+        "motion_matchup_adjustment": 0,
         "structural_fair": "Denver Broncos -8.6",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
@@ -902,8 +936,8 @@
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": -0.21,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -913,7 +947,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 11 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-11-17T05:29:46.706Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "no-signal",
@@ -944,7 +978,7 @@
           "home": 215
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-17T04:29:40.442Z",
+        "timestamp": "2026-11-17T05:29:33.008Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Jacksonville Jaguars -1.5",
         "opening_reference": {
@@ -956,7 +990,7 @@
             "home": "+105"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-17T04:29:40.442Z",
+          "observedAt": "2026-11-17T05:29:33.008Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -966,15 +1000,15 @@
         "fair_spread_home_margin": -6.967,
         "executable_edge": -0.967,
         "edge_side": "JAX",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-11-17T04:29:46.055648+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-11-17T05:29:46.706Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Jacksonville Jaguars -7",
         "structural_home_margin": -10.836,
         "structural_edge": 4.836,
         "base_structural_home_margin": -15.447,
         "advanced_process_adjustment": 4.611,
-        "motion_matchup_adjustment": 0.0,
+        "motion_matchup_adjustment": 0,
         "structural_fair": "Jacksonville Jaguars -10.8",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
@@ -997,8 +1031,8 @@
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": -0.416,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -1008,7 +1042,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 11 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-11-17T05:29:46.706Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -1039,7 +1073,7 @@
           "home": -162
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-17T04:29:40.442Z",
+        "timestamp": "2026-11-17T05:29:33.008Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "San Francisco 49ers -3.5",
         "opening_reference": {
@@ -1051,7 +1085,7 @@
             "home": "-205"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-17T04:29:40.442Z",
+          "observedAt": "2026-11-17T05:29:33.008Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -1061,15 +1095,15 @@
         "fair_spread_home_margin": 1.737,
         "executable_edge": -1.263,
         "edge_side": "MIN",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-11-17T04:29:46.055648+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-11-17T05:29:46.706Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "San Francisco 49ers -1.7",
         "structural_home_margin": -3.313,
         "structural_edge": 6.313,
         "base_structural_home_margin": -8.358,
         "advanced_process_adjustment": 5.045,
-        "motion_matchup_adjustment": 0.0,
+        "motion_matchup_adjustment": 0,
         "structural_fair": "Minnesota Vikings -3.3",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
@@ -1092,8 +1126,8 @@
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": 0.732,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -1103,7 +1137,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 11 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-11-17T05:29:46.706Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -1134,7 +1168,7 @@
           "home": 245
         },
         "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-17T04:29:40.442Z",
+        "timestamp": "2026-11-17T05:29:33.008Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Cincinnati Bengals -1.5",
         "opening_reference": {
@@ -1146,7 +1180,7 @@
             "home": "+105"
           },
           "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-17T04:29:40.442Z",
+          "observedAt": "2026-11-17T05:29:33.008Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -1156,15 +1190,15 @@
         "fair_spread_home_margin": -6.791,
         "executable_edge": -0.291,
         "edge_side": "CIN",
-        "confidence": "pending",
-        "edge_reconciled_at": "2026-11-17T04:29:46.055648+00:00",
-        "edge_convention": "fair_spread_home_margin - market.home_margin",
+        "confidence": "high-review",
+        "edge_reconciled_at": "2026-11-17T05:29:46.706Z",
+        "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Cincinnati Bengals -6.8",
         "structural_home_margin": -7.954,
         "structural_edge": 1.454,
         "base_structural_home_margin": -12.056,
         "advanced_process_adjustment": 4.102,
-        "motion_matchup_adjustment": 0.0,
+        "motion_matchup_adjustment": 0,
         "structural_fair": "Cincinnati Bengals -8",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
@@ -1187,8 +1221,8 @@
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0.0,
-          "structuralAdjustment": 0.0,
+          "directPointCap": 0,
+          "structuralAdjustment": 0,
           "researchSignal": 0.136,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -1198,7 +1232,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Canonical NFL Week 11 rollover row. No prior-week model, injury, expert or execution conclusion carried forward.",
+      "why": "Selected-week governed model rebuilt 2026-11-17T05:29:46.706Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -1209,9 +1243,9 @@
   ],
   "runtime_refresh": {
     "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
-    "observed_at": "2026-11-17T04:29:40.442Z",
+    "observed_at": "2026-11-17T05:29:33.008Z",
     "espn_events": 13,
-    "current_odds_games": 11,
+    "current_odds_games": 13,
     "identity_normalization": "registry v1: canonical abbreviations and aliases normalized before joins",
     "edge_reconciliation": "Every legacy portal executable edge recomputed from fair_spread_home_margin - current market.home_margin"
   },
@@ -1221,7 +1255,13 @@
     "throughWeek": 10,
     "teamCoverage": 32,
     "processShareOfLiveLayer": 0.4,
-    "motionPointCap": 0.0,
+    "motionPointCap": 0,
     "leakageRule": "Target Week 11 uses Weeks 1-10 only"
+  },
+  "model_runtime": {
+    "status": "SYNCHRONIZED",
+    "canonicalWeek": 11,
+    "matchedGames": 13,
+    "verifiedAt": "2026-11-17T05:29:46.706Z"
   }
 }

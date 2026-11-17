@@ -1,0 +1,321 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W11-TEN-DAL",
+  "portalGameId": "401873073",
+  "week": 11,
+  "away": "Tennessee Titans",
+  "home": "Dallas Cowboys",
+  "awayAbbr": "TEN",
+  "homeAbbr": "DAL",
+  "kickoff": "2026-11-22T18:00Z",
+  "generatedAt": "2026-11-17T05:29:47.134118+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "DAL",
+  "assessmentSide": "DAL",
+  "structuralValueSide": "TEN",
+  "alignment": "CONFLICT",
+  "thesis": "DAL has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "DAL",
+      "gap": 0.118,
+      "unit": "EPA/play",
+      "awayOffense": -0.08871368121636687,
+      "homeDefenseAllowed": 0.23000434076613005,
+      "homeOffense": 0.16212501040342225,
+      "awayDefenseAllowed": 0.21492523280386464,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "DAL",
+      "gap": 0.049,
+      "unit": "EPA/play",
+      "awayOffense": -0.06390366294549053,
+      "homeDefenseAllowed": 0.12839158545873253,
+      "homeOffense": 0.10623243932892243,
+      "awayDefenseAllowed": 0.05636368208942639,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Rushing efficiency",
+      "side": "TEN",
+      "gap": 0.024,
+      "unit": "EPA/play",
+      "awayOffense": -0.011694005619398169,
+      "homeDefenseAllowed": 0.039507006984388,
+      "homeOffense": 0.03733488366580981,
+      "awayDefenseAllowed": -0.058030304887338076,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "TEN",
+      "gap": 0.006,
+      "unit": "percentage points",
+      "awayOffense": 0.07662082514734773,
+      "homeDefenseAllowed": 0.10793650793650794,
+      "homeOffense": 0.08006042296072508,
+      "awayDefenseAllowed": 0.10437710437710437,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "TEN",
+      "gap": 1.329,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.1238390092879257,
+      "homeDefenseAllowed": 0.13896457765667575,
+      "homeOffense": 0.1431924882629108,
+      "awayDefenseAllowed": 0.14619883040935672,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "DAL",
+      "gap": 0.118,
+      "unit": "EPA/play",
+      "awayOffense": -0.08871368121636687,
+      "homeDefenseAllowed": 0.23000434076613005,
+      "homeOffense": 0.16212501040342225,
+      "awayDefenseAllowed": 0.21492523280386464,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "DAL",
+      "gap": 0.049,
+      "unit": "EPA/play",
+      "awayOffense": -0.06390366294549053,
+      "homeDefenseAllowed": 0.12839158545873253,
+      "homeOffense": 0.10623243932892243,
+      "awayDefenseAllowed": 0.05636368208942639,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "TEN",
+      "gap": 0.024,
+      "unit": "EPA/play",
+      "awayOffense": -0.011694005619398169,
+      "homeDefenseAllowed": 0.039507006984388,
+      "homeOffense": 0.03733488366580981,
+      "awayDefenseAllowed": -0.058030304887338076,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "TEN",
+      "gap": 0.006,
+      "unit": "percentage points",
+      "awayOffense": 0.07662082514734773,
+      "homeDefenseAllowed": 0.10793650793650794,
+      "homeOffense": 0.08006042296072508,
+      "awayDefenseAllowed": 0.10437710437710437,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "TEN",
+      "gap": 1.329,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.1238390092879257,
+      "homeDefenseAllowed": 0.13896457765667575,
+      "homeOffense": 0.1431924882629108,
+      "awayDefenseAllowed": 0.14619883040935672,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": 0.1424,
+  "profiles": {
+    "TEN": {
+      "season": {
+        "games": 9,
+        "offPlays": 509,
+        "defPlays": 594,
+        "offEpa": -0.0835,
+        "defEpa": 0.0898,
+        "netEpa": -0.1732,
+        "adjustedNetEpa": -0.1929,
+        "earlyOffEpa": -0.0725,
+        "earlyDefEpa": 0.0585,
+        "passOffEpa": -0.0887,
+        "passDefEpa": 0.2149
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 129,
+        "defPlays": 142,
+        "offEpa": 0.0669,
+        "defEpa": 0.1938,
+        "netEpa": -0.1269,
+        "adjustedNetEpa": 0.0627,
+        "earlyOffEpa": 0.1296,
+        "earlyDefEpa": 0.0553,
+        "passOffEpa": 0.0687,
+        "passDefEpa": 0.4391
+      }
+    },
+    "DAL": {
+      "season": {
+        "games": 10,
+        "offPlays": 662,
+        "defPlays": 630,
+        "offEpa": 0.1113,
+        "defEpa": 0.1368,
+        "netEpa": -0.0255,
+        "adjustedNetEpa": -0.0505,
+        "earlyOffEpa": 0.1069,
+        "earlyDefEpa": 0.1265,
+        "passOffEpa": 0.1621,
+        "passDefEpa": 0.23
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 218,
+        "defPlays": 197,
+        "offEpa": 0.1058,
+        "defEpa": 0.1333,
+        "netEpa": -0.0274,
+        "adjustedNetEpa": -0.0593,
+        "earlyOffEpa": 0.0998,
+        "earlyDefEpa": 0.1725,
+        "passOffEpa": 0.1916,
+        "passDefEpa": 0.1465
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 6.563,
+    "structuralHomeMargin": 6.564
+  },
+  "market": {
+    "spread_display": "Dallas Cowboys -8.5",
+    "spread": "DAL -8.5",
+    "total": 54.5,
+    "home_margin": 8.5,
+    "home_team_sportsbook_spread": -8.5,
+    "moneyline": {
+      "away": 330,
+      "home": -425
+    },
+    "source": "ESPN Draft Kings",
+    "timestamp": "2026-11-17T05:29:33.008Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+    "opener_display": "Dallas Cowboys -6.5",
+    "opening_reference": {
+      "spread": "Dallas Cowboys -6.5",
+      "homeBookSpread": -6.5,
+      "total": 48.5,
+      "moneyline": {
+        "away": "+235",
+        "home": "-290"
+      },
+      "source": "ESPN Draft Kings",
+      "observedAt": "2026-11-17T05:29:33.008Z",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
+      "note": "Provider opening reference; source does not publish the original quote timestamp."
+    }
+  },
+  "productionFair": 8.113,
+  "structuralFair": 6.564,
+  "structuralDifference": -1.936,
+  "price": {
+    "side": "DAL",
+    "minimumSpreadAtSnapshot": -6.5,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-17T05:29:33.396461+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [],
+    "clusters": [],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W11-TEN-DAL",
+    "canonical_game_id": "2026-W11-TEN-DAL",
+    "matchup": "Tennessee Titans at Dallas Cowboys",
+    "venue": "AT&T Stadium",
+    "environment": "indoor",
+    "status": "Official indoor venue verified",
+    "summary": "AT&T Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
+    "risk": "indoor / roof controlled",
+    "observed_at": "2026-11-17T05:29:34.820416+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
+    "forecast_timestamp": null,
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W11-TEN-DAL",
+      "kickoff": "2026-11-22T18:00Z",
+      "temp_f": null,
+      "wind_mph": null,
+      "gust_mph": null,
+      "precip_chance_pct": null,
+      "forecast_timestamp": null,
+      "verification_status": "indoor venue; outdoor weather forecast not applicable",
+      "venue": "AT&T Stadium",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100"
+      ],
+      "limitations": [
+        "Roof status is governed by venue/event information; outside air values are not on-field conditions."
+      ],
+      "retrieved_at": "2026-11-17T05:29:34.820416+00:00"
+    },
+    "sources": [
+      "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100"
+    ]
+  },
+  "sustainability": {
+    "TEN": {
+      "turnoverRate": 0.021611001964636542,
+      "takeawayRate": 0.020202020202020204,
+      "thirdDownConversion": 0.34285714285714286,
+      "redZoneTdRate": 0.5416666666666666
+    },
+    "DAL": {
+      "turnoverRate": 0.015105740181268883,
+      "takeawayRate": 0.012698412698412698,
+      "thirdDownConversion": 0.45112781954887216,
+      "redZoneTdRate": 0.7368421052631579
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 10,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
