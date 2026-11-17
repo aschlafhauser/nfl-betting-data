@@ -1,0 +1,336 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W11-IND-HOU",
+  "portalGameId": "401873066",
+  "week": 11,
+  "away": "Indianapolis Colts",
+  "home": "Houston Texans",
+  "awayAbbr": "IND",
+  "homeAbbr": "HOU",
+  "kickoff": "2026-11-20T01:15Z",
+  "generatedAt": "2026-11-17T09:30:23.925350+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "HOU",
+  "assessmentSide": "HOU",
+  "structuralValueSide": "IND",
+  "alignment": "CONFLICT",
+  "thesis": "HOU has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "HOU",
+      "gap": 0.18,
+      "unit": "EPA/play",
+      "awayOffense": -0.19419642766200867,
+      "homeDefenseAllowed": 0.03834460542335609,
+      "homeOffense": 0.14399869854954248,
+      "awayDefenseAllowed": 0.06085835104619458,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "HOU",
+      "gap": 0.133,
+      "unit": "EPA/play",
+      "awayOffense": -0.11537916290174614,
+      "homeDefenseAllowed": -0.007358139532352157,
+      "homeOffense": 0.07347940049788977,
+      "awayDefenseAllowed": 0.07033999932571154,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "HOU",
+      "gap": 1.649,
+      "unit": "percentage points",
+      "awayOffense": 0.08598726114649681,
+      "homeDefenseAllowed": 0.09169550173010381,
+      "homeOffense": 0.10144927536231885,
+      "awayDefenseAllowed": 0.10921501706484642,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "HOU",
+      "gap": 3.625,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.17759562841530055,
+      "homeDefenseAllowed": 0.16666666666666666,
+      "homeOffense": 0.1225071225071225,
+      "awayDefenseAllowed": 0.14925373134328357,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Rushing efficiency",
+      "side": "IND",
+      "gap": 0.004,
+      "unit": "EPA/play",
+      "awayOffense": 0.006630566041721241,
+      "homeDefenseAllowed": -0.03440944020092736,
+      "homeOffense": -0.07607548528146404,
+      "awayDefenseAllowed": 0.040044200554335524,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "HOU",
+      "gap": 0.18,
+      "unit": "EPA/play",
+      "awayOffense": -0.19419642766200867,
+      "homeDefenseAllowed": 0.03834460542335609,
+      "homeOffense": 0.14399869854954248,
+      "awayDefenseAllowed": 0.06085835104619458,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "HOU",
+      "gap": 0.133,
+      "unit": "EPA/play",
+      "awayOffense": -0.11537916290174614,
+      "homeDefenseAllowed": -0.007358139532352157,
+      "homeOffense": 0.07347940049788977,
+      "awayDefenseAllowed": 0.07033999932571154,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "IND",
+      "gap": 0.004,
+      "unit": "EPA/play",
+      "awayOffense": 0.006630566041721241,
+      "homeDefenseAllowed": -0.03440944020092736,
+      "homeOffense": -0.07607548528146404,
+      "awayDefenseAllowed": 0.040044200554335524,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "HOU",
+      "gap": 1.649,
+      "unit": "percentage points",
+      "awayOffense": 0.08598726114649681,
+      "homeDefenseAllowed": 0.09169550173010381,
+      "homeOffense": 0.10144927536231885,
+      "awayDefenseAllowed": 0.10921501706484642,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "HOU",
+      "gap": 3.625,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.17759562841530055,
+      "homeDefenseAllowed": 0.16666666666666666,
+      "homeOffense": 0.1225071225071225,
+      "awayDefenseAllowed": 0.14925373134328357,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": 0.1871,
+  "profiles": {
+    "IND": {
+      "season": {
+        "games": 10,
+        "offPlays": 628,
+        "defPlays": 586,
+        "offEpa": -0.1056,
+        "defEpa": 0.0378,
+        "netEpa": -0.1434,
+        "adjustedNetEpa": -0.1406,
+        "earlyOffEpa": -0.1154,
+        "earlyDefEpa": 0.0726,
+        "passOffEpa": -0.1942,
+        "passDefEpa": 0.0609
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 172,
+        "defPlays": 186,
+        "offEpa": -0.2544,
+        "defEpa": 0.0293,
+        "netEpa": -0.2837,
+        "adjustedNetEpa": -0.2876,
+        "earlyOffEpa": -0.1785,
+        "earlyDefEpa": 0.0619,
+        "passOffEpa": -0.3847,
+        "passDefEpa": 0.0356
+      }
+    },
+    "HOU": {
+      "season": {
+        "games": 9,
+        "offPlays": 552,
+        "defPlays": 578,
+        "offEpa": 0.0485,
+        "defEpa": 0.0055,
+        "netEpa": 0.0429,
+        "adjustedNetEpa": 0.0465,
+        "earlyOffEpa": 0.0712,
+        "earlyDefEpa": -0.0031,
+        "passOffEpa": 0.144,
+        "passDefEpa": 0.0383
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 127,
+        "defPlays": 135,
+        "offEpa": 0.0964,
+        "defEpa": -0.0697,
+        "netEpa": 0.1661,
+        "adjustedNetEpa": 0.0793,
+        "earlyOffEpa": 0.0769,
+        "earlyDefEpa": -0.1292,
+        "passOffEpa": 0.2151,
+        "passDefEpa": -0.0345
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 0.478,
+    "structuralHomeMargin": 0.478
+  },
+  "market": {
+    "spread_display": "Houston Texans -11.5",
+    "spread": "HOU -11.5",
+    "total": 44.5,
+    "home_margin": 11.5,
+    "home_team_sportsbook_spread": -11.5,
+    "moneyline": {
+      "away": 470,
+      "home": -650
+    },
+    "source": "ESPN Draft Kings",
+    "timestamp": "2026-11-17T09:30:05.769Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+    "opener_display": "Houston Texans -5.5",
+    "opening_reference": {
+      "spread": "Houston Texans -5.5",
+      "homeBookSpread": -5.5,
+      "total": 45.5,
+      "moneyline": {
+        "away": "+195",
+        "home": "-238"
+      },
+      "source": "ESPN Draft Kings",
+      "observedAt": "2026-11-17T09:30:05.769Z",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
+      "note": "Provider opening reference; source does not publish the original quote timestamp."
+    }
+  },
+  "productionFair": 9.296,
+  "structuralFair": 0.478,
+  "structuralDifference": -11.022,
+  "price": {
+    "side": "HOU",
+    "minimumSpreadAtSnapshot": -7.5,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-17T09:30:06.048597+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [],
+    "clusters": [],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W11-IND-HOU",
+    "canonical_game_id": "2026-W11-IND-HOU",
+    "matchup": "Indianapolis Colts at Houston Texans",
+    "venue": "Reliant Stadium",
+    "environment": "indoor",
+    "status": "Official indoor venue verified",
+    "summary": "Reliant Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
+    "risk": "indoor / roof controlled",
+    "observed_at": "2026-11-17T09:30:07.897384+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
+    "forecast_timestamp": null,
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W11-IND-HOU",
+      "kickoff": "2026-11-20T01:15Z",
+      "temp_f": null,
+      "wind_mph": null,
+      "gust_mph": null,
+      "precip_chance_pct": null,
+      "forecast_timestamp": null,
+      "verification_status": "indoor venue; outdoor weather forecast not applicable",
+      "venue": "Reliant Stadium",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100"
+      ],
+      "limitations": [
+        "Roof status is governed by venue/event information; outside air values are not on-field conditions."
+      ],
+      "retrieved_at": "2026-11-17T09:30:07.897384+00:00"
+    },
+    "sources": [
+      "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100"
+    ]
+  },
+  "sustainability": {
+    "IND": {
+      "turnoverRate": 0.030254777070063694,
+      "takeawayRate": 0.011945392491467578,
+      "thirdDownConversion": 0.36363636363636365,
+      "redZoneTdRate": 0.6153846153846154
+    },
+    "HOU": {
+      "turnoverRate": 0.009057971014492754,
+      "takeawayRate": 0.015570934256055362,
+      "thirdDownConversion": 0.38596491228070173,
+      "redZoneTdRate": 0.65625
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 10,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-11-17T05:29:33.008Z",
+      "capturedAt": "2026-11-17T05:29:47.134118+00:00",
+      "spread": "Houston Texans -11.5",
+      "homeMargin": 11.5,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-11-17T08:30:54.555Z",
+      "capturedAt": "2026-11-17T08:31:09.076721+00:00",
+      "spread": "Houston Texans -11.5",
+      "homeMargin": 11.5,
+      "source": "ESPN Draft Kings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
