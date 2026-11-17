@@ -1,0 +1,341 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W11-MIA-BUF",
+  "portalGameId": "401873070",
+  "week": 11,
+  "away": "Miami Dolphins",
+  "home": "Buffalo Bills",
+  "awayAbbr": "MIA",
+  "homeAbbr": "BUF",
+  "kickoff": "2026-11-22T18:00Z",
+  "generatedAt": "2026-11-17T15:29:52.640995+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "BUF",
+  "assessmentSide": "BUF",
+  "structuralValueSide": "MIA",
+  "alignment": "CONFLICT",
+  "thesis": "BUF has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "BUF",
+      "gap": 0.186,
+      "unit": "EPA/play",
+      "awayOffense": -0.026713303887337083,
+      "homeDefenseAllowed": 0.024370240981679017,
+      "homeOffense": 0.20793413763801924,
+      "awayDefenseAllowed": 0.16135738430067084,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "BUF",
+      "gap": 0.096,
+      "unit": "EPA/play",
+      "awayOffense": -0.09425580336098771,
+      "homeDefenseAllowed": 0.017635576138065913,
+      "homeOffense": 0.11648718605394573,
+      "awayDefenseAllowed": -0.0005326541073431386,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "BUF",
+      "gap": 0.075,
+      "unit": "EPA/play",
+      "awayOffense": -0.034532374993150185,
+      "homeDefenseAllowed": -0.03087364414063037,
+      "homeOffense": 0.11628503201962134,
+      "awayDefenseAllowed": -0.031093291516052144,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "BUF",
+      "gap": 2.225,
+      "unit": "percentage points",
+      "awayOffense": 0.10216110019646366,
+      "homeDefenseAllowed": 0.0944055944055944,
+      "homeOffense": 0.13693693693693693,
+      "awayDefenseAllowed": 0.10412573673870335,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "BUF",
+      "gap": 2.994,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.15932203389830507,
+      "homeDefenseAllowed": 0.20212765957446807,
+      "homeOffense": 0.14715719063545152,
+      "awayDefenseAllowed": 0.15441176470588236,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "counterarguments": [],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "BUF",
+      "gap": 0.186,
+      "unit": "EPA/play",
+      "awayOffense": -0.026713303887337083,
+      "homeDefenseAllowed": 0.024370240981679017,
+      "homeOffense": 0.20793413763801924,
+      "awayDefenseAllowed": 0.16135738430067084,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "BUF",
+      "gap": 0.096,
+      "unit": "EPA/play",
+      "awayOffense": -0.09425580336098771,
+      "homeDefenseAllowed": 0.017635576138065913,
+      "homeOffense": 0.11648718605394573,
+      "awayDefenseAllowed": -0.0005326541073431386,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "BUF",
+      "gap": 0.075,
+      "unit": "EPA/play",
+      "awayOffense": -0.034532374993150185,
+      "homeDefenseAllowed": -0.03087364414063037,
+      "homeOffense": 0.11628503201962134,
+      "awayDefenseAllowed": -0.031093291516052144,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "BUF",
+      "gap": 2.225,
+      "unit": "percentage points",
+      "awayOffense": 0.10216110019646366,
+      "homeDefenseAllowed": 0.0944055944055944,
+      "homeOffense": 0.13693693693693693,
+      "awayDefenseAllowed": 0.10412573673870335,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "BUF",
+      "gap": 2.994,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.15932203389830507,
+      "homeDefenseAllowed": 0.20212765957446807,
+      "homeOffense": 0.14715719063545152,
+      "awayDefenseAllowed": 0.15441176470588236,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": 0.2745,
+  "profiles": {
+    "MIA": {
+      "season": {
+        "games": 9,
+        "offPlays": 509,
+        "defPlays": 509,
+        "offEpa": -0.0619,
+        "defEpa": 0.0671,
+        "netEpa": -0.129,
+        "adjustedNetEpa": -0.1199,
+        "earlyOffEpa": -0.0927,
+        "earlyDefEpa": -0.0032,
+        "passOffEpa": -0.0267,
+        "passDefEpa": 0.1614
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 173,
+        "defPlays": 166,
+        "offEpa": -0.1353,
+        "defEpa": -0.0342,
+        "netEpa": -0.1011,
+        "adjustedNetEpa": -0.1492,
+        "earlyOffEpa": -0.1448,
+        "earlyDefEpa": -0.0281,
+        "passOffEpa": -0.0949,
+        "passDefEpa": -0.1086
+      }
+    },
+    "BUF": {
+      "season": {
+        "games": 9,
+        "offPlays": 555,
+        "defPlays": 572,
+        "offEpa": 0.1354,
+        "defEpa": -0.0103,
+        "netEpa": 0.1458,
+        "adjustedNetEpa": 0.1546,
+        "earlyOffEpa": 0.1218,
+        "earlyDefEpa": 0.0175,
+        "passOffEpa": 0.2079,
+        "passDefEpa": 0.0244
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 201,
+        "defPlays": 161,
+        "offEpa": 0.0746,
+        "defEpa": -0.3228,
+        "netEpa": 0.3974,
+        "adjustedNetEpa": 0.4225,
+        "earlyOffEpa": 0.0985,
+        "earlyDefEpa": -0.1704,
+        "passOffEpa": 0.0743,
+        "passDefEpa": -0.3982
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 13.694,
+    "structuralHomeMargin": 13.693
+  },
+  "market": {
+    "spread_display": "Buffalo Bills -16.5",
+    "spread": "BUF -16.5",
+    "total": 45.5,
+    "home_margin": 16.5,
+    "home_team_sportsbook_spread": -16.5,
+    "moneyline": {
+      "away": 750,
+      "home": -1200
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-11-17T15:29:38.396Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+    "opener_display": "Buffalo Bills -11.5",
+    "opening_reference": {
+      "spread": "Buffalo Bills -11.5",
+      "homeBookSpread": -11.5,
+      "total": 47.5,
+      "moneyline": {
+        "away": "+440",
+        "home": "-600"
+      },
+      "source": "ESPN DraftKings",
+      "observedAt": "2026-11-17T15:29:38.396Z",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
+      "note": "Provider opening reference; source does not publish the original quote timestamp."
+    }
+  },
+  "productionFair": 15.939,
+  "structuralFair": 13.693,
+  "structuralDifference": -2.807,
+  "price": {
+    "side": "BUF",
+    "minimumSpreadAtSnapshot": -14.0,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-17T15:29:38.909962+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [],
+    "clusters": [],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W11-MIA-BUF",
+    "canonical_game_id": "2026-W11-MIA-BUF",
+    "matchup": "Miami Dolphins at Buffalo Bills",
+    "venue": "Highmark Stadium",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Chance Rain Showers at kickoff: 60\u00b0F; wind SW 10.0 mph, gust 21.9 mph; precipitation chance 43%.",
+    "risk": "weather review required",
+    "observed_at": "2026-11-17T15:29:40.567181+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/42.774,-78.787",
+    "forecast_timestamp": "2026-11-17T14:57:40+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W11-MIA-BUF",
+      "kickoff": "2026-11-22T18:00Z",
+      "temp_f": 60,
+      "wind_mph": 10.0,
+      "gust_mph": 21.9,
+      "precip_chance_pct": 43,
+      "forecast_timestamp": "2026-11-17T14:57:40+00:00",
+      "sources": [
+        "https://api.weather.gov/points/42.774,-78.787",
+        "https://api.weather.gov/gridpoints/BUF/39,42/forecast/hourly",
+        "https://api.weather.gov/gridpoints/BUF/39,42"
+      ],
+      "wind_speed_raw": "10 mph",
+      "wind_direction": "SW",
+      "forecast_hour_start": "2026-11-22T13:00:00-05:00",
+      "forecast_hour_end": "2026-11-22T14:00:00-05:00",
+      "conditions": "Chance Rain Showers",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-11-17T15:29:40.567181+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/42.774,-78.787",
+      "https://api.weather.gov/gridpoints/BUF/39,42/forecast/hourly",
+      "https://api.weather.gov/gridpoints/BUF/39,42"
+    ]
+  },
+  "sustainability": {
+    "MIA": {
+      "turnoverRate": 0.021611001964636542,
+      "takeawayRate": 0.01768172888015717,
+      "thirdDownConversion": 0.4017857142857143,
+      "redZoneTdRate": 0.4782608695652174
+    },
+    "BUF": {
+      "turnoverRate": 0.023423423423423424,
+      "takeawayRate": 0.024475524475524476,
+      "thirdDownConversion": 0.42574257425742573,
+      "redZoneTdRate": 0.6666666666666666
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 10,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-11-17T05:29:33.008Z",
+      "capturedAt": "2026-11-17T05:29:47.134118+00:00",
+      "spread": "Buffalo Bills -16.5",
+      "homeMargin": 16.5,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-11-17T14:29:55.144Z",
+      "capturedAt": "2026-11-17T14:30:04.433839+00:00",
+      "spread": "Buffalo Bills -16.5",
+      "homeMargin": 16.5,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}

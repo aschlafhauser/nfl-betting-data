@@ -1,0 +1,316 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W11-CIN-WSH",
+  "portalGameId": "401873078",
+  "week": 11,
+  "away": "Cincinnati Bengals",
+  "home": "Washington Commanders",
+  "awayAbbr": "CIN",
+  "homeAbbr": "WSH",
+  "kickoff": "2026-11-24T01:15Z",
+  "generatedAt": "2026-11-17T15:29:52.640995+00:00",
+  "status": "PASS",
+  "footballLean": null,
+  "assessmentSide": null,
+  "structuralValueSide": "CIN",
+  "alignment": "UNRESOLVED",
+  "thesis": "No clear separation in the current opponent-adjusted performance sample.",
+  "mechanisms": [],
+  "counterarguments": [
+    {
+      "name": "Passing efficiency",
+      "side": "CIN",
+      "gap": 0.142,
+      "unit": "EPA/play",
+      "awayOffense": 0.26495324916759694,
+      "homeDefenseAllowed": 0.07346904410425983,
+      "homeOffense": 0.03421415493352056,
+      "awayDefenseAllowed": 0.021151182728581044,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "CIN",
+      "gap": 0.051,
+      "unit": "EPA/play",
+      "awayOffense": 0.12725395861801903,
+      "homeDefenseAllowed": -0.008988246939397858,
+      "homeOffense": 0.04436444557280997,
+      "awayDefenseAllowed": -0.02820630071454175,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "WSH",
+      "gap": 0.002,
+      "unit": "EPA/play",
+      "awayOffense": -0.03011635551581393,
+      "homeDefenseAllowed": 0.038604773417832035,
+      "homeOffense": -0.016892304824403268,
+      "awayDefenseAllowed": 0.02915682143365208,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "WSH",
+      "gap": 1.239,
+      "unit": "percentage points",
+      "awayOffense": 0.09323583180987204,
+      "homeDefenseAllowed": 0.0846286701208981,
+      "homeOffense": 0.09172661870503597,
+      "awayDefenseAllowed": 0.11090909090909092,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "WSH",
+      "gap": 0.004,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.16393442622950818,
+      "homeDefenseAllowed": 0.14209115281501342,
+      "homeOffense": 0.15864022662889518,
+      "awayDefenseAllowed": 0.14730878186968838,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "CIN",
+      "gap": 0.142,
+      "unit": "EPA/play",
+      "awayOffense": 0.26495324916759694,
+      "homeDefenseAllowed": 0.07346904410425983,
+      "homeOffense": 0.03421415493352056,
+      "awayDefenseAllowed": 0.021151182728581044,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "CIN",
+      "gap": 0.051,
+      "unit": "EPA/play",
+      "awayOffense": 0.12725395861801903,
+      "homeDefenseAllowed": -0.008988246939397858,
+      "homeOffense": 0.04436444557280997,
+      "awayDefenseAllowed": -0.02820630071454175,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "WSH",
+      "gap": 0.002,
+      "unit": "EPA/play",
+      "awayOffense": -0.03011635551581393,
+      "homeDefenseAllowed": 0.038604773417832035,
+      "homeOffense": -0.016892304824403268,
+      "awayDefenseAllowed": 0.02915682143365208,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "WSH",
+      "gap": 1.239,
+      "unit": "percentage points",
+      "awayOffense": 0.09323583180987204,
+      "homeDefenseAllowed": 0.0846286701208981,
+      "homeOffense": 0.09172661870503597,
+      "awayDefenseAllowed": 0.11090909090909092,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "WSH",
+      "gap": 0.004,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.16393442622950818,
+      "homeDefenseAllowed": 0.14209115281501342,
+      "homeOffense": 0.15864022662889518,
+      "awayDefenseAllowed": 0.14730878186968838,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": null,
+  "profiles": {
+    "CIN": {
+      "season": {
+        "games": 9,
+        "offPlays": 547,
+        "defPlays": 550,
+        "offEpa": 0.1584,
+        "defEpa": 0.0039,
+        "netEpa": 0.1545,
+        "adjustedNetEpa": 0.1616,
+        "earlyOffEpa": 0.1297,
+        "earlyDefEpa": -0.0362,
+        "passOffEpa": 0.265,
+        "passDefEpa": 0.0212
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 188,
+        "defPlays": 185,
+        "offEpa": 0.2709,
+        "defEpa": 0.0697,
+        "netEpa": 0.2013,
+        "adjustedNetEpa": 0.1362,
+        "earlyOffEpa": 0.2461,
+        "earlyDefEpa": -0.0271,
+        "passOffEpa": 0.414,
+        "passDefEpa": 0.0579
+      }
+    },
+    "WSH": {}
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": -7.989,
+    "structuralHomeMargin": -7.988
+  },
+  "market": {
+    "spread_display": "Cincinnati Bengals -6.5",
+    "spread": "CIN -6.5",
+    "total": 52.5,
+    "home_margin": -6.5,
+    "home_team_sportsbook_spread": 6.5,
+    "moneyline": {
+      "away": -298,
+      "home": 240
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-11-17T15:29:38.396Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+    "opener_display": "Cincinnati Bengals -1.5",
+    "opening_reference": {
+      "spread": "Cincinnati Bengals -1.5",
+      "homeBookSpread": 1.5,
+      "total": 52.5,
+      "moneyline": {
+        "away": "-125",
+        "home": "+105"
+      },
+      "source": "ESPN DraftKings",
+      "observedAt": "2026-11-17T15:29:38.396Z",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=11&limit=100",
+      "note": "Provider opening reference; source does not publish the original quote timestamp."
+    }
+  },
+  "productionFair": -6.798,
+  "structuralFair": -7.988,
+  "structuralDifference": -1.488,
+  "price": {
+    "side": null,
+    "minimumSpreadAtSnapshot": null,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-17T15:29:38.909962+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [],
+    "clusters": [],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W11-CIN-WSH",
+    "canonical_game_id": "2026-W11-CIN-WSH",
+    "matchup": "Cincinnati Bengals at Washington Commanders",
+    "venue": "Northwest Stadium",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Partly Cloudy at kickoff: 48\u00b0F; wind N 9.0 mph, gust 17.3 mph; precipitation chance 5%.",
+    "risk": "no major hourly weather flag",
+    "observed_at": "2026-11-17T15:29:40.567223+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/38.9076,-76.8645",
+    "forecast_timestamp": "2026-11-17T14:56:29+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W11-CIN-WSH",
+      "kickoff": "2026-11-24T01:15Z",
+      "temp_f": 48,
+      "wind_mph": 9.0,
+      "gust_mph": 17.3,
+      "precip_chance_pct": 5,
+      "forecast_timestamp": "2026-11-17T14:56:29+00:00",
+      "sources": [
+        "https://api.weather.gov/points/38.9076,-76.8645",
+        "https://api.weather.gov/gridpoints/LWX/102,73/forecast/hourly",
+        "https://api.weather.gov/gridpoints/LWX/102,73"
+      ],
+      "wind_speed_raw": "9 mph",
+      "wind_direction": "N",
+      "forecast_hour_start": "2026-11-23T20:00:00-05:00",
+      "forecast_hour_end": "2026-11-23T21:00:00-05:00",
+      "conditions": "Partly Cloudy",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-11-17T15:29:40.567223+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/38.9076,-76.8645",
+      "https://api.weather.gov/gridpoints/LWX/102,73/forecast/hourly",
+      "https://api.weather.gov/gridpoints/LWX/102,73"
+    ]
+  },
+  "sustainability": {
+    "CIN": {
+      "turnoverRate": 0.016453382084095063,
+      "takeawayRate": 0.02181818181818182,
+      "thirdDownConversion": 0.5192307692307693,
+      "redZoneTdRate": 0.7105263157894737
+    },
+    "WSH": {
+      "turnoverRate": 0.012589928057553957,
+      "takeawayRate": 0.024179620034542316,
+      "thirdDownConversion": 0.3333333333333333,
+      "redZoneTdRate": 0.5454545454545454
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 10,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "No clear opponent-adjusted football separation or current sample unavailable.",
+    "Defense versus motion is Week 1; excluded from lean direction.",
+    "Opponent-adjusted and recent-form sample unavailable; no substitute inferred."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-11-17T05:29:33.008Z",
+      "capturedAt": "2026-11-17T05:29:47.134118+00:00",
+      "spread": "Cincinnati Bengals -6.5",
+      "homeMargin": -6.5,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-11-17T14:29:55.144Z",
+      "capturedAt": "2026-11-17T14:30:04.433839+00:00",
+      "spread": "Cincinnati Bengals -6.5",
+      "homeMargin": -6.5,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
