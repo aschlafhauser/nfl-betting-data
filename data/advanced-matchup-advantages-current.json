@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 11,
-  "generatedAt": "2026-11-17T05:29:46.739Z",
+  "generatedAt": "2026-11-17T06:37:48.206Z",
   "throughWeek": 10,
   "methodologyVersion": "1.0-advanced-matchup-diagnostic",
   "productionApproved": false,
@@ -33,36 +33,36 @@
       "productionFair": "Kansas City Chiefs -18.3",
       "structuralLean": "KC",
       "matchupFavoredSide": "KC",
-      "advantageGap": 38.8,
+      "advantageGap": 40.6,
       "alignment": "CONFIRMED",
-      "awayScore": 33.1,
-      "homeScore": 71.9,
-      "awayRaw": -1.411,
-      "homeRaw": 1.825,
+      "awayScore": 31.9,
+      "homeScore": 72.5,
+      "awayRaw": -1.507,
+      "homeRaw": 1.875,
       "awayDrivers": [
         {
           "key": "explosiveRate",
           "label": "Explosive rate",
           "weight": 0.1,
-          "z": -2.403
+          "z": -2.432
         },
         {
           "key": "overallEpa",
           "label": "Overall EPA",
           "weight": 0.18,
-          "z": -1.846
+          "z": -2.021
         },
         {
           "key": "dropbackEpa",
           "label": "Dropback EPA",
           "weight": 0.18,
-          "z": -1.746
+          "z": -1.883
         },
         {
-          "key": "successRate",
-          "label": "Success rate",
-          "weight": 0.16,
-          "z": -1.562
+          "key": "rushEpa",
+          "label": "Rush EPA",
+          "weight": 0.12,
+          "z": -1.534
         }
       ],
       "homeDrivers": [
@@ -70,25 +70,25 @@
           "key": "dropbackEpa",
           "label": "Dropback EPA",
           "weight": 0.18,
-          "z": 2.93
+          "z": 2.977
         },
         {
           "key": "overallEpa",
           "label": "Overall EPA",
           "weight": 0.18,
-          "z": 2.67
+          "z": 2.737
         },
         {
           "key": "earlyDownEpa",
           "label": "Early-down EPA",
           "weight": 0.14,
-          "z": 1.781
+          "z": 1.78
         },
         {
           "key": "successRate",
           "label": "Success rate",
           "weight": 0.16,
-          "z": 1.657
+          "z": 1.769
         }
       ]
     },
@@ -104,24 +104,24 @@
       "productionFair": "Buffalo Bills -15.9",
       "structuralLean": "MIA",
       "matchupFavoredSide": "BUF",
-      "advantageGap": 34.7,
+      "advantageGap": 34.2,
       "alignment": "CONFLICT",
-      "awayScore": 40.7,
-      "homeScore": 75.4,
-      "awayRaw": -0.777,
-      "homeRaw": 2.115,
+      "awayScore": 40.6,
+      "homeScore": 74.8,
+      "awayRaw": -0.786,
+      "homeRaw": 2.065,
       "awayDrivers": [
         {
           "key": "passProtection",
           "label": "Pass protection vs QB hits/sacks",
           "weight": 0.12,
-          "z": -1.656
+          "z": -1.634
         },
         {
           "key": "earlyDownEpa",
           "label": "Early-down EPA",
           "weight": 0.14,
-          "z": -1.055
+          "z": -1.026
         },
         {
           "key": "overallEpa",
@@ -130,10 +130,10 @@
           "z": -1.018
         },
         {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
-          "weight": 0.18,
-          "z": -0.885
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": -0.976
         }
       ],
       "homeDrivers": [
@@ -141,25 +141,25 @@
           "key": "explosiveRate",
           "label": "Explosive rate",
           "weight": 0.1,
-          "z": 3.206
+          "z": 3.227
         },
         {
           "key": "successRate",
           "label": "Success rate",
           "weight": 0.16,
-          "z": 2.608
+          "z": 2.625
         },
         {
           "key": "overallEpa",
           "label": "Overall EPA",
           "weight": 0.18,
-          "z": 2.564
+          "z": 2.475
         },
         {
           "key": "dropbackEpa",
           "label": "Dropback EPA",
           "weight": 0.18,
-          "z": 2.525
+          "z": 2.462
         }
       ]
     },
@@ -171,137 +171,66 @@
       "home": "New York Giants",
       "homeAbbr": "NYG",
       "marketSpread": "Jacksonville Jaguars -6",
-      "structuralFair": "Jacksonville Jaguars -10.8",
+      "structuralFair": "Jacksonville Jaguars -10.9",
       "productionFair": "Jacksonville Jaguars -7",
       "structuralLean": "JAX",
       "matchupFavoredSide": "JAX",
-      "advantageGap": 30,
+      "advantageGap": 31,
       "alignment": "CONFIRMED",
-      "awayScore": 65.4,
-      "homeScore": 35.4,
-      "awayRaw": 1.284,
-      "homeRaw": -1.22,
+      "awayScore": 66.5,
+      "homeScore": 35.5,
+      "awayRaw": 1.374,
+      "homeRaw": -1.21,
       "awayDrivers": [
         {
           "key": "passProtection",
           "label": "Pass protection vs QB hits/sacks",
           "weight": 0.12,
-          "z": 1.886
+          "z": 1.895
         },
         {
           "key": "earlyDownEpa",
           "label": "Early-down EPA",
           "weight": 0.14,
-          "z": 1.688
+          "z": 1.783
         },
         {
           "key": "dropbackEpa",
           "label": "Dropback EPA",
           "weight": 0.18,
-          "z": 1.417
+          "z": 1.613
         },
         {
-          "key": "rushEpa",
-          "label": "Rush EPA",
-          "weight": 0.12,
-          "z": 1.287
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": 1.437
         }
       ],
       "homeDrivers": [
         {
-          "key": "successRate",
-          "label": "Success rate",
-          "weight": 0.16,
-          "z": -1.442
-        },
-        {
           "key": "rushEpa",
           "label": "Rush EPA",
           "weight": 0.12,
+          "z": -1.534
+        },
+        {
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": -1.363
+        },
+        {
+          "key": "earlyDownEpa",
+          "label": "Early-down EPA",
+          "weight": 0.14,
           "z": -1.351
         },
         {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": -1.328
-        },
-        {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": -1.326
-        }
-      ]
-    },
-    {
-      "gameId": "2026-W11-IND-HOU",
-      "portalGameId": "401873066",
-      "away": "Indianapolis Colts",
-      "awayAbbr": "IND",
-      "home": "Houston Texans",
-      "homeAbbr": "HOU",
-      "marketSpread": "Houston Texans -11.5",
-      "structuralFair": "Houston Texans -0.5",
-      "productionFair": "Houston Texans -9.3",
-      "structuralLean": "IND",
-      "matchupFavoredSide": "HOU",
-      "advantageGap": 26,
-      "alignment": "CONFLICT",
-      "awayScore": 36.1,
-      "homeScore": 62.1,
-      "awayRaw": -1.157,
-      "homeRaw": 1.004,
-      "awayDrivers": [
-        {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
-          "weight": 0.18,
-          "z": -1.911
-        },
-        {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": -1.821
-        },
-        {
           "key": "successRate",
           "label": "Success rate",
           "weight": 0.16,
-          "z": -1.246
-        },
-        {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": -1.181
-        }
-      ],
-      "homeDrivers": [
-        {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": 2.078
-        },
-        {
-          "key": "passProtection",
-          "label": "Pass protection vs QB hits/sacks",
-          "weight": 0.12,
-          "z": 1.53
-        },
-        {
-          "key": "explosiveRate",
-          "label": "Explosive rate",
-          "weight": 0.1,
-          "z": 1.529
-        },
-        {
-          "key": "rushEpa",
-          "label": "Rush EPA",
-          "weight": 0.12,
-          "z": 1.112
+          "z": -1.216
         }
       ]
     },
@@ -317,36 +246,36 @@
       "productionFair": "Pittsburgh Steelers -1.6",
       "structuralLean": "PHI",
       "matchupFavoredSide": "PIT",
-      "advantageGap": 25.7,
+      "advantageGap": 26.4,
       "alignment": "CONFLICT",
       "awayScore": 59.3,
-      "homeScore": 33.6,
-      "awayRaw": 0.775,
-      "homeRaw": -1.368,
+      "homeScore": 32.9,
+      "awayRaw": 0.778,
+      "homeRaw": -1.428,
       "awayDrivers": [
         {
           "key": "rushEpa",
           "label": "Rush EPA",
           "weight": 0.12,
-          "z": 3.264
+          "z": 3.219
         },
         {
           "key": "passProtection",
           "label": "Pass protection vs QB hits/sacks",
           "weight": 0.12,
-          "z": 1.336
+          "z": 1.351
         },
         {
           "key": "overallEpa",
           "label": "Overall EPA",
           "weight": 0.18,
-          "z": 0.943
+          "z": 0.951
         },
         {
           "key": "explosiveRate",
           "label": "Explosive rate",
           "weight": 0.1,
-          "z": 0.555
+          "z": 0.553
         }
       ],
       "homeDrivers": [
@@ -354,25 +283,96 @@
           "key": "explosiveRate",
           "label": "Explosive rate",
           "weight": 0.1,
-          "z": -2.179
+          "z": -2.205
+        },
+        {
+          "key": "rushEpa",
+          "label": "Rush EPA",
+          "weight": 0.12,
+          "z": -1.726
         },
         {
           "key": "successRate",
           "label": "Success rate",
           "weight": 0.16,
-          "z": -1.615
+          "z": -1.713
         },
         {
           "key": "overallEpa",
           "label": "Overall EPA",
           "weight": 0.18,
-          "z": -1.496
+          "z": -1.55
+        }
+      ]
+    },
+    {
+      "gameId": "2026-W11-IND-HOU",
+      "portalGameId": "401873066",
+      "away": "Indianapolis Colts",
+      "awayAbbr": "IND",
+      "home": "Houston Texans",
+      "homeAbbr": "HOU",
+      "marketSpread": "Houston Texans -11.5",
+      "structuralFair": "Houston Texans -0.5",
+      "productionFair": "Houston Texans -9.3",
+      "structuralLean": "IND",
+      "matchupFavoredSide": "HOU",
+      "advantageGap": 25.2,
+      "alignment": "CONFLICT",
+      "awayScore": 36.1,
+      "homeScore": 61.3,
+      "awayRaw": -1.155,
+      "homeRaw": 0.94,
+      "awayDrivers": [
+        {
+          "key": "dropbackEpa",
+          "label": "Dropback EPA",
+          "weight": 0.18,
+          "z": -2.006
         },
         {
           "key": "earlyDownEpa",
           "label": "Early-down EPA",
           "weight": 0.14,
-          "z": -1.4
+          "z": -1.761
+        },
+        {
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": -1.276
+        },
+        {
+          "key": "passProtection",
+          "label": "Pass protection vs QB hits/sacks",
+          "weight": 0.12,
+          "z": -1.15
+        }
+      ],
+      "homeDrivers": [
+        {
+          "key": "earlyDownEpa",
+          "label": "Early-down EPA",
+          "weight": 0.14,
+          "z": 2.029
+        },
+        {
+          "key": "explosiveRate",
+          "label": "Explosive rate",
+          "weight": 0.1,
+          "z": 1.538
+        },
+        {
+          "key": "passProtection",
+          "label": "Pass protection vs QB hits/sacks",
+          "weight": 0.12,
+          "z": 1.534
+        },
+        {
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": 1.012
         }
       ]
     },
@@ -388,36 +388,36 @@
       "productionFair": "Denver Broncos -9.7",
       "structuralLean": "LV",
       "matchupFavoredSide": "DEN",
-      "advantageGap": 24,
+      "advantageGap": 24.3,
       "alignment": "CONFLICT",
-      "awayScore": 39.5,
-      "homeScore": 63.5,
-      "awayRaw": -0.877,
-      "homeRaw": 1.127,
+      "awayScore": 39.3,
+      "homeScore": 63.6,
+      "awayRaw": -0.89,
+      "homeRaw": 1.132,
       "awayDrivers": [
         {
           "key": "passProtection",
           "label": "Pass protection vs QB hits/sacks",
           "weight": 0.12,
-          "z": -2.516
+          "z": -2.485
         },
         {
           "key": "successRate",
           "label": "Success rate",
           "weight": 0.16,
-          "z": -1.243
+          "z": -1.27
         },
         {
           "key": "earlyDownEpa",
           "label": "Early-down EPA",
           "weight": 0.14,
-          "z": -0.823
+          "z": -0.843
         },
         {
           "key": "explosiveRate",
           "label": "Explosive rate",
           "weight": 0.1,
-          "z": -0.765
+          "z": -0.778
         }
       ],
       "homeDrivers": [
@@ -425,25 +425,25 @@
           "key": "passProtection",
           "label": "Pass protection vs QB hits/sacks",
           "weight": 0.12,
-          "z": 2.001
+          "z": 1.994
         },
         {
           "key": "earlyDownEpa",
           "label": "Early-down EPA",
           "weight": 0.14,
-          "z": 1.45
+          "z": 1.443
         },
         {
           "key": "dropbackEpa",
           "label": "Dropback EPA",
           "weight": 0.18,
-          "z": 1.226
+          "z": 1.209
         },
         {
           "key": "overallEpa",
           "label": "Overall EPA",
           "weight": 0.18,
-          "z": 1.184
+          "z": 1.173
         }
       ]
     },
@@ -459,36 +459,36 @@
       "productionFair": "Chicago Bears -10.1",
       "structuralLean": "NO",
       "matchupFavoredSide": "CHI",
-      "advantageGap": 22.4,
+      "advantageGap": 21,
       "alignment": "CONFLICT",
-      "awayScore": 40.1,
-      "homeScore": 62.5,
-      "awayRaw": -0.821,
-      "homeRaw": 1.043,
+      "awayScore": 41.8,
+      "homeScore": 62.8,
+      "awayRaw": -0.685,
+      "homeRaw": 1.069,
       "awayDrivers": [
         {
           "key": "successRate",
           "label": "Success rate",
           "weight": 0.16,
-          "z": -1.623
-        },
-        {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": -1.187
+          "z": -1.516
         },
         {
           "key": "rushEpa",
           "label": "Rush EPA",
           "weight": 0.12,
-          "z": -1.159
+          "z": -1.016
         },
         {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
+          "key": "explosiveRate",
+          "label": "Explosive rate",
+          "weight": 0.1,
+          "z": -0.975
+        },
+        {
+          "key": "overallEpa",
+          "label": "Overall EPA",
           "weight": 0.18,
-          "z": -0.968
+          "z": -0.972
         }
       ],
       "homeDrivers": [
@@ -496,25 +496,25 @@
           "key": "successRate",
           "label": "Success rate",
           "weight": 0.16,
-          "z": 1.588
+          "z": 1.777
         },
         {
           "key": "rushEpa",
           "label": "Rush EPA",
           "weight": 0.12,
-          "z": 1.445
+          "z": 1.643
         },
         {
           "key": "passProtection",
           "label": "Pass protection vs QB hits/sacks",
           "weight": 0.12,
-          "z": 1.179
+          "z": 1.186
         },
         {
           "key": "explosiveRate",
           "label": "Explosive rate",
           "weight": 0.1,
-          "z": 1.153
+          "z": 1.158
         }
       ]
     },
@@ -526,40 +526,40 @@
       "home": "San Francisco 49ers",
       "homeAbbr": "SF",
       "marketSpread": "San Francisco 49ers -3",
-      "structuralFair": "Minnesota Vikings -3.3",
-      "productionFair": "San Francisco 49ers -1.7",
+      "structuralFair": "Minnesota Vikings -3.2",
+      "productionFair": "San Francisco 49ers -1.8",
       "structuralLean": "MIN",
       "matchupFavoredSide": "SF",
-      "advantageGap": 18.9,
+      "advantageGap": 20.5,
       "alignment": "CONFLICT",
-      "awayScore": 30.8,
-      "homeScore": 49.7,
-      "awayRaw": -1.601,
-      "homeRaw": -0.022,
+      "awayScore": 30.5,
+      "homeScore": 51,
+      "awayRaw": -1.626,
+      "homeRaw": 0.08,
       "awayDrivers": [
         {
           "key": "explosiveRate",
           "label": "Explosive rate",
           "weight": 0.1,
-          "z": -2.955
+          "z": -2.998
         },
         {
           "key": "rushEpa",
           "label": "Rush EPA",
           "weight": 0.12,
-          "z": -2.662
+          "z": -2.969
         },
         {
           "key": "earlyDownEpa",
           "label": "Early-down EPA",
           "weight": 0.14,
-          "z": -2.594
+          "z": -2.663
         },
         {
           "key": "overallEpa",
           "label": "Overall EPA",
           "weight": 0.18,
-          "z": -1.567
+          "z": -1.584
         }
       ],
       "homeDrivers": [
@@ -567,25 +567,25 @@
           "key": "passProtection",
           "label": "Pass protection vs QB hits/sacks",
           "weight": 0.12,
-          "z": -2.073
+          "z": -2.062
         },
         {
           "key": "explosiveRate",
           "label": "Explosive rate",
           "weight": 0.1,
-          "z": 1.819
+          "z": 1.824
         },
         {
           "key": "rushEpa",
           "label": "Rush EPA",
           "weight": 0.12,
-          "z": 0.381
+          "z": 0.479
         },
         {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": -0.259
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": 0.423
         }
       ]
     },
@@ -601,36 +601,36 @@
       "productionFair": "Cincinnati Bengals -6.8",
       "structuralLean": "CIN",
       "matchupFavoredSide": "CIN",
-      "advantageGap": 14.8,
+      "advantageGap": 16.1,
       "alignment": "CONFIRMED",
-      "awayScore": 68.2,
-      "homeScore": 53.4,
-      "awayRaw": 1.517,
-      "homeRaw": 0.285,
+      "awayScore": 68.4,
+      "homeScore": 52.3,
+      "awayRaw": 1.534,
+      "homeRaw": 0.195,
       "awayDrivers": [
         {
           "key": "successRate",
           "label": "Success rate",
           "weight": 0.16,
-          "z": 2.927
+          "z": 2.834
         },
         {
           "key": "overallEpa",
           "label": "Overall EPA",
           "weight": 0.18,
-          "z": 2.152
+          "z": 2.222
         },
         {
           "key": "dropbackEpa",
           "label": "Dropback EPA",
           "weight": 0.18,
-          "z": 1.93
+          "z": 1.967
         },
         {
           "key": "rushEpa",
           "label": "Rush EPA",
           "weight": 0.12,
-          "z": 1.54
+          "z": 1.541
         }
       ],
       "homeDrivers": [
@@ -638,25 +638,25 @@
           "key": "rushEpa",
           "label": "Rush EPA",
           "weight": 0.12,
-          "z": 1.676
+          "z": 1.488
         },
         {
           "key": "explosiveRate",
           "label": "Explosive rate",
           "weight": 0.1,
-          "z": 1.089
+          "z": 1.094
         },
         {
           "key": "dropbackEpa",
           "label": "Dropback EPA",
           "weight": 0.18,
-          "z": -0.281
+          "z": -0.401
         },
         {
           "key": "passProtection",
           "label": "Pass protection vs QB hits/sacks",
           "weight": 0.12,
-          "z": 0.201
+          "z": 0.219
         }
       ]
     },
@@ -668,40 +668,40 @@
       "home": "Los Angeles Chargers",
       "homeAbbr": "LAC",
       "marketSpread": "Los Angeles Chargers -3",
-      "structuralFair": "Los Angeles Chargers -15",
+      "structuralFair": "Los Angeles Chargers -15.1",
       "productionFair": "Los Angeles Chargers -5.4",
       "structuralLean": "LAC",
       "matchupFavoredSide": "NYJ",
-      "advantageGap": 13.9,
+      "advantageGap": 10.5,
       "alignment": "CONFLICT",
-      "awayScore": 51.3,
-      "homeScore": 37.4,
-      "awayRaw": 0.109,
-      "homeRaw": -1.052,
+      "awayScore": 49.8,
+      "homeScore": 39.3,
+      "awayRaw": -0.018,
+      "homeRaw": -0.894,
       "awayDrivers": [
         {
           "key": "passProtection",
           "label": "Pass protection vs QB hits/sacks",
           "weight": 0.12,
-          "z": -1.207
-        },
-        {
-          "key": "explosiveRate",
-          "label": "Explosive rate",
-          "weight": 0.1,
-          "z": 0.85
-        },
-        {
-          "key": "earlyDownEpa",
-          "label": "Early-down EPA",
-          "weight": 0.14,
-          "z": 0.83
+          "z": -1.262
         },
         {
           "key": "rushEpa",
           "label": "Rush EPA",
           "weight": 0.12,
-          "z": -0.725
+          "z": -0.641
+        },
+        {
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": 0.638
+        },
+        {
+          "key": "earlyDownEpa",
+          "label": "Early-down EPA",
+          "weight": 0.14,
+          "z": 0.612
         }
       ],
       "homeDrivers": [
@@ -709,25 +709,25 @@
           "key": "passProtection",
           "label": "Pass protection vs QB hits/sacks",
           "weight": 0.12,
-          "z": -1.389
+          "z": -1.569
         },
         {
           "key": "overallEpa",
           "label": "Overall EPA",
           "weight": 0.18,
-          "z": -1.375
-        },
-        {
-          "key": "rushEpa",
-          "label": "Rush EPA",
-          "weight": 0.12,
-          "z": -1.368
+          "z": -1.14
         },
         {
           "key": "earlyDownEpa",
           "label": "Early-down EPA",
           "weight": 0.14,
-          "z": -1.295
+          "z": -1.115
+        },
+        {
+          "key": "rushEpa",
+          "label": "Rush EPA",
+          "weight": 0.12,
+          "z": -0.946
         }
       ]
     },
@@ -743,36 +743,36 @@
       "productionFair": "Dallas Cowboys -8.1",
       "structuralLean": "TEN",
       "matchupFavoredSide": "DAL",
-      "advantageGap": 6.4,
+      "advantageGap": 7.3,
       "alignment": "CONFLICT",
-      "awayScore": 63.1,
-      "homeScore": 69.5,
-      "awayRaw": 1.093,
-      "homeRaw": 1.625,
+      "awayScore": 62.7,
+      "homeScore": 70,
+      "awayRaw": 1.055,
+      "homeRaw": 1.67,
       "awayDrivers": [
-        {
-          "key": "rushEpa",
-          "label": "Rush EPA",
-          "weight": 0.12,
-          "z": 1.853
-        },
         {
           "key": "passProtection",
           "label": "Pass protection vs QB hits/sacks",
           "weight": 0.12,
-          "z": 1.823
+          "z": 1.826
+        },
+        {
+          "key": "rushEpa",
+          "label": "Rush EPA",
+          "weight": 0.12,
+          "z": 1.701
         },
         {
           "key": "earlyDownEpa",
           "label": "Early-down EPA",
           "weight": 0.14,
-          "z": 1.304
+          "z": 1.175
         },
         {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": 1.064
+          "key": "successRate",
+          "label": "Success rate",
+          "weight": 0.16,
+          "z": 0.986
         }
       ],
       "homeDrivers": [
@@ -780,25 +780,25 @@
           "key": "successRate",
           "label": "Success rate",
           "weight": 0.16,
-          "z": 2.405
+          "z": 2.447
         },
         {
           "key": "overallEpa",
           "label": "Overall EPA",
           "weight": 0.18,
-          "z": 2.294
+          "z": 2.339
         },
         {
           "key": "dropbackEpa",
           "label": "Dropback EPA",
           "weight": 0.18,
-          "z": 2.263
+          "z": 2.303
         },
         {
           "key": "earlyDownEpa",
           "label": "Early-down EPA",
           "weight": 0.14,
-          "z": 1.887
+          "z": 2.011
         }
       ]
     },
@@ -814,62 +814,62 @@
       "productionFair": "Carolina Panthers -3",
       "structuralLean": "CAR",
       "matchupFavoredSide": "NEUTRAL",
-      "advantageGap": 1.2,
+      "advantageGap": 1.6,
       "alignment": "NEUTRAL",
-      "awayScore": 50,
+      "awayScore": 49.6,
       "homeScore": 51.2,
-      "awayRaw": 0.002,
-      "homeRaw": 0.101,
+      "awayRaw": -0.031,
+      "homeRaw": 0.104,
       "awayDrivers": [
         {
           "key": "explosiveRate",
           "label": "Explosive rate",
           "weight": 0.1,
-          "z": -1.101
+          "z": -1.341
         },
         {
           "key": "passProtection",
           "label": "Pass protection vs QB hits/sacks",
           "weight": 0.12,
-          "z": 0.65
+          "z": 0.649
         },
         {
           "key": "earlyDownEpa",
           "label": "Early-down EPA",
           "weight": 0.14,
-          "z": 0.51
+          "z": 0.518
         },
         {
           "key": "rushEpa",
           "label": "Rush EPA",
           "weight": 0.12,
-          "z": -0.401
+          "z": -0.128
         }
       ],
       "homeDrivers": [
         {
-          "key": "explosiveRate",
-          "label": "Explosive rate",
-          "weight": 0.1,
-          "z": -0.664
-        },
-        {
           "key": "overallEpa",
           "label": "Overall EPA",
           "weight": 0.18,
-          "z": 0.551
+          "z": 0.487
         },
         {
-          "key": "dropbackEpa",
-          "label": "Dropback EPA",
-          "weight": 0.18,
-          "z": 0.351
+          "key": "passProtection",
+          "label": "Pass protection vs QB hits/sacks",
+          "weight": 0.12,
+          "z": -0.435
+        },
+        {
+          "key": "explosiveRate",
+          "label": "Explosive rate",
+          "weight": 0.1,
+          "z": -0.292
         },
         {
           "key": "earlyDownEpa",
           "label": "Early-down EPA",
           "weight": 0.14,
-          "z": 0.309
+          "z": 0.284
         }
       ]
     },
@@ -881,66 +881,66 @@
       "home": "Detroit Lions",
       "homeAbbr": "DET",
       "marketSpread": "Detroit Lions -6.5",
-      "structuralFair": "Detroit Lions -12.6",
+      "structuralFair": "Detroit Lions -12.7",
       "productionFair": "Detroit Lions -7.7",
       "structuralLean": "DET",
       "matchupFavoredSide": "NEUTRAL",
-      "advantageGap": 0.7,
+      "advantageGap": 1,
       "alignment": "NEUTRAL",
-      "awayScore": 45.2,
-      "homeScore": 45.9,
-      "awayRaw": -0.404,
-      "homeRaw": -0.341,
+      "awayScore": 45.3,
+      "homeScore": 46.3,
+      "awayRaw": -0.393,
+      "homeRaw": -0.306,
       "awayDrivers": [
         {
           "key": "explosiveRate",
           "label": "Explosive rate",
           "weight": 0.1,
-          "z": 1.118
+          "z": 1.122
         },
         {
           "key": "dropbackEpa",
           "label": "Dropback EPA",
           "weight": 0.18,
-          "z": -0.933
+          "z": -0.971
         },
         {
           "key": "passProtection",
           "label": "Pass protection vs QB hits/sacks",
           "weight": 0.12,
-          "z": -0.795
+          "z": -0.775
         },
         {
-          "key": "successRate",
-          "label": "Success rate",
-          "weight": 0.16,
-          "z": -0.67
+          "key": "earlyDownEpa",
+          "label": "Early-down EPA",
+          "weight": 0.14,
+          "z": -0.607
         }
       ],
       "homeDrivers": [
         {
-          "key": "overallEpa",
-          "label": "Overall EPA",
-          "weight": 0.18,
-          "z": -0.894
-        },
-        {
           "key": "passProtection",
           "label": "Pass protection vs QB hits/sacks",
           "weight": 0.12,
-          "z": 0.881
+          "z": 0.9
+        },
+        {
+          "key": "overallEpa",
+          "label": "Overall EPA",
+          "weight": 0.18,
+          "z": -0.821
         },
         {
           "key": "dropbackEpa",
           "label": "Dropback EPA",
           "weight": 0.18,
-          "z": -0.799
+          "z": -0.766
         },
         {
           "key": "rushEpa",
           "label": "Rush EPA",
           "weight": 0.12,
-          "z": -0.675
+          "z": -0.61
         }
       ]
     }
