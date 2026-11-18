@@ -1,13 +1,13 @@
 {
   "season": 2026,
   "week": 12,
-  "generated_at": "2026-11-18T07:32:29.960Z",
+  "generated_at": "2026-11-18T08:30:28.683Z",
   "method": "Wednesday spread-based upset screen plus exact-price governance",
   "coverage": {
     "all_current_threshold_candidates_represented": true,
     "selected_week_games": 16,
     "spread_screen_candidates": 0,
-    "near_threshold_watch": 2,
+    "near_threshold_watch": 3,
     "price_policy": "Exact moneylines never inferred from spreads."
   },
   "candidates": [
@@ -20,7 +20,7 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-18T07:32:28.740Z",
+      "priceObservedAt": "2026-11-18T08:30:26.513Z",
       "market_implied_probability": 0.2381,
       "reason": null,
       "spread": "Dallas Cowboys -8.5",
@@ -68,7 +68,7 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-18T07:32:28.740Z",
+      "priceObservedAt": "2026-11-18T08:30:26.513Z",
       "market_implied_probability": 0.2,
       "reason": null,
       "spread": "Cincinnati Bengals -10",
@@ -116,7 +116,7 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-18T07:32:28.740Z",
+      "priceObservedAt": "2026-11-18T08:30:26.513Z",
       "market_implied_probability": 0.2703,
       "reason": null,
       "spread": "Minnesota Vikings -7",
@@ -164,7 +164,7 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-18T07:32:28.740Z",
+      "priceObservedAt": "2026-11-18T08:30:26.513Z",
       "market_implied_probability": 0.125,
       "reason": null,
       "spread": "Jacksonville Jaguars -14.5",
@@ -214,7 +214,7 @@
       "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-18T07:32:28.740Z",
+      "priceObservedAt": "2026-11-18T08:30:26.513Z",
       "market_implied_probability": 0.3279,
       "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
       "spread": "Houston Texans -6",
@@ -254,6 +254,54 @@
       "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 205 via ESPN DraftKings; threshold qualification is separate from recommendation."
     },
     {
+      "game_id": "2026-W12-NE-LAC",
+      "team": "NE",
+      "moneyline": 205,
+      "eligible": false,
+      "nearThreshold": true,
+      "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
+      "minimum_playable_ml": "NOT_VALIDATED",
+      "priceSource": "ESPN DraftKings",
+      "priceObservedAt": "2026-11-18T08:30:26.513Z",
+      "market_implied_probability": 0.3279,
+      "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
+      "spread": "Los Angeles Chargers -5.5",
+      "structuralFair": "New England Patriots -2.5",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "New England Patriots is 5.5 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Current structural lean NE; structural fair New England Patriots -2.5."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Preseason prior 4.30 vs opponent 1.48."
+        },
+        {
+          "name": "recent-form",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "No completed live sample."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 205 via ESPN DraftKings; threshold qualification is separate from recommendation."
+    },
+    {
       "game_id": "2026-W12-WSH-ARI",
       "team": "ARI",
       "moneyline": 220,
@@ -262,7 +310,7 @@
       "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-18T07:32:28.740Z",
+      "priceObservedAt": "2026-11-18T08:30:26.513Z",
       "market_implied_probability": 0.3125,
       "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
       "spread": "Washington Commanders -6",
@@ -303,5 +351,5 @@
     }
   ],
   "price_pending": [],
-  "narrativeReconciledAt": "2026-11-18T07:32:38.577Z"
+  "narrativeReconciledAt": "2026-11-18T08:30:41.760Z"
 }
