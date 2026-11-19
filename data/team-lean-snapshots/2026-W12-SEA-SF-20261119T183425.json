@@ -1,0 +1,312 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W12-SEA-SF",
+  "portalGameId": "401873091",
+  "week": 12,
+  "away": "Seattle Seahawks",
+  "home": "San Francisco 49ers",
+  "awayAbbr": "SEA",
+  "homeAbbr": "SF",
+  "kickoff": "2026-11-29T21:25Z",
+  "generatedAt": "2026-11-19T18:34:25.861517+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "SF",
+  "assessmentSide": "SF",
+  "structuralValueSide": "SEA",
+  "alignment": "CONFLICT",
+  "thesis": "SF has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "SF",
+      "gap": 0.05,
+      "unit": "EPA/play",
+      "awayOffense": 0.09754623638660881,
+      "homeDefenseAllowed": 0.037165870794214205,
+      "homeOffense": 0.31572275948622414,
+      "awayDefenseAllowed": -0.08029811509367543,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "SF",
+      "gap": 0.107,
+      "unit": "EPA/play",
+      "awayOffense": -0.04797131499387737,
+      "homeDefenseAllowed": -0.07143447179969183,
+      "homeOffense": 0.17090434360155485,
+      "awayDefenseAllowed": -0.07599074756250718,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "SF",
+      "gap": 0.132,
+      "unit": "EPA/play",
+      "awayOffense": -0.10868485304956939,
+      "homeDefenseAllowed": -0.10483879254094665,
+      "homeOffense": 0.10928012022767387,
+      "awayDefenseAllowed": -0.05935824746406158,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "SF",
+      "gap": 2.329,
+      "unit": "percentage points",
+      "awayOffense": 0.09001636661211129,
+      "homeDefenseAllowed": 0.05017921146953405,
+      "homeOffense": 0.1320754716981132,
+      "awayDefenseAllowed": 0.0547008547008547,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "SF",
+      "gap": 0.648,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.17941176470588235,
+      "homeDefenseAllowed": 0.15211267605633802,
+      "homeOffense": 0.1174496644295302,
+      "awayDefenseAllowed": 0.2011173184357542,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "counterarguments": [],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "SF",
+      "gap": 0.05,
+      "unit": "EPA/play",
+      "awayOffense": 0.09754623638660881,
+      "homeDefenseAllowed": 0.037165870794214205,
+      "homeOffense": 0.31572275948622414,
+      "awayDefenseAllowed": -0.08029811509367543,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "SF",
+      "gap": 0.107,
+      "unit": "EPA/play",
+      "awayOffense": -0.04797131499387737,
+      "homeDefenseAllowed": -0.07143447179969183,
+      "homeOffense": 0.17090434360155485,
+      "awayDefenseAllowed": -0.07599074756250718,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "SF",
+      "gap": 0.132,
+      "unit": "EPA/play",
+      "awayOffense": -0.10868485304956939,
+      "homeDefenseAllowed": -0.10483879254094665,
+      "homeOffense": 0.10928012022767387,
+      "awayDefenseAllowed": -0.05935824746406158,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "SF",
+      "gap": 2.329,
+      "unit": "percentage points",
+      "awayOffense": 0.09001636661211129,
+      "homeDefenseAllowed": 0.05017921146953405,
+      "homeOffense": 0.1320754716981132,
+      "awayDefenseAllowed": 0.0547008547008547,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "SF",
+      "gap": 0.648,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.17941176470588235,
+      "homeDefenseAllowed": 0.15211267605633802,
+      "homeOffense": 0.1174496644295302,
+      "awayDefenseAllowed": 0.2011173184357542,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": 0.1482,
+  "profiles": {
+    "SEA": {
+      "season": {
+        "games": 10,
+        "offPlays": 611,
+        "defPlays": 585,
+        "offEpa": -0.0147,
+        "defEpa": -0.0822,
+        "netEpa": 0.0675,
+        "adjustedNetEpa": 0.0531,
+        "earlyOffEpa": -0.0526,
+        "earlyDefEpa": -0.0786,
+        "passOffEpa": 0.0975,
+        "passDefEpa": -0.0803
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 110,
+        "defPlays": 110,
+        "offEpa": 0.0932,
+        "defEpa": -0.1768,
+        "netEpa": 0.2699,
+        "adjustedNetEpa": 0.1746,
+        "earlyOffEpa": -0.0357,
+        "earlyDefEpa": -0.1517,
+        "passOffEpa": 0.2983,
+        "passDefEpa": -0.1917
+      }
+    },
+    "SF": {
+      "season": {
+        "games": 9,
+        "offPlays": 530,
+        "defPlays": 558,
+        "offEpa": 0.1952,
+        "defEpa": -0.0185,
+        "netEpa": 0.2137,
+        "adjustedNetEpa": 0.2013,
+        "earlyOffEpa": 0.1667,
+        "earlyDefEpa": -0.0746,
+        "passOffEpa": 0.3157,
+        "passDefEpa": 0.0372
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 129,
+        "defPlays": 124,
+        "offEpa": 0.3047,
+        "defEpa": 0.0191,
+        "netEpa": 0.2855,
+        "adjustedNetEpa": 0.2619,
+        "earlyOffEpa": 0.1994,
+        "earlyDefEpa": -0.1662,
+        "passOffEpa": 0.5132,
+        "passDefEpa": 0.0124
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": -2.526,
+    "structuralHomeMargin": -2.526
+  },
+  "market": {
+    "spread_display": "San Francisco 49ers -2.5",
+    "spread": "SF -3",
+    "total": 46.5,
+    "home_margin": 2.5,
+    "home_team_sportsbook_spread": -2.5,
+    "moneyline": {
+      "away": 118,
+      "home": -140
+    },
+    "source": "ESPN Draft Kings",
+    "timestamp": "2026-11-19T18:34:12.760Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+    "opener_display": "San Francisco 49ers -1.5",
+    "opening_reference": {
+      "spread": "San Francisco 49ers -1.5",
+      "homeBookSpread": -1.5,
+      "total": 46.5,
+      "moneyline": {
+        "away": "-108",
+        "home": "-112"
+      },
+      "source": "ESPN Draft Kings",
+      "observedAt": "2026-11-19T18:34:12.760Z",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
+      "note": "Provider opening reference; source does not publish the original quote timestamp."
+    }
+  },
+  "productionFair": 1.495,
+  "structuralFair": -2.526,
+  "structuralDifference": -5.026,
+  "price": {
+    "side": "SF",
+    "minimumSpreadAtSnapshot": 0.5,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-19T18:34:13.011490+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [],
+    "clusters": [],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W12-SEA-SF",
+    "canonical_game_id": "2026-W12-SEA-SF",
+    "matchup": "Seattle Seahawks at San Francisco 49ers",
+    "venue": "Levi's Stadium",
+    "environment": "outdoor",
+    "status": "Current game-window weather feed reviewed",
+    "summary": "Current ESPN event weather feed reviewed; no structured game-window condition was published. Weather remains source-limited with 0.0 automatic model points.",
+    "risk": "source-limited",
+    "observed_at": "2026-11-19T18:34:12.760Z",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
+  },
+  "sustainability": {
+    "SEA": {
+      "turnoverRate": 0.02618657937806874,
+      "takeawayRate": 0.018803418803418803,
+      "thirdDownConversion": 0.4,
+      "redZoneTdRate": 0.5
+    },
+    "SF": {
+      "turnoverRate": 0.016981132075471698,
+      "takeawayRate": 0.023297491039426525,
+      "thirdDownConversion": 0.5252525252525253,
+      "redZoneTdRate": 0.8275862068965517
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 11,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-11-17T21:30:33.135Z",
+      "capturedAt": "2026-11-17T21:30:44.414278+00:00",
+      "spread": "San Francisco 49ers -3",
+      "homeMargin": 3,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-11-19T17:32:19.129Z",
+      "capturedAt": "2026-11-19T17:32:28.844635+00:00",
+      "spread": "San Francisco 49ers -2.5",
+      "homeMargin": 2.5,
+      "source": "ESPN Draft Kings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
