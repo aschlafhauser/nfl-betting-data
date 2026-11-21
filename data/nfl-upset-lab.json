@@ -1,13 +1,13 @@
 {
   "season": 2026,
   "week": 12,
-  "generated_at": "2026-11-21T15:29:28.938Z",
+  "generated_at": "2026-11-21T16:30:04.049Z",
   "method": "Wednesday spread-based upset screen plus exact-price governance",
   "coverage": {
     "all_current_threshold_candidates_represented": true,
     "selected_week_games": 16,
     "spread_screen_candidates": 0,
-    "near_threshold_watch": 3,
+    "near_threshold_watch": 2,
     "price_policy": "Exact moneylines never inferred from spreads."
   },
   "candidates": [
@@ -20,7 +20,7 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-21T15:29:28.000Z",
+      "priceObservedAt": "2026-11-21T16:30:01.903Z",
       "market_implied_probability": 0.2387,
       "reason": null,
       "spread": "Dallas Cowboys -8.5",
@@ -68,7 +68,7 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-21T15:29:28.000Z",
+      "priceObservedAt": "2026-11-21T16:30:01.903Z",
       "market_implied_probability": 0.1965,
       "reason": null,
       "spread": "Cincinnati Bengals -10",
@@ -116,7 +116,7 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-21T15:29:28.000Z",
+      "priceObservedAt": "2026-11-21T16:30:01.903Z",
       "market_implied_probability": 0.2674,
       "reason": null,
       "spread": "Minnesota Vikings -7",
@@ -164,7 +164,7 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-21T15:29:28.000Z",
+      "priceObservedAt": "2026-11-21T16:30:01.903Z",
       "market_implied_probability": 0.1149,
       "reason": null,
       "spread": "Jacksonville Jaguars -14.5",
@@ -202,6 +202,54 @@
         }
       ],
       "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 770 via ESPN Draft Kings; threshold qualification is separate from recommendation."
+    },
+    {
+      "game_id": "2026-W12-WSH-ARI",
+      "team": "ARI",
+      "moneyline": 256,
+      "eligible": true,
+      "nearThreshold": false,
+      "status": "PRICE_QUALIFIED-RESEARCH",
+      "minimum_playable_ml": "NOT_VALIDATED",
+      "priceSource": "ESPN Draft Kings",
+      "priceObservedAt": "2026-11-21T16:30:01.903Z",
+      "market_implied_probability": 0.2809,
+      "reason": null,
+      "spread": "Washington Commanders -6.5",
+      "structuralFair": "Arizona Cardinals -1.2",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Arizona Cardinals is 6.5 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Current structural lean ARI; structural fair Arizona Cardinals -1.2."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Preseason prior -2.14 vs opponent -4.22."
+        },
+        {
+          "name": "recent-form",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Prior-week scoring margin 0."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 256 via ESPN Draft Kings; threshold qualification is separate from recommendation."
     }
   ],
   "near_threshold_watch": [
@@ -214,7 +262,7 @@
       "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-21T15:29:28.000Z",
+      "priceObservedAt": "2026-11-21T16:30:01.903Z",
       "market_implied_probability": 0.2959,
       "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
       "spread": "New York Giants -6.5",
@@ -262,7 +310,7 @@
       "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-21T15:29:28.000Z",
+      "priceObservedAt": "2026-11-21T16:30:01.903Z",
       "market_implied_probability": 0.3058,
       "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
       "spread": "Houston Texans -6.5",
@@ -300,56 +348,8 @@
         }
       ],
       "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 227 via ESPN Draft Kings; threshold qualification is separate from recommendation."
-    },
-    {
-      "game_id": "2026-W12-WSH-ARI",
-      "team": "ARI",
-      "moneyline": 243,
-      "eligible": false,
-      "nearThreshold": true,
-      "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
-      "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-21T15:29:28.000Z",
-      "market_implied_probability": 0.2915,
-      "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
-      "spread": "Washington Commanders -6.5",
-      "structuralFair": "Arizona Cardinals -1.2",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Arizona Cardinals is 6.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Current structural lean ARI; structural fair Arizona Cardinals -1.2."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Preseason prior -2.14 vs opponent -4.22."
-        },
-        {
-          "name": "recent-form",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Prior-week scoring margin 0."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 243 via ESPN Draft Kings; threshold qualification is separate from recommendation."
     }
   ],
   "price_pending": [],
-  "narrativeReconciledAt": "2026-11-21T15:29:57.009Z"
+  "narrativeReconciledAt": "2026-11-21T16:30:19.869Z"
 }
