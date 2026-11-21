@@ -1,0 +1,313 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W12-TEN-JAX",
+  "portalGameId": "401873090",
+  "week": 12,
+  "away": "Tennessee Titans",
+  "home": "Jacksonville Jaguars",
+  "awayAbbr": "TEN",
+  "homeAbbr": "JAX",
+  "kickoff": "2026-11-29T18:00Z",
+  "generatedAt": "2026-11-21T15:29:52.882590+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "JAX",
+  "assessmentSide": "JAX",
+  "structuralValueSide": "TEN",
+  "alignment": "CONFLICT",
+  "thesis": "JAX has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "JAX",
+      "gap": 0.3,
+      "unit": "EPA/play",
+      "awayOffense": -0.06551733049899866,
+      "homeDefenseAllowed": -0.06532996043629063,
+      "homeOffense": 0.2737319031133484,
+      "awayDefenseAllowed": 0.1947352118927869,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "JAX",
+      "gap": 0.139,
+      "unit": "EPA/play",
+      "awayOffense": -0.05614174131199326,
+      "homeDefenseAllowed": -0.04832126000298671,
+      "homeOffense": 0.11609043084407034,
+      "awayDefenseAllowed": 0.057508072983975714,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "JAX",
+      "gap": 0.03,
+      "unit": "EPA/play",
+      "awayOffense": -0.013690331806070084,
+      "homeDefenseAllowed": -0.08550295324361856,
+      "homeOffense": 0.0017482114066909194,
+      "awayDefenseAllowed": -0.041317604156640736,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "JAX",
+      "gap": 2.809,
+      "unit": "percentage points",
+      "awayOffense": 0.07662082514734773,
+      "homeDefenseAllowed": 0.0745697896749522,
+      "homeOffense": 0.10299625468164794,
+      "awayDefenseAllowed": 0.10437710437710437,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "TEN",
+      "gap": 0.177,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.1238390092879257,
+      "homeDefenseAllowed": 0.15868263473053892,
+      "homeOffense": 0.13986013986013987,
+      "awayDefenseAllowed": 0.14619883040935672,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "JAX",
+      "gap": 0.3,
+      "unit": "EPA/play",
+      "awayOffense": -0.06551733049899866,
+      "homeDefenseAllowed": -0.06532996043629063,
+      "homeOffense": 0.2737319031133484,
+      "awayDefenseAllowed": 0.1947352118927869,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "JAX",
+      "gap": 0.139,
+      "unit": "EPA/play",
+      "awayOffense": -0.05614174131199326,
+      "homeDefenseAllowed": -0.04832126000298671,
+      "homeOffense": 0.11609043084407034,
+      "awayDefenseAllowed": 0.057508072983975714,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "JAX",
+      "gap": 0.03,
+      "unit": "EPA/play",
+      "awayOffense": -0.013690331806070084,
+      "homeDefenseAllowed": -0.08550295324361856,
+      "homeOffense": 0.0017482114066909194,
+      "awayDefenseAllowed": -0.041317604156640736,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "JAX",
+      "gap": 2.809,
+      "unit": "percentage points",
+      "awayOffense": 0.07662082514734773,
+      "homeDefenseAllowed": 0.0745697896749522,
+      "homeOffense": 0.10299625468164794,
+      "awayDefenseAllowed": 0.10437710437710437,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "TEN",
+      "gap": 0.177,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.1238390092879257,
+      "homeDefenseAllowed": 0.15868263473053892,
+      "homeOffense": 0.13986013986013987,
+      "awayDefenseAllowed": 0.14619883040935672,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": 0.3799,
+  "profiles": {
+    "TEN": {
+      "season": {
+        "games": 9,
+        "offPlays": 509,
+        "defPlays": 594,
+        "offEpa": -0.0643,
+        "defEpa": 0.0866,
+        "netEpa": -0.1509,
+        "adjustedNetEpa": -0.1646,
+        "earlyOffEpa": -0.0646,
+        "earlyDefEpa": 0.0597,
+        "passOffEpa": -0.0655,
+        "passDefEpa": 0.1947
+      },
+      "recent": {
+        "games": 1,
+        "offPlays": 57,
+        "defPlays": 71,
+        "offEpa": -0.0196,
+        "defEpa": 0.2064,
+        "netEpa": -0.226,
+        "adjustedNetEpa": -0.0365,
+        "earlyOffEpa": 0.1212,
+        "earlyDefEpa": 0.0568,
+        "passOffEpa": -0.0123,
+        "passDefEpa": 0.4985
+      }
+    },
+    "JAX": {
+      "season": {
+        "games": 9,
+        "offPlays": 534,
+        "defPlays": 523,
+        "offEpa": 0.1409,
+        "defEpa": -0.0907,
+        "netEpa": 0.2316,
+        "adjustedNetEpa": 0.2153,
+        "earlyOffEpa": 0.1187,
+        "earlyDefEpa": -0.0483,
+        "passOffEpa": 0.2737,
+        "passDefEpa": -0.0653
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 126,
+        "defPlays": 111,
+        "offEpa": 0.1298,
+        "defEpa": -0.1381,
+        "netEpa": 0.2679,
+        "adjustedNetEpa": 0.208,
+        "earlyOffEpa": 0.0735,
+        "earlyDefEpa": -0.0292,
+        "passOffEpa": 0.3876,
+        "passDefEpa": -0.1963
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 5.148,
+    "structuralHomeMargin": 5.148
+  },
+  "market": {
+    "spread_display": "Jacksonville Jaguars -14.5",
+    "spread": "JAX -14.5",
+    "total": 47.5,
+    "home_margin": 14.5,
+    "home_team_sportsbook_spread": -14.5,
+    "moneyline": {
+      "away": 770,
+      "home": -1240
+    },
+    "source": "ESPN Draft Kings",
+    "timestamp": "2026-11-21T15:29:28.000Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+    "opener_display": "Jacksonville Jaguars -5.5",
+    "opening_reference": {
+      "spread": "Jacksonville Jaguars -5.5",
+      "homeBookSpread": -5.5,
+      "total": 45.5,
+      "moneyline": {
+        "away": "+210",
+        "home": "-258"
+      },
+      "source": "ESPN Draft Kings",
+      "observedAt": "2026-11-21T15:29:28.000Z",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
+      "note": "Provider opening reference; source does not publish the original quote timestamp."
+    }
+  },
+  "productionFair": 12.63,
+  "structuralFair": 5.148,
+  "structuralDifference": -9.352,
+  "price": {
+    "side": "JAX",
+    "minimumSpreadAtSnapshot": -11.0,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-21T15:29:28.442062+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [],
+    "clusters": [],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W12-TEN-JAX",
+    "canonical_game_id": "2026-W12-TEN-JAX",
+    "matchup": "Tennessee Titans at Jacksonville Jaguars",
+    "venue": "EverBank Stadium",
+    "environment": "outdoor",
+    "status": "Current game-window weather feed reviewed",
+    "summary": "Current ESPN event weather feed reviewed; no structured game-window condition was published. Weather remains source-limited with 0.0 automatic model points.",
+    "risk": "source-limited",
+    "observed_at": "2026-11-21T15:29:28.000Z",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
+  },
+  "sustainability": {
+    "TEN": {
+      "turnoverRate": 0.021611001964636542,
+      "takeawayRate": 0.020202020202020204,
+      "thirdDownConversion": 0.34285714285714286,
+      "redZoneTdRate": 0.5416666666666666
+    },
+    "JAX": {
+      "turnoverRate": 0.013108614232209739,
+      "takeawayRate": 0.028680688336520075,
+      "thirdDownConversion": 0.4727272727272727,
+      "redZoneTdRate": 0.6428571428571429
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 11,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-11-17T21:30:33.135Z",
+      "capturedAt": "2026-11-17T21:30:44.414278+00:00",
+      "spread": "Jacksonville Jaguars -14.5",
+      "homeMargin": 14.5,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-11-21T14:29:54.805Z",
+      "capturedAt": "2026-11-21T14:30:15.748040+00:00",
+      "spread": "Jacksonville Jaguars -14.5",
+      "homeMargin": 14.5,
+      "source": "ESPN Draft Kings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
