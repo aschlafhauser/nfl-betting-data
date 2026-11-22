@@ -1,12 +1,12 @@
 {
   "season": 2026,
   "week": 12,
-  "generated_at": "2026-11-22T20:30:07.914Z",
+  "generated_at": "2026-11-22T21:29:50.856Z",
   "method": "Wednesday spread-based upset screen plus exact-price governance",
   "coverage": {
     "all_current_threshold_candidates_represented": true,
     "selected_week_games": 16,
-    "spread_screen_candidates": 7,
+    "spread_screen_candidates": 6,
     "near_threshold_watch": 0,
     "price_policy": "Exact moneylines never inferred from spreads."
   },
@@ -14,17 +14,17 @@
     {
       "game_id": "2026-W12-PHI-DAL",
       "team": "PHI",
-      "moneyline": null,
-      "eligible": false,
+      "moneyline": 339,
+      "eligible": true,
       "nearThreshold": false,
-      "status": "PRICE_PENDING",
-      "minimum_playable_ml": "PRICE_PENDING",
-      "priceSource": null,
-      "priceObservedAt": null,
-      "market_implied_probability": null,
+      "status": "PRICE_QUALIFIED-RESEARCH",
+      "minimum_playable_ml": "NOT_VALIDATED",
+      "priceSource": "ESPN DraftKings",
+      "priceObservedAt": "2026-11-22T21:29:48.799Z",
+      "market_implied_probability": 0.2278,
       "reason": null,
       "spread": "Dallas Cowboys -8.5",
-      "structuralFair": "Philadelphia Eagles -2.6",
+      "structuralFair": "Philadelphia Eagles -4.6",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -36,7 +36,7 @@
           "name": "structural-resistance",
           "status": "PASS",
           "passed": true,
-          "evidence": "Current structural lean PHI; structural fair Philadelphia Eagles -2.6."
+          "evidence": "Current structural lean PHI; structural fair Philadelphia Eagles -4.6."
         },
         {
           "name": "prior-quality-gap",
@@ -48,7 +48,7 @@
           "name": "recent-form",
           "status": "PASS",
           "passed": true,
-          "evidence": "Prior-week scoring margin 7."
+          "evidence": "Prior-week scoring margin 3."
         },
         {
           "name": "availability",
@@ -57,7 +57,7 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 339 via ESPN DraftKings; threshold qualification is separate from recommendation."
     },
     {
       "game_id": "2026-W12-NO-CIN",
@@ -72,7 +72,7 @@
       "market_implied_probability": null,
       "reason": null,
       "spread": "Cincinnati Bengals -10",
-      "structuralFair": "New Orleans Saints -1",
+      "structuralFair": "New Orleans Saints -0.2",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -84,7 +84,7 @@
           "name": "structural-resistance",
           "status": "PASS",
           "passed": true,
-          "evidence": "Current structural lean NO; structural fair New Orleans Saints -1."
+          "evidence": "Current structural lean NO; structural fair New Orleans Saints -0.2."
         },
         {
           "name": "prior-quality-gap",
@@ -96,7 +96,7 @@
           "name": "recent-form",
           "status": "FAIL",
           "passed": false,
-          "evidence": "Prior-week scoring margin -11."
+          "evidence": "Prior-week scoring margin -8."
         },
         {
           "name": "availability",
@@ -216,7 +216,7 @@
       "market_implied_probability": null,
       "reason": null,
       "spread": "Jacksonville Jaguars -14.5",
-      "structuralFair": "Tennessee Titans -0.1",
+      "structuralFair": "Tennessee Titans -0.9",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -228,7 +228,7 @@
           "name": "structural-resistance",
           "status": "PASS",
           "passed": true,
-          "evidence": "Current structural lean TEN; structural fair Tennessee Titans -0.1."
+          "evidence": "Current structural lean TEN; structural fair Tennessee Titans -0.9."
         },
         {
           "name": "prior-quality-gap",
@@ -240,7 +240,7 @@
           "name": "recent-form",
           "status": "FAIL",
           "passed": false,
-          "evidence": "Prior-week scoring margin -18."
+          "evidence": "Prior-week scoring margin -21."
         },
         {
           "name": "availability",
@@ -264,7 +264,7 @@
       "market_implied_probability": null,
       "reason": null,
       "spread": "Houston Texans -6.5",
-      "structuralFair": "Baltimore Ravens -5.2",
+      "structuralFair": "Baltimore Ravens -4.9",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -276,7 +276,7 @@
           "name": "structural-resistance",
           "status": "PASS",
           "passed": true,
-          "evidence": "Current structural lean BAL; structural fair Baltimore Ravens -5.2."
+          "evidence": "Current structural lean BAL; structural fair Baltimore Ravens -4.9."
         },
         {
           "name": "prior-quality-gap",
@@ -288,7 +288,7 @@
           "name": "recent-form",
           "status": "PASS",
           "passed": true,
-          "evidence": "Prior-week scoring margin -3."
+          "evidence": "Prior-week scoring margin -2."
         },
         {
           "name": "availability",
@@ -307,7 +307,7 @@
       "nearThreshold": false,
       "status": "PRICE_PENDING",
       "minimum_playable_ml": "PRICE_PENDING",
-      "priceSource": "ESPN Draft Kings",
+      "priceSource": "ESPN DraftKings",
       "priceObservedAt": null,
       "market_implied_probability": null,
       "reason": null,
@@ -351,54 +351,6 @@
   "near_threshold_watch": [],
   "price_pending": [
     {
-      "game_id": "2026-W12-PHI-DAL",
-      "team": "PHI",
-      "moneyline": null,
-      "eligible": false,
-      "nearThreshold": false,
-      "status": "PRICE_PENDING",
-      "minimum_playable_ml": "PRICE_PENDING",
-      "priceSource": null,
-      "priceObservedAt": null,
-      "market_implied_probability": null,
-      "reason": null,
-      "spread": "Dallas Cowboys -8.5",
-      "structuralFair": "Philadelphia Eagles -2.6",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Philadelphia Eagles is 8.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Current structural lean PHI; structural fair Philadelphia Eagles -2.6."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Preseason prior 2.18 vs opponent -1.96."
-        },
-        {
-          "name": "recent-form",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Prior-week scoring margin 7."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
-    },
-    {
       "game_id": "2026-W12-NO-CIN",
       "team": "NO",
       "moneyline": null,
@@ -411,7 +363,7 @@
       "market_implied_probability": null,
       "reason": null,
       "spread": "Cincinnati Bengals -10",
-      "structuralFair": "New Orleans Saints -1",
+      "structuralFair": "New Orleans Saints -0.2",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -423,7 +375,7 @@
           "name": "structural-resistance",
           "status": "PASS",
           "passed": true,
-          "evidence": "Current structural lean NO; structural fair New Orleans Saints -1."
+          "evidence": "Current structural lean NO; structural fair New Orleans Saints -0.2."
         },
         {
           "name": "prior-quality-gap",
@@ -435,7 +387,7 @@
           "name": "recent-form",
           "status": "FAIL",
           "passed": false,
-          "evidence": "Prior-week scoring margin -11."
+          "evidence": "Prior-week scoring margin -8."
         },
         {
           "name": "availability",
@@ -555,7 +507,7 @@
       "market_implied_probability": null,
       "reason": null,
       "spread": "Jacksonville Jaguars -14.5",
-      "structuralFair": "Tennessee Titans -0.1",
+      "structuralFair": "Tennessee Titans -0.9",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -567,7 +519,7 @@
           "name": "structural-resistance",
           "status": "PASS",
           "passed": true,
-          "evidence": "Current structural lean TEN; structural fair Tennessee Titans -0.1."
+          "evidence": "Current structural lean TEN; structural fair Tennessee Titans -0.9."
         },
         {
           "name": "prior-quality-gap",
@@ -579,7 +531,7 @@
           "name": "recent-form",
           "status": "FAIL",
           "passed": false,
-          "evidence": "Prior-week scoring margin -18."
+          "evidence": "Prior-week scoring margin -21."
         },
         {
           "name": "availability",
@@ -603,7 +555,7 @@
       "market_implied_probability": null,
       "reason": null,
       "spread": "Houston Texans -6.5",
-      "structuralFair": "Baltimore Ravens -5.2",
+      "structuralFair": "Baltimore Ravens -4.9",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -615,7 +567,7 @@
           "name": "structural-resistance",
           "status": "PASS",
           "passed": true,
-          "evidence": "Current structural lean BAL; structural fair Baltimore Ravens -5.2."
+          "evidence": "Current structural lean BAL; structural fair Baltimore Ravens -4.9."
         },
         {
           "name": "prior-quality-gap",
@@ -627,7 +579,7 @@
           "name": "recent-form",
           "status": "PASS",
           "passed": true,
-          "evidence": "Prior-week scoring margin -3."
+          "evidence": "Prior-week scoring margin -2."
         },
         {
           "name": "availability",
@@ -646,7 +598,7 @@
       "nearThreshold": false,
       "status": "PRICE_PENDING",
       "minimum_playable_ml": "PRICE_PENDING",
-      "priceSource": "ESPN Draft Kings",
+      "priceSource": "ESPN DraftKings",
       "priceObservedAt": null,
       "market_implied_probability": null,
       "reason": null,
@@ -687,5 +639,5 @@
       "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
     }
   ],
-  "narrativeReconciledAt": "2026-11-22T20:30:28.670Z"
+  "narrativeReconciledAt": "2026-11-22T21:30:05.584Z"
 }
