@@ -1,0 +1,343 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W12-GB-LAR",
+  "portalGameId": "401873079",
+  "week": 12,
+  "away": "Green Bay Packers",
+  "home": "Los Angeles Rams",
+  "awayAbbr": "GB",
+  "homeAbbr": "LAR",
+  "kickoff": "2026-11-26T01:00Z",
+  "generatedAt": "2026-11-23T18:30:34.049585+00:00",
+  "status": "PRICE WATCH",
+  "footballLean": "LAR",
+  "assessmentSide": "LAR",
+  "structuralValueSide": "LAR",
+  "alignment": "ALIGNED",
+  "thesis": "LAR has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "LAR",
+      "gap": 0.013,
+      "unit": "EPA/play",
+      "awayOffense": 0.12723610115586173,
+      "homeDefenseAllowed": -0.08705126376966213,
+      "homeOffense": 0.0969927660898481,
+      "awayDefenseAllowed": -0.031186234855987455,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "LAR",
+      "gap": 0.016,
+      "unit": "EPA/play",
+      "awayOffense": -0.02526315992517182,
+      "homeDefenseAllowed": -0.005402210369480466,
+      "homeOffense": 0.07813862489435519,
+      "awayDefenseAllowed": -0.07764257227215618,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "LAR",
+      "gap": 0.143,
+      "unit": "EPA/play",
+      "awayOffense": -0.19185848826144833,
+      "homeDefenseAllowed": -0.09629011336357522,
+      "homeOffense": 0.039770482632590844,
+      "awayDefenseAllowed": -0.04111118691862274,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "LAR",
+      "gap": 0.265,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.17336683417085427,
+      "homeDefenseAllowed": 0.12112676056338029,
+      "homeOffense": 0.14213197969543148,
+      "awayDefenseAllowed": 0.14705882352941177,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Explosive plays",
+      "side": "GB",
+      "gap": 0.621,
+      "unit": "percentage points",
+      "awayOffense": 0.09688013136288999,
+      "homeDefenseAllowed": 0.07731958762886598,
+      "homeOffense": 0.08708708708708708,
+      "awayDefenseAllowed": 0.07469512195121951,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "LAR",
+      "gap": 0.013,
+      "unit": "EPA/play",
+      "awayOffense": 0.12723610115586173,
+      "homeDefenseAllowed": -0.08705126376966213,
+      "homeOffense": 0.0969927660898481,
+      "awayDefenseAllowed": -0.031186234855987455,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "LAR",
+      "gap": 0.016,
+      "unit": "EPA/play",
+      "awayOffense": -0.02526315992517182,
+      "homeDefenseAllowed": -0.005402210369480466,
+      "homeOffense": 0.07813862489435519,
+      "awayDefenseAllowed": -0.07764257227215618,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "LAR",
+      "gap": 0.143,
+      "unit": "EPA/play",
+      "awayOffense": -0.19185848826144833,
+      "homeDefenseAllowed": -0.09629011336357522,
+      "homeOffense": 0.039770482632590844,
+      "awayDefenseAllowed": -0.04111118691862274,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "GB",
+      "gap": 0.621,
+      "unit": "percentage points",
+      "awayOffense": 0.09688013136288999,
+      "homeDefenseAllowed": 0.07731958762886598,
+      "homeOffense": 0.08708708708708708,
+      "awayDefenseAllowed": 0.07469512195121951,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "LAR",
+      "gap": 0.265,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.17336683417085427,
+      "homeDefenseAllowed": 0.12112676056338029,
+      "homeOffense": 0.14213197969543148,
+      "awayDefenseAllowed": 0.14705882352941177,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": 0.1089,
+  "profiles": {
+    "GB": {
+      "season": {
+        "games": 10,
+        "offPlays": 609,
+        "defPlays": 656,
+        "offEpa": 0.0118,
+        "defEpa": -0.0391,
+        "netEpa": 0.0509,
+        "adjustedNetEpa": 0.0532,
+        "earlyOffEpa": -0.0299,
+        "earlyDefEpa": -0.0768,
+        "passOffEpa": 0.1272,
+        "passDefEpa": -0.0312
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 119,
+        "defPlays": 126,
+        "offEpa": 0.0283,
+        "defEpa": -0.0122,
+        "netEpa": 0.0405,
+        "adjustedNetEpa": 0.0111,
+        "earlyOffEpa": 0.0276,
+        "earlyDefEpa": -0.0661,
+        "passOffEpa": 0.2126,
+        "passDefEpa": -0.0292
+      }
+    },
+    "LAR": {
+      "season": {
+        "games": 10,
+        "offPlays": 666,
+        "defPlays": 582,
+        "offEpa": 0.0707,
+        "defEpa": -0.1119,
+        "netEpa": 0.1825,
+        "adjustedNetEpa": 0.1621,
+        "earlyOffEpa": 0.0821,
+        "earlyDefEpa": -0.0082,
+        "passOffEpa": 0.097,
+        "passDefEpa": -0.0871
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 144,
+        "defPlays": 91,
+        "offEpa": 0.1316,
+        "defEpa": -0.2882,
+        "netEpa": 0.4198,
+        "adjustedNetEpa": 0.3552,
+        "earlyOffEpa": 0.0476,
+        "earlyDefEpa": -0.1223,
+        "passOffEpa": 0.1888,
+        "passDefEpa": -0.3093
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": true,
+    "reason": "Reconciled team priors, prior-week scoring and process adjustment; market excluded from this arithmetic. Structural spread-value comparison still uses market.",
+    "reconstructedHomeMargin": 7.478,
+    "structuralHomeMargin": 7.478
+  },
+  "market": {
+    "spread_display": "Los Angeles Rams -3",
+    "spread": "LAR -3.5",
+    "total": 44.5,
+    "home_margin": 3,
+    "home_team_sportsbook_spread": -3,
+    "moneyline": {
+      "away": 124,
+      "home": -147
+    },
+    "source": "ESPN Draft Kings",
+    "timestamp": "2026-11-23T18:30:21.798Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+    "opener_display": "Los Angeles Rams -3.5",
+    "opening_reference": {
+      "spread": "Los Angeles Rams -3.5",
+      "homeBookSpread": -3.5,
+      "total": 49.5,
+      "moneyline": {
+        "away": "+164",
+        "home": "-198"
+      },
+      "source": "ESPN Draft Kings",
+      "observedAt": "2026-11-23T18:30:21.798Z",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
+      "note": "Provider opening reference; source does not publish the original quote timestamp."
+    }
+  },
+  "productionFair": 3.896,
+  "structuralFair": 7.478,
+  "structuralDifference": 4.478,
+  "price": {
+    "side": "LAR",
+    "minimumSpreadAtSnapshot": -2.0,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-23T18:30:22.134788+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [],
+    "clusters": [],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W12-GB-LAR",
+    "canonical_game_id": "2026-W12-GB-LAR",
+    "matchup": "Green Bay Packers at Los Angeles Rams",
+    "venue": "SoFi Stadium",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Sunny at kickoff: 68\u00b0F; wind WNW 10.0 mph, gust 12.7 mph; precipitation chance 0%. SoFi is covered/open-sided; surrounding point forecast is not on-field wind or rain exposure. No automatic weather model adjustment.",
+    "risk": "no major hourly weather flag",
+    "observed_at": "2026-11-23T18:30:23.976320+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/33.9535,-118.3392",
+    "forecast_timestamp": "2026-11-23T15:02:25+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W12-GB-LAR",
+      "kickoff": "2026-11-26T01:00Z",
+      "temp_f": 68,
+      "wind_mph": 10.0,
+      "gust_mph": 12.7,
+      "precip_chance_pct": 0,
+      "forecast_timestamp": "2026-11-23T15:02:25+00:00",
+      "sources": [
+        "https://api.weather.gov/points/33.9535,-118.3392",
+        "https://api.weather.gov/gridpoints/LOX/151,41/forecast/hourly",
+        "https://api.weather.gov/gridpoints/LOX/151,41"
+      ],
+      "wind_speed_raw": "10 mph",
+      "wind_direction": "WNW",
+      "forecast_hour_start": "2026-11-25T17:00:00-08:00",
+      "forecast_hour_end": "2026-11-25T18:00:00-08:00",
+      "conditions": "Sunny",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "venue_limitation": "SoFi is covered/open-sided; surrounding point forecast is not on-field wind or rain exposure. No automatic weather model adjustment.",
+      "retrieved_at": "2026-11-23T18:30:23.976320+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/33.9535,-118.3392",
+      "https://api.weather.gov/gridpoints/LOX/151,41/forecast/hourly",
+      "https://api.weather.gov/gridpoints/LOX/151,41"
+    ]
+  },
+  "sustainability": {
+    "GB": {
+      "turnoverRate": 0.021346469622331693,
+      "takeawayRate": 0.03048780487804878,
+      "thirdDownConversion": 0.375,
+      "redZoneTdRate": 0.5428571428571428
+    },
+    "LAR": {
+      "turnoverRate": 0.02252252252252252,
+      "takeawayRate": 0.020618556701030927,
+      "thirdDownConversion": 0.425,
+      "redZoneTdRate": 0.6585365853658537
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 11,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-11-17T21:30:33.135Z",
+      "capturedAt": "2026-11-17T21:30:44.414278+00:00",
+      "spread": "Los Angeles Rams -3.5",
+      "homeMargin": 3.5,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-11-23T17:29:46.154Z",
+      "capturedAt": "2026-11-23T17:29:59.658448+00:00",
+      "spread": "Los Angeles Rams -3",
+      "homeMargin": 3,
+      "source": "ESPN Draft Kings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
