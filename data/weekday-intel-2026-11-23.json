@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 12,
-  "generatedAt": "2026-11-23T01:30:05.870Z",
+  "generatedAt": "2026-11-23T02:32:37.674Z",
   "mode": "Wednesday full reprice / universal research",
   "scheduleCoverage": {
     "canonicalGameCount": 16,
@@ -76,10 +76,10 @@
       "matchup": "Denver Broncos at Pittsburgh Steelers",
       "stage": "high-priority-audit",
       "priority": "High",
-      "currentSpread": "Denver Broncos -2.5",
-      "productionSpread": "Denver Broncos -4.4",
+      "currentSpread": "Denver Broncos -3",
+      "productionSpread": "Denver Broncos -4.8",
       "structuralSpread": "Denver Broncos -11.9",
-      "structuralEdge": 9.386,
+      "structuralEdge": 8.886,
       "lean": "DEN",
       "deepDiveStatus": "COMPLETE",
       "upsetResearch": "SCREENED-NOT-QUALIFIED"
@@ -102,13 +102,13 @@
       "matchup": "New York Giants at Indianapolis Colts",
       "stage": "high-priority-audit",
       "priority": "High",
-      "currentSpread": "New York Giants -7",
-      "productionSpread": "New York Giants -9.2",
+      "currentSpread": "New York Giants -6.5",
+      "productionSpread": "New York Giants -8.8",
       "structuralSpread": "New York Giants -18.2",
-      "structuralEdge": 11.156,
+      "structuralEdge": 11.656,
       "lean": "NYG",
       "deepDiveStatus": "COMPLETE",
-      "upsetResearch": "COMPLETE-PRICE-QUALIFIED"
+      "upsetResearch": "COMPLETE-NEAR-THRESHOLD"
     },
     {
       "gameId": "2026-W12-NYJ-MIA",
@@ -129,22 +129,22 @@
       "stage": "high-priority-audit",
       "priority": "High",
       "currentSpread": "Minnesota Vikings -7",
-      "productionSpread": "Minnesota Vikings -5.5",
-      "structuralSpread": "Atlanta Falcons -0.5",
-      "structuralEdge": 7.472,
+      "productionSpread": "Minnesota Vikings -4.8",
+      "structuralSpread": "Atlanta Falcons -4.1",
+      "structuralEdge": 11.097,
       "lean": "ATL",
       "deepDiveStatus": "COMPLETE",
-      "upsetResearch": "COMPLETE-PRICE-QUALIFIED"
+      "upsetResearch": "COMPLETE-PRICE-PENDING"
     },
     {
       "gameId": "2026-W12-TEN-JAX",
       "matchup": "Tennessee Titans at Jacksonville Jaguars",
       "stage": "no-signal",
       "priority": "Low",
-      "currentSpread": "Jacksonville Jaguars -14",
-      "productionSpread": "Jacksonville Jaguars -14.2",
+      "currentSpread": "Jacksonville Jaguars -14.5",
+      "productionSpread": "Jacksonville Jaguars -14.6",
       "structuralSpread": "Jacksonville Jaguars -15",
-      "structuralEdge": 0.998,
+      "structuralEdge": 0.498,
       "lean": "JAX",
       "deepDiveStatus": "COMPLETE",
       "upsetResearch": "COMPLETE-PRICE-QUALIFIED"
@@ -167,10 +167,10 @@
       "matchup": "New England Patriots at Los Angeles Chargers",
       "stage": "high-priority-audit",
       "priority": "High",
-      "currentSpread": "Los Angeles Chargers -2.5",
-      "productionSpread": "Los Angeles Chargers -1",
+      "currentSpread": "Los Angeles Chargers -1.5",
+      "productionSpread": "Los Angeles Chargers -0.2",
       "structuralSpread": "New England Patriots -5.1",
-      "structuralEdge": 7.568,
+      "structuralEdge": 6.568,
       "lean": "NE",
       "deepDiveStatus": "COMPLETE",
       "upsetResearch": "SCREENED-NOT-QUALIFIED"
@@ -191,12 +191,12 @@
     {
       "gameId": "2026-W12-SEA-SF",
       "matchup": "Seattle Seahawks at San Francisco 49ers",
-      "stage": "high-priority-audit",
-      "priority": "High",
+      "stage": "no-signal",
+      "priority": "Low",
       "currentSpread": "San Francisco 49ers -2.5",
-      "productionSpread": "San Francisco 49ers -1.7",
-      "structuralSpread": "Seattle Seahawks -1.3",
-      "structuralEdge": 3.84,
+      "productionSpread": "San Francisco 49ers -2.5",
+      "structuralSpread": "San Francisco 49ers -2.3",
+      "structuralEdge": 0.215,
       "lean": "SEA",
       "deepDiveStatus": "COMPLETE",
       "upsetResearch": "SCREENED-NOT-QUALIFIED"
@@ -219,10 +219,10 @@
       "matchup": "Carolina Panthers at Tampa Bay Buccaneers",
       "stage": "high-priority-audit",
       "priority": "High",
-      "currentSpread": "Tampa Bay Buccaneers -2.5",
-      "productionSpread": "Tampa Bay Buccaneers -0.6",
+      "currentSpread": "Tampa Bay Buccaneers -3",
+      "productionSpread": "Tampa Bay Buccaneers -1",
       "structuralSpread": "Carolina Panthers -6.9",
-      "structuralEdge": 9.375,
+      "structuralEdge": 9.875,
       "lean": "CAR",
       "deepDiveStatus": "COMPLETE",
       "upsetResearch": "SCREENED-NOT-QUALIFIED"
@@ -230,7 +230,7 @@
   ],
   "modelReview": {
     "status": "COMPLETE",
-    "reviewedAt": "2026-11-23T01:30:05.870Z",
+    "reviewedAt": "2026-11-23T02:32:37.674Z",
     "methodologyVersion": "1.1-validated-structural-market-aware+expert-intelligence-v1",
     "phase": {
       "preseasonWeight": 0.275,
@@ -245,6 +245,6 @@
   },
   "upsetResearch": {
     "candidates": 7,
-    "pricePending": 0
+    "pricePending": 1
   }
 }

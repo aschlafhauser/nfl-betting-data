@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 12,
-  "generated_at": "2026-11-23T01:30:19.448Z",
+  "generated_at": "2026-11-23T02:32:52.573Z",
   "schedule_source": "Canonical selected-week NFL board + ESPN scoreboard reconciliation",
   "market_source": "ESPN selected-week odds feed; exact sportsbook/juice required before execution",
   "games": [
@@ -24,11 +24,11 @@
         "home_margin": 3,
         "home_team_sportsbook_spread": -3,
         "moneyline": {
-          "away": 126,
-          "home": -150
+          "away": 128,
+          "home": -151
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-23T01:30:00.575Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-23T02:32:36.639Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Los Angeles Rams -3.5",
         "opening_reference": {
@@ -39,25 +39,25 @@
             "away": "+164",
             "home": "-198"
           },
-          "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-23T01:30:00.575Z",
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-23T02:32:36.639Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
       },
       "model": {
         "fair_spread_display": "Los Angeles Rams -3.9",
-        "fair_spread_home_margin": 3.895,
-        "executable_edge": 0.895,
+        "fair_spread_home_margin": 3.896,
+        "executable_edge": 0.896,
         "edge_side": "LAR",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-11-23T01:30:19.448Z",
+        "edge_reconciled_at": "2026-11-23T02:32:52.573Z",
         "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Los Angeles Rams -3.9",
-        "structural_home_margin": 7.473,
-        "structural_edge": 4.473,
+        "structural_home_margin": 7.48,
+        "structural_edge": 4.48,
         "base_structural_home_margin": 8.9,
-        "advanced_process_adjustment": -1.427,
+        "advanced_process_adjustment": -1.42,
         "motion_matchup_adjustment": 0,
         "structural_fair": "Los Angeles Rams -7.5",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
@@ -73,11 +73,11 @@
             "netPressureRate",
             "netSituationalRate"
           ],
-          "awayProcessRatingPoints": -0.19,
-          "homeProcessRatingPoints": 2.791,
+          "awayProcessRatingPoints": -0.178,
+          "homeProcessRatingPoints": 2.826,
           "liveScoringMarginShare": 0.6,
           "liveAdvancedProcessShare": 0.4,
-          "structuralAdjustment": -1.427
+          "structuralAdjustment": -1.42
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
@@ -92,7 +92,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Selected-week governed model rebuilt 2026-11-23T01:30:19.448Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "why": "Selected-week governed model rebuilt 2026-11-23T02:32:52.573Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -119,11 +119,11 @@
         "home_margin": -2.5,
         "home_team_sportsbook_spread": 2.5,
         "moneyline": {
-          "away": -144,
-          "home": 121
+          "away": -145,
+          "home": 122
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-23T01:30:00.575Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-23T02:32:36.639Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Detroit Lions -2.5",
         "opening_reference": {
@@ -134,8 +134,8 @@
             "away": "+114",
             "home": "-135"
           },
-          "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-23T01:30:00.575Z",
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-23T02:32:36.639Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -146,15 +146,15 @@
         "executable_edge": 0.63,
         "edge_side": "DET",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-11-23T01:30:19.448Z",
+        "edge_reconciled_at": "2026-11-23T02:32:52.573Z",
         "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Chicago Bears -1.9",
-        "structural_home_margin": 0.651,
-        "structural_edge": 3.151,
+        "structural_home_margin": 0.648,
+        "structural_edge": 3.148,
         "base_structural_home_margin": 1.204,
-        "advanced_process_adjustment": -0.553,
+        "advanced_process_adjustment": -0.556,
         "motion_matchup_adjustment": 0,
-        "structural_fair": "Detroit Lions -0.7",
+        "structural_fair": "Detroit Lions -0.6",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
           "throughWeek": 11,
@@ -168,11 +168,11 @@
             "netPressureRate",
             "netSituationalRate"
           ],
-          "awayProcessRatingPoints": 1.439,
-          "homeProcessRatingPoints": 1.532,
+          "awayProcessRatingPoints": 1.469,
+          "homeProcessRatingPoints": 1.552,
           "liveScoringMarginShare": 0.6,
           "liveAdvancedProcessShare": 0.4,
-          "structuralAdjustment": -0.553
+          "structuralAdjustment": -0.556
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
@@ -187,7 +187,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Selected-week governed model rebuilt 2026-11-23T01:30:19.448Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "why": "Selected-week governed model rebuilt 2026-11-23T02:32:52.573Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -214,11 +214,11 @@
         "home_margin": 8.5,
         "home_team_sportsbook_spread": -8.5,
         "moneyline": {
-          "away": 321,
-          "home": -407
+          "away": 308,
+          "home": -389
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-23T01:30:00.575Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-23T02:32:36.639Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Dallas Cowboys -1.5",
         "opening_reference": {
@@ -229,25 +229,25 @@
             "away": "+100",
             "home": "-120"
           },
-          "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-23T01:30:00.575Z",
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-23T02:32:36.639Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
       },
       "model": {
         "fair_spread_display": "Dallas Cowboys -5.9",
-        "fair_spread_home_margin": 5.906,
-        "executable_edge": -2.594,
+        "fair_spread_home_margin": 5.908,
+        "executable_edge": -2.592,
         "edge_side": "PHI",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-11-23T01:30:19.448Z",
+        "edge_reconciled_at": "2026-11-23T02:32:52.573Z",
         "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Dallas Cowboys -5.9",
-        "structural_home_margin": -4.469,
-        "structural_edge": 12.969,
+        "structural_home_margin": -4.461,
+        "structural_edge": 12.961,
         "base_structural_home_margin": -0.139,
-        "advanced_process_adjustment": -4.33,
+        "advanced_process_adjustment": -4.322,
         "motion_matchup_adjustment": 0,
         "structural_fair": "Philadelphia Eagles -4.5",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
@@ -263,11 +263,11 @@
             "netPressureRate",
             "netSituationalRate"
           ],
-          "awayProcessRatingPoints": -3.106,
-          "homeProcessRatingPoints": -0.038,
+          "awayProcessRatingPoints": -3.123,
+          "homeProcessRatingPoints": -0.028,
           "liveScoringMarginShare": 0.6,
           "liveAdvancedProcessShare": 0.4,
-          "structuralAdjustment": -4.33
+          "structuralAdjustment": -4.322
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
@@ -282,7 +282,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Selected-week governed model rebuilt 2026-11-23T01:30:19.448Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "why": "Selected-week governed model rebuilt 2026-11-23T02:32:52.573Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -312,8 +312,8 @@
           "away": 126,
           "home": -150
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-23T01:30:00.575Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-23T02:32:36.639Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Buffalo Bills -2.5",
         "opening_reference": {
@@ -324,8 +324,8 @@
             "away": "+114",
             "home": "-135"
           },
-          "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-23T01:30:00.575Z",
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-23T02:32:36.639Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
@@ -336,13 +336,13 @@
         "executable_edge": 0.272,
         "edge_side": "BUF",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-11-23T01:30:19.448Z",
+        "edge_reconciled_at": "2026-11-23T02:32:52.573Z",
         "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Buffalo Bills -2.8",
-        "structural_home_margin": 3.859,
-        "structural_edge": 1.359,
+        "structural_home_margin": 3.86,
+        "structural_edge": 1.36,
         "base_structural_home_margin": 1.099,
-        "advanced_process_adjustment": 2.76,
+        "advanced_process_adjustment": 2.761,
         "motion_matchup_adjustment": 0,
         "structural_fair": "Buffalo Bills -3.9",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
@@ -358,11 +358,11 @@
             "netPressureRate",
             "netSituationalRate"
           ],
-          "awayProcessRatingPoints": 3.333,
-          "homeProcessRatingPoints": 2.85,
+          "awayProcessRatingPoints": 3.367,
+          "homeProcessRatingPoints": 2.887,
           "liveScoringMarginShare": 0.6,
           "liveAdvancedProcessShare": 0.4,
-          "structuralAdjustment": 2.76
+          "structuralAdjustment": 2.761
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
@@ -377,7 +377,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Selected-week governed model rebuilt 2026-11-23T01:30:19.448Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "why": "Selected-week governed model rebuilt 2026-11-23T02:32:52.573Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -398,17 +398,17 @@
       "priority": "High",
       "stage": "high-priority-audit",
       "market": {
-        "spread_display": "Denver Broncos -2.5",
+        "spread_display": "Denver Broncos -3",
         "spread": "DEN -2.5",
         "total": 39.5,
-        "home_margin": -2.5,
-        "home_team_sportsbook_spread": 2.5,
+        "home_margin": -3,
+        "home_team_sportsbook_spread": 3,
         "moneyline": {
-          "away": -149,
-          "home": 126
+          "away": -152,
+          "home": 128
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-23T01:30:00.575Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-23T02:32:36.639Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Denver Broncos -1.5",
         "opening_reference": {
@@ -419,25 +419,25 @@
             "away": "-118",
             "home": "-102"
           },
-          "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-23T01:30:00.575Z",
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-23T02:32:36.639Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
       },
       "model": {
-        "fair_spread_display": "Denver Broncos -0.9",
-        "fair_spread_home_margin": -0.936,
-        "executable_edge": 1.564,
+        "fair_spread_display": "Denver Broncos -1.3",
+        "fair_spread_home_margin": -1.338,
+        "executable_edge": 1.662,
         "edge_side": "PIT",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-11-23T01:30:19.448Z",
+        "edge_reconciled_at": "2026-11-23T02:32:52.573Z",
         "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Denver Broncos -0.9",
-        "structural_home_margin": 5.318,
-        "structural_edge": 7.818,
+        "fair_spread": "Denver Broncos -1.3",
+        "structural_home_margin": 5.312,
+        "structural_edge": 8.312,
         "base_structural_home_margin": 0.439,
-        "advanced_process_adjustment": 4.879,
+        "advanced_process_adjustment": 4.873,
         "motion_matchup_adjustment": 0,
         "structural_fair": "Pittsburgh Steelers -5.3",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
@@ -453,11 +453,11 @@
             "netPressureRate",
             "netSituationalRate"
           ],
-          "awayProcessRatingPoints": 0.363,
-          "homeProcessRatingPoints": 0.188,
+          "awayProcessRatingPoints": 0.39,
+          "homeProcessRatingPoints": 0.193,
           "liveScoringMarginShare": 0.6,
           "liveAdvancedProcessShare": 0.4,
-          "structuralAdjustment": 4.879
+          "structuralAdjustment": 4.873
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
@@ -472,7 +472,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Selected-week governed model rebuilt 2026-11-23T01:30:19.448Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "why": "Selected-week governed model rebuilt 2026-11-23T02:32:52.573Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -495,15 +495,15 @@
       "market": {
         "spread_display": "Cincinnati Bengals -10",
         "spread": "CIN -10",
-        "total": 52.5,
+        "total": 51.5,
         "home_margin": 10,
         "home_team_sportsbook_spread": -10,
         "moneyline": {
-          "away": 425,
-          "home": -565
+          "away": 430,
+          "home": -574
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-23T01:30:00.575Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-23T02:32:36.639Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Cincinnati Bengals -6.5",
         "opening_reference": {
@@ -514,27 +514,27 @@
             "away": "+235",
             "home": "-290"
           },
-          "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-23T01:30:00.575Z",
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-23T02:32:36.639Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
       },
       "model": {
         "fair_spread_display": "Cincinnati Bengals -8",
-        "fair_spread_home_margin": 7.969,
-        "executable_edge": -2.031,
+        "fair_spread_home_margin": 7.971,
+        "executable_edge": -2.029,
         "edge_side": "NO",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-11-23T01:30:19.448Z",
+        "edge_reconciled_at": "2026-11-23T02:32:52.573Z",
         "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Cincinnati Bengals -8",
-        "structural_home_margin": -0.155,
-        "structural_edge": 10.155,
+        "structural_home_margin": -0.146,
+        "structural_edge": 10.146,
         "base_structural_home_margin": 1.104,
-        "advanced_process_adjustment": -1.259,
+        "advanced_process_adjustment": -1.25,
         "motion_matchup_adjustment": 0,
-        "structural_fair": "New Orleans Saints -0.2",
+        "structural_fair": "New Orleans Saints -0.1",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
           "throughWeek": 11,
@@ -548,11 +548,11 @@
             "netPressureRate",
             "netSituationalRate"
           ],
-          "awayProcessRatingPoints": -1.64,
-          "homeProcessRatingPoints": 2.017,
+          "awayProcessRatingPoints": -1.634,
+          "homeProcessRatingPoints": 2.055,
           "liveScoringMarginShare": 0.6,
           "liveAdvancedProcessShare": 0.4,
-          "structuralAdjustment": -1.259
+          "structuralAdjustment": -1.25
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
@@ -567,7 +567,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Selected-week governed model rebuilt 2026-11-23T01:30:19.448Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "why": "Selected-week governed model rebuilt 2026-11-23T02:32:52.573Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -588,17 +588,17 @@
       "priority": "High",
       "stage": "high-priority-audit",
       "market": {
-        "spread_display": "New York Giants -7",
+        "spread_display": "New York Giants -6.5",
         "spread": "NYG -3.5",
         "total": 41.5,
-        "home_margin": -7,
-        "home_team_sportsbook_spread": 7,
+        "home_margin": -6.5,
+        "home_team_sportsbook_spread": 6.5,
         "moneyline": {
-          "away": -314,
-          "home": 255
+          "away": -302,
+          "home": 246
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-23T01:30:00.575Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-23T02:32:36.639Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Indianapolis Colts -2.5",
         "opening_reference": {
@@ -609,27 +609,27 @@
             "away": "+114",
             "home": "-135"
           },
-          "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-23T01:30:00.575Z",
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-23T02:32:36.639Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
       },
       "model": {
-        "fair_spread_display": "New York Giants -3.6",
-        "fair_spread_home_margin": -3.648,
-        "executable_edge": 3.352,
+        "fair_spread_display": "New York Giants -3.3",
+        "fair_spread_home_margin": -3.256,
+        "executable_edge": 3.244,
         "edge_side": "IND",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-11-23T01:30:19.448Z",
+        "edge_reconciled_at": "2026-11-23T02:32:52.573Z",
         "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "New York Giants -3.6",
-        "structural_home_margin": 9.759,
-        "structural_edge": 16.759,
+        "fair_spread": "New York Giants -3.3",
+        "structural_home_margin": 9.72,
+        "structural_edge": 16.22,
         "base_structural_home_margin": 2.144,
-        "advanced_process_adjustment": 7.615,
+        "advanced_process_adjustment": 7.576,
         "motion_matchup_adjustment": 0,
-        "structural_fair": "Indianapolis Colts -9.8",
+        "structural_fair": "Indianapolis Colts -9.7",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
           "throughWeek": 11,
@@ -643,11 +643,11 @@
             "netPressureRate",
             "netSituationalRate"
           ],
-          "awayProcessRatingPoints": -0.531,
-          "homeProcessRatingPoints": -2.271,
+          "awayProcessRatingPoints": -0.409,
+          "homeProcessRatingPoints": -2.284,
           "liveScoringMarginShare": 0.6,
           "liveAdvancedProcessShare": 0.4,
-          "structuralAdjustment": 7.615
+          "structuralAdjustment": 7.576
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
@@ -662,7 +662,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Selected-week governed model rebuilt 2026-11-23T01:30:19.448Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "why": "Selected-week governed model rebuilt 2026-11-23T02:32:52.573Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -692,8 +692,8 @@
           "away": -201,
           "home": 168
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-23T01:30:00.575Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-23T02:32:36.639Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Miami Dolphins -1.5",
         "opening_reference": {
@@ -704,25 +704,25 @@
             "away": "+105",
             "home": "-125"
           },
-          "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-23T01:30:00.575Z",
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-23T02:32:36.639Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
       },
       "model": {
         "fair_spread_display": "New York Jets -1.4",
-        "fair_spread_home_margin": -1.428,
-        "executable_edge": 2.072,
+        "fair_spread_home_margin": -1.429,
+        "executable_edge": 2.071,
         "edge_side": "MIA",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-11-23T01:30:19.448Z",
+        "edge_reconciled_at": "2026-11-23T02:32:52.573Z",
         "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "New York Jets -1.4",
-        "structural_home_margin": 6.861,
-        "structural_edge": 10.361,
+        "structural_home_margin": 6.857,
+        "structural_edge": 10.357,
         "base_structural_home_margin": 1.473,
-        "advanced_process_adjustment": 5.388,
+        "advanced_process_adjustment": 5.384,
         "motion_matchup_adjustment": 0,
         "structural_fair": "Miami Dolphins -6.9",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
@@ -738,11 +738,11 @@
             "netPressureRate",
             "netSituationalRate"
           ],
-          "awayProcessRatingPoints": -1.127,
-          "homeProcessRatingPoints": -2.546,
+          "awayProcessRatingPoints": -1.129,
+          "homeProcessRatingPoints": -2.562,
           "liveScoringMarginShare": 0.6,
           "liveAdvancedProcessShare": 0.4,
-          "structuralAdjustment": 5.388
+          "structuralAdjustment": 5.384
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
@@ -757,7 +757,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Selected-week governed model rebuilt 2026-11-23T01:30:19.448Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "why": "Selected-week governed model rebuilt 2026-11-23T02:32:52.573Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -789,7 +789,7 @@
         },
         "source": "ESPN Draft Kings",
         "timestamp": "2026-11-23T01:30:00.575Z",
-        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+        "status": "PRICE-RECHECK-REQUIRED",
         "opener_display": "Minnesota Vikings -4.5",
         "opening_reference": {
           "spread": "Minnesota Vikings -4.5",
@@ -806,20 +806,20 @@
         }
       },
       "model": {
-        "fair_spread_display": "Minnesota Vikings -6.7",
-        "fair_spread_home_margin": 6.672,
-        "executable_edge": -0.328,
+        "fair_spread_display": "Minnesota Vikings -7",
+        "fair_spread_home_margin": 6.964,
+        "executable_edge": -0.036,
         "edge_side": "ATL",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-11-23T01:30:19.448Z",
+        "edge_reconciled_at": "2026-11-23T02:32:52.573Z",
         "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Minnesota Vikings -6.7",
-        "structural_home_margin": 5.361,
-        "structural_edge": 1.639,
+        "fair_spread": "Minnesota Vikings -7",
+        "structural_home_margin": 6.82,
+        "structural_edge": 0.18,
         "base_structural_home_margin": 3.878,
-        "advanced_process_adjustment": 1.483,
+        "advanced_process_adjustment": 2.942,
         "motion_matchup_adjustment": 0,
-        "structural_fair": "Minnesota Vikings -5.4",
+        "structural_fair": "Minnesota Vikings -6.8",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
           "throughWeek": 11,
@@ -833,11 +833,11 @@
             "netPressureRate",
             "netSituationalRate"
           ],
-          "awayProcessRatingPoints": -0.912,
-          "homeProcessRatingPoints": 0.882,
+          "awayProcessRatingPoints": -0.91,
+          "homeProcessRatingPoints": 0.915,
           "liveScoringMarginShare": 0.6,
           "liveAdvancedProcessShare": 0.4,
-          "structuralAdjustment": 1.483
+          "structuralAdjustment": 2.942
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
@@ -852,7 +852,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Selected-week governed model rebuilt 2026-11-23T01:30:19.448Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "why": "Selected-week governed model rebuilt 2026-11-23T02:32:52.573Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -873,17 +873,17 @@
       "priority": "Low",
       "stage": "no-signal",
       "market": {
-        "spread_display": "Jacksonville Jaguars -14",
+        "spread_display": "Jacksonville Jaguars -14.5",
         "spread": "JAX -14.5",
         "total": 47.5,
-        "home_margin": 14,
-        "home_team_sportsbook_spread": -14,
+        "home_margin": 14.5,
+        "home_team_sportsbook_spread": -14.5,
         "moneyline": {
           "away": 710,
           "home": -1120
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-23T01:30:00.575Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-23T02:32:36.639Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Jacksonville Jaguars -5.5",
         "opening_reference": {
@@ -894,27 +894,27 @@
             "away": "+210",
             "home": "-258"
           },
-          "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-23T01:30:00.575Z",
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-23T02:32:36.639Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
       },
       "model": {
-        "fair_spread_display": "Jacksonville Jaguars -11.3",
-        "fair_spread_home_margin": 11.328,
-        "executable_edge": -2.672,
+        "fair_spread_display": "Jacksonville Jaguars -11.7",
+        "fair_spread_home_margin": 11.705,
+        "executable_edge": -2.795,
         "edge_side": "TEN",
         "confidence": "low",
-        "edge_reconciled_at": "2026-11-23T01:30:19.448Z",
+        "edge_reconciled_at": "2026-11-23T02:32:52.573Z",
         "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Jacksonville Jaguars -11.3",
-        "structural_home_margin": 0.638,
-        "structural_edge": 13.362,
+        "fair_spread": "Jacksonville Jaguars -11.7",
+        "structural_home_margin": 0.523,
+        "structural_edge": 13.977,
         "base_structural_home_margin": 3.398,
-        "advanced_process_adjustment": -2.76,
+        "advanced_process_adjustment": -2.875,
         "motion_matchup_adjustment": 0,
-        "structural_fair": "Jacksonville Jaguars -0.6",
+        "structural_fair": "Jacksonville Jaguars -0.5",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
           "throughWeek": 11,
@@ -928,11 +928,11 @@
             "netPressureRate",
             "netSituationalRate"
           ],
-          "awayProcessRatingPoints": -2.819,
-          "homeProcessRatingPoints": 3.664,
+          "awayProcessRatingPoints": -2.838,
+          "homeProcessRatingPoints": 3.248,
           "liveScoringMarginShare": 0.6,
           "liveAdvancedProcessShare": 0.4,
-          "structuralAdjustment": -2.76
+          "structuralAdjustment": -2.875
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
@@ -947,7 +947,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Selected-week governed model rebuilt 2026-11-23T01:30:19.448Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "why": "Selected-week governed model rebuilt 2026-11-23T02:32:52.573Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "no-signal",
@@ -974,11 +974,11 @@
         "home_margin": 6.5,
         "home_team_sportsbook_spread": -6.5,
         "moneyline": {
-          "away": 228,
-          "home": -279
+          "away": 232,
+          "home": -283
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-23T01:30:00.575Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-23T02:32:36.639Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Houston Texans -1.5",
         "opening_reference": {
@@ -989,25 +989,25 @@
             "away": "-102",
             "home": "-118"
           },
-          "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-23T01:30:00.575Z",
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-23T02:32:36.639Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
       },
       "model": {
         "fair_spread_display": "Houston Texans -4.2",
-        "fair_spread_home_margin": 4.226,
-        "executable_edge": -2.274,
+        "fair_spread_home_margin": 4.227,
+        "executable_edge": -2.273,
         "edge_side": "BAL",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-11-23T01:30:19.448Z",
+        "edge_reconciled_at": "2026-11-23T02:32:52.573Z",
         "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Houston Texans -4.2",
-        "structural_home_margin": -4.871,
-        "structural_edge": 11.371,
+        "structural_home_margin": -4.864,
+        "structural_edge": 11.364,
         "base_structural_home_margin": 1.963,
-        "advanced_process_adjustment": -6.834,
+        "advanced_process_adjustment": -6.827,
         "motion_matchup_adjustment": 0,
         "structural_fair": "Baltimore Ravens -4.9",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
@@ -1023,11 +1023,11 @@
             "netPressureRate",
             "netSituationalRate"
           ],
-          "awayProcessRatingPoints": -0.115,
-          "homeProcessRatingPoints": 1.321,
+          "awayProcessRatingPoints": -0.109,
+          "homeProcessRatingPoints": 1.35,
           "liveScoringMarginShare": 0.6,
           "liveAdvancedProcessShare": 0.4,
-          "structuralAdjustment": -6.834
+          "structuralAdjustment": -6.827
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
@@ -1042,7 +1042,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Selected-week governed model rebuilt 2026-11-23T01:30:19.448Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "why": "Selected-week governed model rebuilt 2026-11-23T02:32:52.573Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -1063,17 +1063,17 @@
       "priority": "High",
       "stage": "high-priority-audit",
       "market": {
-        "spread_display": "Los Angeles Chargers -2.5",
+        "spread_display": "Los Angeles Chargers -1.5",
         "spread": "LAC -3.5",
-        "total": 37.5,
-        "home_margin": 2.5,
-        "home_team_sportsbook_spread": -2.5,
+        "total": 38.5,
+        "home_margin": 1.5,
+        "home_team_sportsbook_spread": -1.5,
         "moneyline": {
-          "away": 117,
-          "home": -138
+          "away": 101,
+          "home": -119
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-23T01:30:00.575Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-23T02:32:36.639Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Los Angeles Chargers -2.5",
         "opening_reference": {
@@ -1084,25 +1084,25 @@
             "away": "+114",
             "home": "-135"
           },
-          "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-23T01:30:00.575Z",
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-23T02:32:36.639Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
       },
       "model": {
-        "fair_spread_display": "Los Angeles Chargers -1.7",
-        "fair_spread_home_margin": 1.674,
-        "executable_edge": -0.826,
+        "fair_spread_display": "Los Angeles Chargers -0.9",
+        "fair_spread_home_margin": 0.872,
+        "executable_edge": -0.628,
         "edge_side": "NE",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-11-23T01:30:19.448Z",
+        "edge_reconciled_at": "2026-11-23T02:32:52.573Z",
         "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Los Angeles Chargers -1.7",
-        "structural_home_margin": -1.629,
-        "structural_edge": 4.129,
+        "fair_spread": "Los Angeles Chargers -0.9",
+        "structural_home_margin": -1.638,
+        "structural_edge": 3.138,
         "base_structural_home_margin": -2.893,
-        "advanced_process_adjustment": 1.264,
+        "advanced_process_adjustment": 1.255,
         "motion_matchup_adjustment": 0,
         "structural_fair": "New England Patriots -1.6",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
@@ -1118,11 +1118,11 @@
             "netPressureRate",
             "netSituationalRate"
           ],
-          "awayProcessRatingPoints": -0.211,
-          "homeProcessRatingPoints": -3.153,
+          "awayProcessRatingPoints": -0.2,
+          "homeProcessRatingPoints": -3.171,
           "liveScoringMarginShare": 0.6,
           "liveAdvancedProcessShare": 0.4,
-          "structuralAdjustment": 1.264
+          "structuralAdjustment": 1.255
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
@@ -1137,7 +1137,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Selected-week governed model rebuilt 2026-11-23T01:30:19.448Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "why": "Selected-week governed model rebuilt 2026-11-23T02:32:52.573Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -1167,8 +1167,8 @@
           "away": -352,
           "home": 283
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-23T01:30:00.575Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-23T02:32:36.639Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Washington Commanders -4.5",
         "opening_reference": {
@@ -1179,25 +1179,25 @@
             "away": "-218",
             "home": "+180"
           },
-          "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-23T01:30:00.575Z",
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-23T02:32:36.639Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
       },
       "model": {
         "fair_spread_display": "Washington Commanders -3.8",
-        "fair_spread_home_margin": -3.816,
-        "executable_edge": 3.184,
+        "fair_spread_home_margin": -3.817,
+        "executable_edge": 3.183,
         "edge_side": "ARI",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-11-23T01:30:19.448Z",
+        "edge_reconciled_at": "2026-11-23T02:32:52.573Z",
         "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Washington Commanders -3.8",
-        "structural_home_margin": 8.921,
-        "structural_edge": 15.921,
+        "structural_home_margin": 8.915,
+        "structural_edge": 15.915,
         "base_structural_home_margin": 1.572,
-        "advanced_process_adjustment": 7.349,
+        "advanced_process_adjustment": 7.343,
         "motion_matchup_adjustment": 0,
         "structural_fair": "Arizona Cardinals -8.9",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
@@ -1214,10 +1214,10 @@
             "netSituationalRate"
           ],
           "awayProcessRatingPoints": -0.887,
-          "homeProcessRatingPoints": -2.544,
+          "homeProcessRatingPoints": -2.566,
           "liveScoringMarginShare": 0.6,
           "liveAdvancedProcessShare": 0.4,
-          "structuralAdjustment": 7.349
+          "structuralAdjustment": 7.343
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
@@ -1232,7 +1232,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Selected-week governed model rebuilt 2026-11-23T01:30:19.448Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "why": "Selected-week governed model rebuilt 2026-11-23T02:32:52.573Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -1250,8 +1250,8 @@
       "kickoff": "2026-11-29T21:25Z",
       "kickoff_local": "2026-11-29T21:25Z",
       "tv": "Fox",
-      "priority": "High",
-      "stage": "high-priority-audit",
+      "priority": "Low",
+      "stage": "no-signal",
       "market": {
         "spread_display": "San Francisco 49ers -2.5",
         "spread": "SF -3",
@@ -1264,7 +1264,7 @@
         },
         "source": "ESPN Draft Kings",
         "timestamp": "2026-11-23T01:30:00.575Z",
-        "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+        "status": "PRICE-RECHECK-REQUIRED",
         "opener_display": "San Francisco 49ers -1.5",
         "opening_reference": {
           "spread": "San Francisco 49ers -1.5",
@@ -1281,20 +1281,20 @@
         }
       },
       "model": {
-        "fair_spread_display": "San Francisco 49ers -1.1",
-        "fair_spread_home_margin": 1.148,
-        "executable_edge": -1.352,
+        "fair_spread_display": "San Francisco 49ers -0.9",
+        "fair_spread_home_margin": 0.859,
+        "executable_edge": -1.641,
         "edge_side": "SEA",
-        "confidence": "high-review",
-        "edge_reconciled_at": "2026-11-23T01:30:19.448Z",
+        "confidence": "low",
+        "edge_reconciled_at": "2026-11-23T02:32:52.573Z",
         "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "San Francisco 49ers -1.1",
-        "structural_home_margin": -4.262,
-        "structural_edge": 6.762,
+        "fair_spread": "San Francisco 49ers -0.9",
+        "structural_home_margin": -5.706,
+        "structural_edge": 8.206,
         "base_structural_home_margin": -5.69,
-        "advanced_process_adjustment": 1.428,
+        "advanced_process_adjustment": -0.016,
         "motion_matchup_adjustment": 0,
-        "structural_fair": "Seattle Seahawks -4.3",
+        "structural_fair": "Seattle Seahawks -5.7",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
         "advanced_process": {
           "throughWeek": 11,
@@ -1308,11 +1308,11 @@
             "netPressureRate",
             "netSituationalRate"
           ],
-          "awayProcessRatingPoints": 1.297,
-          "homeProcessRatingPoints": 4.542,
+          "awayProcessRatingPoints": 1.322,
+          "homeProcessRatingPoints": 4.586,
           "liveScoringMarginShare": 0.6,
           "liveAdvancedProcessShare": 0.4,
-          "structuralAdjustment": 1.428
+          "structuralAdjustment": -0.016
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
@@ -1327,11 +1327,11 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Selected-week governed model rebuilt 2026-11-23T01:30:19.448Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "why": "Selected-week governed model rebuilt 2026-11-23T02:32:52.573Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
-        "stage": "high-priority-audit",
-        "priority": "High",
+        "stage": "no-signal",
+        "priority": "Low",
         "model_review": "frozen v1.1 Wednesday rebuild"
       }
     },
@@ -1357,8 +1357,8 @@
           "away": 176,
           "home": -211
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-23T01:30:00.575Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-23T02:32:36.639Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Cleveland Browns -2.5",
         "opening_reference": {
@@ -1369,25 +1369,25 @@
             "away": "+110",
             "home": "-130"
           },
-          "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-23T01:30:00.575Z",
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-23T02:32:36.639Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
       },
       "model": {
         "fair_spread_display": "Cleveland Browns -2.6",
-        "fair_spread_home_margin": 2.555,
-        "executable_edge": -1.945,
+        "fair_spread_home_margin": 2.556,
+        "executable_edge": -1.944,
         "edge_side": "LV",
         "confidence": "medium",
-        "edge_reconciled_at": "2026-11-23T01:30:19.448Z",
+        "edge_reconciled_at": "2026-11-23T02:32:52.573Z",
         "edge_convention": "production fair home margin - current market home margin",
         "fair_spread": "Cleveland Browns -2.6",
-        "structural_home_margin": -5.223,
-        "structural_edge": 9.723,
+        "structural_home_margin": -5.22,
+        "structural_edge": 9.72,
         "base_structural_home_margin": -3.258,
-        "advanced_process_adjustment": -1.965,
+        "advanced_process_adjustment": -1.962,
         "motion_matchup_adjustment": 0,
         "structural_fair": "Las Vegas Raiders -5.2",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
@@ -1403,11 +1403,11 @@
             "netPressureRate",
             "netSituationalRate"
           ],
-          "awayProcessRatingPoints": -2.995,
-          "homeProcessRatingPoints": -1.21,
+          "awayProcessRatingPoints": -3.005,
+          "homeProcessRatingPoints": -1.209,
           "liveScoringMarginShare": 0.6,
           "liveAdvancedProcessShare": 0.4,
-          "structuralAdjustment": -1.965
+          "structuralAdjustment": -1.962
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
@@ -1422,7 +1422,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Selected-week governed model rebuilt 2026-11-23T01:30:19.448Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "why": "Selected-week governed model rebuilt 2026-11-23T02:32:52.573Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "research",
@@ -1443,17 +1443,17 @@
       "priority": "High",
       "stage": "high-priority-audit",
       "market": {
-        "spread_display": "Tampa Bay Buccaneers -2.5",
+        "spread_display": "Tampa Bay Buccaneers -3",
         "spread": "TB -2.5",
         "total": 43.5,
-        "home_margin": 2.5,
-        "home_team_sportsbook_spread": -2.5,
+        "home_margin": 3,
+        "home_team_sportsbook_spread": -3,
         "moneyline": {
-          "away": 125,
-          "home": -148
+          "away": 131,
+          "home": -155
         },
-        "source": "ESPN Draft Kings",
-        "timestamp": "2026-11-23T01:30:00.575Z",
+        "source": "ESPN DraftKings",
+        "timestamp": "2026-11-23T02:32:36.639Z",
         "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
         "opener_display": "Tampa Bay Buccaneers -3.5",
         "opening_reference": {
@@ -1464,25 +1464,25 @@
             "away": "+160",
             "home": "-192"
           },
-          "source": "ESPN Draft Kings",
-          "observedAt": "2026-11-23T01:30:00.575Z",
+          "source": "ESPN DraftKings",
+          "observedAt": "2026-11-23T02:32:36.639Z",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
           "note": "Provider opening reference; source does not publish the original quote timestamp."
         }
       },
       "model": {
-        "fair_spread_display": "Tampa Bay Buccaneers -3.1",
-        "fair_spread_home_margin": 3.067,
-        "executable_edge": 0.567,
+        "fair_spread_display": "Tampa Bay Buccaneers -3.5",
+        "fair_spread_home_margin": 3.467,
+        "executable_edge": 0.467,
         "edge_side": "TB",
         "confidence": "high-review",
-        "edge_reconciled_at": "2026-11-23T01:30:19.448Z",
+        "edge_reconciled_at": "2026-11-23T02:32:52.573Z",
         "edge_convention": "production fair home margin - current market home margin",
-        "fair_spread": "Tampa Bay Buccaneers -3.1",
-        "structural_home_margin": 5.333,
-        "structural_edge": 2.833,
+        "fair_spread": "Tampa Bay Buccaneers -3.5",
+        "structural_home_margin": 5.335,
+        "structural_edge": 2.335,
         "base_structural_home_margin": 1.825,
-        "advanced_process_adjustment": 3.508,
+        "advanced_process_adjustment": 3.51,
         "motion_matchup_adjustment": 0,
         "structural_fair": "Tampa Bay Buccaneers -5.3",
         "model_version": "NFL-v1.2 advanced process + research-only motion matchup",
@@ -1499,10 +1499,10 @@
             "netSituationalRate"
           ],
           "awayProcessRatingPoints": -0.01,
-          "homeProcessRatingPoints": 0.088,
+          "homeProcessRatingPoints": 0.093,
           "liveScoringMarginShare": 0.6,
           "liveAdvancedProcessShare": 0.4,
-          "structuralAdjustment": 3.508
+          "structuralAdjustment": 3.51
         },
         "motion_matchup": {
           "source": "governed motion-rate + categorical defensive response",
@@ -1517,7 +1517,7 @@
         "high_risk_flags": [],
         "timestamp": null
       },
-      "why": "Selected-week governed model rebuilt 2026-11-23T01:30:19.448Z; NFL-v1.2 advanced process + research-only motion matchup.",
+      "why": "Selected-week governed model rebuilt 2026-11-23T02:32:52.573Z; NFL-v1.2 advanced process + research-only motion matchup.",
       "event_state": "scheduled",
       "research": {
         "stage": "high-priority-audit",
@@ -1528,9 +1528,9 @@
   ],
   "runtime_refresh": {
     "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
-    "observed_at": "2026-11-23T01:30:00.575Z",
+    "observed_at": "2026-11-23T02:32:36.639Z",
     "espn_events": 16,
-    "current_odds_games": 16,
+    "current_odds_games": 14,
     "identity_normalization": "registry v1: canonical abbreviations and aliases normalized before joins",
     "edge_reconciliation": "Every legacy portal executable edge recomputed from fair_spread_home_margin - current market.home_margin"
   },
@@ -1547,6 +1547,6 @@
     "status": "SYNCHRONIZED",
     "canonicalWeek": 12,
     "matchedGames": 16,
-    "verifiedAt": "2026-11-23T01:30:19.448Z"
+    "verifiedAt": "2026-11-23T02:32:52.573Z"
   }
 }
