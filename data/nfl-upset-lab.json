@@ -1,13 +1,13 @@
 {
   "season": 2026,
   "week": 12,
-  "generated_at": "2026-11-23T11:30:29.147Z",
+  "generated_at": "2026-11-23T12:36:20.395Z",
   "method": "Wednesday spread-based upset screen plus exact-price governance",
   "coverage": {
     "all_current_threshold_candidates_represented": true,
     "selected_week_games": 16,
     "spread_screen_candidates": 0,
-    "near_threshold_watch": 2,
+    "near_threshold_watch": 1,
     "price_policy": "Exact moneylines never inferred from spreads."
   },
   "candidates": [
@@ -20,11 +20,11 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-23T11:30:27.800Z",
+      "priceObservedAt": "2026-11-23T12:36:18.221Z",
       "market_implied_probability": 0.2222,
       "reason": null,
       "spread": "Dallas Cowboys -8.5",
-      "structuralFair": "Dallas Cowboys -12.9",
+      "structuralFair": "Philadelphia Eagles -4.5",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -34,9 +34,9 @@
         },
         {
           "name": "structural-resistance",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Frozen structural lean DAL; structural fair Dallas Cowboys -12.9."
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Current structural lean PHI; structural fair Philadelphia Eagles -4.5."
         },
         {
           "name": "prior-quality-gap",
@@ -68,11 +68,11 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-23T11:30:27.800Z",
+      "priceObservedAt": "2026-11-23T12:36:18.221Z",
       "market_implied_probability": 0.1812,
       "reason": null,
       "spread": "Cincinnati Bengals -10",
-      "structuralFair": "Cincinnati Bengals -6.9",
+      "structuralFair": "New Orleans Saints -0.2",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -84,7 +84,7 @@
           "name": "structural-resistance",
           "status": "PASS",
           "passed": true,
-          "evidence": "Frozen structural lean NO; structural fair Cincinnati Bengals -6.9."
+          "evidence": "Current structural lean NO; structural fair New Orleans Saints -0.2."
         },
         {
           "name": "prior-quality-gap",
@@ -116,11 +116,11 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-23T11:30:27.800Z",
+      "priceObservedAt": "2026-11-23T12:36:18.221Z",
       "market_implied_probability": 0.2801,
       "reason": null,
       "spread": "New York Giants -6.5",
-      "structuralFair": "New York Giants -18.2",
+      "structuralFair": "Indianapolis Colts -9.7",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -130,9 +130,9 @@
         },
         {
           "name": "structural-resistance",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Frozen structural lean NYG; structural fair New York Giants -18.2."
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Current structural lean IND; structural fair Indianapolis Colts -9.7."
         },
         {
           "name": "prior-quality-gap",
@@ -156,6 +156,54 @@
       "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 257 via ESPN Draft Kings; threshold qualification is separate from recommendation."
     },
     {
+      "game_id": "2026-W12-ATL-MIN",
+      "team": "ATL",
+      "moneyline": 251,
+      "eligible": true,
+      "nearThreshold": false,
+      "status": "PRICE_QUALIFIED-RESEARCH",
+      "minimum_playable_ml": "NOT_VALIDATED",
+      "priceSource": "ESPN Draft Kings",
+      "priceObservedAt": "2026-11-23T12:36:18.221Z",
+      "market_implied_probability": 0.2849,
+      "reason": null,
+      "spread": "Minnesota Vikings -7",
+      "structuralFair": "Minnesota Vikings -10.7",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Atlanta Falcons is 7 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Current structural lean MIN; structural fair Minnesota Vikings -10.7."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Preseason prior -2.68 vs opponent 0.72."
+        },
+        {
+          "name": "recent-form",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "No completed live sample."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 251 via ESPN Draft Kings; threshold qualification is separate from recommendation."
+    },
+    {
       "game_id": "2026-W12-TEN-JAX",
       "team": "TEN",
       "moneyline": 730,
@@ -164,11 +212,11 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-23T11:30:27.800Z",
+      "priceObservedAt": "2026-11-23T12:36:18.221Z",
       "market_implied_probability": 0.1205,
       "reason": null,
       "spread": "Jacksonville Jaguars -14.5",
-      "structuralFair": "Jacksonville Jaguars -15",
+      "structuralFair": "Jacksonville Jaguars -0.5",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -178,9 +226,9 @@
         },
         {
           "name": "structural-resistance",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Frozen structural lean JAX; structural fair Jacksonville Jaguars -15."
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Current structural lean TEN; structural fair Jacksonville Jaguars -0.5."
         },
         {
           "name": "prior-quality-gap",
@@ -212,11 +260,11 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-23T11:30:27.800Z",
+      "priceObservedAt": "2026-11-23T12:36:18.221Z",
       "market_implied_probability": 0.2611,
       "reason": null,
       "spread": "Washington Commanders -7",
-      "structuralFair": "Washington Commanders -18",
+      "structuralFair": "Arizona Cardinals -8.9",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -226,9 +274,9 @@
         },
         {
           "name": "structural-resistance",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Frozen structural lean WSH; structural fair Washington Commanders -18."
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Current structural lean ARI; structural fair Arizona Cardinals -8.9."
         },
         {
           "name": "prior-quality-gap",
@@ -254,54 +302,6 @@
   ],
   "near_threshold_watch": [
     {
-      "game_id": "2026-W12-ATL-MIN",
-      "team": "ATL",
-      "moneyline": 248,
-      "eligible": false,
-      "nearThreshold": true,
-      "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
-      "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-23T11:30:27.800Z",
-      "market_implied_probability": 0.2874,
-      "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
-      "spread": "Minnesota Vikings -7",
-      "structuralFair": "Atlanta Falcons -14.2",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Atlanta Falcons is 7 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Frozen structural lean ATL; structural fair Atlanta Falcons -14.2."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Preseason prior -2.68 vs opponent 0.72."
-        },
-        {
-          "name": "recent-form",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "No completed live sample."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 248 via ESPN Draft Kings; threshold qualification is separate from recommendation."
-    },
-    {
       "game_id": "2026-W12-BAL-HOU",
       "team": "BAL",
       "moneyline": 228,
@@ -310,11 +310,11 @@
       "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-23T11:30:27.800Z",
+      "priceObservedAt": "2026-11-23T12:36:18.221Z",
       "market_implied_probability": 0.3049,
       "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
       "spread": "Houston Texans -6.5",
-      "structuralFair": "Houston Texans -20.1",
+      "structuralFair": "Baltimore Ravens -4.9",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -324,9 +324,9 @@
         },
         {
           "name": "structural-resistance",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Frozen structural lean HOU; structural fair Houston Texans -20.1."
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Current structural lean BAL; structural fair Baltimore Ravens -4.9."
         },
         {
           "name": "prior-quality-gap",
@@ -350,5 +350,6 @@
       "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 228 via ESPN Draft Kings; threshold qualification is separate from recommendation."
     }
   ],
-  "price_pending": []
+  "price_pending": [],
+  "narrativeReconciledAt": "2026-11-23T12:36:45.917Z"
 }
