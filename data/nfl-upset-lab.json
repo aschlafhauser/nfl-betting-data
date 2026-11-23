@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 12,
-  "generated_at": "2026-11-23T03:33:52.707Z",
+  "generated_at": "2026-11-23T04:33:15.212Z",
   "method": "Wednesday spread-based upset screen plus exact-price governance",
   "coverage": {
     "all_current_threshold_candidates_represented": true,
@@ -14,17 +14,17 @@
     {
       "game_id": "2026-W12-PHI-DAL",
       "team": "PHI",
-      "moneyline": 312,
+      "moneyline": 324,
       "eligible": true,
       "nearThreshold": false,
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-23T03:33:51.389Z",
-      "market_implied_probability": 0.2427,
+      "priceObservedAt": "2026-11-23T04:33:14.175Z",
+      "market_implied_probability": 0.2358,
       "reason": null,
       "spread": "Dallas Cowboys -8.5",
-      "structuralFair": "Philadelphia Eagles -4.5",
+      "structuralFair": "Dallas Cowboys -12.9",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -34,9 +34,9 @@
         },
         {
           "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Current structural lean PHI; structural fair Philadelphia Eagles -4.5."
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Frozen structural lean DAL; structural fair Dallas Cowboys -12.9."
         },
         {
           "name": "prior-quality-gap",
@@ -57,7 +57,7 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 312 via ESPN Draft Kings; threshold qualification is separate from recommendation."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 324 via ESPN Draft Kings; threshold qualification is separate from recommendation."
     },
     {
       "game_id": "2026-W12-NO-CIN",
@@ -68,11 +68,11 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-23T03:33:51.389Z",
+      "priceObservedAt": "2026-11-23T04:33:14.175Z",
       "market_implied_probability": 0.1812,
       "reason": null,
       "spread": "Cincinnati Bengals -10",
-      "structuralFair": "New Orleans Saints -0.1",
+      "structuralFair": "Cincinnati Bengals -6.9",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -84,7 +84,7 @@
           "name": "structural-resistance",
           "status": "PASS",
           "passed": true,
-          "evidence": "Current structural lean NO; structural fair New Orleans Saints -0.1."
+          "evidence": "Frozen structural lean NO; structural fair Cincinnati Bengals -6.9."
         },
         {
           "name": "prior-quality-gap",
@@ -120,7 +120,7 @@
       "market_implied_probability": null,
       "reason": null,
       "spread": "Minnesota Vikings -7",
-      "structuralFair": "Minnesota Vikings -8.9",
+      "structuralFair": "Atlanta Falcons -14.2",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -130,9 +130,9 @@
         },
         {
           "name": "structural-resistance",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Current structural lean MIN; structural fair Minnesota Vikings -8.9."
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Frozen structural lean ATL; structural fair Atlanta Falcons -14.2."
         },
         {
           "name": "prior-quality-gap",
@@ -164,11 +164,11 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-23T03:33:51.389Z",
+      "priceObservedAt": "2026-11-23T04:33:14.175Z",
       "market_implied_probability": 0.122,
       "reason": null,
       "spread": "Jacksonville Jaguars -14.5",
-      "structuralFair": "Jacksonville Jaguars -0.5",
+      "structuralFair": "Jacksonville Jaguars -15",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -178,9 +178,9 @@
         },
         {
           "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Current structural lean TEN; structural fair Jacksonville Jaguars -0.5."
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Frozen structural lean JAX; structural fair Jacksonville Jaguars -15."
         },
         {
           "name": "prior-quality-gap",
@@ -212,11 +212,11 @@
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-23T03:33:51.389Z",
+      "priceObservedAt": "2026-11-23T04:33:14.175Z",
       "market_implied_probability": 0.2611,
       "reason": null,
       "spread": "Washington Commanders -7",
-      "structuralFair": "Arizona Cardinals -8.9",
+      "structuralFair": "Washington Commanders -18",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -226,9 +226,9 @@
         },
         {
           "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Current structural lean ARI; structural fair Arizona Cardinals -8.9."
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Frozen structural lean WSH; structural fair Washington Commanders -18."
         },
         {
           "name": "prior-quality-gap",
@@ -262,11 +262,11 @@
       "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-23T03:33:51.389Z",
+      "priceObservedAt": "2026-11-23T04:33:14.175Z",
       "market_implied_probability": 0.289,
       "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
       "spread": "New York Giants -6.5",
-      "structuralFair": "Indianapolis Colts -9.7",
+      "structuralFair": "New York Giants -18.2",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -276,9 +276,9 @@
         },
         {
           "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Current structural lean IND; structural fair Indianapolis Colts -9.7."
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Frozen structural lean NYG; structural fair New York Giants -18.2."
         },
         {
           "name": "prior-quality-gap",
@@ -310,11 +310,11 @@
       "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
       "minimum_playable_ml": "NOT_VALIDATED",
       "priceSource": "ESPN Draft Kings",
-      "priceObservedAt": "2026-11-23T03:33:51.389Z",
+      "priceObservedAt": "2026-11-23T04:33:14.175Z",
       "market_implied_probability": 0.3012,
       "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
       "spread": "Houston Texans -6.5",
-      "structuralFair": "Baltimore Ravens -4.9",
+      "structuralFair": "Houston Texans -20.1",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -324,9 +324,9 @@
         },
         {
           "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Current structural lean BAL; structural fair Baltimore Ravens -4.9."
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Frozen structural lean HOU; structural fair Houston Texans -20.1."
         },
         {
           "name": "prior-quality-gap",
@@ -364,7 +364,7 @@
       "market_implied_probability": null,
       "reason": null,
       "spread": "Minnesota Vikings -7",
-      "structuralFair": "Minnesota Vikings -8.9",
+      "structuralFair": "Atlanta Falcons -14.2",
       "criteria": [
         {
           "name": "market-underdog-profile",
@@ -374,9 +374,9 @@
         },
         {
           "name": "structural-resistance",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Current structural lean MIN; structural fair Minnesota Vikings -8.9."
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Frozen structural lean ATL; structural fair Atlanta Falcons -14.2."
         },
         {
           "name": "prior-quality-gap",
@@ -399,6 +399,5 @@
       ],
       "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Exact moneyline is not inferred; price qualification waits for a directly observed governed ML."
     }
-  ],
-  "narrativeReconciledAt": "2026-11-23T03:34:13.388Z"
+  ]
 }
