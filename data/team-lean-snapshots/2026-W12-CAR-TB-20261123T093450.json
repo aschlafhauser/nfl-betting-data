@@ -1,0 +1,314 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W12-CAR-TB",
+  "portalGameId": "401873094",
+  "week": 12,
+  "away": "Carolina Panthers",
+  "home": "Tampa Bay Buccaneers",
+  "awayAbbr": "CAR",
+  "homeAbbr": "TB",
+  "kickoff": "2026-12-01T01:15Z",
+  "generatedAt": "2026-11-23T09:34:50.762703+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "TB",
+  "assessmentSide": "TB",
+  "structuralValueSide": null,
+  "alignment": "UNRESOLVED",
+  "thesis": "TB has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Rushing efficiency",
+      "side": "TB",
+      "gap": 0.002,
+      "unit": "EPA/play",
+      "awayOffense": 0.01949250125947505,
+      "homeDefenseAllowed": -0.028338140049005985,
+      "homeOffense": 0.019970179503508795,
+      "awayDefenseAllowed": -0.02503083683247856,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "TB",
+      "gap": 0.097,
+      "unit": "percentage points",
+      "awayOffense": 0.0975609756097561,
+      "homeDefenseAllowed": 0.07530647985989491,
+      "homeOffense": 0.0935483870967742,
+      "awayDefenseAllowed": 0.08125,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "TB",
+      "gap": 1.113,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.163855421686747,
+      "homeDefenseAllowed": 0.12602739726027398,
+      "homeOffense": 0.15223880597014924,
+      "awayDefenseAllowed": 0.11538461538461539,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Passing efficiency",
+      "side": "CAR",
+      "gap": 0.018,
+      "unit": "EPA/play",
+      "awayOffense": 0.05691706564793735,
+      "homeDefenseAllowed": -0.08390802337596286,
+      "homeOffense": -0.11576510911773931,
+      "awayDefenseAllowed": 0.052553330188453436,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "CAR",
+      "gap": 0.025,
+      "unit": "EPA/play",
+      "awayOffense": 0.07720898021863515,
+      "homeDefenseAllowed": -0.03599285728142508,
+      "homeOffense": -0.02441613356142259,
+      "awayDefenseAllowed": 0.016403815114159528,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "CAR",
+      "gap": 0.018,
+      "unit": "EPA/play",
+      "awayOffense": 0.05691706564793735,
+      "homeDefenseAllowed": -0.08390802337596286,
+      "homeOffense": -0.11576510911773931,
+      "awayDefenseAllowed": 0.052553330188453436,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "CAR",
+      "gap": 0.025,
+      "unit": "EPA/play",
+      "awayOffense": 0.07720898021863515,
+      "homeDefenseAllowed": -0.03599285728142508,
+      "homeOffense": -0.02441613356142259,
+      "awayDefenseAllowed": 0.016403815114159528,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "TB",
+      "gap": 0.002,
+      "unit": "EPA/play",
+      "awayOffense": 0.01949250125947505,
+      "homeDefenseAllowed": -0.028338140049005985,
+      "homeOffense": 0.019970179503508795,
+      "awayDefenseAllowed": -0.02503083683247856,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "TB",
+      "gap": 0.097,
+      "unit": "percentage points",
+      "awayOffense": 0.0975609756097561,
+      "homeDefenseAllowed": 0.07530647985989491,
+      "homeOffense": 0.0935483870967742,
+      "awayDefenseAllowed": 0.08125,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "TB",
+      "gap": 1.113,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.163855421686747,
+      "homeDefenseAllowed": 0.12602739726027398,
+      "homeOffense": 0.15223880597014924,
+      "awayDefenseAllowed": 0.11538461538461539,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": 0.0334,
+  "profiles": {
+    "CAR": {
+      "season": {
+        "games": 10,
+        "offPlays": 656,
+        "defPlays": 640,
+        "offEpa": 0.0322,
+        "defEpa": 0.01,
+        "netEpa": 0.0222,
+        "adjustedNetEpa": 0.0069,
+        "earlyOffEpa": 0.0815,
+        "earlyDefEpa": 0.0163,
+        "passOffEpa": 0.0569,
+        "passDefEpa": 0.0526
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 194,
+        "defPlays": 187,
+        "offEpa": 0.0325,
+        "defEpa": -0.0523,
+        "netEpa": 0.0848,
+        "adjustedNetEpa": 0.0631,
+        "earlyOffEpa": 0.0652,
+        "earlyDefEpa": -0.0643,
+        "passOffEpa": 0.0322,
+        "passDefEpa": 0.0396
+      }
+    },
+    "TB": {
+      "season": {
+        "games": 10,
+        "offPlays": 620,
+        "defPlays": 571,
+        "offEpa": -0.0665,
+        "defEpa": -0.0834,
+        "netEpa": 0.0169,
+        "adjustedNetEpa": 0.0403,
+        "earlyOffEpa": -0.0267,
+        "earlyDefEpa": -0.0338,
+        "passOffEpa": -0.1158,
+        "passDefEpa": -0.0839
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 129,
+        "defPlays": 114,
+        "offEpa": -0.0513,
+        "defEpa": 0.0518,
+        "netEpa": -0.1031,
+        "adjustedNetEpa": -0.0468,
+        "earlyOffEpa": -0.0037,
+        "earlyDefEpa": 0.0009,
+        "passOffEpa": -0.0461,
+        "passDefEpa": 0.0556
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": false,
+    "reason": "Structural component arithmetic failed; disagreement withheld.",
+    "reconstructedHomeMargin": -3.363,
+    "structuralHomeMargin": null
+  },
+  "market": {
+    "spread_display": "Tampa Bay Buccaneers -3",
+    "spread": "TB -2.5",
+    "total": 43.5,
+    "home_margin": 3,
+    "home_team_sportsbook_spread": -3,
+    "moneyline": {
+      "away": 132,
+      "home": -157
+    },
+    "source": "ESPN DraftKings",
+    "timestamp": "2026-11-23T09:34:43.033Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+    "opener_display": "Tampa Bay Buccaneers -3.5",
+    "opening_reference": {
+      "spread": "Tampa Bay Buccaneers -3.5",
+      "homeBookSpread": -3.5,
+      "total": 44.5,
+      "moneyline": {
+        "away": "+160",
+        "home": "-192"
+      },
+      "source": "ESPN DraftKings",
+      "observedAt": "2026-11-23T09:34:43.033Z",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
+      "note": "Provider opening reference; source does not publish the original quote timestamp."
+    }
+  },
+  "productionFair": 3.467,
+  "structuralFair": null,
+  "structuralDifference": null,
+  "price": {
+    "side": "TB",
+    "minimumSpreadAtSnapshot": -1.5,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-23T09:34:43.234505+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [],
+    "clusters": [],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W12-CAR-TB",
+    "canonical_game_id": "2026-W12-CAR-TB",
+    "matchup": "Carolina Panthers at Tampa Bay Buccaneers",
+    "venue": "Raymond James Stadium",
+    "environment": "outdoor",
+    "status": "Current game-window weather feed reviewed",
+    "summary": "Current ESPN event weather feed reviewed; no structured game-window condition was published. Weather remains source-limited with 0.0 automatic model points.",
+    "risk": "source-limited",
+    "observed_at": "2026-11-23T09:34:43.033Z",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
+  },
+  "sustainability": {
+    "CAR": {
+      "turnoverRate": 0.01676829268292683,
+      "takeawayRate": 0.021875,
+      "thirdDownConversion": 0.3684210526315789,
+      "redZoneTdRate": 0.631578947368421
+    },
+    "TB": {
+      "turnoverRate": 0.02258064516129032,
+      "takeawayRate": 0.03327495621716287,
+      "thirdDownConversion": 0.38405797101449274,
+      "redZoneTdRate": 0.5
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 11,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Structural component arithmetic failed; disagreement withheld.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-11-17T21:30:33.135Z",
+      "capturedAt": "2026-11-17T21:30:44.414278+00:00",
+      "spread": "Tampa Bay Buccaneers -2.5",
+      "homeMargin": 2.5,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-11-23T08:33:54.223Z",
+      "capturedAt": "2026-11-23T08:34:02.635739+00:00",
+      "spread": "Tampa Bay Buccaneers -3",
+      "homeMargin": 3,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
