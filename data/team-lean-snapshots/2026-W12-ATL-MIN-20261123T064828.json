@@ -1,0 +1,337 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W12-ATL-MIN",
+  "portalGameId": "401873084",
+  "week": 12,
+  "away": "Atlanta Falcons",
+  "home": "Minnesota Vikings",
+  "awayAbbr": "ATL",
+  "homeAbbr": "MIN",
+  "kickoff": "2026-11-29T18:00Z",
+  "generatedAt": "2026-11-23T06:48:28.615084+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "MIN",
+  "assessmentSide": "MIN",
+  "structuralValueSide": null,
+  "alignment": "UNRESOLVED",
+  "thesis": "MIN has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "MIN",
+      "gap": 0.111,
+      "unit": "EPA/play",
+      "awayOffense": -0.135535319088322,
+      "homeDefenseAllowed": -0.08170556392823397,
+      "homeOffense": -0.07128375601308634,
+      "awayDefenseAllowed": 0.07514623083792503,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "MIN",
+      "gap": 0.007,
+      "unit": "EPA/play",
+      "awayOffense": -0.042192259027370595,
+      "homeDefenseAllowed": -0.05950049007307459,
+      "homeOffense": -0.10708623022688409,
+      "awayDefenseAllowed": 0.019093688424504478,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "MIN",
+      "gap": 0.179,
+      "unit": "percentage points",
+      "awayOffense": 0.10152284263959391,
+      "homeDefenseAllowed": 0.08547008547008547,
+      "homeOffense": 0.08680555555555555,
+      "awayDefenseAllowed": 0.10377358490566038,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "MIN",
+      "gap": 0.72,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.08982035928143713,
+      "homeDefenseAllowed": 0.25297619047619047,
+      "homeOffense": 0.15606936416184972,
+      "awayDefenseAllowed": 0.17232375979112272,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Rushing efficiency",
+      "side": "ATL",
+      "gap": 0.032,
+      "unit": "EPA/play",
+      "awayOffense": 0.0071731647349042955,
+      "homeDefenseAllowed": -0.07718479815555487,
+      "homeOffense": -0.09924829790226271,
+      "awayDefenseAllowed": -0.035601500749107666,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "MIN",
+      "gap": 0.111,
+      "unit": "EPA/play",
+      "awayOffense": -0.135535319088322,
+      "homeDefenseAllowed": -0.08170556392823397,
+      "homeOffense": -0.07128375601308634,
+      "awayDefenseAllowed": 0.07514623083792503,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "MIN",
+      "gap": 0.007,
+      "unit": "EPA/play",
+      "awayOffense": -0.042192259027370595,
+      "homeDefenseAllowed": -0.05950049007307459,
+      "homeOffense": -0.10708623022688409,
+      "awayDefenseAllowed": 0.019093688424504478,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "ATL",
+      "gap": 0.032,
+      "unit": "EPA/play",
+      "awayOffense": 0.0071731647349042955,
+      "homeDefenseAllowed": -0.07718479815555487,
+      "homeOffense": -0.09924829790226271,
+      "awayDefenseAllowed": -0.035601500749107666,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "MIN",
+      "gap": 0.179,
+      "unit": "percentage points",
+      "awayOffense": 0.10152284263959391,
+      "homeDefenseAllowed": 0.08547008547008547,
+      "homeOffense": 0.08680555555555555,
+      "awayDefenseAllowed": 0.10377358490566038,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "MIN",
+      "gap": 0.72,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.08982035928143713,
+      "homeDefenseAllowed": 0.25297619047619047,
+      "homeOffense": 0.15606936416184972,
+      "awayDefenseAllowed": 0.17232375979112272,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": 0.0767,
+  "profiles": {
+    "ATL": {
+      "season": {
+        "games": 10,
+        "offPlays": 591,
+        "defPlays": 636,
+        "offEpa": -0.0803,
+        "defEpa": 0.0287,
+        "netEpa": -0.1091,
+        "adjustedNetEpa": -0.059,
+        "earlyOffEpa": -0.0494,
+        "earlyDefEpa": 0.019,
+        "passOffEpa": -0.1355,
+        "passDefEpa": 0.0751
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 121,
+        "defPlays": 117,
+        "offEpa": -0.1123,
+        "defEpa": 0.2398,
+        "netEpa": -0.3521,
+        "adjustedNetEpa": -0.2054,
+        "earlyOffEpa": -0.1129,
+        "earlyDefEpa": 0.246,
+        "passOffEpa": -0.1862,
+        "passDefEpa": 0.3923
+      }
+    },
+    "MIN": {
+      "season": {
+        "games": 10,
+        "offPlays": 576,
+        "defPlays": 585,
+        "offEpa": -0.1016,
+        "defEpa": -0.0886,
+        "netEpa": -0.013,
+        "adjustedNetEpa": 0.0177,
+        "earlyOffEpa": -0.1125,
+        "earlyDefEpa": -0.0575,
+        "passOffEpa": -0.0713,
+        "passDefEpa": -0.0817
+      },
+      "recent": {
+        "games": 3,
+        "offPlays": 174,
+        "defPlays": 179,
+        "offEpa": -0.167,
+        "defEpa": 0.0108,
+        "netEpa": -0.1777,
+        "adjustedNetEpa": -0.0515,
+        "earlyOffEpa": -0.1925,
+        "earlyDefEpa": -0.0119,
+        "passOffEpa": -0.2062,
+        "passDefEpa": 0.1129
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": false,
+    "reason": "Structural component arithmetic failed; disagreement withheld.",
+    "reconstructedHomeMargin": -7.449,
+    "structuralHomeMargin": null
+  },
+  "market": {
+    "spread_display": "Minnesota Vikings -7",
+    "spread": "MIN -7",
+    "total": 42.5,
+    "home_margin": 7,
+    "home_team_sportsbook_spread": -7,
+    "moneyline": {
+      "away": 254,
+      "home": -313
+    },
+    "source": "ESPN Draft Kings",
+    "timestamp": "2026-11-23T06:48:13.251Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+    "opener_display": "Minnesota Vikings -4.5",
+    "opening_reference": {
+      "spread": "Minnesota Vikings -4.5",
+      "homeBookSpread": -4.5,
+      "total": 43.5,
+      "moneyline": {
+        "away": "+180",
+        "home": "-218"
+      },
+      "source": "ESPN Draft Kings",
+      "observedAt": "2026-11-23T06:48:13.251Z",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
+      "note": "Provider opening reference; source does not publish the original quote timestamp."
+    }
+  },
+  "productionFair": 7.735,
+  "structuralFair": null,
+  "structuralDifference": null,
+  "price": {
+    "side": "MIN",
+    "minimumSpreadAtSnapshot": -6.0,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-23T06:48:13.521547+00:00",
+    "reviewComplete": false,
+    "flags": [],
+    "watch": [],
+    "clusters": [],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W12-ATL-MIN",
+    "canonical_game_id": "2026-W12-ATL-MIN",
+    "matchup": "Atlanta Falcons at Minnesota Vikings",
+    "venue": "U.S. Bank Stadium",
+    "environment": "indoor",
+    "status": "Official indoor venue verified",
+    "summary": "U.S. Bank Stadium is listed as indoor/roof-controlled in the current ESPN event feed; no wind or precipitation adjustment applies.",
+    "risk": "indoor / roof controlled",
+    "observed_at": "2026-11-23T06:48:14.328426+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
+    "forecast_timestamp": null,
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W12-ATL-MIN",
+      "kickoff": "2026-11-29T18:00Z",
+      "temp_f": null,
+      "wind_mph": null,
+      "gust_mph": null,
+      "precip_chance_pct": null,
+      "forecast_timestamp": null,
+      "verification_status": "indoor venue; outdoor weather forecast not applicable",
+      "venue": "U.S. Bank Stadium",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
+      ],
+      "limitations": [
+        "Roof status is governed by venue/event information; outside air values are not on-field conditions."
+      ],
+      "retrieved_at": "2026-11-23T06:48:14.328426+00:00"
+    },
+    "sources": [
+      "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
+    ]
+  },
+  "sustainability": {
+    "ATL": {
+      "turnoverRate": 0.028764805414551606,
+      "takeawayRate": 0.015723270440251572,
+      "thirdDownConversion": 0.34710743801652894,
+      "redZoneTdRate": 0.5483870967741935
+    },
+    "MIN": {
+      "turnoverRate": 0.019097222222222224,
+      "takeawayRate": 0.02564102564102564,
+      "thirdDownConversion": 0.37777777777777777,
+      "redZoneTdRate": 0.4583333333333333
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 11,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Structural component arithmetic failed; disagreement withheld.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-11-17T21:30:33.135Z",
+      "capturedAt": "2026-11-17T21:30:44.414278+00:00",
+      "spread": "Minnesota Vikings -7",
+      "homeMargin": 7,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-11-23T05:30:19.074Z",
+      "capturedAt": "2026-11-23T05:30:30.417232+00:00",
+      "spread": "Minnesota Vikings -7",
+      "homeMargin": 7,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
