@@ -2,8 +2,8 @@
   "version": "NFL-WEEKLY-MANIFEST-v3",
   "season": 2026,
   "week": 12,
-  "updatedAt": "2026-11-25T15:30:14.624Z",
-  "status": "FAIL",
+  "updatedAt": "2026-11-25T16:31:21.933Z",
+  "status": "PASS",
   "sourceOfTruth": "data/weekly-board.json",
   "latestWeekdayIntel": "data/weekday-intel-2026-11-25.json",
   "gates": {
@@ -36,32 +36,30 @@
     "statisticalDisplay": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-11-25T15:30:06.382941+00:00",
+      "verifiedAt": "2026-11-25T16:31:14.149203+00:00",
       "artifact": "data/statistical-display-integrity-2026-w12.json",
       "note": "32 observed season-to-date profiles through Week 11; defensive yardage independently aggregated from each opponent box score. Advanced inputs use the same pregame cutoff."
     },
     "marketDerivedIntegrity": {
       "status": "PASS",
       "blocking": true,
-      "verifiedAt": "2026-11-25T15:29:57.915Z",
+      "verifiedAt": "2026-11-25T16:31:07.469Z",
       "artifact": "data/market-derived-integrity-2026-w12.json",
       "note": "All 16 current spread-derived production fairs independently reconciled as 80% market + 20% frozen structural line with calculation timestamps at/after market dependency."
     },
     "currentWeekCompleteness": {
-      "status": "FAIL",
+      "status": "PASS",
       "blocking": true,
       "unplayedGames": 16,
       "freshMarketGames": 16,
       "calculationFreshGames": 16,
       "moneylineAvailableGames": 16,
       "availabilityCheckpointDue": 3,
-      "availabilityCheckpointComplete": 2,
+      "availabilityCheckpointComplete": 3,
       "weatherCheckpointDue": 3,
       "weatherCheckpointComplete": 3,
       "upsetLabVerified": true,
-      "issues": [
-        "availability review due 2/3"
-      ],
+      "issues": [],
       "warnings": [],
       "note": "Wednesday certification requires fresh spread/total, selected-week model calculations, universal Deep Dives and upset research. Exact ML, final injury designations and weather become blocking only when their execution checkpoints are due; missing values are never inferred."
     },
@@ -141,8 +139,6 @@
       "items": []
     }
   },
-  "failures": [
-    "CURRENTWEEKCOMPLETENESS_INCOMPLETE"
-  ],
+  "failures": [],
   "historicalWarnings": []
 }
