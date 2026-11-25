@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 12,
-  "updatedAt": "2026-11-25T04:31:14.980Z",
+  "updatedAt": "2026-11-25T05:29:53.796546+00:00",
   "scheduleSource": "ESPN selected-week rollover",
   "marketSource": "Current ESPN NFL selected-week odds feed; exact sportsbook/juice required before execution",
   "games": [
@@ -23,7 +23,7 @@
       "moneyline": {
         "away": 114,
         "home": -134,
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "source": "ESPN Draft Kings",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
       },
@@ -36,19 +36,19 @@
           "home": "-198"
         },
         "source": "ESPN Draft Kings",
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
         "note": "Provider opening reference; source does not publish the original quote timestamp."
       },
       "marketSource": "ESPN Draft Kings",
-      "marketObservedAt": "2026-11-25T04:31:14.980Z",
+      "marketObservedAt": "2026-11-25T05:29:49.080Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Los Angeles Rams -7.5",
       "structuralHomeMargin": 7.535,
-      "productionTotal": 44.5,
-      "structuralEdge": 5,
+      "productionTotal": 43.5,
+      "structuralEdge": 5.035,
       "structuralLean": "LAR",
-      "modelCalculatedAt": "2026-11-24T18:30:14.788Z",
+      "modelCalculatedAt": "2026-11-25T05:29:50.663Z",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.275,
@@ -79,8 +79,8 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0,
-          "structuralAdjustment": 0,
+          "directPointCap": 0.0,
+          "structuralAdjustment": 0.0,
           "researchSignal": -0.748,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -88,7 +88,7 @@
       },
       "baseStructuralHomeMargin": 8.9,
       "advancedProcessAdjustment": -1.365,
-      "motionMatchupAdjustment": 0
+      "motionMatchupAdjustment": 0.0
     },
     {
       "gameId": "2026-W12-CHI-DET",
@@ -101,14 +101,14 @@
       "currentTotal": 55.5,
       "currentMoneyline": "CHI -121 / DET +102",
       "productionSpread": "Chicago Bears -1.1",
-      "productionHomeMargin": -1.861,
-      "modelEdge": 1.031,
+      "productionHomeMargin": -1.061,
+      "modelEdge": 0.831,
       "stage": "high-priority-audit",
       "priority": "High",
       "moneyline": {
         "away": -121,
         "home": 102,
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "source": "ESPN Draft Kings",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
       },
@@ -121,19 +121,19 @@
           "home": "-135"
         },
         "source": "ESPN Draft Kings",
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
         "note": "Provider opening reference; source does not publish the original quote timestamp."
       },
       "marketSource": "ESPN Draft Kings",
-      "marketObservedAt": "2026-11-25T04:31:14.980Z",
+      "marketObservedAt": "2026-11-25T05:29:49.080Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Detroit Lions -0.7",
       "structuralHomeMargin": 0.697,
       "productionTotal": 55.5,
-      "structuralEdge": 2.2,
+      "structuralEdge": 2.197,
       "structuralLean": "DET",
-      "modelCalculatedAt": "2026-11-24T18:30:14.788Z",
+      "modelCalculatedAt": "2026-11-25T05:29:50.663Z",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.275,
@@ -143,7 +143,7 @@
         "awayLive": 8,
         "homeLive": 10,
         "homeField": 1,
-        "marketHomeMargin": -2.5,
+        "marketHomeMargin": -1.5,
         "advancedProcess": {
           "throughWeek": 11,
           "offenseDefenseMetrics": [
@@ -164,16 +164,16 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0,
-          "structuralAdjustment": 0,
-          "researchSignal": 0.084,
+          "directPointCap": 0.0,
+          "structuralAdjustment": 0.0,
+          "researchSignal": 0.134,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
       },
       "baseStructuralHomeMargin": 1.204,
       "advancedProcessAdjustment": -0.507,
-      "motionMatchupAdjustment": 0
+      "motionMatchupAdjustment": 0.0
     },
     {
       "gameId": "2026-W12-PHI-DAL",
@@ -184,16 +184,16 @@
       "homeAbbr": "DAL",
       "currentSpread": "Dallas Cowboys -8.5",
       "currentTotal": 48.5,
-      "currentMoneyline": "PHI +363 / DAL -470",
+      "currentMoneyline": "PHI +365 / DAL -471",
       "productionSpread": "Dallas Cowboys -5.9",
       "productionHomeMargin": 5.904,
       "modelEdge": 0.882,
       "stage": "high-priority-audit",
       "priority": "High",
       "moneyline": {
-        "away": 363,
-        "home": -470,
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "away": 365,
+        "home": -471,
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "source": "ESPN Draft Kings",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
       },
@@ -206,19 +206,19 @@
           "home": "-120"
         },
         "source": "ESPN Draft Kings",
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
         "note": "Provider opening reference; source does not publish the original quote timestamp."
       },
       "marketSource": "ESPN Draft Kings",
-      "marketObservedAt": "2026-11-25T04:31:14.980Z",
+      "marketObservedAt": "2026-11-25T05:29:49.080Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Philadelphia Eagles -4.5",
       "structuralHomeMargin": -4.478,
-      "productionTotal": 47.5,
-      "structuralEdge": 13,
+      "productionTotal": 48.5,
+      "structuralEdge": 12.978,
       "structuralLean": "PHI",
-      "modelCalculatedAt": "2026-11-24T18:30:14.788Z",
+      "modelCalculatedAt": "2026-11-25T05:29:50.663Z",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.275,
@@ -249,16 +249,16 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0,
-          "structuralAdjustment": 0,
-          "researchSignal": -0.14,
+          "directPointCap": 0.0,
+          "structuralAdjustment": 0.0,
+          "researchSignal": -0.168,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
       },
       "baseStructuralHomeMargin": -0.139,
       "advancedProcessAdjustment": -4.339,
-      "motionMatchupAdjustment": 0
+      "motionMatchupAdjustment": 0.0
     },
     {
       "gameId": "2026-W12-KC-BUF",
@@ -278,7 +278,7 @@
       "moneyline": {
         "away": 126,
         "home": -149,
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "source": "ESPN Draft Kings",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
       },
@@ -291,19 +291,19 @@
           "home": "-135"
         },
         "source": "ESPN Draft Kings",
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
         "note": "Provider opening reference; source does not publish the original quote timestamp."
       },
       "marketSource": "ESPN Draft Kings",
-      "marketObservedAt": "2026-11-25T04:31:14.980Z",
+      "marketObservedAt": "2026-11-25T05:29:49.080Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Buffalo Bills -3.8",
       "structuralHomeMargin": 3.817,
       "productionTotal": 47.5,
-      "structuralEdge": 0.8,
+      "structuralEdge": 0.817,
       "structuralLean": "BUF",
-      "modelCalculatedAt": "2026-11-24T18:30:14.788Z",
+      "modelCalculatedAt": "2026-11-25T05:29:50.663Z",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.275,
@@ -334,16 +334,16 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0,
-          "structuralAdjustment": 0,
-          "researchSignal": -0.5,
+          "directPointCap": 0.0,
+          "structuralAdjustment": 0.0,
+          "researchSignal": -0.524,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
       },
       "baseStructuralHomeMargin": 1.099,
       "advancedProcessAdjustment": 2.718,
-      "motionMatchupAdjustment": 0
+      "motionMatchupAdjustment": 0.0
     },
     {
       "gameId": "2026-W12-DEN-PIT",
@@ -352,18 +352,18 @@
       "awayAbbr": "DEN",
       "home": "Pittsburgh Steelers",
       "homeAbbr": "PIT",
-      "currentSpread": "Denver Broncos -3",
-      "currentTotal": 38.5,
-      "currentMoneyline": "DEN -157 / PIT +132",
-      "productionSpread": "Denver Broncos -1.3",
-      "productionHomeMargin": -1.324,
-      "modelEdge": 1.777,
+      "currentSpread": "Denver Broncos -3.5",
+      "currentTotal": 36.5,
+      "currentMoneyline": "DEN -197 / PIT +165",
+      "productionSpread": "Denver Broncos -1.7",
+      "productionHomeMargin": -1.724,
+      "modelEdge": 1.677,
       "stage": "high-priority-audit",
       "priority": "High",
       "moneyline": {
-        "away": -157,
-        "home": 132,
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "away": -197,
+        "home": 165,
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "source": "ESPN Draft Kings",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
       },
@@ -376,19 +376,19 @@
           "home": "-102"
         },
         "source": "ESPN Draft Kings",
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
         "note": "Provider opening reference; source does not publish the original quote timestamp."
       },
       "marketSource": "ESPN Draft Kings",
-      "marketObservedAt": "2026-11-25T04:31:14.980Z",
+      "marketObservedAt": "2026-11-25T05:29:49.080Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Pittsburgh Steelers -5.4",
       "structuralHomeMargin": 5.379,
-      "productionTotal": 38.5,
-      "structuralEdge": 8.4,
+      "productionTotal": 36.5,
+      "structuralEdge": 8.879,
       "structuralLean": "PIT",
-      "modelCalculatedAt": "2026-11-24T18:30:14.788Z",
+      "modelCalculatedAt": "2026-11-25T05:29:50.663Z",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.275,
@@ -398,7 +398,7 @@
         "awayLive": 14,
         "homeLive": -3,
         "homeField": 1,
-        "marketHomeMargin": -3,
+        "marketHomeMargin": -3.5,
         "advancedProcess": {
           "throughWeek": 11,
           "offenseDefenseMetrics": [
@@ -419,16 +419,16 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0,
-          "structuralAdjustment": 0,
-          "researchSignal": 0.108,
+          "directPointCap": 0.0,
+          "structuralAdjustment": 0.0,
+          "researchSignal": 0.198,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
       },
       "baseStructuralHomeMargin": 0.439,
       "advancedProcessAdjustment": 4.94,
-      "motionMatchupAdjustment": 0
+      "motionMatchupAdjustment": 0.0
     },
     {
       "gameId": "2026-W12-NO-CIN",
@@ -441,14 +441,14 @@
       "currentTotal": 50.5,
       "currentMoneyline": "NO +438 / CIN -588",
       "productionSpread": "Cincinnati Bengals -8.1",
-      "productionHomeMargin": 7.656,
-      "modelEdge": 0.809,
+      "productionHomeMargin": 8.056,
+      "modelEdge": 0.909,
       "stage": "high-priority-audit",
       "priority": "High",
       "moneyline": {
         "away": 438,
         "home": -588,
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "source": "ESPN Draft Kings",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
       },
@@ -461,19 +461,19 @@
           "home": "-290"
         },
         "source": "ESPN Draft Kings",
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
         "note": "Provider opening reference; source does not publish the original quote timestamp."
       },
       "marketSource": "ESPN Draft Kings",
-      "marketObservedAt": "2026-11-25T04:31:14.980Z",
+      "marketObservedAt": "2026-11-25T05:29:49.080Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Cincinnati Bengals -0.3",
       "structuralHomeMargin": 0.28,
       "productionTotal": 50.5,
-      "structuralEdge": 9.7,
+      "structuralEdge": 9.72,
       "structuralLean": "NO",
-      "modelCalculatedAt": "2026-11-24T18:30:14.788Z",
+      "modelCalculatedAt": "2026-11-25T05:29:50.663Z",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.275,
@@ -483,7 +483,7 @@
         "awayLive": -8,
         "homeLive": -2,
         "homeField": 1,
-        "marketHomeMargin": 9.5,
+        "marketHomeMargin": 10,
         "advancedProcess": {
           "throughWeek": 11,
           "offenseDefenseMetrics": [
@@ -504,16 +504,16 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0,
-          "structuralAdjustment": 0,
-          "researchSignal": 0.104,
+          "directPointCap": 0.0,
+          "structuralAdjustment": 0.0,
+          "researchSignal": 0.072,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
       },
       "baseStructuralHomeMargin": 1.104,
       "advancedProcessAdjustment": -0.824,
-      "motionMatchupAdjustment": 0
+      "motionMatchupAdjustment": 0.0
     },
     {
       "gameId": "2026-W12-NYG-IND",
@@ -533,7 +533,7 @@
       "moneyline": {
         "away": -303,
         "home": 247,
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "source": "ESPN Draft Kings",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
       },
@@ -546,19 +546,19 @@
           "home": "-135"
         },
         "source": "ESPN Draft Kings",
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
         "note": "Provider opening reference; source does not publish the original quote timestamp."
       },
       "marketSource": "ESPN Draft Kings",
-      "marketObservedAt": "2026-11-25T04:31:14.980Z",
+      "marketObservedAt": "2026-11-25T05:29:49.080Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Indianapolis Colts -9.7",
       "structuralHomeMargin": 9.731,
       "productionTotal": 41.5,
-      "structuralEdge": 16.2,
+      "structuralEdge": 16.231,
       "structuralLean": "IND",
-      "modelCalculatedAt": "2026-11-24T18:30:14.788Z",
+      "modelCalculatedAt": "2026-11-25T05:29:50.663Z",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.275,
@@ -589,16 +589,16 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0,
-          "structuralAdjustment": 0,
-          "researchSignal": 0.424,
+          "directPointCap": 0.0,
+          "structuralAdjustment": 0.0,
+          "researchSignal": 0.388,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
       },
       "baseStructuralHomeMargin": 2.144,
       "advancedProcessAdjustment": 7.587,
-      "motionMatchupAdjustment": 0
+      "motionMatchupAdjustment": 0.0
     },
     {
       "gameId": "2026-W12-NYJ-MIA",
@@ -618,7 +618,7 @@
       "moneyline": {
         "away": -195,
         "home": 164,
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "source": "ESPN Draft Kings",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
       },
@@ -631,19 +631,19 @@
           "home": "-125"
         },
         "source": "ESPN Draft Kings",
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
         "note": "Provider opening reference; source does not publish the original quote timestamp."
       },
       "marketSource": "ESPN Draft Kings",
-      "marketObservedAt": "2026-11-25T04:31:14.980Z",
+      "marketObservedAt": "2026-11-25T05:29:49.080Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Miami Dolphins -6.9",
       "structuralHomeMargin": 6.862,
       "productionTotal": 40.5,
-      "structuralEdge": 10.4,
+      "structuralEdge": 10.362,
       "structuralLean": "MIA",
-      "modelCalculatedAt": "2026-11-24T18:30:14.788Z",
+      "modelCalculatedAt": "2026-11-25T05:29:50.663Z",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.275,
@@ -674,16 +674,16 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0,
-          "structuralAdjustment": 0,
-          "researchSignal": 0,
+          "directPointCap": 0.0,
+          "structuralAdjustment": 0.0,
+          "researchSignal": 0.0,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
       },
       "baseStructuralHomeMargin": 1.473,
       "advancedProcessAdjustment": 5.389,
-      "motionMatchupAdjustment": 0
+      "motionMatchupAdjustment": 0.0
     },
     {
       "gameId": "2026-W12-ATL-MIN",
@@ -703,7 +703,7 @@
       "moneyline": {
         "away": 259,
         "home": -320,
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "source": "ESPN Draft Kings",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
       },
@@ -716,19 +716,19 @@
           "home": "-218"
         },
         "source": "ESPN Draft Kings",
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
         "note": "Provider opening reference; source does not publish the original quote timestamp."
       },
       "marketSource": "ESPN Draft Kings",
-      "marketObservedAt": "2026-11-25T04:31:14.980Z",
+      "marketObservedAt": "2026-11-25T05:29:49.080Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Minnesota Vikings -10.8",
       "structuralHomeMargin": 10.787,
-      "productionTotal": 42.5,
-      "structuralEdge": 3.8,
+      "productionTotal": 41.5,
+      "structuralEdge": 3.787,
       "structuralLean": "MIN",
-      "modelCalculatedAt": "2026-11-24T18:30:14.788Z",
+      "modelCalculatedAt": "2026-11-25T05:29:50.663Z",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.275,
@@ -759,8 +759,8 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0,
-          "structuralAdjustment": 0,
+          "directPointCap": 0.0,
+          "structuralAdjustment": 0.0,
           "researchSignal": -0.3,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
@@ -768,7 +768,7 @@
       },
       "baseStructuralHomeMargin": 3.878,
       "advancedProcessAdjustment": 6.909,
-      "motionMatchupAdjustment": 0
+      "motionMatchupAdjustment": 0.0
     },
     {
       "gameId": "2026-W12-TEN-JAX",
@@ -779,16 +779,16 @@
       "homeAbbr": "JAX",
       "currentSpread": "Jacksonville Jaguars -14.5",
       "currentTotal": 48.5,
-      "currentMoneyline": "TEN +720 / JAX -1120",
+      "currentMoneyline": "TEN +710 / JAX -1120",
       "productionSpread": "Jacksonville Jaguars -11.7",
       "productionHomeMargin": 11.697,
       "modelEdge": 0.1,
       "stage": "no-signal",
       "priority": "Low",
       "moneyline": {
-        "away": 720,
+        "away": 710,
         "home": -1120,
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "source": "ESPN Draft Kings",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
       },
@@ -801,19 +801,19 @@
           "home": "-258"
         },
         "source": "ESPN Draft Kings",
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
         "note": "Provider opening reference; source does not publish the original quote timestamp."
       },
       "marketSource": "ESPN Draft Kings",
-      "marketObservedAt": "2026-11-25T04:31:14.980Z",
+      "marketObservedAt": "2026-11-25T05:29:49.080Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Jacksonville Jaguars -0.5",
       "structuralHomeMargin": 0.487,
-      "productionTotal": 47.5,
-      "structuralEdge": 14,
+      "productionTotal": 48.5,
+      "structuralEdge": 14.013,
       "structuralLean": "TEN",
-      "modelCalculatedAt": "2026-11-24T18:30:14.788Z",
+      "modelCalculatedAt": "2026-11-25T05:29:50.663Z",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.275,
@@ -844,16 +844,16 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0,
-          "structuralAdjustment": 0,
-          "researchSignal": 0.472,
+          "directPointCap": 0.0,
+          "structuralAdjustment": 0.0,
+          "researchSignal": 0.412,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
       },
       "baseStructuralHomeMargin": 3.398,
       "advancedProcessAdjustment": -2.911,
-      "motionMatchupAdjustment": 0
+      "motionMatchupAdjustment": 0.0
     },
     {
       "gameId": "2026-W12-BAL-HOU",
@@ -866,14 +866,14 @@
       "currentTotal": 47.5,
       "currentMoneyline": "BAL +252 / HOU -311",
       "productionSpread": "Houston Texans -4.6",
-      "productionHomeMargin": 4.219,
-      "modelEdge": 2.718,
+      "productionHomeMargin": 4.619,
+      "modelEdge": 2.617,
       "stage": "high-priority-audit",
       "priority": "High",
       "moneyline": {
         "away": 252,
         "home": -311,
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "source": "ESPN Draft Kings",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
       },
@@ -886,19 +886,19 @@
           "home": "-118"
         },
         "source": "ESPN Draft Kings",
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
         "note": "Provider opening reference; source does not publish the original quote timestamp."
       },
       "marketSource": "ESPN Draft Kings",
-      "marketObservedAt": "2026-11-25T04:31:14.980Z",
+      "marketObservedAt": "2026-11-25T05:29:49.080Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Baltimore Ravens -4.9",
       "structuralHomeMargin": -4.907,
-      "productionTotal": 46.5,
-      "structuralEdge": 11.9,
+      "productionTotal": 47.5,
+      "structuralEdge": 11.907,
       "structuralLean": "BAL",
-      "modelCalculatedAt": "2026-11-24T18:30:14.788Z",
+      "modelCalculatedAt": "2026-11-25T05:29:50.663Z",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.275,
@@ -908,7 +908,7 @@
         "awayLive": -2,
         "homeLive": 23,
         "homeField": 1,
-        "marketHomeMargin": 6.5,
+        "marketHomeMargin": 7,
         "advancedProcess": {
           "throughWeek": 11,
           "offenseDefenseMetrics": [
@@ -929,16 +929,16 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0,
-          "structuralAdjustment": 0,
-          "researchSignal": 0.188,
+          "directPointCap": 0.0,
+          "structuralAdjustment": 0.0,
+          "researchSignal": 0.176,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
       },
       "baseStructuralHomeMargin": 1.963,
       "advancedProcessAdjustment": -6.87,
-      "motionMatchupAdjustment": 0
+      "motionMatchupAdjustment": 0.0
     },
     {
       "gameId": "2026-W12-NE-LAC",
@@ -958,7 +958,7 @@
       "moneyline": {
         "away": -104,
         "home": -113,
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "source": "ESPN Draft Kings",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
       },
@@ -971,19 +971,19 @@
           "home": "-135"
         },
         "source": "ESPN Draft Kings",
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
         "note": "Provider opening reference; source does not publish the original quote timestamp."
       },
       "marketSource": "ESPN Draft Kings",
-      "marketObservedAt": "2026-11-25T04:31:14.980Z",
+      "marketObservedAt": "2026-11-25T05:29:49.080Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "New England Patriots -1.6",
       "structuralHomeMargin": -1.631,
       "productionTotal": 35.5,
-      "structuralEdge": 3.1,
+      "structuralEdge": 3.131,
       "structuralLean": "NE",
-      "modelCalculatedAt": "2026-11-24T18:30:14.788Z",
+      "modelCalculatedAt": "2026-11-25T05:29:50.663Z",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.275,
@@ -1014,16 +1014,16 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0,
-          "structuralAdjustment": 0,
-          "researchSignal": -0.29,
+          "directPointCap": 0.0,
+          "structuralAdjustment": 0.0,
+          "researchSignal": -0.298,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
       },
       "baseStructuralHomeMargin": -2.893,
       "advancedProcessAdjustment": 1.262,
-      "motionMatchupAdjustment": 0
+      "motionMatchupAdjustment": 0.0
     },
     {
       "gameId": "2026-W12-WSH-ARI",
@@ -1036,14 +1036,14 @@
       "currentTotal": 41.5,
       "currentMoneyline": "WSH -337 / ARI +271",
       "productionSpread": "Washington Commanders -3.7",
-      "productionHomeMargin": -4.114,
-      "modelEdge": 2.391,
+      "productionHomeMargin": -3.714,
+      "modelEdge": 2.491,
       "stage": "high-priority-audit",
       "priority": "High",
       "moneyline": {
         "away": -337,
         "home": 271,
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "source": "ESPN Draft Kings",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
       },
@@ -1056,19 +1056,19 @@
           "home": "+180"
         },
         "source": "ESPN Draft Kings",
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
         "note": "Provider opening reference; source does not publish the original quote timestamp."
       },
       "marketSource": "ESPN Draft Kings",
-      "marketObservedAt": "2026-11-25T04:31:14.980Z",
+      "marketObservedAt": "2026-11-25T05:29:49.080Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Arizona Cardinals -9.4",
       "structuralHomeMargin": 9.429,
-      "productionTotal": 42.5,
-      "structuralEdge": 16.4,
+      "productionTotal": 41.5,
+      "structuralEdge": 16.429,
       "structuralLean": "ARI",
-      "modelCalculatedAt": "2026-11-24T18:30:14.788Z",
+      "modelCalculatedAt": "2026-11-25T05:29:50.663Z",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.275,
@@ -1078,7 +1078,7 @@
         "awayLive": 2,
         "homeLive": -27,
         "homeField": 1,
-        "marketHomeMargin": -7.5,
+        "marketHomeMargin": -7,
         "advancedProcess": {
           "throughWeek": 11,
           "offenseDefenseMetrics": [
@@ -1099,16 +1099,16 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0,
-          "structuralAdjustment": 0,
-          "researchSignal": -0.128,
+          "directPointCap": 0.0,
+          "structuralAdjustment": 0.0,
+          "researchSignal": -0.16,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
       },
       "baseStructuralHomeMargin": 1.572,
       "advancedProcessAdjustment": 7.857,
-      "motionMatchupAdjustment": 0
+      "motionMatchupAdjustment": 0.0
     },
     {
       "gameId": "2026-W12-SEA-SF",
@@ -1121,14 +1121,14 @@
       "currentTotal": 45.5,
       "currentMoneyline": "SEA +151 / SF -179",
       "productionSpread": "San Francisco 49ers -0.9",
-      "productionHomeMargin": 0.459,
-      "modelEdge": 1.887,
+      "productionHomeMargin": 0.859,
+      "modelEdge": 1.787,
       "stage": "high-priority-audit",
       "priority": "High",
       "moneyline": {
         "away": 151,
         "home": -179,
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "source": "ESPN Draft Kings",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
       },
@@ -1141,19 +1141,19 @@
           "home": "-112"
         },
         "source": "ESPN Draft Kings",
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
         "note": "Provider opening reference; source does not publish the original quote timestamp."
       },
       "marketSource": "ESPN Draft Kings",
-      "marketObservedAt": "2026-11-25T04:31:14.980Z",
+      "marketObservedAt": "2026-11-25T05:29:49.080Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Seattle Seahawks -9.7",
       "structuralHomeMargin": -9.704,
-      "productionTotal": 46.5,
-      "structuralEdge": 13.2,
+      "productionTotal": 45.5,
+      "structuralEdge": 13.204,
       "structuralLean": "SEA",
-      "modelCalculatedAt": "2026-11-24T18:30:14.788Z",
+      "modelCalculatedAt": "2026-11-25T05:29:50.663Z",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.275,
@@ -1163,7 +1163,7 @@
         "awayLive": 7.68,
         "homeLive": 25,
         "homeField": 1,
-        "marketHomeMargin": 3,
+        "marketHomeMargin": 3.5,
         "advancedProcess": {
           "throughWeek": 11,
           "offenseDefenseMetrics": [
@@ -1184,16 +1184,16 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0,
-          "structuralAdjustment": 0,
-          "researchSignal": -0.692,
+          "directPointCap": 0.0,
+          "structuralAdjustment": 0.0,
+          "researchSignal": -0.712,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
       },
       "baseStructuralHomeMargin": -5.69,
       "advancedProcessAdjustment": -4.014,
-      "motionMatchupAdjustment": 0
+      "motionMatchupAdjustment": 0.0
     },
     {
       "gameId": "2026-W12-LV-CLE",
@@ -1213,7 +1213,7 @@
       "moneyline": {
         "away": 182,
         "home": -219,
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "source": "ESPN Draft Kings",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
       },
@@ -1226,19 +1226,19 @@
           "home": "-130"
         },
         "source": "ESPN Draft Kings",
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
         "note": "Provider opening reference; source does not publish the original quote timestamp."
       },
       "marketSource": "ESPN Draft Kings",
-      "marketObservedAt": "2026-11-25T04:31:14.980Z",
+      "marketObservedAt": "2026-11-25T05:29:49.080Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Las Vegas Raiders -5.2",
       "structuralHomeMargin": -5.232,
-      "productionTotal": 41.5,
-      "structuralEdge": 9.7,
+      "productionTotal": 40.5,
+      "structuralEdge": 9.732,
       "structuralLean": "LV",
-      "modelCalculatedAt": "2026-11-24T18:30:14.788Z",
+      "modelCalculatedAt": "2026-11-25T05:29:50.663Z",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.275,
@@ -1269,16 +1269,16 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0,
-          "structuralAdjustment": 0,
-          "researchSignal": -0.178,
+          "directPointCap": 0.0,
+          "structuralAdjustment": 0.0,
+          "researchSignal": -0.15,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
       },
       "baseStructuralHomeMargin": -3.258,
       "advancedProcessAdjustment": -1.974,
-      "motionMatchupAdjustment": 0
+      "motionMatchupAdjustment": 0.0
     },
     {
       "gameId": "2026-W12-CAR-TB",
@@ -1298,7 +1298,7 @@
       "moneyline": {
         "away": 131,
         "home": -155,
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "source": "ESPN Draft Kings",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100"
       },
@@ -1311,19 +1311,19 @@
           "home": "-192"
         },
         "source": "ESPN Draft Kings",
-        "observedAt": "2026-11-25T04:31:14.980Z",
+        "observedAt": "2026-11-25T05:29:49.080Z",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
         "note": "Provider opening reference; source does not publish the original quote timestamp."
       },
       "marketSource": "ESPN Draft Kings",
-      "marketObservedAt": "2026-11-25T04:31:14.980Z",
+      "marketObservedAt": "2026-11-25T05:29:49.080Z",
       "eventState": "scheduled",
       "validatedStructuralSpread": "Tampa Bay Buccaneers -5.3",
       "structuralHomeMargin": 5.319,
       "productionTotal": 43.5,
-      "structuralEdge": 2.3,
+      "structuralEdge": 2.319,
       "structuralLean": "TB",
-      "modelCalculatedAt": "2026-11-24T18:30:14.788Z",
+      "modelCalculatedAt": "2026-11-25T05:29:50.663Z",
       "modelVersion": "NFL-v1.2 advanced process + research-only motion matchup",
       "modelInputs": {
         "preseasonWeight": 0.275,
@@ -1354,28 +1354,28 @@
         },
         "motionMatchup": {
           "source": "governed motion-rate + categorical defensive response",
-          "directPointCap": 0,
-          "structuralAdjustment": 0,
-          "researchSignal": 0.984,
+          "directPointCap": 0.0,
+          "structuralAdjustment": 0.0,
+          "researchSignal": 1.0,
           "earlySample": true,
           "governance": "research/confidence only; 0.0 automatic fair-line points until validated"
         }
       },
       "baseStructuralHomeMargin": 1.825,
       "advancedProcessAdjustment": 3.494,
-      "motionMatchupAdjustment": 0
+      "motionMatchupAdjustment": 0.0
     }
   ],
   "runtimeRefresh": {
     "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
-    "observedAt": "2026-11-25T04:31:14.980Z",
+    "observedAt": "2026-11-25T05:29:49.080Z",
     "espnEvents": 16,
     "currentOddsGames": 16,
     "identityNormalization": "registry v1: canonical abbreviations and aliases normalized before joins"
   },
   "modelReview": {
     "status": "COMPLETE",
-    "reviewedAt": "2026-11-24T18:30:14.788Z",
+    "reviewedAt": "2026-11-25T05:29:50.663Z",
     "methodologyVersion": "1.1-validated-structural-market-aware+expert-intelligence-v1",
     "phase": {
       "preseasonWeight": 0.275,
@@ -1390,7 +1390,7 @@
     "throughWeek": 11,
     "teamCoverage": 32,
     "processShareOfLiveLayer": 0.4,
-    "motionPointCap": 0,
+    "motionPointCap": 0.0,
     "leakageRule": "Target Week 12 uses Weeks 1-11 only"
   }
 }
