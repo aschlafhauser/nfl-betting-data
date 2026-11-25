@@ -1,27 +1,27 @@
 {
   "season": 2026,
   "week": 12,
-  "generated_at": "2026-11-25T14:29:50.501Z",
+  "generated_at": "2026-11-25T15:29:57.915Z",
   "method": "Wednesday spread-based upset screen plus exact-price governance",
   "coverage": {
     "all_current_threshold_candidates_represented": true,
     "selected_week_games": 16,
     "spread_screen_candidates": 0,
-    "near_threshold_watch": 1,
+    "near_threshold_watch": 0,
     "price_policy": "Exact moneylines never inferred from spreads."
   },
   "candidates": [
     {
       "game_id": "2026-W12-PHI-DAL",
       "team": "PHI",
-      "moneyline": 368,
+      "moneyline": 366,
       "eligible": true,
       "nearThreshold": false,
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-25T14:29:49.222Z",
-      "market_implied_probability": 0.2137,
+      "priceSource": "ESPN Draft Kings",
+      "priceObservedAt": "2026-11-25T15:29:55.921Z",
+      "market_implied_probability": 0.2146,
       "reason": null,
       "spread": "Dallas Cowboys -8.5",
       "structuralFair": "Philadelphia Eagles -4.5",
@@ -57,7 +57,7 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 368 via ESPN DraftKings; threshold qualification is separate from recommendation."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 366 via ESPN Draft Kings; threshold qualification is separate from recommendation."
     },
     {
       "game_id": "2026-W12-NO-CIN",
@@ -67,8 +67,8 @@
       "nearThreshold": false,
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-25T14:29:49.222Z",
+      "priceSource": "ESPN Draft Kings",
+      "priceObservedAt": "2026-11-25T15:29:55.921Z",
       "market_implied_probability": 0.1799,
       "reason": null,
       "spread": "Cincinnati Bengals -10",
@@ -105,19 +105,67 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 456 via ESPN DraftKings; threshold qualification is separate from recommendation."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 456 via ESPN Draft Kings; threshold qualification is separate from recommendation."
     },
     {
-      "game_id": "2026-W12-ATL-MIN",
-      "team": "ATL",
-      "moneyline": 259,
+      "game_id": "2026-W12-NYG-IND",
+      "team": "IND",
+      "moneyline": 261,
       "eligible": true,
       "nearThreshold": false,
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-25T14:29:49.222Z",
-      "market_implied_probability": 0.2786,
+      "priceSource": "ESPN Draft Kings",
+      "priceObservedAt": "2026-11-25T15:29:55.921Z",
+      "market_implied_probability": 0.277,
+      "reason": null,
+      "spread": "New York Giants -6.5",
+      "structuralFair": "Indianapolis Colts -9.7",
+      "criteria": [
+        {
+          "name": "market-underdog-profile",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Indianapolis Colts is 6.5 points from the current spread favorite."
+        },
+        {
+          "name": "structural-resistance",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Current structural lean IND; structural fair Indianapolis Colts -9.7."
+        },
+        {
+          "name": "prior-quality-gap",
+          "status": "PASS",
+          "passed": true,
+          "evidence": "Preseason prior 2.50 vs opponent -1.66."
+        },
+        {
+          "name": "recent-form",
+          "status": "FAIL",
+          "passed": false,
+          "evidence": "Prior-week scoring margin -23."
+        },
+        {
+          "name": "availability",
+          "status": "PENDING",
+          "passed": false,
+          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
+        }
+      ],
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 261 via ESPN Draft Kings; threshold qualification is separate from recommendation."
+    },
+    {
+      "game_id": "2026-W12-ATL-MIN",
+      "team": "ATL",
+      "moneyline": 256,
+      "eligible": true,
+      "nearThreshold": false,
+      "status": "PRICE_QUALIFIED-RESEARCH",
+      "minimum_playable_ml": "NOT_VALIDATED",
+      "priceSource": "ESPN Draft Kings",
+      "priceObservedAt": "2026-11-25T15:29:55.921Z",
+      "market_implied_probability": 0.2809,
       "reason": null,
       "spread": "Minnesota Vikings -7",
       "structuralFair": "Minnesota Vikings -10.8",
@@ -153,7 +201,7 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 259 via ESPN DraftKings; threshold qualification is separate from recommendation."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 256 via ESPN Draft Kings; threshold qualification is separate from recommendation."
     },
     {
       "game_id": "2026-W12-TEN-JAX",
@@ -163,8 +211,8 @@
       "nearThreshold": false,
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-25T14:29:49.222Z",
+      "priceSource": "ESPN Draft Kings",
+      "priceObservedAt": "2026-11-25T15:29:55.921Z",
       "market_implied_probability": 0.122,
       "reason": null,
       "spread": "Jacksonville Jaguars -14.5",
@@ -201,7 +249,7 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 720 via ESPN DraftKings; threshold qualification is separate from recommendation."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 720 via ESPN Draft Kings; threshold qualification is separate from recommendation."
     },
     {
       "game_id": "2026-W12-BAL-HOU",
@@ -211,8 +259,8 @@
       "nearThreshold": false,
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-25T14:29:49.222Z",
+      "priceSource": "ESPN Draft Kings",
+      "priceObservedAt": "2026-11-25T15:29:55.921Z",
       "market_implied_probability": 0.2778,
       "reason": null,
       "spread": "Houston Texans -7",
@@ -249,19 +297,19 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 260 via ESPN DraftKings; threshold qualification is separate from recommendation."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 260 via ESPN Draft Kings; threshold qualification is separate from recommendation."
     },
     {
       "game_id": "2026-W12-WSH-ARI",
       "team": "ARI",
-      "moneyline": 265,
+      "moneyline": 263,
       "eligible": true,
       "nearThreshold": false,
       "status": "PRICE_QUALIFIED-RESEARCH",
       "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-25T14:29:49.222Z",
-      "market_implied_probability": 0.274,
+      "priceSource": "ESPN Draft Kings",
+      "priceObservedAt": "2026-11-25T15:29:55.921Z",
+      "market_implied_probability": 0.2755,
       "reason": null,
       "spread": "Washington Commanders -7",
       "structuralFair": "Arizona Cardinals -9.4",
@@ -297,59 +345,10 @@
           "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
         }
       ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 265 via ESPN DraftKings; threshold qualification is separate from recommendation."
+      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 263 via ESPN Draft Kings; threshold qualification is separate from recommendation."
     }
   ],
-  "near_threshold_watch": [
-    {
-      "game_id": "2026-W12-NYG-IND",
-      "team": "IND",
-      "moneyline": 244,
-      "eligible": false,
-      "nearThreshold": true,
-      "status": "NEAR_THRESHOLD-NOT_ELIGIBLE",
-      "minimum_playable_ml": "NOT_VALIDATED",
-      "priceSource": "ESPN DraftKings",
-      "priceObservedAt": "2026-11-25T14:29:49.222Z",
-      "market_implied_probability": 0.2907,
-      "reason": "Observed moneyline is below the +250 qualifying threshold; research watch only.",
-      "spread": "New York Giants -6.5",
-      "structuralFair": "Indianapolis Colts -9.7",
-      "criteria": [
-        {
-          "name": "market-underdog-profile",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Indianapolis Colts is 6.5 points from the current spread favorite."
-        },
-        {
-          "name": "structural-resistance",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Current structural lean IND; structural fair Indianapolis Colts -9.7."
-        },
-        {
-          "name": "prior-quality-gap",
-          "status": "PASS",
-          "passed": true,
-          "evidence": "Preseason prior 2.50 vs opponent -1.66."
-        },
-        {
-          "name": "recent-form",
-          "status": "FAIL",
-          "passed": false,
-          "evidence": "Prior-week scoring margin -23."
-        },
-        {
-          "name": "availability",
-          "status": "PENDING",
-          "passed": false,
-          "evidence": "Final injury/inactive status is not assumed on Wednesday morning; late availability is an execution veto."
-        }
-      ],
-      "analysis": "Upset/underdog research completed from spread, frozen model and prior-week state. Observed exact moneyline 244 via ESPN DraftKings; threshold qualification is separate from recommendation."
-    }
-  ],
+  "near_threshold_watch": [],
   "price_pending": [],
-  "narrativeReconciledAt": "2026-11-25T14:30:09.913Z"
+  "narrativeReconciledAt": "2026-11-25T15:30:14.459Z"
 }
