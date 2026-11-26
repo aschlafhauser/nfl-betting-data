@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 12,
-  "updated_at": "2026-11-26T13:29:44.948881+00:00",
+  "updated_at": "2026-11-26T14:29:20.099570+00:00",
   "source_status": "OFFICIAL SELECTED-WEEK DESIGNATIONS",
   "games": [
     {
@@ -17023,7 +17023,7 @@
       "matchup": "Chicago Bears at Detroit Lions",
       "reviewComplete": true,
       "status": "official final designation review complete; game-day inactives pending",
-      "updated_at": "2026-11-26T13:29:44.948881+00:00",
+      "updated_at": "2026-11-26T14:29:20.099570+00:00",
       "flags": [
         "CHI OUT: CB Kyler Gordon (Shoulder).",
         "CHI OUT: S Elijah Hicks (Concussion).",
@@ -17156,7 +17156,7 @@
       "matchup": "Philadelphia Eagles at Dallas Cowboys",
       "reviewComplete": true,
       "status": "official final designation review complete; game-day inactives pending",
-      "updated_at": "2026-11-26T13:29:44.948881+00:00",
+      "updated_at": "2026-11-26T14:29:20.099570+00:00",
       "flags": [
         "PHI OUT: LB Arnold Ebiketie (Oblique).",
         "PHI OUT: CB Jonathan Jones (Ankle).",
@@ -17400,7 +17400,7 @@
       "matchup": "Kansas City Chiefs at Buffalo Bills",
       "reviewComplete": true,
       "status": "official final designation review complete; game-day inactives pending",
-      "updated_at": "2026-11-26T13:29:44.948881+00:00",
+      "updated_at": "2026-11-26T14:29:20.099570+00:00",
       "flags": [
         "KC QUESTIONABLE: TE Noah Gray (Rib).",
         "KC OUT: T Jaylon Moore (Ankle).",
@@ -17620,9 +17620,9 @@
       "game_id": "2026-W12-DEN-PIT",
       "canonical_game_id": "2026-W12-DEN-PIT",
       "matchup": "Denver Broncos at Pittsburgh Steelers",
-      "reviewComplete": false,
-      "status": "official practice/designation report reviewed; final checkpoint pending",
-      "updated_at": "2026-11-26T13:29:44.948881+00:00",
+      "reviewComplete": true,
+      "status": "official final designation review complete; game-day inactives pending",
+      "updated_at": "2026-11-26T14:29:20.099570+00:00",
       "flags": [
         "DEN OUT: DE Sai'vion Jones (Hamstring).",
         "DEN OUT: S Taylor Rapp (Quadricep)."
@@ -17779,17 +17779,114 @@
       "canonical_game_id": "2026-W12-NO-CIN",
       "matchup": "New Orleans Saints at Cincinnati Bengals",
       "reviewComplete": false,
-      "status": "official selected-week table checked; source-limited; final checkpoint pending",
-      "updated_at": "2026-11-24T18:30:09.598480+00:00",
+      "status": "official practice/designation report reviewed; final checkpoint pending",
+      "updated_at": "2026-11-26T14:29:20.099570+00:00",
       "flags": [],
-      "players": [],
+      "players": [
+        {
+          "team": "NO",
+          "player": "David Edwards",
+          "position": "G",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "NO",
+          "player": "Martin Emerson",
+          "position": "CB",
+          "injury": null,
+          "practice": "Full Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "NO",
+          "player": "Taliese Fuaga",
+          "position": "T",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "NO",
+          "player": "Juwan Johnson",
+          "position": "TE",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "NO",
+          "player": "Erik McCoy",
+          "position": "C",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "NO",
+          "player": "Asim Richards",
+          "position": "T",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "NO",
+          "player": "Pete Werner",
+          "position": "LB",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "CIN",
+          "player": "Jonathan Allen",
+          "position": "DT",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "CIN",
+          "player": "Bryan Cook",
+          "position": "S",
+          "injury": null,
+          "practice": "Full Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "CIN",
+          "player": "Jalen Davis",
+          "position": "CB",
+          "injury": null,
+          "practice": "Full Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "CIN",
+          "player": "Andrei Iosivas",
+          "position": "WR",
+          "injury": null,
+          "practice": "Full Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "CIN",
+          "player": "Dalton Risner",
+          "position": "G",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        }
+      ],
       "sources": [
         "https://www.nfl.com/injuries/league/2026/reg12"
       ],
-      "source_status": "Official response does not identify the selected week",
+      "source_status": "Official selected-week NFL table; blank designation is not inferred as active/healthy",
       "limitations": [
-        "No designation inferred from an unlabeled or unpublished official table.",
-        "Official final designations and inactives remain mandatory at the pre-kickoff checkpoint."
+        "Retrieval timestamp is not the report issuance time.",
+        "Official inactives must be checked at the pre-kickoff checkpoint."
       ]
     },
     {
@@ -17798,7 +17895,7 @@
       "matchup": "New York Giants at Indianapolis Colts",
       "reviewComplete": false,
       "status": "official practice/designation report reviewed; final checkpoint pending",
-      "updated_at": "2026-11-26T13:29:44.948881+00:00",
+      "updated_at": "2026-11-26T14:29:20.099570+00:00",
       "flags": [],
       "players": [
         {
@@ -17945,7 +18042,7 @@
       "matchup": "New York Jets at Miami Dolphins",
       "reviewComplete": false,
       "status": "official practice/designation report reviewed; final checkpoint pending",
-      "updated_at": "2026-11-26T13:29:44.948881+00:00",
+      "updated_at": "2026-11-26T14:29:20.099570+00:00",
       "flags": [],
       "players": [
         {
@@ -18108,7 +18205,7 @@
       "matchup": "Atlanta Falcons at Minnesota Vikings",
       "reviewComplete": false,
       "status": "official practice/designation report reviewed; final checkpoint pending",
-      "updated_at": "2026-11-26T13:29:44.948881+00:00",
+      "updated_at": "2026-11-26T14:29:20.099570+00:00",
       "flags": [],
       "players": [
         {
@@ -18247,7 +18344,7 @@
       "matchup": "Tennessee Titans at Jacksonville Jaguars",
       "reviewComplete": false,
       "status": "official practice/designation report reviewed; final checkpoint pending",
-      "updated_at": "2026-11-26T13:29:44.948881+00:00",
+      "updated_at": "2026-11-26T14:29:20.099570+00:00",
       "flags": [],
       "players": [
         {
@@ -18442,7 +18539,7 @@
       "matchup": "Baltimore Ravens at Houston Texans",
       "reviewComplete": false,
       "status": "official practice/designation report reviewed; final checkpoint pending",
-      "updated_at": "2026-11-26T13:29:44.948881+00:00",
+      "updated_at": "2026-11-26T14:29:20.099570+00:00",
       "flags": [],
       "players": [
         {
@@ -18644,17 +18741,186 @@
       "canonical_game_id": "2026-W12-NE-LAC",
       "matchup": "New England Patriots at Los Angeles Chargers",
       "reviewComplete": false,
-      "status": "official selected-week table checked; source-limited; final checkpoint pending",
-      "updated_at": "2026-11-24T18:30:09.598480+00:00",
+      "status": "official practice/designation report reviewed; final checkpoint pending",
+      "updated_at": "2026-11-26T14:29:20.099570+00:00",
       "flags": [],
-      "players": [],
+      "players": [
+        {
+          "team": "NE",
+          "player": "Ben Brown",
+          "position": "C",
+          "injury": null,
+          "practice": "Full Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "NE",
+          "player": "A.J. Brown",
+          "position": "WR",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "NE",
+          "player": "Carlton Davis III",
+          "position": "CB",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "NE",
+          "player": "Romeo Doubs",
+          "position": "WR",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "NE",
+          "player": "Reggie Gilliam",
+          "position": "FB",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "NE",
+          "player": "Drake Maye",
+          "position": "QB",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "NE",
+          "player": "Walter Rouse",
+          "position": "T",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "NE",
+          "player": "Alijah Vera-Tucker",
+          "position": "G",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "LAC",
+          "player": "Daiyan Henley",
+          "position": "LB",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "LAC",
+          "player": "Justin Herbert",
+          "position": "QB",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "LAC",
+          "player": "Deane Leonard",
+          "position": "CB",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "LAC",
+          "player": "Khalil Mack",
+          "position": "DE",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "LAC",
+          "player": "Akheem Mesidor",
+          "position": "DE",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "LAC",
+          "player": "Keaton Mitchell",
+          "position": "RB",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "LAC",
+          "player": "David Njoku",
+          "position": "TE",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "LAC",
+          "player": "Tarheeb Still",
+          "position": "CB",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "LAC",
+          "player": "Teair Tart",
+          "position": "DT",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "LAC",
+          "player": "Brenen Thompson",
+          "position": "WR",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "LAC",
+          "player": "Dalvin Tomlinson",
+          "position": "DT",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "LAC",
+          "player": "Tuli Tuipulotu",
+          "position": "DE",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "LAC",
+          "player": "Kendall Williamson",
+          "position": "S",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        }
+      ],
       "sources": [
         "https://www.nfl.com/injuries/league/2026/reg12"
       ],
-      "source_status": "Official response does not identify the selected week",
+      "source_status": "Official selected-week NFL table; blank designation is not inferred as active/healthy",
       "limitations": [
-        "No designation inferred from an unlabeled or unpublished official table.",
-        "Official final designations and inactives remain mandatory at the pre-kickoff checkpoint."
+        "Retrieval timestamp is not the report issuance time.",
+        "Official inactives must be checked at the pre-kickoff checkpoint."
       ]
     },
     {
@@ -18663,7 +18929,7 @@
       "matchup": "Washington Commanders at Arizona Cardinals",
       "reviewComplete": false,
       "status": "official practice/designation report reviewed; final checkpoint pending",
-      "updated_at": "2026-11-26T13:29:44.948881+00:00",
+      "updated_at": "2026-11-26T14:29:20.099570+00:00",
       "flags": [],
       "players": [
         {
@@ -18841,17 +19107,250 @@
       "canonical_game_id": "2026-W12-SEA-SF",
       "matchup": "Seattle Seahawks at San Francisco 49ers",
       "reviewComplete": false,
-      "status": "official selected-week table checked; source-limited; final checkpoint pending",
-      "updated_at": "2026-11-24T18:30:09.598480+00:00",
+      "status": "official practice/designation report reviewed; final checkpoint pending",
+      "updated_at": "2026-11-26T14:29:20.099570+00:00",
       "flags": [],
-      "players": [],
+      "players": [
+        {
+          "team": "SEA",
+          "player": "Anthony Bradford",
+          "position": "G",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "SEA",
+          "player": "Charles Cross",
+          "position": "T",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "SEA",
+          "player": "Sam Darnold",
+          "position": "QB",
+          "injury": null,
+          "practice": "Full Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "SEA",
+          "player": "Ernest Jones",
+          "position": "LB",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "SEA",
+          "player": "Nick Kallerup",
+          "position": "TE",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "SEA",
+          "player": "DeMarcus Lawrence",
+          "position": "LB",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "SEA",
+          "player": "Drew Lock",
+          "position": "QB",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "SEA",
+          "player": "Abraham Lucas",
+          "position": "T",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "SEA",
+          "player": "Jalen Milroe",
+          "position": "QB",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "SEA",
+          "player": "Quenton Nelson",
+          "position": "G",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "SEA",
+          "player": "Patrick O'Connell",
+          "position": "LB",
+          "injury": null,
+          "practice": "Full Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "SEA",
+          "player": "Jarran Reed",
+          "position": "DT",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "SEA",
+          "player": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "SEA",
+          "player": "Leonard Williams",
+          "position": "DT",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "SF",
+          "player": "Keenan Allen",
+          "position": "WR",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "SF",
+          "player": "Mike Evans",
+          "position": "WR",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "SF",
+          "player": "Dre Greenlaw",
+          "position": "LB",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "SF",
+          "player": "Romello Height",
+          "position": "DE",
+          "injury": null,
+          "practice": "Full Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "SF",
+          "player": "Khalid Kareem",
+          "position": "DE",
+          "injury": null,
+          "practice": "Full Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "SF",
+          "player": "Deommodore Lenoir",
+          "position": "CB",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "SF",
+          "player": "Christian McCaffrey",
+          "position": "RB",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "SF",
+          "player": "Siran Neal",
+          "position": "S",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "SF",
+          "player": "Austen Pleasants",
+          "position": "T",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "SF",
+          "player": "Brock Purdy",
+          "position": "QB",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "SF",
+          "player": "Upton Stout",
+          "position": "CB",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "SF",
+          "player": "Jordan Watkins",
+          "position": "WR",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "SF",
+          "player": "Mykel Williams",
+          "position": "DE",
+          "injury": null,
+          "practice": "Full Participation in Practice",
+          "designation": null
+        },
+        {
+          "team": "SF",
+          "player": "Trent Williams",
+          "position": "T",
+          "injury": null,
+          "practice": "Did Not Participate In Practice",
+          "designation": null
+        },
+        {
+          "team": "SF",
+          "player": "Carver Willis",
+          "position": "G",
+          "injury": null,
+          "practice": "Limited Participation in Practice",
+          "designation": null
+        }
+      ],
       "sources": [
         "https://www.nfl.com/injuries/league/2026/reg12"
       ],
-      "source_status": "Official response does not identify the selected week",
+      "source_status": "Official selected-week NFL table; blank designation is not inferred as active/healthy",
       "limitations": [
-        "No designation inferred from an unlabeled or unpublished official table.",
-        "Official final designations and inactives remain mandatory at the pre-kickoff checkpoint."
+        "Retrieval timestamp is not the report issuance time.",
+        "Official inactives must be checked at the pre-kickoff checkpoint."
       ]
     },
     {
@@ -18860,7 +19359,7 @@
       "matchup": "Las Vegas Raiders at Cleveland Browns",
       "reviewComplete": false,
       "status": "official practice/designation report reviewed; final checkpoint pending",
-      "updated_at": "2026-11-26T13:29:44.948881+00:00",
+      "updated_at": "2026-11-26T14:29:20.099570+00:00",
       "flags": [],
       "players": [
         {
