@@ -1,0 +1,455 @@
+{
+  "methodologyVersion": "1.0-team-leans-research",
+  "gameId": "2026-W12-DEN-PIT",
+  "portalGameId": "401873083",
+  "week": 12,
+  "away": "Denver Broncos",
+  "home": "Pittsburgh Steelers",
+  "awayAbbr": "DEN",
+  "homeAbbr": "PIT",
+  "kickoff": "2026-11-27T20:00Z",
+  "generatedAt": "2026-11-26T19:29:53.093459+00:00",
+  "status": "FOOTBALL LEAN",
+  "footballLean": "DEN",
+  "assessmentSide": "DEN",
+  "structuralValueSide": null,
+  "alignment": "UNRESOLVED",
+  "thesis": "DEN has the stronger opponent-adjusted performance profile; inspect the matchup mechanisms and price separately.",
+  "mechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "DEN",
+      "gap": 0.054,
+      "unit": "EPA/play",
+      "awayOffense": 0.027414279159051414,
+      "homeDefenseAllowed": 0.01661009896985984,
+      "homeOffense": -0.07148945191285092,
+      "awayDefenseAllowed": 0.007021787710696923,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "DEN",
+      "gap": 0.012,
+      "unit": "EPA/play",
+      "awayOffense": 0.049411243972638796,
+      "homeDefenseAllowed": -0.010820772168838566,
+      "homeOffense": -0.0020973569501148382,
+      "awayDefenseAllowed": 0.017113519420054478,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "DEN",
+      "gap": 5.983,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.09221902017291066,
+      "homeDefenseAllowed": 0.14766839378238342,
+      "homeOffense": 0.15346534653465346,
+      "awayDefenseAllowed": 0.20608899297423888,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "counterarguments": [
+    {
+      "name": "Rushing efficiency",
+      "side": "PIT",
+      "gap": 0.101,
+      "unit": "EPA/play",
+      "awayOffense": -0.012351123490262026,
+      "homeDefenseAllowed": -0.05944502288139942,
+      "homeOffense": 0.08840021765003797,
+      "awayDefenseAllowed": 0.041320288942868835,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "PIT",
+      "gap": 1.157,
+      "unit": "percentage points",
+      "awayOffense": 0.07179487179487179,
+      "homeDefenseAllowed": 0.09045226130653267,
+      "homeOffense": 0.09339774557165861,
+      "awayDefenseAllowed": 0.09198813056379822,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    }
+  ],
+  "allMechanisms": [
+    {
+      "name": "Passing efficiency",
+      "side": "DEN",
+      "gap": 0.054,
+      "unit": "EPA/play",
+      "awayOffense": 0.027414279159051414,
+      "homeDefenseAllowed": 0.01661009896985984,
+      "homeOffense": -0.07148945191285092,
+      "awayDefenseAllowed": 0.007021787710696923,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Early-down efficiency",
+      "side": "DEN",
+      "gap": 0.012,
+      "unit": "EPA/play",
+      "awayOffense": 0.049411243972638796,
+      "homeDefenseAllowed": -0.010820772168838566,
+      "homeOffense": -0.0020973569501148382,
+      "awayDefenseAllowed": 0.017113519420054478,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Rushing efficiency",
+      "side": "PIT",
+      "gap": 0.101,
+      "unit": "EPA/play",
+      "awayOffense": -0.012351123490262026,
+      "homeDefenseAllowed": -0.05944502288139942,
+      "homeOffense": 0.08840021765003797,
+      "awayDefenseAllowed": 0.041320288942868835,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Explosive plays",
+      "side": "PIT",
+      "gap": 1.157,
+      "unit": "percentage points",
+      "awayOffense": 0.07179487179487179,
+      "homeDefenseAllowed": 0.09045226130653267,
+      "homeOffense": 0.09339774557165861,
+      "awayDefenseAllowed": 0.09198813056379822,
+      "explanation": "Descriptive matchup environment: mean of offense and opposing defense allowed. Season averages, not a calibrated forecast."
+    },
+    {
+      "name": "Protection versus hit/sack production",
+      "side": "DEN",
+      "gap": 5.983,
+      "unit": "percentage points (QB hit/sack proxy; lower allowed is better)",
+      "awayOffense": 0.09221902017291066,
+      "homeDefenseAllowed": 0.14766839378238342,
+      "homeOffense": 0.15346534653465346,
+      "awayDefenseAllowed": 0.20608899297423888,
+      "explanation": "QB hit/sack proxy, not tracking pressure or pass-block win rate."
+    }
+  ],
+  "footballGapHome": -0.0922,
+  "profiles": {
+    "DEN": {
+      "season": {
+        "games": 10,
+        "offPlays": 585,
+        "defPlays": 674,
+        "offEpa": 0.008,
+        "defEpa": 0.0038,
+        "netEpa": 0.0042,
+        "adjustedNetEpa": 0.0661,
+        "earlyOffEpa": 0.0428,
+        "earlyDefEpa": 0.0151,
+        "passOffEpa": 0.0274,
+        "passDefEpa": 0.007
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 133,
+        "defPlays": 128,
+        "offEpa": 0.057,
+        "defEpa": 0.0402,
+        "netEpa": 0.0168,
+        "adjustedNetEpa": -0.022,
+        "earlyOffEpa": 0.0259,
+        "earlyDefEpa": -0.035,
+        "passOffEpa": 0.1151,
+        "passDefEpa": 0.0685
+      }
+    },
+    "PIT": {
+      "season": {
+        "games": 10,
+        "offPlays": 621,
+        "defPlays": 597,
+        "offEpa": -0.0181,
+        "defEpa": -0.0249,
+        "netEpa": 0.0068,
+        "adjustedNetEpa": -0.0261,
+        "earlyOffEpa": -0.0045,
+        "earlyDefEpa": -0.0108,
+        "passOffEpa": -0.0715,
+        "passDefEpa": 0.0166
+      },
+      "recent": {
+        "games": 2,
+        "offPlays": 127,
+        "defPlays": 111,
+        "offEpa": -0.0561,
+        "defEpa": 0.1342,
+        "netEpa": -0.1904,
+        "adjustedNetEpa": -0.2113,
+        "earlyOffEpa": -0.1402,
+        "earlyDefEpa": 0.2127,
+        "passOffEpa": -0.0748,
+        "passDefEpa": 0.231
+      }
+    }
+  },
+  "structuralAudit": {
+    "verified": false,
+    "reason": "Structural component arithmetic failed; disagreement withheld.",
+    "reconstructedHomeMargin": -6.951,
+    "structuralHomeMargin": null
+  },
+  "market": {
+    "spread_display": "Denver Broncos -4.5",
+    "spread": "DEN -2.5",
+    "total": 36.5,
+    "home_margin": -4.5,
+    "home_team_sportsbook_spread": 4.5,
+    "moneyline": {
+      "away": -228,
+      "home": 190
+    },
+    "source": "ESPN Draft Kings",
+    "timestamp": "2026-11-26T19:29:36.710Z",
+    "status": "current governed ESPN snapshot; exact sportsbook/juice required before execution",
+    "opener_display": "Denver Broncos -1.5",
+    "opening_reference": {
+      "spread": "Denver Broncos -1.5",
+      "homeBookSpread": 1.5,
+      "total": 41.5,
+      "moneyline": {
+        "away": "-118",
+        "home": "-102"
+      },
+      "source": "ESPN Draft Kings",
+      "observedAt": "2026-11-26T19:29:36.710Z",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=12&limit=100",
+      "note": "Provider opening reference; source does not publish the original quote timestamp."
+    }
+  },
+  "productionFair": -2.525,
+  "structuralFair": null,
+  "structuralDifference": null,
+  "price": {
+    "side": "DEN",
+    "minimumSpreadAtSnapshot": -1.0,
+    "assumedJuice": -110,
+    "minimumModelPoints": 1.5,
+    "status": "ILLUSTRATIVE WATCH REFERENCE \u2014 NOT EXECUTABLE",
+    "note": "Requires a fresh exact book/line/juice and availability review. Uses the current production fair held fixed; that fair changes with market. No probability, EV or playable-price claim."
+  },
+  "availability": {
+    "observedAt": "2026-11-26T19:29:37.193020+00:00",
+    "reviewComplete": true,
+    "flags": [
+      "DEN OUT: DE Sai'vion Jones (Hamstring).",
+      "DEN OUT: S Taylor Rapp (Quadricep)."
+    ],
+    "watch": [
+      {
+        "team": "DEN",
+        "player": "J.K. Dobbins",
+        "position": "RB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "DEN",
+        "player": "Sai'vion Jones",
+        "position": "DE",
+        "status": "Out Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "DEN",
+        "player": "Taylor Rapp",
+        "position": "S",
+        "status": "Out Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "PIT",
+        "player": "DeShon Elliott",
+        "position": "S",
+        "status": "Limited Participation in Practice",
+        "unit": "Secondary",
+        "scenario": "If unavailable, reassess explosive-pass exposure and coverage matchups."
+      },
+      {
+        "team": "PIT",
+        "player": "Nick Herbig",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PIT",
+        "player": "Cameron Heyward",
+        "position": "DT",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PIT",
+        "player": "Alex Highsmith",
+        "position": "LB",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PIT",
+        "player": "Cole Holcomb",
+        "position": "LB",
+        "status": "Limited Participation in Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      },
+      {
+        "team": "PIT",
+        "player": "Aaron Rodgers",
+        "position": "QB",
+        "status": "Did Not Participate In Practice",
+        "unit": "QB",
+        "scenario": "If unavailable, reassess starter/replacement performance and the game script."
+      },
+      {
+        "team": "PIT",
+        "player": "Ben Skowronek",
+        "position": "WR",
+        "status": "Did Not Participate In Practice",
+        "unit": "Other",
+        "scenario": "Verify role and replacement before execution."
+      }
+    ],
+    "clusters": [
+      {
+        "team": "DEN",
+        "unit": "Secondary",
+        "count": 1,
+        "players": [
+          "Taylor Rapp"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "PIT",
+        "unit": "QB",
+        "count": 1,
+        "players": [
+          "Aaron Rodgers"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      },
+      {
+        "team": "PIT",
+        "unit": "Secondary",
+        "count": 1,
+        "players": [
+          "DeShon Elliott"
+        ],
+        "note": "Practice/designation watch; starter status and replacement quality not certified."
+      }
+    ],
+    "officialInactives": {},
+    "pointAdjustment": 0
+  },
+  "weather": {
+    "game_id": "2026-W12-DEN-PIT",
+    "canonical_game_id": "2026-W12-DEN-PIT",
+    "matchup": "Denver Broncos at Pittsburgh Steelers",
+    "venue": "Acrisure Stadium",
+    "environment": "outdoor",
+    "status": "Official kickoff-hour forecast verified",
+    "summary": "Chance Light Rain at kickoff: 42\u00b0F; wind SW 17.0 mph, gust 27.6 mph; precipitation chance 65%.",
+    "risk": "weather review required",
+    "observed_at": "2026-11-26T19:29:38.046544+00:00",
+    "total_adjustment_points": 0,
+    "model_treatment": "Display/context and execution checkpoint only; 0.0 production-total points until a weather rule is independently validated.",
+    "source": "https://api.weather.gov/points/40.4468,-80.0158",
+    "forecast_timestamp": "2026-11-26T18:21:31+00:00",
+    "forecast_verified": true,
+    "forecast": {
+      "game_id": "2026-W12-DEN-PIT",
+      "kickoff": "2026-11-27T20:00Z",
+      "temp_f": 42,
+      "wind_mph": 17.0,
+      "gust_mph": 27.6,
+      "precip_chance_pct": 65,
+      "forecast_timestamp": "2026-11-26T18:21:31+00:00",
+      "sources": [
+        "https://api.weather.gov/points/40.4468,-80.0158",
+        "https://api.weather.gov/gridpoints/PBZ/77,66/forecast/hourly",
+        "https://api.weather.gov/gridpoints/PBZ/77,66"
+      ],
+      "wind_speed_raw": "17 mph",
+      "wind_direction": "SW",
+      "forecast_hour_start": "2026-11-27T15:00:00-05:00",
+      "forecast_hour_end": "2026-11-27T16:00:00-05:00",
+      "conditions": "Chance Light Rain",
+      "verification_status": "verified official NWS kickoff-containing hourly forecast",
+      "gust_unit_original": "wmoUnit:km_h-1",
+      "retrieved_at": "2026-11-26T19:29:38.046544+00:00"
+    },
+    "sources": [
+      "https://api.weather.gov/points/40.4468,-80.0158",
+      "https://api.weather.gov/gridpoints/PBZ/77,66/forecast/hourly",
+      "https://api.weather.gov/gridpoints/PBZ/77,66"
+    ]
+  },
+  "sustainability": {
+    "DEN": {
+      "turnoverRate": 0.011965811965811967,
+      "takeawayRate": 0.019287833827893175,
+      "thirdDownConversion": 0.34146341463414637,
+      "redZoneTdRate": 0.6774193548387096
+    },
+    "PIT": {
+      "turnoverRate": 0.01288244766505636,
+      "takeawayRate": 0.020100502512562814,
+      "thirdDownConversion": 0.3712121212121212,
+      "redZoneTdRate": 0.42857142857142855
+    }
+  },
+  "experts": [],
+  "expertFamilies": [],
+  "sourceCoverage": {
+    "required": 8,
+    "current": 8,
+    "selectedWeekRecords": 0
+  },
+  "scheme": {
+    "offenseThroughWeek": 11,
+    "defenseThroughWeek": 1,
+    "excludedFromDirection": true
+  },
+  "limitations": [
+    "Official game-day inactives pending.",
+    "No attributable current game-specific expert analysis reviewed.",
+    "Structural component arithmetic failed; disagreement withheld.",
+    "Defense versus motion is Week 1; excluded from lean direction."
+  ],
+  "started": false,
+  "officialWager": null,
+  "researchOnly": true,
+  "productionPointImpact": 0,
+  "marketHistory": [
+    {
+      "observedAt": "2026-11-17T21:30:33.135Z",
+      "capturedAt": "2026-11-17T21:30:44.414278+00:00",
+      "spread": "Denver Broncos -2.5",
+      "homeMargin": -2.5,
+      "source": "ESPN Draft Kings"
+    },
+    {
+      "observedAt": "2026-11-26T18:31:32.148Z",
+      "capturedAt": "2026-11-26T18:31:46.480674+00:00",
+      "spread": "Denver Broncos -4.5",
+      "homeMargin": -4.5,
+      "source": "ESPN DraftKings"
+    }
+  ],
+  "marketHistoryNote": "First/last saved research observations; not verified sportsbook opening or closing prices."
+}
